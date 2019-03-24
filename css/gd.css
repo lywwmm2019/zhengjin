@@ -1,0 +1,126 @@
+/*  
+Theme Name: Airos Chou
+Theme URI: http://www.sunflowamedia.com
+Description: Web Design examples
+*/
+
+
+
+			#wrapper {
+				position: absolute;
+				
+			}
+			#carousel-wrapper {
+				padding-bottom: 10px;
+				position: relative;
+			}
+			#carousel, #thumbs {
+				overflow: hidden;
+			}
+			#carousel-wrapper .caroufredsel_wrapper {
+				
+				
+			}
+
+			#carousel span, #carousel img,
+			#thumbs a, #thumbs img  {
+				display: block;
+				float: left;
+			}
+			#carousel span, #carousel a,
+			#thumbs span, #thumbs a {
+				position: relative;
+			}
+			#carousel img,
+			#thumbs img {
+				border: none;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			#carousel img.glare,
+			#thumbs img.glare {
+				width: 102%;
+				height: auto;
+			}
+
+			#carousel span {
+				width: 519px;
+				height: 322px;
+			}
+
+			#thumbs-wrapper {
+				padding: 20px 40px;
+				position: relative;
+				margin-top:60px;
+			}
+			#thumbs a {
+				border: 4px solid #fff;
+				width: 150px;
+				height: 100px;
+				margin: 0 10px;
+				overflow: hidden;
+				
+			}
+			#thumbs a:hover, #thumbs a.selected {
+				border-color: #fff;
+			}
+			
+			#wrapper img#shadow {
+				width: 100%;
+				position: absolute;
+				bottom: 0;
+			}
+
+			#prev, #next {
+				background: transparent url('../img/gui/carousel_nav.png') no-repeat 0 0;
+				display: block;
+				width: 19px;
+				height: 20px;
+				margin-top: -10px;
+				position: absolute;
+				top: 50%;
+			}
+			#prev {
+				background-position: 0 0;
+				left: 10px;
+			}
+			#next {
+				background-position: -19px 0;
+				right: 10px;
+			}			
+			#prev:hover { 
+				background-position: 0 -20px;				
+			}
+			#next:hover {
+				background-position: -19px -20px;				
+			}
+			#prev.disabled, #next.disabled {
+				display: none !important;
+			}
+			
+			#donate-spacer {
+				height: 100%;
+			}
+			#donate {
+				
+				width: 750px;
+				padding: 50px 75px;
+				margin: 0 auto;
+				overflow: hidden;
+			}
+			#donate p, #donate form {
+				margin: 0;
+				float: left;
+			}
+			#donate p {
+				width: 650px;
+			}
+			#donate form {
+				width: 100px;
+			}
+			.caroufredsel_wrapper{
+				background:#fff;
+				}

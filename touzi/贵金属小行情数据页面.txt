@@ -1,0 +1,26 @@
+贵金属网站中包含的小行情页面
+
+  if(liveId == '66'){
+		$("#iframeId").attr("src","http://www.zhengjin99.com/touzi/gushiSmall.shtml");//上证深证 模拟用户，暂停使用
+	}else if(market == '1'){
+		$("#iframeId").attr("src","http://www.zhengjin99.com/touzi/haixiSmall.shtml?themeId=6624");//暂不使用
+	}else if(market == '3'){
+		$("#iframeId").attr("src","http://www.zhengjin99.com/touzi/dayuanSmall.shtml?themeId=6624");//奇门老K
+	}else{
+		$("#iframeId").attr("src","http://www.zhengjin99.com/touzi/tianjiaoSmall.shtml?themeId=6624");//财富为王
+	}
+	
+       
+       1、上证深证登录帐号密码
+          直接输入地址查看
+       
+       2、大圆交易所账号中目前有奇门老k直播室
+
+          账号：13600000089
+          密码：a123789
+
+       3、天交交易所账号中目前有财富为王直播室  
+
+          账号：13600000084
+          密码：a123789
+          

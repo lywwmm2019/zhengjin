@@ -1,0 +1,16 @@
+<p class="foot mr_t10" style="margin-bottom:20px;"><img src="/images/hz.jpg" width="990" height="134" border="0" usemap="#Map2" />
+  <map name="Map2" id="Map2">
+      <area shape="rect" coords="91,42,153,80" href="http://www.cnr.cn/" target="_blank" />
+  <area shape="rect" coords="157,41,214,79" href="http://www.jrj.com.cn/" target="_blank"/>
+  <area shape="rect" coords="218,44,283,80" href="http://www.stockstar.com/" target="_blank"/>
+  <area shape="rect" coords="299,41,426,83" href="http://www.icbc.com.cn/" target="_blank"/>
+  <area shape="rect" coords="427,41,541,81" href="http://www.hxb.com.cn/" target="_blank"/>
+  <area shape="rect" coords="546,41,677,81" href="http://www.abchina.com/" target="_blank"/>
+  <area shape="rect" coords="681,39,795,81" href="http://bank.ecitic.com/" target="_blank"/>
+  <area shape="rect" coords="299,85,424,118" href="http://www.ccb.com/" target="_blank"/>
+  <area shape="rect" coords="428,83,551,118" href="http://www.bankcomm.com/" target="_blank"/>
+  <area shape="rect" coords="682,81,795,122" href="http://www.cmbchina.com/" target="_blank"/>
+  <area shape="rect" coords="552,81,678,116" href="http://www.cebbank.com/" target="_blank"/>
+  <area shape="rect" coords="803,43,985,77" href="http://tg.zhengjin99.com/zhengjin/yjy/" />
+  </map>
+</p>

@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>联系我们</title>
+<link href="../css/clear.css" rel="stylesheet" type="text/css" />
+<link href="../css/style_head_foot.css" rel="stylesheet" type="text/css" />
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/function.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=9f0e31a903d7b52103b0d5e5e48d5797"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+</head>
+
+<body>
+	<div id="about_main" class="clear mb20">
+    	<div class="fl about_left pr">
+        	<div class="pa" style="left:0;top:0;" id="about_left">
+                
+                <ul class="about_link">
+                    <li class="about_link_title">关于我们</li>
+                    <li>&gt;&gt;<span><a href="index.html">关于证金</a></span></li>
+                    <li>&gt;&gt;<span><a href="ppbz.html">品牌标志</a></span></li>
+                    <li>&gt;&gt;<span><a href="tzzbz.html">投资者保障</a></span></li>
+                    <li>&gt;&gt;<span><a href="zlhz.html">战略合作</a></span></li>
+                    <li>&gt;&gt;<span><a href="bghj.html">办公环境</a></span></li>
+                    <li>&gt;&gt;<span><a href="tdfc.html">团队风采</a></span></li>
+                    <li>&gt;&gt;<span><a href="gshj.html">公司获奖</a></span></li>
+                    <li>&gt;&gt;<span><a href="../list_gsxw.html">公司新闻</a></span>
+                    	<ul class="about_link_sec">
+                        	<li><span><a href="../list_gshd.html">公司活动</a></span></li>
+                            <li><span><a href="../list_gsgg.html">公司公告</a></span></li>
+                            <li><span><a href="../list_mtbd.html">媒体报道</a></span></li>
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="shzr.html">社会责任</a></span></li>
+                    <li>&gt;&gt;<span class="about_link_hover"><a href="javascript:void(0)">联系我们</a></span></li>
+                </ul>
+            </div>
+        </div>
+    	<div class="fr about_right">
+        	<div class="about_lxwm">
+        		<div id="allmap">
+                	<div id="map" style="height:100%;-webkit-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;"></div>
+                </div>
+            </div>
+            <div class="about_lxwm_blk clear">
+            	<div class="about_lxwm_kf fl"><p class="about_lxwm_kftxt">客服热线:010-58309111<br/>在线时间: 24h (节假日除外)</p></div>
+                <div class="about_lxwm_mail fl"><p class="about_lxwm_mailtxt">传真:010-58325268<br />电子邮件:service@zhengjin99.com</p></div>
+                <div class="about_lxwm_zx fl"></div>
+                <div class="clear"></div>
+            </div>
+            <div class="about_lxwm_txt lh150 ">
+            	<p class="fb lh200">尊敬的客户，根据您不同的业务需求，可以通过以下方式联系我们：</p>
+                <br />
+                <p><span class="about_lxwm_bg">北京分公司:</span></p>
+                <p>服务热线：010-58309111</p>
+                <p>北京市宣武区宣武门外大街10号庄胜广场中央办公楼南翼11层 （100052）</p>
+                <br />
+                <br />
+                <p><span class="about_lxwm_bg">华腾分部:</span></p>
+                <p>客服电话：010-52280000</p>
+                <p>北京市朝阳区东四环中路华腾新天地1506L　邮编：100124 </p>
+                <br />
+                <br />
+                <p><span class="about_lxwm_bg">鹏润分部:</span></p>
+                <p>客服电话：010-57716699</p>
+                <p>北京市朝阳区霄云路26号鹏润大厦B座31层　邮编：100016</p>
+                <br />
+                <br />
+                <p><span class="about_lxwm_bg">重庆分公司:</span></p>
+                <p>客服电话：023-61609999</p>
+                <p>重庆市渝中区解放碑邹容路50号半岛国际6楼　邮编：400010</p>
+                <br />
+                <br />
+                <p><span class="about_lxwm_bg">山东分公司:</span></p>
+                <p>客服电话：0531-55700300/55700301 </p>
+                <p>济南市市中区经四路万达广场写字楼A座1003室 邮编：250001</p>
+                <br />
+                <br />
+                <p><span class="about_lxwm_bg">福州分公司:</span></p>
+                <p>客服电话：0591-87899752,87898170</p>
+                <p>福州市鼓楼区五一中路18号正大广场帝景台1807室 邮编：350001</p>
+                <br />
+                <br />
+            </div>
+      	</div>
+      
+      	<div class="clear"></div>
+    </div>
+</body>
+<script type="text/javascript">
+
+// 百度地图API功能
+var map = new BMap.Map("allmap");            // 创建Map实例
+var poi = new BMap.Point(116.381995, 39.903786);
+map.centerAndZoom(poi,14);  //初始化时，即可设置中心点和地图缩放级别。
+map.enableScrollWheelZoom(true);
+
+    var content = '<div style="margin:0;line-height:20px;padding:2px;">' +'地址：北京市宣武区宣武门外大街10号庄胜广场中央办公楼南翼11层 （100052）<br/>电话：010-58309199 <br/>简介：证金贵金属投资有限公司北京分公司。' +
+                  '</div>';
+
+    //创建检索信息窗口对象
+    var searchInfoWindow = null;
+	searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+			title  : "证金贵金属",      //标题
+			width  : 290,             //宽度
+			height : 105,              //高度
+			panel  : "panel",         //检索结果面板
+			enableAutoPan : true,     //自动平移
+			searchTypes   :[
+				BMAPLIB_TAB_SEARCH,   //周边检索
+				BMAPLIB_TAB_TO_HERE,  //到这里去
+				BMAPLIB_TAB_FROM_HERE //从这里出发
+			]
+		});
+    var marker = new BMap.Marker(poi); //创建marker对象
+    marker.enableDragging(); //marker可拖拽
+    marker.addEventListener("click", function(e){
+	    searchInfoWindow.open(marker);
+    })
+    map.addOverlay(marker); //在地图中添加marker
+    searchInfoWindow.open(marker); //在marker上打开检索信息串口
+    /*function showInfo(e){
+ alert(e.point.lng + ", " + e.point.lat);
+}
+map.addEventListener("click", showInfo);*/
+
+
+
+</script>
+</html>

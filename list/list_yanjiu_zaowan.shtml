@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta name="keywords" content="证金贵金属,白银,白银分析,白银投资,白银价格,白银交易,炒白银,白银走势,白银软件,模拟炒银,美联储,白银在线分析" />
+<meta name="description" content="证金贵金属，首家赴美纳斯达克上市公司中国最大最专业的白银投资服务平台，致力于白银投资、白银交易、现货白银、白银价格、炒白银、现货白银走势、白银行情、模拟炒银、现货白银开户、投资资讯、分析评论、贵金属投资等贵金属综合性投资服务" />
+<title>金牌早晚评_研究中心_证金贵金属</title>
+<!--#include virtual="/inc/head_link_2014.shtml"-->
+<script type="text/javascript" src="/js/function_yanjiu.js"></script>
+</head>
+
+<body>
+<!--# if expr="$REQUEST_URI != /from=/" -->
+	<!--#include virtual="/inc/head_2014.shtml"-->
+    <!--#include virtual="/inc/nav_yanjiu.shtml"-->
+<!--# endif -->
+    <div id="zwyp" class="pr">
+    	<div class="clear">
+        	<div class="fl w650 yjzx_list">
+            	<p class="mbx_nav">研究中心> <span class="now">金牌早晚评</span></p>
+                <ul class="list">
+                	<JRJTAG	tagtype="01" clsid="604001003" pagesize="7" pagecount="10" id="mrpl" />
+                    <#if mrpl?exists>
+                        <#list mrpl as d>
+                	<li>
+                    	<p class="tr">${d.mediasource}  ${d.makedate?string("yyyy年MM月dd日 HH:mm")}</p>
+                    	<img src="http://img.zhengjin99.com/web/small/${d.id?c}.jpg" width="194" height="128" /><p class="title"><a target="_blank" href="${d.infourl}">${d.title}</a></p>
+                    	<p>${jrjfund.subgbk(d.description,100)}...<a target="_blank" href="${d.infourl}">详情》</a></p>
+<!--# if expr="$REQUEST_URI != /from=/" -->
+                    	<div class="fr">
+                            <span class="fl pt3">分享：</span>
+							<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare" data="{'url':'${d.infourl}'}">
+							    <a class="bds_qzone"></a>
+							    <a class="bds_tsina"></a>
+							    <a class="bds_tqq"></a>
+                                <span class="bds_more">更多</span>
+                            </div>
+                            <span class="fl ml10 pt3">| <span class="hand" onclick="javascript:addFavorList('${d.clsname}', '${d.title}', '${d.infourl}');">收藏</span></span>
+                        </div>
+<!--# endif -->
+                    </li>
+                  		</#list>
+					</#if>
+                </ul>
+                
+                <div class="tc yjzx_page">
+               	<#assign locafilename="list_yanjiu_zaowan">
+                   <#if (curpage>1)>
+                     <!-- span class="page_ud"><a href="${locafilename}.shtml">首 页</a></span> -->
+                     <#if curpage=2>
+                   	<span class="page_ud"><a href="${locafilename}.shtml">上一页</a></span>
+                     <#else>
+                   	<span class="page_ud"><a href="${locafilename}-${curpage-1}.shtml">上一页</a></span>
+                     </#if>
+                   </#if>
+                   <#list 1..pagecount as n>
+                         <#if n=1>
+                           <#if curpage=n>
+                             <span class="page_select"><a>${n}</a></span>
+                           <#else>
+                             <span><a href="${locafilename}.shtml" target="_self">${n}</a></span>
+                           </#if>
+                         <#else>
+                           <#if curpage=n>
+                             <span class="page_select"><a>${n}</a></span>
+                           <#else>
+                             <span><a href="${locafilename}-${n}.shtml" target="_self">${n}</a></span>
+                           </#if> 
+                        </#if>
+                   </#list>
+                   <#if (curpage!=pagecount)>
+                   <span class="page_ud"><a href="${locafilename}-${curpage+1}.shtml">下一页</a></span>
+                   </#if>
+                </div>
+                
+        	</div>
+            
+			<script type="text/javascript" src="../js/calendar.js"></script>
+            <div class="fr w310" id="cal_data">
+                
+                <p class="yjzx_tj pr index_title mt20">最新推荐</p>
+                <ul class="yjzx_research">
+                	<JRJTAG	tagtype="01" clsid="604001005,604001010" pagesize="5" pagecount="1" id="zxtj" />
+                    <#if zxtj?exists>
+                        <#list zxtj as d>
+                	<li class="${(d_index==0)?string("first","")}">
+                    	<p class="title"><a target="_blank" href="${d.infourl}">${d.title}</a></p><span class="pa time ${(d_index==0)?string("hide","")}"> ${d.makedate?string("MM.dd")}</span>
+                        <div class="yjzx_tj_list ${(d_index>0)?string("hide","")}">
+                            <a target="_blank" href="${d.infourl}"><img width="127" height="84" class="fl" src="http://img.zhengjin99.com/web/small/${d.id?c}.jpg"></a>
+                            <div class="fr">
+                                <p class="pr">${jrjfund.subgbk(d.description,70)}...<a target="_blank" href="${d.infourl}">详情》</a></p>
+                            </div>
+                            <div class="clear" style="height:0;line-height:0;"></div>
+                        </div>
+                    </li>
+                  		</#list>
+					</#if>
+                </ul>
+
+               <!--#include virtual="/inc/rightyjzx.shtml"--> 
+            	<!--<p>本周美国方面发布了较多的经济数据，数据好坏不一…<a target="_blank" href="http://vd.jrj.com/">详情》</a></p>
+                <div class="vedio_msg clear over"><div class="fr"><span class="vedio_click"></span><span>400000</span><span class="vedio_talk"></span><span>785</span></div></div>-->
+                
+            </div>
+            <div class="clear" style="height:0;line-height:0;"></div>
+        </div>
+        
+    </div>
+    
+<!--# if expr="$REQUEST_URI != /from=/" -->
+    <!--#include virtual="/inc/foot_2014.shtml"-->
+<!--# endif -->
+
+</body>
+</html>

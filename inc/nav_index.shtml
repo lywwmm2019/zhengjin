@@ -1,0 +1,24 @@
+   <div id="nav" class="pr">
+    	<ul class="w990 mauto">
+        	<li class="nav1_sl"><a href="#">首页</a></li>
+            <li class="nav2"><a href="/touzi/touzi_index.shtml">投资品种</a></li>
+            <!--<li class="nav3"><a href="http://www.zhengjin99.com/service/fwzx_index.shtml">服务中心</a></li>-->
+            <!--<li class="nav4"><a href="http://vd.jrj.com/front/chat/?room=1&fromUrl=99">证金银屏</a></li>-->
+            <!--<li class="nav4"><a href="http://newzb.jrj.com/hxzb/hxzb_index.jsp?fromUrl=99">大咖工作室</a></li>-->
+            <!--<li class="nav5"><a href="/list/index_yanjiu.shtml">研究中心</a></li>-->
+            <li class="nav6"><a href="download.shtml">软件下载</a></li>
+            <li class="nav7"><a href="/service/gywm_tzzbz.html">关于我们</a></li>
+        </ul>
+        <div class="nav_second pa hide" id="nav_second">
+        	<div class="w990 mauto">
+            	<p class="nav_s2"><span class="nav_second_title">投资品种</span><span>|</span><span><a href="/touzi/touzi_index.shtml">天津贵金属交易所 </a></span></p>
+                 <!--<p class="nav_s3"><span class="nav_second_title">帮助中心</span><span>|</span><span><a href="/service/bzzx_index.html">帮助中心</a></span><span><a href="../service/zxzx_index.html?head=2">在线咨询</a></span></p>-->
+                 <!--<p class="nav_s4"><span class="nav_second_title">证金直播</span><span>|</span><span><a href="http://vd.jrj.com/front/livevideo/index.jsp">证在直播</a></span><span><a href="http://vd.jrj.com/front/video/">新手入门</a></span></p>-->
+                 <!--<p class="nav_s4"><span class="nav_second_title">大咖工作室</span><span>|</span><span><a href="http://newzb.jrj.com/hxzb/hxzb_index.jsp?fromUrl=99">工作室大厅</a></span></p>-->
+                 <!--<p class="nav_s5"><span class="nav_second_title">研究中心</span><span>|</span><span><a href="/list/list_yanjiu_daodu.shtml">资讯导读</a></span><span><a href="/list/list_yanjiu_zaowan.shtml">金牌早晚评</a></span><span><a href="http://tg.zhengjin99.com/zhengjin/yjbg/">研究报告</a></span><span><a href="/list/list_yanjiu_xueyuan.shtml">证金学院</a></span><span><a href="http://tg.zhengjin99.com/zhengjin/cfzk/">财富周刊</a></span><span><a href="/research/calendar.shtml">财经日历</a></span><span><a href="/yanjiutd/yanjiu_tgtd.html">投研团队</a></span><span><a href="../EMO/EMO_index.shtml">EMO量化指数</a></span></p> -->              
+                <p class="nav_s6"><span class="nav_second_title">软件下载</span><span>|</span></p>
+                <p class="nav_s7"><span class="nav_second_title">关于我们</span><span>|</span><span><a href="/service/gywm_tzzbz.html">投资者保障</a></span><span><a href="/service/gywm_xgsm_mzsm.html">相关声明</a></span><span><a href="/service/gywm_lxwm_gsdz.html">联系我们</a></span></p>
+            </div>
+        </div>
+    </div>
+        

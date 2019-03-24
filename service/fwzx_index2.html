@@ -1,0 +1,1034 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="证金贵金属,白银,白银分析,白银投资,白银价格,白银交易,炒白银,白银走势,白银软件,模拟炒银,美联储,白银在线分析" />
+<meta name="description" content="证金贵金属，首家赴美纳斯达克上市公司中国最大最专业的白银投资服务平台，致力于白银投资、白银交易、现货白银、白银价格、炒白银、现货白银走势、白银行情、模拟炒银、现货白银开户、投资资讯、分析评论、贵金属投资等贵金属综合性投资服务" />
+
+<title>服务中心_证金贵金属</title>
+<link href="../css/style_2014.css" rel="stylesheet" type="text/css" />
+
+<script src="../js/jquery-1.6.1.min.js" type="text/javascript"></script>  
+<script type="text/javascript" charset="utf-8" src="http://gate.looyu.com/49537/105923.js"></script>  
+<script src="/js/highstock.js" type="text/javascript"></script>
+<script src="/js/showChartText.js" type="text/javascript"></script>
+  <SCRIPT type=text/javascript>  
+function selectTag(showContent,selfObj){  
+ // 操作标签  
+ var tag = document.getElementById("tags").getElementsByTagName("li");  
+ var taglength = tag.length;  
+ for(i=0; i<taglength; i++){  
+  //tag[i].className = "";  
+ }  
+ //selfObj.parentNode.className = "selectTag";  
+ // 操作内容  
+ for(i=0; j=document.getElementById("tagContent"+i); i++){  
+  j.style.display = "none";  
+ }  
+ document.getElementById(showContent).style.display = "block";  
+      
+}  
+</SCRIPT>  
+
+<SCRIPT type=text/javascript>  
+function selectTagwx(showContentwx,selfObjwx){  
+ // 操作标签  
+ var tag = document.getElementById("tagswx").getElementsByTagName("li");  
+ var taglength = tag.length;  
+for(i=0; i<taglength; i++){  
+  //tag[i].className = ""; 
+ }  
+ //selfObjwx.parentNode.className = "selectTagwx";  
+ // 操作内容  
+ for(i=0; j=document.getElementById("tagContentwx"+i); i++){  
+  j.style.display = "none";  
+ }  
+ document.getElementById(showContentwx).style.display = "block";  
+      
+}  
+</SCRIPT>  
+
+
+<script>
+//初始化
+var def="1";
+function mover(object){
+  //主菜单
+  var mm=document.getElementById("m_"+object);
+  mm.className="m_li_a";
+  //初始主菜单先隐藏效果
+  if(def!=0){
+    var mdef=document.getElementById("m_"+def);
+    mdef.className="m_li";
+  }
+  //子菜单
+  var ss=document.getElementById("s_"+object);
+  ss.style.display="block";
+  //初始子菜单先隐藏效果
+  if(def!=0){
+    var sdef=document.getElementById("s_"+def);
+    sdef.style.display="none";
+  }
+}
+
+function mout(object){
+  //主菜单
+  var mm=document.getElementById("m_"+object);
+  mm.className="m_li";
+  //初始主菜单还原效果
+  if(def!=0){
+    var mdef=document.getElementById("m_"+def);
+    mdef.className="m_li_a";
+  }
+  //子菜单
+  var ss=document.getElementById("s_"+object);
+  ss.style.display="none";
+  //初始子菜单还原效果
+  if(def!=0){
+    var sdef=document.getElementById("s_"+def);
+    sdef.style.display="block";
+  }
+}
+</script>
+
+<script>
+//初始化
+var def2="1";
+function mover2(object){
+  //主菜单
+  var mm2=document.getElementById("m2_"+object);
+  mm2.className="m_li_a";
+  //初始主菜单先隐藏效果
+  if(def2!=0){
+    var mdef2=document.getElementById("m2_"+def);
+    mdef2.className="m_li";
+  }
+  //子菜单
+  var ss2=document.getElementById("s2_"+object);
+  ss2.style.display="block";
+  //初始子菜单先隐藏效果
+  if(def2!=0){
+    var sdef2=document.getElementById("s2_"+def);
+    sdef2.style.display="none";
+  }
+}
+
+function mout2(object){
+  //主菜单
+  var mm2=document.getElementById("m2_"+object);
+  mm2.className="m_li";
+  //初始主菜单还原效果
+  if(def2!=0){
+    var mdef2=document.getElementById("m2_"+def);
+    mdef2.className="m_li_a";
+  }
+  //子菜单
+  var ss2=document.getElementById("s2_"+object);
+  ss2.style.display="none";
+  //初始子菜单还原效果
+  if(def2!=0){
+    var sdef2=document.getElementById("s2_"+def);
+    sdef2.style.display="block";
+  }
+}
+</script>
+<script>
+//初始化
+var def3="1";
+function mover3(object){
+  //主菜单
+  var mm3=document.getElementById("m3_"+object);
+  mm3.className="m_li_a";
+  //初始主菜单先隐藏效果
+  if(def3!=0){
+    var mdef3=document.getElementById("m3_"+def);
+    mdef3.className="m_li";
+  }
+  //子菜单
+  var ss3=document.getElementById("s3_"+object);
+  ss3.style.display="block";
+  //初始子菜单先隐藏效果
+  if(def3!=0){
+    var sdef3=document.getElementById("s3_"+def);
+    sdef3.style.display="none";
+  }
+}
+
+function mout3(object){
+  //主菜单
+  var mm3=document.getElementById("m3_"+object);
+  mm3.className="m_li";
+  //初始主菜单还原效果
+  if(def3!=0){
+    var mdef3=document.getElementById("m3_"+def);
+    mdef3.className="m_li_a";
+  }
+  //子菜单
+  var ss3=document.getElementById("s3_"+object);
+  ss3.style.display="none";
+  //初始子菜单还原效果
+  if(def3!=0){
+    var sdef3=document.getElementById("s3_"+def);
+    sdef3.style.display="block";
+  }
+}
+</script>
+<script>
+//初始化
+var def4="1";
+function mover4(object){
+  //主菜单
+  var mm4=document.getElementById("m4_"+object);
+  mm4.className="m_li_a";
+  //初始主菜单先隐藏效果
+  if(def4!=0){
+    var mdef4=document.getElementById("m4_"+def);
+    mdef4.className="m_li";
+  }
+  //子菜单
+  var ss4=document.getElementById("s4_"+object);
+  ss4.style.display="block";
+  //初始子菜单先隐藏效果
+  if(def4!=0){
+    var sdef4=document.getElementById("s4_"+def);
+    sdef4.style.display="none";
+  }
+}
+
+function mout4(object){
+  //主菜单
+  var mm4=document.getElementById("m4_"+object);
+  mm4.className="m_li";
+  //初始主菜单还原效果
+  if(def4!=0){
+    var mdef4=document.getElementById("m4_"+def);
+    mdef4.className="m_li_a";
+  }
+  //子菜单
+  var ss4=document.getElementById("s4_"+object);
+  ss4.style.display="none";
+  //初始子菜单还原效果
+  if(def4!=0){
+    var sdef4=document.getElementById("s4_"+def);
+    sdef4.style.display="block";
+  }
+}
+</script>
+<script language="javascript">
+function tabs(n)
+{
+var len = 4;
+for (var i = 1; i <= len; i++)
+{
+document.getElementById('tab_a' + i).style.display = (i == n) ? 'block' : 'none';
+document.getElementById('tab_' + i).className = (i == n) ? 'aaa' : 'none';
+}
+}
+</script>
+
+<script>
+	$(document).ready(function(){
+		MinuteChart('1998005');	
+	})
+</script>
+</head>
+
+<body>
+	<!--head-->
+	<!--#include virtual="/inc/head_2014.shtml"-->
+<!--#include virtual="/inc/nav_fuwu.shtml"-->
+    <!--head-end-->
+    <!--middle-->
+    
+    <div class="tzpz_quotation_right" id="container" style="width:650px;height:330px;overflow:hidden;">
+            </div>
+    
+ <div class="w990 mauto clear over mt20" >
+
+    	<div class="fwzx_index_top_pic">    	  
+    	    <p><img src="../images2014/fwzx-01.jpg"/></p>  	   
+    	</div>
+  <div class="fwzx_index_top_khzl">
+  <!--top-->
+  	<div class="fwzx_index_top_khzl-top">
+     <div class="fwzx_index_top_khzl-top-img"><img src="../images2014/fwzx-02.jpg"></div>
+       <p>
+        <span>159****1964</span>
+        <a><img src="../images2014/fwzx-10.jpg" width="18" height="18"  alt=""/></a>
+        <a><img src="../images2014/fwzx-11.jpg" width="18" height="18"  alt=""/></a> 
+       </p>
+       <p class="p2">
+       <span>钻石卡客户</span>
+ 	    <a><img src="../images2014/fwzx-03.jpg" width="91" height="15"  alt=""/></a>
+       </p>
+       <p class="p2"><span>积分：6000000</span></p>  
+    </div>
+  <!--top-end--> 
+  <!--middle1--> 
+   <div class="fwzx_index_top_khzl-middle">
+    <p>	网络报告会</p>
+   </div>
+  <!--middle1-end--> 
+  <!--middle2--> 
+   <div class="fwzx_index_top_khzl-middle">
+    <p class="zbs">	我的直播室<span class="orange"> Lv01 </span></p>
+   </div>
+  <!--middle2-end--> 
+  <!--bottom-->
+  <div class="fwzx_index_bottom">
+  	<h4>我的专属特权</h4>
+  	<div class="fwzx_index_bottom_more">更多>></div>
+    <ul>
+    	<li><img src="../images2014/fwzx-04.jpg"></li>
+        <li><img src="../images2014/fwzx-05.jpg"></li>
+        <li><img src="../images2014/fwzx-06.jpg"></li>
+        <li><img src="../images2014/fwzx-07.jpg"></li>
+        <li><img src="../images2014/fwzx-08.jpg"></li>
+        <li><img src="../images2014/fwzx-09.jpg"></li>
+    </ul>
+  </div>
+  <!--bottom-end-->
+  </div> 
+</div>   
+    <!--middle-end-->
+	
+  <!--开户服务--> 
+ <div class="w990 mauto clear over mt20 mb20">
+ <h2 class="fwzx_khfw" style="display:block; margin:0px;overflow:hidden; "></h2><!--<h>与<p>的区别？？？-->
+ <!--main-->
+ <div class="khfw_index tab">
+ 	<div class="khfw_index-ul">
+    <ul>
+    	<li id="tab_1" class="aaa"><a href="javascript:void(0)" onclick="tabs('1');">网上实时开户(津贵所)</a></li>
+        <li id="tab_2"><a href="javascript:void(0)" onclick="tabs('2');">预约面签开户(津贵所)</a></li>
+        <li id="tab_3"><a href="javascript:void(0)" onclick="tabs('3');">预约开户(海商所)</a></li>
+        <li id="tab_4"><a href="javascript:void(0)" onclick="tabs('4');">模拟开户</a></li>
+    </ul>
+    </div>
+    <!--bottom1-->
+    <div id="tab_a1" style="display:block;">
+   <!--buzhou-->
+ <div class="khfw_khbz" >
+ 	
+    <div class="khfw_khbz_xz1">
+      <dl>
+    	<dt><a href="#">第一步</a></dt>
+        <dd ><a href="#"></a></dd>
+        <dd id="m_1" class="m_li_a "><a href="#">学习如何开户</a></dd>
+       </dl>
+    </div>
+    
+   <div class="khfw_khbz_xz2">
+      <dl>
+    	<dt><a href="#">第二步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m_2" class="m_li"  onmouseover='mover(2);' onmouseout='mout(2);'><a href="#">进入网上开户流程</a></dd>
+       </dl>
+    </div>
+      
+    <div class="khfw_khbz_xz3">
+      <dl>
+    	<dt><a href="#">第三步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m_3" class="m_li "  onmouseover='mover(3);' onmouseout='mout(3);'><a href="#">获得实盘账号</a></dd>
+       </dl>
+    </div> 
+    
+    <div class="khfw_khbz_xz4">
+      <dl>
+    	<dt><a href="#">第四步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m_4" class="m_li" onmouseover='mover(4);' onmouseout='mout(4);'><a href="#">银行签约</a></dd>
+       </dl>
+    </div>
+    
+    
+    <div class="khfw_khbz_xz5">
+      <dl>
+    	<dt><a href="#">第五步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m_5" class="m_li"  onmouseover='mover(5);' onmouseout='mout(5);'><a href="#">入金激活</a></dd>
+       </dl>
+    </div>
+    
+    
+    <div class="khfw_khbz_xz6">
+      <dl>
+    	<dt><a href="#">第六步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m_6" class="m_li"  onmouseover='mover(6);' onmouseout='mout(6);'><a href="#">进行交易</a></dd>
+       </dl>
+    </div>     
+  <div class="khfw_khbz_bj" style="width:830px;"></div>
+ </div>
+   <!--buzhou-end-->
+   <div class="clear"></div>
+   <!--jtbz-->
+       <div class="khfw_jtbz" >
+         <!--1-->
+         <div id="s_1" >
+         <div class="khfw_jtbz-top"></div>
+         <div class="khfw_jtbz-main ">
+            <ul>
+                <li><a href="bzzx_jgskhysdh.html">·津贵所实时开户演示动画</a></li>
+                <li><a href="bzzx_index.html">·津贵所实时开户宣传片</a></li>
+            </ul>    	
+       </div>
+       </div>
+       <!--1-end-->
+       <!--2-->
+        <div id="s_2"  onmouseover='mover(2);' onmouseout='mout(2);' style="display:none;" class="khfw_jtbz2">
+         <div class="khfw_jtbz-top  khfw_jtbz-top2"></div>
+         <div class="khfw_jtbz-main  khfw_jtbz-main2 ">
+            <ul>
+                <li><a href="http://tg.zhengjin99.com/zhengjin/tjskh/khts.jsp" >·网上开户入口</a> </li>
+                <li><a href="bzzx_wskhzysx.html">·网上开户注意事项</a> </li>
+            </ul>    	
+        </div>
+       </div>
+       <!--2-end-->
+       <!--3-->
+        <div id="s_3"  onmouseover='mover(3);' onmouseout='mout(3);' style="display:none;" class="khfw_jtbz2">
+         
+       </div>
+       <!--3-end-->
+        <!--4-->
+         <div id="s_4" onmouseover='mover(4);' onmouseout='mout(4);' style="display:none;"  class="khfw_jtbz2">
+         <div class="khfw_jtbz-top khfw_jtbz-top4"></div>
+         <div class="khfw_jtbz-main ">
+            <ul>
+                <li><a href="bzzx_jgsbank01.html">·津贵所银行网银签约入口</a> </li>
+                <li><a href="bzzx_jgsbank02.html">·津贵所网银签约演示动画</a></li>
+                <li><a href="bzzx_bankqycrjjy.html">·银行签约、出入金和解约时间表</a> </li>
+                <li><a href="bzzx_jgsbank03.html">·津贵所银行签约中遇到的问题</a></li>
+            </ul>    	
+       </div>
+       </div>
+       <!--4-end-->
+       <!--5-->
+         <div id="s_5"  onmouseover='mover(5);' onmouseout='mout(5);' style="display:none;"  class="khfw_jtbz2">
+         <div class="khfw_jtbz-top khfw_jtbz-top5"></div>
+         <div class="khfw_jtbz-main khfw_jtbz-main5 ">
+            <ul>
+                <li><a href="bzzx_jgscrjfz.html">·出入金规则</a> </li>
+                <li><a href="bzzx_jgscrjtj.html">·出入金途径</a></li>
+            </ul>    	
+       </div>
+       </div>
+       <!--5-end-->
+        <!--6-->
+        <div id="s_6"  onmouseover='mover(6);' onmouseout='mout(6);'  style="display:none;" class="khfw_jtbz2">
+         <div class="khfw_jtbz-top khfw_jtbz-top26"></div>
+         <div class="khfw_jtbz-main khfw_jtbz-main26 ">
+            <ul>
+                <li><a href="http://www.zhengjin99.com/download.shtml">·津贵所实盘软件下载地址</a> </li>
+            </ul>    	
+       </div>         
+       </div>
+       <!--6-end-->
+      </div>
+   <!--jtbz-end-->
+   <!--button-->
+   <div class="khfw_button " >
+   	<p><input type="button" class="button1 button3" value="" /></p>
+    <p><span>* 只限限招行，建行</span></p>
+   </div>
+   <!--button-end-->
+   </div>
+   <!--bottom1-end-->   
+   
+    <!--bottom2-->
+    <div id="tab_a2" style="display:none;">
+   <!--buzhou-->
+ <div class="khfw_khbz " >
+ 	
+    <div class="khfw_khbz_xz1 khfw_khbz_xz21">
+      <dl>
+    	<dt><a href="#">第一步</a></dt>
+        <dd class="p2"><a href="#"></a></dd>
+        <dd id="m2_1" class=" m_li_a "><a href="#">学习如何开户</a></dd>
+       </dl>
+    </div>
+    
+   <div class="khfw_khbz_xz2 khfw_khbz_xz22">
+      <dl>
+    	<dt><a href="#">第二步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m2_2" class="m_li"  onmouseover='mover2(2);' onmouseout='mout2(2);'><a href="#">观看开户宣传片 </a></dd>
+       </dl>
+    </div>
+      
+    <div class="khfw_khbz_xz3 khfw_khbz_xz23">
+      <dl>
+    	<dt><a href="#">第三步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m2_3" class="m_li"  onmouseover='mover2(3);' onmouseout='mout2(3);'><a href="#">录制开户影像资料</a></dd>
+       </dl>
+    </div> 
+    
+    <div class="khfw_khbz_xz4 khfw_khbz_xz24">
+      <dl>
+    	<dt><a href="#">第四步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m2_4" class="m_li " onmouseover='mover2(4);' onmouseout='mout2(4);'><a href="#">获取实盘帐号</a></dd>
+       </dl>
+    </div>
+    
+    
+    <div class="khfw_khbz_xz5 khfw_khbz_xz25">
+      <dl>
+    	<dt><a href="#">第五步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m2_5" class="m_li "  onmouseover='mover2(5);' onmouseout='mout2(5);'><a href="#">银行签约</a></dd>
+       </dl>
+    </div>
+    
+    
+    <div class="khfw_khbz_xz6 khfw_khbz_xz26">
+      <dl>
+    	<dt><a href="#">第六步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m2_6" class="m_li "  onmouseover='mover2(6);' onmouseout='mout2(6);'><a href="#">入金激活 </a></dd>
+       </dl>
+    </div>  
+    
+       <div class="khfw_khbz_xz7 khfw_khbz_xz27">
+      <dl>
+    	<dt><a href="#">第七步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m2_7" class="m_li"  onmouseover='mover2(7);' onmouseout='mout2(7);'><a href="#">进行交易</a></dd>
+       </dl>
+    </div> 
+       
+  <div class="khfw_khbz_bj"></div>
+ </div>
+   <!--buzhou-end-->
+   <div class="clear"></div>
+   <!--jtbz-->
+       <div class="khfw_jtbz" >
+         <!--1-->
+         <div id="s2_1" >
+         <div class="khfw_jtbz-top"></div>
+         <div class="khfw_jtbz-main ">
+            <ul>
+                <li><a href="bzzx_jgsmqkh01.html">·开户流程及注意事项</a> </li>
+                <li><a href="bzzx_jgsmqkh02.html">·协议书签署范本</a> </li>
+            </ul>    	
+       </div>
+       </div>
+       <!--1-end-->
+       <!--2-->
+        <div id="s2_2"  onmouseover='mover2(2);' onmouseout='mout2(2);' style="display:none;"  class="khfw_jtbz2">
+         <div class="khfw_jtbz-top  khfw_jtbz-top2"></div>
+         <div class="khfw_jtbz-main  khfw_jtbz-main2 ">
+            <ul>
+                <li><a href="bzzx_index.html">·津贵所开户宣传片 </a> </li>
+            </ul>    	
+        </div>
+       </div>
+       <!--2-end-->
+       <!--3-->
+        <div id="s2_3"  onmouseover='mover2(3);' onmouseout='mout2(3);' style="display:none;"  class="khfw_jtbz2"> </div>
+       <!--3-end-->
+        <!--4-->
+         <div id="s2_4"  onmouseover='mover2(4);' onmouseout='mout2(4);' style="display:none;"  class="khfw_jtbz2"> </div>
+       <!--4-end-->
+       <!--5-->
+         <div id="s2_5"  onmouseover='mover2(5);' onmouseout='mout2(5);' style="display:none;"  class="khfw_jtbz2">
+         <div class="khfw_jtbz-top khfw_jtbz-top25"></div>
+         <div class="khfw_jtbz-main ">
+            <ul>
+                <li><a href="bzzx_jgsbank01.html">·津贵所银行签约入口</a> </li>
+                <li><a href="bzzx_jgsbank02.html">·津贵所网银签约演示动画</a> </li>
+                <li><a href="bzzx_bankqycrjjy.html">·银行签约、出入金和解约时间表</a> </li>
+                <li><a href="bzzx_jgsbank03.html">·津贵所银行签约中遇到的问题</a></li>
+            </ul>    	
+       </div>
+       </div>
+       <!--5-end-->
+        <!--6-->
+         <div id="s2_6"  onmouseover='mover2(6);' onmouseout='mout2(6);' style="display:none;" class="khfw_jtbz2">
+         <div class="khfw_jtbz-top khfw_jtbz-top36"></div>
+         <div class="khfw_jtbz-main khfw_jtbz-main36 ">
+            <ul>
+                <li><a href="bzzx_jgscrjfz.html">·出入金规则</a> </li>
+                <li><a href="bzzx_jgscrjtj.html">·出入金途径</a></li>
+            </ul>    	
+       </div>
+       </div>
+       <!--6-end-->
+        <!--7-->
+         <div id="s2_7"  onmouseover='mover2(7);' onmouseout='mout2(7);' style="display:none;"  class="khfw_jtbz2">
+         	 <div class="khfw_jtbz-top khfw_jtbz-top27"></div>
+               <div class="khfw_jtbz-main khfw_jtbz-main37 ">
+                <ul>
+                	<li><a href="http://www.zhengjin99.com/download.shtml">·津贵所实盘软件下载地址</a> </li>
+           	   </ul>    	
+              </div>
+          </div>
+       <!--7-end-->
+      </div>
+   <!--jtbz-end-->
+   <!--button-->
+   <div class="khfw_button " >
+   	<p><input type="button" class="button1" value="" /></p>
+    <p>* 只限限招行，建行</p>
+   </div>
+   <!--button-end-->
+   </div>
+   <!--bottom2-end-->    
+    
+      <!--bottom3-->
+    <div id="tab_a3" style="display:none;">
+   <!--buzhou-->
+ <div class="khfw_khbz " >
+ 	
+    <div class="khfw_khbz_xz1 khfw_khbz_xz21">
+      <dl>
+    	<dt><a href="#">第一步</a></dt>
+        <dd class="p2"><a href="#"></a></dd>
+        <dd id="m3_1" class=" m_li_a "><a href="#">学习如何开户</a></dd>
+       </dl>
+    </div>
+    
+   <div class="khfw_khbz_xz2 khfw_khbz_xz22">
+      <dl>
+    	<dt><a href="#">第二步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m3_2" class="m_li"  onmouseover='mover3(2);' onmouseout='mout3(2);'><a href="#">签订客户协议书</a></dd>
+       </dl>
+    </div>
+      
+    <div class="khfw_khbz_xz3 khfw_khbz_xz23">
+      <dl>
+    	<dt><a href="#">第三步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m3_3" class="m_li"  onmouseover='mover3(3);' onmouseout='mout3(3);'><a href="#">递交相关资料</a></dd>
+       </dl>
+    </div> 
+    
+    <div class="khfw_khbz_xz4 khfw_khbz_xz24">
+      <dl>
+    	<dt><a href="#">第四步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m3_4" class="m_li " onmouseover='mover3(4);' onmouseout='mout3(4);'><a href="#">获得实盘帐号</a></dd>
+       </dl>
+    </div>
+    
+    
+    <div class="khfw_khbz_xz5 khfw_khbz_xz25">
+      <dl>
+    	<dt><a href="#">第五步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m3_5" class="m_li "  onmouseover='mover3(5);' onmouseout='mout3(5);'><a href="#">银行签约</a></dd>
+       </dl>
+    </div>
+    
+    
+    <div class="khfw_khbz_xz6 khfw_khbz_xz26">
+      <dl>
+    	<dt><a href="#">第六步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m3_6" class="m_li "  onmouseover='mover3(6);' onmouseout='mout3(6);'><a href="#">入金激活 </a></dd>
+       </dl>
+    </div>  
+    
+       <div class="khfw_khbz_xz7 khfw_khbz_xz27">
+      <dl>
+    	<dt><a href="#">第七步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m3_7" class="m_li"  onmouseover='mover3(7);' onmouseout='mout3(7);'><a href="#">进行交易</a></dd>
+       </dl>
+    </div> 
+       
+  <div class="khfw_khbz_bj"></div>
+ </div>
+   <!--buzhou-end-->
+   <div class="clear"></div>
+   <!--jtbz-->
+       <div class="khfw_jtbz" >
+         <!--1-->
+         <div id="s3_1" >
+         <div class="khfw_jtbz-top"></div>
+         <div class="khfw_jtbz-main ">
+            <ul>
+                <li><a href="bzzx_hssyymq01.html">·开户准备工作和注意事项</a> </li>
+            </ul>    	
+       </div>
+       </div>
+       <!--1-end-->
+       <!--2-->
+        <div id="s3_2"  onmouseover='mover3(2);' onmouseout='mout3(2);' style="display:none;"  class="khfw_jtbz2">
+         <div class="khfw_jtbz-top  khfw_jtbz-top2"></div>
+         <div class="khfw_jtbz-main  khfw_jtbz-main2 ">
+            <ul>
+                <li><a href="bzzx_hssmq02.html">·协议书下载地址和签署范本 </a> </li>
+            </ul>    	
+        </div>
+       </div>
+       <!--2-end-->
+       <!--3-->
+        <div id="s3_3"  onmouseover='mover3(3);' onmouseout='mout3(3);' style="display:none;" class="khfw_jtbz2"> 
+        	<div class="khfw_jtbz-top  khfw_jtbz-top33"></div>
+         		<div class="khfw_jtbz-main  khfw_jtbz-main33 ">
+           			 <ul>
+                			<li><a href="bzzx_hssyymq03.html">·需要递交哪些资料 </a> </li>
+       	    		 </ul>    	
+        	</div>
+        </div>
+       <!--3-end-->
+        <!--4-->
+         <div id="s3_4"  onmouseover='mover3(4);' onmouseout='mout3(4);' style="display:none;"  class="khfw_jtbz2"> </div>
+       <!--4-end-->
+       <!--5-->
+         <div id="s3_5"  onmouseover='mover3(5);' onmouseout='mout3(5);' style="display:none;"  class="khfw_jtbz2">
+         <div class="khfw_jtbz-top khfw_jtbz-top25"></div>
+         <div class="khfw_jtbz-main khfw_jtbz-main25 ">
+            <ul>
+                <li><a href="bzzx_hxsbank01.html">·海商所银行签约入口</a> </li>
+                <li><a href="bzzx_hxsbank02.html">·海商所网银签约演示动画</a></li>
+            </ul>    	
+       </div>
+       </div>
+       <!--5-end-->
+        <!--6-->
+         <div id="s3_6"  onmouseover='mover3(6);' onmouseout='mout3(6);' style="display:none;"  class="khfw_jtbz2">
+         <div class="khfw_jtbz-top khfw_jtbz-top36"></div>
+         <div class="khfw_jtbz-main khfw_jtbz-main36 ">
+            <ul>
+                <li><a href="bzzx_hsscrjtj.html">·出入金途径</a> </li>
+                <li><a href="bzzx_jgscrjfz.html">·出入金规则</a></li>
+            </ul>    	
+       </div>
+       </div>
+       <!--6-end-->
+        <!--7-->
+         <div id="s3_7"  onmouseover='mover3(7);' onmouseout='mout3(7);' style="display:none;"  class="khfw_jtbz2">
+         <div class="khfw_jtbz-top khfw_jtbz-top27"></div>
+         <div class="khfw_jtbz-main  khfw_jtbz-main37 ">
+            <ul>
+                <li><a href="http://www.zhengjin99.com/download.shtml">·海商所软件下载地址</a> </li>
+            </ul>    	
+       </div>
+          </div>
+       <!--7-end-->
+      </div>
+   <!--jtbz-end-->
+   <!--button-->
+   <div class="khfw_button " >
+   	<p><input type="button" class="button1" value="" /></p>
+    <p>* 只限限招行，建行</p>
+   </div>
+   <!--button-end-->
+   </div>
+   <!--bottom3end-->   
+   
+         <!--bottom4-->
+    <div id="tab_a4" style="display:none;">
+   <!--buzhou-->
+ <div class="khfw_khbz" >
+ 	
+    <div class="khfw_khbz_xz1 khfw_khbz_xz41">
+      <dl>
+    	<dt><a href="#">第一步</a></dt>
+        <dd class="p2"><a href="#"></a></dd>
+        <dd id="m4_1" class=" m_li_a "><a href="#">填写申请信息</a></dd>
+       </dl>
+    </div>
+    
+   <div class="khfw_khbz_xz2 khfw_khbz_xz42">
+      <dl>
+    	<dt><a href="#">第二步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m4_2" class="m_li"  onmouseover='mover4(2);' onmouseout='mout4(2);'><a href="#">获得模拟帐号</a></dd>
+       </dl>
+    </div>
+      
+    <div class="khfw_khbz_xz3 khfw_khbz_xz43">
+      <dl>
+    	<dt><a href="#">第三步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m4_3" class="m_li"  onmouseover='mover4(3);' onmouseout='mout4(3);'><a href="#">进行模拟交易</a></dd>
+       </dl>
+    </div> 
+           
+  <div class="khfw_khbz_bj" style="width:830px;"></div>
+ </div>
+   <!--buzhou-end-->
+   <div class="clear"></div>
+   <!--jtbz-->
+       <div class="khfw_jtbz" >
+         <!--1-->
+         <div id="s4_1" >
+         <div class="khfw_jtbz-top"></div>
+         <div class="khfw_jtbz-main ">
+            <ul>
+              <li><a href="http://tg.zhengjin99.com/zhengjin/mnkh">·模拟账号申请入口 </a> </li>
+              <li><a href="bzzx_mnkh.html">·模拟帐号申请注意事项</a> </li>
+            </ul>    	
+       </div>
+       </div>
+       <!--1-end-->
+       <!--2-->
+        <div id="s4_2"  onmouseover='mover4(2);' onmouseout='mout4(2);' style="display:none;"  class="khfw_jtbz2"> </div>
+       <!--2-end-->
+       <!--3-->
+        <div id="s4_3"  onmouseover='mover4(3);' onmouseout='mout4(3);' style="display:none;" class="khfw_jtbz2">
+        	<div class="khfw_jtbz-top khfw_jtbz-top3"></div>
+            <div class="khfw_jtbz-main khfw_jtbz-main3">
+              <ul>
+                  <li><a href="http://www.zhengjin99.com/download.shtml">·模拟软件下载地址 </a> </li>
+              </ul>    	
+           </div>
+        </div>
+       <!--3-end-->
+ 
+      </div>
+   <!--jtbz-end-->
+   <!--button-->
+   <div class="khfw_button " >
+   	<p><input type="button" class="button1 button2" value="" /></p>
+    <p>* 只限限招行，建行</p>
+   </div>
+   <!--button-end-->
+   </div>
+   <!--bottom4end-->  
+    
+ </div> 
+ <!--main-end-->
+ </div>
+ <!--开户服务-end--> 
+ <!--hf-->
+ <div class="khfw_button-hf"></div> 
+ <!--hf-end-->
+ <!--whole_fwtx-->
+ <div class="w990 mauto">
+ <!--fwtx-->
+ <div class="fwtx">
+	<p class="fwtx-h2"></p>
+    <div class="fwtx2">
+    <ul id="tags">
+    	<li><A onMousedown="selectTag('tagContent0',this)" href="javascript:void(0)">体验客户</a></li>              
+        <li><a onMousedown="selectTag('tagContent1',this)" href="javascript:void(0)">银卡客户</a></li>
+        <li><a onMousedown="selectTag('tagContent2',this)" href="javascript:void(0)">金卡客户</a></li>
+         <li><a onMousedown="selectTag('tagContent3',this)" href="javascript:void(0)">白金卡客户</a></li>
+        <li class="grey"><a onMousedown="selectTag('tagContent4',this)" href="javascript:void(0)">钻石卡客户</a></li>
+    </ul>
+    <!---->
+    <div  id=tagContent class="fwtx_jtnr">
+  <!--fwtx-jtnr-->  
+    <div id=tagContent0  class="fwtx_jtnr">
+    <ul>
+    	
+        <li><img src="../images2014/fwtx-15.jpg"></li>
+        <li><img src="../images2014/fwtx-16.jpg"></li>
+        <li><img src="../images2014/fwtx-17.jpg"></li>
+        <li><img src="../images2014/fwtx-18.jpg"></li>
+        
+        <li><img src="../images2014/fwtx-19.jpg"></li>
+        <li><img src="../images2014/fwtx-20.jpg"></li>
+        <li><img src="../images2014/fwtx-21.jpg"></li>
+        <li><img src="../images2014/fwtx-22.jpg"></li>
+        <li><img src="../images2014/fwtx-23.jpg"></li>
+        <li><img src="../images2014/fwtx-more.jpg"></li>
+    </ul> 
+    </div>
+   <!--fwtx-jtnr-end--> 
+   
+    <!--fwtx-jtnr2-->  
+    <div id=tagContent1 class="fwtx_jtnr" style="display:none;">
+    <ul>
+    	
+        <li><img src="../images2014/fwtx-11.jpg"></li>
+        <li><img src="../images2014/fwtx-12.jpg"></li>
+        
+        <li><img src="../images2014/fwtx-13.jpg"></li>
+        <li><img src="../images2014/fwtx-14.jpg"></li>
+        <li><img src="../images2014/fwtx-15.jpg"></li>
+        <li><img src="../images2014/fwtx-16.jpg"></li>
+        <li><img src="../images2014/fwtx-17.jpg"></li>
+        <li><img src="../images2014/fwtx-18.jpg"></li>
+        
+        <li><img src="../images2014/fwtx-19.jpg"></li>
+        <li><img src="../images2014/fwtx-20.jpg"></li>
+        <li><img src="../images2014/fwtx-21.jpg"></li>
+        <li><img src="../images2014/fwtx-22.jpg"></li>
+        <li><img src="../images2014/fwtx-23.jpg"></li>
+        <li><img src="../images2014/fwtx-more.jpg"></li>
+
+    </ul> 
+    </div>
+   <!--fwtx-jtnr2-end--> 
+   
+       <!--fwtx-jtnr3-->  
+    <div id=tagContent2 class="fwtx_jtnr" style="display:none;">
+    <ul>
+    	
+        <li><img src="../images2014/fwtx-08.jpg"></li>
+        <li><img src="../images2014/fwtx-09.jpg"></li>
+        <li><img src="../images2014/fwtx-10.jpg"></li>
+        <li><img src="../images2014/fwtx-11.jpg"></li>
+        <li><img src="../images2014/fwtx-12.jpg"></li>
+        
+        <li><img src="../images2014/fwtx-13.jpg"></li>
+        <li><img src="../images2014/fwtx-14.jpg"></li>
+        <li><img src="../images2014/fwtx-15.jpg"></li>
+        <li><img src="../images2014/fwtx-16.jpg"></li>
+        <li><img src="../images2014/fwtx-17.jpg"></li>
+        <li><img src="../images2014/fwtx-18.jpg"></li>
+        
+        <li><img src="../images2014/fwtx-19.jpg"></li>
+        <li><img src="../images2014/fwtx-20.jpg"></li>
+        <li><img src="../images2014/fwtx-21.jpg"></li>
+        <li><img src="../images2014/fwtx-22.jpg"></li>
+        <li><img src="../images2014/fwtx-23.jpg"></li>
+        <li><img src="../images2014/fwtx-more.jpg"></li>
+
+    </ul> 
+    </div>
+   <!--fwtx-jtnr3-end--> 
+   
+     <!--fwtx-jtnr4-->  
+    <div id=tagContent3 class="fwtx_jtnr" style="display:none;">
+    <ul>
+    	
+        <li><img src="../images2014/fwtx-03.jpg"></li>
+        <li><img src="../images2014/fwtx-04.jpg"></li>
+        <li><img src="../images2014/fwtx-05.jpg"></li>
+        <li><img src="../images2014/fwtx-06.jpg"></li>
+        
+        <li><img src="../images2014/fwtx-07.jpg"></li>
+        <li><img src="../images2014/fwtx-08.jpg"></li>
+        <li><img src="../images2014/fwtx-09.jpg"></li>
+        <li><img src="../images2014/fwtx-10.jpg"></li>
+        <li><img src="../images2014/fwtx-11.jpg"></li>
+        <li><img src="../images2014/fwtx-12.jpg"></li>
+        
+        <li><img src="../images2014/fwtx-13.jpg"></li>
+        <li><img src="../images2014/fwtx-14.jpg"></li>
+        <li><img src="../images2014/fwtx-15.jpg"></li>
+        <li><img src="../images2014/fwtx-16.jpg"></li>
+        <li><img src="../images2014/fwtx-17.jpg"></li>
+        <li><img src="../images2014/fwtx-18.jpg"></li>
+        
+        <li><img src="../images2014/fwtx-19.jpg"></li>
+        <li><img src="../images2014/fwtx-20.jpg"></li>
+        <li><img src="../images2014/fwtx-21.jpg"></li>
+        <li><img src="../images2014/fwtx-22.jpg"></li>
+        <li><img src="../images2014/fwtx-23.jpg"></li>
+        <li><img src="../images2014/fwtx-more.jpg"></li>
+
+    </ul> 
+    </div>
+   <!--fwtx-jtnr4-end--> 
+    
+   <!--fwtx-jtnr5-->  
+    <div id=tagContent4 class="fwtx_jtnr" style="display:none;">
+    <ul>
+    	<li><img src="../images2014/fwtx-01.jpg"></li>
+        <li><img src="../images2014/fwtx-02.jpg"></li>
+        <li><img src="../images2014/fwtx-03.jpg"></li>
+        <li><img src="../images2014/fwtx-04.jpg"></li>
+        <li><img src="../images2014/fwtx-05.jpg"></li>
+        <li><img src="../images2014/fwtx-06.jpg"></li>
+        
+        <li><img src="../images2014/fwtx-07.jpg"></li>
+        <li><img src="../images2014/fwtx-08.jpg"></li>
+        <li><img src="../images2014/fwtx-09.jpg"></li>
+        <li><img src="../images2014/fwtx-10.jpg"></li>
+        <li><img src="../images2014/fwtx-11.jpg"></li>
+        <li><img src="../images2014/fwtx-12.jpg"></li>
+        
+        <li><img src="../images2014/fwtx-13.jpg"></li>
+        <li><img src="../images2014/fwtx-14.jpg"></li>
+        <li><img src="../images2014/fwtx-15.jpg"></li>
+        <li><img src="../images2014/fwtx-16.jpg"></li>
+        <li><img src="../images2014/fwtx-17.jpg"></li>
+        <li><img src="../images2014/fwtx-18.jpg"></li>
+        
+        <li><img src="../images2014/fwtx-19.jpg"></li>
+        <li><img src="../images2014/fwtx-20.jpg"></li>
+        <li><img src="../images2014/fwtx-21.jpg"></li>
+        <li><img src="../images2014/fwtx-22.jpg"></li>
+        <li><img src="../images2014/fwtx-23.jpg"></li>
+        <li><img src="../images2014/fwtx-more.jpg"></li>
+      
+
+    </ul> 
+    </div>
+   <!--fwtx-jtnr5-end-->
+   </div>
+   <!---->
+   </div>
+ </div>
+ <!--fwtx-end-->
+ <!--kfxx-->
+ <div class="kfxx">
+ 	<div class="zxkf">
+   	  <p>在线客服</p>
+      <p class="p2">
+        	<a onclick="javascript:doyoo.util.openChat('g=66550')" class="li_khfw block"><input type="button" class="zxkf-button clear" value="" /></a> </p>
+      <p class="p2 clear"> 工作时间：09:00-21:00</p>
+        <p class="p2 clear">
+        <span>推荐等级:</span>
+        <a href=""><img src="../images2014/fwzx-03.jpg" width="91" height="15"  alt=""/></a>
+        </p>
+    </div>
+    <!--wxkf-->
+ <div class="wxkf">
+ 	<ul id=tagswx>
+    	<li><a onMousedown="selectTagwx('tagContentwx0',this)" href="javascript:void(0)">微信在线客服</a></li>
+        <li class="grey2"><a onMousedown="selectTagwx('tagContentwx1',this)" href="javascript:void(0)">手机客户端在线客服</a></li>	
+    </ul>
+    
+  <div id=tagContentwx class="wxzxkfwhole"> 
+    <div id=tagContentwx0 class="wxzxkf">
+    	<div class="wxzxkf-img"><img src="../images2014/fwtx-27.jpg" /></div>
+         <p> 微信号：zjgjs212 </p>
+         <p class="p2">扫一扫</p>
+        <p class="p2">推荐等级：</p>
+         <p class="p2"><img src="../images2014/fwtx-28.jpg" width="85" height="13"  alt=""/></p>
+    </div>
+    <div id=tagContentwx1 class="wxzxkf" style="display:none;">
+    	<div class="wxzxkf-img"><img src="../images2014/fwtx-27.jpg" /></div>
+         <p> 微信号：zjgjs212 </p>
+         <p class="p2">扫一扫</p>
+      
+         <p class="p2"><img src="../images2014/fwtx-28.jpg" width="85" height="13"  alt=""/></p>
+    </div>
+ </div>
+    
+ </div>
+ <!--wxkf-end-->
+ <!--kfdh-->
+ <div class="kfphone">
+ <h3>客服电话</h3>
+ <div class="fwzx_index_bottom_more kfdh_more">更多>></div>
+	<div class="clear"></div>
+    <div class="kfphone-nr">
+ 		<p>全国统一客服电话：010-58309199</p>
+        <p>工作时间：09:00-22:00</p>
+ 	</div>
+    
+     <div class="kfphone-nr">
+ 		<p>实盘激活客户服务专线：</p>
+        <p class="p4">010-58309166(普通) 010-58309088(VIP专线)</p>
+        <p class="p4">为客户提供咨询、建议、投诉等优质的客户服务</p>
+        <p class="p4">工作时间：09:00-12:00  &  13:00-21:00</p>
+ 	</div>
+ </div>
+ <!--kfdh-end-->
+ </div>
+ <!--kfxx-end-->
+ 
+ </div>
+ <!--whole_fwtx-end-->
+ <div class="clear" style="height:0px; line-height:0px;"></div>
+    <!--特色服务-->
+    
+    <!--特色服务-end-->
+    <!--foot-->
+     <!--#include virtual="/inc/foot_2014.shtml"-->
+    <!--foot-end-->
+</body>
+</html>

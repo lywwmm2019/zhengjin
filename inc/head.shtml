@@ -1,0 +1,17 @@
+
+    <div  class="">
+    <div id="head" class="pr">
+    	
+        <div class="clear header">
+        	<h1 class="fl logo"><a href="http://www.zhengjin99.com" title="证金贵金属"><img src="/images/logo.png" width="249" height="62" alt="证金贵金属" /></a></h1>
+            <div class="fr ">
+       	    	<img src="/images/kefu_new.jpg" width="430" height="55" alt="客服电话010-58309199" title="客服电话010-58309199" class="fr kefu_newyear" />
+              	<div class="clear" id="loginInfos"><!--<div class="fr">手机号<input id="passport" name="" type="text" class="input_txt" />密码<input id="password" onkeypress="BindEnter(event)" name="" type="password" class="input_txt" /><input name="" type="button" class="input_zcbtn" value="登陆"  onclick="zjgjs.sso.login('')" /><input type="button" class="input_loginbtn" value="注册" onclick="window.open('http://tg.zhengjin99.com/zhengjin/sign_up.jsp')" /><a href="http://tg.zhengjin99.com/zhengjin/find_password.jsp" class="find_pwd">找回密码</a></div><div class="clear"></div>--></div>
+            </div>
+       	<div class="clear"></div>
+        </div>
+    	
+	</div>
+    </div>
+    <script type="text/javascript" src="http://sso.zhengjin99.com/websso/ssologin?mode=ajax"></script>
+    <script src="/js/index_common.js?v=20140422" type="text/javascript"></script>

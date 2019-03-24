@@ -1,0 +1,26 @@
+<div class="hz">
+<ul>
+<li onclick="setTab('hz',1,3)" class="hover" id="hz1">合作银行</li>  
+<li onclick="setTab('hz',2,3)" id="hz2">合作媒体</li>  
+<li onclick="setTab('hz',3,3)" id="hz3">合作机构</li> 
+</ul>
+</div>
+<div class="clear hz_con">
+<div id="con_hz_1" ><img src="/images/bank.jpg" width="978" height="61" border="0" usemap="#Map2" />
+  <map name="Map2" id="Map2">
+    <area shape="rect" coords="15,4,181,60" target='_blank' href="http://www.cmbchina.com/" />
+    <area shape="rect" coords="211,4,460,58" target='_blank' href="http://www.ccb.com/cn/home/" />
+    <area shape="rect" coords="478,8,763,55" target='_blank' href="http://www.icbc.com.cn/icbc/" />
+  </map></div>
+<div id="con_hz_2" style="display:none"><img src="/images/hzmt.jpg" width="978" height="61" border="0" usemap="#Map3" />
+  <map name="Map3" id="Map3">
+    <area shape="rect" coords="12,7,108,57" target='_blank' href="http://www.jrj.com.cn/" />
+    <area shape="rect" coords="148,8,258,59" target='_blank' href="http://www.stockstar.com/" />
+  </map>
+</div>
+<div id="con_hz_3" style="display:none"><img src="/images/hzjg.jpg" width="978" height="61" border="0" usemap="#Map4" />
+  <map name="Map4" id="Map4">
+    <area shape="rect" coords="6,4,246,58" target='_blank' href="http://www.hxce.cn/" />
+    <area shape="rect" coords="273,4,534,59" target='_blank' href="http://www.91nbs.com/Subject/yanjiuyuang/" />
+  </map>
+</div>

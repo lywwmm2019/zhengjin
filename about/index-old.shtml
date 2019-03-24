@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>关于我们</title>
+<!--#include virtual="/inc/head_link.shtml"-->
+</head>
+
+<body>
+	<!--#include virtual="/inc/head.shtml"-->
+    <!--#include virtual="/inc/nav.shtml"-->
+	<div id="about_main" class="clear mb20">
+    	<div class="fl about_left pr">
+        	<div class="pa" style="left:0;top:0;" id="about_left">
+                <!--#include virtual="/inc/left_btn.shtml"-->
+                <ul class="about_link">
+                    <li class="about_link_title">关于我们</li>
+                    <li>&gt;&gt;<span class="about_link_hover"><a href="javascript:void(0)">关于证金</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/ppbz.shtml">品牌标志</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/tzzbz.shtml">投资者保障</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/zlhz.shtml">战略合作</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/bghj.shtml">办公环境</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/tdfc.shtml">团队风采</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/gshj.shtml">公司获奖</a></span></li>
+                    <li>&gt;&gt;<span><a href="/list/list_gsxw.shtml">公司新闻</a></span>
+                    	<ul class="about_link_sec">
+                        	<li><span><a href="/list/list_gshd.shtml">公司活动</a></span></li>
+                            <li><span><a href="/list/list_gsgg.shtml">公司公告</a></span></li>
+                            <li><span><a href="/list/list_mtbd.shtml">媒体报道</a></span></li>
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="/about/shzr.shtml">社会责任</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/lxwm.shtml">联系我们</a></span></li>
+                </ul>
+            </div>
+        </div>
+    	<div class="fr about_right">
+        	<div class="about_right_describe clear over">
+   	    		<img src="../images/zhengjin.jpg" width="415" height="301" class="fl" />
+                <div class="fl about_describe">
+                	<p class="fb tc f14">证金贵金属投资有限公司</p>
+                    <p>控股股东:</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;中国金融在线有限公司（China Finance Online Co., Ltd），创建于1999年。2004年10月15日，公司在美国NASDAQ主板挂牌上市，股票代码（NASDAQ：JRJC），是目前中国唯一一家在美国NASDAQ主板上市的财经类互联网公司。</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="about_right_title pr"><div class="about_wmdys pa" style="left:0;top:-12px;"></div></div>
+        	<div class="about_gyzj_main clear">
+            	<div class="fl about_fgx">
+       	    		<img src="../images/about_bq1.jpg" width="103" height="27" class="block" />
+                    <p class="about_td lh250">&nbsp;&nbsp;&nbsp;&nbsp;我们有集专业与创新与一体的行业业务团队。我们有实时性与权威性兼备的综合金融数据。所有投资建议，都由专业贵金属研究所提供支持。所有实盘指导，都有资深分析师亲自提供。所有投资顾问，都具备贵金属、股市、外汇市场丰富的投资经验。</p>
+            	</div>
+                <div class="fl ml30">
+       	    		<img src="../images/about_bq2.jpg" width="103" height="27" class="block" />
+                    <p class="about_td lh250 about_td2">&nbsp;&nbsp;&nbsp;&nbsp;我们24小时跟踪全球主要金融市场和投资品种价格波动，并在第一时间给出观点及策略。我们将通过在线交流、研究报告、视频指导、短信提醒、电话咨询等"五位一体"的服务模式，为客户创造价值。</p>
+            	</div>
+            	<div class="clear"></div>
+          </div>
+      </div>
+      
+      <div class="clear"></div>
+    </div>
+    <!--#include virtual="/inc/foot.shtml"-->
+</body>
+</html>

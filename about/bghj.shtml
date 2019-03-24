@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>办公环境_证金贵金属</title>
+<!--#include virtual="/inc/head_link.shtml"-->
+<link href="../css/gd.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/jquery.carouFredSel-6.0.4-packed.js"></script>
+<script type="text/javascript">
+			$(function() {
+				
+				
+				//$('#thumbs a').append('<img src="../img/gui/carousel_glare_small.png" class="glare" />');
+
+				$('#carousel').carouFredSel({
+					responsive: false,
+					circular: false,
+					auto: false,
+					items: {
+						visible: 1,
+						width: 469,
+						height: 249
+					},
+					scroll: {
+						fx: 'directscroll'
+					}
+				});
+
+				$('#thumbs').carouFredSel({
+					responsive: true,
+					circular: false,
+					infinite: false,
+					auto: false,
+					prev: '#prev',
+					next: '#next',
+					items: {
+						visible: {
+							min: 4,
+							max: 4
+						},
+						width: 135,
+						height: '66%'
+					}
+				});
+				
+				$('#thumbs a').click(function() {
+					$('#carousel').trigger('slideTo', '#' + this.href.split('#').pop() );
+					$('#thumbs a').removeClass('selected');
+					$(this).addClass('selected');
+					return false;
+				});
+
+			});
+			$(document).ready(function(){
+				$('.caroufredsel_wrapper').css('margin','0 auto');
+			})
+		</script>
+</head>
+
+<body>
+	<!--#include virtual="/inc/head.shtml"-->
+    <!--#include virtual="/inc/nav.shtml"-->
+	<div id="about_main" class="clear mb20">
+    	<div class="fl about_left pr">
+        	<div class="pa" style="left:0;top:0;" id="about_left">
+                <!--#include virtual="/inc/left_btn.shtml"-->
+                <ul class="about_link">
+                    <li class="about_link_title">关于我们</li>
+                    <li>&gt;&gt;<span><a href="javascript:void(0)" onclick="second_linkshow(this);">关于证金</a></span>
+                    	<ul class="about_link_sec">
+                        	<li><span><a href="/about/index.shtml">公司概况</a></span></li>
+                            <li><span><a href="/about/ppbz.shtml">品牌标志</a></span></li>
+                            <!--<li><span><a href="/about/gszz.shtml">公司资质</a></span></li>-->
+                            <li><span><a href="/about/qywh.shtml">企业文化</a></span></li>
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="/about/tzzbz.shtml">投资者保障</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/zlhz.shtml">战略合作</a></span></li>
+                    <li>&gt;&gt;<span class="about_link_hover"><a href="javascript:void(0)">办公环境</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/tdfc.shtml">团队风采</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/gshj.shtml">公司获奖</a></span></li>
+                    <li>&gt;&gt;<span><a href="javascript:void(0)" onclick="second_linkshow(this);">公司动态</a></span>
+                    	<ul class="about_link_sec">
+                        	<li><span><a href="/list/list_mtbd.shtml">媒体报道</a></span></li>
+                        	<li><span><a href="/list/list_gshd.shtml">公司新闻</a></span></li>
+                            <li><span><a href="/list/list_gsgg.shtml">公司公告</a></span></li>                            
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="/list/list_shzr.shtml">社会责任</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/lxwm.shtml">联系我们</a></span></li>
+                </ul>
+            </div>
+        </div>
+    	<div class="fr about_right">
+        	<div class="about_bghj">
+            	<div class="about_new_bghj01"></div>
+                <div class="about_new_bghj02 pr">
+                	<div id="wrapper" style="top:21px;left:55px;">
+                        <div id="carousel-wrapper">
+                            
+                            <div id="carousel">
+                                <span id="pixar"><img src="/images/bghj_big1.jpg" /></span>
+                                <span id="bugs"><img src="/images/bghj_big2.jpg" /></span>
+                                <span id="cars"><img src="/images/bghj_big3.jpg" /></span>
+                                <span id="incred"><img src="/images/bghj_big4.jpg" /></span>
+                                <span id="monsters"><img src="/images/bghj_big5.jpg" /></span>
+                                <span id="nemo"><img src="/images/bghj_big6.jpg" /></span>
+                                <span id="rat"><img src="/images/bghj_big7.jpg" /></span>
+                                <span id="toystory"><img src="/images/bghj_big8.jpg" /></span>
+                        </div>
+                        <div id="thumbs-wrapper">
+                            <div id="thumbs">
+                                <a href="#pixar" class="selected"><img width="122" height="91" src="/images/bghj_small1.jpg"></a>
+                                <a href="#bugs"><img width="122" height="91" src="/images/bghj_small2.jpg"></a> <a href="#cars">
+                                <img width="122" height="91" src="/images/bghj_small3.jpg"></a> <a href="#incred">
+                                <img width="122" height="91" src="/images/bghj_small4.jpg"></a> <a href="#monsters">
+                                <img width="122" height="91" src="/images/bghj_small5.jpg"></a> <a href="#nemo">
+                                <img width="122" height="91" src="/images/bghj_small6.jpg"></a> <a href="#rat">
+                                <img width="122" height="91" src="/images/bghj_small7.jpg"></a> <a href="#toystory">
+                                <img width="122" height="91" src="/images/bghj_small8.jpg"></a> </div>
+                            <a id="prev" href="#"></a><a id="next" href="#"></a></div>
+                        </div>
+                        <div id="donate-spacer">
+                        </div>
+                        <div id="donate">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="about_new_bghj03"></div>
+                <div class="about_new_bghj04"></div>
+                <div class="about_new_bghj05">
+                	<p class="about_bghj_txt lh200">证金贵金属是中国金融在线有限公司（China Finance Online Co., Ltd）旗下的一员。是海西商品交易所及天津贵金属交易所会员单位，公司专注于贵金属及其周边金融业务，涉及范围包括贵金属投资经营、白银制品销售、金融投资咨询服务等。目前业务以海西所现货白银品种的投资服务为主。</p>
+                </div>
+            </div>
+      	</div>
+        
+      	<div class="clear"></div>
+    </div>
+    <!--#include virtual="/inc/foot.shtml"-->
+</body>
+</html>

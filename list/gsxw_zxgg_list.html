@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>证金贵金属-公司新闻-最新公告列表</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/gsxw.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/scrolltop.js"></script>
+<script>
+function setTab(name,cursel,n){
+ for(i=1;i<=n;i++){
+  var menu=document.getElementById(name+i);
+  var con=document.getElementById("con_"+name+"_"+i);
+  menu.className=i==cursel?"hover":"";
+  con.style.display=i==cursel?"block":"none";
+ }
+}
+
+window.onload=function()
+{
+for(var ii=0; ii<document.links.length; ii++)
+document.links[ii].onfocus=function(){this.blur()}
+}
+</script>
+
+</head>
+
+<body>
+<div class="box">
+<div style="background:#fff; ">
+<div style="width:1012px; margin:0 auto" class="clear"><img src="/images/logo.png" alt="证金贵金属"width="1012" height="71" ></div><!--logo-->
+</div>
+<div style="background:url(images/nav_bg.jpg) repeat-x;">
+<div class="nav clear nav2">
+<!--#include virtual="/inc/nav_ul.shtml"-->
+</div>
+</div><!--nav-->
+
+<div style="background:url(/gsxw_images/gsxw_bg.jpg) repeat-x;">
+<div style="width:1001px; margin:0 auto 10px auto; padding-top:5px;" class="clear">
+<div class="fl">
+<div class="left_list mr_b">
+<p class="left_title font_16">公司新闻</p>
+<ul>
+<li><a href="gsxw_list.shtml">公司概况 </a></li>
+<li class="bg_none"><span class="red">最新公告</span></li>
+</ul>
+</div>
+<p class="mr_b"><a href="http://www.zhengjin99.com/fwdt_zxkf.shtml?t=nav06"><img src="/gsxw_images/online.jpg" width="189" height="101"  class="red_bor"/></a></p>
+<p class="red_bor"><img src="/gsxw_images/gsxw_24.jpg" width="187" height="63" /></p>
+</div>
+<div class="fl" style="margin-left:8px; width:802px;">
+<p class="red_bor mr_b"><img src="/gsxw_images/gsxw_banner.jpg" width="800" height="119" /></p>
+<div class="gsxw_r">
+<p class="gsxw_r_title font_12"><strong><a href="index.shtml">首页</a></strong> >> <a href="gsxw_zxgg_list.shtml">最新公告</a></p>
+<div class="con_text">
+<JRJTAG	tagtype="01" clsid="604001001" pagesize="5" pagecount="10" id="mrpl" />
+<#if mrpl?exists>
+	<#list mrpl as d>
+	<div class="zhaiyao">
+	<p class="clear"><b class="fl"><a href="${d.infourl}">${d.title}</a></b>
+	<span class="font_12" style="display:block; text-align:right; float:left; margin-left:20px">${d.makedate?string("yyyy-MM-dd")}</span></p>
+	<p class="font_12">${jrjfund.subgbk(d.description,234)}<a href="${d.infourl}">[阅读全文]</a></p>
+	</div>
+	<p style="margin-top:20px" class="hr"></p>
+	</#list>
+</#if>
+<p class="page">
+<#assign locafilename="gsxw_zxgg_list">
+<#if curpage=2>
+<a href="${locafilename}.shtml"  class="turn_page" target="_self">上一页</a>
+  <#else>
+<a href="${locafilename}-${curpage-1}.shtml"  class="turn_page" target="_self">上一页</a>
+  </#if>
+<#list 1..pagecount as n>
+	  <#if n=1>
+	    <#if curpage=n>
+		  <a class="cur">${n}</a>
+		<#else>
+		  <a href="${locafilename}.shtml" target="_self">${n}</a>
+		</#if>
+	  <#else>
+	    <#if curpage=n>
+		  <a class="cur">${n}</a>
+		<#else>
+		  <a href="${locafilename}-${n}.shtml" target="_self">${n}</a>
+		</#if> 
+	 </#if>
+</#list>
+<#if (curpage!=pagecount)>
+<a href="${locafilename}-${curpage+1}.shtml" class="turn_page" target="_self">下一页</a>
+<#else>
+<a class="turn_page" target="_self">下一页</a>
+</#if>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="foot">
+<!--#include virtual="/inc/bank.shtml"-->
+
+
+</div>
+</div> 
+<!--#include virtual="/inc/foot.shtml"-->
+</div>
+
+
+</body>
+</html>

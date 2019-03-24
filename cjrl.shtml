@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>财经日历</title>
+<!--#include virtual="/inc/head_link.shtml"-->
+<script>
+	$(document).ready(function(){
+		$('.index_foot').hide();
+	})
+	
+	var atext=[];
+	window.onload=function(){
+		var length=$('.xixi_calendar_title .t1').length;
+		for(var i=0;i<length;i++){
+			if($('.xixi_calendar_title .t1').eq(i).text()=='财经月历'){
+				$('.xixi_calendar_title .t1').eq(i).text('财经日历');
+			}	
+			var temp=$('#fx168_tab05_Menu td a').eq(i).text();		
+			atext.push(temp);
+		}
+		
+		if($('.xixi_calendar_title .t3 a').text()=='数据提供: FX168财经网'){
+			$('.xixi_calendar_title .t3').remove();
+			$('.xixi_calendar_title .t4').remove();
+		}
+		
+		$('#fx168_tab05_Menu td a').remove();
+		
+		for(var j=0;j<$('#fx168_tab05_Menu td').length;j++){
+			$('#fx168_tab05_Menu td').eq(j).text(atext[j]);
+		}
+	}
+</script>
+</head>
+
+<body>
+	<div id="about_main" class="clear mb20">
+    	<div class="about_right" id="cjrl" style="margin:0 auto;">
+        	<!--#include virtual="/inc/adv.shtml"-->
+            <div class="cjrl_main">
+            	<!--下面是证金贵金属所需要的财经日历JS，只需嵌套在div中使用技术即可-->
+        		<script language="javascript1.1" src="http://service.fx168.com/FinancialCalendar/FinancialCalendarJsHandler.ashx?Code=ZJGJS"></script>
+                <style>
+					.xixi_calendar_title .t3 a{color:#fff;}
+				</style>
+            </div>
+        </div>
+      
+        <div class="clear"></div>
+    </div>
+</body>
+</html>

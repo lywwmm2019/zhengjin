@@ -1,0 +1,139 @@
+
+	<div id="foot">
+    	<div class="footer">
+        	<ul class="clear footer_link">
+            	<li class="fl">
+                	<ul class="foot_sec">
+                   	  	<li>关于我们</li>
+                        <li><a href="/about/index.shtml">关于证金</a></li>
+                        <li><a href="/about/ppbz.shtml">品牌标志</a></li>
+                        <li><a href="/about/tzzbz.shtml">投资者保障</a></li>
+                        <li><a href="/about/bghj.shtml">办公环境</a></li>
+                        <li><a href="/about/tdfc.shtml">团队风采</a></li>
+                        <li><a href="/about/gshj.shtml">公司荣誉</a></li>
+                        <li><a href="/list/list_mtbd.shtml">公司动态</a></li>
+                        <li><a href="/about/zlhz.shtml">战略合作</a></li>
+                        <li><a href="/list/list_shzr.shtml">社会责任</a></li>
+                        <li><a href="/about/lxwm.shtml">联系我们</a></li>
+                    </ul>
+                </li>
+                <li class="fl">
+                	<ul class="foot_sec">
+                   	  	<li>银市策略</li>
+                        <li><a href="/list/list_zwyp.shtml">早晚评论</a></li>
+                        <li><a href="http://tg.zhengjin99.com/zhengjin/yjbg.jsp">研究报告</a></li>
+                        <li><a href="/list/list_zxdd.shtml">资讯导读</a></li>
+                        <li><a href="/list/list_mrjx.shtml">每日精选</a></li>
+                        <li><a href="http://tg.zhengjin99.com/zhengjin/zjjnList.jsp">证金锦囊</a></li>
+                    </ul>
+                </li>
+                <li class="fl">
+                	<ul class="foot_sec">
+                   	  	<li>证金银屏</li>
+                        <li><a href="http://vd.jrj.com/">新手入门</a></li>
+                        <li><a href="http://tg.zhengjin99.com/zhengjin/sphy/video.jsp?modelId=713">每日解盘</a></li>
+                        <li><a href="http://tg.zhengjin99.com/zhengjin/sphy/video.jsp?modelId=717">对话银家</a></li>
+                        <li><a href="http://tg.zhengjin99.com/zhengjin/sphy/video.jsp?modelId=729">经财相对论</a></li>
+                        <li><a href="http://vd.jrj.com/front/out/zbxb.jsp">证金直播</a></li>
+                        
+                    </ul>
+                </li>
+                <li class="fl">
+                	<ul class="foot_sec">
+                   	  	<li>火线交易</li>
+                        <li><a href="http://zhibo.zhengjin99.com/hxzb/">在线直播</a></li>
+                    </ul>
+                </li>
+                <li class="fl">
+                	<ul class="foot_sec">
+                   	  	<li>服务指南</li>
+                        <li><a href="/fwzx/index.shtml">服务体系</a></li>
+                        <li><a href="/fwzx/khlc.shtml">开户流程</a></li>
+                        <li><a href="/fwzx/khsp.shtml">开户宣传片</a></li>
+                        <li><a href="/fwzx/tjs.shtml">津贵所网上开户</a></li>
+                        <li><a href="/fwzx/qyzn.shtml">网银签约指南</a></li>
+                        <li><a href="/fwzx/bgxz.shtml">客户协议及相关表格下载</a></li>
+                        <li><a href="/fwzx/byjy.shtml">白银交易规则</a></li>
+                        <li><a href="/fwzx/crjgz.shtml">出入金流程及规则</a></li>
+                        <li><a href="/fwzx/jglc.shtml">现货交割流程</a></li>
+                        <li><a href="/fwzx/khts.shtml">客户投诉处理流程</a></li>
+                        <li><a href="/fwzx/rjxz.shtml">软件下载</a></li>
+                    </ul>
+                </li>
+                <li class="fl">
+                	<ul class="foot_sec">
+                   	  	<li>财经日历</li>
+                        <li><a href="/list/list_cjrl.shtml">每日事件查询</a></li>
+                    </ul>
+                </li>
+                <li class="fl">
+                	<ul class="foot_sec">
+                   	  	<li>证金学院</li>
+                        <li><a href="/list/list_cjwt.shtml">常见问题</a></li>
+                        <li><a href="/list/list_zymc.shtml">专业名词</a></li>
+                        <li><a href="/list/list_jbfx.shtml">基本分析</a></li>
+                        <li><a href="/list/list_jsjj.shtml">技术讲解</a></li>
+                        <li><a href="/list/list_xdfx.shtml">心得分享</a></li>
+                        <li><a href="/list/list_fxxwc.shtml">投资下午茶</a></li>
+                    </ul>
+                </li>
+                <li class="fl">
+                	<ul class="foot_sec">
+                   	  	<li>联系我们</li>
+                        <li><a href="/about/lxwm.shtml">地址查看</a></li>
+                    </ul>
+                </li>
+                <li class="fl">
+                	<ul class="foot_sec">
+                   	  	<li>其他</li>
+                        <li><a href="/mzsm.shtml">免责声明</a></li>
+                        <li><a href="/cpyc.shtml">诚聘英才</a></li>
+                        <li><a href="/fxts.shtml">风险提示</a></li>
+                        <li><a href="/bmtk.shtml">隐私保密条款</a></li>
+                        <li><a href="/list/list_cjwt.shtml">常见问题</a></li>
+                    </ul>
+                </li>
+                <br clear="all" />
+            </ul>
+            
+            <!--<div class="tc lh200">
+            	<ul class="qixia clear">
+                    <li class="fb">友情链接：</li>
+                    <li><a href="http://www.baidu.com/" target="_blank" class="baidu"></a></li>
+                    <li><a href="http://www.sina.com/" target="_blank" class="sina"></a></li>
+                    <li><a href="http://www.qq.com/" target="_blank" class="qh"></a></li>
+                    <li><a href="http://www.sohu.com/" target="_blank" class="sohu"></a></li>
+                    <li><a href="http://www.163.com/" target="_blank" class="wangyi"></a></li>
+                    <li><a href="http://www.qq.com/" target="_blank" class="qq"></a></li>
+                    <br clear="all" />
+                </ul>
+            </div>-->
+            
+            <div class="tc lh200 clear">
+            	<ul class="qixia clear">
+                    <li class="fb">合作伙伴：</li>
+                    <li style="width:65px;"><a href="http://www.jrj.com.cn/" style="width:65px;" target="_blank" class="jrj" title="金融界"> </a></li>
+                    <li><a href="http://www.genius.com.cn/" target="_blank" class="jlcj" title="巨灵财经"> </a></li>
+                    <li><a href="http://www.stockstar.com/" target="_blank" class="zqzx" title="证券之星"> </a></li>
+                    <li><a href="http://www.istartrade.com/" target="_blank" class="zxjr" title="证星金融"> </a></li>
+                    <li style="width:70px"><a href="http://www.new-rand.cn/" style="width:70px" target="_blank" class="xld" title="新兰德"> </a></li>
+                    <li style="width:126px"><a href="http://www.tsinghua.edu.cn/publish/pbcsf/index.html" style="width:126px" target="_blank" class="jrxy" title="清华大学五道口金融学院"> </a></li>
+                    <li style="width:147px"><a href="http://tg.zhengjin99.com/zhengjin/yjy/" style="width:147px" target="_blank" class="yjs" title="中国经济与金属研究院"> </a></li>
+                    <li style="width:85px"><a href="http://www.fx168.com/" style="width:85px" target="_blank" class="cjw" title="168财经网"> </a></li>
+                    <br clear="all" />
+                </ul>
+            </div>
+            <p class="tc lh200 ptb10 clear">提示：贵金属交易有风险 入市须谨慎</p>
+            <!--<p class="tc lh200 ptb10">版权所有：证金（福建）贵金属投资有限公司北京咨询分公司</p>-->
+            <p class="tc lh200 ptb10">闽ICP备13007840号 Copyright &copy;2014版权所有 证金（福建）贵金属投资有限公司北京咨询分公司
+            <a  key ="561e17aeefbfb01a6e843f91"  logo_size="124x47"  logo_type="business"  href="http://www.anquan.org" ><script src="http://static.anquan.org/static/outer/js/aq_auth.js"></script></a>
+            <script src="http://s95.cnzz.com/stat.php?id=5354175&web_id=5354175" language="JavaScript"></script>
+    		<script type="text/javascript" src="/js/count.js"></script>
+            </p>
+        </div>
+    </div>
+	<iframe id="zhiboIframe" src="" frameborder="0" style="dispaly: none; width: 100%; height: 0px;"></iframe>
+	<iframe id="ssoIframe" src="" frameborder="0" style="dispaly: none; width: 100%; height: 0px;"></iframe>
+	<iframe id="cookieIframe" src="" frameborder="0" style="dispaly: none; width: 100%; height: 0px;"></iframe>
+
+	<!--#include virtual="/inc/initpwd.shtml"-->

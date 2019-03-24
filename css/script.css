@@ -1,0 +1,79 @@
+/*  
+Theme Name: Airos Chou
+Theme URI: http://www.sunflowamedia.com
+Description: Web Design examples
+*/
+
+/* examples_body */
+.examples_body {
+	clear: both;
+	position: relative;
+	height:108px;
+}
+.example1{
+	clear:both;
+	overflow:hidden;
+}
+.example1 li{
+	float:left;
+	}
+.example1 li span{
+	width:110px;
+	display: block;     
+	overflow: hidden;   
+	white-space: nowrap;   
+	-o-text-overflow: ellipsis;   
+	text-overflow: ellipsis; 
+	font-size:12px;
+	line-height:24px;
+}
+.example1 li span.f14{
+	font-size:14px;
+	line-height:28px;
+	font-weight:bold;
+	}
+.example1 li span.f14 a{
+	color:#7D670D;
+	}
+.example1 li span.col7d670d{
+	display:inline;
+	}
+.bx_wrap {
+	margin-left: 15px;
+}
+.bx_wrap ul img { border: 0;width:98px;height:108px; }
+
+.bx_wrap a.prev {
+	width: 18px;
+	height: 50px;
+	line-height: 17px;
+	outline-style: none;
+	outline-width: 0;
+	position: absolute;
+	top: 35px;
+	left: 0px;
+	text-indent: -9999px;
+	background:url(../images/gif_bg.gif) no-repeat 0px -584px;
+}
+.bx_wrap a.prev:hover {
+	background:url(../images/gif_bg.gif) no-repeat 0px -584px;
+}
+.bx_wrap a.next {
+	width: 18px;
+	height: 50px;
+	line-height: 17px;
+	right:15px;
+	outline-style: none;
+	outline-width: 0;
+	position: absolute;
+	top: 35px;
+	text-indent: -9999px;
+	background:url(../images/gif_bg.gif) no-repeat 0px -534px;
+}
+.bx_wrap a.next:hover {
+	background:url(../images/gif_bg.gif) no-repeat 0px -534px;
+}
+#zjjn{margin-left:10px;}
+#zjjn .bx_wrap{margin-left:20px;}
+#zjjn .bx_wrap a.prev{width:32px;height:52px; background:url(../images/zjjn-10.png) no-repeat;margin:0;}
+#zjjn .bx_wrap a.next{width:32px;height:52px;margin:0; background:url(../images/zjjn-11.png) no-repeat;}

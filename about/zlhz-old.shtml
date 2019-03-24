@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>战略合作</title>
+<!--#include virtual="/inc/head_link.shtml"-->
+</head>
+
+<body>
+	<!--#include virtual="/inc/head.shtml"-->
+    <!--#include virtual="/inc/nav.shtml"-->
+	<div id="about_main" class="clear mb20">
+    	<div class="fl about_left pr">
+        	<div class="pa" style="left:0;top:0;" id="about_left">
+                <!--#include virtual="/inc/left_btn.shtml"-->
+                <ul class="about_link">
+                    <li class="about_link_title">关于我们</li>
+                    <li>&gt;&gt;<span><a href="javascript:void(0)">关于证金</a></span>
+                    	<ul class="about_link_sec">
+                        	<li><span><a href="/about/index.shtml">公司概况</a></span></li>
+                            <li><span><a href="/about/ppbz.shtml">品牌标志</a></span></li>
+                            <li><span><a href="/about/qywh.shtml">企业文化</a></span></li>
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="/about/tzzbz.shtml">投资者保障</a></span></li>
+                    <li>&gt;&gt;<span class="about_link_hover"><a href="javascript:void(0)">战略合作</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/bghj.shtml">办公环境</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/tdfc.shtml">团队风采</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/gshj.shtml">公司获奖</a></span></li>
+                    <li>&gt;&gt;<span><a href="javascript:void(0)">公司新闻</a></span>
+                    	<ul class="about_link_sec">
+                        	<li><span><a href="/list/list_gshd.shtml">公司活动</a></span></li>
+                            <li><span><a href="/list/list_gsgg.shtml">公司公告</a></span></li>
+                            <li><span><a href="/list/list_mtbd.shtml">媒体报道</a></span></li>
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="/about/shzr.shtml">社会责任</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/lxwm.shtml">联系我们</a></span></li>
+                </ul>
+            </div>
+        </div>
+    	<div class="fr about_right">
+			<div class="about_zlhz">
+            	<ul>
+                	<li>
+                    	<a href="http://www.jrj.com.cn/" target="_blank" class="about_hz_jrj ml20"></a>
+                        <a href="http://www.jrj.com.cn/" target="_blank" class="about_zlhz_link">金融界</a>
+                        <p>金融界网站(www.jrj.com)创建于1999年8月，由美国IDG、新加坡VERTEX等共同投资兴建，是中国领先的金融和财经信息提供商，以及全球最大的中文财经网站之一。2004年10月15日，金融界在美国NASDAQ挂牌上市，股票代码（NASDAQ：JRJC），是目前中国唯一一家在美国上市的中国财经类互联网公司。上市后，金融界相继入选权威第三方评选的"2004中国商业网站100强"、"中国主流媒体市场经济地位及商业价值2004年度排序－－资讯类10强网站"、以及"德勤2004年度亚太区高科技高成长500强企业"。2013年8月7日，中国互联网协会发布的2013年度"中国互联网100强"中，金融界网站位居财经类垂直网站首位。</p>
+                    </li>
+                    <li>
+                    	<a href="http://www.stockstar.com/" target="_blank" class="about_hz_zqzx"></a>
+                        <a href="http://www.stockstar.com/" target="_blank" class="about_zlhz_link">证券之星</a>
+                        <p>证券之星（www.stockstar.com）始创于1996年，纳斯达克上市公司&mdash;&mdash;中国金融在线（C.F.O.）旗下网站，中国互联网最早金融服务专业网站之一，是专业的投资理财服务平台，是中国著名的财经资讯网站与移动财经服务提供商之一，同时也是中国领先的互联网媒体。</p>
+                    </li>
+                    <li>
+                    	<a href="http://www.genius.com.cn/" target="_blank" class="about_hz_jlcj"></a>
+                        <a href="http://www.genius.com.cn/" target="_blank" class="about_zlhz_link">巨灵财经</a>
+                        <p>公司成立于1994年，是国内最早提供大中华金融信息服务的专业机构；长期以来，公司同一流学府和国际金融信息服务商紧密合作，以理论为基础、实践为检验标准，不断提升自身科研水平。目前已经同清华大学金融学院、五道口金融学院、Interactive Data Corporation建立了战略合作关系，保障公司业务在高层次的发展水平上!</p>
+                    </li>
+                    <li>
+                    	<a href="http://www.istartrade.com/" target="_blank" class="about_hz_zxjr"></a>
+                        <a href="http://www.istartrade.com/" target="_blank" class="about_zlhz_link">证星金融</a>
+                        <p>证星国际金融有限公司是一家专注于向大中华地区投资者提供覆盖全球金融市场交易与咨询服务的国际性金融公司。业务包括证券交易、期货交易及投资咨询服务。尤其专注于搭建华语区投资者交易香港股票、香港恒生指数及期权、香港国企指数期货及期权、海外期货交易所金融品种（包括且不仅限于LME、CME GROUP、ICE）的平台，为这些投资者提供安全便捷的超一流金融服务。</p>
+                    </li>
+                    <li>
+                    	<a href="http://www.tsinghua.edu.cn/publish/pbcsf/" target="_blank" class="about_hz_jrxy"></a>
+                        <a href="http://www.tsinghua.edu.cn/publish/pbcsf/" target="_blank" class="about_zlhz_link">清华大学五道口金融学院</a>
+                        <p>清华大学五道口金融学院的前身是中国人民银行研究生部。20世纪80年代初，我国经济领域改革方兴未艾。1981年9月，为适应金融体制改革对高素质金融应用型人才的迫切需求，中国人民银行总行金融研究所研究生部正式成立（后更名为中国人民银行研究生部）。同年，经中华人民共和国教育委员会批准，研究生部开始面向社会招收硕士研究生，1987年，开始博士生的培养工作。中国人民银行研究生部成为了我国金融系统第一所专门培养金融高级管理人才的高等学府，由于坐落于北京市海淀区五道口，人们便亲切地简称其为"五道口"。</p>
+                    </li>
+                    <li>
+                    	<a href="javascript:void(0)" class="about_hz_jryjy"></a>
+                        <a href="javascript:void(0)" class="about_zlhz_link">中国金融研究院</a>
+                        <p>中国金融研究院是经国家正式批准，及时为金融业发展提供新的思路、舆论引导和理论研究所组建的战略性研究机构。</p>                        
+　　						<p>中国金融研究院以研究中国金融发展问题为宗旨，由国家各部、委及政府部门和经济、金融领域从事研究、管理等工作经验丰富、知识面宽、综合决策分析能力强的专家和高层管理人员组成的高层智囊团，深层次、全方位地为中国金融改革及未来中国金融发展提供战略性研究蓝本。</p>
+                    </li>
+                    <li>
+                    	<a href="http://www.new-rand.cn/" target="_blank" class="about_hz_xld"></a>
+                        <a href="http://www.new-rand.cn/" target="_blank" class="about_zlhz_link">新兰德</a>
+                        <p>深圳市新兰德证券投资咨询有限公司，是经中国人民银行深圳分行和深圳市工商行政管理局批准成立的国内第一 
+家专业性证券投资咨询公司，于1992年1月16日注册成立。是中国证监会批准的具有相应资质的证券投资咨询机构，业务资格许可证编号为ZX0078。</p>
+                    </li>
+                </ul>
+            </div>
+      	</div>
+      
+      	<div class="clear"></div>
+    </div>
+    <!--#include virtual="/inc/foot.shtml"-->
+</body>
+</html>

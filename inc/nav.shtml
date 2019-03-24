@@ -1,0 +1,141 @@
+	<div id="nav_main" style="z-index:9999;width:100%;" class="nav_newyear">
+	<div id="nav" class="pr">
+    	
+        <ul class="nav clear over">
+        	<li class="nav_none"><a href="http://www.zhengjin99.com">首页</a></li>
+            <li onmouseover="nav_over('nav_about')"><a href="/about/index.shtml">关于我们</a></li>
+            <li onmouseover="nav_over('nav_ys')"><a href="/list/list_zwyp.shtml">银市策略</a></li>
+            <li onmouseover="nav_over('nav_vedio')"><a href="http://vd.jrj.com/front/chat/?room=1&fromUrl=99">证金直播</a></li>
+            <li class="nav_none"><a href="http://newzb.jrj.com/hxzb/hxzb_index.jsp?fromUrl=99">大咖工作室</a></li>
+            <li onmouseover="nav_over('nav_fw')" id=""><a href="/fwzx/index.shtml">服务指南</a></li>
+            <li class="nav_none"><a href="/list/list_cjrl.shtml">财经日历</a></li>
+            <li onmouseover="nav_over('nav_xy')"><a href="/list/list_cjwt.shtml">证金学院</a></li>
+            <li class="nav_none"><a href="/about/lxwm.shtml">联系我们</a></li>
+            
+        </ul>
+        
+        <div class="pa nav_s hide" style="left:111px;top:42px;" id="nav_about_second" onmouseleave="nav_out()">
+        	<span class="nav_sec_left pa" style="height:88px;"></span>
+            <span class="nav_sec_right pa" style="height:88px;"></span>
+        	<ul class="nav_sec over" style="height:38px">
+            	<li>
+                    <ul class="nav_sec_1 nav_1">
+                        <li><a href="/about/index.shtml">关于证金</a></li>
+                        <li><a href="/about/zlhz.shtml">战略合作</a></li>
+                        <li><a href="/about/bghj.shtml">办公环境</a></li>
+                        <li><a href="/about/gshj.shtml">公司获奖</a></li>
+                        <li class="nav_li_specail"><a href="/list/list_shzr.shtml">社会责任</a></li>
+                        <br clear="all" />
+                    </ul>
+                </li>
+                <li>
+                    <ul class="nav_sec_1 nav_1">
+                        <li><a href="/about/ppbz.shtml">品牌标志</a></li>
+                        <li><a href="/about/tzzbz.shtml">投资者保障</a></li>
+                        <li><a href="/about/tdfc.shtml">团队风采</a></li>
+                        <li><a href="/list/list_mtbd.shtml">公司动态</a></li>
+                        <li class="nav_li_specail"><a href="/about/lxwm.shtml">联系我们</a></li>
+                        <br clear="all" />
+                	</ul>
+                </li>                
+            </ul>
+        </div>
+        
+        <div class="pa nav_s hide" style="right:60px;top:42px;" id="nav_fw_second" onmouseleave="nav_out()">
+        	<span class="nav_sec_left pa" style="height:88px;"></span>
+            <span class="nav_sec_right pa" style="height:88px;"></span>
+        	<ul class="nav_sec over" style="_width:860px;_height:37px">
+            	<li>
+                    <ul class="nav_sec_1 nav_1">
+                        <li style="width:70px;"><a href="/fwzx/index.shtml">服务体系</a></li>
+                        <li style="width:100px;"><a href="/fwzx/khsp.shtml">开户宣传片</a></li>
+                        <li style="width:170px;"><a href="/fwzx/bgxz.shtml">客户协议及相关表格下载</a></li>
+                        <li style="width:130px;"><a href="/fwzx/byjy.shtml">白银交易规则</a></li>
+                        <li style="width:130px;"><a href="/fwzx/jglc.shtml">现货交割流程</a></li>
+                        <li class="nav_li_specail"><a href="/fwzx/rjxz.shtml">软件下载</a></li>
+                        <br clear="all" />
+                    </ul>
+                </li>
+                <li>
+                    <ul class="nav_sec_1 nav_1">
+                        <li style="width:70px;"><a href="/fwzx/khlc.shtml">开户流程</a></li>
+                        <li style="width:100px;"><a href="/fwzx/qyzn.shtml">网银签约指南</a></li>
+                        <li style="width:170px;"><a href="/fwzx/crjgz.shtml">出入金流程及规则</a></li>
+                        <li style="width:130px;"><a href="/fwzx/khts.shtml">客户投诉处理流程</a></li>
+                        <li class="nav_li_specail" style="width:130px;"><a href="/fwzx/tjs.shtml">津贵所网上开户</a></li>
+                        <br clear="all" />
+                	</ul>
+                </li>                
+            </ul>
+        </div>
+        
+        <div class="pa nav_s hide" style="left:221px;top:42px;" id="nav_ys_second" onmouseleave="nav_out()">
+        	<span class="nav_sec_left pa" style="height:88px;"></span>
+            <span class="nav_sec_right pa" style="height:88px;"></span>
+        	<ul class="nav_sec over" style="height:38px;zoom:1;">
+            	<li>
+                    <ul class="nav_sec_1 nav_1">
+                        <li><a href="/list/list_zwyp.shtml">早晚评论</a></li>
+                        <li><a href="http://tg.zhengjin99.com/zhengjin/yjbg.jsp">研究报告</a></li>
+                        <li class="nav_li_specail"><a href="http://tg.zhengjin99.com/zhengjin/zjjnList.jsp">证金锦囊</a></li>
+                        <br clear="all" />
+                    </ul>
+                </li>
+                <li>
+                    <ul class="nav_sec_1 nav_1">
+                        <li><a href="/list/list_zxdd.shtml">资讯导读</a></li>
+                        <li><a href="/list/list_mrjx.shtml">每日精选</a></li>
+                        <br clear="all" />
+                	</ul>
+                </li>                
+            </ul>
+        </div>
+        
+        <div class="pa nav_s hide" style="left:331px;top:42px;" id="nav_vedio_second" onmouseleave="nav_out()">
+        	<span class="nav_sec_left pa" style="height:88px;"></span>
+            <span class="nav_sec_right pa" style="height:88px;"></span>
+        	<ul class="nav_sec over" style="height:38px">
+            	<li>
+                    <ul class="nav_sec_1 nav_1">
+                        <li><a href="http://vd.jrj.com/">新手入门</a></li>
+                        <li><a href="http://tg.zhengjin99.com/zhengjin/sphy/video.jsp?modelId=713">每日解盘</a></li>                        
+                        <li class="nav_li_specail"><a href="http://tg.zhengjin99.com/zhengjin/sphy/video.jsp?modelId=717">对话银家</a></li>
+                        <br clear="all" />
+                    </ul>
+                </li>
+                <li>
+                    <ul class="nav_sec_1 nav_1">
+                        <li><a href="http://tg.zhengjin99.com/zhengjin/sphy/video.jsp?modelId=729">经财相对论</a></li>
+                        <li class="nav_li_specail"><a href="http://vd.jrj.com/front/out/zbxb.jsp">证金直播</a></li>
+                        <br clear="all" />
+                	</ul>
+                </li>                
+            </ul>
+        </div>
+        
+        <div class="pa nav_s hide" style="right:52px;top:42px;" id="nav_xy_second" onmouseleave="nav_out()">
+        	<span class="nav_sec_left pa" style="height:88px;"></span>
+            <span class="nav_sec_right pa" style="height:88px;"></span>
+        	<ul class="nav_sec over" style="height:38px">
+            	<li>
+                    <ul class="nav_sec_1 nav_1">
+                        <li><a href="/list/list_cjwt.shtml">常见问题</a></li>
+                        <li><a href="/list/list_jbfx.shtml">基本分析</a></li>
+                        <li class="nav_li_specail"><a href="/list/list_xdfx.shtml">心得分享</a></li>
+                        <br clear="all" />
+                    </ul>
+                </li>
+                <li>
+                    <ul class="nav_sec_1 nav_1">
+                        <li><a href="/list/list_zysy.shtml">专业名词</a></li>
+                        <li><a href="/list/list_jsjj.shtml">技术讲解</a></li>
+                        <li class="nav_li_specail"><a href="/list/list_fxxwc.shtml">投资下午茶</a></li>
+                        <br clear="all" />
+                	</ul>
+                </li>                
+            </ul>
+        </div>
+        
+    </div>
+	</div>
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta name="keywords" content="证金贵金属,白银,白银分析,白银投资,白银价格,白银交易,炒白银,白银走势,白银软件,模拟炒银,美联储,白银在线分析" />
+<meta name="description" content="证金贵金属，首家赴美纳斯达克上市公司中国最大最专业的白银投资服务平台，致力于白银投资、白银交易、现货白银、白银价格、炒白银、现货白银走势、白银行情、模拟炒银、现货白银开户、投资资讯、分析评论、贵金属投资等贵金属综合性投资服务" />
+<meta name="chinaz-site-verification" content="288879e7-ff11-4ab6-a78e-336cdcd754c4" />
+<title>关于我们_证金贵金属</title>
+<!--#include virtual="/inc/head_link_2014.shtml"-->
+<link href="../css/style_2014.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.6.1.min.js"></script>
+<link href="../css/gd.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="../js/jquery.carouFredSel-6.0.4-packed.js"></script>
+<script type="text/javascript">
+			$(function() {
+				
+				
+				//$('#thumbs a').append('<img src="../img/gui/carousel_glare_small.png" class="glare" />');
+
+				$('#carousel').carouFredSel({//carouFredSel是一个内容无限循环播放容器jQuery，可以展示任何类型的HTML元素。支持水平和垂直两个方向。项目                                               的高度和宽度可以不相同。可以动态从容器中删除/添加项目，可以利用向前/向后按纽播放项目或设置成自动播放。
+					responsive: false,//支持responsive/fluid/liquid，保证各种客户端的显示
+					circular: false,
+					auto: false,
+					items: {         //items：指定需要排序的元素
+						visible:1,
+						width: 469,
+						height:'60%'
+					},
+					scroll: {
+						fx: 'directscroll'
+					}
+				});
+
+				$('#thumbs').carouFredSel({
+					responsive:false,
+					circular: false,//circular 触发循环切换的条件是, 设置了 circular: true, 
+					infinite: false,
+					auto: false,
+					prev: '#prev',
+					next: '#next',
+					items: {
+						visible: {
+							min: 4, 
+							max: 4
+						},
+						width:'90%',
+						height: '66%'
+						
+					}
+				});
+				
+				$('#thumbs a').click(function() {
+					$('#carousel').trigger('slideTo', '#' + this.href.split('#').pop() );
+					$('#thumbs a').removeClass('selected');
+					$(this).addClass('selected');
+					return false;
+				});
+
+			});
+			$(document).ready(function(){
+				$('.caroufredsel_wrapper').css('margin','0 auto');
+	          //  $('#thumbs').css({'width':500;'height':81})
+			})
+		</script>
+
+</head>
+
+<body>
+	<!--  -->
+	<!--#include virtual="/inc/head_2014.shtml"-->
+	<!--#include virtual="/inc/nav_guanyu.shtml"-->
+    
+    <!--main-->
+      <div class="w990 mauto clear over index_main mt40 left-nav-gywmbg">
+     	<!--nav-->
+        <div id="left-nav-gywm">
+          <ul>
+        	<li><a href="/list/list_zjfc_shehui.shtml">社会责任</a></li>
+            <li class="sl"><a href="gywm_zjfc_bghj.html">办公环境</a></li>
+            <li><a href="gywm_zjfc_tdfc.html">团队风采</a></li>
+         </ul>
+        </div> 
+       <!--nav-end-->
+       <!--main-right-->
+       <div class="gywm-right" >
+   	         <h4 class="gyzj-title gyzj-title3">办公环境</h4>
+         
+             <div class="about_bghj pr">
+         <!----><div id="wrapper" style="left:0;top:0;">
+         	    <div id="carousel-wrapper" class="caroufredsel_wrapper">
+                            
+                <div id="carousel" class="pr" style="width:469px;height:322px;overflow:hidden; margin:0 auto">
+                                <span id="pixar"><img src="../images2014/bghj_big1.jpg"  width="469" height="322"  alt="" /></span>
+                                <span id="bugs"><img src="../images2014/bghj_big2.jpg"   width="469" height="322"  alt="" /></span>
+                                <span id="cars"><img src="../images2014/bghj_big3.jpg"   width="469" height="322"  alt="" /></span>
+                                <span id="incred"><img src="../images2014/bghj_big4.jpg"   width="469" height="322"  alt="" /></span>
+                                <span id="monsters"><img src="../images2014/bghj_big5.jpg" width="469" height="322"  alt="" /></span>
+                                <span id="nemo"><img src="../images2014/bghj_big6.jpg" width="469" height="322"  alt="" /></span>
+                               
+                                <span id="toystory"><img src="../images2014/bghj_big8.jpg" width="469" height="322"  alt=""  /></span>
+                  </div>
+               <div id="thumbs-wrapper" class="pr" style="height:95px;overflow:hidden;  margin:40px auto 0px auto;">
+                 <div id="thumbs">
+                                <a href="#pixar" class="selected"><img width="122" height="81" src="../images2014/bghj_small1.jpg" /></a>
+                                <a href="#bugs"><img width="122" height="81" src="../images2014/bghj_small2.jpg"></a>
+                                <a href="#cars"><img width="122" height="81" src="../images2014/bghj_small3.jpg"></a> 
+                                <a href="#incred"><img width="122" height="81" src="../images2014/bghj_small4.jpg"></a>
+                                <a href="#monsters"><img width="122" height="81" src="../images2014/bghj_small5.jpg"></a> 
+                                <a href="#nemo"><img width="122" height="81" src="../images2014/bghj_small6.jpg"></a> 
+                               
+                                <a href="#toystory"><img width="122" height="81" src="../images2014/bghj_small8.jpg"></a> 
+                  </div>
+                         <a id="prev" href="#"></a><a id="next" href="#"></a>
+                </div>
+                        
+         <!---->
+          </div>
+        </div>
+       </div>
+       </div>
+       <!--main-right-end-->   
+    
+   
+     </div>
+    <!--main-end-->
+   <!--特色服务-->
+    <!--#include virtual="/inc/bottom_2014.shtml"-->
+    <!--特色服务-end-->
+    <!--foot-->
+     <!--#include virtual="/inc/foot_2014.shtml"-->
+    <!--foot-end-->
+</body>
+</html>

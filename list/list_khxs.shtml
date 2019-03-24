@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>证金贵金属_客户心声列表</title>
+<link href="/css/style.css" rel="stylesheet" type="text/css" />
+<link href="/css/gsxw.css" rel="stylesheet" type="text/css" />
+<link href="/css/fwdt.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="/js/scrolltop.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/jquery-1.6.1.min.js"></script>
+<script>
+function setTab(name,cursel,n){
+ for(i=1;i<=n;i++){
+  var menu=document.getElementById(name+i);
+  var con=document.getElementById("con_"+name+"_"+i);
+  menu.className=i==cursel?"hover":"";
+  con.style.display=i==cursel?"block":"none";
+ }
+}
+
+window.onload=function()
+{
+for(var ii=0; ii<document.links.length; ii++)
+document.links[ii].onfocus=function(){this.blur()}
+}
+</script>
+<style>
+a.shoucang{background:url(http://tg.zhengjin99.com/zhengjin/images/shoucang.gif) no-repeat;height:20px;line-height:20px;color:#767676;padding-left:25px;width:58px;left:0;top:0;font-size:12px;text-align:left;}
+a.shoucang:hover{color:#484848;text-decoration:none;}
+</style>
+<script>
+	$(document).ready(function(){
+		$('.showmsg').append(showmsg());
+	})
+	function showmsg(){
+		var str="";
+		var num_url = "http://tg.zhengjin99.com/zhengjin/user/mail_ajax.jsp";
+		$.getScript(num_url, function(){
+			  //alert(json);
+			  //alert(json.nrnum);
+			if(json.nrnum>0){
+				str='<a style="margin-left:5px;" href="http://tg.zhengjin99.com/zhengjin/user/xxzx.jsp">消息<span style="float:none;margin:0;font-size:12px;color:#f00;font-weight:bold;">(新)</span></a>';
+			}
+			else{
+				str='<a style="margin-left:5px;margin-right:5px;" href="http://tg.zhengjin99.com/zhengjin/user/xxzx.jsp">消息</a>';
+			}
+			//alert(str);
+		  	//return str;
+			$('.showmsg').append(str);
+			return str;
+		});
+	}
+	
+</script>
+</head>
+
+<body>
+
+<!--nav-->
+
+
+
+
+<div class="con_text" style="padding:0;">
+<JRJTAG	tagtype="01" clsid="604001027" pagesize="10" pagecount="1" id="mrpl" />
+<#if mrpl?exists>
+	<#list mrpl as d>
+        <div class="zhaiyao">
+        <p class="clear"><b class="fl"><a target='_blank' href="${d.infourl}">${d.title}</a></b>
+        <span class="font_12" style="display:block; text-align:right; float:left; margin-left:20px">${d.makedate?string("yyyy-MM-dd")}</span><span class="showmsg"></span></p>
+        <p class="font_12">${jrjfund.subgbk(d.description,234)}<a target='_blank' href="${d.infourl}">[阅读全文]</a></p>
+        </div>
+        <p style="margin-top:20px" class="hr"></p>
+	</#list>
+</#if>
+</div>
+
+
+</body>
+</html>

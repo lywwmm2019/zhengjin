@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>深度分析</title>
+<!--#include virtual="/inc/head_link.shtml"-->
+</head>
+
+<body>
+	<!--#include virtual="/inc/head.shtml"-->
+    <!--#include virtual="/inc/nav.shtml"-->
+	<div id="about_main" class="clear mb20">
+    	<div class="fl about_left pr">
+        	<div class="pa" style="left:0;top:0;" id="about_left">
+                <!--#include virtual="/inc/left_btn.shtml"-->
+                <ul class="about_link">
+                    <li class="about_link_title">银市策略</li>
+                    <li>&gt;&gt;<span><a href="/list/list_zwyp.shtml">早晚一评</a></span></li>
+                    <li>&gt;&gt;<span><a href="/list/list_yjbg.shtml">研究报告</a></span></li>
+                    <li>&gt;&gt;<span class="about_link_hover"><a href="javascript:void(0)">深度分析</a></span></li>
+                    <li>&gt;&gt;<span><a href="/list/list_zxdd.shtml">资讯导读</a></span></li>
+                    <li>&gt;&gt;<span><a href="/list/list_mrjx.shtml">每日精选</a></span></li>
+                    <li>&gt;&gt;<span><a href="/list/list_tbtj.shtml">特别推荐</a></span></li>
+                      
+                </ul>
+                <ul class="about_zjjn2">
+                   <li class="about_linkzjjn"><a href="list_zjjn.shtml"><input name="" type="button" class="about_zjjn" value=" "/></a></li> 
+                   
+                </ul>
+            </div>
+  		</div>
+    	<div class="fr about_right">
+        	<!--#include virtual="/inc/adv.shtml"-->
+            <div class="about_gsxw">
+            	<p class="fb f18 pl5 pt10">深度分析</p>
+               
+                <ul class="lh200" id="gsxw">
+                	<JRJTAG	tagtype="01" clsid="604001007" pagesize="15" pagecount="10" id="sdfx" />
+                        <#if sdfx?exists>
+                            <#list sdfx as d>
+           	    				<li><span class="fl"> <a href="${d.infourl}" target="_blank">${d.title}</a></span><span class="fr">${d.makedate?string("yyyy-MM-dd")}</span><span class="clear"></span></li>
+                            </#list>
+						</#if>
+                </ul>
+            	<div id="page" class="clear pager">
+                	<div id="pager" class="page fr">
+                    	<#assign locafilename="list_sdfx">
+                        <#if (curpage>1)>
+                          <span><a href="${locafilename}.shtml" class="turn_page">首 页</a></span>
+                          <#if curpage=2>
+                        <span><a href="${locafilename}.shtml"  class="turn_page" target="_self">上一页</a></span>
+                          <#else>
+                        <span><a href="${locafilename}-${curpage-1}.shtml"  class="turn_page" target="_self">上一页</a></span>
+                          </#if>
+                        </#if>
+                        <#list 1..pagecount as n>
+                              <#if n=1>
+                                <#if curpage=n>
+                                  <span><a class="cur">${n}</a></span>
+                                <#else>
+                                  <span><a href="${locafilename}.shtml" target="_self">${n}</a></span>
+                                </#if>
+                              <#else>
+                                <#if curpage=n>
+                                  <span><a class="cur">${n}</a></span>
+                                <#else>
+                                  <span><a href="${locafilename}-${n}.shtml" target="_self">${n}</a></span>
+                                </#if> 
+                             </#if>
+                        </#list>
+                        <#if (curpage!=pagecount)>
+                        <span><a href="${locafilename}-${curpage+1}.shtml" class="turn_page" target="_self">下一页</a></span>
+                        </#if>
+          			</div>
+                	<div class="clear"></div>
+                </div>
+            </div>
+        </div>
+      
+        <div class="clear"></div>
+    </div>
+    <!--#include virtual="/inc/foot.shtml"-->
+</body>
+</html>

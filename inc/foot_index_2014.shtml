@@ -1,0 +1,60 @@
+    <!--<div id="vedioHint" class="hide"></div>-->
+    
+    <div id="foot" class="lh200">
+    	<!--<img src="/images2014/foot_logo.jpg" width="967" height="180" border="0" usemap="#Map" class="block mauto" />
+        <map name="Map" id="Map">
+          <area shape="rect" coords="689,41,742,65" target="_blank" href="http://www.jrj.com.cn/" />
+          <area shape="rect" coords="746,39,832,64" target="_blank" href="http://www.genius.com.cn/" />
+          <area shape="rect" coords="839,41,907,66" target="_blank" href="http://www.stockstar.com/" />
+          <area shape="rect" coords="749,74,830,97" target="_blank" href="http://www.istartrade.com/" />
+          <area shape="rect" coords="693,73,739,97" target="_blank" href="http://www.new-rand.cn/" />
+          <area shape="rect" coords="840,73,967,99" target="_blank" href="http://www.tsinghua.edu.cn/publish/pbcsf/index.html" />
+          <area shape="rect" coords="762,110,874,131" target="_blank" href="http://tg.zhengjin99.com/zhengjin/yjy/" />
+          <area shape="rect" coords="907,43,967,66" target="_blank" href="http://www.fx168.com/" />
+          <area shape="rect" coords="374,2,661,138" href="/service/gywm_zlhz.html" />
+          <area shape="rect" coords="2,1,335,178" href="/service/gywm_jrjg.html" />
+          <area shape="rect" coords="687,104,758,135" target="_blank" href="http://www.zhengjin023.com/">
+          <area shape="rect" coords="883,109,973,127" target="_blank" href="http://www.mingfu99.com/">
+        </map>-->
+    	<ul class="foot_link">
+   	    <li><a href="/touzi/touzi_index.shtml">投资品种</a>|</li>
+            <!--<li><a href="/service/fwzx_index.shtml">帮助中心</a>|</li>-->
+            <!--<li><a href="http://vd.jrj.com/">证金直播</a>|</li>-->
+            <!--<li><a href="http://newzb.jrj.com/hxzb/hxzb_index.jsp?fromUrl=99">大咖工作室</a>|</li>-->
+            <!--<li><a href="/list/index_yanjiu.shtml">研究中心</a>|</li>-->
+            <li><a href="/download.shtml">软件下载</a>|</li>
+            <li><a href="/service/gywm_tzzbz.html">关于我们</a></li>
+        </ul>
+        <p class="tc mt20 f12">提示：交易有风险 入市须谨慎</p>
+		<p class="tc mt10 f12">津ICP备16000667号-1 Copyright @2014版权所有 天津证金贵金属经营有限公司
+       <!--行业安全绿色图标-->
+        <!-- <div style="width:1000px;margin:0px auto;position:relative;zoom:1;">
+        <a  style="position:absolute;top:-50px;left:775px;" key ="561e17aeefbfb01a6e843f91"  logo_size="124x47"  logo_type="business"  href="http://www.anquan.org" ><script src="http://static.anquan.org/static/outer/js/aq_auth.js"></script></a>
+        </div>-->
+        <!--行业安全绿色图标-end-->
+        </p>
+        
+    </div>
+	<script type="text/javascript" src="http://zb.zhengjingroup.com/js/all-count.js"></script>
+	<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=89860593"></script>
+	<script type="text/javascript" id="bdshell_js"></script>
+	<script type="text/javascript">
+		document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+	</script>
+    <script type="text/javascript" src="/js/count.js"></script>
+    <!--可信网站图片LOGO安装开始-->
+	<!--<script src="http://kxlogo.knet.cn/seallogo.dll?sn=e14031835010047406qu6h000000&size=0"></script>-->
+    <!--可信网站图片LOGO安装结束-->
+    
+    <script>
+		$(window).load(function(){
+			var wwidthP=$(document).width()-990;
+			var dheightP=$(document).height()-108;
+			wwidthP=wwidthP/2;
+			var wkw=$(window).width();
+			wkw=wkw*0.05;
+			$('#kx_verify').css({'position':'absolute','top':-80,'left':wwidthP+wkw});
+		})////
+	</script>
+    
+    <!--#include virtual="/inc/initpwd.shtml"-->

@@ -1,0 +1,626 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>专属特权体验客户客户_个人中心_证金贵金属</title>
+<link href="css/style_v2.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/function.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<STYLE type=text/css>.STYLE1 {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #669933; FONT-SIZE: 36px; FONT-WEIGHT: bold
+}
+</STYLE>
+<script>
+	function changeul(id1,id2,id3){
+		$('.personal_zstq_main').hide();
+		$('#'+id1).show();
+		$('.lv0sl').removeClass('lv0sl');
+		if(id2){
+			$('#'+id2).addClass('lv0sl');
+		}	
+		var length=$('.personal_zstq ul li').length;
+		//$('#'+id3).addClass('ulsl');
+		for(var i=0;i<length;i++){
+			var temp=i+1;
+			$('.personal_zstq ul li').eq(i).removeClass('lv'+temp+'_hover');
+		}	
+		if(id3){
+			var classname=$('#'+id3).attr('class');			
+			$('#'+id3).addClass(classname+'_hover');
+		}
+	}
+	$(document).ready(function(){
+		$('.personal_zstq_main .personal_zstq_mid ul li').mouseenter(function(){
+		$(this).children('.interpret').show();
+		$(this).css({'z-index':999,'position':'relative'})
+		$(this).siblings('li').css({'z-index':0,'position':'relative'});
+		})
+	   $('.personal_zstq_main .personal_zstq_mid ul li').mouseleave(function(){
+		$(this).children('.interpret').hide();
+		})
+		$('.personal_zstq_main .personal_zstq_midgrey ul li').mouseenter(function(){
+		$(this).children('.interpret').show();
+		$(this).css({'z-index':999,'position':'relative'})
+		$(this).siblings('li').css({'z-index':0,'position':'relative'});
+		})
+	   $('.personal_zstq_main .personal_zstq_midgrey ul li').mouseleave(function(){
+		$(this).children('.interpret').hide();
+		})
+		$('.personal_hd').parent().bind('mouseenter',function(){			
+			if(!$(this).find('.personal_hd').is(':animated')){
+				var display=$(this).find('.personal_hd').css('display');
+				var top=$(this).find('.personal_hd').css('top');
+				if(display=='block'&&top=='0px'){
+					return;
+				}
+				h=$(this).height();
+				$(this).find('.personal_hd').css('top',h);
+				$(this).find('.personal_hd').show();
+				$(this).find('.personal_hd').animate({top:'0'},1500);
+			}
+			
+		})
+		$('.personal_hd').bind('mouseleave',function(){
+			if(!$(this).is(':animated')){
+				$(this).animate({top:h},1500);
+			}
+		})
+	})
+	
+	function openClose(id1, id2){
+		if($('#'+id1).is(':hidden')){
+			$('#'+id1).show();
+			
+		}else{
+			$('#'+id1).hide();
+		}
+		$('#'+id2).hide();
+		
+	}
+</script>
+
+</head>
+
+<body>
+	<!-- nav -->
+	<div id="nav" class="pr">
+    	<ul class="w990 mauto">
+        </ul>
+    </div>
+	<div id="personal" class="clear mb20  bg_left_gray">
+    	<div class="fr grzx_right personal_tyk">
+        		<p class="personal_right_title">专属特权</p>
+                <div class="personal_zstq">
+                	<ul class="bq clear over">
+                    	<li class="lv0 " onclick="changeul('tyk','tykli')" id='tykli'><span>体验客户</span></li>
+                        <li class="lv0 " onclick="changeul('pk','pkli')" id="pkli"><span>三星客户</span></li>
+                        <li class="lv0 lv0sl" onclick="changeul('jk','jkli')" id="jkli"><span>四星客户</span></li>
+                        <li class="lv0" onclick="changeul('zsk','zskli')" id="zskli"><span>五星客户</span></li>
+                        <li class="lv0" onclick="changeul('hj','hjli')" id="hjli"><span>VIP客户</span></li>
+                        <li class="lv0" onclick="changeul('dbv','dbvli')" id="dbvli"><span>双V客户</span></li>
+                    </ul>
+                      <div class="personal_zstq_main  personal_jk_enable hide" id="dbv">
+                    	<div class="personal_zstq_top pr">
+                        	<div class="personal_zstq_left2">
+                            	
+                            </div>
+                            <div class="personal_zstq_right pa">
+                            	<input name="" type="button" class="tqsm" value="特权声明" onclick="openClose('personal_zstq_tqdisjk2', 'personal_zstq_discribeqtjk2');"><input name="" type="button" class="wysj" value="我要升级" onclick="openClose('personal_zstq_discribeqtjk2','personal_zstq_tqdisjk2');">
+                            </div>
+                            <div class="pa personal_zstq_discribe hide" id="personal_zstq_discribeqtjk2">
+                            	<div class="arrow pa" style="right:50px;"></div>
+                                <div class="close pa" onclick="$('#personal_zstq_discribeqtjk2').hide();"></div>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                  <tbody><tr>
+                                    <td><p class="fb">双V客户</p></td>
+                                    <td class="pl10">净入金总额大于300万（含300万）之间，即可专双V客户特权</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" style="background:none;" height="10"></td>
+                                  </tr>
+                                  <tr>
+                                    
+                                    <td class="tc" colspan="2"><input name="" type="button" class="wysj" onclick="update(1,2);" value="立即申请" style="margin-right:20px;"><input name="" type="button" onclick="$('#personal_zstq_discribeqtjk').hide();" class="tqsm" value="取消"></td>
+                                  </tr>
+                                </tbody></table>
+                          	</div>
+                          	
+                          	<div class="pa personal_zstq_tqdis hide" id="personal_zstq_tqdisjk2">
+                          		<div class="arrow pa" style="right:175px;"></div>
+                                <div class="close pa" onclick="$('#personal_zstq_tqdisjk2').hide();"></div>
+                            	<p class="title fb">双V客户级别须知</p>
+                                <p>1、净入金总额大于300万（含300万）之间，即可专享双V客户特权。</p>
+                                <p>2、如果因净入金变化引起所属级别发生变化，新级别将在次日12：00前生效。</p>
+                          	</div>
+                        </div>
+                        
+          				<div class="personal_zstq_midgrey clear ">
+                           
+							<h4>专属特权</h4> 
+                        	<ul style="height:490px;">
+                                <li>大盘分析<div class="interpret"><img src="images/hxjy_08.png" class="bottom">深度解析A股，搞定大盘走势。</div></li>
+                                <li>热点追踪<div class="interpret"><img src="images/hxjy_08.png" class="bottom">把握实事热点、操作有的放矢。</div></li>
+                            	<li>新闻解析<div class="interpret"><img src="images/hxjy_08.png" class="bottom">紧跟新闻局势、行情运筹帷幄。</div></li>
+                            	<li>早盘点金<div class="interpret"><img src="images/hxjy_08.png" class="bottom">早间新鲜资讯，还原大宗走势。</div></li>
+                            	<li>视频解盘<div class="interpret"><img src="images/hxjy_08.png" class="bottom">视频讲解行情、专业贴近市场。</div></li>
+                            	<li>实时策略<div class="interpret"><img src="images/hxjy_08.png" class="bottom">最及时的投资策略，完整准确传达给您。</div></li>
+                            	<li>大宗夜校<div class="interpret"><img src="images/hxjy_08.png" class="bottom">帮助新人扫盲，搞懂投资方法。</div></li>
+                                <li>妖股透析<div class="interpret"><img src="images/hxjy_08.png" class="bottom">精准狙击，扑捉涨停。</div></li>
+                            	<li>行情战法<div class="interpret"><img src="images/hxjy_08.png" class="bottom">学会抓住股票趋势行情的方法。</div></li>
+                            	<li>大话日历<div class="interpret"><img src="images/hxjy_08.png" class="bottom">精挑细选投资数据，提前布局行情机会。</div></li>
+                            	<li>油田勘探队<div class="interpret"><img src="images/hxjy_08.png" class="bottom">寻找大宗商品最佳投资机会。</div></li>
+                            	<li>异动解析<div class="interpret"><img src="images/hxjy_08.png" class="bottom">最及时最有效的帮助客户把握异动的原因和机会。</div></li>
+                            	<li>策略追踪<div class="interpret"><img src="images/hxjy_08.png" class="bottom">给出策略后步步跟踪，直到客户止盈离场。</div></li>
+                                <li>场内传真<div class="interpret"><img src="images/hxjy_08.png" class="bottom">推荐股票，从题材到消息，从主力资金到大股东持股全程解析</div></li>
+                            	<li>绝密内参<div class="interpret"><img src="images/hxjy_08.png" class="bottom">精准狙击全天的板块热点和个股机会，以及大盘走势，以抓龙头为目的</div></li>
+                            	<li>个股追踪<div class="interpret"><img src="images/hxjy_08.png" class="bottom">全程跟踪客户手中个股和我们推荐的个股走势以及买卖点。</div></li>
+                            	<li>大咖EIA<div class="interpret"><img src="images/hxjy_08.png" class="bottom">每周EIA操作时段由精英老师坐镇指挥。</div></li>
+                            	<li>锦囊内参<div class="interpret"><img src="images/hxjy_08.png" class="bottom">大宗商品全天的投资交易机会与买卖点把握尽在其中</div></li>
+                            	<li>明富智库<div class="interpret"><img src="images/hxjy_08.png" class="bottom">提前享受明富研究所的研究成果。</div></li>
+                             	<li>大客户项目组<div class="interpret"><img src="images/hxjy_08.png" class="bottom">大咖老师任您选，精英老师提供服务，享受智能投资方案，拥有选择播主权限。</div></li>
+                            	<li>VIP独立档案<div class="interpret"><img src="images/hxjy_08.png" class="bottom">大客户资金管理、大客户交易追踪、建立VIP个人档案、进行VIP投资评估、分析VIP交易模式。</div></li>
+                            	<li>VIP服务项目<div class="interpret"><img src="images/hxjy_08.png" class="bottom">特权型服务（账户诊断、视频订制（特权、订制）。</div></li>
+                            	<li>功能型服务<div class="interpret"><img src="images/hxjy_08.png" class="bottom">品种象限、工具使用（主动和被动）</div></li>
+                                <li>双V妖股<div class="interpret"><img src="images/hxjy_08.png" class="bottom">主抓当日或当周暴利牛股</div></li>
+                             </ul>
+                             <h4>更多专属特权</h4> 
+                             <ul style="height:590px;">
+                            	<li>金牌早晚评</li>
+                                <li>证金学院</li>
+                                <li style="line-height:30px;">大咖工作室<br><span>（历史记录）</span></li>
+                                <li>投资研报</li>
+                                <li>谈股论金</li>
+                                <li>财经日历</li>
+                                <li>在线咨询</li>
+                                <li>财富周刊</li>
+                                <li style="line-height:30px;">K线大咖<br><span>（pc+微信+app）</span></li>
+                                <li>个人中心<div class="interpret"><img src="images/hxjy_08.png">为不同级别的客户提供专属服务的一站式服务平台。</div></li>
+                                <li>客服专线</li>
+                                <li>积分商城</li>
+                                <li>证金小秘书</li>
+                                <li>大咖访谈</li>
+                                <li>策略周报</li>
+                                <li>证金直播<div class="interpret"><img src="images/hxjy_08.png">此节目以独立的分析判断、独到的专业角度，全面覆盖贵金属、证券、期货、理财等各个领域，成为国内投资者首选的热点透析类视频节目。为投资者解决了持续性热点不好把握、持续性事件分析不全面、持续性机会不好操作等问题。</div></li>
+                                <li>电话一对一<div class="interpret"><img src="images/hxjy_08.png" class="bottom">老师+助理</div></li>
+                                <li>专家定制</li>
+                                <li>账户诊断</li>
+                                <li>普通直播是自选</li>
+                                <li>客户评估报告</li>
+                                <li>VIP专属热线</li>
+                                <li style="line-height:30px;">K线大咖+普通自由选</li>
+                                <li>积分商城VIP特权</li>
+                                <li>专属直播平台</li>
+                                <li>私有空间权限 <div class="interpret"><img src="images/hxjy_08.png" class="bottom">自由申请服务、特权私聊区</div></li>
+                                <li>彩虹俱乐部<div class="interpret"><img src="images/hxjy_08.png" class="bottom">机场接送、酒店预订</div></li>
+                                <li>客户关怀<div class="interpret"><img src="images/hxjy_08.png" class="bottom">积分10倍</div></li>
+                                <li>积分商城双V特权</li>
+                            </ul>    
+                        </div>
+                  </div>
+                  
+                    <div class="personal_zstq_main  personal_jk_enable " id="jk">
+                    	<div class="personal_zstq_top pr">
+                        	<div class="personal_zstq_left02">
+                            	
+                            </div>
+                            <div class="personal_zstq_right pa">
+                            	<input name="" type="button" class="tqsm" value="特权声明" onclick="openClose('personal_zstq_tqdisjk', 'personal_zstq_discribeqtjk');"><input name="" type="button" class="wysj" value="我要升级" onclick="openClose('personal_zstq_discribeqtjk','personal_zstq_tqdisjk');">
+                            </div>
+                            <div class="pa personal_zstq_discribe hide" id="personal_zstq_discribeqtjk">
+                            	<div class="arrow pa" style="right:50px;"></div>
+                                <div class="close pa" onclick="$('#personal_zstq_discribeqtjk').hide();"></div>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                  <tbody><tr>
+                                    <td><p class="fb">四星级客户</p></td>
+                                    <td class="pl10">净入金总额达到30～50万（含30万）之间，即可专享四星级客户特权</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" style="background:none;" height="10"></td>
+                                  </tr>
+                                  <tr>
+                                    
+                                    <td class="tc" colspan="2"><input name="" type="button" class="wysj" onclick="update(1,2);" value="立即申请" style="margin-right:20px;"><input name="" type="button" onclick="$('#personal_zstq_discribeqtjk').hide();" class="tqsm" value="取消"></td>
+                                  </tr>
+                                </tbody></table>
+                          	</div>
+                          	
+                          	<div class="pa personal_zstq_tqdis hide" id="personal_zstq_tqdisjk">
+                          		<div class="arrow pa" style="right:175px;"></div>
+                                <div class="close pa" onclick="$('#personal_zstq_tqdisjk').hide();"></div>
+                            	<p class="title fb">四星级客户级别须知</p>
+                                <p>1、净入金总额达到30～50万（含30万）之间，即可专享四星级客户特权。</p>
+                                <p>2、如果因净入金变化引起所属级别发生变化，新级别将在次日12：00前生效。</p>
+                          	</div>
+                        </div>
+                        
+          				<div class="personal_zstq_mid">
+                          <h4>专属特权</h4> 
+                            <ul style="height:290px;">
+                            	<li>大盘分析<div class="interpret"><img src="images/hxjy_08.png" class="bottom">深度解析A股，搞定大盘走势。</div></li>
+                                <li>热点追踪<div class="interpret"><img src="images/hxjy_08.png" class="bottom">把握实事热点、操作有的放矢。</div></li>
+                            	<li>新闻解析<div class="interpret"><img src="images/hxjy_08.png" class="bottom">紧跟新闻局势、行情运筹帷幄。</div></li>
+                            	<li>早盘点金<div class="interpret"><img src="images/hxjy_08.png" class="bottom">早间新鲜资讯，还原大宗走势。</div></li>
+                            	<li>视频解盘<div class="interpret"><img src="images/hxjy_08.png" class="bottom">视频讲解行情、专业贴近市场。</div></li>
+                            	<li>实时策略<div class="interpret"><img src="images/hxjy_08.png" class="bottom">最及时的投资策略，完整准确传达给您。</div></li>
+                            	<li>大宗夜校<div class="interpret"><img src="images/hxjy_08.png" class="bottom">帮助新人扫盲，搞懂投资方法。</div></li>
+                                <li>妖股透析<div class="interpret"><img src="images/hxjy_08.png" class="bottom">精准狙击，扑捉涨停。</div></li>
+                            	<li>行情战法<div class="interpret"><img src="images/hxjy_08.png" class="bottom">学会抓住股票趋势行情的方法。</div></li>
+                            	<li>大话日历<div class="interpret"><img src="images/hxjy_08.png" class="bottom">精挑细选投资数据，提前布局行情机会。</div></li>
+                            	<li>油田勘探队<div class="interpret"><img src="images/hxjy_08.png" class="bottom">寻找大宗商品最佳投资机会。</div></li>
+                            	<li>异动解析<div class="interpret"><img src="images/hxjy_08.png" class="bottom">最及时最有效的帮助客户把握异动的原因和机会。</div></li>
+                            	<li>策略追踪<div class="interpret"><img src="images/hxjy_08.png" class="bottom">给出策略后步步跟踪，直到客户止盈离场。</div></li>
+
+                            </ul>
+                            <h4>更多专属特权</h4> 
+                            <ul style="height:390px;">
+                            	<li>金牌早晚评</li>
+                                <li>证金学院</li>
+                                <li style="line-height:30px;">大咖工作室<br><span>（历史记录）</span></li>
+                                <li>投资研报</li>
+                                <li>谈股论金</li>
+                                <li>财经日历</li>
+                                <li>在线咨询</li>
+                                <li>财富周刊</li>
+                                <li style="line-height:30px;">K线大咖<br><span>（pc+微信+app）</span></li>
+                                <li>个人中心<div class="interpret"><img src="images/hxjy_08.png">为不同级别的客户提供专属服务的一站式服务平台。</div></li>
+                                <li>证金直播<div class="interpret"><img src="images/hxjy_08.png">此节目以独立的分析判断、独到的专业角度，全面覆盖贵金属、证券、期货、理财等各个领域，成为国内投资者首选的热点透析类视频节目。为投资者解决了持续性热点不好把握、持续性事件分析不全面、持续性机会不好操作等问题。</div></li>
+                                <li>客服专线</li>
+                                <li>积分商城</li>
+                                <li>证金小秘书</li>
+                                <li>大咖访谈</li>
+                                <li>策略周报</li>
+ 
+                            </ul>                                
+                        </div>
+                  </div>
+                  
+                  
+                  <div class="personal_zstq_main personal_zstq_tyk hide" id="tyk">
+                    	<div class="personal_zstq_top pr">
+                        	<div class="personal_zstq_left02">
+                            	
+                            </div>
+                            <div class="personal_zstq_right pa">
+                            	<input name="" type="button" class="tqsm" value="特权声明" onclick="openClose('personal_zstq_tqdistyk', 'personal_zstq_discribetyk');"><input name="" type="button" class="wysj" value="我要升级" onclick="openClose('personal_zstq_discribetyk', 'personal_zstq_tqdistyk');">
+                            </div>
+                          	<div class="pa personal_zstq_tqdis hide" id="personal_zstq_tqdistyk">
+                          		<div class="arrow pa" style="right:175px;"></div>
+                                <div class="close pa" onclick="$('#personal_zstq_tqdistyk').hide();"></div>
+                            	<p class="title fb">体验客户级别须知</p>
+                                <p>1、体验客户尚未成为正式用户，只能享有基础服务。</p>
+                                <p>2、如果因净入金变化引起所属级别发生变化，新级别将在次日12：00前生效。</p>
+                          	</div>
+                            <div class="pa personal_zstq_discribe hide" id="personal_zstq_discribetyk">
+                            	<div class="arrow pa" style="right:50px;"></div>
+                                <div class="personal_sj">
+                                    <div class="close pa" onclick="$('#personal_zstq_discribetyk').hide();"></div>
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tbody><tr>
+                                        <td><p class="fb">3星级客户</p></td>
+                                        <td class="pl10">10≤净入金总额＜30万，即可获得3星级客户服务。</td>
+                                        <td><input name="" type="button" class="lv_up" onclick="update(0,1);$(this).parents('.personal_sj').siblings('.personal_zstq_distj').show();$(this).parents('.personal_sj').hide();"></td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="3" style="background:none;" height="10"></td>
+                                      </tr>
+                                      <tr>
+                                        <td><p class="fb">4星级客户</p></td>
+                                        <td class="pl10">30≤净入金总额＜50万，即可获得4星级客户服务。</td>
+                                        <td><input name="" type="button" class="lv_up" onclick="update(0,2);$(this).parents('.personal_sj').siblings('.personal_zstq_distj').show();$(this).parents('.personal_sj').hide();"></td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="3" style="background:none;" height="10"></td>
+                                      </tr>
+                                      <tr>
+                                        <td><p class="fb">5星级客户</p></td>
+                                        <td class="pl10">50≤净入金总额＜100万，即可获得5星级客户服务。</td>
+                                        <td><input name="" type="button" class="lv_up" onclick="update(0,3);$(this).parents('.personal_sj').siblings('.personal_zstq_distj').show();$(this).parents('.personal_sj').hide();"></td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="3" style="background:none;" height="10"></td>
+                                      </tr>
+                                      <tr>
+                                        <td><p class="fb">VIP客户</p></td>
+                                        <td class="pl10">100≤净入金总额＜300万，即可获得VIP客户服务。</td>
+                                        <td><input name="" type="button" class="lv_up" onclick="update(0,4);$(this).parents('.personal_sj').siblings('.personal_zstq_distj').show();$(this).parents('.personal_sj').hide();"></td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="3" style="background:none;" height="10"></td>
+                                      </tr>
+                                      <tr>
+                                        <td><p class="fb">双V客户</p></td>
+                                        <td class="pl10">净入金总额≥300万，即可获得双V客户服务。</td>
+                                        <td><input name="" type="button" class="lv_up" onclick="update(0,4);$(this).parents('.personal_sj').siblings('.personal_zstq_distj').show();$(this).parents('.personal_sj').hide();"></td>
+                                      </tr>                                  
+                                    </tbody></table>
+                                </div>
+                                <div class="hide personal_zstq_distj">
+                                    <div class="arrow pa" style="right:50px;"></div>
+                                    <p class="tc">您的申请已经提交至客户代表，稍后客户代表将和您联系！请您耐心等候！</p>
+                                    <p class="tc" style="margin-top:100px;"><input name="" type="button" class="tqsm" value="关闭" onclick="$('#personal_zstq_discribetyk').hide();"></p>
+                                </div>
+                          	</div>
+                        </div>
+          				<div class="personal_zstq_midgrey clear ">
+                         	<h4>专属特权</h4> 
+                            <ul style="min-height:110px;">
+                            	<li>个人中心<div class="interpret"><img src="images/hxjy_08.png">为不同级别的客户提供专属服务的一站式服务平台。</div></li>
+                                <li>证金直播<div class="interpret"><img src="images/hxjy_08.png">此节目以独立的分析判断、独到的专业角度，全面覆盖贵金属、证券、期货、理财等各个领域，成为国内投资者首选的热点透析类视频节目。为投资者解决了持续性热点不好把握、持续性事件分析不全面、持续性机会不好操作等问题。</div></li>
+                            </ul>
+                            <h4>更多专属特权</h4> 
+                            <ul style="height:200px;">
+                            	<li>金牌早晚评</li>
+                                <li>证金学院</li>
+                                <li style="line-height:30px;">大咖工作室<br><span>（历史记录）</span></li>
+                                <li>投资研报</li>
+                                <li>谈股论金</li>
+                                <li>财经日历</li>
+                                <li>在线咨询</li>
+                                <li>财富周刊</li>
+                                <li style="line-height:30px;">K线大咖<br><span>（pc+微信+app）</span></li>
+                            </ul>   
+                        </div>
+                     </div>
+                  <div class="personal_zstq_main personal_pk_enable hide" id="pk">
+                    	<div class="personal_zstq_top pr">
+                        	<div class="personal_zstq_left">
+                            	
+                            </div>
+                            <div class="personal_zstq_right pa">
+                            	<input name="" type="button" class="tqsm" value="特权声明" onclick="openClose('personal_zstq_tqdispk', 'personal_zstq_discribeqtyk');"><input name="" type="button" class="wysj" value="我要升级" onclick="openClose('personal_zstq_discribeqtyk', 'personal_zstq_tqdispk');">
+                            </div>
+                          	<div class="pa personal_zstq_tqdis hide" id="personal_zstq_tqdispk">
+                          		<div class="arrow pa" style="right:175px;"></div>
+                                <div class="close pa" onclick="$('#personal_zstq_tqdispk').hide();"></div>
+                            	<p class="title fb">三星级客户级别须知</p>
+                                <p>1、激活后历史最大净入金达到10～30万（包含10万），即可专享三星级客户特权。</p>
+                                <p>2、如果因净入金变化引起所属级别发生变化，新级别将在次日12：00前生效。</p>
+                          	</div>
+                            <div class="pa personal_zstq_discribe hide" id="personal_zstq_discribeqtyk">
+                            	<div class="arrow pa" style="right:50px;"></div>
+                                <div class="close pa" onclick="$('#personal_zstq_discribeqtyk').hide();"></div>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                  <tbody><tr>
+                                    <td><p class="fb">三星级客户</p></td>
+                                    <td class="pl10">净入金总额达到10～30万（含10万）之间，即可专享三星级客户特权</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" style="background:none;" height="10"></td>
+                                  </tr>
+                                  <tr>
+                                    
+                                    <td class="tc" colspan="2"><input name="" type="button" onclick="update(1,1);" class="wysj" value="立即申请" style="margin-right:20px;"><input name="" type="button" onclick="$('#personal_zstq_discribeqtyk').hide();" class="tqsm" value="取消"></td>
+                                  </tr>
+                                </tbody></table>
+                          	</div>
+                        </div>
+                        
+          				<div class="personal_zstq_midgrey">
+                        	<h4>专属特权</h4> 
+                            <ul style="height:200px;">
+                            	<li>大盘分析<div class="interpret"><img src="images/hxjy_08.png" class="bottom">深度解析A股，搞定大盘走势。</div></li>
+                                <li>热点追踪<div class="interpret"><img src="images/hxjy_08.png" class="bottom">把握实事热点、操作有的放矢。</div></li>
+                            	<li>新闻解析<div class="interpret"><img src="images/hxjy_08.png" class="bottom">紧跟新闻局势、行情运筹帷幄。</div></li>
+                            	<li>早盘点金<div class="interpret"><img src="images/hxjy_08.png" class="bottom">早间新鲜资讯，还原大宗走势。</div></li>
+                            	<li>视频解盘<div class="interpret"><img src="images/hxjy_08.png" class="bottom">视频讲解行情、专业贴近市场。</div></li>
+                            	<li>实时策略<div class="interpret"><img src="images/hxjy_08.png" class="bottom">最及时的投资策略，完整准确传达给您。</div></li>
+                            	<li>大宗夜校<div class="interpret"><img src="images/hxjy_08.png" class="bottom">帮助新人扫盲，搞懂投资方法。</div></li>
+
+                            </ul>
+                            <h4>更多专属特权</h4> 
+                            <ul style="height:300px;">
+                            	<li>金牌早晚评</li>
+                                <li>证金学院</li>
+                                <li style="line-height:30px;">大咖工作室<br><span>（历史记录）</span></li>
+                                <li>投资研报</li>
+                                <li>谈股论金</li>
+                                <li>财经日历</li>
+                                <li>在线咨询</li>
+                                <li>财富周刊</li>
+                                <li style="line-height:30px;">K线大咖<br><span>（pc+微信+app）</span></li>
+                                <li>个人中心<div class="interpret"><img src="images/hxjy_08.png">为不同级别的客户提供专属服务的一站式服务平台。</div></li>
+                                <li>证金直播<div class="interpret"><img src="images/hxjy_08.png">此节目以独立的分析判断、独到的专业角度，全面覆盖贵金属、证券、期货、理财等各个领域，成为国内投资者首选的热点透析类视频节目。为投资者解决了持续性热点不好把握、持续性事件分析不全面、持续性机会不好操作等问题。</div></li>
+                                <li>客服专线</li>
+                                <li>积分商城</li>
+                                <li>证金小秘书</li>
+                            </ul>  	
+                        </div>
+                  </div>
+                  
+                  
+                  <div class="personal_zstq_main personal_zstq_enable hide" id="zsk">
+                    	<div class="personal_zstq_top pr">
+                        	<div class="personal_zstq_left">
+                            	
+                            </div>
+                            <div class="personal_zstq_right pa">
+                            	<input name="" type="button" class="tqsm" value="特权声明" onclick="openClose('personal_zstq_tqdiszsk','personal_zstq_discribeqtzsk');"><input name="" type="button" class="wysj" value="我要升级" onclick="openClose('personal_zstq_discribeqtzsk', 'personal_zstq_tqdiszsk');">
+                            </div>
+                          	<div class="pa personal_zstq_tqdis hide" id="personal_zstq_tqdiszsk">
+                          		<div class="arrow pa" style="right:175px;"></div>
+                                <div class="close pa" onclick="$('#personal_zstq_tqdiszsk').hide();"></div>
+                            	<p class="title fb">五星级客户级别须知</p>
+                                <p style="color:#aeaeae;">1、净入金总额达到50～100万（含50万）之间，即可专享五星级客户特权。</p>
+                                <p style="color:#aeaeae;">2、如果因净入金变化引起所属级别发生变化，所属级别的更新将在次日12:00前进行。</p>
+                          	</div>
+                          	<div class="pa personal_zstq_discribe hide" id="personal_zstq_discribeqtzsk">
+                            	<div class="arrow pa" style="right:50px;"></div>
+                                <div class="close pa" onclick="$('#personal_zstq_discribeqtzsk').hide();"></div>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                  <tbody><tr>
+                                    <td><p class="fb">五星级客户</p></td>
+                                    <td class="pl10" style="color:#aeaeae;">净入金总额达到50～300万（含50万）之间，即可专享五星级客户特权</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" style="background:none;" height="10"></td>
+                                  </tr>
+                                  <tr>
+                                    
+                                    <td class="tc" colspan="2"><input name="" type="button" onclick="update(1,3);" class="wysj" value="立即申请" style="margin-right:20px;"><input name="" type="button" onclick="$('#personal_zstq_discribeqtzsk').hide();" class="tqsm" value="取消"></td>
+                                  </tr>
+                                </tbody></table>
+                          	</div>
+                            
+                        </div>
+                        
+          				<div class="personal_zstq_midgrey clear ">
+                            <h4>专属特权</h4> 
+                        	<ul style="height:390px;">
+                                <li>大盘分析<div class="interpret"><img src="images/hxjy_08.png" class="bottom">深度解析A股，搞定大盘走势。</div></li>
+                                <li>热点追踪<div class="interpret"><img src="images/hxjy_08.png" class="bottom">把握实事热点、操作有的放矢。</div></li>
+                            	<li>新闻解析<div class="interpret"><img src="images/hxjy_08.png" class="bottom">紧跟新闻局势、行情运筹帷幄。</div></li>
+                            	<li>早盘点金<div class="interpret"><img src="images/hxjy_08.png" class="bottom">早间新鲜资讯，还原大宗走势。</div></li>
+                            	<li>视频解盘<div class="interpret"><img src="images/hxjy_08.png" class="bottom">视频讲解行情、专业贴近市场。</div></li>
+                            	<li>实时策略<div class="interpret"><img src="images/hxjy_08.png" class="bottom">最及时的投资策略，完整准确传达给您。</div></li>
+                            	<li>大宗夜校<div class="interpret"><img src="images/hxjy_08.png" class="bottom">帮助新人扫盲，搞懂投资方法。</div></li>
+                                <li>妖股透析<div class="interpret"><img src="images/hxjy_08.png" class="bottom">精准狙击，扑捉涨停。</div></li>
+                            	<li>行情战法<div class="interpret"><img src="images/hxjy_08.png" class="bottom">学会抓住股票趋势行情的方法。</div></li>
+                            	<li>大话日历<div class="interpret"><img src="images/hxjy_08.png" class="bottom">精挑细选投资数据，提前布局行情机会。</div></li>
+                            	<li>油田勘探队<div class="interpret"><img src="images/hxjy_08.png" class="bottom">寻找大宗商品最佳投资机会。</div></li>
+                            	<li>异动解析<div class="interpret"><img src="images/hxjy_08.png" class="bottom">最及时最有效的帮助客户把握异动的原因和机会。</div></li>
+                            	<li>策略追踪<div class="interpret"><img src="images/hxjy_08.png" class="bottom">给出策略后步步跟踪，直到客户止盈离场。</div></li>
+                                <li>场内传真<div class="interpret"><img src="images/hxjy_08.png" class="bottom">推荐股票，从题材到消息，从主力资金到大股东持股全程解析</div></li>
+                            	<li>绝密内参<div class="interpret"><img src="images/hxjy_08.png" class="bottom">精准狙击全天的板块热点和个股机会，以及大盘走势，以抓龙头为目的</div></li>
+                            	<li>个股追踪<div class="interpret"><img src="images/hxjy_08.png" class="bottom">全程跟踪客户手中个股和我们推荐的个股走势以及买卖点。</div></li>
+                            	<li>大咖EIA<div class="interpret"><img src="images/hxjy_08.png" class="bottom">每周EIA操作时段由精英老师坐镇指挥。</div></li>
+                            	<li>锦囊内参<div class="interpret"><img src="images/hxjy_08.png" class="bottom">大宗商品全天的投资交易机会与买卖点把握尽在其中</div></li>
+                            	<li>明富智库<div class="interpret"><img src="images/hxjy_08.png" class="bottom">提前享受明富研究所的研究成果。</div></li>
+                             </ul>
+                             <h4>更多专属特权</h4> 
+                            <ul style="height:490px;">
+                            	<li>金牌早晚评</li>
+                                <li>证金学院</li>
+                                <li style="line-height:30px;">大咖工作室<br><span>（历史记录）</span></li>
+                                <li>投资研报</li>
+                                <li>谈股论金</li>
+                                <li>财经日历</li>
+                                <li>在线咨询</li>
+                                <li>财富周刊</li>
+                                <li style="line-height:30px;">K线大咖<br><span>（pc+微信+app）</span></li>
+                                <li>个人中心<div class="interpret"><img src="images/hxjy_08.png">为不同级别的客户提供专属服务的一站式服务平台。</div></li>
+                                <li>客服专线</li>
+                                <li>积分商城</li>
+                                <li>证金小秘书</li>
+                                <li>大咖访谈</li>
+                                <li>策略周报</li>
+                                <li>证金直播<div class="interpret"><img src="images/hxjy_08.png">此节目以独立的分析判断、独到的专业角度，全面覆盖贵金属、证券、期货、理财等各个领域，成为国内投资者首选的热点透析类视频节目。为投资者解决了持续性热点不好把握、持续性事件分析不全面、持续性机会不好操作等问题。</div></li>
+                                <li>电话一对一<div class="interpret"><img src="images/hxjy_08.png" class="bottom">老师+助理</div></li>
+                                <li>专家定制</li>
+                                <li>账户诊断</li>
+                                <li>普通直播是自选</li>
+                                <li>客户评估报告</li>
+
+                            </ul>    
+                        </div>
+                  </div>
+                  
+                  
+                  <div class="personal_zstq_main personal_hj  personal_hj_enable hide" id="hj">
+                    	<div class="personal_zstq_top pr">
+                        	<div class="personal_zstq_left">
+                            	
+                            </div>
+                            <div class="personal_zstq_right pa">
+                            	<input name="" type="button" class="tqsm" value="特权声明" onclick="openClose('personal_zstq_tqdishj', 'personal_zstq_discribeqthjk');"><input name="" type="button" class="wysj" value="我要升级" onclick="openClose('personal_zstq_discribeqthjk', 'personal_zstq_tqdishj');;">
+                            </div>
+                          	<div class="pa personal_zstq_tqdis hide" id="personal_zstq_tqdishj">
+                          		<div class="arrow pa" style="right:175px;"></div>
+                                <div class="close pa" onclick="$('#personal_zstq_tqdishj').hide();"></div>
+                            	<p class="title fb">VIP客户级别须知</p>
+                                <p>1、净入金总额达到100~300万（含100万），即可专享VIP客户特权。</p>
+                                <p>2、如果因净入金变化引起所属级别发生变化，所属级别的更新将在次日12:00前进行。</p>
+                          	</div>
+                            <div class="pa personal_zstq_discribe hide" id="personal_zstq_discribeqthjk">
+                            	<div class="arrow pa" style="right:50px;"></div>
+                                <div class="close pa" onclick="$('#personal_zstq_discribeqthjk').hide();"></div>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                  <tbody><tr>
+                                    <td><p class="fb">VIP客户</p></td>
+                                    <td class="pl10">净入金总额达到100~300万（含100万），即可专享VIP客户特权</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" style="background:none;" height="10"></td>
+                                  </tr>
+                                  <tr>
+                                    
+                                    <td class="tc" colspan="2"><input name="" type="button" onclick="update(1,4);" class="wysj" value="立即申请" style="margin-right:20px;"><input name="" type="button" onclick="$('#personal_zstq_discribeqthjk').hide();" class="tqsm" value="取消"></td>
+                                  </tr>
+                                </tbody></table>
+                          	</div>
+                        </div>
+                        
+          				<div class="personal_zstq_midgrey clear ">
+							<h4>专属特权</h4> 
+                        	<ul style="height:490px;">
+                                <li>大盘分析<div class="interpret"><img src="images/hxjy_08.png" class="bottom">深度解析A股，搞定大盘走势。</div></li>
+                                <li>热点追踪<div class="interpret"><img src="images/hxjy_08.png" class="bottom">把握实事热点、操作有的放矢。</div></li>
+                            	<li>新闻解析<div class="interpret"><img src="images/hxjy_08.png" class="bottom">紧跟新闻局势、行情运筹帷幄。</div></li>
+                            	<li>早盘点金<div class="interpret"><img src="images/hxjy_08.png" class="bottom">早间新鲜资讯，还原大宗走势。</div></li>
+                            	<li>视频解盘<div class="interpret"><img src="images/hxjy_08.png" class="bottom">视频讲解行情、专业贴近市场。</div></li>
+                            	<li>实时策略<div class="interpret"><img src="images/hxjy_08.png" class="bottom">最及时的投资策略，完整准确传达给您。</div></li>
+                            	<li>大宗夜校<div class="interpret"><img src="images/hxjy_08.png" class="bottom">帮助新人扫盲，搞懂投资方法。</div></li>
+                                <li>妖股透析<div class="interpret"><img src="images/hxjy_08.png" class="bottom">精准狙击，扑捉涨停。</div></li>
+                            	<li>行情战法<div class="interpret"><img src="images/hxjy_08.png" class="bottom">学会抓住股票趋势行情的方法。</div></li>
+                            	<li>大话日历<div class="interpret"><img src="images/hxjy_08.png" class="bottom">精挑细选投资数据，提前布局行情机会。</div></li>
+                            	<li>油田勘探队<div class="interpret"><img src="images/hxjy_08.png" class="bottom">寻找大宗商品最佳投资机会。</div></li>
+                            	<li>异动解析<div class="interpret"><img src="images/hxjy_08.png" class="bottom">最及时最有效的帮助客户把握异动的原因和机会。</div></li>
+                            	<li>策略追踪<div class="interpret"><img src="images/hxjy_08.png" class="bottom">给出策略后步步跟踪，直到客户止盈离场。</div></li>
+                                <li>场内传真<div class="interpret"><img src="images/hxjy_08.png" class="bottom">推荐股票，从题材到消息，从主力资金到大股东持股全程解析</div></li>
+                            	<li>绝密内参<div class="interpret"><img src="images/hxjy_08.png" class="bottom">精准狙击全天的板块热点和个股机会，以及大盘走势，以抓龙头为目的</div></li>
+                            	<li>个股追踪<div class="interpret"><img src="images/hxjy_08.png" class="bottom">全程跟踪客户手中个股和我们推荐的个股走势以及买卖点。</div></li>
+                            	<li>大咖EIA<div class="interpret"><img src="images/hxjy_08.png" class="bottom">每周EIA操作时段由精英老师坐镇指挥。</div></li>
+                            	<li>锦囊内参<div class="interpret"><img src="images/hxjy_08.png" class="bottom">大宗商品全天的投资交易机会与买卖点把握尽在其中</div></li>
+                            	<li>明富智库<div class="interpret"><img src="images/hxjy_08.png" class="bottom">提前享受明富研究所的研究成果。</div></li>
+                             	<li>大客户项目组<div class="interpret"><img src="images/hxjy_08.png" class="bottom">集中最牛精英老师，享受智能投资方案，拥有选择播主权限。</div></li>
+                            	<li>VIP独立档案<div class="interpret"><img src="images/hxjy_08.png" class="bottom">建立VIP个人档案、进行VIP投资评估、分析VIP交易模式。</div></li>
+                            	<li>VIP服务项目<div class="interpret"><img src="images/hxjy_08.png" class="bottom">交易型服务（VIP投资内参、VIP贵宾室、暖心服务）、抄底逃顶、实战追踪。</div></li>
+
+                             </ul>
+                             <h4>更多专属特权</h4> 
+                             <ul style="height:590px;">
+                            	<li>金牌早晚评</li>
+                                <li>证金学院</li>
+                                <li style="line-height:30px;">大咖工作室<br><span>（历史记录）</span></li>
+                                <li>投资研报</li>
+                                <li>谈股论金</li>
+                                <li>财经日历</li>
+                                <li>在线咨询</li>
+                                <li>财富周刊</li>
+                                <li style="line-height:30px;">K线大咖<br><span>（pc+微信+app）</span></li>
+                                <li>个人中心<div class="interpret"><img src="images/hxjy_08.png">为不同级别的客户提供专属服务的一站式服务平台。</div></li>
+                                <li>客服专线</li>
+                                <li>积分商城</li>
+                                <li>证金小秘书</li>
+                                <li>大咖访谈</li>
+                                <li>策略周报</li>
+                                <li>证金直播<div class="interpret"><img src="images/hxjy_08.png">此节目以独立的分析判断、独到的专业角度，全面覆盖贵金属、证券、期货、理财等各个领域，成为国内投资者首选的热点透析类视频节目。为投资者解决了持续性热点不好把握、持续性事件分析不全面、持续性机会不好操作等问题。</div></li>
+                                <li>电话一对一<div class="interpret"><img src="images/hxjy_08.png" class="bottom">老师+助理</div></li>
+                                <li>专家定制</li>
+                                <li>账户诊断</li>
+                                <li>普通直播是自选</li>
+                                <li>客户评估报告</li>
+                                <li>VIP专属热线</li>
+                                <li style="line-height:30px;">K线大咖<br>+普通自由选</li>
+                                <li>客户关怀<div class="interpret"><img src="images/hxjy_08.png" class="bottom">积分5倍</div></li>
+                                <li>积分商城VIP特权</li>
+                                <li>专属直播平台</li>
+                            </ul>    
+                        </div>
+                        
+                        
+                  </div>
+                  
+                </div>
+            </div>
+      
+      	<div class="clear"></div>
+    </div>
+</body>
+</html>

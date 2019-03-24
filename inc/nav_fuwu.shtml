@@ -1,0 +1,16 @@
+   		<div class="w990 mauto over clear logo">
+        	<h1>
+            	<a href="http://www.zhengjin99.com"><img src="/images2014/logo.png" width="199" height="47" alt="证金贵金属" class="block fl" /></a>
+                <a href="/service/fwzx_index.shtml"><img src="/images2014/fwzx-32.jpg" width="107" height="31" class="fl" style="margin-top:10px"/></a>
+            	<img src="/images2014/kefu.png" width="294" height="32" alt="客服电话：010-53936386" class="block fr" />
+            </h1>
+        </div>
+   <div id="nav" class="pr">
+    	<ul class="w990 mauto">
+        	<li class='fwzx_nav1<!--# if expr="$REQUEST_URI = /fwzx_/" -->_sl<!--# endif -->'><a href="/service/fwzx_index.shtml">服务首页</a></li>
+            <li class='fwzx_nav2<!--# if expr="$REQUEST_URI = /bzzx_/" -->_sl<!--# endif -->'><a href="/service/bzzx_index.html">帮助中心</a></li>
+            <li class='fwzx_nav3<!--# if expr="$REQUEST_URI = /zxzx_/" -->_sl<!--# endif -->'><a href="/service/zxzx_index.html?head=1">在线咨询</a></li>
+	
+        </ul>
+    </div>
+      

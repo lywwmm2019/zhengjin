@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>服务中心-网银签约指南</title>
+<!--#include virtual="/inc/head_link.shtml"-->
+<style>
+.tjs .next_page{background:url(http://img.zhengjin99.com/web/zs/next.png) no-repeat;_background:url(http://img.zhengjin99.com/web/zs/next.gif) no-repeat;width:182px;height:53px;display:block;}
+.tjs .return_page{background:url(http://img.zhengjin99.com/web/zs/up.png) no-repeat;_background:url(http://img.zhengjin99.com/web/zs/up.gif) no-repeat;}
+</style>
+<script>
+	var t=0;
+	$(document).ready(function(){		
+		$('area').bind('click',function(){
+			var areaid=$(this).parent().prev().attr('id');	
+			var length=$(this).parents('.qyzn_bank').find('img').length;	
+			var areaidlength=areaid.length;
+			//var reid=areaid.substring(0,areaidlength-1);	
+			var reid=areaid.substring(0,7)
+			turnpage(1,length,reid);			
+		})
+		$('.returnbank').bind('click',function(){
+			$('.qyzn_bank img').hide();
+			var l=$('.qyzn_bank').length;
+			for(var i=0;i<l;i++){
+				$('.qyzn_bank').eq(i).find('img').eq(0).show();
+			}
+			t=0;
+			$('.return_page').parent().hide();
+			$('.back_page').parent().hide();
+			$(this).parents('.showbank').hide();
+			$('.qyzn_list').show();
+		})
+		$('.next_page').bind('click',function(){
+			var length2=$(this).parents('.qyzn_bank').find('img').length;	
+			var areaid2=$(this).parents('.qyzn_bank').find('img:first').attr('id');
+			//var reid=areaid.substring(0,areaidlength-1);	
+			var reid2=areaid2.substring(0,7)
+			//t++;
+			turnpage(1,length2,reid2);
+		})
+	})
+	function turnpage(num,total,showid){
+		num==0?t=0:t=t+num;
+		var hideid=showid.split('_')[0];
+		if(t>0&&t<total-1){
+			$('#return_page_'+showid).parent().show();
+		}
+		else if(t>total-2){
+			$('#return_page_'+showid).parent().hide();
+			$('#back_page_'+showid).parent().show();
+		}
+		else{
+			$('#return_page_'+showid).parent().hide();
+			$('#back_page_'+showid).parent().hide();
+		}
+		
+		if(t==8||t==15){
+			if(showid=='xy_page'){
+				$('#next_page_'+showid).parent().show();
+			}
+			else{
+				$('#next_page_'+showid).parent().hide();
+			}
+		}
+		else{
+			$('#next_page_'+showid).parent().hide();
+		}
+		$('#'+hideid+' img').hide();
+		$('#'+showid+t).show();
+	}
+</script>
+</head>
+
+<body>
+	<!--#include virtual="/inc/head.shtml"-->
+    <!--#include virtual="/inc/nav.shtml"-->
+	<div id="about_main" class="clear mb20">
+    	<div class="fl about_left pr">
+        	<div class="pa" style="left:0;top:0;" id="about_left">
+                <!--#include virtual="/inc/left_btn.shtml"-->
+                <ul class="about_link" style="padding-left:10px;">
+                    <li class="about_link_title">服务指南</li>
+                    <li>&gt;&gt;<span><a href="index.shtml">服务体系</a></span></li>
+                    <li>&gt;&gt;<span><a href="khlc.shtml">开户流程</a></span></li>
+                    <li>&gt;&gt;<span><a href="khsp.shtml">开户宣传片</a></span></li>
+                    <li>&gt;&gt;<span><a href="tjs.shtml">津贵所网上开户</a></span>
+                    	<ul class="about_link_sec" style="display:block;">
+                        	<li><span><a href="http://tg.zhengjin99.com/zhengjin/tjskh/index.jsp" target="_blank">实盘开户入口</a></span></li>
+                            
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="qyzn.shtml">网银签约指南</a></span>
+                    	<ul class="about_link_sec" style="display:block;">
+                        	<li><span class="about_link_hover"><a href="javascript:void(0)">海商所网银签约指南</a></span></li>
+                        	<li><span><a href="wyqy.shtml">津贵所网银签约指南</a></span></li>
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="bgxz.shtml">客户协议及相关表格下载</a></span></li>
+                    <li>&gt;&gt;<span><a href="byjy.shtml">白银交易规则</a></span></li>
+                    <li>&gt;&gt;<span><a href="crjgz.shtml">出入金流程及规则</a></span></li>
+                    <li>&gt;&gt;<span><a href="jglc.shtml">现货交割流程</a></span></li>
+                    <li>&gt;&gt;<span><a href="khts.shtml">客户投诉处理流程</a></span></li>
+                    <li>&gt;&gt;<span><a href="rjxz.shtml">软件下载</a></span>
+                   	  <ul class="about_link_sec" style="display:block;">
+                        	<li><span><a href="sjrj.shtml">手机版软件下载平台</a></span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    	<div class="fr about_right">
+        	<div class="fwtx pr">
+            	<div class="fwtx01"></div>
+                <div class="fwtx02"></div>
+                <div class="fwtx03"></div>
+                <div class="fwtx04"></div>
+                <div class="fwtx05"></div>
+                <div class="fwtx06"></div>
+				<div class="wyqy pa"  style="left:0;top:0;">
+				<div class="lh250 qyzn_list" style="margin:10px 0 0 10px;width:770px;">
+                    
+                    <p class="qyzn_txt f16 tc fb lh200">请选择您的开户银行</p>
+                    <div class="tjs_bank pr">
+               	    	<ul class="clear over">
+                        	<li onclick="$('.qyzn_list').hide();$('#js').show();"><img src="http://img.zhengjin99.com/web/js_bank.jpg" width="123" height="83" /></li>
+                            <li onclick="$('.qyzn_list').hide();$('#zs').show();"><img src="http://img.zhengjin99.com/web/zs_bank.jpg" width="123" height="83" /><p>大众版</p></li>
+                            <li onclick="$('.qyzn_list').hide();$('#xy').show();"><img src="http://img.zhengjin99.com/web/xy_bank.jpg" width="123" height="83" style="margin-top:5px;" /></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+                <div class="lh250 hide showbank" style="margin:10px 0 0 10px;width:770px;" id="js">
+                	<p class="qyzn_txt f16 tc fb lh200">建设银行网银签约流程</p>
+                    <div class="tjs pr qyzn_bank">
+                		<iframe width="710" scrolling="no" height="600" frameborder="0"  src="http://www.hxce.cn/bank/jh/s001.htm" marginwidth="0" marginheight="0" style="margin-left:30px;"></iframe>
+                   		<a class="pa fb returnbank" style="" href="javascript:void(0);">返回银行列表</a> 
+                    </div>
+                </div>
+                
+                
+				<div class="lh250 pr hide showbank" style="margin:10px 0 0 10px;width:770px;" id="zs">
+                	<p class="qyzn_txt f16 tc fb lh200">招商银行网银签约流程</p>
+                	<div class="tjs pr qyzn_bank">
+                    	<img src="http://img.zhengjin99.com/web/zs/in.gif" name="zs_page0" width="710" height="600" border="0" usemap="#Map40" id="zs_page0" style="display:block;" />
+                        <map name="Map40" id="Map40">
+                          <area shape="rect" coords="509,395,689,492" href="javascript:void(0)" />
+                  		</map>
+               	    	<img src="http://img.zhengjin99.com/web/zs/1.gif" name="zs_page1" width="710" height="600" border="0" usemap="#Map41" id="zs_page1" style="display:none;" />
+                        <map name="Map41" id="Map41">
+                          <area shape="rect" coords="509,397,688,492" href="javascript:void(0)"  />
+                        </map>
+                        <img src="http://img.zhengjin99.com/web/zs/2.gif" name="zs_page2" width="710" height="500" border="0" usemap="#Map42" style="display:none;" id="zs_page2" />
+                        <map name="Map42" id="Map42">
+                          <area shape="rect" coords="562,140,678,163" href="javascript:void(0)"  />
+                      	</map>
+                        <img src="http://img.zhengjin99.com/web/zs/3.gif" name="zs_page3" width="710" height="500" border="0" usemap="#Map43" style="display:none;" id="zs_page3" />
+                        <map name="Map43" id="Map43">
+                          <area shape="rect" coords="74,284,179,335" href="javascript:void(0)"  />
+                      	</map>
+                        <img src="http://img.zhengjin99.com/web/zs/4.gif" name="zs_page4" width="710" height="500" border="0" usemap="#Map44" style="display:none;" id="zs_page4" />
+                        <map name="Map44" id="Map44">
+                          <area shape="rect" coords="150,241,228,258" href="javascript:void(0)"  />
+                      	</map>
+                        <img src="http://img.zhengjin99.com/web/zs/5.gif" name="zs_page5" width="710" height="500" border="0" usemap="#Map45" style="display:none;" id="zs_page5" />
+                        <map name="Map45" id="Map45">
+                          <area shape="rect" coords="126,206,174,221" href="javascript:void(0)"  />
+   					  </map>
+                        <img src="http://img.zhengjin99.com/web/zs/6.gif" name="zs_page6" width="710" height="500" border="0" usemap="#Map46" style="display:none;" id="zs_page6" />
+                        <map name="Map46" id="Map46">
+                          <area shape="rect" coords="316,402,376,433" href="javascript:void(0)"  />
+                      	</map>
+                        <img src="http://img.zhengjin99.com/web/zs/7.gif" name="zs_page7" width="710" height="500" border="0" usemap="#Map47" style="display:none;" id="zs_page7" />
+                        <map name="Map47" id="Map47">
+                          <area shape="rect" coords="280,359,351,394" href="javascript:void(0)"  />
+                   	  </map>
+                        <img src="http://img.zhengjin99.com/web/zs/8.gif" name="zs_page8" width="710" height="600" border="0" usemap="#Map48" style="display:none;" id="zs_page8" />
+                        <map name="Map48" id="Map48">
+                          <area shape="rect" coords="509,397,690,493" href="javascript:void(0)"  />
+                   	  </map>
+                        <img src="http://img.zhengjin99.com/web/zs/9.gif" name="zs_page9" width="710" height="500" border="0" usemap="#Map49" style="display:none;" id="zs_page9" />
+                        <map name="Map49" id="Map49">
+                          <area shape="rect" coords="413,394,480,428" href="javascript:void(0)"  />
+                   	  </map>
+                        <img src="http://img.zhengjin99.com/web/zs/10.gif" name="zs_page10" width="710" height="500" border="0" usemap="#Map410" style="display:none;" id="zs_page10" />
+                        <map name="Map410" id="Map410">
+                          <area shape="rect" coords="441,386,500,421" href="javascript:void(0)"  />
+                   	  </map>
+                        <img src="http://img.zhengjin99.com/web/zs/11.gif" name="zs_page11" width="710" height="600" border="0" usemap="#Map411" style="display:none;" id="zs_page11" />
+                        <map name="Map411" id="Map411">
+                          <area shape="rect" coords="508,396,689,494" href="javascript:void(0)"  />
+                   	  </map>
+                        <img src="http://img.zhengjin99.com/web/zs/12.gif" name="zs_page12" width="710" height="500" border="0" usemap="#Map412" style="display:none;" id="zs_page12" />
+                        <map name="Map412" id="Map412">
+                          <area shape="rect" coords="183,342,233,362" href="javascript:void(0)"  />
+                   	  </map>
+                        <img src="http://img.zhengjin99.com/web/zs/13.gif" name="zs_page13" width="710" height="500" border="0" usemap="#Map413" style="display:none;" id="zs_page13" />
+                        
+                        
+					  	<div class="pa hide" style="right:35px;bottom:-47px;">
+                   	    	<a id="return_page_zs_page" onclick="turnpage(-1,13,'zs_page')" href="javascript:void(0)" class="return_page"></a>
+						</div>
+                        <div class="pa hide" style="right:35px;bottom:-47px;">
+                   	    	<a id="back_page_zs_page"  onclick="turnpage(0,13,'zs_page')" href="javascript:void(0)" class="back_page"></a>
+                        </div>   
+                        <div class="pa hide" style="right:225px;bottom:-47px;">
+                   	    	<a id="next_page_zs_page" href="javascript:void(0)" class="next_page"></a>
+                        </div>
+                        <a class="pa fb returnbank" style="" href="javascript:void(0);">返回银行列表</a>                      
+                    </div>   
+                </div>
+                
+                
+                
+                <div class="lh250 pr showbank hide" style="margin:10px 0 0 10px;width:770px;" id="xy">
+                	<p class="qyzn_txt f16 tc fb lh200">兴业银行网银签约流程</p>
+                	<div class="tjs pr qyzn_bank">
+                    	<img src="http://img.zhengjin99.com/web/xy/in.gif" name="xy_page0" width="710" height="500" border="0" usemap="#Map50" id="xy_page0" style="display:block;" />
+                        <map name="Map50" id="Map50">
+                          <area shape="rect" coords="496,355,612,425" href="javascript:void(0)"  />
+                  		</map>
+           	    	  <img src="http://img.zhengjin99.com/web/xy/1.gif" name="xy_page1" width="710" height="500" border="0" usemap="#Map51" id="xy_page1" style="display:none;" />
+              <map name="Map51" id="Map51">
+                        <area shape="rect" coords="496,354,612,426" href="javascript:void(0)"  />
+                        </map>
+                      <img src="http://img.zhengjin99.com/web/xy/2.gif" name="xy_page2" width="700" height="500" border="0" usemap="#Map52" style="display:none;" id="xy_page2" />
+          <map name="Map52" id="Map52">
+                    <area shape="rect" coords="618,293,671,315"  href="javascript:void(0)" />
+                      	</map>
+                      <img src="http://img.zhengjin99.com/web/xy/3.gif" name="xy_page3" width="710" height="500" border="0" usemap="#Map53" style="display:none;" id="xy_page3" />
+<map name="Map53" id="Map53">
+                          <area shape="rect" coords="507,262,585,311" href="javascript:void(0)"  />
+                      	</map>
+                      <img src="http://img.zhengjin99.com/web/xy/4.gif" name="xy_page4" width="700" height="450" border="0" usemap="#Map54" style="display:none;" id="xy_page4" />
+<map name="Map54" id="Map54">
+                          <area shape="rect" coords="359,88,381,108" href="javascript:void(0)"  />
+                      	</map>
+                      <img src="http://img.zhengjin99.com/web/xy/5.gif" name="xy_page5" width="710" height="500" border="0" usemap="#Map55" style="display:none;" id="xy_page5" />
+<map name="Map55" id="Map55">
+                          <area shape="rect" coords="493,367,607,421" href="javascript:void(0)"  />
+   					  </map>
+                      <img src="http://img.zhengjin99.com/web/xy/6.gif" name="xy_page6" width="700" height="500" border="0" usemap="#Map56" style="display:none;" id="xy_page6" />
+<map name="Map56" id="Map56">
+                <area shape="rect" coords="370,388,403,411" href="javascript:void(0)"  />
+                      	</map>
+                      <img src="http://img.zhengjin99.com/web/xy/7.gif" name="xy_page7" width="700" height="550" border="0" usemap="#Map57" style="display:none;" id="xy_page7" />
+<map name="Map57" id="Map57">
+                  <area shape="rect" coords="466,397,547,436" href="javascript:void(0)"  />
+                   	  </map>
+                      <img src="http://img.zhengjin99.com/web/xy/8.gif" name="xy_page8" width="710" height="500" border="0" usemap="#Map58" style="display:none;" id="xy_page8" />
+<map name="Map58" id="Map58">
+          <area shape="rect" coords="102,157,238,192" href="javascript:void(0)"  />
+                   	  </map>
+                      <img src="http://img.zhengjin99.com/web/xy/9.gif" name="xy_page9" width="710" height="500" border="0" usemap="#Map59" style="display:none;" id="xy_page9" />
+<map name="Map59" id="Map59">
+                          <area shape="rect" coords="496,355,611,424" href="javascript:void(0)"  />
+                   	  </map>
+                      <img src="http://img.zhengjin99.com/web/xy/10.gif" name="xy_page10" width="710" height="550" border="0" usemap="#Map510" style="display:none;" id="xy_page10" />
+<map name="Map510" id="Map510">
+                  <area shape="rect" coords="410,178,502,208" href="javascript:void(0)"  />
+                   	  </map>
+                      <img src="http://img.zhengjin99.com/web/xy/11.gif" name="xy_page11" width="710" height="550" border="0" usemap="#Map511" style="display:none;" id="xy_page11" />
+<map name="Map511" id="Map511">
+          <area shape="rect" coords="273,372,340,403" href="javascript:void(0)"  />
+                   	  </map>
+                      <img src="http://img.zhengjin99.com/web/xy/12.gif" name="xy_page12" width="700" height="450" border="0" usemap="#Map512" style="display:none;" id="xy_page12" />
+<map name="Map512" id="Map512">
+                  <area shape="rect" coords="318,241,372,277" href="javascript:void(0)"  />
+                   	  </map>
+                      <img src="http://img.zhengjin99.com/web/xy/13.gif" name="xy_page13" width="710" height="550" border="0" usemap="#Map513" style="display:none;" id="xy_page13" />
+<map name="Map513" id="Map53">
+                  <area shape="rect" coords="393,299,452,340" href="javascript:void(0)"  />
+                   	  </map>
+                      <img src="http://img.zhengjin99.com/web/xy/14.gif" name="xy_page14" width="710" height="550" border="0" usemap="#Map514" style="display:none;" id="xy_page14" />
+<map name="Map514" id="Map514">
+                  <area shape="rect" coords="537,376,598,410" href="javascript:void(0)"  />
+                   	  </map>
+                      <img src="http://img.zhengjin99.com/web/xy/15.gif" name="xy_page15" width="710" height="500" border="0" usemap="#Map515" style="display:none;" id="xy_page15" />
+<map name="Map515" id="Map515">
+                          <area shape="rect" coords="290,194,461,216" href="javascript:void(0)"  />
+                   	  </map>
+                      <img src="http://img.zhengjin99.com/web/xy/16.gif" name="xy_page16" width="710" height="500" border="0" usemap="#Map516" style="display:none;" id="xy_page16" />
+<map name="Map516" id="Map516">
+                          <area shape="rect" coords="495,355,611,425" href="javascript:void(0)"  />
+                   	  </map>
+                      <img src="http://img.zhengjin99.com/web/xy/17.gif" name="xy_page17" width="710" height="550" border="0" usemap="#Map517" style="display:none;" id="xy_page17" />
+<map name="Map517" id="Map517">
+                          <area shape="rect" coords="452,137,482,164" href="javascript:void(0)"  />
+                   	  </map>
+                      <img src="http://img.zhengjin99.com/web/xy/18.gif" name="xy_page18" width="700" height="420" border="0" usemap="#Map518" style="display:none;" id="xy_page18" />
+<map name="Map518" id="Map518">
+                  <area shape="rect" coords="616,189,649,208" href="javascript:void(0)"  />
+                   	  </map>
+                      <img src="http://img.zhengjin99.com/web/xy/19.gif" name="xy_page19" width="710" height="550" border="0" usemap="#Map519" style="display:none;" id="xy_page19" />
+<map name="Map519" id="Map519">
+                  <area shape="rect" coords="315,296,366,330" href="javascript:void(0)"  />
+                   	  </map>
+                      <img src="http://img.zhengjin99.com/web/xy/20.gif" name="xy_page20" width="710" height="500" border="0" usemap="#Map520" style="display:none;" id="xy_page20" />
+                        
+                        
+			  	  <div class="pa hide" style="right:35px;bottom:-47px;">
+                   	    	<a id="return_page_xy_page" onclick="turnpage(-1,20,'xy_page')" href="javascript:void(0)" class="return_page"></a>
+					  </div>
+                        <div class="pa hide" style="right:35px;bottom:-47px;">
+                   	    	<a id="back_page_xy_page"  onclick="turnpage(0,20,'xy_page')" href="javascript:void(0)" class="back_page"></a>
+                        </div> 
+                        <div class="pa hide" style="right:225px;bottom:-47px;">
+                   	    	<a id="next_page_xy_page"  href="javascript:void(0)" class="next_page"></a>
+                        </div>  
+                        <a class="pa fb returnbank" style="" href="javascript:void(0);">返回银行列表</a>                      
+                  </div>   
+                </div>
+                
+                </div>
+                <div class="fwzx_shadow pa" style="left:0;bottom:-18px;"></div>
+            </div>
+      	</div>
+      
+      	<div class="clear"></div>
+    </div>
+    <!--#include virtual="/inc/foot.shtml"-->
+</body>
+</html>

@@ -1,0 +1,162 @@
+     <script type="text/javascript">
+function openWindow(url,name,iWidth,iHeight) {  
+	var iTop = (window.screen.height-30-iHeight)/2; //获得窗口的垂直位置;   
+	var iLeft = (window.screen.width-10-iWidth)/2; //获得窗口的水平位置;   
+	window.open(url,name,'height='+iHeight+',,innerHeight='+iHeight+',width='+iWidth+',innerWidth='+iWidth+',top='+iTop+',left='+iLeft+',toolbar=no,menubar=no,scrollbars=auto,resizeable=no,location=no,status=no');  
+}
+</script>
+     
+        <!--右侧飘窗-->
+    <div class="floatingwindow-new-fwtd" id="floatingwindow-new-fwtd"></div>
+    <div class="floatingwindow-new" id="floatingwindow-new">
+		<div class="floatingwindow-newleft">
+        	<div class="floatingwindow-newleftarrow"></div>
+        </div>
+        <!--01-->
+        <div class="floatingwindow-newright">
+        	<!--<div class="floatingwindow-newright-content" onclick="window.location.href='http://vd.jrj.com/front/chat/?room=1&from=syypc'" style="cursor:pointer;">
+            	<div class="floatingwindow-newright-zjzb">
+                <h4>证金直播</h4>
+                <p class="vedio" id="zjzb-vedio"></p>
+                </div>	
+            </div>-->
+              
+            <div class="floatingwindow-newright-content">
+        		<h3><img src="/images2014/floatwindow_new_03.jpg"/></h3>
+                <ul>
+               	     <!--<li onmouseover="tabright('1')" onclick="doyoo.util.openChat('g=66550')" class="hover" id="tabright_1"><span class="webzx">网页版咨询</span></li>-->
+                    <li onmouseover="tabright('1')" id="tabright_1" class="hover"><span class="qq"><a style="color: #7a6e6e; text-decoration:none;" href="javascript:openWindow('http://webim.qiao.baidu.com/im/index?siteid=7080331&ucid=10026065','',800,540);">在线咨询</a></span></li>
+                </ul>
+            </div>
+            
+             <div class="floatingwindow-newright-content">
+        		<h3><img src="/images2014/floatwindow_new_04.jpg"/></h3>
+                <ul>
+                	<!--<li onmouseover="tabright('2')" id="tabright_2" onclick="window.location.href='http://tg.zhengjin99.com/zhengjin/spAndYyKH/index.jsp'" ><span class="shipankh">实盘开户</span></li>
+                    <li onmouseover="tabright('4')" id="tabright_4" onclick="window.location.href='http://tg.zhengjin99.com/zhengjin/mnkh/'"><span class="monipankh">模拟开户</span></li>-->
+                </ul>
+            </div>
+            <div class="floatingwindow-newright-content">
+        		<h3><img src="/images2014/floatwindow_new_05.jpg"/></h3>
+                <ul>
+                	<li onmouseover="tabright('3')" id="tabright_3" onclick="window.location.href='http://www.zhengjin99.com/download.shtml'"><span class="pcdownload">电脑下载</span></li>
+                    <li onmouseover="tabright('4')" id="tabright_4" onclick="window.location.href='http://www.zhengjin99.com/download.shtml'"><span class="phoneload">手机下载</span></li>
+                </ul>
+            </div>
+            <div class="floatingwindow-newright-content">
+        		<!-- <h3><img src="/images2014/floatwindow_new_06.jpg"/></h3> -->
+                <p>立即预约专属于您自己的分析老师</p>
+                <input type="text" class="floatingwindow-newright-name" name="floatingwindow-right-name"/>
+                <input type="text" class="floatingwindow-newright-phone" name="floatingwindow-right-phone" />
+                <input type="button" class="floatingwindow-newright-button" value=""/>
+            </div>     
+       </div>
+    <!--01-end-->   
+       
+    
+       </div>
+      </div>
+      <script type="text/javascript">
+		
+var mobile = '';
+	function isMobile(val) {
+		var reg = /^1[34578]\d{9}$/;
+		return reg.test(val);
+	}
+	function getParam(item) {
+    var svalue = location.search.match(new RegExp('[\?\&]' + item + '=([^\&]*)(\&?)','i'));
+    return svalue?decodeURIComponent(svalue[1]):'';
+}
+	$(function () {
+		$(".floatingwindow-newright-name").watermark("请输入您的姓名");
+	    $(".floatingwindow-newright-phone").watermark("请输入您的手机号码")
+		$(".floatingwindow-newright-button").click(function () {
+		   	var name = $.trim($(".floatingwindow-newright-name").val());
+			var mobile = $.trim($(".floatingwindow-newright-phone").val());
+			
+			if(name==''){
+				showDialog('提示', '请输入正确的姓名！');
+				return false;
+				}
+			if(!isMobile(mobile)) {
+				showDialog('提示', '请输入正确的手机号码！');
+				return false;
+			}
+	         else{var url = "http://tg.zhengjin99.com/zhengjin/ws/put_resource_desc.jsp?callbackparam=?";
+	        $.getJSON(url, {mobile: mobile, activityId: 'zj99_zskh_20150616', desc: name, isSms: 0}, function(data) {
+	        	console.log(data);
+	        });
+	        showDialog('提示', "预约成功！<br>稍后会有工作人员与您联系，请保持手机畅通。");}
+	        $(".floatingwindow-newright-name").val('');
+			$(".floatingwindow-newright-phone").val('');
+		});
+	});
+	</script>
+</script>
+<script src="/js/jquery.watermark.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/css/ui-dialog.css" />
+<script type="text/javascript" src="/js/dialog-min.js"></script>
+
+ <script type="text/javascript">
+     function tabright(n)
+     {
+           var len = 4;
+           for (var i = 1; i <= len; i++)
+     {
+           document.getElementById('tabright_' + i).className = (i == n) ? 'hover' :''; 
+         
+}
+}
+</script>
+ <script type="text/javascript">
+var minheight=0;
+var maxheight=-230;
+var divObj=document.getElementById('floatingwindow');
+//var aa=parseInt(divObj.offsetRight);
+
+$('#floatingwindow-new-fwtd').click(function(){
+
+			$('#floatingwindow-new').stop();			
+				$('#floatingwindow-new').animate({right:"0px"},500);
+				$('#floatingwindow-new-fwtd').hide();
+			
+})
+
+
+$('#tabright_1').click(function(){
+				$('#floatingwindow-new').stop();	
+				$('#floatingwindow-new').animate({right:"-285px"},500);
+				$('#floatingwindow-new-fwtd').show(); 
+})
+$('#tabright_2').click(function(){
+				$('#floatingwindow-new').stop();	
+				$('#floatingwindow-new').animate({right:"-285px"},500);
+				$('#floatingwindow-new-fwtd').show(); 
+})
+$('#tabright_3').click(function(){
+				$('#floatingwindow-new').stop();	
+				$('#floatingwindow-new').animate({right:"-285px"},500);
+				$('#floatingwindow-new-fwtd').show(); 
+})
+$('#tabright_4').click(function(){
+				$('#floatingwindow-new').stop();	
+				$('#floatingwindow-new').animate({right:"-285px"},500);
+				$('#floatingwindow-new-fwtd').show(); 
+})
+$('#tabright_5').click(function(){
+				$('#floatingwindow-new').stop();	
+				$('#floatingwindow-new').animate({right:"-285px"},500);
+				$('#floatingwindow-new-fwtd').show(); 
+})
+$('#tabright_6').click(function(){
+				$('#floatingwindow-new').stop();	
+				$('#floatingwindow-new').animate({right:"-285px"},500);
+				$('#floatingwindow-new-fwtd').show(); 
+})
+$('.floatingwindow-newleft').click(function(){
+				$('#floatingwindow-new').stop();	
+				$('#floatingwindow-new').animate({right:"-285px"},500);
+				$('#floatingwindow-new-fwtd').show(); 
+})
+
+</script>

@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/main.css" type="text/css" rel="stylesheet" />
+</head>
+
+<style type="text/css">
+
+/*弹窗*/
+.tc-mb{ position:absolute; width:100%; height:6891px; top:0px;left:0px;
+background:#000; filter:alpha(opacity=80); -moz-opacity:0.8; opacity:0.8; z-index:10; display:none;}
+.tc-whole{position:absolute;width:100%;height:100%;top:0px;left:0px;z-index:19; display:none;}
+#tc{width:468px;height:470px;margin:0px auto; z-index:92;position:fixed;_position: absolute;
+ _top: expression(documentElement.scrollTop + 0 + "px");left:50%;margin-left:-234px;top:50%;margin-top:-235px;}
+.tc-error{ position:absolute; width:50px;height:50px;right:0px;top:0px;background:url(images/error.png) no-repeat;z-index:599;}
+#s_log{background:url(images/background.png) no-repeat; width:468px; height:470px; }
+#s_log .close{ width:30px; height:30px; right:13px;top:17px;z-index:99;zoom:1;display:block;position:absolute; cursor:pointer;}
+#s_log p{ font-family:"微软雅黑"; height:100px;padding-top:49px; font-size:26px; text-align:center;color:#FFF;}
+#s_log p span{font-size:34px;}
+#s_log dl p{ font-family:"微软雅黑"; height:30px;padding-top:39px; font-size:28px; text-align:center;color:#666;}
+
+#s_log ul{margin:30px 0 0 60px;}
+#s_log li{float:left; display:inline; margin-right:20px; cursor:pointer;}
+#s_log .log_dl,#s_log .log_dl:hover,#s_log .log_zc,#s_log .log_zc:hover,#s_log .hover .log_dl,#s_log .hover .log_zc{display:block;width:167px; height:43px;}
+#s_log .log_dl{background:url(images/login_grey.png);}
+#s_log .log_dl:hover,#s_log .hover .log_dl{background:url(images/login_red.png);}
+#s_log .log_zc{background:url(images/register_grey.png);}
+#s_log .log_zc:hover,#s_log .hover .log_zc{background:url(images/register_red.png);}
+
+.dl_bg{ padding-top:58px;}
+.dl_bg dd{margin:16px 0 0 77px;}
+.dl_bg dd label{ font-size:16px; color:#999; padding-right:10px;}
+.inputphone{width:228px; height:36px; background:url(images/input.png);  border:0px;outline:none; font-size:16px; padding:0 5px; line-height:36px;}
+.inputpassword{width:228px; height:36px; background:url(images/password.png);  border:0px;outline:none; font-size:16px; padding:0 5px; line-height:36px;}
+.inputinterview{width:356px; height:54px; background:url(images/warnum_23.png);  border:0px;outline:none; font-size:16px; text-align:center; line-height:54px; margin:20px 0 0 56px;}
+
+.input2{width:149px; height:44px; background:#FFF;  border:0px; outline:none; font-size:16px; padding:0 5px; line-height:40px;}
+.input3{width:131px; height:44px; background:#FFF;  border:0px; outline:none; position:absolute;top:255px;left:375px;}
+.dl_bg .lost_psw{margin:10px 0 0 456px;}
+.dl_bg .lost_psw a{font-size:14px; color:#6b4100;}
+#s_log .log_btn{background:url(images/get-into-btn.png) no-repeat; width:330px; height:59px;cursor:pointer; border:none; outline:none;margin:0 auto;display:block;margin-top:38px;}
+#s_log .log_btn2{background:url(images/back.png) no-repeat; width:175px; height:55px; margin:27px 0 0 14px; cursor:pointer; border:none; outline:none;}
+#s_log .log_btn3{background:url(images/submit_big.png) no-repeat; width:245px; height:58px; margin:27px 0px 0px 110px; cursor:pointer; border:none; outline:none;}
+#s_log .log_btn4{background:url(images/submit-01.png) no-repeat; width:250px; height:53px; margin:27px 0px 0px 110px; cursor:pointer; border:none; outline:none;}
+
+
+.zc_bg{ padding-top:68px;}
+.zc_bg dd{margin:16px 0 0 77px;}
+.zc_bg dd label{  font-size:16px; color:#999; padding-right:10px;}
+.zc_input{width:294px; height:44px; background:url(image/input_long.jpg); border:0; outline:none; font-size:16px; padding:0 5px; line-height:40px;}
+.zc_bg dd #mobile2{width:280px;}
+.zc_bg .lost_psw{margin:10px 0 0 170px; position:relative; color:#f00;}
+
+</style>
+<script type="text/javascript" src="http://www.quickapp.cn/js/jquery.js"></script>
+<script type="text/javascript">
+function setTab(name,cursel,n){
+		for(i=1;i<=n;i++){
+		  var menu=document.getElementById(name+i);
+		  var con=document.getElementById("con_"+name+"_"+i);
+		  menu.className=i==cursel?"hover":"";
+		  con.style.display=i==cursel?"block":"none";
+		}
+	}
+
+$(function(){
+	$(".close").click(function(){
+		$("#tc").hide();
+	})		
+})
+
+</script>
+<body style="background:#00F;height:20000px;">
+<div class="tc" id="tc" >
+  <div id="s_log" > <a href="javascript:void(0);" class="close"></a>
+    <p>证金大宗商品2号文件</br>
+      <span>添红计划11月11日开启</span></p>
+    <ul>
+      <li id="a1" onclick="setTab('a',1,2)" class="hover"><a class="log_dl"></a></li>
+      <li id="a2" onclick="setTab('a',2,2)"><a class="log_zc"></a></li>
+    </ul>
+    <div id="con_a_1" class="dl_bg" style="display:block;">
+      <dl>
+        <dd>
+          <label>输入手机号</label>
+          <input id="passport5" class="inputphone" type="text" maxlength="11" placeholder="请输入您的手机号码">
+        </dd>
+        <dd>
+          <label style="padding-right:25px;">输入密码</label>
+          <input id="password5"  class="inputpassword" type="password" maxlength="30" placeholder="请输入您密码">
+        </dd>
+      </dl>
+      <input type="button" class="log_btn" value="" >
+     </div>
+    <div id="con_a_2" class="zc_bg" style="display:none">
+      <dl>
+        <dd>
+          <label>输入手机号</label>
+          <input id="passport" class="inputphone" type="text" maxlength="11" placeholder="请输入您的手机号码" class="input1">
+        </dd>
+      </dl>
+      <input type="button" class="log_btn" value="" >
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

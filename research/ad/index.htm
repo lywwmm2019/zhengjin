@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0028)http://zhibo.jrj.com.cn/1690 -->
+<HTML><HEAD><META content="IE=7.0000" http-equiv="X-UA-Compatible">
+<TITLE>李生论金-实盘直播-金融界</TITLE>
+<META content="text/html; charset=gbk" http-equiv=Content-Type>
+<META content=IE=EmulateIE7 http-equiv=X-UA-Compatible>
+<META name=keywords 
+content=李生论金直播,李生论金实盘直播,李生论金股市直播,李生论金独家直播,李生论金实时解盘，李生论金每日实盘滚动内参,金融界直播室>
+<META name=description content=金融界实盘直播是帮助投资者即时了解实盘内参,揭露独家信息,揭秘市场热点。>
+<LINK rel=stylesheet href="css/dialog.2.0.css">
+<SCRIPT type=text/javascript src="js/jquery-1.7.min.js"></SCRIPT>
+<SCRIPT type=text/javascript src="js/jquery.watermark-min.js"></SCRIPT>
+<META name=GENERATOR content="MSHTML 10.00.9200.17116"></HEAD>
+<BODY>
+
+<!--资源口-->
+<span class="zyk">
+	<span class="zyk-word"></span>
+    <input class="zyk-input" type="text" maxlength="11" id="mobile1">
+    <input class="zyk-button btn1" type="button" value="">
+</span>
+
+<SCRIPT>
+	function isMobile(val) {
+		var reg = /^1[34578]\d{9}$/;
+		return reg.test(val);
+	}
+	$("#mobile1").watermark({watermarkText: "请输入您的手机号码!"});
+	
+    $(".btn1").click(function () {
+        var mobile = $.trim($("#mobile1").val());
+        if (!isMobile(mobile)) {
+            alert('请输入正确的手机号码！');
+            return false;
+        }
+		//资源接口
+        var url = "http://tg.zhengjin99.com/zhengjin/ws/put_resource_desc.jsp?callbackparam=?";
+		//资源ID
+		var activityId = "zj99_rwtg5_20150506";
+        $.getJSON(url, {mobile: mobile, activityId: activityId, desc: '', isSms: 0}, function(data) {
+            //console.log(data);
+        });
+        alert("您的信息已提交，稍后客服代表联系您！\n认准专线010-58309199纳斯达克上市金融界旗下www.zhengjin99.com【证金贵金属】");
+        $("#mobile1").data("watermarkElement").val('');
+    });
+</SCRIPT>
+<!--资源口-end-->
+</BODY></HTML>

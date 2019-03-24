@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{font-size:14px;font-family:"宋体";background:#fff;color:#484848;}
+
+.advertise{width:780px;height:160px;margin-bottom:17px;}
+
+/*css reset*/
+*{margin:0;padding:0;}
+li{list-style:none;list-style-image:none;*display:list-item;}
+img{border:0;}
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+a:focus{outline: none;} 
+
+input[type=button]{cursor:pointer;}
+
+.f12{font-size:12px;}
+.f14{font-size:14px;}
+.f16{font-size:16px;}
+.f18{font-size:18px;}
+.f20{font-size:20px;}
+
+.fht{font-family:"黑体";}
+.fst{font-family:"宋体";}
+
+.clear{clear:both;}
+.over{overflow:hidden;}
+.fl{float:left;display:inline;}
+.fr{float:right;display:inline;}
+
+.pr{position:relative;zoom:1;}
+.pa{position:absolute;}
+.pf{position:fixed;}
+
+.ti{text-indent:28px;}
+
+.tc{text-align:center;}
+.tl{text-align:left;}
+.tr{text-align:right;}
+.vt{vertical-align:top;}
+.vm{vertical-align:middle;}
+.vb{vertical-align:bottom;}
+
+.red{color:#ff0000;}
+.black{color:#000;}
+.gray{color:#2d2d2d;}
+.col7d670d{color:#7d670d;}
+.col754c24{color:#754c24;}
+.col4f0000{color:#4f0000;}
+
+.lh120{line-height:120%;}
+.lh150{line-height:150%;}
+.lh200{line-height:200%;}
+.lh250{line-height:250%;}
+
+.fb{font-weight:bold;}
+.fn{font-weight:normal;}
+
+.w160{width:160px;}
+.w110{width:110px;}
+.wb50{width:50%;}
+.wb33{width:33%;}
+.wb35{width:35%;}
+.wb30{width:30%;}
+
+.mauto{margin:0 auto;}
+.ml5{margin-left:5px;}
+.ml10{margin-left:10px;}
+.ml20{margin-left:20px;}
+.ml30{margin-left:30px;}
+.mr5{margin-right:5px;}
+.mb10{margin-bottom:10px;}
+.mb20{margin-bottom:20px;}
+.mt10{margin-top:10px;}
+.mt15{margin-top:15px;}
+.mt20{margin-top:20px;}
+.mt30{margin-top:30px;}
+.mr10{margin-right:10px;}
+.pl5{padding-left:5px;}
+.pl10{padding-left:10px;}
+.pl15{padding-left:15px;}
+.pl20{padding-left:20px;}
+.pl40{padding-left:40px;}
+.pt10{padding-top:10px;}
+.pr10{padding-right:10px;}
+.pr20{padding-right:20px;}
+
+.hide{display:none;}
+.block{display:block;}
+
+/*2013专题活动*/
+.zt_screen1{}
+#zt_main{overflow:hidden;}
+.zt_left,.zt_right{width:50%;float:left;display:inline;}
+.zt_screen1_left{background-color:#e7c5a0;}
+.zt_screen1_right{background-color:#e7c5a0;}
+.zt_screen1_left1{background:url(../images/01_left_01.jpg) right no-repeat;height:140px;background-color:#e7c5a0;}
+.zt_screen1_left2{background:url(../images/01_left_02.jpg) right no-repeat;height:140px;background-color:#e7c5a0;}
+.zt_screen1_left3{background:url(../images/01_left_03.jpg) right no-repeat;height:140px;background-color:#e7c5a0;}
+.zt_screen1_left4{background:url(../images/01_left_04.jpg) right no-repeat;height:140px;background-color:#e7c5a0;}
+.zt_screen1_left5{background:url(../images/01_left_05.jpg) right no-repeat;height:272px;background-color:#e7c5a0;}
+.zt_screen1_right1{background:url(../images/01_right_01.jpg) left no-repeat;height:140px;background-color:#e7c5a0;}
+.zt_screen1_right2{background:url(../images/01_right_02.jpg) left no-repeat;height:140px;background-color:#e7c5a0;}
+.zt_screen1_right3{background:url(../images/01_right_03.jpg) left no-repeat;height:140px;background-color:#e7c5a0;}
+.zt_screen1_right4{background:url(../images/01_right_04.jpg) left no-repeat;height:140px;background-color:#e7c5a0;}
+.zt_screen1_right5{background:url(../images/01_right_05.jpg) left no-repeat;height:272px;background-color:#e7c5a0;}
+.zt_screen2_left{background:url(../images/02_left.gif) right no-repeat;background-color:#e7c5a0;height:700px;}
+.zt_screen2_right{background:url(../images/02_right.jpg) 25px center no-repeat;height:599px;background-color:#e7c5a0;}
+.zt_screen2_right1{background:url(../images/02_right_01.jpg) left no-repeat;height:140px;background-color:#e7c5a0;}
+.zt_screen2_right2{background:url(../images/02_right_02.jpg) left no-repeat;height:140px;background-color:#e7c5a0;}
+.zt_screen2_right3{background:url(../images/02_right_03.jpg) left no-repeat;height:140px;background-color:#e7c5a0;}
+.zt_screen2_right4{background:url(../images/02_right_04.jpg) left no-repeat;height:140px;background-color:#e7c5a0;}
+.zt_screen2_right5{background:url(../images/02_right_05.jpg) left no-repeat;height:140px;background-color:#e7c5a0;}
+.zt_screen3_right{background:url(../images/03_right.gif) left center no-repeat;background-color:#5f3f2c;height:700px;}
+.zt_screen3_left{background-color:#181818;}
+.zt_screen3_left1{background:url(../images/03_left_01.jpg) right no-repeat;height:140px;background-color:#181818;}
+.zt_screen3_left2{background:url(../images/03_left_02.jpg) right no-repeat;height:140px;background-color:#181818;}
+.zt_screen3_left3{background:url(../images/03_left_03.jpg) right no-repeat;height:140px;background-color:#181818;}
+.zt_screen3_left4{background:url(../images/03_left_04.jpg) right no-repeat;height:140px;background-color:#181818;}
+.zt_screen3_left5{background:url(../images/03_left_05.jpg) right no-repeat;height:140px;background-color:#181818;}
+.zt_screen4_left1{background:url(../images/04_left_01.gif) right no-repeat;height:140px;background-color:#fdf6e1;}
+.zt_screen4_left2{background:url(../images/04_left_02.gif) right no-repeat;height:140px;background-color:#fdf6e1;}
+.zt_screen4_left3{background:url(../images/04_left_03.gif) right no-repeat;height:140px;background-color:#fdf6e1;}
+.zt_screen4_left4{background:url(../images/04_left_04.gif) right no-repeat;height:140px;background-color:#fdf6e1;}
+.zt_screen4_left5{background:url(../images/04_left_05.gif) right no-repeat;height:140px;background-color:#fdf6e1;}
+.zt_screen4_right{background-color:#740105;}
+.zt_screen4_right1{background:url(../images/04_right_01.jpg) left no-repeat;height:140px;background-color:#740105;}
+.zt_screen4_right2{background:url(../images/04_right_02.jpg) left no-repeat;height:140px;background-color:#740105;}
+.zt_screen4_right3{background:url(../images/04_right_03.jpg) left no-repeat;height:140px;background-color:#740105;}
+.zt_screen4_right4{background:url(../images/04_right_04.jpg) left no-repeat;height:140px;background-color:#740105;}
+.zt_screen4_right5{background:url(../images/04_right_05.jpg) left no-repeat;height:140px;background-color:#740105;}
+.zt_screen5_left{background:url(../images/05_left.gif) center no-repeat;height:700px;background-color:#fff;}
+.zt_screen5_right{background:url(../images/05_right.gif) left center no-repeat;background-color:#fff;height:700px;}
+.zt_screen4_left{background-color:#fdf6e1;padding-right:20px;}

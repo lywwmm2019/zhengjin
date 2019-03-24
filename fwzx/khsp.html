@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>服务中心-开户宣传片</title>
+<link href="../css/clear.css" rel="stylesheet" type="text/css" />
+<link href="../css/style_head_foot.css" rel="stylesheet" type="text/css" />
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/function.js"></script>
+<script type="text/javascript" src="http://js.jrj.com.cn/v/swfobject.js"></script>
+<script>
+function playVideo(eleId, videoSrc, title, id, flag, author, summary) {
+	var src = videoSrc;
+	var params = {
+		menu : "false",
+		scale : "noScale",
+		salign : "lt",
+		allowScriptAccess : "always",
+		allowFullScreen : true,
+		bgcolor : "#000000",
+		wmode : "transparent"
+	};
+
+	// no_autoplay 不自动播放
+	var flashvars0 = {
+		mp4_url : src,
+		pic : "",
+		autoplay : 0
+	};
+
+	// autoplay 自动播放
+	var flashvars1 = {
+		mp4_url : src,
+		pic : "",
+		autoplay : 1
+	};
+
+	var attributes = {
+		id : "xmp"
+	};
+
+	var title1 = "<div id='id_video'></div>";
+	$("#id_title").html(title1);
+	if (flag == 0) {
+		swfobject
+				.embedSWF(
+						"http://hk.jrj.com.cn/test/zhengjin99/v/ZhengJinGuiJinShu_FlashMP4Player.swf",
+						"id_video", "682", "409", "10.0.0", "", flashvars0,
+						params, attributes);
+	} else {
+		swfobject
+				.embedSWF(
+						"http://hk.jrj.com.cn/test/zhengjin99/v/ZhengJinGuiJinShu_FlashMP4Player.swf",
+						"id_video", "682", "409", "10.0.0", "", flashvars1,
+						params, attributes);
+		$("#textul_dataList li").each(function() {
+			$(this).removeClass("cur");
+		});
+		$("#" + id).addClass("cur");
+	}
+}
+</script>
+</head>
+
+<body>
+	<div id="about_main" class="clear mb20">
+    	<div class="fl about_left pr khsp">
+        	<div class="pa" style="left:0;top:0;" id="about_left">
+                
+                <ul class="about_link" style="padding-left:20px;">
+                    <li class="about_link_title">服务指南</li>
+                    <li>&gt;&gt;<span><a href="index.html">服务体系</a></span></li>
+                    <li>&gt;&gt;<span><a href="khlc.html">开户流程</a></span></li>
+                    <li>&gt;&gt;<span class="about_link_hover"><a href="javascript:void(0)">开户宣传片</a></span></li>
+                    <li>&gt;&gt;<span><a href="qyzn.html">网银签约指南</a></span></li>
+                    <li>&gt;&gt;<span><a href="bgxz.html">客户协议及相关表格下载</a></span></li>
+                    <li>&gt;&gt;<span><a href="crjgz.html">出入金流程及规则</a></span></li>
+                    <li>&gt;&gt;<span><a href="jglc.html">现货交割流程</a></span></li>
+                    <li>&gt;&gt;<span><a href="khts.html">客户投诉处理流程</a></span></li>
+                    <li>&gt;&gt;<span><a href="rjxz.html">软件下载</a></span>
+                   	  <ul class="about_link_sec">
+                        	<li><span><a href="sjrj.html">手机版交易平台</a></span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    	<div class="fr about_right">
+        	<div class="fwtx pr">
+            	<div class="khsp01"></div>
+                <div class="khsp02"></div>
+                <div class="khsp03"></div>
+                <div class="khsp04"></div>
+                <div class="khsp05"></div>
+				<div class="pa lh250" style="left:50px;top:30px;">
+       	      		<p>视频名称：开户视频</p>
+                    <div id="id_title" style="margin-top:20px;">
+            	
+            		</div>
+					<script>
+            		playVideo('spjp_video_list','http://newflv.jrj.com.cn/dby/2013khxcp.mp4','开户宣传片','video_1',0,'证金贵金属','尊敬的投资者，您好！欢迎您来到海西商品交易所029号会员单位，天津贵金属交易所第212号会员单位--证金贵金属。证金贵金属作为国内领先的贵金属投资机构，旨在为广大投资者搭建一个贵金属交易的综合服务平台，为广大投资者提供贵金属投资服务业务。为了让您更加轻松便捷的参与贵金属投资交易，我们将通过本视频向您展示贵金属交易的开户须知。');
+            		</script>
+                </div>
+                <div class="fwzx_shadow pa" style="left:0;bottom:-18px;"></div>
+            </div>
+      	</div>
+      
+      	<div class="clear"></div>
+    </div>
+</body>
+</html>

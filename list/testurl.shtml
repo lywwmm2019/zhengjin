@@ -1,0 +1,549 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta name="keywords" content="证金贵金属,白银,白银分析,白银投资,白银价格,白银交易,炒白银,白银走势,白银软件,模拟炒银,美联储,白银在线分析" />
+<meta name="description" content="证金贵金属，首家赴美纳斯达克上市公司中国最大最专业的白银投资服务平台，致力于白银投资、白银交易、现货白银、白银价格、炒白银、现货白银走势、白银行情、模拟炒银、现货白银开户、投资资讯、分析评论、贵金属投资等贵金属综合性投资服务" />
+<meta name="chinaz-site-verification" content="288879e7-ff11-4ab6-a78e-336cdcd754c4" />
+<title>证金贵金属_证金贵金属官方网站-专业正规的白银投资服务平台</title>
+<!--#include virtual="/inc/head_link.shtml"-->
+<link rel="stylesheet" type="text/css" href="/css/script.css" />
+<script src="/js/script.js" type="text/javascript"></script>
+<script type="text/javascript" src="/js/index.js?v=20140214"></script>
+<script src="/js/jQueryPngFix.js" type="text/javascript"></script>
+<style>
+#nav_main{background-color:transparent;}
+#demo ul li{line-height:200%;font-size:12px;}
+#demo ul li b{color:#F00;}
+</style>
+</head>
+
+<body>
+	<div style="height:350px;position:relative;zoom:1;width:990px;margin:0 auto;display:none;cursor:pointer;" id="img_bt">
+    	<div id="img_1" class="pr" style="display:none;background:url(http://img.zhengjin99.com/web/bg_banner.jpg) no-repeat;height:350px;" onclick="window.open('http://gold.jrj.com.cn/bydg/index.shtml');">
+        	<div class="pa" id="demo" style="height:162px;overflow:hidden;width:170px;left:44px;top:102px;">
+                <div id="demo1">
+                    <ul>
+                    	<li>·xiaoshuai1228提现<b>423</b>元</li>
+                        <li class="cur">·qyl1964提现<b>544</b>元</li>
+                        <li>·史小明提现<b>380</b>元</li>
+                        <li class="cur">·winoca提现<b>571</b>元</li>
+                        <li>·旷氏点金提现<b>318</b>元</li>
+                        <li class="cur">·l海纳百川提现<b>471</b>元</li>
+                        <li>·chengxiaolou提现<b>801</b>元</li>
+                        <li class="cur">·siduhy提现<b>57</b>元</li>
+                        <li>·205zyh812提现<b>286</b>元</li>
+                        <li class="cur">·如烟272提现<b>607</b>元</li>
+                        <li>·yyjygx提现<b>898</b>元</li>
+                        <li class="cur">·chqiqi提现<b>1485</b>元</li>
+                        <li>·陈卫雄提现<b>299</b>元</li>
+                        <li class="cur">·倒霉的豆豆提现<b>55</b>元</li>
+                        <li>·yang880828提现<b>1297</b>元</li>
+                        <li class="cur">·八字第二撇提现<b>605</b>元</li>
+                        <li>·ssdcdg123提现<b>414</b>元</li>
+                        <li class="cur">·无忧818提现<b>488</b>元</li>
+                        <li>·caochu1989提现<b>3066</b>元</li>
+                        <li class="cur">·市场说了算的提现<b>1036</b>元</li>
+                        <li>·宋春成提现<b>21</b>元</li>
+                        <li class="cur">·4364685提现<b>99</b>元</li>
+                        <li>·hxde126提现<b>1905</b>元</li>
+                        <li class="cur">·linkern提现<b>372</b>元</li>
+                        <li>·上主明鉴提现<b>598</b>元</li>
+                        <li class="cur">·hlwen88提现<b>1224</b>元</li>
+                        <li>·jjbbhhccmm123提现<b>347</b>元</li>
+                        <li class="cur">·wrnnn123提现<b>197</b>元</li>
+                    </ul>
+                </div>
+                <div id="demo2"></div>
+            </div>
+        </div>
+    </div> 
+    <div id="small_img" style="display:none;margin:0 auto;width:990px;"><a href="http://gold.jrj.com.cn/bydg/index.shtml" target="_blank"><img src="http://img.zhengjin99.com/web/bg_banner_small.jpg" width="990" height="75" /></a></div>
+	<script>
+    window.onload=function(){
+        $('#img_bt').show();
+        $('#img_1').slideDown(1000);
+        var str3="$('#img_bt').slideUp(1000);$('#small_img').show()";
+        var t2=setTimeout(str3,5000);
+    }
+    </script>
+    <script>
+	   var speed=50
+	   demo2.innerHTML=demo1.innerHTML
+	   function Marquee(){
+	   if(demo2.offsetTop-demo.scrollTop<=0)
+	   demo.scrollTop-=demo1.offsetHeight
+	   else{
+	   demo.scrollTop++
+	   }
+	   }
+	   var MyMar=setInterval(Marquee,speed)
+	   demo.onmouseover=function() {clearInterval(MyMar)}
+	   demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+   </script>
+    <!-- head -->
+    <!--#include virtual="/inc/head.shtml"-->
+    <!--#include virtual="/inc/nav.shtml"-->    
+	<div id="about_main" class="clear mb20 index main_newyear" style="margin:0 auto;">
+    	<div class="clear">
+        <!-- 轮播图片 -->
+    	<div class="comiis_wrapad fl" id="slideContainer">
+            <div id="frameHlicAe" class="frame cl">
+                <div class="block_scroll">
+                	
+                    <!--adv-->
+                    <link href="/css/slideshow.css" rel="stylesheet" />
+					<script src="/js/slideshow.js" type="text/javascript"></script>
+					<div class="cl">
+                        <ul id="slidesImgs" class="slideshow">
+                            <!--<li style="display: none;"><a target="_blank" href="http://tg.zhengjin99.com/zhengjin/bylf/"><img width="694" height="187" alt="" src="http://tg.zhengjin99.com/zhengjin/images/bylf.png"></a></li>-->  
+                            <li style="display: block;"><a target="_blank" href="http://tg.zhengjin99.com/zhengjin/50ly/index.jsp?activityID=tzbyly_gjs_20140410" title="投资白银的50个理由"><img width="635" height="187" src="http://tg.zhengjin99.com/zhengjin/images/50ly.jpg" alt="投资白银的50个理由"></a></li>                             
+                            <li style="display: none;"><a target="_blank" href="http://tg.zhengjin99.com/zhengjin/cwb/index.jsp?activityID=jlyqrdy_gjs_20140328" title="距离有前人有多远"><img width="635" height="187" src="http://tg.zhengjin99.com/zhengjin/images/yqr.gif" alt="距离有前人有多远"/></a></li> 
+                            <li style="display: none;"><a target="_blank" href="http://tg.zhengjin99.com/zhengjin/xsrm3/index.jsp?activityID=bytzxsrm_gjs_20130913" title="第13次暴富机会"><img width="635" height="187" src="http://tg.zhengjin99.com/zhengjin/images/banner4.jpg" alt="第13次暴富机会"/></a></li> 
+                            <li style="display: none;"><a target="_blank" href="http://tg.zhengjin99.com/zhengjin/ydwy/index.jsp?activityID=yd5y_gjs_20140506" title="银动五月"><img width="635" height="187" src="http://tg.zhengjin99.com/zhengjin/images/ydwy.gif" alt="银动五月"/></a></li>  
+                            <li style="display: none;"><a target="_blank" href="http://tg.zhengjin99.com/zhengjin/user/jsfw2.jsp" title="证金接送服务"><img width="635" height="187" src="http://tg.zhengjin99.com/zhengjin/images/jsfw.jpg" alt="证金接送服务"/></a></li>                                                    						
+							<li style="display: none;"><a target="_blank" href="http://tg.zhengjin99.com/zhengjin/grzx/index.jsp" title="个人中心"><img width="635" height="187" src="http://tg.zhengjin99.com/zhengjin/images/grzxch.gif" alt="个人中心"/></a></li>  								
+                        	<li style="display: none;"><a target="_blank" href="http://tg.zhengjin99.com/zhengjin/jjzbs/index.html" title="进阶直播室"><img width="635" height="187" src="http://tg.zhengjin99.com/zhengjin/images/jjzbs.jpg" alt="进阶直播室"/></a></li>   						 
+                        </ul>
+    
+                  </div>
+                    <div id="slideBar" class="slidebar">
+                        <ul>
+                            <li class="on">1</li>
+                            <li class="">2</li>
+                            <li class="">3</li>
+                            <li class="">4</li>
+                            <li class="">5</li><!---->
+                            <li class="">6</li>
+                            <li class="">7</li>
+                        </ul>
+                    </div>
+                    <!--adv-->
+                    
+                    <script type="text/javascript">
+                        SlideShow(8000);
+                    </script>
+                </div>
+            </div>
+		</div>
+        <!-- 广告位右侧 -->
+        <div class="fr right_zyk">	  
+   			<div class="index_ad1">
+				
+                <img src="images/index_right_adve.jpg" class="block mauto" alt="给你100万你能赚多少" width="269" height="80" />
+  				<table width="100%" border="0">
+                	<tbody>
+                    	<tr>
+                        	<td class="tr" height="36"><label for="textfield">手机号码：</label></td>
+                        	<td class="tl"><input type="text" class="w160" id="phoneindex" name="phoneindex" onfocus="removeCommonPhone('index');" onblur="addCommonPhone('index');" value="请输入您的手机号" maxlength="11"></td>
+                     	</tr>
+                        <tr>
+                        	<td class="tr" height="36"><label for="textfield">验证码：</label></td>
+                        	<td class="tl"><input type="text" class="w110 mr5" id="codeindex" name="codeindex" onfocus="removeCommonCode('index');" onblur="addCommonCode('index');" value="请输入验证码" maxlength="4"><img style="cursor: pointer;display:inline;" alt="看不清楚，点击换一张" id="cert_code" src="http://tg.zhengjin99.com/zhengjin/makeCertPicCms.jsp" width="46" height="18" onclick="changeCertPic(this);" />
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td height="34">&nbsp;</td>
+                        	<td  class="tl"><input type="button" value="立即开通模拟账户&nbsp;" class="ktwb" name="" onclick="sendCodeIndex()"></td>
+                        </tr>
+                	</tbody>
+            	</table>
+        	</div>
+    	</div>         
+        <div class="clear"></div>
+        </div>
+        <!-- 最新公告 -->
+        <div class="index_gonggao">
+        	最新公告：<JRJTAG 
+                            tagtype="02" 
+                            clsid="604002006" 
+                            pagesize="4" 
+                            pagecount="1" 
+                            viewedit="0"
+                            speccheck="1"
+                            id="zjtgrw" />
+                            <#if zjtgrw?exists>
+                              <#list zjtgrw as d>
+                                ${d.intor}
+                              </#list>
+                            </#if>
+        </div>
+        <!-- 直播室 -->
+        <div class="examples_body">
+            <div class="bx_wrap"><a class="prev" href="">left</a><a class="next" href="">right</a>
+                <div class="bx_container" id="zhibo_lists">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="clear mt10 mb10">
+        	<div class="fl index_left_w">
+            	<div class="index_pl">
+                	<div class="clear over index_toutiao">
+               	    	<img src="http://tg.zhengjin99.com/zhengjin/images/index_img1.jpg" width="150" height="100" class="fl" />
+                        <div class="fr index_toutiao_txt lh150"><!-- 今日头条 -->
+                        	<JRJTAG 
+                                tagtype="02" 
+                                clsid="604002005" 
+                                pagesize="1" 
+                                pagecount="1" 
+                                viewedit="0"
+                                speccheck="1"
+                                id="zjtt" />
+                                <#if zjtt?exists>
+                                    <#list zjtt as d>
+                                        <#if d_index==0>
+                                        ${d.intor}
+                                        </#if>
+                                    </#list>
+                                </#if>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear over lh200 index_txt">
+                    	<div class="fl index_zwpl pr10" style="border-right:1px dashed #ccc;"><!-- 每日评论 -->
+                        	<div class="index_zwyp_bg"></div>
+                            
+                            <JRJTAG	tagtype="01" clsid="604001003" pagesize="4" pagecount="1" id="mrpl" />
+                                <#if mrpl?exists>
+                                    <#list mrpl as d>
+                                        <#if d_index<2 >
+                                            <p class="title"><a  target='_blank' href="${d.infourl}" title="${d.title}">${d.title}</a></p>
+                                            <p class="pr">${jrjfund.subgbk(d.description,50)}...<a href="${d.infourl}">详情》</a><span class="pa" style="right:0;bottom:0;">[${d.makedate?string("yyyy-MM-dd")}]</span></p>
+                                        
+                                        <#else>
+                                            <p class="title"><a  target='_blank' href="${d.infourl}" title="${d.title}">${d.title}</a></p>
+                                        </#if>
+                                    </#list>
+                                </#if>
+                            <p class="tr"><a href="/list/list_zwyp.shtml" class="gray">更多&gt;&gt;</a></p>
+                        </div>
+                        <div class="fr index_zwpl pr10"><!-- 研究报告 -->
+                        	<div class="index_zxdd_bg"></div>
+                            
+                            <div id="yjbg_lists">
+                            
+                            </div>
+                            <p class="tr"><a href="http://tg.zhengjin99.com/zhengjin/yjbg.jsp" class="gray">更多&gt;&gt;</a></p>
+                        </div>
+                    	<div class="clear"></div>
+                    </div>
+                </div>
+                <!-- 最新视频 -->
+                <div class="pr"><div class="index_title_shadow pa" style="z-index:99;"></div><div class="index_title_shadowr pa"></div><div class="index_title index_day_jx clear over"><span class="fl">每日视频精选</span><span class="fr"><a href="http://vd.jrj.com/" class="pr10">更多&gt;&gt;</a></span><div class="clear"></div></div></div>
+                <ul class="index_vedio clear over" id="spjj_lists">
+                	
+                    
+                        <br clear="all" style="line-height:0;" /><span class="clear"></span>
+                </ul>
+                
+                <div class="pr clear" style="_overflow:hidden;"><div class="index_title_shadow pa" style="z-index:99;"></div><div class="index_title_shadowr pa"></div><div class="index_title clear over"><p class="fl wb50 tc index_title_br">特别推荐</p><p class="fl wb50 tc" style="*width:49%">媒体报道</p><div class="clear"></div></div></div>
+                <div class="clear mt10 mb10 lh200 index_txt">
+                	<div class="wb50 fl"><!-- 特别推荐 -->
+                    	<ul class="pl20">
+                    		
+                            <JRJTAG 
+                                tagtype="02" 
+                                clsid="604002002" 
+                                pagesize="2" 
+                                pagecount="1" 
+                                viewedit="0"
+                                speccheck="1"
+                                id="zjtbtj" />
+                            <#if zjtbtj?exists>
+                              <#list zjtbtj as d>
+                                ${d.intor}
+                              </#list>
+                            </#if>
+                        </ul>
+                    </div>
+                    <div class="wb50 fl" style="*width:49%"><!-- 媒体报道 -->
+                    	<ul class="pl10">
+                    		
+                            <JRJTAG	tagtype="01" clsid="604001029" pagesize="2" pagecount="1" id="mrjx" />
+                            	<#if mrjx?exists>
+                                    <#list mrjx as d>
+                                        <li class="fb"><a  target='_blank' href="${d.infourl}" title="${d.title}">·&nbsp;${d.title}</a></li>
+                                        <li class="lh200 f12" style="">[<span style="color:#00F;">摘要</span>]${jrjfund.subgbk(d.description,80)}...<a  target='_blank' href="${d.infourl}" style="display:inline;">[<span class="red">全文</span>]</a></li>
+                                    </#list>
+                                </#if>
+                        </ul>
+                    </div>
+                	<div class="clear"></div>
+                </div>
+                
+                <div class="pr"><div class="index_title_shadow pa" style="z-index:99;"></div><div class="index_title_shadowr pa"></div><div class="index_title clear over"><p class="fl wb33 tc index_title_br">证金锦囊</p><p class="fl wb33 tc index_title_br">资讯导读</p><p class="fl wb33 tc">经验分享</p><div class="clear"></div></div></div>
+                <div class="clear mt10 mb10 index_txt"><!-- 证金锦囊 -->
+                	<div class="wb33 fl">
+                    	<a href="http://tg.zhengjin99.com/zhengjin/zjjnList.jsp" target="_blank" title="证金锦囊"><img src="images/index_zjjn.jpg" width="163" height="137" class="block mauto" alt="证金锦囊" /></a>
+                    </div>
+                    <div class="wb33 fl"><!-- 资讯导读 -->
+                    	
+                        <ul class="lh_sp">
+                        <JRJTAG	tagtype="01" clsid="604001005" pagesize="5" pagecount="1" id="sdfx" />
+                            	<#if sdfx?exists>
+                                    <#list sdfx as d>
+                                        <li><a  target='_blank' href="${d.infourl}" title="${d.title}">·&nbsp;${d.title}</a></li>
+                                    </#list>
+                                    </#if>
+                        </ul>
+                    </div>
+                    <div class="wb33 fl"><!-- 经验分享 -->
+                    	<ul class="lh_sp">
+                        <JRJTAG 
+                            tagtype="02" 
+                            clsid="604002013" 
+                            pagesize="5" 
+                            pagecount="1" 
+                            viewedit="0"
+                            speccheck="1"
+                            id="jyfx" />
+                            <#if jyfx?exists>
+                              <#list jyfx as d>                                
+                                <li>${d.intor}</li>
+                              </#list>
+                            </#if>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                
+                <div class="index_adv clear "><!-- 首页资源口 -->
+					<p class="tc col4f0000"><span class="fb">视频掘金，第一时间捕捉市场机会！</span>播出时间不固定！可预约短信通知！</p>
+					<p class="tc mt10"><input type="text" onblur="blurPhone();" onfocus="focusPhone();" id="phone" value="请输入您的手机号" name="" class="index_adv_inputtxt"><input type="button" onclick="submitTel();" name="" value="" class="yuyue"></p>
+				</div>
+                <!-- 证金银屏 -->
+                
+                
+                <div class="clear mt10">
+           	    	<img src="images/index_xueyuan_img.jpg" width="140" height="148" class="fl mt20" alt="证金学院" />
+              		<div class="fr index_vediomk">
+                    	<div class="pr mb10"><div class="index_title_shadow pa" style="z-index:99;"></div><div class="index_title_shadowr pa"></div><div class="index_title clear over"><p class="fl wb33 tc index_title_br">投资下午茶</p><p class="fl wb33 tc index_title_br">基本面分析</p><p class="fl wb33 tc">专业术语</p><div class="clear"></div></div></div>
+                        <div class="wb33 fl tl"><!-- 投资下午茶 -->
+                             
+                             <div  style="width:90%;margin:0 auto;padding-right:5%;border-right:1px dashed #ccc;">
+                                 <JRJTAG	tagtype="01" clsid="604001007" pagesize="1" pagecount="1" id="zjxwc" />
+                                    <#if zjxwc?exists>
+                                        <#list zjxwc as d>
+                                                <p class="tc f14 fb"><a target='_blank' href="${d.infourl}" title="${d.title}">${d.title}</a></p>
+                                                <p class="ti f12">${jrjfund.subgbk(d.description,100)}...<a target='_blank' href="${d.infourl}" style="color:#f00;">[全文]</a></p>
+                                        </#list>
+                                    </#if>
+                               </div>
+                        </div>
+                        <div class="wb33 fl tl"><!-- 基本面分析 -->
+                            
+                            <div  style="width:90%;margin:0 auto;padding-right:7%;border-right:1px dashed #ccc;">
+                            <JRJTAG	tagtype="01" clsid="604001010" pagesize="1" pagecount="1" id="zjjbfx" />
+                                    <#if zjjbfx?exists>
+                                        <#list zjjbfx as d>
+                                                <p class="tc f14 fb"><a target='_blank' href="${d.infourl}" title="${d.title}">${d.title}</a></p>
+                                                <p class="ti f12">${jrjfund.subgbk(d.description,90)}...<a target='_blank' href="${d.infourl}" style="color:#f00;">[全文]</a></p>
+                                        </#list>
+                                    </#if>
+                               </div>
+                        </div>
+                    	<div class="wb33 fl tl"><!-- 专业术语 -->
+                    		
+                            <div  style="width:90%;margin:0 auto">
+                            <JRJTAG	tagtype="01" clsid="604001009" pagesize="1" pagecount="1" id="zjzysy" />
+                                    <#if zjzysy?exists>
+                                        <#list zjzysy as d>
+                                                <p class="tc f14 fb"><a target='_blank' href="${d.infourl}" title="${d.title}">${d.title}</a></p>
+                                                <p class="ti f12">${jrjfund.subgbk(d.description,100)}...<a target='_blank' href="${d.infourl}" style="color:#f00;">[全文]</a></p>
+                                        </#list>
+                                    </#if>
+                                    
+                              </div>
+                    	</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                
+            </div>
+          <div class="fr index_right_w">
+            	<script type="text/javascript" charset="utf-8" src="http://gate.looyu.com/49537/105923.js"></script>
+            	<div class="index_right_cz over"><!-- 用户快捷入口 -->
+                    <div class="over">
+                        <div class="fl">
+                            <ul class=" right_btn" style="">
+                                <li><a onclick="javascript:doyoo.util.openChat('g=66551')" class="li_spkh block"></a></li>
+                                <li><a onclick="window.open('http://tg.zhengjin99.com/zhengjin/regUser.jsp')" target="_blank" class="li_mnkh block"></a></li>
+                                <li><a onclick="javascript:doyoo.util.openChat('g=66550')" class="li_khfw block"></a></li>
+                                <li><a onclick="javascript:doyoo.util.openChat('g=66492')" class="li_tsjy block"></a></li>
+                                <li><a href="http://tg.zhengjin99.com/zhengjin/sphy/videoshow.jsp?spid=8172&modelId=715" target="_blank" class="li_byjt block"></a></li>
+                                <li><a href="http://tg.zhengjin99.com/zhengjin/xsrm3/index1.jsp?activityID=xsrm3_gjs_20131025" target="_blank" class="li_ljby block"></a></li>
+                            </ul>
+                        </div>
+                        <div class="right_bottom fr">
+                            <div class="khzn"></div>
+                            <div class="bq_bottom"></div>
+                            <ul class="khzn_txt hide">
+                                <li><a href="/fwzx/khlc.shtml" target="_blank">[开户流程]</a></li>
+                                <li><a href="/fwzx/qyzn.shtml" target="_blank">[网银签约指南]</a></li>
+                                <li><a href="/fwzx/bgxz.shtml" target="_blank">[相关表格下载]</a></li>
+                            </ul>                
+                        </div>
+                        <div class="right_top fr">
+                            <ul class="jygz_txt hide">
+                                <li><a href="/fwzx/byjy.shtml">[现货白银交易规则]</a></li>
+                                <li><a href="/fwzx/crjgz.shtml" target="_blank">[出入金流程及规则]</a></li>
+                                <li><a href="/fwzx/jglc.shtml" target="_blank">[现货交割流程]</a></li>
+                                <li><a href="/fwzx/khts.shtml" target="_blank">[客户投诉处理流程]</a></li>
+                            </ul>
+                            <div class="bq_top"></div>
+                            <div class="jygz"></div>            
+                        </div>
+                    </div>
+                    <div class="over" style="clear:both;">
+                        <div class="right_left fl">
+                            
+                            <ul class="download_txt fr hide">
+                                <li><a href="http://www.zhengjin99.com/fwzx/rjxz.shtml" target="_blank">[行情软件]</a></li>
+                                <li><a href="http://www.zhengjin99.com/fwzx/rjxz.shtml" target="_blank">[模拟交易软件]</a></li>
+                                <li><a href="http://www.zhengjin99.com/fwzx/rjxz.shtml" target="_blank">[实盘交易软件]</a></li>
+                            </ul>
+                            <div class="bq_right fr"></div>
+                            <div class="download fr"></div>
+                        </div>
+                        <div class="weixin fr">
+                            <img src="images/weixin.jpg" width="85" height="84" alt="证金微信" />
+                        </div>
+                  </div>
+                  </div>
+                  
+                  <img src="http://img.zhengjin99.com/web/index_adv_kf.jpg" width="319" height="109" class="block mauto mt10" style="cursor:pointer;" onclick="javascript:doyoo.util.openChat('g=66550')" alt="客户服务" />
+                  
+                  <div class="pr mt10"><div class="index_title2 clear over"><div class="index_news_bd fl wb35 tc index_news_sl" onclick="setTab2('indexnews',1,3)" id="indexnews1"><p class="index_newsgg"><span class="ml20">最新公告</span></p></div><p class="fl wb30 tc index_news_bd" onclick="setTab2('indexnews',2,3)" id="indexnews2"><span>重要公告</span></p><p class="fl wb35 tc index_news_bd" onclick="setTab2('indexnews',3,3)" id="indexnews3"><span>休市安排</span></p><div class="clear"></div></div></div>
+                  <div class="mt10 mb10 pl10 pr" id="indexnews_content_1"><!-- 最新公告 -->
+                  		
+                        <JRJTAG 
+                                tagtype="02" 
+                                clsid="604002010" 
+                                pagesize="2" 
+                                pagecount="1" 
+                                viewedit="0"
+                                speccheck="1"
+                                id="zxgg1" />
+                                <#if zxgg1?exists>
+                                    <#list zxgg1 as d>
+                                        ${d.intor}
+                                    </#list>
+                                </#if>
+                        <JRJTAG 
+                                tagtype="02" 
+                                clsid="604002011" 
+                                pagesize="2" 
+                                pagecount="1" 
+                                viewedit="0"
+                                speccheck="1"
+                                id="zxgg2" />
+                                <#if zxgg2?exists>
+                                    <#list zxgg2 as d>
+                                        ${d.intor}
+                                    </#list>
+                                </#if>
+                        <p class="tr pa" style="right:5px;bottom:-10px;"><a href="/list/list_gsgg.shtml">更多&gt;&gt;</a></p>
+                  </div>
+                  <div class="mt10 mb10 pl10 hide pr" id="indexnews_content_2"><!-- 重要公告 -->
+                  		
+                        <JRJTAG 
+                                tagtype="02" 
+                                clsid="604002010" 
+                                pagesize="4" 
+                                pagecount="1" 
+                                viewedit="0"
+                                speccheck="1"
+                                id="zygg" />
+                                <#if zygg?exists>
+                                    <#list zygg as d>
+                                        ${d.intor}
+                                    </#list>
+                                </#if>
+                        <p class="tr pa" style="right:5px;bottom:-10px;"><a href="/list/list_gsgg.shtml">更多&gt;&gt;</a></p>
+                  </div>
+                  <div class="mt10 mb10 pl10 hide pr" id="indexnews_content_3"><!-- 休市安排 -->
+                  		
+                        <JRJTAG 
+                                tagtype="02" 
+                                clsid="604002011" 
+                                pagesize="4" 
+                                pagecount="1" 
+                                viewedit="0"
+                                speccheck="1"
+                                id="xsap" />
+                                <#if xsap?exists>
+                                    <#list xsap as d>
+                                        ${d.intor}
+                                    </#list>
+                                </#if>
+                        <p class="tr pa" style="right:5px;bottom:-10px;"><a href="/list/list_gsgg.shtml">更多&gt;&gt;</a></p>
+                  </div>
+                  <!-- 首页广告位2 -->
+                  
+                  <!-- 首页广告位3 -->
+                  <img src="images/index_adv.gif" width="319" height="111" class="block mauto mt10" alt="证金" />
+                  <!-- 公司新闻 -->
+                  <div class="pr mt15"><div class="index_title_shadow pa" style="z-index:99;"></div><div class="index_title_shadowr pa"></div><div class="index_title index_day_jx clear over"><span class="fl">公司新闻</span><span class="fr"><a href="http://www.zhengjin99.com/list/list_mtbd.shtml" class="pr10">更多&gt;&gt;</a></span><div class="clear"></div></div></div>
+                  <ul class="pl15 mt10 index_gsxw">
+                  	
+                    <JRJTAG	tagtype="01" clsid="604001029" pagesize="3" pagecount="1" id="mtbd" />
+						<#if mtbd?exists>
+                        	<#list mtbd as d>
+                            	<li class="pr"><a target='_blank' href="${d.infourl}" title="${d.title}">${d.title}</a><span class="pa" style="top: 0px; right: 10px;">${d.makedate?string("yyyy-MM-dd")}</span></li>
+                        	</#list>
+                        </#if>
+                    <JRJTAG	tagtype="01" clsid="604001027" pagesize="1" pagecount="1" id="gshd" />
+						<#if gshd?exists>
+                        	<#list gshd as d>
+                            	<li class="pr"><a target='_blank' href="${d.infourl}" title="${d.title}">${d.title}</a><span class="pa" style="top: 0px; right: 10px;">${d.makedate?string("yyyy-MM-dd")}</span></li>
+                        	</#list>
+                        </#if>
+                    <JRJTAG	tagtype="01" clsid="604001028" pagesize="1" pagecount="1" id="gsgg" />
+						<#if gsgg?exists>
+                        	<#list gsgg as d>
+                            	<li class="pr"><a target='_blank' href="${d.infourl}" title="${d.title}">${d.title}</a><span class="pa" style="top: 0px; right: 10px;">${d.makedate?string("yyyy-MM-dd")}</span></li>
+                        	</#list>
+                        </#if>
+                    
+                    
+                  </ul>
+                  <!-- 社会责任 -->
+                  <div class="pr mt15" style="margin-top:12px;"><div class="index_title_shadow pa" style="z-index:99;"></div><div class="index_title_shadowr pa"></div><div class="index_title index_day_jx">社会责任</div></div>
+                  
+                  <JRJTAG	tagtype="01" clsid="604001030" pagesize="1" pagecount="1" id="shzr" />
+                                    <#if shzr?exists>
+                                        <#list shzr as d>
+                                                <p class="mt10 ti index_shzr">${jrjfund.subgbk(d.description,234)}...<a target='_blank' href="${d.infourl}" style="color:#f00;font-size:12px;">[全文]</a></p>
+                                        </#list>
+                                    </#if>
+                                
+            </div>
+        	<div class="clear"></div>
+        </div>
+        
+    </div>
+	<script charset="utf-8" src="http://wpa.b.qq.com/cgi/wpa.php"></script>
+    <div class="index_foot f14" id="foot_banner" style="_position:absolute;">
+    	<div class="index_foot_main clear over"> 
+            <a href="javascript:void(0)" class="index_foot_qq block fl" id="BizQQWPA"></a>
+            <script type="text/javascript">
+				BizQQWPA.addCustom({aty: '0', a: '0', nameAccount: 800017182, selector: 'BizQQWPA'});
+			</script>
+            <a href="javascript:void(0)" onclick="window.open('http://tg.zhengjin99.com/zhengjin/regUser.jsp')" class="index_foot_ktmn block fl"></a>
+        </div>
+    </div>
+	<!--#include virtual="/inc/foot.shtml"-->
+    <!--#include virtual="/inc/ydtx_login.shtml"-->
+    <!--#include virtual="/inc/confirm.shtml"-->
+    <script type="text/javascript">
+	//var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	//document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F5c22c50059a00792ac3376878b6f9105' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+    <!--可信网站图片LOGO安装开始-->
+	<script src="http://kxlogo.knet.cn/seallogo.dll?sn=e14031835010047406qu6h000000&tp=side&op=0.8&ps=fixed"></script>
+    <!--可信网站图片LOGO安装结束-->
+</body>
+</html>

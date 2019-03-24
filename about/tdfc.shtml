@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>团队风采_证金贵金属</title>
+<!--#include virtual="/inc/head_link.shtml"-->
+<link href="../css/gd.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/jquery.carouFredSel-6.0.4-packed.js"></script>
+<script type="text/javascript">
+			$(function() {
+				
+				//$('#carousel span').append('<img src="../img/gui/carousel_glare.png" class="glare" />');
+				//$('#thumbs a').append('<img src="../img/gui/carousel_glare_small.png" class="glare" />');
+
+				$('#carousel').carouFredSel({
+					responsive: false,
+					circular: false,
+					auto: false,
+					items: {
+						visible: 1,
+						width: 519,
+						height: '56%'
+					},
+					scroll: {
+						fx: 'directscroll'
+					}
+				});
+
+				$('#thumbs').carouFredSel({
+					responsive: true,
+					circular: false,
+					infinite: false,
+					auto: false,
+					prev: '#prev',
+					next: '#next',
+					items: {
+						visible: {
+							min: 2,
+							max: 6
+						},
+						width: 150,
+						height: '66%'
+					}
+				});
+
+				$('#thumbs a').click(function() {
+					$('#carousel').trigger('slideTo', '#' + this.href.split('#').pop() );
+					$('#thumbs a').removeClass('selected');
+					$(this).addClass('selected');
+					return false;
+				});
+
+			});
+		</script>
+</head>
+
+<body>
+	<!--#include virtual="/inc/head.shtml"-->
+    <!--#include virtual="/inc/nav.shtml"-->
+	<div id="about_main" class="clear mb20">
+    	<div class="fl about_left pr">
+        	<div class="pa" style="left:0;top:0;" id="about_left">
+                <!--#include virtual="/inc/left_btn.shtml"-->
+                <ul class="about_link">
+                    <li class="about_link_title">关于我们</li>
+                    <li>&gt;&gt;<span><a href="javascript:void(0)" onclick="second_linkshow(this);">关于证金</a></span>
+                    	<ul class="about_link_sec">
+                        	<li><span><a href="/about/index.shtml">公司概况</a></span></li>
+                            <li><span><a href="/about/ppbz.shtml">品牌标志</a></span></li>
+                            <!--<li><span><a href="/about/gszz.shtml">公司资质</a></span></li>-->
+                            <li><span><a href="/about/qywh.shtml">企业文化</a></span></li>
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="/about/tzzbz.shtml">投资者保障</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/zlhz.shtml">战略合作</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/bghj.shtml">办公环境</a></span></li>
+                    <li>&gt;&gt;<span class="about_link_hover"><a href="javascript:void(0)">团队风采</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/gshj.shtml">公司获奖</a></span></li>
+                    <li>&gt;&gt;<span><a href="javascript:void(0)" onclick="second_linkshow(this);">公司动态</a></span>
+                    	<ul class="about_link_sec">
+                        	<li><span><a href="/list/list_mtbd.shtml">媒体报道</a></span></li>
+                        	<li><span><a href="/list/list_gshd.shtml">公司新闻</a></span></li>
+                            <li><span><a href="/list/list_gsgg.shtml">公司公告</a></span></li>                            
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="/list/list_shzr.shtml">社会责任</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/lxwm.shtml">联系我们</a></span></li>
+                </ul>
+            </div>
+        </div>
+    	<div class="fr about_right">
+        	<div class="about_tdfc01 pr">
+            	
+                	<div id="wrapper" style="top:87px;left:123px;">
+	<div id="carousel-wrapper">
+		
+		<div id="carousel">
+			<span id="pixar" class="pr"><img src="../images/img1.jpg" /><span class="pa about_tdfctxt">优秀客户代表，客户经理及全部总监一行12人即将参加为期七天的豪华游轮游。走起！</span></span>
+			<span id="bugs"><img src="../images/img2.jpg" /><span class="pa about_tdfctxt">证金贵金属优秀的销售精英们在豪华游轮上畅饮欢庆。</span></span>
+			<span id="cars"><img src="../images/img3.jpg" /><span class="pa about_tdfctxt">徜徉在碧波荡漾的大海上，那种惬意的感觉，真爽！</span></span>
+			<span id="incred"><img src="../images/img4.jpg" /><span class="pa about_tdfctxt">2013年9月19日，支持部门11位优秀的员工共享为期五日的九寨沟之旅。</span></span>
+			<span id="monsters"><img src="../images/img5.jpg" /><span class="pa about_tdfctxt">2013年9月20日，18位优秀支持部门的员工感受了为期十天的韩国情调，大家都很HAPPY思密达。</span></span>
+			<span id="nemo"><img src="../images/img6.jpg" /><span class="pa about_tdfctxt">韩国游让大家的身心得到了放松，也积蓄了无限的能量。</span></span>
+			<span id="rat"><img src="../images/img7.jpg" /><span class="pa about_tdfctxt">证金贵金属的家人们正在乘风破浪，向着目标—韩国前进，证金贵金属司旗在海面上迎风招展</span></span>
+			<span id="toystory"><img src="../images/img8.jpg" /><span class="pa about_tdfctxt" style="height: 60px; top: 262px;">2013年5月18日，证金贵金属全体市场部员工在杜总的带领下进行了为期两天的拓展训练。看，鲜明的旗帜、饱满的热情、团队的气势、高度的凝聚力成为我们的赫赫战功。</span></span>
+			<span id="up"><img src="../images/img9.jpg" /><span class="pa about_tdfctxt">温馨的生日派对，与同事一起度过其乐无穷，不是家人胜似家人！</span></span> 
+            <span id="walle"><img src="../images/img10.jpg" /><span class="pa about_tdfctxt">2013年9月13日，公司领导、各部门经理及市场部总监在革命圣地西柏坡召开了公司6—8月总结会。</span></span>
+            <span id="yy"><img src="../images/img11.jpg" /><span class="pa about_tdfctxt" style="height: 60px; top: 262px;">证金贵金属研究团队的专家们。他们致力于为客户提供个性化的贵金属投资策略和完善的投资项目评估方案。</span></span> </div>
+	</div>
+	<div id="thumbs-wrapper">
+		<div id="thumbs">
+			<a href="#pixar" class="selected"><img width="122" height="91" src="../images/small01.jpg"></a>
+			<a href="#bugs"><img width="122" height="91" src="../images/small02.jpg"></a> <a href="#cars">
+			<img width="122" height="91" src="../images/small03.jpg"></a> <a href="#incred">
+			<img width="122" height="91" src="../images/small04.jpg"></a> <a href="#monsters">
+			<img width="122" height="91" src="../images/small05.jpg"></a> <a href="#nemo">
+			<img width="122" height="91" src="../images/small06.jpg"></a> <a href="#rat">
+			<img width="122" height="91" src="../images/small07.jpg"></a> <a href="#toystory">
+			<img width="122" height="91" src="../images/small08.jpg"></a> <a href="#up">
+			<img width="122" height="91" src="../images/small09.jpg"></a> <a href="#walle">
+			<img width="122" height="91" src="../images/small10.jpg"></a> <a href="#yy">
+			<img width="122" height="91" src="../images/small11.jpg"></a> </div>
+		<a id="prev" href="#"></a><a id="next" href="#"></a></div>
+</div>
+<div id="donate-spacer">
+</div>
+<div id="donate">
+	
+</div>
+              	
+            </div>
+            <div class="about_tdfc02"></div>
+            <div class="about_tdfc03"></div>
+            <div class="about_tdfc04"></div>
+            <div class="about_tdfc06"></div>
+            <div class="about_tdfc05">
+            	
+            </div>
+      	</div>
+      
+      	<div class="clear"></div>
+    </div>
+    <!--#include virtual="/inc/foot.shtml"-->
+</body>
+</html>

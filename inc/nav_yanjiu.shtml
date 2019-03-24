@@ -1,0 +1,20 @@
+    <div class="w990 mauto over clear logo">
+    	<h1>
+        	<a href="http://www.zhengjin99.com"><img src="/images2014/logo.png" width="199" height="47" alt="证金贵金属" class="block fl" /></a>
+            <a href="/list/index_yanjiu.shtml"><img src="/images2014/logo_yjzx.png" width="111" height="47" class="fl" /></a>
+        	<img src="/images2014/kefu.png" width="294" height="32" alt="客服电话：010-58309199" class="block fr" />
+        </h1>
+    </div>
+        
+	<div id="nav" class="pr">
+    	<ul class="w990 mauto">
+        	<li class='yjzx_nav1<!--# if expr="$REQUEST_URI = /yanjiu\./" -->_sl<!--# endif -->'><a href="/list/index_yanjiu.shtml">研究首页</a></li>
+            <li class='yjzx_nav2<!--# if expr="$REQUEST_URI = /daodu/" -->_sl<!--# endif -->'><a href="/list/list_yanjiu_daodu.shtml">资讯导读</a></li>
+            <li class='yjzx_nav3<!--# if expr="$REQUEST_URI = /zaowan/" -->_sl<!--# endif -->'><a href="/list/list_yanjiu_zaowan.shtml">金牌早晚评</a></li>
+            <li class='yjzx_nav4'><a href="http://tg.zhengjin99.com/zhengjin/yjbg">研究报告</a></li>
+            <li class='yjzx_nav5<!--# if expr="$REQUEST_URI = /xueyuan/" -->_sl<!--# endif -->'><a href="/list/list_yanjiu_xueyuan.shtml">证金学院</a></li>
+            <li class='yjzx_nav6'><a href="http://tg.zhengjin99.com/zhengjin/cfzk">财富周刊</a></li>
+            <li class='yjzx_nav7<!--# if expr="$REQUEST_URI = /calendar/" -->_sl<!--# endif -->'><a href="/research/calendar.shtml">财经日历</a></li>
+            
+        </ul>
+    </div>

@@ -1,0 +1,8 @@
+<div class="swing1" style="z-index:9999;width:130px;bottom:0px;left:0%;margin-right:0px;_bottom:0;_height:520px;position:fixed;_position:absolute;background:#fff">
+	<a onfocus="this.blur()" href="http://vd.jrj.com/front/" target="_blank">
+		<img src="/images2014/ad/video.jpg" style="display:block">
+	</a>
+	<a onfocus="this.blur()" href="javascript:void(0);" onclick="$('.swing1').hide();">
+		<img src="/images2014/ad/close.png" style="display:block">
+	</a>
+</div>

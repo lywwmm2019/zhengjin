@@ -1,0 +1,9 @@
+<JRJTAG	tagtype="01" clsid="604001014" pagesize="4" pagecount="1" id="kx" />
+<#list kx as d>
+	<#if (d_index==0)>
+		<p class="kx_no1"  style="text-align:left;"><a target='_blank' href="${d.infourl}">[${d.makedate?string("MM/dd HH:mm")}]${d.title}</a></p>
+	</#if>
+	<#if (d_index>0)>
+		<p style="text-align:left;"><a target='_blank' href="${d.infourl}">[${d.makedate?string("MM/dd HH:mm")}]${d.title}</a></p>
+	</#if>
+</#list>

@@ -1,0 +1,37 @@
+	<div id="resourceDetail">
+ <img src="../images2014/Article.jpg" width="651" height="108"  alt="" class="pr"/>
+<div class="pa zyk2">
+   	  <input id="mobile2" maxlength="11" type="text" class="txt2" /><input id="btn2" type="button" class="btn2" />
+  </div>
+    </div>
+	<!--<link href="/css/reset.css" rel="stylesheet" type="text/css"/>-->
+    <link rel="stylesheet" type="text/css" href="/css/ui-dialog.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style_2014.css">
+	<script type="text/javascript" src="/js/dialog-min.js"></script>
+	<script type="text/javascript" src="/js/jquery.watermark.min.js"></script>
+	<script type="text/javascript">
+	var mobile = '';
+	function isMobile(val) {
+		var reg = /^1[34578]\d{9}$/;
+		return reg.test(val);
+	}
+	
+	$(function () {
+		$("#mobile2").watermark("请输入您的手机号码");
+	
+		$("#btn2").click(function () {
+		   	 mobile = $.trim($("#mobile2").val());
+			if (!isMobile(mobile)) {
+				showDialog('提示', '请输入正确的手机号码！');
+				return false;
+			}
+	        var url = "http://tg.zhengjin99.com/zhengjin/ws/put_resource_desc.jsp?callbackparam=?";
+	        $.getJSON(url, {mobile: mobile, activityId: 'tqbjzwp_gjs_20141029', desc: '', isSms: 0}, function(data) {
+	        	console.log(data);
+	        });
+	        showDialog('提示', "预约成功！<br>稍后会有工作人员与您联系，请保持手机畅通。");
+	        $("#mobile2").val('');
+		});
+	});
+	</script>
+    

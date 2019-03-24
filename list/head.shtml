@@ -1,0 +1,76 @@
+<!--[if IE 6]>
+<style type="text/css">
+/*ie6 fix顶端元素*/
+.head{
+top:expression(eval(document.documentElement.scrollTop));
+}
+</style>
+<![endif]-->
+
+<div class="headHeightBox"></div>
+<div class="head">
+	<div class="logo">
+    	<img src="images/logo.png"  class="logo-e"/>
+        <div class="right" id="head-menu">
+        	<p class="top-menu">证金财富站点</p>
+            <ul>
+            	<li><a href="javascript:;">证金l大宗商品</a></li>
+                <li><a href="javascript:;">证金贵金属</a></li>
+                <li><a href="javascript:;">证金资本</a></li>
+                <li><a href="javascript:;">证金投顾</a></li>
+            </ul>
+			<div class="head-right"></div>
+         </div>
+    </div>	
+    
+    <div class="nav">
+    	<div class="nav-bg"></div>
+    	<div class="nav-list" id="home-menu">
+            <ul>
+                <li>关于我们</li>
+                <li>业务范畴</li>
+                <li>媒体关系</li>
+                <li>联系我们</li>
+            </ul>
+    	</div>
+    	<div class="nav-menu" id="nav-menu-box">
+        	<div class="nav-menu-list">
+                <ul class="paddingLeft138">
+                	<li><a href="javascript:;">公司简介</a></li>
+                	<li class="textAlignRight"><a href="javascript:;">服务体系</a></li> 
+                    <li><a href="javascript:;">荣誉资质</a></li>
+                    <li class="textAlignRight"><a href="javascript:;">证金风采</a></li>
+                    <li><a href="javascript:;">发展历程</a></li>
+                    <li>&nbsp;</li>
+                    <li><a href="javascript:;">企业文化</a></li>
+                </ul>
+                <ul class="paddingLeft32">
+                	<li><a href="javascript:;">财富管理</a></li>
+                    <li>&nbsp;</li>
+                	<li><a href="javascript:;">大宗商品</a></li> 
+                     <li>&nbsp;</li>
+                    <li><a href="javascript:;">投顾业务</a></li>
+                </ul>
+                <ul class="paddingLeft26">
+                	<li><a href="javascript:;">公司新闻</a></li>
+                	<li><a href="javascript:;">社会责任</a></li> 
+                    <li><a href="javascript:;">媒体关注</a></li>
+                    <li>&nbsp;</li>
+                    <li><a href="javascript:;">证金年报</a></li>
+                     <li>&nbsp;</li>
+                    <li><a href="javascript:;">活动会议</a></li>
+				</ul>
+                <ul class="paddingLeft29">
+                	<li><a href="javascript:;">证金财富</a></li>
+                	<li><a href="javascript:;">证金资本</a></li> 
+                    <li><a href="javascript:;">证金贵金属</a></li>
+                    <li>&nbsp;</li>
+                    <li><a href="javascript:;">证金投顾</a></li>
+                     <li>&nbsp;</li>
+                    <li style="width:88px;"><a href="javascript:;">证金|大宗商品</a></li>
+				 </ul>
+           		
+            </div>
+        </div>
+    </div>
+</div>

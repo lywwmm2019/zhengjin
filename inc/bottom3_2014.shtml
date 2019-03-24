@@ -1,0 +1,13 @@
+<JRJTAG 
+    tagtype="02" 
+    clsid="604002002" 
+    pagesize="1" 
+    pagecount="1" 
+    viewedit="0"
+    speccheck="1"
+    id="zjtj" />
+    <#if zjtj?exists>
+      <#list zjtj as d>
+        ${d.intor}
+      </#list>
+    </#if>

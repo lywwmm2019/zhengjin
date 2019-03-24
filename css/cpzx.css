@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+.cpzx_right a{color:#c30;}
+.cpzx_right p{font-family:'宋体', 'Arial Unicode MS';padding:10px;line-height:24px; }
+.cpzx_right{margin-left:5px; width:255px;}
+.cpzx_tab .hover{ background:url(../cpzx_images/tab_hover.jpg) no-repeat; color:#FFF;}
+.cpzx_tab li{ background:url(../cpzx_images/tab.jpg) no-repeat; color:#333; float:left; list-style:none; text-align:center; cursor:pointer} 
+.cpzx_tab .hover,.cpzx_tab li{height:77px; width:184px; font-size:20px; line-height:77px; font-weight:bold; font-family:"微软雅黑"}
+
+
+.tab ul{ margin-left:-40px; width:100%;*margin:10px auto 0 auto}
+.jiaoyi{ height:33px; background:#ccc; }
+.jiaoyi li{ float:left; line-height:33px; font-weight:bold; color:#966e00; font-size:14px; width:138px; text-align:center; list-style:none; cursor:pointer}
+.jiaoyi .hover{ background:url(../cpzx_images/small_tab.jpg) no-repeat; height:33px; color:#fff}
+
+
+.zjcg01{background:url(../cpzx_images/zjcg_01.jpg) no-repeat;height:81px;}
+.zjcg02{background:url(../cpzx_images/zjcg_02.jpg) no-repeat;height:81px;}
+.zjcg03{background:url(../cpzx_images/zjcg_03.jpg) no-repeat;height:81px;}
+.zjcg04{background:url(../cpzx_images/zjcg_04.jpg) no-repeat;height:81px;}
+.zjcg05{background:url(../cpzx_images/zjcg_05.jpg) no-repeat;height:81px;}
+.zjcg{width:522px;margin:0 auto;padding:10px 0 150px 0;}

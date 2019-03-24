@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>关于我们_证金贵金属</title>
+<!--#include virtual="/inc/head_link.shtml"-->
+</head>
+
+<body>
+	<!--#include virtual="/inc/head.shtml"-->
+    <!--#include virtual="/inc/nav.shtml"-->
+	<div id="about_main" class="clear mb20">
+    	<div class="fl about_left pr">
+        	<div class="pa" style="left:0;top:0;" id="about_left">
+                <!--#include virtual="/inc/left_btn.shtml"-->
+                <ul class="about_link">
+                    <li class="about_link_title">关于我们</li>
+                    <li>&gt;&gt;<span><a href="javascript:void(0)" onclick="second_linkshow(this);">关于证金</a></span>
+                    	<ul class="about_link_sec" style="display:block;">
+                        	<li><span class="about_link_hover"><a href="javascript:void(0)">公司概况</a></span></li>
+                            <li><span><a href="/about/ppbz.shtml">品牌标志</a></span></li>
+                            <!--<li><span><a href="/about/gszz.shtml">公司资质</a></span></li>-->
+                            <li><span><a href="/about/qywh.shtml">企业文化</a></span></li>
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="/about/tzzbz.shtml">投资者保障</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/zlhz.shtml">战略合作</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/bghj.shtml">办公环境</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/tdfc.shtml">团队风采</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/gshj.shtml">公司获奖</a></span></li>
+                    <li>&gt;&gt;<span><a href="javascript:void(0)" onclick="second_linkshow(this);">公司动态</a></span>
+                    	<ul class="about_link_sec">
+                        	<li><span><a href="/list/list_mtbd.shtml">媒体报道</a></span></li>
+                        	<li><span><a href="/list/list_gshd.shtml">公司新闻</a></span></li>
+                            <li><span><a href="/list/list_gsgg.shtml">公司公告</a></span></li>                            
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="/list/list_shzr.shtml">社会责任</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/lxwm.shtml">联系我们</a></span></li>
+                </ul>
+            </div>
+        </div>
+    	<div class="fr about_right">
+        	<div class="about_new_main lh200 clear">
+       	    	<img src="../images/about_index_img.jpg" width="392" height="274" class="fl pl5"/>
+                <div class="fr about_right_txt">
+                	<p class="f24">证金贵金属概况</p>
+                    <p class="ti mt15">证金贵金属成立于2012年是中国金融在线有限公司（China Finance Online Co., Ltd）旗下的一员。天津贵金属交易所会员单位、海西商品交易所会员单位，公司专注于贵金属及其周边金融业务，涉及范围包括贵金属投资经营、白银制品销售、金融投资咨询服务等。目前业务以贵金属的投资服务为主。在北京、上海、天津、重庆、山东等地均成立了分公司。</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="pl10 pr10 lh200">
+                <p class="f16 lh250 fb mt15">证金贵金属有集专业与创新与一体的</p>
+                <p class="ti">行业业务团队；有实时性与权威性兼备的综合金融数据；有为投资者创造价值的如同璀璨繁星一般的永恒的心。公司的发展方向为致力于打造业内最专业、最具投资者信赖的贵金属综合性投资服务平台，通过在线交流、研究报告、视频指导、短信提醒、电话咨询等"五位一体"的服务体系，为广大投资者提供集"投资分析、交易指导、研究创新"等综合性的专业贵金属投资服务，帮客户创造非凡价值。</p>
+         		<p class="ti">在业界，证金贵金属与金融界（www.jrj.com）、证券之星（www.stockstar.com）、深圳巨灵财经（www.genius.com.cn）、香港证星金融（www.istartrade.com）均建立了深层次的战略合作伙伴关系，同属于中国金融在线有限公司（China Finance Online Co., Ltd），均为集团公司（中国金融在线）构建大中华区金融投资服务体系的重要一环。</p>
+        		<p class="ti">此外，我们的战略合作伙伴，还包括：清华大学五道口金融学院、中国经济和金融研究院和新兰德投资咨询有限公司，他们为我们提供有关大中华区经济形势、证券投资的最新研究成果支持。公司还拥有一支专业的投资研究团队：24位专业分析师、45位资深投资顾问，800多坐席服务人员，将为客户提供个性化的贵金属投资策略建议和完善的投资项目评估方案，担当着客户贵金属投资全程顾问的角色。有实时性与权威性兼备的综合金融数据。所有投资建议，都由专业贵金属研究所提供支持。所有实盘指导，都有资深分析师亲自提供。所有投资顾问，都具备贵金属、股市、外汇市场丰富的投资经验。</p>
+         		<p class="ti">证金贵金属旗下官方网站：（www.zhengjin99.com）。中国金融在线有限公司China Finance Online Co., Ltd，创建于1999年。2004年10月15日，公司在美国NASDAQ主板挂牌上市，股票代码（NASDAQ：JRJC），是目前中国唯一一家在美国NASDAQ主板上市的财经类互联网公司。作为中国最具实力的金融信息提供商，中国金融在线致力于为广大机构用户与个人投资者提供全面、及时、准确、专业的金融数据与资讯。与此同时，中国金融在线也在积极拓展港股经纪服务、投资顾问、贵金属及其它金融服务领域。</p>
+     		</div>
+      	</div>
+      
+      	<div class="clear"></div>
+    </div>
+    <!--#include virtual="/inc/foot.shtml"-->
+</body>
+</html>

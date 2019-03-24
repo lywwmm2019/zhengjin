@@ -1,0 +1,10 @@
+	<div id="head">
+    	<div class="head_top">
+        	<div class="w990 mauto over clear">
+            	<span class="fl mr5"><a href="http://www.zhengjin99.com">首页</a> 丨 <a href="/touzi/touzi_index.shtml">投资品种</a> 丨 <a href="/download.shtml">软件下载</a> 丨 <a href="/service/gywm_tzzbz.html">关于我们</a></span>
+                <span class="fr" id="loginInfos"></span>
+            </div>
+        </div>
+    </div>
+	<script src="/js/index_common_2014.js" type="text/javascript"></script>
+	

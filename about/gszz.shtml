@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>公司资质_证金贵金属</title>
+<!--#include virtual="/inc/head_link.shtml"-->
+</head>
+
+<body>
+	<!--#include virtual="/inc/head.shtml"-->
+    <!--#include virtual="/inc/nav.shtml"-->
+	<div id="about_main" class="clear mb20">
+    	<div class="fl about_left pr">
+        	<div class="pa" style="left:0;top:0;" id="about_left">
+                <!--#include virtual="/inc/left_btn.shtml"-->
+                <ul class="about_link">
+                    <li class="about_link_title">关于我们</li>
+                    <li>&gt;&gt;<span><a href="javascript:void(0)" onclick="second_linkshow(this);">关于证金</a></span>
+                    	<ul class="about_link_sec" style="display:block;">
+                        	<li><span><a href="/about/index.shtml">公司概况</a></span></li>
+                            <li><span><a href="/about/ppbz.shtml">品牌标志</a></span></li>
+                            <li><span class="about_link_hover"><a href="javascript:void(0)">公司资质</a></span></li>
+                            <li><span><a href="/about/qywh.shtml">企业文化</a></span></li>
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="/about/tzzbz.shtml">投资者保障</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/zlhz.shtml">战略合作</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/bghj.shtml">办公环境</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/tdfc.shtml">团队风采</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/gshj.shtml">公司获奖</a></span></li>
+                    <li>&gt;&gt;<span><a href="javascript:void(0)" onclick="second_linkshow(this);">公司动态</a></span>
+                    	<ul class="about_link_sec">
+                        	<li><span><a href="/list/list_mtbd.shtml">媒体报道</a></span></li>
+                        	<li><span><a href="/list/list_gshd.shtml">公司新闻</a></span></li>
+                            <li><span><a href="/list/list_gsgg.shtml">公司公告</a></span></li>                            
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="/list/list_shzr.shtml">社会责任</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/lxwm.shtml">联系我们</a></span></li>
+                </ul>
+            </div>
+        </div>
+    	<div class="fr about_right">
+	  		<div class="about_gszz pr">
+            	<div class="about_gszz01"></div>
+                <div class="about_gszz02"></div>
+                <div class="about_gszz03"></div>
+                <div class="about_gszz04"></div>
+                <div class="about_gszz05"></div>
+                <div class="pa" style="left:155px;bottom:305px;" id="gszz_big">
+                	<img src="../images/gszz_big_1.jpg" width="470" height="292" class="" id="big01" /> 
+                    <!--<img src="../images/gszz_big_2.jpg" width="470" height="366" class="hide" id="big02" />-->
+                    <img src="../images/gszz_big_3.jpg" width="470" height="328" class="hide" id="big03" />
+                    <!--<img src="../images/gszz_big_4.jpg" width="470" height="338" class="hide" id="big04" />-->                   
+                </div>
+                <div class="pa" style="left:55px;bottom:120px;"> 
+                	<a href="javascript:void(0)" onclick="showimg('big01')"><img src="../images/gszz_smallimg_1.jpg" width="179" height="111" class="mr10" /></a>
+                    <!--<a href="javascript:void(0)" onclick="showimg('big02')"><img src="../images/gszz_smallimg_2.jpg" width="142" height="112" class="mr10" /></a>-->
+                    <a href="javascript:void(0)" onclick="showimg('big03')"><img src="../images/gszz_smallimg_3.jpg" width="160" height="112" class="mr10" /></a>
+                    <!--<a href="javascript:void(0)" onclick="showimg('big04')"><img src="../images/gszz_smallimg_4.jpg" width="155" height="112" /></a>-->
+      			</div>
+            </div>
+      	</div>
+      
+      	<div class="clear"></div>
+    </div>
+    <script>
+		function showimg(id){
+			$('#gszz_big img').hide();
+			$('#'+id).show();
+		}
+	</script>
+    <!--#include virtual="/inc/foot.shtml"-->
+</body>
+</html>

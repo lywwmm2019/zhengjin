@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta name="keywords" content="证金贵金属,白银,白银分析,白银投资,白银价格,白银交易,炒白银,白银走势,白银软件,模拟炒银,美联储,白银在线分析" />
+<meta name="description" content="证金贵金属，首家赴美纳斯达克上市公司中国最大最专业的白银投资服务平台，致力于白银投资、白银交易、现货白银、白银价格、炒白银、现货白银走势、白银行情、模拟炒银、现货白银开户、投资资讯、分析评论、贵金属投资等贵金属综合性投资服务" />
+<title>财经日历_研究中心_证金贵金属</title>
+<!--#include virtual="/inc/head_link_2014.shtml"-->
+<script type="text/javascript" src="/js/function_yanjiu.js"></script>
+<script type="text/javascript" src="calendar.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/ui-dialog.css" />
+<script type="text/javascript" src="/js/dialog-min.js"></script>
+<script>
+	Date.prototype.format = function(format) {
+		var o = {
+			"M+" : this.getMonth() + 1,
+			"d+" : this.getDate(),
+			"h+" : this.getHours(),
+			"m+" : this.getMinutes(),
+			"s+" : this.getSeconds(),
+			"q+" : Math.floor((this.getMonth() + 3) / 3),
+			"S" : this.getMilliseconds()
+		}
+		if (/(y+)/.test(format))
+			format = format.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+		for ( var k in o)
+			if (new RegExp("(" + k + ")").test(format))
+				format = format.replace(RegExp.$1, RegExp.$1.length == 1 ? o[k] : ("00" + o[k]).substr(("" + o[k]).length));
+		return format;
+	}
+	
+	String.prototype.toDate = function() {
+		return new Date(Date.parse(this.replace(/-/g, "/")));
+	};
+	
+ 	function getParam(item) {
+		var svalue = location.search.match(new RegExp('[\?\&]' + item + '=([^\&]*)(\&?)','i'));
+		return svalue?decodeURIComponent(svalue[1]):'';
+	}
+	
+	var dataHost = 'http://wx.zhengjin99.com';
+
+	$(function() {
+		$('#cal_lbl li').live("click", function(){
+			$('#cal_lbl li').removeClass('sl');
+			$(this).addClass('sl');
+		});
+		$('.price span').click(function(){
+			$('.price span').removeClass('sl');
+			$(this).addClass('sl');
+		});
+		$('#prev').click(function(){
+			setLabel($('#cal_lbl li').first().attr('class').replace(' sl', ''));
+		});
+		$('#next').click(function(){
+			setLabel($('#cal_lbl li').last().attr('class').replace(' sl', ''));
+		});
+		$('#btn').click(function(){
+			$('#cal_inp').focus();
+			var cal_inp = $.trim($('#cal_inp').val());
+			if (cal_inp != '') {
+				setLabel(cal_inp);
+			}
+		});
+		var today = getParam('date');
+		if (today == '') {
+			today = (new Date()).format('yyyy-MM-dd');
+		}
+		setLabel(today);
+	});
+	
+	var cal_json = [];
+	var cal_type = 'all';
+	
+	function setType(type) {
+		cal_type = type;
+		setData(cal_json);
+	}
+	
+	function setLabel(day) {
+		var cal_lbl = '';
+		var now = day.toDate();
+		for ( var i = -3; i <= 3; i++) {
+			var time = now.getTime() + 1000 * 60 * 60 * 24 * i;
+			var date = new Date(time);
+			cal_lbl += '<li onclick=\'getData("'+ date.format('yyyy-MM-dd') +'");\' class="'
+					+ date.format('yyyy-MM-dd')+ '"><span class="fl">' + getWeek(date) + '</span><div class="fr"><p>'
+			 	 	+ (date.getMonth() +1) + '月</p><p class="date">' + date.getDate() + '</p></div></li>';
+		}
+		$('#cal_lbl').html(cal_lbl);
+		$('#cal_lbl li.'+day).click();
+	}
+	
+	function getData(date) {
+		cal_json = [];
+		setData(cal_json);
+		$.ajax({
+			dataType:'script',
+			scriptCharset:'utf-8',
+			url:dataHost + '/data/juling/calendar/' + date + '.json',
+			success: function() {
+				cal_json = json;
+				setData(cal_json);
+			}
+		});
+		$('#today').text(date);
+		$('#cal_inp').val(date);
+	}
+	
+	function setData(json) {
+		var cal_data = '';
+		for ( var i = 0; i < json.length; i++) {
+			if (cal_type == 'all' || (cal_type+',').indexOf(json[i]['AREA_CODE']+',') > -1) {
+				cal_data += '<tr><td><span class="time">' + json[i]['DECLAREDATE'].substr(11) + '</span></td>';
+				cal_data += '<td><img src="'+dataHost+'/images/country/'+ json[i]['AREA_CODE'] +'.jpg" width="42" height="25" /></td>';
+				cal_data += '<td class="tl">' + json[i]['AREA_NAME'] + '</td>';
+				cal_data += '<td class="tl">' + json[i]['EVENT'] + '</td>';
+				cal_data += '<td>' + notNull(json[i]['LAST_VALUE']) + '</td>';
+				cal_data += '<td>' + notNull(json[i]['EXCEP_VALUE']) + '</td>';
+				cal_data += '<td class="red">' + notNull(json[i]['REAL_VALUE']) + '</td></tr>';
+			}
+		}
+		if (cal_data == '') {
+			cal_data = '<tr><td colspan="10">暂无重要事件</td></tr>';
+		}
+		$('#cal_data').html(cal_data);
+	}
+    
+	function getWeek(date) {
+		var day = '';
+		switch (date.getDay()) {
+		case 0:
+			day = "日";
+			break;
+		case 1:
+			day = "一";
+			break;
+		case 2:
+			day = "二";
+			break;
+		case 3:
+			day = "三";
+			break;
+		case 4:
+			day = "四";
+			break;
+		case 5:
+			day = "五";
+			break;
+		case 6:
+			day = "六";
+			break;
+		}
+		return "周" + day;
+	}
+
+	function notNull(obj) {
+		return obj ? obj : '--';
+	}
+</script>
+</head>
+
+<body>
+<!--# if expr="$REQUEST_URI != /from=/" -->
+	<!--#include virtual="/inc/head_2014.shtml"-->
+    <!--#include virtual="/inc/nav_yanjiu.shtml"-->
+<!--# endif -->
+    
+    <div id="cjrl" class="pr">
+    	<p class="mbx_nav">研究中心> <span class="now">财经日历</span></p>
+        <div class="clear over cjrl_title">
+        	<p class="fl"><span class="today">事件 </span><span class="nl" id="today"></span></p>
+            <div class="fr" id="search">日期：<input id="cal_inp" type="text" class="txt" onclick="calendar.show(this);" /><input id="btn" type="button" class="btn" value="查询" />　</div>
+        </div>
+        
+<!--# if expr="$REQUEST_URI != /from=/" -->
+	<!-- <div id="resourceCalender">
+    	<img src="/images2014/adv_calender.jpg" width="990" height="108" class="pr" />
+        <div class="pa zyk">
+        	<input id="mobile" maxlength="11" type="text" class="txt" /><input id="btn1" type="button" class="btn" />
+        </div>
+    </div> -->
+	<script type="text/javascript" src="/js/jquery.watermark.min.js"></script>
+	<script type="text/javascript">
+	var mobile = '';
+	function isMobile(val) {
+		var reg = /^1[34578]\d{9}$/;
+		return reg.test(val);
+	}
+	$(function () {
+		$("#mobile").watermark("请输入您的手机号码");
+		$("#btn1").click(function () {
+		   	 mobile = $.trim($("#mobile").val());
+			if (!isMobile(mobile)) {
+				showDialog('提示', '请输入正确的手机号码！');
+				return false;
+			}
+	        var url = "http://tg.zhengjin99.com/zhengjin/ws/put_resource_desc.jsp?callbackparam=?";
+	        $.getJSON(url, {mobile: mobile, activityId: 'tqbjcjrl_gjs_20141029', desc: '', isSms: 0}, function(data) {
+	        	console.log(data);
+	        });
+	        showDialog('提示', "预约成功！<br>稍后会有工作人员与您联系，请保持手机畅通。");
+	        $("#mobile").val('');
+		});
+	});
+	</script>
+<!--# endif -->
+        
+        <div id="date">
+            <div class="date_time">
+            	<a href="javascript:void(0)" class="prev" id="prev">prev</a>
+                <ul id="cal_lbl" class="lh200 example1">
+                </ul>
+                <a href="javascript:void(0)" class="next" id="next">next</a>
+            </div>
+        </div>
+        
+        <p class="price"><span class="sl" onclick="setType('all');">全部</span><span onclick="setType(231);">人民币</span><span onclick="setType(23);">美元</span><span onclick="setType('917,145,147,177');">欧元</span><span onclick="setType(178);">英镑</span><span onclick="setType(208);">日元</span><span onclick="setType(39);">澳元</span><span onclick="setType(20);">加元</span><span onclick="setType(168);">瑞郎</span></p>
+        
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" id="cjrl_main">
+        <thead>
+        	<tr>
+            	<th height="45px" width="10%">时间</th>
+                <th width="8%">&nbsp;</th>
+                <th width="10%" class="tl">国家</th>
+                <th width="42%" class="tl">数据</th>
+                <th width="10%">前值</th>
+                <th width="10%">预测值</th>
+                <th width="10%">公布值</th>
+            </tr>
+        </thead>
+        <tbody id="cal_data">
+        </tbody>
+        </table>
+
+    </div>
+    
+<!--# if expr="$REQUEST_URI != /from=/" -->
+    <!--#include virtual="/inc/bottom_2014.shtml"-->
+    <!--#include virtual="/inc/foot_2014.shtml"-->
+<!--# endif -->
+
+</body>
+</html>

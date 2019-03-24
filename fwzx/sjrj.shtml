@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>服务中心-软件下载-手机软件下载</title>
+<!--#include virtual="/inc/head_link.shtml"-->
+</head>
+
+<body>
+	<!--#include virtual="/inc/head.shtml"-->
+    <!--#include virtual="/inc/nav.shtml"-->
+	<div id="about_main" class="clear mb20">
+    	<div class="fl about_left pr">
+        	<div class="pa" style="left:0;top:0;" id="about_left">
+                <!--#include virtual="/inc/left_btn.shtml"-->
+                <ul class="about_link" style="padding-left:10px;">
+                    <li class="about_link_title">服务指南</li>
+                    <li>&gt;&gt;<span><a href="index.shtml">服务体系</a></span></li>
+                    <li>&gt;&gt;<span><a href="khlc.shtml">开户流程</a></span></li>
+                    <li>&gt;&gt;<span><a href="khsp.shtml">开户宣传片</a></span></li>
+                    <li>&gt;&gt;<span><a href="tjs.shtml">津贵所网上开户</a></span>
+                    	<ul class="about_link_sec" style="display:block;">
+                        	<li><span><a href="http://tg.zhengjin99.com/zhengjin/tjskh/index.jsp" target="_blank">实盘开户入口</a></span></li>
+                            
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="qyzn.shtml">网银签约指南</a></span>
+                    	<ul class="about_link_sec" style="display:block;">
+                        	<li><span><a href="qyzn.shtml">海商所网银签约指南</a></span></li>
+                        	<li><span><a href="wyqy.shtml">津贵所网银签约指南</a></span></li>
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="bgxz.shtml">客户协议及相关表格下载</a></span></li>
+                    <li>&gt;&gt;<span><a href="byjy.shtml">白银交易规则</a></span></li>
+                    <li>&gt;&gt;<span><a href="crjgz.shtml">出入金流程及规则</a></span></li>
+                    <li>&gt;&gt;<span><a href="jglc.shtml">现货交割流程</a></span></li>
+                    <li>&gt;&gt;<span><a href="khts.shtml">客户投诉处理流程</a></span></li>
+                    <li>&gt;&gt;<span><a href="rjxz.shtml">软件下载</a></span>
+                   	  <ul class="about_link_sec" style="display:block;">
+                        	<li><span class="about_link_hover"><a href="javascript:void(0)">手机版软件下载平台</a></span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    	<div class="fr about_right">
+        	<div class="fwtx pr">
+            	<div class="fwtx01"></div>
+                <div class="fwtx02"></div>
+                <div class="fwtx03"></div>
+                <div class="fwtx04"></div>
+                <div class="fwtx05"></div>
+                <div class="fwtx06"></div>
+                
+                <a href="javascript:void(0)" class="pa block" style="width:133px;height:48px;left:210px;top:61px;z-index:999;" onclick="setTab('rjxz',1,2)"></a>
+                <a href="javascript:void(0)" class="pa block" style="width:114px;height:48px;left:80px;top:61px;z-index:999;" onclick="setTab('rjxz',2,2)"></a>
+                
+                <div class="pa lh250 rjxz" style="left:35px;top:7px;">
+                	<p class="fht f18 col754c24">手机版软件下载平台</p>
+                	
+                    <div id="rjxz_content_1" class="hide">
+                    	<div class="rjxz_bq1 pr"  style="left:-35px;margin:5px;"></div>
+                        <!--<div style="width:600px;margin:0 0 100px 50px;" class="over">
+                        	<p style="padding-left:200px;font-weight:bold;">通知</p>
+							<p>尊敬的证金客户们：</p>
+							<p>海商所手机软件（测试版）即日起下线，正式版即将上线，敬请期待。给您带来的不便，敬请谅解。</p>
+                            <p class="tr">证金贵金属</p>
+                            <p class="tr">2014.04.10</p>
+                        </div>-->
+                    	<div class="sjxz pr" style="margin:40px 0 20px 120px;">
+                        	<p><a href="http://wap.hxce.cn/hxhq.html" target="_blank" class="sjxz_down_btn" style="padding-top:80px;">手机行情软件下载</a></p>
+                            <p><a href="http://wap.hxce.cn/fxts.html" target="_blank" class="sjxz_down_btn" style="padding-top:30px;">手机交易软件下载</a></p>
+                            <!--<p><a href="http://www.zhengjin99.com/ppt/instruction.ppt"  style="padding-top:30px;" class="sjxz_down_btn">软件说明下载</a></p>-->
+                        </div>
+                    
+                    </div>
+                    
+                    <div id="rjxz_content_2" class="pr">
+                    	<div class="rjxz_bq2 pr" style="left:-35px;margin:5px;"></div>
+                        <p class="red lh120" style="">津贵所三款软件只能使用手机下载</p>
+                        <p class="red lh120">Android版扫描后请选择天通金，然后选择相应的系统软件进行下载。如果点击链接没有反应，请选择"在浏览器中打开"</p>
+                        <p class="red lh120" style="">iphone版扫描后请选择天通金，然后选择相应的系统软件进行下载</p>
+                        <div class="sjxz sjxz2 clear over" style="margin-top:5px;margin-left:0;">   
+                        	<div class="pr fl" style="width:306px;">  
+                            <p class="tc">天通金Android版</p>                   	
+                            <img src="../images_fwtx/er_rjxz.jpg" width="128" height="128" />
+                          	<p><a style="font-size:16px;" target="_blank" href="http://ftp.zhengjin99.com/android_use1.0.doc" class="a_856a16">软件使用说明下载</a></p>
+                            <p class="mb60"><a style="font-size:16px;" target="_blank" href="http://ftp.zhengjin99.com/android_anzhuang.doc" class="a_856a16">软件安装说明下载</a></p>
+                            <p class="pa" style="width:20px;left:42px;top:49px;"><a href="http://soft.bloomplus.net:10804/android/TMBS_A.apk" style="color:#f00;font-size:16px;font-family:'微软雅黑';font-weight:normal;">点击下载</a></p>
+                            
+                            <img src="../images_fwtx/er_rjxz.jpg" width="128" height="128" />
+                        	<p><a style="font-size:16px;" target="_blank" href="http://ftp.zhengjin99.com/iphone_use1.0.doc" class="a_856a16">软件使用说明下载</a></p>
+                            <p><a style="font-size:16px;" target="_blank" href="http://ftp.zhengjin99.com/iso_anzhuang.doc" class="a_856a16">软件安装说明下载</a></p>
+                            <p class="pa" style="width: 20px; left: 42px; top: 289px;"><a href="http://store.bloomplus.net/" style="color:#f00;font-size:16px;font-family:'微软雅黑';font-weight:normal;">点击下载</a></p>
+                            </div>
+                        	<div class="pr fl" style="width:300px;">
+                            <p class="tc">慧通金银Android版</p>   
+                        	<img src="http://img.zhengjin99.com/web/htjy.gif" width="128" height="128" />
+                            <p><a style="font-size:16px;" target="_blank" href="http://ftp.zhengjin99.com/htjy2.0.doc" class="a_856a16">软件说明下载</a></p>
+                            <p class="pa" style="width:20px;left:42px;top:49px;"><a href="http://182.92.79.186:9080/d/htjy_huiyuan.apk" style="color:#f00;font-size:16px;font-family:'微软雅黑';font-weight:normal;">点击下载</a></p><!---->
+                            </div>
+                        </div>
+                    </div>
+                    <input name="" type="button" class="sjxz_hxjy_btn block" value=" " onclick="window.open('http://soft.zhengjin99.com/hxzb/hxzb_20140701.apk')" style="margin:0 0 0 150px;" />
+                    
+                </div>
+                <div class="fwzx_shadow pa" style="left:0;bottom:-18px;"></div>
+            </div>
+      	</div>
+      
+      	<div class="clear"></div>
+    </div>
+    <!--#include virtual="/inc/foot.shtml"-->
+</body>
+</html>

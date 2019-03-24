@@ -1,0 +1,514 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color:#FFF;
+	font-size:12px;
+	}
+h1,img,ul,li{
+	padding:0;
+	margin:0;
+	}
+img{
+	display:block;
+	border:0;
+	}
+.cl{
+	_clear:both;
+	}
+.pa{
+	position:absolute;
+	}
+.pr{
+	position:relative;
+	zoom:1;
+	}
+.f18{
+	font-size:18px;
+	}
+.content{
+	width:990px;
+	margin:0 auto;
+	padding-top:10px;
+	line-height:200%;
+	}
+.bd_ddb5b5{
+	border:1px solid #d3c596;
+	}
+.video_contenttitle{
+	background:url(../images_vedio/titlebg.gif) repeat-x;
+	border-top:1px solid #785512;
+	height:41px;
+	line-height:36px;
+	text-align:center;
+	font-size:18px;
+	}
+.video_contenttitle a{
+	text-decoration:none;
+	}
+.video_contenttitle a.video_yp{
+	background:url(../images_vedio/ypbg.gif) no-repeat;
+	padding-left:15px;
+	color:#785512;
+	font-size:20px;
+	}
+.video_contenttitle a{
+	padding:8px 20px;
+	*padding:9px 20px;
+	color:#686767;
+	}
+.video_contenttitle a.hover{
+	background:#785512;
+	color:#FFF;
+	box-shadow:5px 5px 5px #785512 inset;
+	}
+.video_content{
+	background:url(../images_vedio/contentbg.gif) repeat-x;
+	height:241px;
+	padding:10px 15px;
+	margin-bottom:10px;
+	position:relative;
+	}
+.video_list{
+	background:url(../images_vedio/contentbg.gif) repeat-x #faf4e5;
+	padding:10px 15px;
+	margin-bottom:10px;
+	}
+.video_content p,.video_newtitle{
+	overflow:hidden;
+	line-height:200%;
+	font-size:16px;
+	}
+.video_newtitle{
+	overflow:hidden;
+	}
+.video_newtitle span{
+	width:75px;
+	display:block;
+	text-align:center;
+	float:left;
+	font-size:12px;
+	height:23px;
+	line-height:23px;
+	cursor:pointer;
+	}
+.video_newbtn{
+	background:url(../images_vedio/show_btn.gif) no-repeat;
+	color:#b30000;
+	font-weight:bold;
+	}
+.video_newtitle .video_tag{
+	width:6px;
+	height:16px;
+	float:left;
+	background-color:#7e7e7e;
+	margin:8px 5px 0 0;
+	}
+.video_box{
+	background-color:#e4e4e4;
+	margin-right:20px;
+	float:left;	
+	padding:4px;
+	position:relative;
+	width:163px;
+	}
+.video_bd{
+	border:4px solid #696969;
+	position:absolute;
+	top:0;
+	left:0;
+	opacity:0.6;
+	}
+.video_box p{
+	font-size:14px;
+	color:#404040;
+	line-height:150%;
+	}
+.video_box p.contenttxt{
+	font-size:12px;
+	color:#727272;
+	}
+.video_flash{
+	width:750px;
+	margin:20px auto;
+	}
+.lecture_top{
+	background:#e8e8e8;
+	padding:20px 10px;
+	margin-top:10px;
+	overflow:hidden;
+	clear:both;
+	}
+.lecture_box{
+	float:left;
+	background:url(../images_vedio/lecturebg.gif) no-repeat;
+	padding:1px 8px 5px 1px;
+	width:310px;
+	height:238px;
+	position:relative;
+	}
+.lecture_boxtitle{
+	position:absolute;
+	bottom:6px;
+	opacity:0.6;
+	background:#333;
+	text-align:center;
+	color:#FFF;
+	width:309px;
+	}
+.lecture_lec{
+	float:left;
+	margin:0 10px 10px 0;
+	width:310px;
+	display:inline;
+	}
+.lecture_lect{
+	background:url(../images_vedio/lecturet.gif) no-repeat;
+	width:100%;
+	height:6px;
+	overflow:hidden;
+	}
+.lecture_lecm{
+	background:url(../images_vedio/lecturem.gif) repeat-y;
+	color:#909090;
+	padding:5px 10px 10px 10px;
+	}
+.lecture_lecm p{
+	font-size:14px;
+	}
+.lecture_lecb{
+	background:url(../images_vedio/lectureb.gif) no-repeat;
+	width:100%;
+	height:5px;
+	}
+.lecture_overy{
+	overflow-y:auto;
+	overflow-x:hidden;
+	}
+.show_content{
+	border:1px solid #cccccc;
+	overflow:hidden;
+	margin-top:10px;
+	font-size:18px;
+	}
+.show_left{
+	float:left;
+	width:682px;
+	background:#e9e9e9;
+	padding:10px 10px 30px 10px;
+	line-height:200%;
+	}
+.show_right{
+	float:right;
+	display:inline;
+	width:266px;
+	background:#f6f6f6;
+	padding:10px 10px 30px 10px;
+	*padding:10px 10px 22px 10px;
+	_padding-bottom:12px;
+	overflow:hidden;
+	text-align:center;
+	line-height:200%;
+	}
+.show_video{
+	float:left;
+	display:inline;
+	width:130px;
+	}
+.bd_dcdcdc{
+	border-right:1px solid #dcdcdc;
+	margin-left:-1px;
+	}
+.bd_fff{
+	border-left:1px solid #ffffff;
+	margin-right:-1px;
+	}
+.show_video p{
+	border-bottom:1px solid #dcdcdc;
+	}
+.show_videobox{
+	padding:10px 5px;
+	border-top:1px solid #FFF;
+	}
+.show_videobox li{
+	background:url(../images_vedio/show_videobg.gif) no-repeat;
+	width:125px;
+	height:118px;
+	padding:1px 0 0 1px;
+	margin-bottom:10px;
+	position:relative;
+	}
+.show_videobox li img{
+	*margin-left:-6px;
+	}
+.show_videobox li p{
+	font-size:12px;
+	line-height:24px;
+	border:0;
+	position:absolute;
+	bottom:5px;
+	left:1px;
+	width:119px;
+	background-color:#b4b4b4;
+	color:#FFF;
+	}
+.show_videonum{
+	position:absolute;
+	padding:1px 6px;
+	background:#000;
+	opacity:0.5;
+	line-height:20px;
+	color:#fff;
+	font-size:12px;
+	}
+.show_talk{
+	overflow:hidden;
+	margin-top:20px;
+	}
+.show_talkleft{
+	border:1px solid #cccccc;
+	float:left;
+	display:inline;
+	width:682px;
+	position:relative;
+	}
+.show_talkl{
+	position:absolute;
+	left:0;
+	top:0;
+	background:url(../images_vedio/show_talkl.gif) no-repeat;
+	width:4px;
+	height:143px;
+	}
+.show_talkm{
+	background:url(../images_vedio/show_talkm.gif) repeat-x;
+	height:143px;
+	padding:0 20px;
+	position:relative;
+	}
+.show_talkm textarea{
+	margin-top:20px;
+	border:1px solid #ccc;
+	width:100%;
+	height:68px;
+	}
+.show_talkr{
+	position:absolute;
+	right:-3px;
+	top:0;
+	background:url(../images_vedio/show_talkr.gif) no-repeat;
+	width:3px;
+	height:143px;
+	}
+.show_talkright{
+	float:right;
+	padding:0 20px;
+	width:250px;
+	}
+.show_talkpublish{
+	border:0;
+	background:url(../images_vedio/publishbtn.gif) no-repeat;
+	width:70px;
+	height:34px;
+	color:#fff;
+	position:absolute;
+	right:30px;
+	bottom:10px;
+	font-size:16px;
+	}
+.show_letstalk{
+	padding:5px 15px;
+	line-height:200%;
+	font-size:12px;
+	border-left:1px solid #ccc;
+	border-top:1px solid #ccc;
+	border-right:1px solid #ccc;
+	background:#fff;
+	position:absolute;
+	bottom:0;
+	left:20px;
+	}
+.show_share{
+	border:1px solid #e6e6e6;
+	padding:10px 15px;
+	overflow:hidden;
+	}
+.show_share a{
+	display:block;
+	float:left;
+	width:28px;
+	height:28px;
+	margin-right:5px;
+	}
+.qzone{
+	background:url(../images_vedio/share.gif) 0 0 no-repeat;	
+	}
+.weibo{
+	background:url(../images_vedio/share.gif) -34px 0 no-repeat;
+	}
+.qweibo{
+	background:url(../images_vedio/share.gif) -68px 0 no-repeat;
+	}
+.renren{
+	background:url(../images_vedio/share.gif) -102px 0 no-repeat;
+	}
+.jia{
+	background:url(../images_vedio/share.gif) -137px 0 no-repeat;
+	}
+.show_share span{
+	display:block;
+	float:left;
+	background:url(../images_vedio/share.gif) -165px 0 no-repeat;
+	width:45px;
+	height:28px;	
+	text-align:center;
+	}
+.show_text{
+	border:1px solid #ccc;
+	margin-top:20px;
+	}
+.show_texttitle{
+	background:url(../images_vedio/show_videotitle.gif) repeat-x;
+	height:30px;
+	line-height:30px;
+	font-size:16px;
+	padding-left:15px;
+	}
+.video_more{
+	position:absolute;
+	right:20px;
+	bottom:10px;
+	}
+.show_talkcontent{
+	padding:20px;
+	position:relative;
+	}
+.show_pager{
+	text-align:right;
+	position:absolute;
+	right:20px;
+	bottom:20px;
+	}
+.show_pager span{
+	padding:2px 5px;
+	margin:0 2px;
+	}
+.show_pager input{
+	border:1px solid #ccc;
+	width:40px;
+	}
+.video_box a{
+	position:relative;
+	z-index:2;
+	}
+.dianping_top{
+	background:url(../images_vedio/video_topbottom.jpg) bottom left no-repeat #faf4e5;
+	padding:30px 10px;
+	overflow:hidden;
+	}
+.dianping_topleft{
+	background:url(../images_vedio/video_leftbox.gif) no-repeat;
+	padding:1px 4px 5px 1px;
+	width:437px;
+	float:left;
+	}
+.dianping_title{
+	width:38px;
+	height:118px;
+	background:#7a5517;
+	right:4px;
+	top:1px;
+	color:#fff;
+	font-size:20px;
+	text-align:center;
+	padding:90px 5px;
+	}
+.dianping_right{
+	background:url(../images_vedio/video_topright.gif) no-repeat;
+	float:right;
+	padding:16px 7px 20px 11px;
+	width:488px;
+	height:265px;
+	}
+.dianping_content{
+	height:210px;
+	overflow-y:auto;
+	margin-top:10px;
+	}
+.col_0071f1,.dianping_list .col_0071f1{
+	color:#0071f1;
+	}
+.dianping_select{
+	width:190px;
+	height:24px;
+	line-height:24px;
+	}
+.dianping_date{
+	margin-top:10px;
+	}
+.mr20{
+	margin-right:20px;
+	}
+.dianping_topbg{
+	background:url(../images_vedio/topbg.gif) repeat-x;
+	height:4px;
+	margin-top:10px;
+	}
+.dianping_cornner{
+	background:url(../images_vedio/leftcornner.gif) no-repeat;
+	display:block;
+	width:7px;
+	height:4px;
+	}
+.dianping_list{
+	background:url(../images_vedio/leftbg.gif) repeat-y #fff;
+	padding:10px 0 0 20px;
+	line-height:200%;
+	}
+.show_ct{
+	padding:10px;
+	}
+.show_paihang{
+	margin-right:10px;
+	}
+.fb{
+	font-weight:bold;
+	}
+.col_00f{
+	color:#00f;
+	}
+.lecture_discribe{
+	height:200px;
+	overflow-y:auto;
+	overflow-x:hidden;
+	margin-top:20px;
+	}
+.w50{
+	width:50px;
+	}
+.lecture_pager{
+	text-align:right;
+	margin:20px 20px 0 0;
+	}
+.bd_dccc{
+	border-bottom:1px dashed #ccc;
+	}
+.pd10{
+	padding-bottom:10px;
+	}
+.show_right{
+	position:relative;
+	zoom:1;
+	}
+.show_right span{
+	position:absolute;
+	right:20px;
+	bottom:10px;
+	font-size:12px;
+	}
+.show_listbtn{
+	height:25px;
+	color:#666666;
+	font-weight:bold;
+	text-decoration:none;
+	}

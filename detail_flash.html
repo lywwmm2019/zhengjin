@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">	
+    <head>
+        <title>证金EMO量化指数</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=gbk" /> 
+        <style type="text/css" media="screen">
+			html, body	{ height:100%; }
+			body { margin:0; padding:0; overflow:auto; }   
+        </style>
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/flexpaper.js"></script>
+    </head>
+    <body>
+    	<div align="center">
+	        <a id="viewerPlaceHolder" style="width:900px;height:650px;display:block"></a>
+        </div>
+		<script src="js/EMO.js" type="text/javascript"></script>
+		<script type="text/javascript">
+	 	function getParam(item) {
+			var svalue = location.search.match(new RegExp('[\?\&]' + item + '=([^\&]*)(\&?)','i'));
+			return svalue?decodeURIComponent(svalue[1]):'';
+		}
+		$(document).ready(function () {
+			getData();
+		});
+		
+		function getData() {
+			var idx = getParam('id');
+			$.getJSON(dataHost + "/quote/news.jsp?callback=?",{
+				action:"get",
+			 	id: idx
+			}, function(data) {
+				var fpv = new FlexPaperViewer('js/PaperViewer',
+						 'viewerPlaceHolder', { config : {
+						 SwfFile : dataHost + data.filepath + data.filename
+					}});
+			});
+		};
+		</script>
+	<script type="text/javascript" src="/js/count.js"></script>
+   </body>
+</html>

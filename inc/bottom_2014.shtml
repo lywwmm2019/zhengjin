@@ -1,0 +1,32 @@
+<!--script charset="utf-8" src="http://wpa.b.qq.com/cgi/wpa.php"></script>
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script> -->
+<!--<script type="text/javascript" charset="utf-8" src="http://gate.looyu.com/49537/105923.js"></script>-->
+    <div class="w990 mauto">
+        <div class="index_about clear over">
+            <div class="fl mr10">
+                <img src="/images2014/index_about_logo1.jpg" width="51" height="43" class="fl" />
+                <p class="logo1_txt fl pr">
+                    <span class="title">认识证金贵金属</span><br />
+                    <span><a href="/service/gywm_tzzbz.html">关于我们</a> 丨 <a href="/service/gywm_tzzbz.html">投资者保障</a></span>
+                    <script type="text/javascript">
+						//BizQQWPA.addCustom({aty: '0', a: '0', nameAccount: 800017182, selector: 'BizQQWPA'});
+					</script>
+                </p>
+            </div>
+            <!--<div class="fl ml30 mr5">
+                <img src="/images2014/index_about_logo2.jpg" width="57" height="49" class="fl" />
+                <p class="logo1_txt fl">
+                    <span class="title">最热专题</span><br />
+                    <span><a href="http://tg.zhengjin99.com/zhengjin/mallNew/login.jsp">积分商城</a></span>
+                </p>
+            </div>-->
+            <div class="fr">
+                <img src="/images2014/index_about_logo3.jpg" width="66" height="37" class="fl"/>
+                <p class="logo1_txt fl">
+                    <span class="title">让证金贵金属为您服务</span><br />
+                    <span><a target="_blank" href="/feedback.shtml">用户反馈</a>丨<!--<a href="http://newzb.jrj.com/hxzb/bozhujianjie.jsp?fromUrl=99" target="_blank">专家在线</a> 丨--> <a href="/download.shtml">软件下载</a></span>
+                </p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>

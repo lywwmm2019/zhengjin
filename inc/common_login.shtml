@@ -1,0 +1,126 @@
+<!--弹窗-->
+<div id="popLoginWin"
+	style="position: absolute; background: #9f0000; display: none; width: 428px; position: absolute; top: 63%; _top: 63%; left: 50%; margin-left: -232px; margin-top: 206px;">
+	<a
+		style="display: block; width: 44px; height: 23px; position: absolute; top: 1px; right: 3px; background: url(images/tc_off.jpg) no-repeat"
+		href="javascript:void(0);" onclick="$('#popLoginWin').fadeOut();"></a>
+	<ul class="tc">
+		<li onclick="setTab('tc',1,2)" class="hover" id="tc1">直接登录</li>
+		<li onclick="setTab('tc',2,2)" id="tc2">立即注册</li>
+	</ul>
+	<div
+		style="margin: 0 10px 10px 10px; background: #f6f1e4; clear: both;">
+		<div id="con_tc_1" style="*padding-top: 10px; *margin-top: -10px">
+			<table width="400" border="0" cellpadding="0" cellspacing="0"
+				style="*margin: -10px auto 10px auto; padding-top: 10px; *padding-top: 0px">
+				<tr>
+					<td width="151" align="right">手机号：</td>
+					<td width="249"><input name="" type="text"
+						style="border: #900 1px solid" id="passport2"/> <span class="red">*</span>
+					</td>
+				</tr>
+				<tr>
+					<td align="right">密码：</td>
+					<td><input name="" type="password" onkeypress="BindEnter2(event)" style="border: #900 1px solid" id="password2"/>
+						<span class="red">*</span>
+					</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td><input name="" type="button" value="" onclick="zjgjs.sso.login('2')"
+						style="background: url(images/dl.jpg) no-repeat; width: 100px; height: 27px; border: none; margin: 10px 0 8px 0; cursor: pointer" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" height="30" align="center"><p class="font_12">
+							*最新一期《证金锦囊》仅对<span class="red">注册用户</span>开放*
+						</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<script type="text/javascript">
+			var ctx = "http://tg.zhengjin99.com/";
+			var activityID = "SSO_GJS_20130409";
+		</script>
+		<script type="text/javascript" src="/js/signup.js"></script>
+		<div id="con_tc_2"
+			style="*padding-top: 10px; *margin-top: -10px; display: none">
+			<table width="400" border="0" cellpadding="0" cellspacing="0"
+				style="*margin: -10px auto 10px auto; padding-top: 10px; *padding-top: 5px">
+				<tr>
+					<td width="142" align="right" height="24">用户名：</td>
+					<td width="177"><input type="text" name="userName" id="userName" 
+						style="border: #900 1px solid" /> <span class="red">*</span>
+					</td>
+					<td width="100"><span class="red font_12" id="userName_error" style="display:none;background:url(/images/reg_titlebg.gif) no-repeat 0 -140px; padding-left:15px; line-height:16px; ">验证码错误</span></td>
+				</tr>
+				<tr>
+					<td align="right">设置登录密码：</td>
+					<td><input name="pwd1"
+						id="pwd1" type="password" style="border: #900 1px solid" onkeyUp="checkPwd();" />
+						<span class="red">*</span>
+					</td>
+					<td width="100"><span id="pwd1_error" class="red font_12" style="display:none;background:url(/images/reg_titlebg.gif) no-repeat 0 -140px; padding-left:15px; line-height:16px; ">验证码错误</span></td>
+				</tr>
+				<tr>
+					<td align="right">&nbsp;</td>
+					<td colspan="2" class="font_12">
+						<p
+							style="display: block; height: 18px; line-height: normal; overflow: hidden; padding: 5px 0 0;">
+							<span colspan="2" class="font_12"><span class="fl">密码强度</span><i
+								class="qd fl" id="pwdImg"></i><span class="fl" id="pwdStrength">&nbsp;强</span>
+							</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td align="right">再次输入密码：</td>
+					<td><input name="pwd2" id="pwd2" type="password" style="border: #900 1px solid" />
+						<span class="red">*</span>
+					</td>
+					<td width="100"><span id="pwd2_error" class="red font_12" style="display:none;background:url(/images/reg_titlebg.gif) no-repeat 0 -140px; padding-left:15px; line-height:16px; ">验证码错误</span></td>
+				</tr>
+				<tr>
+					<td align="right">手机号码：</td>
+					<td width="177"><input type="text" name="mobile" id="mobile"
+						style="border: #900 1px solid" /> <span class="red">*</span>
+					</td>
+					<td width="100"><input name="" type="button" value="" onclick="sendCode()"
+						style="background: url(images/sign_up_04.jpg) no-repeat; width: 71px; height: 24px; cursor: pointer; border: none" />
+						<span id="mobile_error" class="red font_12" style="display:none;background:url(/images/reg_titlebg.gif) no-repeat 0 -140px; padding-left:15px; line-height:16px; ">验证码错误</span>
+					</td>
+				</tr>
+				<tr>
+					<td align="right">邮箱：</td>
+					<td><input name="email" id="email" type="text" style="border: #900 1px solid" />
+						<span class="red"></span>
+					</td>
+					<td width="100"><span id="email_error" class="red font_12" style="display:none;background:url(/images/reg_titlebg.gif) no-repeat 0 -140px; padding-left:15px; line-height:16px; ">验证码错误</span></td>
+				</tr>
+				<tr>
+					<td align="right">输入验证码：</td>
+					<td><input name="code"  id="code" type="text" style="border: #900 1px solid" />
+						<span class="red">*</span>
+					</td>
+					<td width="100"><span id="code_error" class="red font_12" style="display:none;background:url(/images/reg_titlebg.gif) no-repeat 0 -140px; padding-left:15px; line-height:16px; ">验证码错误</span></td>
+				</tr>
+
+				<tr>
+					<td>&nbsp;</td>
+					<td><input name="" type="button" value="" onclick="submitReg();"
+						style="background: url(images/zc.jpg) no-repeat; width: 100px; height: 27px; border: none; margin: 10px 0 8px 0; cursor: pointer; border: none" />
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="3" height="30" align="center"><p class="font_12">
+							*最新一期《证金锦囊》仅对<span class="red">注册用户</span>开放*
+						</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>

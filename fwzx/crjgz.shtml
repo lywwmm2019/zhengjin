@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>服务中心-出入金流程及规则</title>
+<!--#include virtual="/inc/head_link.shtml"-->
+</head>
+
+<body>
+	<!--#include virtual="/inc/head.shtml"-->
+    <!--#include virtual="/inc/nav.shtml"-->
+	<div id="about_main" class="clear mb20">
+    	<div class="fl about_left pr">
+        	<div class="pa" style="left:0;top:0;" id="about_left">
+                <!--#include virtual="/inc/left_btn.shtml"-->
+                <ul class="about_link" style="padding-left:10px;">
+                    <li class="about_link_title">服务指南</li>
+                    <li>&gt;&gt;<span><a href="index.shtml">服务体系</a></span></li>
+                    <li>&gt;&gt;<span><a href="khlc.shtml">开户流程</a></span></li>
+                    <li>&gt;&gt;<span><a href="khsp.shtml">开户宣传片</a></span></li>
+                    <li>&gt;&gt;<span><a href="tjs.shtml">津贵所网上开户</a></span>
+                    	<ul class="about_link_sec" style="display:block;">
+                        	<li><span><a href="http://tg.zhengjin99.com/zhengjin/tjskh/index.jsp" target="_blank">实盘开户入口</a></span></li>
+                            
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="qyzn.shtml">网银签约指南</a></span>
+                    	<ul class="about_link_sec" style="display:block;">
+                        	<li><span><a href="qyzn.shtml">海商所网银签约指南</a></span></li>
+                        	<li><span><a href="wyqy.shtml">津贵所网银签约指南</a></span></li>
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="bgxz.shtml">客户协议及相关表格下载</a></span></li>
+                    <li>&gt;&gt;<span><a href="byjy.shtml">白银交易规则</a></span></li>
+                    <li>&gt;&gt;<span class="about_link_hover"><a href="javascript:void(0)">出入金流程及规则</a></span></li>
+                    <li>&gt;&gt;<span><a href="jglc.shtml">现货交割流程</a></span></li>
+                    <li>&gt;&gt;<span><a href="khts.shtml">客户投诉处理流程</a></span></li>
+                    <li>&gt;&gt;<span><a href="rjxz.shtml">软件下载</a></span>
+                   	  <ul class="about_link_sec" style="display:block;">
+                        	<li><span><a href="sjrj.shtml">手机版软件下载平台</a></span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    	<div class="fr about_right">
+        	<div class="fwtx pr">
+            	<div class="fwtx01"></div>
+                <div class="fwtx02"></div>
+                <div class="fwtx03"></div>
+                <div class="fwtx04"></div>
+                <div class="fwtx05"></div>
+                <div class="fwtx06"></div>
+				<div class="pa lh200" style="left:40px;top:30px;">
+       	      		<p class="fb">"出入金"指投资者将资金在自有的交易账户和银行账户间划转资金的过程，资金由交易账户划入银行账户为"出金"，反之为"入金"。投资者有三种出入金方式，操作流程简述如下： </p>
+                    <p class="col754c24 fb">★方式一：系统平台出入金</p>
+                    <p>1、投资者登录进入交易所电子交易平台客户端</p>
+                    <p>2、在窗口上方工具栏中点选"出入金"选项，此时弹出出入金对话框</p>
+                    <p>3、选择"出入金类型"、填写"金额"和"资金密码"（出入金皆为资金账号交易密码）</p>
+                    <p>4、点击"确定"。</p>
+                    <p class="red">*注：出金金额不超过屏幕下方"账户信息"内的"可用保证金"金额以及"上日余额"；入金金额不超过出入金对话框内 "银行资金余额" </p>
+                    <br />
+                    <p class="col754c24 fb">★方式二：网上银行出入金</p>
+                    <p>1、投资者打开建设银行网页，选择"个人网银登录"，进入个人网上银行登录页面；</p>
+                    <p>2、如办理"入金"，则选择"缴费支付"模块下"E商贸通"中的"入金"；如办理"出金"，则选择"缴费支付"模块下"E商贸通"中的"出金"；</p>
+                    <p>3、按照指示选择"席位号"、输入"金额"、"用途"；</p>
+                    <p>4、输入"卡交易密码"（为银行卡密码）。</p>
+                    <br />
+                    <p class="col754c24 fb">★方式三：银行柜面办理</p>
+                    <p>1、本人携带银行卡、身份证和证金贵金属提供的第三方存管协议到建设银行网点；</p>
+                    <p>2、依照银行要求提供"海西商品交易所编号（即实盘账号）"；</p>
+                    <p>3、由银行完成开户人银行账户和海西交易账户的签约绑定</p>
+                    <p>4、将"入金"或者"出金"金额告知银行柜员，依照银行要求输入"银行卡密码"；</p>
+                    <p>5、完成交易后，将第三方存管协议中的第二联交还证金贵金属，第三联由开户人自行保管。</p>
+                </div>
+                <div class="fwzx_shadow pa" style="left:0;bottom:-18px;"></div>
+            </div>
+      	</div>
+      
+      	<div class="clear"></div>
+    </div>
+    <!--#include virtual="/inc/foot.shtml"-->
+</body>
+</html>

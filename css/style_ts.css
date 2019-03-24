@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*视频推送框*/
+#vedioHint{position:fixed;_position:absolute;right:-7px;top:50px;width:272px;overflow:hidden;padding:5px 0 0 11px;background:#fff;z-index:99;background:url(/images2014/vedioHint_bg.png) no-repeat;_background:url(/images2014/vedioHint_bg.gif) no-repeat;height:83px;font-size:14px;}
+#vedioHint .vedioHint_img{width:74px;height:67px;overflow:hidden;background:url(/images2014/vedioHint_img.png) no-repeat;_background:url(/images2014/vedioHint_img.gif) no-repeat;margin-right:14px;_margin-right:11px;}
+#vedioHint .vedioHint_txt{width:145px;padding-top:3px;}
+#vedioHint .vedioHint_txt .vedioHint_title{display: block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap; width: 100%;}
+#vedioHint .vedioHint_close{width:12px;height:17px;position:absolute;right:5px;top:0;cursor:pointer;z-index:9;}
+#vedioHint .vedioHint_txt p{font-family:"宋体";line-height:150%;font-size:14px;}
+#vedioHint .vedioHint_txt p a{color:#e89916;text-decoration:none;}
+#vedioHint .vedioHint_txt p a:hover{text-decoration:underline;}

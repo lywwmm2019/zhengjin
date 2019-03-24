@@ -1,0 +1,435 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>证金贵金属-证金锦囊</title>
+<link href="/css/style_zjjn.css" rel="stylesheet" type="text/css" />
+<link href="/css/scroll.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src='/js/jquery.js'></script> 
+<script type="text/javascript" src='/js/underscore.js'></script>
+<script type="text/javascript" src='/js/backbone-min.js'></script>
+
+</head>
+
+<body>
+	<div id="main">
+    	<script type='text/x-jquery-tmpl' id='template-Index'>
+			<div id='page_index'>
+				<div class="fm01"></div>
+				<div class="fm02 pr">
+					<!--<span class="fm_title pa" style="top:37px;left:55px;">证金贵金属·第120期 2013-7-30</span>-->
+					<JRJTAG tagtype="02" clsid="604002008" pagesize="1" pagecount="1" viewedit="1" id="dataid" />
+						<#if dataid?exists>
+						  <#list dataid as d>
+							 <span class="fm_title pa" style="top:-108px;right:0;">${d.intor}</span>
+						  </#list>
+						</#if>
+					<div class="pa title1" style="left:505px;top:25px;">
+						<JRJTAG tagtype="02" clsid="604002012" pagesize="3" pagecount="1" viewedit="1" id="titleid" />
+							<#if titleid?exists>
+							  <#list titleid as d>
+								 ${d.intor}
+							  </#list>
+							</#if>
+					</div>
+					
+				</div>
+				<div class="fm03"></div>
+				<div class="fm04"></div>
+				<div class="fm05"></div>
+				<div class="fm06"></div>
+			</div>
+		</script>
+        <script type='text/x-jquery-tmpl' id='template-Page_1'>
+			<div class="pr">
+				<div class="jsy_main pa" style="top:100px;right:135px;">
+				<JRJTAG	tagtype="01" clsid="604001018" pagesize="6" pagecount="1" id="mljsy" />
+						<#if mljsy?exists>
+							<#list mljsy as d>
+								<#if d_index==0>
+								<p class="jsy_title">${d.title}</p>
+								<div class="dumascroll jsy_maintxt" data_value="${d.id}"><p></p></div>
+
+								</#if>
+							</#list>
+							
+						</#if>
+
+
+				<!--<p class="jsy_title">题目题目题目</p>-->
+				<!--<div class="dumascroll jsy_maintxt"><p>a【逢高做空】近期美国经济数据均好于预期，今日美国非农就业数据可能进一步表现强势，同时日线图已破位，逢高做空较为保险。若反弹至3940-60 区间可考虑逢高做空，止	损 30 点，目标可看至 3900 整数关口附近，若再度跌位则有望考验昨日低点 3850 一线，注意严格止盈止损。【逢高做空】近期美国经济数据均好于预期，今日美国非农就业数	据可能进一步表现强势，同时日线图已破位，逢高做空较为保险。若反弹至 3940-60 区间可考虑逢高做空，止损 30 点，目标可看至 3900 整数关口附近，若再度跌位则有望考验昨日低点 3850 一线，注意严格止盈止损。【逢高做空】近期美国经济数据均好于预期，今日美国非农就业数据可能进一步表现强势，同时日线图已破位，逢高做空较为保险。若反弹至 3940-60 区间可考虑逢高做空，止损 30 点，目标可看至 3900 整数关口附近，若再度跌位则有望考验昨日低点 3850 一线，注意严格止盈止损。</p><p>【逢高做空】近期美国经济数据均好于预期，今日美国非农就业数据可能进一步表现强势，同时日线图已破位，逢高做空较为保险。若反弹至 3940-60 区间可考虑逢高做空，止损 30 点，目标可看至 3900 整数关口附近，若再度跌位则有望考验昨日低点 3850 一线，注意严格止盈止损。【逢高做空】近期美国经济数据均好于预期，今日美国非农就业数据可能进一步表现强势，同时日线图已破位，逢高做空较为保险。若反弹至 3940-60 区间可考虑逢高做空，止损 30 点，目标可看至 3900 整数关口附近，若再度跌位则有望考验昨日低点 3850 一线，注意严格止盈止损。【逢高做空】近期美国经济数据均好于预期，今日美国非农就业数据可能进一步表现强势，同时日线图已破位，逢高做空较为保险。若反弹至 3940-60 区间可考虑逢高做空，止损 30 点，目标可看至 3900 整数关口附近，若再度跌位则有望考验昨日低点 3850 一线，注意严格止盈止损。</p></div>-->
+					
+				</div>
+				
+				<div class="jsy01"></div>
+				<div class="jsy02"></div>
+				<div class="jsy03"></div>
+				<div class="jsy04"></div>
+				<div class="jsy05"></div>
+				<div class="jsy06"></div>
+				<div class="left pa"></div>
+				<div class="right pa"></div>
+			</div>
+		</script>
+        <script type='text/x-jquery-tmpl' id='template-Page_2'>
+			<div class="pr">
+				<div class="pa w95" style="top:45px;left:45px;">
+					<JRJTAG	tagtype="01" clsid="604001019" pagesize="6" pagecount="1" id="jrcl" />
+						<#if jrcl?exists>
+							<#list jrcl as d>
+								<#if d_index==0>
+								<h1 class="title"> </h1><p class="title_bd"></p>
+								<div class="etf_main pa dumascroll" style="top:55px;left:0" data_value="${d.id}"><p></p></div>
+								</#if>
+							</#list>
+							
+						</#if>
+					<!--<h1 class="title">文字文字文字文字</h1>-->
+					
+				</div>
+				<!--<div class="etf_main pa dumascroll" style="top:100px;left:45px;"><p>每年一季度市场上涨的概率很大，过去的20年，有14年上证指数在一季度是上涨的，所以一季度行情也被称作是"春季攻势"。2013年一季度线也收出了小阳线，如今距离一季度结束还有一周的时间，这也意味着行情在时间点处来到一个拐点。回顾过去一段时间来看，机构、投资者、媒体的言论，可以发现，不管大家是对于全年走势看空还是看多，有一点却是一致的，那就是对于2013年一季度行情比较看好。对此玉名认为有三点：第一，2012年12月股市的长阳，已经让市场做多情绪激发了起来，所以无论是从惯性角度，还是从反弹趋势角度来看，一季度都是在多头之下。但问题是，这样的预期越强烈，行情拐点的意味越浓厚</p><p>每年一季度市场上涨的概率很大，过去的20年，有14年上证指数在一季度是上涨的，所以一季度行情也被称作是"春季攻势"。2013年一季度线也收出了小阳线，如今距离一季度结束还有一周的时间，这也意味着行情在时间点处来到一个拐点。回顾过去一段时间来看，机构、投资者、媒体的言论，可以发现，不管大家是对于全年走势看空还是看多，有一点却是一致的，那就是对于2013年一季度行情比较看好。对此玉名认为有三点：第一，2012年12月股市的长阳，已经让市场做多情绪激发了起来，所以无论是从惯性角度，还是从反弹趋势角度来看，一季度都是在多头之下。但问题是，这样的预期越强烈，行情拐点的意味越浓厚</p><p>每年一季度市场上涨的概率很大，过去的20年，有14年上证指数在一季度是上涨的，所以一季度行情也被称作是"春季攻势"。2013年一季度线也收出了小阳线，如今距离一季度结束还有一周的时间，这也意味着行情在时间点处来到一个拐点。回顾过去一段时间来看，机构、投资者、媒体的言论，可以发现，不管大家是对于全年走势看空还是看多，有一点却是一致的，那就是对于2013年一季度行情比较看好。对此玉名认为有三点：第一，2012年12月股市的长阳，已经让市场做多情绪激发了起来，所以无论是从惯性角度，还是从反弹趋势角度来看，一季度都是在多头之下。但问题是，这样的预期越强烈，行情拐点的意味越浓厚</p></div>-->
+					
+				
+				
+				<div class="jrcl01"></div>
+				<div class="jrcl02"></div>
+				<div class="jrcl03"></div>
+				<div class="jrcl04"></div>
+				<div class="jrcl05"></div>
+				<div class="jrcl06"></div>
+				<div class="left pa"></div>
+				<div class="right pa"></div>
+			</div>
+		</script>
+        <script type='text/x-jquery-tmpl' id='template-Page_3'>
+			<div class="pr">
+			
+				<div class="pa w95" style="top:45px;left:45px;">
+					<JRJTAG	tagtype="01" clsid="604001020" pagesize="6" pagecount="1" id="rdjj" />
+						<#if rdjj?exists>
+							<#list rdjj as d>
+								<#if d_index==0>
+								<h1 class="title"> </h1><p class="title_bd"></p>
+								<div class="etf_main pa dumascroll" style="top:55px;right:45px" data_value="${d.id}"><p></p></div>
+								</#if>
+							</#list>
+							
+						</#if>
+					<!--<h1 class="title">文字文字文字文字</h1>-->
+					
+				</div>
+				<!--<div class="etf_main pa dumascroll" style="top:100px;right:45px;"><p>每年一季度市场上涨的概率很大，过去的20年，有14年上证指数在一季度是上涨的，所以一季度行情也被称作是"春季攻势"。2013年一季度线也收出了小阳线，如今距离一季度结束还有一周的时间，这也意味着行情在时间点处来到一个拐点。回顾过去一段时间来看，机构、投资者、媒体的言论，可以发现，不管大家是对于全年走势看空还是看多，有一点却是一致的，那就是对于2013年一季度行情比较看好。对此玉名认为有三点：第一，2012年12月股市的长阳，已经让市场做多情绪激发了起来，所以无论是从惯性角度，还是从反弹趋势角度来看，一季度都是在多头之下。但问题是，这样的预期越强烈，行情拐点的意味越浓厚</p><p>每年一季度市场上涨的概率很大，过去的20年，有14年上证指数在一季度是上涨的，所以一季度行情也被称作是"春季攻势"。2013年一季度线也收出了小阳线，如今距离一季度结束还有一周的时间，这也意味着行情在时间点处来到一个拐点。回顾过去一段时间来看，机构、投资者、媒体的言论，可以发现，不管大家是对于全年走势看空还是看多，有一点却是一致的，那就是对于2013年一季度行情比较看好。对此玉名认为有三点：第一，2012年12月股市的长阳，已经让市场做多情绪激发了起来，所以无论是从惯性角度，还是从反弹趋势角度来看，一季度都是在多头之下。但问题是，这样的预期越强烈，行情拐点的意味越浓厚</p><p>每年一季度市场上涨的概率很大，过去的20年，有14年上证指数在一季度是上涨的，所以一季度行情也被称作是"春季攻势"。2013年一季度线也收出了小阳线，如今距离一季度结束还有一周的时间，这也意味着行情在时间点处来到一个拐点。回顾过去一段时间来看，机构、投资者、媒体的言论，可以发现，不管大家是对于全年走势看空还是看多，有一点却是一致的，那就是对于2013年一季度行情比较看好。对此玉名认为有三点：第一，2012年12月股市的长阳，已经让市场做多情绪激发了起来，所以无论是从惯性角度，还是从反弹趋势角度来看，一季度都是在多头之下。但问题是，这样的预期越强烈，行情拐点的意味越浓厚</p></div>-->
+					
+				
+				<div class="rdjj01"></div>
+				<div class="rdjj02"></div>
+				<div class="rdjj03"></div>
+				<div class="rdjj04"></div>
+				<div class="rdjj05"></div>
+				<div class="rdjj06"></div>
+				<div class="left pa"></div>
+				<div class="right pa"></div>
+			</div>
+		</script>
+        <script type='text/x-jquery-tmpl' id='template-Page_4'>
+			<div class="pr">
+				<div class="pa w95" style="top:45px;left:45px;">
+					<JRJTAG	tagtype="01" clsid="604001021" pagesize="6" pagecount="1" id="etf" />
+						<#if etf?exists>
+							<#list etf as d>
+								<#if d_index==0>
+								<h1 class="title"> </h1><p class="title_bd"></p>
+								<div class="etf_main pa dumascroll" style="top:55px;left:0" data_value="${d.id}"><p></p></div>
+								</#if>
+							</#list>
+							
+						</#if>
+					<!--<h1 class="title">文字文字文字文字</h1>-->
+					
+				</div>
+				<!--<div class="etf_main pa a dumascroll b" style="top:100px;left:45px;"><p><img src="images/etf1.jpg" width="494" height="195" /></p><p><img src="images/etf1.jpg" width="494" height="195" /></p><p>每年一季度市场上涨的概率很大，过去的20年，有14年上证指数在一季度是上涨的，所以一季度行情也被称作是"春季攻势"。2013年一季度线也收出了小</p><p>每年一季度市场上涨的概率很大，过去的20年，有14年上证指数在一季度是上涨的，所以一季度行情也被称作是"春季攻势"。2013年一季度线也收出了小</p><p>每年一季度市场上涨的概率很大，过去的20年，有14年上证指数在一季度是上涨的，所以一季度行情也被称作是"春季攻势"。2013年一季度线也收出了小</p><p>每年一季度市场上涨的概率很大，过去的20年，有14年上证指数在一季度是上涨的，所以一季度行情也被称作是"春季攻势"。2013年一季度线也收出了小</p></div>-->
+				
+				<div class="etf01"></div>
+				<div class="etf02"></div>
+				<div class="etf03"></div>
+				<div class="etf04"></div>
+				<div class="etf05"></div>
+				<div class="etf06"></div>
+				<div class="left pa"></div>
+				<div class="right pa"></div>
+			</div>
+		</script>
+        <script type='text/x-jquery-tmpl' id='template-Page_5'>
+			<div class="pr">
+				<div class="pa w95" style="top:45px;left:45px;">
+					<JRJTAG	tagtype="01" clsid="604001022" pagesize="6" pagecount="1" id="jsjx" />
+						<#if jsjx?exists>
+							<#list jsjx as d>
+								<#if d_index==0>
+								<h1 class="title"> </h1><p class="title_bd"></p>
+								<div class="etf_main pa dumascroll" style="top:55px;right:45px;" data_value="${d.id}"><p></p></div>
+								</#if>
+							</#list>
+							
+						</#if>
+					<!--<h1 class="title">文字文字文字文字</h1>-->
+					
+				</div>
+				<!--<div class="etf_main pa dumascroll" style="top:100px;right:45px;"><p><img src="images/etf1.jpg" width="494" height="195" /></p><p><img src="images/etf1.jpg" width="494" height="195" /></p><p>每年一季度市场上涨的概率很大，过去的20年，有14年上证指数在一季度是上涨的，所以一季度行情也被称作是"春季攻势"。2013年一季度线也收出了小</p><p>每年一季度市场上涨的概率很大，过去的20年，有14年上证指数在一季度是上涨的，所以一季度行情也被称作是"春季攻势"。2013年一季度线也收出了小</p><p>每年一季度市场上涨的概率很大，过去的20年，有14年上证指数在一季度是上涨的，所以一季度行情也被称作是"春季攻势"。2013年一季度线也收出了小</p><p>每年一季度市场上涨的概率很大，过去的20年，有14年上证指数在一季度是上涨的，所以一季度行情也被称作是"春季攻势"。2013年一季度线也收出了小</p></div>-->
+				
+				<div class="jsjx01"></div>
+				<div class="jsjx02"></div>
+				<div class="jsjx03"></div>
+				<div class="jsjx04"></div>
+				<div class="jsjx05"></div>
+				<div class="jsjx06"></div>
+				<div class="left pa"></div>
+				<div class="right pa"></div>
+			</div>
+		</script>
+        <script type='text/x-jquery-tmpl' id='template-Page_6'>
+			<div class="pr">
+				<div class="pa w95" style="top:45px;left:45px;">
+					<JRJTAG	tagtype="01" clsid="604001023" pagesize="6" pagecount="1" id="mjsd" />
+						<#if mjsd?exists>
+							<#list mjsd as d>
+								<#if d_index==0>
+								<h1 class="title"> </h1><p class="title_bd"></p>
+								<div class="etf_main pa dumascroll" style="top:55px;left:0" data_value="${d.id}"><p></p></div>
+								</#if>
+							</#list>
+							
+						</#if>
+					<!--<h1 class="title">文字文字文字文字</h1>-->
+					
+				</div>
+				<!--<div class="etf_main pa dumascroll" style="top:100px;left:45px;"><p><img src="images/etf1.jpg" width="494" height="195" /></p><p><img src="images/etf1.jpg" width="494" height="195" /></p><p>每年一季度市场上涨的概率很大，过去的20年，有14年上证指数在一季度是上涨的，所以一季度行情也被称作是"春季攻势"。2013年一季度线也收出了小</p><p>每年一季度市场上涨的概率很大，过去的20年，有14年上证指数在一季度是上涨的，所以一季度行情也被称作是"春季攻势"。2013年一季度线也收出了小</p><p>每年一季度市场上涨的概率很大，过去的20年，有14年上证指数在一季度是上涨的，所以一季度行情也被称作是"春季攻势"。2013年一季度线也收出了小</p><p>每年一季度市场上涨的概率很大，过去的20年，有14年上证指数在一季度是上涨的，所以一季度行情也被称作是"春季攻势"。2013年一季度线也收出了小</p></div>-->
+				<div class="mjsd01"></div>
+				<div class="mjsd02"></div>
+				<div class="mjsd03"></div>
+				<div class="mjsd04"></div>
+				<div class="mjsd05"></div>
+				<div class="mjsd06"></div>
+				<div class="left pa"></div>
+				<div class="right pa"></div>
+			</div>
+		</script>
+        <script type='text/x-jquery-tmpl' id='template-Page_7'>
+			<div class="pr">
+				<div class="pa w95" style="top:45px;left:45px;">
+					<JRJTAG	tagtype="01" clsid="604001024" pagesize="6" pagecount="1" id="cfgs" />
+						<#if cfgs?exists>
+							<#list cfgs as d>
+								<#if d_index==0>
+								<h1 class="title"> </h1><p class="title_bd"></p>
+								<div class="etf_main pa dumascroll" style="top:55px;left:0" data_value="${d.id}"><p></p></div>
+								</#if>
+							</#list>
+							
+						</#if>
+					<!--<h1 class="title">文字文字文字文字</h1>-->
+					
+				</div>
+				<!--<div class="etf_main pa dumascroll" style="top:100px;left:45px;"><p>每年一季度市场上涨的概率很大，过去的20年，有14年上证指数在一季度是上涨的，所以一季度行情也被称作是"春季攻势"。2013年一季度线也收出了小阳线，如今距离一季度结束还有一周的时间，这也意味着行情在时间点处来到一个拐点。回顾过去一段时间来看，机构、投资者、媒体的言论，可以发现，不管大家是对于全年走势看空还是看多，有一点却是一致的，那就是对于2013年一季度行情比较看好。对此玉名认为有三点：第一，2012年12月股市的长阳，已经让市场做多情绪激发了起来，所以无论是从惯性角度，还是从反弹趋势角度来看，一季度都是在多头之下。但问题是，这样的预期越强烈，行情拐点的意味越浓厚</p><p>每年一季度市场上涨的概率很大，过去的20年，有14年上证指数在一季度是上涨的，所以一季度行情也被称作是"春季攻势"。2013年一季度线也收出了小阳线，如今距离一季度结束还有一周的时间，这也意味着行情在时间点处来到一个拐点。回顾过去一段时间来看，机构、投资者、媒体的言论，可以发现，不管大家是对于全年走势看空还是看多，有一点却是一致的，那就是对于2013年一季度行情比较看好。对此玉名认为有三点：第一，2012年12月股市的长阳，已经让市场做多情绪激发了起来，所以无论是从惯性角度，还是从反弹趋势角度来看，一季度都是在多头之下。但问题是，这样的预期越强烈，行情拐点的意味越浓厚</p><p>每年一季度市场上涨的概率很大，过去的20年，有14年上证指数在一季度是上涨的，所以一季度行情也被称作是"春季攻势"。2013年一季度线也收出了小阳线，如今距离一季度结束还有一周的时间，这也意味着行情在时间点处来到一个拐点。回顾过去一段时间来看，机构、投资者、媒体的言论，可以发现，不管大家是对于全年走势看空还是看多，有一点却是一致的，那就是对于2013年一季度行情比较看好。对此玉名认为有三点：第一，2012年12月股市的长阳，已经让市场做多情绪激发了起来，所以无论是从惯性角度，还是从反弹趋势角度来看，一季度都是在多头之下。但问题是，这样的预期越强烈，行情拐点的意味越浓厚</p></div>-->
+					
+				
+				<div class="cfgs01"></div>
+				<div class="cfgs02"></div>
+				<div class="cfgs03"></div>
+				<div class="cfgs04"></div>
+				<div class="cfgs05"></div>
+				<div class="cfgs06"></div>
+				<div class="left pa"></div>
+				<div class="right pa"></div>
+			</div>
+		</script>
+        <script type='text/x-jquery-tmpl' id='template-Page_8'>
+			<div class="pr" id="mainBox">
+				<div class="pa w95" style="top:45px;left:45px;">
+					
+							
+						
+					<!--<h1 class="title">文字文字文字文字</h1>-->
+					<h1 class="title"> </h1><p class="title_bd"></p>
+				</div>
+				<div class="etf_main pa dumascroll" style="top:100px;left:45px;width:500px" id="content"><p>本报告版权为证金贵金属所有，未经书面许可，任何机构和个人不得以任何形式翻版、复制和发布，如引用须注明出处为证金贵金属，且不得对本报告进行有悖原意引用、删节和修改，刊载或者转发本研究报告或其内容摘要的，应当注明本报告的发布人和发布日期，并提示使用本研究报告的风险。未经授权刊或者载转发本报告的，本公司将保留向其追究法律责任的权利。</p><p>本报告的作者是基于独立、客观、公正和审慎的原则制作本研究报告。本报告的信息均来源于公开资料，作者对这些信息的准确性和完整性不做任何保证，也不保证所包含信息和建议不发生任何变更。作者已力求报告内容的客观、公正，但文中的观点和建议仅供参考，不包含作者对贵金属价格涨跌或市场走势的确定性判断，报告中的信息或意见并不构成所述交易标的的买卖出价或征价，投资者据此作出的任何投资决策与证金贵金属及作者无关。</p></div><!---->
+					
+				
+				<div class="mzsm01"></div>
+				<div class="mzsm02"></div>
+				<div class="mzsm03"></div>
+				<div class="mzsm04"></div>
+				<div class="mzsm05"></div>
+				<div class="mzsm06"></div>
+				<div class="left pa"></div>
+				<div class="right pa"></div>
+			</div>
+		</script>
+        <script type='text/x-jquery-tmpl' id='template-Page_ml'>
+			<div class="pr">
+				<p class="ml_time pa" style="left:151px;top:84px;"></p><!---->
+				<JRJTAG	tagtype="01" clsid="604001001" pagesize="6" pagecount="1" id="mlsj" />
+						<#if mlsj?exists>
+							<#list mlsj as d>
+								<#if d_index==0>
+								<!--<p class="ml_time pa" style="left:151px;top:84px;">${d.makedate?string("yyyy/MM/dd")}</p>-->
+								
+								</#if>
+							</#list>
+							
+						</#if>
+				<div class="pa ml_left" style="left:151px;top:180px;">
+					<!--<p class="ml_title">卷首语</p>-->
+					<!--<p>从近期的经济数据来看，德国，欧元区的经济似乎有缓和迹象，近期的经济数据普遍较好。至于美国 GDP 数据，由于上周零售数据差等原因，</p>-->
+					<JRJTAG	tagtype="01" clsid="604001018" pagesize="6" pagecount="1" id="mljsy" />
+						<#if mljsy?exists>
+							<#list mljsy as d>
+								
+								<#if d_index==0>
+								<div id="link_jsy" class="cur">
+								<p class="ml_title">${d.clsname}</p>
+								<p>${jrjfund.subgbk(d.description,126)}...</p>
+								</div>
+								</#if>
+							</#list>
+							
+						</#if>
+					<br/>
+					<br/>
+					<br/>
+					<!--<p class="ml_title">今日策略</p>-->
+					<!--<p>【逢高做空】短线交投清淡，市场人士纷纷离场观望，静待美联储政策声明可能为缩减购债计划的步伐提线索。若多头再次反击失败，</p>-->
+					<JRJTAG	tagtype="01" clsid="604001019" pagesize="6" pagecount="1" id="jrcl" />
+						<#if jrcl?exists>
+							<#list jrcl as d>
+								
+								<#if d_index==0>
+								<div id="link_jrcl" class="cur">
+								<p class="ml_title">${d.clsname}</p>
+								<p>${jrjfund.subgbk(d.description,126)}...</p>
+								</div>
+								</#if>
+							</#list>
+							
+						</#if>
+					<br/>
+					<br/>
+					<br/>
+					<!--<p class="ml_title">财富故事</p>-->
+					<!--<p>今日趋势以逢高做空为主。本周是超级数据周，而今日晚间将公布美国二季度 GDP 初值数据，周四凌晨利率决议将登场，白银料将不能平静</p>-->
+					<JRJTAG	tagtype="01" clsid="604001024" pagesize="6" pagecount="1" id="cfgs" />
+						<#if cfgs?exists>
+							<#list cfgs as d>
+								
+								<#if d_index==0>
+								<div id="link_cfgs" class="cur">
+								<p class="ml_title">${d.clsname}</p>
+								<p>${jrjfund.subgbk(d.description,126)}...</p>
+								</div>
+								</#if>
+							</#list>
+							
+						</#if>
+	
+				</div>
+				<div class="pa ml_left" style="right:63px;top:51px;">
+					<!--<p class="ml_title">ETF持仓</p>-->
+					<!--<p>至 7 月 31 日截稿时止，全球最大的黄金 ETF--SPDR Gold Trust 的黄金持仓量保持不变，为 927.35 吨；</p>-->
+					<JRJTAG	tagtype="01" clsid="604001021" pagesize="6" pagecount="1" id="etf" />
+						<#if etf?exists>
+							<#list etf as d>
+								
+								<#if d_index==0>
+								<div id="link_etf" class="cur">
+								<p class="ml_title">${d.clsname}</p>
+								<p>${jrjfund.subgbk(d.description,126)}...</p>
+								</div>
+								</#if>
+							</#list>
+							
+						</#if>
+					<br/>
+					<br/>
+					<br/>
+					<!--<p class="ml_title">技术解析</p>-->
+					<!--<p>白银日线图显示，短期处于下降通道上轨附近，并围绕上轨和 20 日均线展开激烈争夺，后市有两种可能，突破上轨或受阻重返跌势，</p>-->
+					<JRJTAG	tagtype="01" clsid="604001022" pagesize="6" pagecount="1" id="jsjx" />
+						<#if jsjx?exists>
+							<#list jsjx as d>
+								
+								<#if d_index==0>
+								<div id="link_jsjx" class="cur">
+								<p class="ml_title">${d.clsname}</p>
+								<p>${jrjfund.subgbk(d.description,126)}...</p>
+								</div>
+								</#if>
+							</#list>
+							
+						</#if>
+					<br/>
+					<br/>
+					<br/>
+					<!--<p class="ml_title">热点聚焦</p>-->
+					<!--<p>今日市场迎来美国 GDP 数据、ADP数据和利率决议等众多风险事件。白银经过六个交易的区间横盘，有望今日打破僵局。晚间根据数据顺势而为，可轻仓追单，</p>-->
+					<JRJTAG	tagtype="01" clsid="604001020" pagesize="6" pagecount="1" id="rdjj" />
+						<#if rdjj?exists>
+							<#list rdjj as d>
+								
+								<#if d_index==0>
+								<div id="link_rdjj" class="cur">
+								<p class="ml_title">${d.clsname}</p>
+								<p>${jrjfund.subgbk(d.description,126)}...</p>
+								</div>
+								</#if>
+							</#list>
+							
+						</#if>
+					<br/>
+					<br/>
+					<br/>
+					<!--<p class="ml_title">名家视点</p>-->
+					<!--<p>昨日数据波澜不惊，市场继续维持震荡，美元走弱，金银则整体维持强势震荡格局。在众多重量级经济数据之前，昨日公布的美国 7 月谘商会消费者信心指数影响有</p>-->
+					<JRJTAG	tagtype="01" clsid="604001023" pagesize="6" pagecount="1" id="mjsd" />
+						<#if mjsd?exists>
+							<#list mjsd as d>
+								
+								<#if d_index==0>
+								<div id="link_mjsd" class="cur">
+								<p class="ml_title">${d.clsname}</p>
+								<p>${jrjfund.subgbk(d.description,126)}...</p>
+								</div>
+								</#if>
+							</#list>
+							
+						</#if>
+	
+				</div>
+				<div class="ml01"></div>
+				<div class="ml02"></div>
+				<div class="ml03"></div>
+				<div class="ml04"></div>
+				<div class="ml05"></div>
+				<div class="ml06"></div>
+				<div class="left pa"></div>
+				<div class="right pa"></div>
+			</div>
+		</script>
+        <script type='text/x-jquery-tmpl' id='template-Page_main'>
+			<div style='height:0;overflow:hidden;'></div>
+			<div id='page_main'>
+			</div>
+			<div class="cl of">
+				<div class="tz_f fl"><input type="button" class="tz_fm" value=" " /><input type="button" class="tz_fd" value=" " /><input type="button" class="tz_ml" value=" " /></div>
+				<div class="tz_t fr"><input type="button" class="tz_sy" value=" " /><input type="button" class="tz_xy" value=" " /><!---->
+		  跳转<input name="" type="text" class="tz_sr" />页<input type="button" class="tz_ty" value=" " /></div>
+		  	</div>
+		</script>
+    </div>
+
+
+    
+    <script type="text/javascript" src='/js/jn.js'></script>
+    <script type="text/javascript" src='/js/scroll_jn.js'></script>
+    
+</body>
+</html>

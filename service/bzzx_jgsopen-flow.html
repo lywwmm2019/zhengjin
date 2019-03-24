@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="证金贵金属,白银,白银分析,白银投资,白银价格,白银交易,炒白银,白银走势,白银软件,模拟炒银,美联储,白银在线分析" />
+<meta name="description" content="证金贵金属，首家赴美纳斯达克上市公司中国最大最专业的白银投资服务平台，致力于白银投资、白银交易、现货白银、白银价格、炒白银、现货白银走势、白银行情、模拟炒银、现货白银开户、投资资讯、分析评论、贵金属投资等贵金属综合性投资服务" />
+
+<title>服务中心_证金贵金属</title>
+<link href="../css/style_2014.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="http://js.jrj.com.cn/v/swfobject.js"></script>
+ <script type="text/javascript">
+$(document).ready(function()
+{
+	$("#firstpane p.menu_head").bind('click',function(){
+		$(this).css({background:"#fff url(../images2014/khsp02.jpg) center left no-repeat",'border-bottom':'1px dashed #d0d0d0'})
+		$(this).next("div.menu_body").slideDown(300);
+       	$(this).siblings().css({backgroundImage:"url(../images2014/khsp01.jpg)",'background-color':'#f2f2f2','border-bottom':'1px solid #d0d0d0'});
+		$(this).siblings().next("div.menu_body").slideUp(300);
+	});
+	$('.menu_body dl dt').bind('mouseenter',function(){
+		$(this).find('ul.sfhover').show();
+	});
+	$('.menu_body dl dt').bind('mouseleave',function(){
+		$(this).find('ul.sfhover').hide();
+	});
+});
+
+</script> 
+ <script>
+	var t=1;
+	
+	$(document).ready(function(){	
+	
+		$('area').bind('click',function(){
+			var areaid=$(this).parent().prev().attr('id');	
+			var length=$(this).parents('.wyqy_bank').find('img').length;	
+			var areaidlength=areaid.length;
+            var idnum2=$(this).parents('.showbank').attr('id');	
+			if (idnum2=="gs"){
+				reid=areaid.substring(0,7)
+				}
+			else{
+				reid=areaid.substring(0,areaidlength-1);	
+				}
+			
+			turnpage(1,length,reid);			
+		})
+		$('.returnbank').bind('click',function(){
+			$('.wyqy_bank img').hide();
+			var l=$('.wyqy_bank').length;
+			for(var i=0;i<l;i++){
+				$('.wyqy_bank').eq(i).find('img').eq(0).show();
+			}
+			t=1;
+			$('.return_page').parent().hide();
+			//$('.back_page').parent().hide();
+			$(this).parents('.showbank').hide();
+			$('.wyqy_list').show();
+		})
+	})
+	function turnpage(num,total,showid){
+		num==0?t=1:t=t+num;
+		var hideid=showid.split('_')[0];
+		if(t>1&&t<=total){
+			$('#return_page_'+showid).parent().show();
+		}
+		else if(t>total-1){
+			$('#return_page_'+showid).parent().hide();
+			//$('#back_page_'+showid).parent().show();
+		}
+	
+		else{
+			$('#return_page_'+showid).parent().hide();
+			//$('#back_page_'+showid).parent().hide();
+		}
+		$('#'+hideid+' img').hide();
+		$('#'+showid+t).show();
+	}
+</script>
+
+ 
+</head>
+
+<body>
+	<!--head-->
+	<!--#include virtual="/inc/head_2014.shtml"-->
+<!--#include virtual="/inc/nav_fuwu.shtml"-->
+    <!--head-end-->
+    <!--middle-->
+ <div class="w990 mauto clear over mt20" style="background:url(../images2014/bzzx_khsp05.jpg) repeat-y top left;" >
+  <!--left-->
+	<!--#include virtual="/inc/left-bzzx.shtml"-->
+<!--left-end-->
+<!--right-->
+<div class="bzzx_khsp">
+	<h4>津贵所开户流程演示动画</h4>
+      <div class="bzzx-right pr">
+   <div class="tjs_bank  wyqy ">
+                    <div class="wyqy_list">
+               	    	<ul>
+                        	<li onclick="$('.wyqy_list').hide();$('#zs1').show();"><img src="images/square_01.png" width="100" height="100"  alt=""/><p class="bank" style="font-weight:normal">网页版</p></li>
+                            <li onclick="$('.wyqy_list').hide();$('#zs2').show();"><img src="images/square_02.png" width="100" height="100"  alt=""/><p class="bank" style="font-weight:normal">手机版</p></li>
+                        </ul>
+                    </div>
+     </div>
+    
+                
+		<div class="pa lh200 showbank hide" style="left:0;top:10px;" id="zs1">
+       	      		<p class="titile mt20">津贵所网页版开户流程</p>
+                    <div class="tjs pr wyqy_bank">
+                    
+                    <img src="images/jgs_website/1.gif" width="600" height="324" border="0" usemap="#Map41" id="zs1_page1" style="display:block;" />
+                        <map name="Map41" id="Map41">
+                          <area shape="rect" coords="444,174,530,227" />
+                        </map>
+                      
+                      <img src="images/jgs_website/2.gif" width="647" height="486" border="0" usemap="#Map42"  id="zs1_page2" style="display:none;" />
+                        <map name="Map42" id="Map42">
+                          <area shape="rect" coords="556,385,642,425" />
+                      	</map>
+                      
+                      <img src="images/jgs_website/3.gif" width="603" height="635" border="0" usemap="#Map43" id="zs1_page3" style="display:none;"/>
+                        <map name="Map43" id="Map43">
+                          <area shape="rect" coords="521,585,600,623" />
+                      	</map>
+                      
+                      <img src="images/jgs_website/4.gif" width="564" height="502" border="0" usemap="#Map44" id="zs1_page4" style="display:none;" />
+                        <map name="Map44" id="Map44">
+                          <area shape="rect" coords="489,424,558,453" />
+                      	</map>
+                     
+                      <img src="images/jgs_website/5.gif" width="564" height="494" border="0" usemap="#Map45"  id="zs1_page5" style="display:none;" />
+                        <map name="Map45" id="Map45">
+                          <area shape="rect" coords="489,420,557,451" />
+                   	  </map>
+                   
+                      <img src="images/jgs_website/6.gif" width="560" height="493"  border="0" usemap="#Map46"  id="zs1_page6" style="display:none;" />
+                        <map name="Map46" id="Map46">
+                          <area shape="rect" coords="487,423,557,453" />
+                      	</map>
+                       
+                      <img src="images/jgs_website/7.gif" width="555" height="598" border="0" usemap="#Map47"  id="zs1_page7" style="display:none;" />
+                      <map name="Map47" id="Map47">
+                        <area shape="rect" coords="198,329,281,374" href="#" />
+                      </map>
+                       <img src="images/jgs_website/8.gif" width="630" height="362"  border="0"  id="zs1_page8" style="display:none;"/>
+                     <div class=" hide" style="margin:50px 0 0 50px; float:right;">
+                             <a id="return_page_zs1_page" class="" href="javascript:void(0);" onclick="turnpage(-1,7,'zs1_page')" >返回上一页</a></div>
+                             <a class=" fb returnbank"  style="margin:50px 50px 0 0px; float:left;" href="javascript:void(0);">返回列表</a>                         
+                    </div>                                        
+                </div>
+                
+				<div class="pa lh200 showbank hide" style="left:0;top:10px;" id="zs2">
+       	      		<p class="titile mt20">津贵所手机版开户流程</p>
+                    <div class="tjs pr wyqy_bank">
+                    <img src="images/jgs_mobile/0.gif"  alt="" width="339" height="600" usemap="#Map" style="display:block;" id="zs2_page1" />
+                    <map name="Map" id="Map">
+                      <area shape="rect" coords="261,177,329,225" href="#" />
+                    </map> 
+                    <img src="images/jgs_mobile/1.gif" width="248" height="434" border="0" usemap="#Map51"  id="zs2_page2" style="display:none;"/>
+                     <map name="Map51" id="Map51">
+                       <area shape="rect" coords="92,208,156,270" href="#" />
+                     </map>
+                   
+                      <img src="images/jgs_mobile/2.gif" width="248" height="435" border="0" usemap="#Map52" id="zs2_page3" style="display:none;"/>
+                        <map name="Map52" id="Map52">
+                          <area shape="rect" coords="10,373,236,416" />
+                      	</map>
+                      
+                      <img src="images/jgs_mobile/3.gif" width="295" height="501" border="0" usemap="#Map53" id="zs2_page4" style="display:none;"/>
+                        <map name="Map53" id="Map53">
+                          <area shape="rect" coords="10,215,31,243" />
+                      	</map>
+                       
+                      <img src="images/jgs_mobile/4.gif" width="247" height="431"  border="0" usemap="#Map54"  id="zs2_page5" style="display:none;"/>
+                        <map name="Map54" id="Map54">
+                          <area shape="rect" coords="55,366,193,416" />
+                      	</map>
+                     
+                      <img src="images/jgs_mobile/5.gif" width="249" height="430" border="0" usemap="#Map55"  id="zs2_page6" style="display:none;"/>
+                        <map name="Map55" id="Map55">                          
+                          <area shape="rect" coords="0,336,397,387"  />
+                        </map>
+                      
+                      <img src="images/jgs_mobile/6.gif" width="248" height="431" border="0" usemap="#Map56"  id="zs2_page7" style="display:none;"/>
+                        <map name="Map56" id="Map56">
+                          
+                      	  <area shape="rect" coords="125,319,243,369"  />
+                        </map>
+                     
+                     <img src="images/jgs_mobile/7.gif" width="248" height="439" border="0" usemap="#Map57"  id="zs2_page8" style="display:none;"/>
+                     <map name="Map57" id="Map57">
+                       <area shape="rect" coords="120,203,243,266" href="#" />
+                     </map>
+                     <img src="images/jgs_mobile/8.gif" width="319" height="539"  id="zs2_page9" style="display:none;"/>
+<div class=" hide" style="margin:50px 0 0 50px; float:right;">
+            <a id="return_page_zs2_page" class="" href="javascript:void(0);" onclick="turnpage(-1,7,'zs2_page')" >返回上一页</a></div>
+                             <a class=" fb returnbank"  style="margin:50px 50px 0 0px; float:left;" href="javascript:void(0);">返回列表</a>                                      
+                    </div>                                        
+                </div>
+                
+       
+                
+                
+				
+               
+   
+                
+                     
+               
+    
+         
+       </div>
+    </div>   
+</div>
+<!--right-end-->
+ </div>
+ <!--whole_fwtx-end-->
+<div class="clear" style="height:0px; line-height:0px;"></div>
+    <!--特色服务-->
+    <!--#include virtual="/inc/bottom_2014.shtml"-->
+    <!--特色服务-end-->
+    <!--foot-->
+     <!--#include virtual="/inc/foot_2014.shtml"-->
+    <!--foot-end-->
+</body>
+</html>

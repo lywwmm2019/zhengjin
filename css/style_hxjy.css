@@ -1,0 +1,35 @@
+@charset "gb2312";
+/* CSS Document */
+
+#hxjy_main{width:990px;margin:20px auto;font-family:"ËÎÌו";}
+.hxjy_left{}
+.hxjy_left_btn{width:205px;background:#fff8e7;overflow:hidden;margin-bottom:25px;padding-bottom:40px;}
+.hxjy_btn{padding:15px 10px 0 10px;}
+.hxjy_btn li{margin-bottom:15px;}
+.about_spkh{background:url(../images/about_btn.jpg) 0 0 no-repeat;width:185px;height:39px;border:0;}
+.about_mnkh{background:url(../images/about_btn.jpg) 0 -55px no-repeat;width:185px;height:39px;border:0;}
+.about_khfw{background:url(../images/about_btn.jpg) 0 -110px no-repeat;width:185px;height:39px;border:0;}
+.about_link{border-top:1px solid #cbb281;padding:20px 0 0 40px;color:#ae812b;line-height:30px;}
+.hxjy_day_hint{width:203px;border:1px solid #87744c;padding-top:60px;box-shadow:2px 2px 2px #ccc;}
+.hxjy_day_title{background:url(../images_hxjy/hxjy_leftbq.jpg) no-repeat;width:193px;height:52px;}
+.hxjy_day_table{background:url(../images_hxjy/hxjy_day_time.jpg) no-repeat;margin-bottom:20px;color:#000;line-height:150%;}
+.hxjy_mrjx{background:url(../images_hxjy/hxjy_mrjxbg.jpg) repeat-x;height:180px;border-left:1px solid #87744c;border-right:1px solid #aa9d81;border-top:1px solid #aa9d81;width:290px;}
+.hxjy_mrjx_title{background:url(../images_hxjy/hxjy_mrjx.gif) no-repeat;width:149px;height:35px;margin-bottom:10px;}
+.hxjy_mrjx ul{margin:0 20px;}
+.hxjy_mrjx li{border-bottom:1px solid #ccc;list-style:square inside;color:#90681c;}
+.hxjy_mrjx li a{color:#000;}
+.hxjy_about{border:1px solid #87744c;height:179px;margin-left:10px;}
+.hxjy_about a:hover{text-decoration:underline;}
+.hxjy_about_title{background:url(../images_hxjy/hxjy_about.gif) no-repeat;width:291px;height:35px;}
+.hxjy_about_txt{text-indent:15px;width:270px;margin-left:10px;padding-right:10px;}
+.hxjy_about_downbg{background:url(../images_hxjy/hxjy_about_bg.jpg) no-repeat;width:138px;height:137px;}
+.hxjy_about_downbg ul{padding-left:6px;padding-top:15px;}
+.hxjy_about_downbg a{color:#f00;}
+.hxjy_about_sm{background:url(../images_hxjy/hxjy_about_sum.jpg) no-repeat;width:124px;height:128px;left:4px;bottom:9px;_bottom:8px;cursor:pointer;}
+.hxjy_phone{background:#e6cb87;border:1px solid #87744c;color:#87744c;margin-top:10px;line-height:24px;height:24px;}
+.hxjy_phone img{vertical-align:middle;_margin-top:4px;}
+.hxjy_zbs{border:1px solid #87744c;padding-top:60px;margin-top:25px;}
+.hxjy_zbs_title{background:url(../images_hxjy/hxjy_zbs.jpg) no-repeat;width:290px;height:52px;}
+.hxjy_zbs_to{padding:0 0 0 30px;}
+.hxjy_zbs_list{width:335px;margin:0 20px 20px 0;}
+.hxjy_zbs_btn{background:url(../images_hxjy/hxjy_zb_btn.jpg) no-repeat;width:101px;height:29px;border:0;color:#fff;margin-top:10px;}

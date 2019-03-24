@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta name="keywords" content="证金贵金属,白银,白银分析,白银投资,白银价格,白银交易,炒白银,白银走势,白银软件,模拟炒银,美联储,白银在线分析" />
+<meta name="description" content="证金贵金属，首家赴美纳斯达克上市公司中国最大最专业的白银投资服务平台，致力于白银投资、白银交易、现货白银、白银价格、炒白银、现货白银走势、白银行情、模拟炒银、现货白银开户、投资资讯、分析评论、贵金属投资等贵金属综合性投资服务" />
+<title>证金贵金属</title>
+<!--#include virtual="/inc/head_link_2014.shtml"-->
+</head>
+
+<body>
+	
+    <div class="w310">
+        <p class="yjzx_tj pr index_title">最新推荐</p>
+        <ul class="tj_recommend">
+            
+            <JRJTAG	tagtype="01" clsid="604001003,604001005,604001009,604001010,604001011,604001013" pagesize="10" pagecount="1" id="mrpl" />
+                <#if mrpl?exists>
+                    <#list mrpl as d>
+                        <li><span class="${(d_index<3)?string("hot","nothot")}">${d_index+1}</span><p class="title"><a target="_blank" href="${d.infourl}">${d.title}</a></p><span class="pa">${d.makedate?string("MM.dd")}</span></li>
+                    </#list>
+                </#if>
+        </ul>
+    </div>
+            
+    
+    
+</body>
+</html>

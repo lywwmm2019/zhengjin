@@ -1,0 +1,10 @@
+<script type="text/javascript" charset="utf-8" src="http://gate.looyu.com/49537/105923.js"></script>
+<div id="index_piao" style="z-index:100;">
+    <div class="qq" onclick="location.href='/service/zxzx_index.html?head=1'"></div>
+    <div class="shipan" onclick="location.href='http://tg.zhengjin99.com/zhengjin/spAndYyKH/index.jsp'"></div>
+    <div class="moni" onclick="location.href='http://tg.zhengjin99.com/zhengjin/mnkh/'"></div>
+    <div class="zaixian" onclick="doyoo.util.openChat('g=66550')"></div>
+    <div class="xiazai" onclick="location.href='/download.shtml'"></div>
+    <div class="fankui" onclick="location.href='/feedback.shtml'"></div>
+    <a href="javascript:void(0)" class="hide" onclick="$('body,html').animate({scrollTop:'0'},500);$(this).hide();"><img src="/images2014/return.png" width="60" height="28" /></a>
+</div>

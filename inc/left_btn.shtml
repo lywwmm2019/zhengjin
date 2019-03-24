@@ -1,0 +1,7 @@
+	<script type="text/javascript" charset="utf-8" src="http://gate.looyu.com/49537/105923.js"></script>
+	<ul class="about_btn">
+        <li><input name="" type="button" class="about_spkh" value=" " onclick="javascript:doyoo.util.openChat('g=66551')" /></li>
+        <li><input name="" type="button" class="about_mnkh" value=" " onclick="window.open('http://tg.zhengjin99.com/zhengjin/regUser.jsp')" /></li>
+        <li><input name="" type="button" class="about_khfw" value=" " onclick="javascript:doyoo.util.openChat('g=66550')" /></li>
+    </ul>
+

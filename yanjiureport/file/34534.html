@@ -1,0 +1,57 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">	
+    <head> 
+        <title>FlexPaper</title>         
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <style type="text/css" media="screen"> 
+			html, body	{ height:100%; }
+			body { margin:0; padding:0; overflow:auto; }   
+			#flashContent { display:none; }
+        </style> 
+		<script type="text/javascript"  src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript"  src="flexpaper_flash.js"></script>
+        		<script type="text/javascript"  src="PaperViewer.swf"></script>
+		
+		
+		
+    </head> 
+    <body>
+    	<div align="center">
+	        <a id="viewerPlaceHolder" style="width:710px;height:700px;display:block"></a>
+        </div>
+		<script type="text/javascript"> 
+		$(function(){
+
+	$.getUrlParam = function(name)
+	{
+		var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+		var r = window.location.search.substr(1).match(reg);
+		if (r!=null) return unescape(r[2]); return null;
+	}
+
+alert($.getUrlParam("fileUrl"));
+
+			var fpv = new FlexPaperViewer('PaperViewer',
+				 'viewerPlaceHolder', { config : {
+				 SwfFile : decodeURI($.getUrlParam("fileUrl"))
+
+			 }
+			 });
+		});
+	     </script>
+        
+<!--    <div style="position:absolute;left:700px;top:10px;font-family:Verdana;font-size:9pt;width:300px">
+		<div style="background-color:#EFEFEF">
+			<div style="padding: 5px 5px 5px 5px;font-size:15px;font-weight:bold;text-align:center;margin-top:50px;">Documentation</div>
+			<div style="padding: 5px 5px 5px 5px;font-size:11px;text-align:left;margin-bottom:10px;line-height:150%">
+					? <a href="javascript:void(0)" onclick="$FlexPaper().loadSwf('20120509165349.swf')">���Ӹ߿�(300149.SZ)ũ������</a><br/>
+					? <a href="javascript:void(0)" onclick="$FlexPaper().loadSwf('20120509165014.swf')">�������� 002611.SZ������չ��ҵ�� �����ɳ�</a><br/>
+			</div>
+		</div>
+	  </div>
+ -->     
+   </body>
+</html>

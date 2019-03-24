@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>证金贵金属-软件-银市策略</title>
+<meta content="" name="keywords" />
+<meta content="" name="description" />
+<!--#include virtual="/inc/head_old.shtml"-->
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/jquery-1.6.1.min.js"></script>
+</head>
+<body>
+<style>
+.fxyj_text {float:left;}
+</style>
+<style>
+.nav{margin:0 auto; background:url(http://www.zhengjin99.com/images/nav_bg.jpg) repeat-x; width:100%}
+.nav ul{ margin:0;padding:0;}
+.nav li{ list-style:none; float:left; font-family:"微软雅黑"; font-size:16px;height:42px;line-height:42px; width:25%}
+.dq a,.hover a:hover{ background:url(http://www.zhengjin99.com/images/hover_last.jpg) no-repeat;}
+#soft_yjbg .news_list a{width:255px;}
+p.list{position: relative;zoom:1; margin-left: 20px;}
+p.list a{color:#8e0201;display: block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 70%;}
+p.list span{right: 0px; top: 0px; position: absolute; color:#666;}
+</style>
+<div style="background:url(http://www.zhengjin99.com/images/nav_bg.jpg) repeat-x; height:44px;">
+<div class="nav clear">
+<ul id="sddm">
+<li class="dq"><a href="http://www.zhengjin99.com/soft/list_soft.shtml">银市策略</a></li>
+<li class="hover"><a href="http://tg.zhengjin99.com/zhengjin/spjpList_soft.jsp" >证金视频</a></li>
+<li class="hover"><a href="http://tg.zhengjin99.com/zhengjin/cfzk/">财富周刊</a></li>
+</ul></div>
+</div>
+<div class="box" style="width:790px;">
+<div class="fxyj_text">
+<div class="mr_t10 clear">
+<div class="fl">
+<p class="fxyj_title" style="background:#8e0201;"><strong class="font_white font_14">早晚评论</strong><a target='_blank' href="/list/list_yanjiu_zaowan.shtml" style="color:#fff;">更多>></a></p>
+<div class="fxyj_part">
+<div class="pl_list">
+
+		<!--<p><a target='_blank' href="http://www.zhengjin99.com/2014/08/19085317838184.shtml"><strong class="red2">08.19早评：地缘乱局影响退潮 今日关注美国数据</strong></a></p>
+		<p class="font_14"> 行情回顾
+ 周一海西银开盘3860元/千克，最高3891元/千克，最低3850/千克，收于3888元/千克，日内波幅41点，较上一个交易日上涨0.21%...<a target='_blank' href="http://www.zhengjin99.com/2014/08/19085317838184.shtml"><span class="red2">[阅读全文]</span></a></p>
+		<p class="hr" style="padding:3px 0;"></p>
+	<div class="clear">
+	<ul class="news_list" style="margin:3px 0 0 -3px;">
+			<li><a target='_blank' href="http://www.zhengjin99.com/2014/08/18155817833550.shtml">08.18晚评：俄乌冲突仅一步之遥 白银短期仍有调整需求</a><span class="color666 fr">[08/18]</span></li>
+			<li><a target='_blank' href="http://www.zhengjin99.com/2014/08/18084817828987.shtml">08.18早评：美国数据有喜有忧 俄乌局势再度升级</a><span class="color666 fr">[08/18]</span></li>
+			<li><a target='_blank' href="http://www.zhengjin99.com/2014/08/15154017821640.shtml">08.15晚评：本周收官聚焦美国数据 技术指标调整即将结束</a><span class="color666 fr">[08/15]</span></li>
+			<li><a target='_blank' href="http://www.zhengjin99.com/2014/08/15075717816816.shtml">08.15早评：美欧数据不及预期 地缘局势缓和</a><span class="color666 fr">[08/15]</span></li>
+			<li><a target='_blank' href="http://www.zhengjin99.com/2014/08/14153817812831.shtml">08.14晚评：白银短期下跌空间有限 新定价或将引起大波动</a><span class="color666 fr">[08/14]</span></li>
+			<li><a target='_blank' href="http://www.zhengjin99.com/2014/08/14084817808449.shtml">08.14早评：地缘局势继续平静 美零售数据逊于预期</a><span class="color666 fr">[08/14]</span></li>
+	</ul>
+	</div>-->
+    <JRJTAG	tagtype="01" clsid="604001003" pagesize="7" pagecount="1" id="zwyp" />
+            <#if zwyp?exists>
+                <#list zwyp as d>
+                	<#if d_index==0>
+            			<p><a target='_blank' href="${d.infourl}"><strong class="red2">${d.title}</strong></a></p>
+						<p class="font_14">${jrjfund.subgbk(d.description,120)}...<a target='_blank' href="${d.infourl}"><span class="red2">[阅读全文]</span></a></p>
+						<p class="hr" style="padding:3px 0;border-bottom:1px solid #8e0201;"></p>
+                    
+                    <#else>
+                    	<p class="list"><a target="_blank" href="${d.infourl}">${d.title}</a><span>[${d.makedate?string("MM.dd")}]</span></p>
+                    </#if>
+                </#list>
+            </#if>
+</div>
+</div>
+</div>
+
+<!--<div class="fr">
+<p class="fxyj_title"><strong class="font_white font_14">研究报告</strong><a target='_blank' href="http://tg.zhengjin99.com/zhengjin/yjbg.jsp">更多>></a></p>
+<div class="fxyj_part">
+<div class="pl_list">
+
+</div>
+</div>
+</div>-->
+
+<div class="fr">
+<p class="fxyj_title" style="background:#8e0201;"><strong class="font_white font_14">资讯导读</strong><a target='_blank' href="/list/list_yanjiu_daodu.shtml" style="color:#fff;">更多>></a></p>
+<div class="fxyj_part">
+<div class="pl_list">
+
+		<!--<p><a target='_blank' href="http://www.zhengjin99.com/2014/08/18092417829703.shtml"><strong class="red2">美联储担心提早加息</strong></a></p>
+		<p class="font_14">　　
+
+
+ “美联储通讯社”Hilsenrath撰文称，联储主席耶伦和本周召开的杰克逊霍尔会议上的学术文件将聚焦在劳动市场。尽管耶伦过去...<a target='_blank' href="http://www.zhengjin99.com/2014/08/18092417829703.shtml"><span class="red2">[阅读全文]</span></a></p>
+		<p class="hr" style="padding:3px 0;"></p>
+	<div class="clear">
+	<ul class="news_list" style="margin:3px 0 0 -3px;">
+			<li><a target='_blank' href="http://www.zhengjin99.com/2014/08/15091117817879.shtml">美国经济趋势仍显示就业市场强劲</a><span class="color666 fr">[08/15]</span></li>
+			<li><a target='_blank' href="http://www.zhengjin99.com/2014/08/14083717808308.shtml">美联储料2015年第二季首度加息</a><span class="color666 fr">[08/14]</span></li>
+			<li><a target='_blank' href="http://www.zhengjin99.com/2014/08/13092317799391.shtml">两张图显示中国黄金需求另有玄机</a><span class="color666 fr">[08/13]</span></li>
+			<li><a target='_blank' href="http://www.zhengjin99.com/2014/08/12085817790186.shtml">美国空袭伊拉克的阳谋--全为石油</a><span class="color666 fr">[08/12]</span></li>
+			<li><a target='_blank' href="http://www.zhengjin99.com/2014/08/11092017781568.shtml">解读新一轮全球资产抛售</a><span class="color666 fr">[08/11]</span></li>
+			<li><a target='_blank' href="http://www.zhengjin99.com/2014/08/08091717769149.shtml">欧美俄对峙升级 中国或意外获利</a><span class="color666 fr">[08/08]</span></li>
+	</ul>
+	</div>-->
+    <JRJTAG	tagtype="01" clsid="604001005" pagesize="7" pagecount="1" id="zxdd" />
+            <#if zxdd?exists>
+                <#list zxdd as d>
+                	<#if d_index==0>
+            			<p><a target='_blank' href="${d.infourl}"><strong class="red2">${d.title}</strong></a></p>
+						<p class="font_14">${jrjfund.subgbk(d.description,120)}...<a target='_blank' href="${d.infourl}"><span class="red2">[阅读全文]</span></a></p>
+						<p class="hr" style="padding:3px 0;border-bottom:1px solid #8e0201;"></p>
+                    
+                    <#else>
+                    	<p class="list"><a target="_blank" href="${d.infourl}">${d.title}</a><span>[${d.makedate?string("MM.dd")}]</span></p>
+                    </#if>
+                </#list>
+            </#if>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="clear mr_t10">
+
+<div class="fl">
+<!--<p class="fxyj_title"><strong class="font_white font_14">每日精选</strong><a target='_blank' href="/list/list_mrjx.shtml">更多>></a></p>
+<div class="fxyj_part">
+<div class="pl_list">
+
+</div>
+</div>-->
+<p class="fxyj_title" style="background:#8e0201;"><strong class="font_white font_14">研究报告</strong><a target='_blank' href="http://tg.zhengjin99.com/zhengjin/yjbg/" style="color:#fff;">更多>></a></p>
+<div class="fxyj_part" id="soft_yjbg">
+
+</div>
+</div>
+<div class="clear"></div>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+<script>
+	$(document).ready(function(){
+		$.getScript("http://tg.zhengjin99.com/zhengjin/cmscall/gender_yjbg_soft_html.jsp",function(){
+			$('#soft_yjbg').html(yjbgList);
+		});
+		
+	});
+</script>
+</body>
+</html>

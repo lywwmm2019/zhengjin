@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>证金贵金属-服务大厅-证金学院</title>
+<meta content="" name="keywords" />
+<meta content="" name="description" />
+<!--#include virtual="/inc/head.shtml"-->
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/jquery-1.6.1.min.js"></script>
+</head>
+<body>
+<div class="box">
+<!--#include virtual="/inc/head_new.shtml"-->
+<!--#include virtual="/inc/head_navigate.shtml"-->
+<div style="background:url(gsxw_images/gsxw_bg.jpg) repeat-x;">
+<div style="width:997px; margin:0 auto 10px auto; padding-top:5px;" class="clear">
+<!--#include virtual="/inc/topimg.shtml"-->
+<!--#include virtual="/inc/nav1.shtml"-->
+
+<div class="fxyj_text">
+<p class="fxyj_text_title font_12"><strong><a href="/">证金贵金属</a></strong> >><strong><a href="/fwdt.shtml">服务大厅</a></strong> >>证金学院</p>
+<div class="mr_t10 clear">
+<div class="fl">
+<p class="fxyj_title"><strong class="font_white font_14">投资下午茶</strong><a target='_blank' href="/list/list_tzrm.shtml">更多>></a></p>
+<div class="fxyj_part">
+<div class="pl_list">
+<JRJTAG	tagtype="01" clsid="604001007" pagesize="4" pagecount="1" id="tzrm" />
+<#if tzrm?exists>
+	<#list tzrm as d>
+		<#if d_index==0>
+		<p><a target='_blank' href="${d.infourl}"><strong class="red2">${d.title}</strong></a></p>
+		<p class="font_14">${jrjfund.subgbk(d.description,126)}...<a target='_blank' href="${d.infourl}"><span class="red2">[阅读全文]</span></a></p>
+		<p class="hr" style="padding:3px 0;"></p>
+		</#if>
+	</#list>
+	<div class="clear">
+	<ul class="news_list" style="margin:3px 0 0 -3px;">
+	<#list tzrm as d>
+		<#if (d_index>0)>
+			<li><a target='_blank' href="${d.infourl}">${d.title}</a><span class="color666 fr">[${d.makedate?string("MM/dd")}]</span></li>
+		</#if>
+	</#list>
+	</ul>
+	</div>
+</#if>
+
+</div>
+</div>
+</div>
+<div class="fr">
+<p class="fxyj_title"><strong class="font_white font_14">常见问题</strong><a target='_blank' href="/list/list_cjwt.shtml">更多>></a></p>
+<div class="fxyj_part">
+<div class="pl_list">
+<JRJTAG	tagtype="01" clsid="604001008" pagesize="4" pagecount="1" id="cjwt" />
+<#if cjwt?exists>
+	<#list cjwt as d>
+		<#if d_index==0>
+		<p><a target='_blank' href="${d.infourl}"><strong class="red2">${d.title}</strong></a></p>
+		<p class="font_14">${jrjfund.subgbk(d.description,126)}...<a target='_blank' href="${d.infourl}"><span class="red2">[阅读全文]</span></a></p>
+		<p class="hr" style="padding:3px 0;"></p>
+		</#if>
+	</#list>
+	<div class="clear">
+	<ul class="news_list" style="margin:3px 0 0 -3px;">
+	<#list cjwt as d>
+		<#if (d_index>0)>
+			<li><a target='_blank' href="${d.infourl}">${d.title}</a><span class="color666 fr">[${d.makedate?string("MM/dd")}]</span></li>
+		</#if>
+	</#list>
+	</ul>
+	</div>
+</#if>
+</div>
+</div>
+</div>
+
+<div class="fl mr_t10">
+<p class="fxyj_title"><strong class="font_white font_14">专业术语</strong><a target='_blank' href="/list/list_zysy.shtml">更多>></a></p>
+<div class="fxyj_part">
+<div class="pl_list">
+<JRJTAG	tagtype="01" clsid="604001009" pagesize="4" pagecount="1" id="zysy" />
+<#if zysy?exists>
+	<#list zysy as d>
+		<#if d_index==0>
+		<p><a target='_blank' href="${d.infourl}"><strong class="red2">${d.title}</strong></a></p>
+		<p class="font_14">${jrjfund.subgbk(d.description,126)}...<a target='_blank' href="${d.infourl}"><span class="red2">[阅读全文]</span></a></p>
+		<p class="hr" style="padding:3px 0;"></p>
+		</#if>
+	</#list>
+	<div class="clear">
+	<ul class="news_list" style="margin:3px 0 0 -3px;">
+	<#list zysy as d>
+		<#if (d_index>0)>
+			<li><a target='_blank' href="${d.infourl}">${d.title}</a><span class="color666 fr">[${d.makedate?string("MM/dd")}]</span></li>
+		</#if>
+	</#list>
+	</ul>
+	</div>
+</#if>
+</div>
+</div>
+</div>
+
+<div class="fr mr_t10">
+<p class="fxyj_title"><strong class="font_white font_14">基本面分析</strong><a target='_blank' href="/list/list_jbmfx.shtml">更多>></a></p>
+<div class="fxyj_part">
+<div class="pl_list">
+<JRJTAG	tagtype="01" clsid="604001010" pagesize="4" pagecount="1" id="jbmfx" />
+<#if jbmfx?exists>
+	<#list jbmfx as d>
+		<#if d_index==0>
+		<p><a target='_blank' href="${d.infourl}"><strong class="red2">${d.title}</strong></a></p>
+		<p class="font_14">${jrjfund.subgbk(d.description,126)}...<a target='_blank' href="${d.infourl}"><span class="red2">[阅读全文]</span></a></p>
+		<p class="hr" style="padding:3px 0;"></p>
+		</#if>
+	</#list>
+	<div class="clear">
+	<ul class="news_list" style="margin:3px 0 0 -3px;">
+	<#list jbmfx as d>
+		<#if (d_index>0)>
+			<li><a target='_blank' href="${d.infourl}">${d.title}</a><span class="color666 fr">[${d.makedate?string("MM/dd")}]</span></li>
+		</#if>
+	</#list>
+	</ul>
+	</div>
+</#if>
+</div>
+</div>
+</div>
+
+<div class="fr mr_t10">
+<p class="fxyj_title"><strong class="font_white font_14">技术讲解</strong><a target='_blank' href="/list/list_jsjj.shtml">更多>></a></p>
+<div class="fxyj_part">
+<div class="pl_list">
+<JRJTAG	tagtype="01" clsid="604001011" pagesize="4" pagecount="1" id="jsjj" />
+<#if jsjj?exists>
+	<#list jsjj as d>
+		<#if d_index==0>
+		<p><a target='_blank' href="${d.infourl}"><strong class="red2">${d.title}</strong></a></p>
+		<p class="font_14">${jrjfund.subgbk(d.description,126)}...<a target='_blank' href="${d.infourl}"><span class="red2">[阅读全文]</span></a></p>
+		<p class="hr" style="padding:3px 0;"></p>
+		</#if>
+	</#list>
+	<div class="clear">
+	<ul class="news_list" style="margin:3px 0 0 -3px;">
+	<#list jsjj as d>
+		<#if (d_index>0)>
+			<li><a target='_blank' href="${d.infourl}">${d.title}</a><span class="color666 fr">[${d.makedate?string("MM/dd")}]</span></li>
+		</#if>
+	</#list>
+	</ul>
+	</div>
+</#if>
+</div>
+</div>
+</div>
+
+<div class="fr mr_t10">
+<p class="fxyj_title"><strong class="font_white font_14">资金管理</strong><a target='_blank' href="/list/list_zjgl.shtml">更多>></a></p>
+<div class="fxyj_part">
+<div class="pl_list">
+<JRJTAG	tagtype="01" clsid="604001012" pagesize="4" pagecount="1" id="zzgl" />
+<#if zzgl?exists>
+	<#list zzgl as d>
+		<#if d_index==0>
+		<p><a target='_blank' href="${d.infourl}"><strong class="red2">${d.title}</strong></a></p>
+		<p class="font_14">${jrjfund.subgbk(d.description,126)}...<a target='_blank' href="${d.infourl}"><span class="red2">[阅读全文]</span></a></p>
+		<p class="hr" style="padding:3px 0;"></p>
+		</#if>
+	</#list>
+	<div class="clear">
+	<ul class="news_list" style="margin:3px 0 0 -3px;">
+	<#list zzgl as d>
+		<#if (d_index>0)>
+			<li><a target='_blank' href="${d.infourl}">${d.title}</a><span class="color666 fr">[${d.makedate?string("MM/dd")}]</span></li>
+		</#if>
+	</#list>
+	</ul>
+	</div>
+</#if>
+</div>
+</div>
+</div>
+
+
+<div class="fl mr_t10">
+<p class="fxyj_title"><strong class="font_white font_14">心得分享</strong><a target='_blank' href="/list/list_xdfx.shtml">更多>></a></p>
+<div class="fxyj_part">
+<div class="pl_list">
+<JRJTAG	tagtype="01" clsid="604001013" pagesize="4" pagecount="1" id="xdfx" />
+<#if xdfx?exists>
+	<#list xdfx as d>
+		<#if d_index==0>
+		<p><a target='_blank' href="${d.infourl}"><strong class="red2">${d.title}</strong></a></p>
+		<p class="font_14">${jrjfund.subgbk(d.description,126)}...<a target='_blank' href="${d.infourl}"><span class="red2">[阅读全文]</span></a></p>
+		<p class="hr" style="padding:3px 0;"></p>
+		</#if>
+	</#list>
+	<div class="clear">
+	<ul class="news_list" style="margin:3px 0 0 -3px;">
+	<#list xdfx as d>
+		<#if (d_index>0)>
+			<li><a target='_blank' href="${d.infourl}">${d.title}</a><span class="color666 fr">[${d.makedate?string("MM/dd")}]</span></li>
+		</#if>
+	</#list>
+	</ul>
+	</div>
+</#if>
+</div>
+</div>
+</div>
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--#include virtual="/inc/foot_new.shtml"-->
+</body>
+</html>

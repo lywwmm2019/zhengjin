@@ -1,0 +1,1183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta name="keywords" content="开户服务,津贵所开户服务,大圆银泰开户服务" />
+<meta name="description" content="证金贵金属官方网站开户中心提供津贵所开户服务和大圆银泰开户服务,让大家更清晰的了解贵金属交易所开户步骤." />
+<link href="../css/style_v2.css" rel="stylesheet" type="text/css" />
+<title>开户服务_开户中心_证金贵金属</title>
+
+<!--#include virtual="/inc/head_link_2014.shtml"-->
+<script src="http://zhibo.zhengjin99.com/hxzb/js_1/slides.min.jquery.js" type="text/javascript"></script>
+<SCRIPT type=text/javascript>  
+function selectTag(showContent,selfObj){  
+ // 操作标签  
+ var tag = document.getElementById("tags").getElementsByTagName("li");  
+ var taglength = tag.length;  
+ for(i=0; i<taglength; i++){  
+  tag[i].className = "";  
+ }  
+ selfObj.parentNode.className = "white";  
+ // 操作内容  
+ for(i=0; j=document.getElementById("tagContent"+i); i++){  
+  j.style.display = "none";  
+ }  
+ document.getElementById(showContent).style.display = "block";  
+      
+}  
+</SCRIPT>  
+
+<SCRIPT type=text/javascript>  
+function selectTagwx(showContentwx,selfObjwx){  
+ // 操作标签  
+ var tag = document.getElementById("tagswx").getElementsByTagName("li");  
+ var taglength = tag.length;  
+for(i=0; i<taglength; i++){  
+  tag[i].className = ""; 
+ }  
+ //selfObjwx.parentNode.className = "selectTagwx";  
+ // 操作内容  
+ for(i=0; j=document.getElementById("tagContentwx"+i); i++){  
+  j.style.display = "none";  
+ }  
+ document.getElementById(showContentwx).style.display = "block";  
+      
+}  
+</SCRIPT>  
+
+
+<script>
+//初始化
+var def="1";
+function mover(object,num){
+  //主菜单
+  //var mm=document.getElementById("m"+object);
+  //mm.className="m_li_a";
+  //初始主菜单先隐藏效果
+  //子菜单
+  var ss=document.getElementById("s"+object+"_"+num);
+  ss.style.display="block";
+  //初始子菜单先隐藏效果
+ var mdef=document.getElementById("m"+object+"_"+def);
+  mdef.className="m_li";
+ var sdef=document.getElementById("s"+object+"_"+def);
+  sdef.style.display="none";
+}
+
+function mout(object,num){
+  //主菜单
+  //var mm=document.getElementById("m"+object);
+  //mm.className="m_li";
+  //初始主菜单还原效果
+  //子菜单
+  var ss=document.getElementById("s"+object+"_"+num);
+  ss.style.display="none";
+  //初始子菜单还原效果
+ var mdef=document.getElementById("m"+object+"_"+def);
+ mdef.className="m_li";
+ var sdef=document.getElementById("s"+object+"_"+def);
+ sdef.style.display="block";
+}
+</script>
+<script language="javascript">
+function tabs(n)
+{
+var len = 4;
+for (var i = 1; i <= len; i++)
+{
+document.getElementById('tab_a' + i).style.display = (i == n) ? 'block' : 'none';
+document.getElementById('tab_' + i).className = (i == n) ? 'aaa' : '';
+}
+}
+</script>
+<script>
+	function slideImg(){
+		$('#slides').slides({
+			preload: true,
+		    play: 5000,
+			pause: 2500,
+			hoverPause: true,
+			animationStart: function(){
+				$('.caption').animate({
+					bottom:-35
+				},100);
+			},
+			animationComplete: function(current){
+				$('.caption').animate({
+					bottom:0
+				},200);
+				if (window.console && console.log) {
+					// example return of current slide number
+					//console.log(current);
+				};
+			}
+		});
+	}
+	$(document).ready(function(){
+		$('ul#tagswx li').bind('click',function(){
+			var num=$(this).index();
+			$(this).removeClass('grey2');
+			$(this).siblings().addClass('grey2');
+			$('.wx_div').hide();
+			$('#tagContentwx'+num).show();
+			
+		})
+		slideImg();
+	})
+</script>   
+</head>
+
+<body>
+	<!--  -->
+	<!--#include virtual="/inc/head_2014.shtml"-->
+        
+
+	<!--  -->
+	<!--#include virtual="/inc/nav_fuwu.shtml"-->
+    
+    <!--  -->    
+    </div>
+    <!--head-end-->
+    <!--middle-->
+ <div class="w990 mauto clear mt20 pr" style="z-index:9;" >
+	
+    	<div class="fwzx_index_top_pic pr over" style="width:650px;" id="slides">    	  
+    	    <ul class="slides_container" style="position: absolute;top: 0px;width: 650px;height: 300px;">
+                <li id="liimg1"><a href="http://tg.zhengjin99.com/zhengjin/mnkh/" target="_blank"><img src="http://img.zhengjin99.com/web/small/fwzx1.jpg" width="651" height="300"  alt=""/></a></li>
+                <li id="liimg2"><a href="http://tg.zhengjin99.com/zhengjin/nsfw/index.html?id=nsfwtx_gjs_20140916" target="_blank"><img src="http://img.zhengjin99.com/web/small/fwzx2.jpg" width="651" height="300"  alt=""/></a></li>
+                <li id="liimg3"><a href="http://zhibo.zhengjin99.com/hxzb/activity/zjxms/index.jsp" target="_blank"><img src="http://zhibo.zhengjin99.com/hxzb/images_1/xiaomishu.jpg" width="651" height="300"  alt=""/></a></li>
+            </ul>
+            <div style="position: absolute; bottom: 0px; left: 0px; z-index: 9; background:#e89916; color:#fff; width: 99%; padding-left: 1%; line-height: 200%;">客户服务热线:<b>010-58309166</b> | 委托下单电话:<b>010-58309009</b> | VIP客户服务专线:<b>010-58309088</b></div>
+            <a href="#" class="prev" style="position: absolute;top: 120px;left: 0px;z-index:99999"><img src="/images2014/button-01.png" width="60" height="75" alt="上一张" /></a>
+            <a href="#" class="next" style="position: absolute;top: 120px;right: 0px;z-index:99999"><img src="/images2014/button-02.png" width="60" height="75" alt="下一张" /></a>  
+    	</div>
+        
+        
+        <!-- 登陆后样式 -->
+        <div class="fr" id="login_main">
+        </div>
+
+  
+  
+  <!-- 登陆后样式end -->
+  
+  
+  <div class="clear"></div>
+</div>   
+    <!--middle-end-->
+	
+ <!--开户服务--> 
+ <div class="w990 mauto clear over mt20 mb20 pr" style="z-index:1;">
+ <h2 class="fwzx_khfw" style="display:block; margin:0px;overflow:hidden; "></h2><!--<h>与<p>的区别？？？-->
+ <!--main-->
+ <div class="khfw_index tab">
+ 	<div class="khfw_index-ul">
+    <ul>
+    	<li id="tab_1" class="aaa"><a href="javascript:void(0)" onclick="tabs('1');">网上实时开户(津贵所)</a></li>
+        <!--<li id="tab_2"><a href="javascript:void(0)" onclick="tabs('2');">预约面签开户(津贵所)</a></li>--> 
+       <li id="tab_2"><a href="javascript:void(0)" onclick="tabs('2');">网上实时开户（大圆银泰）</a></li>
+        <!--<li id="tab_4"><a href="javascript:void(0)" onclick="tabs('4');">预约面签（大圆银泰）</a></li>--> 
+        <!--<li id="tab_4"><a href="javascript:void(0)" onclick="tabs('4');">预约面签开户(海商所)</a></li>-->
+        <li id="tab_3" style="width:196px;"><a href="javascript:void(0)" onclick="tabs('3');">模拟开户</a></li>
+      
+    </ul>
+    </div>
+    <!--bottom1-->
+    <div id="tab_a1" style="display:block;">
+   <!--buzhou-->
+ <div class="khfw_khbz" >
+ 	
+    <div class="khfw_khbz_xz1">
+      <dl>
+    	<dt><a href="#">第一步</a></dt>
+        <dd ><a href="#"></a></dd>
+        <dd id="m1_1" class="m_li_a "><a href="javascript:viod(0)">学习如何开户</a></dd>
+       </dl>
+    </div>
+    
+   <div class="khfw_khbz_xz2">
+      <dl>
+    	<dt><a href="#">第二步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m1_2" class="m_li"  onmouseover='mover(1,2);' onmouseout='mout(1,2);'><a href="javascript:viod(0)">进入网上开户流程</a></dd>
+       </dl>
+    </div>
+      
+    <div class="khfw_khbz_xz3">
+      <dl>
+    	<dt><a href="#">第三步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m1_3" class="m_li "  onmouseover='mover(1,3);' onmouseout='mout(1,3);'><a href="javascript:viod(0)">获得实盘账号</a></dd>
+       </dl>
+    </div> 
+    
+    <div class="khfw_khbz_xz4">
+      <dl>
+    	<dt><a href="#">第四步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m1_4" class="m_li" onmouseover='mover(1,4);' onmouseout='mout(1,4);'><a href="javascript:viod(0)">银行签约</a></dd>
+       </dl>
+    </div>
+    
+    
+    <div class="khfw_khbz_xz5">
+      <dl>
+    	<dt><a href="#">第五步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m1_5" class="m_li"  onmouseover='mover(1,5);' onmouseout='mout(1,5);'><a href="javascript:viod(0)">入金激活</a></dd>
+       </dl>
+    </div>
+    
+    
+    <div class="khfw_khbz_xz6">
+      <dl>
+    	<dt><a href="#">第六步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m1_6" class="m_li"  onmouseover='mover(1,6);' onmouseout='mout(1,6);'><a href="javascript:viod(0)">进行交易</a></dd>
+       </dl>
+    </div>     
+  <div class="khfw_khbz_bj" style="width:830px;"></div>
+ </div>
+   <!--buzhou-end-->
+   <div class="clear"></div>
+   <!--jtbz-->
+       <div class="khfw_jtbz" >
+         <!--1-->
+         <div id="s1_1" >
+         <div class="khfw_jtbz-top"></div>
+         <div class="khfw_jtbz-main ">
+            <ul>
+                <!--<li><a href="bzzx_jgskhysdh.html">·津贵所实时开户演示动画</a></li>-->
+                <li><a href="bzzx_index.html">·津贵所实时开户宣传片</a></li>
+            </ul>    	
+       </div>
+       </div>
+       <!--1-end-->
+       <!--2-->
+        <div id="s1_2"  onmouseover='mover(1,2);' onmouseout='mout(1,2);' style="display:none;" class="khfw_jtbz2">
+         <div class="khfw_jtbz-top  khfw_jtbz-top2"></div>
+         <div class="khfw_jtbz-main  khfw_jtbz-main2 ">
+            <ul>
+                <li><a href="http://tg.zhengjin99.com/zhengjin/spAndYyKH/khts.jsp" >·网上开户入口</a> </li>
+                <li><a href="bzzx_wskhzysx.html">·网上开户注意事项</a> </li>
+            </ul>    	
+        </div>
+       </div>
+       <!--2-end-->
+       <!--3-->
+        <div id="s1_3"  onmouseover='mover(1,3);' onmouseout='mout(1,3);' style="display:none;" class="khfw_jtbz2">
+         
+       </div>
+       <!--3-end-->
+        <!--4-->
+         <div id="s1_4" onmouseover='mover(1,4);' onmouseout='mout(1,4);' style="display:none;"  class="khfw_jtbz2">
+         <div class="khfw_jtbz-top khfw_jtbz-top4"></div>
+         <div class="khfw_jtbz-main" style="left:300px;">
+            <ul>
+                <!--<li><a href="bzzx_jgsbank01.html">·津贵所银行网银签约入口</a> </li>-->
+                <li><a href="bzzx_jgsbank02.html">·津贵所网银签约演示动画</a></li>
+                <li><a href="bzzx_bankqycrjjy.html">·银行签约、出入金和解约时间表</a> </li>
+                <!--<li><a href="bzzx_jgsbank03.html">·津贵所银行签约中遇到的问题</a></li>-->
+            </ul>    	
+       </div>
+       </div>
+       <!--4-end-->
+       <!--5-->
+         <div id="s1_5"  onmouseover='mover(1,5);' onmouseout='mout(1,5);' style="display:none;"  class="khfw_jtbz2">
+         <div class="khfw_jtbz-top khfw_jtbz-top15"></div>
+         <div class="khfw_jtbz-main khfw_jtbz-main15">
+            <ul>
+                <li><a href="bzzx_jgscrjfz.html">·出入金规则和途径</a> </li>
+                <!--<li><a href="bzzx_jgscrjtj.html">·出入金途径</a></li>-->
+            </ul>    	
+       </div>
+       </div>
+       <!--5-end-->
+        <!--6-->
+        <div id="s1_6"  onmouseover='mover(1,6);' onmouseout='mout(1,6);'  style="display:none;" class="khfw_jtbz2">
+         <div class="khfw_jtbz-top khfw_jtbz-top26"></div>
+         <div class="khfw_jtbz-main khfw_jtbz-main26 ">
+            <ul>
+                <li><a href="http://www.zhengjin99.com/download.shtml">·津贵所实盘软件下载地址</a> </li>
+            </ul>    	
+       </div>         
+       </div>
+       <!--6-end-->
+      </div>
+   <!--jtbz-end-->
+   <!--button-->
+   <div class="khfw_button " >
+   	<p><input type="button" class="button1 button3" value="" onclick="location.href='http://tg.zhengjin99.com/zhengjin/spAndYyKH/khts.jsp'" /></p>
+    <p><span>* 只限招行、建行、工行</span></p>
+   </div>
+   <!--button-end-->
+   </div>
+   <!--bottom1-end-->    
+   
+    <!--bottom2-->
+<!--    <div id="tab_a2" style="display:none;">
+-->   <!--buzhou-->
+<!-- <div class="khfw_khbz " >
+ 	
+    <div class="khfw_khbz_xz1 khfw_khbz_xz21">
+      <dl>
+    	<dt><a href="#">第一步</a></dt>
+        <dd class="p2"><a href="#"></a></dd>
+        <dd id="m2_1" class=" m_li "  onmouseout='mout(2,1);'><a href="#">学习如何开户</a></dd>
+       </dl>
+    </div>
+    
+   <div class="khfw_khbz_xz2 khfw_khbz_xz22">
+      <dl>
+    	<dt><a href="#">第二步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m2_2" class="m_li"  onmouseover='mover(2,2);' onmouseout='mout(2,2);'><a href="#">观看开户宣传片 </a></dd>
+       </dl>
+    </div>
+      
+    <div class="khfw_khbz_xz3 khfw_khbz_xz23">
+      <dl>
+    	<dt><a href="#">第三步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m2_3" class="m_li"  onmouseover='mover(2,3);' onmouseout='mout(2,3);'><a href="#">录制开户影像资料</a></dd>
+       </dl>
+    </div> 
+    
+    <div class="khfw_khbz_xz4 khfw_khbz_xz24">
+      <dl>
+    	<dt><a href="#">第四步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m2_4" class="m_li " onmouseover='mover(2,4);' onmouseout='mout(2,4);'><a href="#">获取实盘帐号</a></dd>
+       </dl>
+    </div>
+    
+    
+    <div class="khfw_khbz_xz5 khfw_khbz_xz25">
+      <dl>
+    	<dt><a href="#">第五步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m2_5" class="m_li "  onmouseover='mover(2,5);' onmouseout='mout(2,5);'><a href="#">银行签约</a></dd>
+       </dl>
+    </div>
+    
+    
+    <div class="khfw_khbz_xz6 khfw_khbz_xz26">
+      <dl>
+    	<dt><a href="#">第六步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m2_6" class="m_li "  onmouseover='mover(2,6);' onmouseout='mout(2,6);'><a href="#">入金激活 </a></dd>
+       </dl>
+    </div>  
+    
+       <div class="khfw_khbz_xz7 khfw_khbz_xz27">
+      <dl>
+    	<dt><a href="#">第七步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m2_7" class="m_li"  onmouseover='mover(2,7);' onmouseout='mout(2,7);'><a href="#">进行交易</a></dd>
+       </dl>
+    </div> 
+       
+  <div class="khfw_khbz_bj"></div>
+ </div>-->
+   <!--buzhou-end-->
+   <!--<div class="clear"></div>-->
+   <!--jtbz-->
+       <!--<div class="khfw_jtbz" >-->
+         <!--1-->
+         <!--<div id="s2_1" >
+         <div class="khfw_jtbz-top"></div>
+         <div class="khfw_jtbz-main ">
+            <ul>
+                <li><a href="bzzx_jgsmqkh01.html">·开户流程及注意事项</a> </li>
+                <li><a href="bzzx_jgsmqkh02.html">·协议书签署范本</a> </li>
+            </ul>    	
+       </div>
+       </div>-->
+       <!--1-end-->
+       <!--2-->
+        <!--<div id="s2_2"  onmouseover='mover(2,2);' onmouseout='mout(2,2);'  style="display:none;"  class="khfw_jtbz2">
+         <div class="khfw_jtbz-top  khfw_jtbz-top2"></div>
+         <div class="khfw_jtbz-main  khfw_jtbz-main2 ">
+            <ul>
+                <li><a href="bzzx_index.html">·津贵所开户宣传片 </a> </li>
+            </ul>    	
+        </div>
+       </div>-->
+       <!--2-end-->
+       <!--3-->
+        <!--<div id="s2_3"  style="display:none;"  class="khfw_jtbz2"> </div>-->
+       <!--3-end-->
+        <!--4-->
+        <!--<div id="s2_4"  style="display:none;"  class="khfw_jtbz2"> </div>-->
+       <!--4-end-->
+       <!--5-->
+        <!--<div id="s2_5"  onmouseover='mover(2,5);' onmouseout='mout(2,5);' style="display:none;"  class="khfw_jtbz2">
+         <div class="khfw_jtbz-top khfw_jtbz-top25"></div>
+         <div class="khfw_jtbz-main ">
+            <ul>
+                <li><a href="bzzx_jgsbank01.html">·津贵所银行签约入口</a> </li>
+                <li><a href="bzzx_jgsbank02.html">·津贵所网银签约演示动画</a> </li>
+                <li><a href="bzzx_bankqycrjjy.html">·银行签约、出入金和解约时间表</a> </li>
+                <li><a href="bzzx_jgsbank03.html">·津贵所银行签约中遇到的问题</a></li>
+            </ul>    	
+       </div>
+       </div>-->
+       <!--5-end-->
+        <!--6-->
+         <!--<div id="s2_6"  onmouseover='mover(2,6);' onmouseout='mout(2,6);'  style="display:none;" class="khfw_jtbz2">
+         <div class="khfw_jtbz-top khfw_jtbz-top36"></div>
+         <div class="khfw_jtbz-main khfw_jtbz-main36 ">
+            <ul>
+                <li><a href="bzzx_jgscrjfz.html">·出入金规则</a> </li>
+                <li><a href="bzzx_jgscrjtj.html">·出入金途径</a></li>
+            </ul>    	
+       </div>
+       </div>-->
+       <!--6-end-->
+        <!--7-->
+         <!--<div id="s2_7"  onmouseover='mover(2,7);' onmouseout='mout(2,7);'  style="display:none;"  class="khfw_jtbz2">
+         	 <div class="khfw_jtbz-top khfw_jtbz-top27"></div>
+               <div class="khfw_jtbz-main khfw_jtbz-main37 ">
+                <ul>
+                	<li><a href="http://www.zhengjin99.com/download.shtml">·津贵所实盘软件下载地址</a> </li>
+           	   </ul>    	
+              </div>
+          </div>-->
+       <!--7-end-->
+      <!--</div>-->
+   <!--jtbz-end-->
+   <!--button-->
+   <!--<div class="khfw_button " >
+   	<p><input type="button" class="button1" value="" onclick="location.href='http://tg.zhengjin99.com/zhengjin/spAndYyKH/yykh.jsp'" /></p>
+    
+   </div>-->
+   <!--button-end-->
+   <!--</div>-->
+   <!--bottom2-end-->      
+    <!--bottom3-->
+    <div id="tab_a2" style="display:none;">
+   <!--buzhou-->
+ <div class="khfw_khbz" >
+ 	<div class="khfw_khbz_xz1 khfw_khbz_xz41">
+      <dl>
+    	<dt><a href="#">第一步</a></dt>
+        <dd class="p2"><a href="#"></a></dd>
+        <dd id="m5_1" class=" m_li "  onmouseout='mout(5,1);'><a href="#">开通模拟</a></dd>
+       </dl>
+    </div>
+    <div class="khfw_khbz_xz1 khfw_khbz_xz42">
+      <dl>
+    	<dt><a href="#">第二步</a></dt>
+        <dd class="p2"><a href="#"></a></dd>
+        <dd id="m5_2" class=" m_li "onmouseover='mover(5,2);'  onmouseout='mout(5,2);'><a href="javascript:viod(0)">观看开户宣传片</a></dd>
+       </dl>
+    </div>
+    
+   <div class="khfw_khbz_xz2 khfw_khbz_xz43">
+      <dl>
+    	<dt><a href="#">第三步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m5_3" class="m_li"  onmouseover='mover(5,3);' onmouseout='mout(5,3);'><a href="javascript:viod(0)" style="width:177px;margin-left:0px;">阅读协议</a></dd>
+       </dl>
+    </div>
+      
+    <div class="khfw_khbz_xz3 khfw_khbz_xz44">
+      <dl>
+    	<dt><a href="#">第四步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m5_4" class="m_li" onmouseover='mover(5,4);' onmouseout='mout(5,4);'><a href="javascript:viod(0)"  style="width:250px;">填写基本信息、上传照片</a></dd>
+       </dl>
+    </div> 
+    
+    <div class="khfw_khbz_xz3 khfw_khbz_xz43" style="width:25%">
+      <dl>
+    	<dt><a href="#" style="margin-left:80px;">第五步</a></dt>
+        <dd><a href="#" style="margin-left:80px;"></a></dd>
+        <dd id="m5_5" class="m_li"  onmouseover='mover(5,5);' onmouseout='mout(5,5);'><a href="javascript:viod(0)" style="width:300px;">实盘账户已申请待审核</a></dd>
+       </dl>
+    </div> 
+     
+    <div class="khfw_khbz_xz3 khfw_khbz_xz44" style="width:13%">
+      <dl>
+    	<dt><a href="#">第六步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m5_6" class="m_li"  onmouseover='mover(5,6);' onmouseout='mout(5,6);'><a href="javascript:viod(0)">实盘账户与银行结算账户绑定</a></dd>
+       </dl>
+    </div>       
+    
+   <div class="khfw_khbz_xz3 khfw_khbz_xz44" style="width:11%">
+      <dl>
+    	<dt><a href="#">第七步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m5_7" class="m_li"  onmouseover='mover(5,7);' onmouseout='mout(5,7);'><a href="javascript:viod(0)">入金激活</a></dd>
+       </dl>
+   </div>         
+  <div class="khfw_khbz_bj" style="width:830px;"></div>
+ </div>
+   <!--buzhou-end-->
+   <div class="clear"></div>
+   <!--jtbz-->
+       <div class="khfw_jtbz" >
+         <!--1-->
+         <div id="s5_1"></div>
+       <!--1-end-->
+       <!--2-->
+        <div id="s5_2"> </div>
+       <!--2-end-->
+       <div id="s5_3"></div>
+       <!--3-->
+        <div id="s5_4" onmouseover='mover(5,4);' onmouseout='mout(5,4);' style="display:none;"  class="khfw_jtbz2">
+        	<div class="khfw_jtbz-top khfw_jtbz-top53"></div>
+            <div class="khfw_jtbz-main khfw_jtbz-main53">
+              <ul>
+                  <li><a href="bzzx_dayuansskh01.html">·开户注意事项 </a> </li>
+              </ul>    	
+           </div>
+        </div>
+       <!--3-end-->
+  <div id="s5_5"></div>
+   <!--3-->
+       <div id="s5_6"  onmouseover='mover(5,6);' onmouseout='mout(5,6);' style="display:none;" class="khfw_jtbz2">
+        	<div class="khfw_jtbz-top khfw_jtbz-top3"></div>
+            <div class="khfw_jtbz-main khfw_jtbz-main3">
+              <ul>
+                  <!--<li><a href="bzzx_dayuanweb01.html">·网银签约入口 </a> </li>-->
+                  <li><a href="bzzx_dayuancartoon.html">·网银签约演示动画 </a> </li>
+                  <li><a href="bzzx_bankqycrjjy_dayuan.html">·银行签约、出入金和解约时间表 </a> </li>
+              </ul>    	
+           </div>
+        </div>
+       <!--3-end-->
+        <!--4-->
+         <div id="s5_7" onmouseover='mover(5,7);' onmouseout='mout(5,7);' style="display:none;" class="khfw_jtbz2">
+         <div class="khfw_jtbz-top khfw_jtbz-top6"></div>
+         <div class="khfw_jtbz-main khfw_jtbz-main6 ">
+            <ul>
+              <li><a href="bzzx_dayuancrjgz.html">·出入金规则和途径 </a> </li>
+            </ul>    	
+       </div>
+       </div>
+       <!--4-end-->
+      </div>
+   <!--jtbz-end-->
+   <!--button-->
+   <div class="khfw_button " >
+   	<p><input type="button" class="button1 button3 " value="" onclick="location.href='http://tg.zhengjin99.com/zhengjin/dyyt/'" />
+    <p><span style="margin:0 0 0 780px">只限招行,工行,光大,农行,华夏,平安银行,交通银行,苏州银行</span></p>
+    </p>
+    
+   </div>
+   <!--button-end-->
+   </div>
+   <!--bottom3end-->
+   <!--bottom4-->
+   <!-- <div id="tab_a4" style="display:none;">
+   <!--buzhou-->
+ <!--<div class="khfw_khbz" >
+ 	
+    <div class="khfw_khbz_xz1 khfw_khbz_xz41" style="width:30%">
+      <dl>
+    	<dt><a href="#">第一步</a></dt>
+        <dd class="p2"><a href="#"></a></dd>
+        <dd id="m6_1" class=" m_li"  onmouseout='mout(6,1);' ><a href="#" style="width:300px;">填写协议书并录制开户视频</a></dd>
+       </dl>
+    </div>
+    
+   <div class="khfw_khbz_xz2 khfw_khbz_xz42" style="width:20%">
+      <dl>
+    	<dt><a href="#">第二步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m6_2" class="m_li"  onmouseover='mover(6,2);' onmouseout='mout(6,2);'><a href="#">开通实盘交易账户</a></dd>
+       </dl>
+    </div>
+      
+    <div class="khfw_khbz_xz3 khfw_khbz_xz43" style="width:30%">
+      <dl>
+    	<dt><a href="#">第三步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m6_3" class="m_li"  onmouseover='mover(6,3);' onmouseout='mout(6,3);'><a href="#" style="width:300px;">将实盘账户与银行结算账户绑定</a></dd>
+       </dl>
+    </div> 
+     
+     <div class="khfw_khbz_xz3 khfw_khbz_xz44" style="width:20%">
+      <dl>
+    	<dt><a href="#">第四步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m6_4" class="m_li"  onmouseover='mover(6,4);' onmouseout='mout(6,4);'><a href="#">入金激活</a></dd>
+       </dl>
+    </div>       
+  <div class="khfw_khbz_bj" style="width:830px;"></div>
+ </div>-->
+   <!--buzhou-end-->
+   <!--<div class="clear"></div>-->
+   <!--jtbz-->
+<!-- <div class="khfw_jtbz" >-->
+         <!--1-->
+         <!--<div id="s6_1">
+         <div class="khfw_jtbz-top"></div>
+         <div class="khfw_jtbz-main ">
+            <ul>
+              <li><a href="bzzx_dayuanmqkh01.html">·开户注意事项 </a> </li>
+              <li><a href="bzzx_dayuanmqkh02.html">·开户视频录制流程</a> </li>
+            </ul>    	
+       </div>
+       </div>-->
+       <!--1-end-->
+       <!--2-->
+<!-- <div id="s6_2"  style="display:none;"  class="khfw_jtbz2"> </div>-->
+       <!--2-end-->
+       <!--3-->
+       <!-- <div id="s6_3"  onmouseover='mover(6,3);' onmouseout='mout(6,3);' style="display:none;" class="khfw_jtbz2">
+        	<div class="khfw_jtbz-top khfw_jtbz-top3"></div>
+            <div class="khfw_jtbz-main khfw_jtbz-main3">
+              <ul>
+                  <li><a href="bzzx_dayuanweb01.html">·网银签约入口 </a> </li>
+                  <li><a href="bzzx_dayuancartoon.html">·网银签约演示动画 </a> </li>
+                  <li><a href="bzzx_bankqycrjjy_dayuan.html">·银行签约、出入金和解约时间表 </a> </li>
+              </ul>    	
+           </div>
+        </div>-->
+       <!--3-end-->
+        <!--4-->
+         <!--<div id="s6_4" onmouseover='mover(6,4);' onmouseout='mout(6,4);' style="display:none;" class="khfw_jtbz2">
+         <div class="khfw_jtbz-top khfw_jtbz-top6"></div>
+         <div class="khfw_jtbz-main khfw_jtbz-main6 ">
+            <ul>
+              <li><a href="bzzx_dayuancrjgz.html">·出入金规则 </a> </li>
+            </ul>    	
+       </div>
+       </div>-->
+       <!--4-end-->
+ 
+     <!-- </div>-->
+   <!--jtbz-end-->
+   <!--button-->
+   <!--<div class="khfw_button " >
+   	<p><input type="button" class="button1" value="" onclick="location.href='http://tg.zhengjin99.com/zhengjin/spAndYyKH/yykh.jsp'" /></p>
+    
+   </div>-->
+   <!--button-end-->
+   <!--</div>  -->
+   <!--bottom4end-->
+      <!--bottom5-->
+    <!--<div id="tab_a4" style="display:none;">-->
+   <!--buzhou-->
+ <!--<div class="khfw_khbz " >
+ 	
+    <div class="khfw_khbz_xz1 khfw_khbz_xz21">
+      <dl>
+    	<dt><a href="#">第一步</a></dt>
+        <dd class="p2"><a href="#"></a></dd>
+        <dd id="m3_1" class=" m_li"  onmouseout='mout(3,1);'><a href="#">学习如何开户</a></dd>
+       </dl>
+    </div>
+    
+   <div class="khfw_khbz_xz2 khfw_khbz_xz22">
+      <dl>
+    	<dt><a href="#">第二步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m3_2" class="m_li"  onmouseover='mover(3,2);' onmouseout='mout(3,2);'><a href="#">签订客户协议书</a></dd>
+       </dl>
+    </div>
+      
+    <div class="khfw_khbz_xz3 khfw_khbz_xz23">
+      <dl>
+    	<dt><a href="#">第三步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m3_3" class="m_li"  onmouseover='mover(3,3);' onmouseout='mout(3,3);'><a href="#">递交相关资料</a></dd>
+       </dl>
+    </div> 
+    
+    <div class="khfw_khbz_xz4 khfw_khbz_xz24">
+      <dl>
+    	<dt><a href="#">第四步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m3_4" class="m_li " onmouseover='mover(3,4);' onmouseout='mout(3,4);'><a href="#">获得实盘帐号</a></dd>
+       </dl>
+    </div>
+    
+    
+    <div class="khfw_khbz_xz5 khfw_khbz_xz25">
+      <dl>
+    	<dt><a href="#">第五步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m3_5" class="m_li " onmouseover='mover(3,5);' onmouseout='mout(3,5);'><a href="#">银行签约</a></dd>
+       </dl>
+    </div>
+    
+    
+    <div class="khfw_khbz_xz6 khfw_khbz_xz26">
+      <dl>
+    	<dt><a href="#">第六步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m3_6" class="m_li " onmouseover='mover(3,6);' onmouseout='mout(3,6);'><a href="#">入金激活 </a></dd>
+       </dl>
+    </div>  
+    
+       <div class="khfw_khbz_xz7 khfw_khbz_xz27">
+      <dl>
+    	<dt><a href="#">第七步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m3_7" class="m_li"  onmouseover='mover(3,7);' onmouseout='mout(3,7);'><a href="#">进行交易</a></dd>
+       </dl>
+    </div> 
+       
+  <div class="khfw_khbz_bj"></div>
+ </div>-->
+   <!--buzhou-end-->
+   <!--<div class="clear"></div>-->
+   <!--jtbz-->
+       <!--<div class="khfw_jtbz" >-->
+         <!--1-->
+        <!-- <div id="s3_1">
+         <div class="khfw_jtbz-top"></div>
+         <div class="khfw_jtbz-main ">
+            <ul>
+                <li><a href="bzzx_hssyymq01.html">·开户准备工作和注意事项</a> </li>
+            </ul>    	
+       </div>
+       </div>-->
+       <!--1-end-->
+       <!--2-->
+        <!--<div id="s3_2"  onmouseover='mover(3,2);' onmouseout='mout(3,2);' style="display:none;"  class="khfw_jtbz2">
+         <div class="khfw_jtbz-top  khfw_jtbz-top2"></div>
+         <div class="khfw_jtbz-main  khfw_jtbz-main2 ">
+            <ul>
+                <li><a href="bzzx_hssmq02.html">·协议书下载地址和签署范本 </a> </li>
+            </ul>    	
+        </div>
+       </div>-->
+       <!--2-end-->
+       <!--3-->
+        <!--<div id="s3_3"  onmouseover='mover(3,3);' onmouseout='mout(3,3);' style="display:none;" class="khfw_jtbz2"> 
+        	<div class="khfw_jtbz-top  khfw_jtbz-top33"></div>
+         		<div class="khfw_jtbz-main  khfw_jtbz-main33 ">
+           			 <ul>
+                			<li><a href="bzzx_hssyymq03.html">·需要递交哪些资料 </a> </li>
+       	    		 </ul>    	
+        	</div>
+        </div>-->
+       <!--3-end-->
+        <!--4-->
+         <!--<div id="s3_4"   style="display:none;"  class="khfw_jtbz2"> </div>-->
+       <!--4-end-->
+       <!--5-->
+        <!-- <div id="s3_5"  onmouseover='mover(3,5);' onmouseout='mout(3,5);' style="display:none;"  class="khfw_jtbz2">
+         <div class="khfw_jtbz-top khfw_jtbz-top25"></div>
+         <div class="khfw_jtbz-main khfw_jtbz-main25 ">
+            <ul>
+                <li><a href="bzzx_hxsbank01.html">·海商所银行签约入口</a> </li>
+                <li><a href="bzzx_hxsbank02.html">·海商所网银签约演示动画</a></li>
+            </ul>    	
+       </div>
+       </div>-->
+       <!--5-end-->
+        <!--6-->
+         <!--<div id="s3_6"  onmouseover='mover(3,6);' onmouseout='mout(3,6);' style="display:none;" class="khfw_jtbz2">
+         <div class="khfw_jtbz-top khfw_jtbz-top36"></div>
+         <div class="khfw_jtbz-main khfw_jtbz-main36 ">
+            <ul>
+                <li><a href="bzzx_hsscrjtj.html">·出入金途径</a> </li>
+                <li><a href="bzzx_jgscrjfz.html">·出入金规则</a></li>
+            </ul>    	
+       </div>
+       </div>-->
+       <!--6-end-->
+        <!--7-->
+         <!--<div id="s3_7"  onmouseover='mover(3,7);' onmouseout='mout(3,7);' style="display:none;" class="khfw_jtbz2">
+         <div class="khfw_jtbz-top khfw_jtbz-top27"></div>
+         <div class="khfw_jtbz-main  khfw_jtbz-main37 ">
+            <ul>
+                <li><a href="http://www.zhengjin99.com/download.shtml">·海商所软件下载地址</a> </li>
+            </ul>    	
+       </div>
+          </div>-->
+       <!--7-end-->
+      <!--</div>-->
+   <!--jtbz-end-->
+   <!--button-->
+   <!--<div class="khfw_button " >
+   	<p><input type="button" class="button1" value="" onclick="location.href='http://tg.zhengjin99.com/zhengjin/spAndYyKH/yykh.jsp'" /></p>
+    
+   </div>-->
+   <!--button-end-->
+   <!--</div>-->
+   <!--bottom5end--> 
+   
+          <!--bottom6-->
+    <div id="tab_a3" style="display:none;">
+   <!--buzhou-->
+ <div class="khfw_khbz" >
+ 	
+    <div class="khfw_khbz_xz1 khfw_khbz_xz61">
+      <dl>
+    	<dt><a href="#">第一步</a></dt>
+        <dd class="p2"><a href="#"></a></dd>
+        <dd id="m4_1" class=" m_li"  onmouseout='mout(4,1);'><a href="javascript:viod(0)">填写申请信息</a></dd>
+       </dl>
+    </div>
+    
+   <div class="khfw_khbz_xz2 khfw_khbz_xz62">
+      <dl>
+    	<dt><a href="#">第二步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m4_2" class="m_li"  onmouseover='mover(4,2);' onmouseout='mout(4,2);'><a href="javascript:viod(0)">获得模拟帐号</a></dd>
+       </dl>
+    </div>
+      
+    <div class="khfw_khbz_xz3 khfw_khbz_xz63">
+      <dl>
+    	<dt><a href="#">第三步</a></dt>
+        <dd><a href="#"></a></dd>
+        <dd id="m4_3" class="m_li"  onmouseover='mover(4,3);' onmouseout='mout(4,3);'><a href="javascript:viod(0)">进行模拟交易</a></dd>
+       </dl>
+    </div> 
+           
+  <div class="khfw_khbz_bj" style="width:830px;"></div>
+ </div>
+   <!--buzhou-end-->
+   <div class="clear"></div>
+   <!--jtbz-->
+       <div class="khfw_jtbz" >
+         <!--1-->
+         <div id="s4_1" >
+         <div class="khfw_jtbz-top"></div>
+         <div class="khfw_jtbz-main ">
+            <ul>
+              <li><a href="http://tg.zhengjin99.com/zhengjin/mnkh">·模拟账号申请入口 </a> </li>
+              <!--<li><a href="bzzx_mnkh.html">·模拟帐号申请注意事项</a> </li>-->
+            </ul>    	
+       </div>
+       </div>
+       <!--1-end-->
+       <!--2-->
+        <div id="s4_2"  style="display:none;"  class="khfw_jtbz2"> </div>
+       <!--2-end-->
+       <!--3-->
+        <div id="s4_3"  onmouseover='mover(4,3);' onmouseout='mout(4,3);' style="display:none;" class="khfw_jtbz2">
+        	<div class="khfw_jtbz-top khfw_jtbz-top63"></div>
+            <div class="khfw_jtbz-main khfw_jtbz-main63">
+              <ul>
+                  <li><a href="http://www.zhengjin99.com/download.shtml">·模拟软件下载地址 </a> </li>
+              </ul>    	
+           </div>
+        </div>
+       <!--3-end-->
+ 
+      </div>
+   <!--jtbz-end-->
+   <!--button-->
+   <div class="khfw_button " >
+   	<p><input type="button" class="button1 button2" value="" onclick="location.href='http://tg.zhengjin99.com/zhengjin/mnkh/'" /></p>
+    
+   </div>
+   <!--button-end-->
+   </div>
+   <!--bottom6end-->  
+    
+ </div> 
+ <!--main-end-->
+ </div>
+ <!--开户服务-end-->  
+ <!--hf-->
+ <div class="khfw_button-hf"></div> 
+ <!--hf-end-->
+ <!--whole_fwtx-->
+ <div class="w990 mauto">
+  <!--fwtx-->
+ <div class="fwtx">
+    <div class="fwtx2">
+    <ul id="tags">
+    	<li class="white"><A onMousedown="selectTag('tagContent0',this)" href="javascript:void(0)">体验客户</a></li>              
+        <li><a onMousedown="selectTag('tagContent1',this)" href="javascript:void(0)">三星客户</a></li>
+        <li><a onMousedown="selectTag('tagContent2',this)" href="javascript:void(0)">四星客户</a></li>
+        <li><a onMousedown="selectTag('tagContent3',this)" href="javascript:void(0)">五星客户</a></li>
+        <li><a onMousedown="selectTag('tagContent4',this)" href="javascript:void(0)">VIP客户</a></li>
+       <li><a onMousedown="selectTag('tagContent5',this)" href="javascript:void(0)" style="border-right:0;width:113px;">双V客户</a></li>
+
+    </ul>
+    <!---->
+    <div  id=tagContent class="fwtx_jtnr">
+  <!--fwtx-jtnr-->  
+    <div id=tagContent0  class="fwtx_jtnr">
+    	<div class="personal_zstq_mid clear ">
+                         	 
+                            <ul>
+                            	<li>个人中心</li>
+                                <li>证金直播</li>
+                            	<li>金牌早晚评</li>
+                                <li>证金学院</li>
+                                <li style="line-height:30px;">大咖工作室<br><span>（历史记录）</span></li>
+                                <li>投资研报</li>
+                                <li>谈股论金</li>
+                                <li>财经日历</li>
+                                <li>在线咨询</li>
+                                <li>财富周刊</li>
+                                <li style="line-height:22px;">K线大咖<br><span>（pc+微信+app）</span></li>
+                            </ul>   
+           </div>
+    </div>
+   <!--fwtx-jtnr-end--> 
+   
+    <!--fwtx-jtnr2-->  
+    <div id=tagContent1 class="fwtx_jtnr" style="display:none;">
+      <div class="personal_zstq_mid clear ">
+              <ul >
+                            	<li>大盘分析</li>
+                                <li>热点追踪</li>
+                            	<li>新闻解析</li>
+                            	<li>早盘点金</li>
+                            	<li>视频解盘</li>
+                            	<li>实时策略</li>
+                            	<li>大宗夜校</li>
+                            	<li>金牌早晚评</li>
+                                <li>证金学院</li>
+                                <li style="line-height:30px;">大咖工作室<br><span>（历史记录）</span></li>
+                                <li>投资研报</li>
+                                <li>谈股论金</li>
+                                <li>财经日历</li>
+                                <li>在线咨询</li>
+                                <li>财富周刊</li>
+                                <li style="line-height:22px;">K线大咖<br><span>（pc+微信+app）</span></li>
+                                <li>个人中心</li>
+                                <li>证金直播</li>
+                                <li>客服专线</li>
+                                <li>积分商城</li>
+                                <li>证金小秘书</li>
+                            </ul>  	
+       </div>
+    </div>
+   <!--fwtx-jtnr2-end--> 
+   
+       <!--fwtx-jtnr3-->  
+    <div id=tagContent2  class="fwtx_jtnr"  style="display:none;">
+    <div class="personal_zstq_mid clear ">
+              <ul>
+                 <li style="line-height:30px;">三星级客户全部特权</li>
+                 <li>妖股透析</li>
+                 <li>行情战法</li>
+                 <li>大话日历</li>
+                 <li>油田勘探队</li>
+                 <li>异动解析</li>
+                 <li>策略追踪</li>
+                <li>金牌早晚评</li>
+                <li>证金学院</li>
+                <li style="line-height:30px;">大咖工作室<br><span>（历史记录）</span></li>
+                <li>投资研报</li>
+                <li>谈股论金</li>
+                <li>财经日历</li>
+                <li>在线咨询</li>
+                <li>财富周刊</li>
+                <li style="line-height:22px;">K线大咖<br><span>（pc+微信+app）</span></li>
+                <li>个人中心</li>
+                <li>证金直播</li>
+                <li>客服专线</li>
+                <li>积分商城</li>
+                <li>证金小秘书</li>
+                <li>大咖访谈</li>
+                <li>策略周报</li>
+             </ul>                        
+        </div>
+    </div>
+   <!--fwtx-jtnr3-end--> 
+   
+     <!--fwtx-jtnr4-->  
+    <div id=tagContent3 class="fwtx_jtnr" style="display:none;">
+         <div class="personal_zstq_mid clear ">
+                            
+                        	<ul>
+                                <li style="line-height:30px;">四星级客户全部特权</li>
+                                <li>场内传真</li>
+                            	<li>绝密内参</li>
+                            	<li>个股追踪</li>
+                            	<li>大咖EIA</li>
+                            	<li>锦囊内参</li>
+                            	<li>明富智库</li>
+                            	<li>金牌早晚评</li>
+                                <li>证金学院</li>
+                                <li style="line-height:30px;">大咖工作室<br><span>（历史记录）</span></li>
+                                <li>投资研报</li>
+                                <li>谈股论金</li>
+                                <li>财经日历</li>
+                                <li>在线咨询</li>
+                                <li>财富周刊</li>
+                                <li style="line-height:22px;">K线大咖<br><span>（pc+微信+app）</span></li>
+                                <li>个人中心</li>
+                                <li>客服专线</li>
+                                <li>积分商城</li>
+                                <li>证金小秘书</li>
+                                <li>大咖访谈</li>
+                                <li>策略周报</li>
+                                <li>证金直播</li>
+                                <li>电话一对一</li>
+                                <li>专家定制</li>
+                                <li>账户诊断</li>
+                                <li style="line-height:30px;">普通直播<br>是自选</li>
+                                <li>客户评估报告</li>
+                            </ul>    
+             </div>
+    </div>
+   <!--fwtx-jtnr4-end--> 
+    
+   <!--fwtx-jtnr5-->  
+    <div id=tagContent4 class="fwtx_jtnr" style="display:none;">
+            <div class="personal_zstq_mid clear ">
+                            
+                        	<ul>
+                                <li style="line-height:30px;">五星级客户全部特权</li>
+                                <li>大客户项目组</li>
+                            	<li>VIP独立档案</li>
+                            	<li>VIP服务项目</li>
+                            	<li>金牌早晚评</li>
+                                <li>证金学院</li>
+                                <li style="line-height:30px;">大咖工作室<br><span>（历史记录）</span></li>
+                                <li>投资研报</li>
+                                <li>谈股论金</li>
+                                <li>财经日历</li>
+                                <li>在线咨询</li>
+                                <li>财富周刊</li>
+                                <li style="line-height:22px;">K线大咖<br><span>（pc+微信+app）</span></li>
+                                <li>个人中心</li>
+                                <li>客服专线</li>
+                                <li>积分商城</li>
+                                <li>证金小秘书</li>
+                                <li>大咖访谈</li>
+                                <li>策略周报</li>
+                                <li>证金直播</li>
+                                <li>电话一对一</li>
+                                <li>专家定制</li>
+                                <li>账户诊断</li>
+                                <li style="line-height:30px;">普通直播<br />是自选</li>
+                                <li>客户评估报告</li>
+                                <li>VIP专属热线</li>
+                                <li style="line-height:30px;">K线大咖<br>+普通自由选</li>
+                                <li>客户关怀</li>
+                                <li style="line-height:30px;">积分商城<br />VIP特权</li>
+                                <li>专属直播平台</li>
+                            </ul>    
+             </div>
+    </div>
+   <!--fwtx-jtnr5-end-->
+   <!--fwtx-jtnr5-->  
+    <div id=tagContent5 class="fwtx_jtnr" style="display:none;">
+            <div class="personal_zstq_mid clear ">
+                            
+                        	<ul>
+                                <li style="line-height:30px;">VIP客户全部特权</li>
+                                <li>大客户项目组</li>
+                            	<li>VIP独立档案</li>
+                            	<li>VIP服务项目</li>
+                            	<li>功能型服务</li>
+                                <li>双V妖股</li>
+                            	<li>金牌早晚评</li>
+                                <li>证金学院</li>
+                                <li style="line-height:30px;">大咖工作室<br><span>（历史记录）</span></li>
+                                <li>投资研报</li>
+                                <li>谈股论金</li>
+                                <li>财经日历</li>
+                                <li>在线咨询</li>
+                                <li>财富周刊</li>
+                                <li style="line-height:22px;">K线大咖<br><span>（pc+微信+app）</span></li>
+                                <li>个人中心</li>
+                                <li>客服专线</li>
+                                <li>积分商城</li>
+                                <li>证金小秘书</li>
+                                <li>大咖访谈</li>
+                                <li>策略周报</li>
+                                <li>证金直播</li>
+                                <li>电话一对一</li>
+                                <li>专家定制</li>
+                                <li>账户诊断</li>
+                                <li style="line-height:30px;">普通直播<br />是自选</li>
+                                <li>客户评估报告</li>
+                                <li>VIP专属热线</li>
+                                <li style="line-height:30px;">K线大咖+普通自由选</li>
+                                <li style="line-height:30px;">积分商城<br />VIP特权</li>
+                                <li>专属直播平台</li>
+                                <li>私有空间权限</li>
+                                <li>彩虹俱乐部</li>
+                                <li>客户关怀</li>
+                                <li style="line-height:30px;">积分商城<br />双V特权</li>
+                            </ul>    
+                      
+             </div>
+    </div>
+   <!--fwtx-jtnr5-end-->
+   </div>
+   <!---->
+   </div>
+ </div>
+ <!--fwtx-end-->
+ <!--kfxx-->
+ <script type="text/javascript" charset="utf-8" src="http://gate.looyu.com/49537/105923.js"></script>
+ <div class="kfxx">
+ 	<div class="zxkf">
+   	  <p>在线客服</p>
+      <p class="p2">
+        	<input type="button" onclick="window.location.href='http://www.zhengjin99.com/service/zxzx_index.html?head=2'" class="zxkf-buttonqq clear" value="" />
+            
+        </p>
+      
+          <p class="p2 clear">
+       
+            工作时间：09:00-21:00
+        </p>
+        <p class="p2 clear">
+        <span>推荐等级:</span>
+        <a href=""><img src="../images2014/fwzx-03.jpg" width="91" height="15"  alt=""/></a>
+        </p>
+    </div>
+    <!--wxkf-->
+<div class="wxkf pt10">
+    <ul id="tagswx">
+        <li class="fl"><a href="javascript:void(0)" class="fl">微信在线客服</a></li>
+        <li class="grey2 fr"><a href="javascript:void(0)" class="fr">手机客户端在线客服</a></li>	
+    </ul>
+    <div id="tagContentwx" class="wxzxkfwhole"> 
+        <div id="tagContentwx0" class="wxzxkf wx_div">
+            <div class="wxzxkf-img"><img src="../images2014/fwtx-27.jpg" /></div>
+             <p><a href="/download.shtml" style="color:#898888;">证金贵金属官方服务号</a></p>
+             <p class="p2" style="font-size:14px;">每日早晚评论、名家分析、火线直播和实时行情</p>
+        </div>
+        <div id="tagContentwx1" class="wxzxkf wx_div hide">
+            <div class="wxzxkf-img"><img src="../images2014/app_logo.png" width="114" height="114" /></div>
+             <p><a href="/download.shtml" style="color:#898888;">证金APP客户端</a></p>
+             <p class="p2" style="font-size:14px;">证金app V3.0-爱杠杆全新上线，随时随地观看贵金属和油化工行情、策略、视频直播，和老师1对1聊天！</p>
+           
+        </div>
+    </div>
+</div>
+ <!--wxkf-end-->
+ <!--kfdh-->
+ <div class="kfphone">
+ <h3>客服电话</h3>
+ <div class="fwzx_index_bottom_more kfdh_more" onclick="window.open('/service/bzzx_kfdhyl.html');">更多>></div>
+	<div class="clear"></div>
+    <div class="kfphone-nr">
+ 		<!--<p>全国统一客服电话：010-58309199</p>
+        <p>工作时间：09:00-22:00</p>-->
+ 	</div>
+    
+     <div class="kfphone-nr">
+ 		<p>实盘激活客户服务专线：</p>
+        <p class="p4">010-58309166(普通) 010-58309088(VIP专线)</p>
+        <p class="p4">为客户提供咨询、建议、投诉等优质的客户服务</p>
+        <p class="p4">工作时间：09:00-12:00  &  13:00-21:00</p>
+ 	</div>
+ </div>
+ <!--kfdh-end-->
+ </div>
+ <!--kfxx-end-->
+ 
+ </div>
+ <!--whole_fwtx-end-->
+ <div class="clear" style="height:0px; line-height:0px;"></div>
+    <!--特色服务-->
+    <!--#include virtual="/inc/bottom_2014.shtml"-->
+    <!--特色服务-end-->
+    <!--foot-->
+     <!--#include virtual="/inc/foot_2014.shtml"-->
+    <!--foot-end-->
+    <!--#include virtual="/inc/rightpiaochuang.shtml"-->
+</body>
+</html>

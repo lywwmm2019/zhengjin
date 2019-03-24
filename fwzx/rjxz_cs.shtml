@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>软件下载</title>
+<!--#include virtual="/inc/head_link_2014.shtml"-->
+<script>
+	$(document).ready(function(){
+		$('.pc_btn').bind('click',function(){
+			$(this).hide();
+			$(this).siblings('.evm_btn').show();
+			$(this).siblings('.show_evm').hide();
+			$(this).siblings('.show_pc').show();
+		});
+		$('.evm_btn').bind('click',function(){
+			$(this).hide();
+			$(this).siblings('.pc_btn').show();
+			$(this).siblings('.show_pc').hide();
+			$(this).siblings('.show_evm').show();
+		});
+	})
+</script>
+</head>
+
+<body>
+    
+    <!--rjzx-->
+    <div class="w990 mauto over" id="download">
+    	<div class="rjxz_left" style="height:765px;background:none;">
+        	<p style="font-size: 20px; color: rgb(88, 87, 87); font-weight: bold; text-align: right; margin-top: 272px;">电脑版</p>
+            <p style="font-size: 20px; color: rgb(88, 87, 87); font-weight: bold; text-align: right; margin-top: 300px;">手机版</p>
+        </div>
+        <div class="rjxz_right">
+        	<p style="padding-top:30px;" class="fst">由天津贵金属交易所自主开发，具有独立知识产权，并通过了公安部对信息系统安全等级保护的认证。功能强大、操作简单，能够提供实时行情、网上交易及查询、报表功能，同时有与银行接口的实时转账功能，方便客户出入金，让您的投资交易得到可靠保障，充分把握市场投资机会。
+            </p>
+            <!--bj具体内容-->
+       <div class="rjxz_backgroud">
+           <!--具体内容-->
+       		<div class="rjxz_jtnr">
+            	<div class="rjxz_jtnr-gxbf">
+            		<p class="img"><img src="../images2014/tj_hq.png" width="88" height="88"  alt=""/></p>
+                	<p>"证金贵金属"行情分析软件</p>
+                	<p class="xq">适用客户： 所有用户</p>
+                    <p class="xq">默认帐户：zj212 密码：zj212</p>
+            	</div>
+                <div class="rjxz_jtnr-gxbf2">
+                	<input type="button" class="rjxz_jtnr-button" value="" onclick="location.href='http://soft.zhengjin99.com/mytrader_tjgjs417.exe'" / >
+                </div>
+            </div>
+           <!--具体内容end-->
+           <!--具体内容-->
+       		<div class="rjxz_jtnr">
+            	<div class="rjxz_jtnr-gxbf">
+            		<p class="img"><img src="../images2014/tj_jy.png" width="88" height="88"  alt=""/></p>
+                	<p>"证金贵金属"交易软件</p>
+                	<p class="xq">适用客户： 所有交易客户</p>
+                    <p class="xq"><span class="red">*.net2.0插件</span>   <a href="http://soft.zhengjin99.com/x86.zip">点击下载</a></p>
+            	</div>
+                <div class="rjxz_jtnr-gxbf2">
+                	<input type="button" class="rjxz_jtnr-button" value="" onclick="location.href='http://soft.zhengjin99.com/setup_c_212_701.exe'" / >
+                </div>
+            </div>
+           <!--具体内容end-->
+       </div>
+       <!--bj具体内容-end-->
+       <!--bj具体内容-->
+       <div class="rjxz_backgroud">
+           <!--具体内容-->
+       		<div class="rjxz_jtnr">
+            	<div class="rjxz_jtnr-gxbf show_pc">
+            		<p class="img"><img src="../images2014/tj_phone.png" width="88" height="88"  alt=""/></p>
+                	<p>天通金Android版</p>
+                	<p class="xq"><a href="http://ftp.zhengjin99.com/android_use1.0.doc">软件使用说明下载</a></p>
+                    <p class="xq"><a href="http://ftp.zhengjin99.com/android_anzhuang.doc">软件安装说明下载</a></p>
+            	</div>
+                <img style="border:1px solid #ccc;display:none;" src="/images2014/er_rjxz.jpg" class="block mauto mt20 show_evm" />
+                <div class="rjxz_jtnr-gxbf2">
+                	<input type="button" class="rjxz_btn" value="Android版下载" onclick="location.href='http://soft.bloomplus.net:10804/android/TMBS_A.apk'" / >
+                </div>
+                <a style="right:0;top:0;" class="pa mt20 evm_btn" href="javascript:void(0)"><img src="/images2014/change_evm.jpg"></a>
+                <a style="right:0;top:0;" class="pa mt20 hide pc_btn" href="javascript:void(0)"><img src="/images2014/change_pc.jpg"></a>
+            </div>
+           <!--具体内容end-->
+           <!--具体内容-->
+       		<div class="rjxz_jtnr">
+            	<div class="rjxz_jtnr-gxbf show_pc">
+            		<p class="img"><img src="../images2014/tj_phone.png" width="88" height="88"  alt=""/></p>
+                	<p>天通金（iphone）软件下载</p>
+                	<p class="xq"><a href="http://ftp.zhengjin99.com/iphone_use1.0.doc">软件使用说明下载</a></p>
+                    <p class="xq"><a href="http://ftp.zhengjin99.com/iso_anzhuang.doc">软件安装说明下载</a></p>
+            	</div>
+                <img style="border:1px solid #ccc;display:none;" src="/images2014/er_rjxz.jpg" class="block mauto mt20 show_evm" />
+                <div class="rjxz_jtnr-gxbf2">
+                	<input type="button" class="rjxz_btn" value="iphone版下载" onclick="location.href='http://store.bloomplus.net/'" / >
+                </div>
+                <a style="right:0;top:0;" class="pa mt20 evm_btn" href="javascript:void(0)"><img src="/images2014/change_evm.jpg"></a>
+                <a style="right:0;top:0;" class="pa mt20 hide pc_btn" href="javascript:void(0)"><img src="/images2014/change_pc.jpg"></a>
+            </div>
+           <!--具体内容end-->
+           <!--具体内容-->
+       		<div class="rjxz_jtnr">
+            	<div class="rjxz_jtnr-gxbf show_pc">
+            		<p class="img"><img src="../images2014/rjxz_03.jpg" width="88" height="88"  alt=""/></p>
+                	<p>慧通金银Android版</p>
+                	<p class="xq"><a href="http://ftp.zhengjin99.com/htjy2.0.doc">软件使用说明下载</a></p>
+            	</div>
+                <img class="block mauto mt20 show_evm" src="http://img.zhengjin99.com/web/htjy.gif" style="border:1px solid #ccc;display:none;" />
+                <div class="rjxz_jtnr-gxbf2">
+                	<input type="button" class="rjxz_btn" value="Android版下载" onclick="location.href='http://182.92.79.186:9080/d/htjy_huiyuan.apk'" / >
+                </div>
+                <a style="right:0;top:0;" class="pa mt20 evm_btn" href="javascript:void(0)"><img src="/images2014/change_evm.jpg"></a>
+                <a style="right:0;top:0;" class="pa mt20 hide pc_btn" href="javascript:void(0)"><img src="/images2014/change_pc.jpg"></a>
+            </div>
+           <!--具体内容end-->
+       </div>
+              <!--bj具体内容-end-->
+       
+        </div>
+  
+    </div>
+    <!-- rjzx-end -->
+                    
+    <!--rjzx_tszl-->
+
+</body>
+</html>

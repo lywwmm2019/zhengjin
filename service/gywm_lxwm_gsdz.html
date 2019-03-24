@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk"/>
+<meta name="keywords" content="证金贵金属,白银,白银分析,白银投资,白银价格,白银交易,炒白银,白银走势,白银软件,模拟炒银,美联储,白银在线分析" />
+<meta name="description" content="证金贵金属，首家赴美纳斯达克上市公司中国最大最专业的白银投资服务平台，致力于白银投资、白银交易、现货白银、白银价格、炒白银、现货白银走势、白银行情、模拟炒银、现货白银开户、投资资讯、分析评论、贵金属投资等贵金属综合性投资服务" />
+<meta name="chinaz-site-verification" content="288879e7-ff11-4ab6-a78e-336cdcd754c4" />
+<title>关于我们_证金贵金属</title>
+<!--#include virtual="/inc/head_link_2014.shtml"-->
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=9f0e31a903d7b52103b0d5e5e48d5797"></script>
+<script type="text/javascript" src="../js/SearchInfoWindow_min.js"></script>
+<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+
+</head>
+
+<body>
+	<!--  -->
+	<!--#include virtual="/inc/head_2014.shtml"-->
+	<!--#include virtual="/inc/nav_guanyu.shtml"-->
+    
+   
+   
+    <!--main-->
+     <div class="w990 mauto clear over index_main mt40 left-nav-gywmbg">
+     	<!--nav-->
+        <div id="left-nav-gywm">
+         <ul>
+        	<!--<li ><a href="gywm_lxwm_gsdz.html">公司地址</a></li>-->
+            <li class="sl"><a href="gywm_lxwm_fwdh.html">服务电话</a></li>
+            <li><a href="gywm_lxwm_gsdh.html">公司电话</a></li>
+         </ul>
+        </div> 
+       <!--nav-end-->
+       <!--main-right-->
+       <div class="gywm-right" >
+       	  <h4 class="gyzj-title gyzj-title3">公司地址</h4>
+			   <!--公司地址-->     	
+               <div class="about_lxwm">
+        		<div id="allmap">
+                	<div id="map" style="height:100%;-webkit-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;"></div>
+                </div>
+            </div>
+             <!--公司地址-end-->           
+       </div>
+       <!--main-right-end-->   
+     </div>
+    <!--main-end-->
+   <!--特色服务-->
+    <!--#include virtual="/inc/bottom_2014.shtml"-->
+    <!--特色服务-end-->
+    <!--foot-->
+     <!--#include virtual="/inc/foot_2014.shtml"-->
+    <!--foot-end-->
+    <script type="text/javascript">
+
+// 百度地图API功能
+var map = new BMap.Map("allmap");            // 创建Map实例
+var poi = new BMap.Point(116.435763,39.900016);
+map.centerAndZoom(poi,14);  //初始化时，即可设置中心点和地图缩放级别。
+map.enableScrollWheelZoom(true);
+
+    var content = '<div style="margin-top:15px;line-height:24px;padding:2px;">' +'天津证金贵金属经营有限公司北京分公司地址：<br/>北京市东城区广渠门内大街41号雍贵中心B座3层 （100062）<br/>电话：010-53936386 ' +
+                  '</div>';
+
+    //创建检索信息窗口对象
+    var searchInfoWindow = null;
+	searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+			title  : "证金贵金属",      //标题
+			width  : 290,             //宽度
+			height : 105,              //高度
+			panel  : "panel",         //检索结果面板
+			enableAutoPan : true,     //自动平移
+			searchTypes   :[
+				BMAPLIB_TAB_SEARCH,   //周边检索
+				BMAPLIB_TAB_TO_HERE,  //到这里去
+				BMAPLIB_TAB_FROM_HERE //从这里出发
+			]
+		});
+    var marker = new BMap.Marker(poi); //创建marker对象
+    marker.enableDragging(); //marker可拖拽
+    marker.addEventListener("click", function(e){
+	    searchInfoWindow.open(marker);
+    })
+    map.addOverlay(marker); //在地图中添加marker
+    searchInfoWindow.open(marker); //在marker上打开检索信息串口
+    /*function showInfo(e){
+ alert(e.point.lng + ", " + e.point.lat);
+}
+map.addEventListener("click", showInfo);*/
+
+</script>
+</body>
+</html>

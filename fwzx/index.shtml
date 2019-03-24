@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>服务中心</title>
+<!--#include virtual="/inc/head_link.shtml"-->
+<script>
+	function changeul(id1,id2,id3){
+		$('.personal_zstq_main').hide();
+		$('#'+id1).show();
+		$('.lv0sl').removeClass('lv0sl');
+		if(id2){
+			$('#'+id2).addClass('lv0sl');
+		}	
+		var length=$('.personal_zstq ul li').length;
+		//$('#'+id3).addClass('ulsl');
+		for(var i=0;i<length;i++){
+			var temp=i+1;
+			$('.personal_zstq ul li').eq(i).removeClass('lv'+temp+'_hover');
+		}	
+		if(id3){
+			var classname=$('#'+id3).attr('class');			
+			$('#'+id3).addClass(classname+'_hover');
+		}
+	}
+	$(document).ready(function(){	
+		var url=window.location.href;
+		var type=url.split('?')[1]?url.split('?')[1]:0;
+		if(type!=0){
+			var num=type.split('=')?type.split('=')[1]:0;
+			num=num-0;
+			switch(num){
+				case 1:
+					changeul('tyk','','tykli');
+					break;
+				case 2:
+					changeul('pk','','pkli');
+					break;
+				case 3:
+					changeul('jk','','jkli');
+					break;
+				case 4:
+					changeul('zsk','','zskli');
+					break;
+				case 5:
+					changeul('hj','','hjli');
+					break;
+			}
+		}
+		$('.personal_hd').parent().bind('mouseenter',function(){			
+			if(!$(this).find('.personal_hd').is(':animated')){
+				var display=$(this).find('.personal_hd').css('display');
+				var top=$(this).find('.personal_hd').css('top');
+				if(display=='block'&&top=='0px'){
+					return;
+				}
+				h=$(this).height();
+				$(this).find('.personal_hd').css('top',h);
+				$(this).find('.personal_hd').show();
+				$(this).find('.personal_hd').animate({top:'0'},1500);
+			}
+			
+		})
+		$('.personal_hd').bind('mouseleave',function(){
+			if(!$(this).is(':animated')){
+				$(this).animate({top:h},1500);
+			}
+		})
+	})
+</script>
+</head>
+
+<body>
+	<!--#include virtual="/inc/head.shtml"-->
+    <!--#include virtual="/inc/nav.shtml"-->
+	<div id="about_main" class="clear mb20">
+    	<div class="fl about_left pr">
+        	<div class="pa" style="left:0;top:0;" id="about_left">
+                <!--#include virtual="/inc/left_btn.shtml"-->
+                <ul class="about_link" style="padding-left:10px;">
+                    <li class="about_link_title">服务指南</li>
+                    <li>&gt;&gt;<span class="about_link_hover"><a href="javascript:void(0)">服务体系</a></span></li>
+                    <li>&gt;&gt;<span><a href="khlc.shtml">开户流程</a></span></li>
+                    <li>&gt;&gt;<span><a href="khsp.shtml">开户宣传片</a></span></li>
+                    <li>&gt;&gt;<span><a href="tjs.shtml">津贵所网上开户</a></span>
+                    	<ul class="about_link_sec" style="display:block;">
+                        	<li><span><a href="http://tg.zhengjin99.com/zhengjin/tjskh/index.jsp" target="_blank">实盘开户入口</a></span></li>
+                            
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="qyzn.shtml">网银签约指南</a></span>
+                    	<ul class="about_link_sec" style="display:block;">
+                        	<li><span><a href="qyzn.shtml">海商所网银签约指南</a></span></li>
+                        	<li><span><a href="wyqy.shtml">津贵所网银签约指南</a></span></li>
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="bgxz.shtml">客户协议及相关表格下载</a></span></li>
+                    <li>&gt;&gt;<span><a href="byjy.shtml">白银交易规则</a></span></li>
+                    <li>&gt;&gt;<span><a href="crjgz.shtml">出入金流程及规则</a></span></li>
+                    <li>&gt;&gt;<span><a href="jglc.shtml">现货交割流程</a></span></li>
+                    <li>&gt;&gt;<span><a href="khts.shtml">客户投诉处理流程</a></span></li>
+                    <li>&gt;&gt;<span><a href="rjxz.shtml">软件下载</a></span>
+                   	  <ul class="about_link_sec" style="display:block;">
+                        	<li><span><a href="sjrj.shtml">手机版软件下载平台</a></span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    	<div class="fr about_right">
+        	<div class="fwtx pr" style="">
+            	
+                <div class="lh200" style="display:block" id="fwtx_content_1">
+                	<p class="fb pr" style="left:40px;width:720px;">尊敬的客户：</p>
+                    <p class="ti pr" style="left:40px;width:720px;">您好！秉承"专业服务，放心投资"的客户理念，业内最具价值的投资平台证金贵金属将为您提供多达23项专业、精确、丰富、贴心的优质服务,为您的投资插上腾飞的翅膀。财富人生，证金相伴，您的满意是我们最大的追求！</p>
+                    <div class="personal_zstq personal_hjk" style="width:780px;" >
+                        <ul class="bq clear over personal_hj">
+                            <li class="lv1 lv1_hover" onclick="changeul('tyk','','tykli')" id="tykli" style="margin-left:0;"></li>
+                            <li class="lv2" onclick="changeul('pk','','pkli')" id="pkli"></li>
+                            <li class="lv3" onclick="changeul('jk','','jkli')" id="jkli"></li>
+                            <li class="lv4" onclick="changeul('zsk','','zskli')" id="zskli"></li>
+                            <li class="lv5" onclick="changeul('hj','','hjli')" id="hjli"></li>
+                        </ul>
+                        
+                        <div class="personal_zstq_main personal_hj hide" id="hj">
+                            
+                            <div class="personal_zstq_mid clear over pr"><!-- 修改 -->
+                                <div class="fl personal_zstq_mrightt pr" style="width:45%;"><!-- 修改 -->
+                                    <span class="pa zs">专属</span>
+                                    <img src="http://img.zhengjin99.com/web/personal_zjdz_logo.gif" width="71" height="66" class="fl" />
+                                    <p class="f24 tc title">专家定制</p>
+                                    <p>投资专家组为客户量身定制投资行为分析和投资理财建议.</p>
+                                    <span class="more pa"><a href="javascript:void(0)">了解更多》</a></span>
+                                    <div class="fl personal_zstq_mrightt pa personal_hd hide" style="margin-top:0;top:0;left:0;z-index:99;background:#A67D2B;color:#fff;width:96%;_width:100%;">
+                                        <span class="pa zs">专属</span>
+                                        <img src="http://img.zhengjin99.com/web/zjdz_small.gif" width="30" height="28" class="fl" style="margin-bottom:0;" />
+                                        <p class="f24 title" style="color:#fff;margin-left:0;height:40px;">专家定制</p>
+                                        <p style="margin-left:0;">由首席投顾和首席分析师组成的专家组，为客户量身定制投资行为分析和投资理财建议，致力于打造个性化的高级私人定制服务。申请之后5个交易日内反馈至客户"个人中心—信息中心—证金来信"中，并电话详细解读.</p>
+                                        <span class="more pa"><a href="javascript:void(0)">了解更多》</a></span>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="fl personal_zstq_mrightb pr" style="width:45%;">
+                                    <span class="pa zs">专属</span>
+                                    <img src="http://img.zhengjin99.com/web/personal_chjlb.gif" width="80" height="55" class="fl" />
+                                    <p class="f24 tc title">彩虹俱乐部</p>
+                                    <p class="f16 tc title" style="margin:0;">（更多尊享优质服务，敬请期待）</p>                                    
+                                    <span class="more pa"><a href="javascript:void(0)">了解更多》</a></span>
+                                    
+                                </div>
+   
+                                <div class="clear"></div>
+                            </div>
+                            
+                            <div class="clear over personal_zstq_foot">
+                                <img src="http://img.zhengjin99.com/web/jin_more.gif" width="120" height="120" />
+                                <img src="http://img.zhengjin99.com/web/able_khgh.gif" width="120" height="120" />
+                                <img src="http://img.zhengjin99.com/web/hj_zsrx.gif" width="120" height="120" />
+                                <img src="http://img.zhengjin99.com/web/hj_zbs.gif" width="120" height="120" />
+                                <img src="http://img.zhengjin99.com/web/hj_chjlb.gif" width="120" height="120" style="margin-right:0;margin-left:5px;" />
+                                <img src="http://img.zhengjin99.com/web/hj_tznc.gif" width="120" height="120" />
+                                <img src="http://img.zhengjin99.com/web/hj_fxpg.gif" width="120" height="120" />
+                                <img src="http://img.zhengjin99.com/web/hj_tzcl.gif" width="120" height="120" />
+                                <img src="http://img.zhengjin99.com/web/hj_jfjl.gif" width="120" height="120" />
+                                <img src="http://img.zhengjin99.com/web/jin_hxjy.gif" width="120" height="120" style="margin-right:0;margin-left:5px;" />
+                                <img src="http://img.zhengjin99.com/web/jin_kfzx.gif" width="120" height="120" />
+                                <img src="http://img.zhengjin99.com/web/jin_dhwt.gif" width="120" height="120" />
+                                <img src="http://img.zhengjin99.com/web/jin_jfsc.gif" width="120" height="120" />
+                                <img src="http://img.zhengjin99.com/web/jin_grzx.gif" width="120" height="120" />
+                                <img src="http://img.zhengjin99.com/web/jin_bgh.gif" width="120" height="120" style="margin-right:0;margin-left:5px;" />
+                                <div class="clear"></div>
+                                <span class="small"><img src="http://img.zhengjin99.com/web/jin_yscl.gif" width="55" height="55" /></span>
+                                <span class="small"><img src="http://img.zhengjin99.com/web/jin_zjyp.gif" width="55" height="55" /></span>
+                                <span class="small"><img src="http://img.zhengjin99.com/web/jin_hxhis.gif" width="125" height="55" /></span>
+                                <span class="small"><img src="http://img.zhengjin99.com/web/jin_cjrl.gif" width="55" height="55" /></span>
+                                <span class="small"><img src="http://img.zhengjin99.com/web/jin_zjxy.gif" width="55" height="55" /></span>
+                                <span class="small"><img src="http://img.zhengjin99.com/web/jin_zxzx.gif" width="55" height="55" /></span>
+                                <span class="small"><img src="http://img.zhengjin99.com/web/jin_zjjn.gif" width="55" height="55" /></span>
+                                <div class="clear"></div>
+                            </div>                        
+                      </div>
+                      
+                      
+                      <div class="personal_zstq_main personal_zstq_tyk" id="tyk">
+                    	                        
+          				<div class="personal_zstq_mid clear over">
+                            <div class="fl personal_zstq_mrightb pr cur" style="margin-top:0;width:45%;">
+                                <span class="pa zs">专属</span>
+                                <img src="http://img.zhengjin99.com/web/grzx_logo.gif" width="82" height="76" class="fl" />
+                                <p class="f24 tc title fl ml10" style="line-height:76px;">个人中心</p>
+                                <p class="clear">为不同级别的客户提供专属服务的一站式服务平台.</p>
+                                
+                            </div>
+                            <div class="fl personal_zstq_mrightb pr" style="margin:0;width:45%;">
+                                <span class="pa zs">专属</span>
+                                <img src="http://img.zhengjin99.com/web/kfzx_logo.gif" width="92" height="76" class="fl" />
+                                <p class="f24 tc title fl ml10" style="line-height:76px;">网络报告会</p>
+                                <p class="clear">通过网络课堂的方式为客户提供投资理财专业知识的分享.</p>
+                                <div class="fl personal_zstq_mrightb hide pa personal_hd" style="margin:0;top:0;left:0;z-index:99;background:#A67D2B;color:#fff;width:96%;_width:100%;">
+                                    <span class="pa zs">专属</span>
+                                    <img src="http://img.zhengjin99.com/web/wlbgh_small.gif" width="33" height="27" class="fl" />
+                                    <p class="f24 tc title fl ml10" style="line-height:27px;color:#fff;height:40px;">网络报告会</p>
+                                    <p class="clear">通过网络课堂的方式为客户提供投资理财专业知识的分享，可与专家在线交流，为客户解答投资理财方面的所有问题，致力于帮助客户成长为理财高手。网络报告会不定期举行，届时客户代表会为部分客户送上邀请函.</p>
+                            	</div>
+                            </div>
+            				<div class="clear"></div>
+                        </div>
+                        
+                        <div class="clear over personal_zstq_foot">
+                        	<img src="http://img.zhengjin99.com/web/enable_more.gif" width="120" height="120" style="margin-right:25px;" />
+                            <div class="fl" style="padding-top:30px;">
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_yscl.gif" width="55" height="55" /></span>
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_zjyp.gif" width="55" height="55" /></span>
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_hxhis.gif" width="125" height="55" /></span>
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_cjrl.gif" width="55" height="55" /></span>
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_zjxy.gif" width="55" height="55" /></span>
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_zxzx.gif" width="55" height="55" /></span>
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_zjjn.gif" width="55" height="55" style="margin-right:0;" /></span>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        
+                  </div>
+                      
+                      
+                      <div class="personal_zstq_main personal_pk_now hide" id="pk">
+                    	                        
+          				<div class="personal_zstq_mid clear over">
+                            <div class="fl personal_zstq_mleft pr" style="height:300px;">
+                                <span class="pa zs">专属</span>
+                                <img src="http://img.zhengjin99.com/web/pk_hx_logo.gif" width="99" height="87" />
+                                <p class="f24 tc title" style="padding:0;">火线交易</p>
+                                <p class="f16 tc title" style="padding:0;">（PC+APP+微信）</p>
+                                <p>国内最专业的贵金属投资交流平台，致力于投资者教育的互动桥梁.</p>
+                                
+                            </div>
+                            
+                            <div class="fr personal_zstq_mrightt pr">
+                                <span class="pa zs">专属</span>
+                                <img src="http://img.zhengjin99.com/web/pk_dhwt_logo.gif" width="73" height="81" class="fl" />
+                                <p class="f24 title">电话委托下单</p>
+                                <p>客户可随时随地拨打010-58309009委托专人下单，行情永不错过.</p>
+                                
+                            </div>
+                            
+                            <div class="fr personal_zstq_mrightb pr" style="margin-right:0;">
+                                <span class="pa zs">专属</span>
+                                <img src="http://img.zhengjin99.com/web/pk_jfsc_logo.gif" width="41" height="51" class="fl" />
+                                <p class="f24 tc title fl ml10">积分商城</p>
+                                <p class="clear">项目正在建设中，敬请关注……</p>
+                            </div>
+                            
+                            <div class="fr personal_zstq_mrightb pr" style="background:#ebe7d9;">
+                                <span class="pa zs">专属</span>
+                                <img src="http://img.zhengjin99.com/web/pk_kfzx_logo.gif" width="49" height="49" class="fl" />
+                                <p class="f24 tc title fl ml10">客服专线</p>
+                                <p class="clear">拨打010-58309166为客户提供咨询、建议、投诉等优质的客户服务.</p>
+                                
+                            </div>
+                            
+            				<div class="clear"></div>
+                        </div>
+                        
+                        <div class="clear over personal_zstq_foot">
+                        	<img src="http://img.zhengjin99.com/web/jin_more.gif" width="120" height="120" />
+                        	<img src="http://img.zhengjin99.com/web/jin_grzx.gif" width="120" height="120" />
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_bgh.gif" width="120" height="120" /></span>
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_yscl.gif" width="55" height="55" /></span>
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_zjyp.gif" width="55" height="55" /></span>
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_hxhis.gif" width="125" height="55" /></span>
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_cjrl.gif" width="55" height="55" /></span>
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_zjxy.gif" width="55" height="55" /></span>
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_zxzx.gif" width="55" height="55" /></span>
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_zjjn.gif" width="55" height="55" /></span>
+                        </div>
+                        
+                  </div>
+                      
+                      <div class="personal_zstq_main hide" id="jk">
+                    	                        
+          				<div class="personal_zstq_mid clear over">
+                            <div class="fl personal_zstq_mleft pr">
+                                <span class="pa zs">专属</span>
+                                <img src="http://img.zhengjin99.com/web/fxpg.gif" width="116" height="94" />
+                                <p class="f24 tc title">风险评估</p>
+                                <p>通过测评客户的投资偏好及风险承受能力给出专业的投资建议.</p>
+                                
+                            </div>
+                            
+                            <div class="fr personal_zstq_mrightt pr">
+                                <span class="pa zs">专属</span>
+                                <img src="http://img.zhengjin99.com/web/clbg.gif" width="93" height="69" class="fl" />
+                                <p class="f24 tc title">投资策略报告</p>
+                                <p>重大事件来临前，为客户提供最及时、最有价值的投资策略报告.</p>
+                                <div class="fr personal_zstq_mrightt pa personal_hd hide" style="margin:0;top:0;left:0;z-index:99;background:#A67D2B;color:#fff;width:96%;_width:100%;">
+                                    <span class="pa zs">专属</span>
+                                    <img src="http://img.zhengjin99.com/web/clbg_small.gif" width="40" height="30" class="fl" style="margin-top:10px;margin-bottom:0;" />
+                                    <p class="f24 title" style="color:#fff;margin:10px 0 0 45px;line-height:30px;height:45px;">投资策略报告</p>
+                                    <p style="margin:0;line-height:150%;">每次非农、美联储会议纪要等重大事件来临前2小时，投资顾问将根据对行情的实时研判和专业分析，发布最及时、最有价值的投资策略报告至客户"个人中心—信息中心—证金来信"中.</p>
+                                </div>
+                            </div>
+                            
+							<div class="fr personal_zstq_mrightb pr">
+                            	<span class="pa zs">专属</span>
+                            	<img src="http://img.zhengjin99.com/web/jljf.gif" width="93" height="82" class="fl" />
+                                <p class="f24 tc title" style="color:#906D22;">奖励积分</p>
+                                <p>客户参与公司的各项回馈活动时，有额外获得积分的权利，具体奖励以各活动细则为准.</p>
+                            </div>
+            				<div class="clear"></div>
+                        </div>
+                        
+                        <div class="clear over personal_zstq_foot">
+                        	<img src="http://img.zhengjin99.com/web/jin_more.gif" width="120" height="120" />
+                        	<img src="http://img.zhengjin99.com/web/jin_hxjy.gif" width="120" height="120" />
+                            <img src="http://img.zhengjin99.com/web/jin_kfzx.gif" width="120" height="120" />
+                            <img src="http://img.zhengjin99.com/web/jin_dhwt.gif" width="120" height="120" />
+                            <img src="http://img.zhengjin99.com/web/jin_jfsc.gif" width="120" height="120" style="margin-right:0;margin-left:5px;" />
+                            <img src="http://img.zhengjin99.com/web/jin_grzx.gif" width="120" height="120" />
+                            <img src="http://img.zhengjin99.com/web/jin_bgh.gif" width="120" height="120" />
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_yscl.gif" width="55" height="55" /></span>
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_zjyp.gif" width="55" height="55" /></span>
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_hxhis.gif" width="125" height="55" /></span>
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_cjrl.gif" width="55" height="55" /></span>
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_zjxy.gif" width="55" height="55" /></span>
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_zxzx.gif" width="55" height="55" /></span>
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_zjjn.gif" width="55" height="55" /></span>
+                            <div class="clear"></div>
+                        </div>
+                        
+                  </div>
+                      
+                      
+                      <div class="personal_zstq_main personal_zsk_now hide" id="zsk">
+                    	                       
+          				<div class="personal_zstq_mid clear over">
+                        	
+                            <div class="fl personal_zstq_mrightb pr" style="margin-top:0;background:#f6eed0;">
+                                <span class="pa zs">专属</span>
+                                <img src="http://img.zhengjin99.com/web/zsrx_logo.gif" width="85" height="83" class="fl" />
+                                <p class="f24 tc title fl ml10" style="line-height:82px;">VIP专属热线</p>
+                                <p class="clear">VIP客户专享热线010-58309088，由高级客服提供一对一的优先贴心服务.</p>
+                                
+                            </div>
+                            
+                            <div class="fl personal_zstq_mrightb pr cur" style="margin:0;background:#e1dabf;" >
+                                <span class="pa zs">专属</span>
+                                <img src="http://img.zhengjin99.com/web/zbs_logo.gif" width="67" height="80" class="fl" />
+                                <p class="f24 tc title fl ml10" style="line-height:79px;">VIP直播室</p>
+                                <p class="clear">专为高端客户量身打造的投资直播平台，专属领地，最优服务.</p>
+                            </div>
+                            
+                            <div class="fr personal_zstq_mrightb pr" style="margin-right:0;background:#eeeada;height:180px;">
+                                <span class="pa zs">专属</span>
+                                <img src="http://img.zhengjin99.com/web/chjlb_zsk_logo.gif" width="89" height="61" class="fl" />
+                                <p class="f24 tc title fl ml10">彩虹俱乐部</p>
+                                <p class="f16 tc title fl" style="margin:0;">（尚品生活沙龙）</p>
+                                <p class="clear pt10">打造品味生活分享圈子，致力于提升高端客户的生活品质.</p>
+                                <div class="fr personal_zstq_mrightb pa personal_hd hide" style="margin:0;top:0;left:0;z-index:99;background:#A67D2B;color:#fff;width:96%;_width:100%;height:180px;">
+                                    <span class="pa zs">专属</span>
+                                    <img src="http://img.zhengjin99.com/web/chjlb_small.gif" width="37" height="27" class="fl" />
+                                    <p class="f24 title ml10" style="color:#fff;">彩虹俱乐部<span class="f16">（尚品生活沙龙）</span></p>
+                                    <p class="clear pt10">聘请资深生活顾问，与客户分享红酒品鉴、高尔夫技巧等知识，致力于提升高端客户的生活品质，让客户在感受投资乐趣的同时也能享受高品质生活质感。尚品生活沙龙将不定期举行，届时客户代表将为客户送上邀请函.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="fr personal_zstq_mrightb pr" style="background:#e8e8e8;height:180px;">
+                                <span class="pa zs">专属</span>
+                                <img src="http://img.zhengjin99.com/web/tznc_logo.gif" width="83" height="59" class="fl" />
+                                <p class="f24 tc title fl ml10" style="line-height:58px;">VIP投资内参</p>
+                                <p class="clear pt10">研究专家为高端客户全面解读市场中的各种信息和数据，提供最有价值的投资参考建议.</p>
+                                <div class="fl personal_zstq_mrightb pa personal_hd hide" style="margin:0;top:0;left:0;z-index:99;background:#A67D2B;color:#fff;width:96%;_width:100%;height:180px;">
+                                    <span class="pa zs">专属</span>
+                                    <img src="http://img.zhengjin99.com/web/tznc_small.gif" width="35" height="25" class="fl" />
+                                    <p class="f24 tc title fl ml10" style="line-height:25px;color:#fff;height:45px;">VIP投资内参</p>
+                                    <p class="clear">研究专家从贵金属市场中精选最具价值的数据即时分享，并且结合基本面、资金面和博弈面对该信息进行全面解读，帮助客户获得投资线索并进行投资决策。每周五发送至客户"个人中心—信息中心—证金来信"中.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="fl personal_zstq_mrightb pr" style="background:#e8e8e8;">
+                                <span class="pa zs">专属</span>
+                                <img src="http://img.zhengjin99.com/web/personal_khgh.gif" width="74" height="74" class="fl" style="margin-left:20px;" />
+                                <p class="f24 tc title fl ml10" style="line-height:74px;">客户关怀</p>
+                                <p class="clear pt10">为客户提供多种多样的温馨关怀服务，比如节日祝福、赠送生日礼物等.</p>
+                                
+                            </div>
+                            
+            				<div class="clear"></div>
+                        </div>
+                        
+                        <div class="clear over personal_zstq_foot">
+                        	<img src="http://img.zhengjin99.com/web/enable_more.gif" width="120" height="120" />
+                        	<img src="http://img.zhengjin99.com/web/hj_fxpg.gif" width="120" height="120" />
+                            <img src="http://img.zhengjin99.com/web/hj_tzcl.gif" width="120" height="120" />
+                            <img src="http://img.zhengjin99.com/web/hj_jfjl.gif" width="120" height="120" />
+                            <img src="http://img.zhengjin99.com/web/jin_hxjy.gif" width="120" height="120" style="margin-right:0;margin-left:5px;" />
+                            <img src="http://img.zhengjin99.com/web/jin_kfzx.gif" width="120" height="120" />
+                            <img src="http://img.zhengjin99.com/web/jin_dhwt.gif" width="120" height="120" />
+                            <img src="http://img.zhengjin99.com/web/jin_jfsc.gif" width="120" height="120" />
+                            <img src="http://img.zhengjin99.com/web/jin_grzx.gif" width="120" height="120" />
+                            <img src="http://img.zhengjin99.com/web/jin_bgh.gif" width="120" height="120" style="margin-right:0;margin-left:5px;" />
+                           <span class="small"><img src="http://img.zhengjin99.com/web/jin_yscl.gif" width="55" height="55" /></span>
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_zjyp.gif" width="55" height="55" /></span>
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_hxhis.gif" width="125" height="55" /></span>
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_cjrl.gif" width="55" height="55" /></span>
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_zjxy.gif" width="55" height="55" /></span>
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_zxzx.gif" width="55" height="55" /></span>
+                            <span class="small"><img src="http://img.zhengjin99.com/web/jin_zjjn.gif" width="55" height="55" /></span>
+                            <div class="clear"></div>
+                        </div>                        
+                  </div>
+                      
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+      	</div>
+      
+      	<div class="clear"></div>
+    </div>
+    <!--#include virtual="/inc/foot.shtml"-->
+</body>
+</html>

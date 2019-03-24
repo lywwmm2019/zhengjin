@@ -1,0 +1,80 @@
+<style>
+.confirm{border:solid 1px #c80106;width:345px;position:fixed;_position:absolute;top:30%;left:50%;margin-left:-172px}
+.confirm .hd{background:url(/images/alerthd.png) repeat-x;height:29px;line-height:29px;padding:0 7px;}
+.confirm .hd .mh-title{font-size:14px;color:#fff;float:left;}
+.confirm .hd .clearbtn{width:16px;height:16px;background:url(/images/clearbtn01.png) no-repeat;display:inline-block;float:right;margin:7px 0 0;}
+.confirm .hd .clearbtn:hover{background-position:-16px 0;}
+.confirm .hd a.click{background-position:-32px 0;}
+.confirm .bd{background:#f7ebd3;padding:10px 15px;}
+.confirm .bd p{text-align:center;font-size:14px;color:#333;padding:10px 0 20px;}
+.confirm .bd p a.alertbtn{width:66px;margin:0 auto;display:block;}
+.confirm .bd img{display:block;}
+.confrim-btn {display:inline-block;width:80px;height:20px;}
+.confirm img{ border:none}
+</style>
+<script src="/js/jquery.simplemodal.js"></script>
+<div class="confirm" style="display:none;" id="common_confirm_div">
+	<div class="hd">
+		<span class="mh-title">提示</span> <a href="#" class="clearbtn"
+			onmousedown="$(this).addClass('click');"
+			onmouseup="$(this).removeClass('click');$('#confrim_btn_cancel').trigger('click');"></a>
+		<!--按下追加class="click"-->
+	</div>
+	<div class="bd">
+		<p id="confirm_info"></p>
+		<p>
+			<span class="confrim-btn" ><a href="#" target="_blank" class="alertbtn" id="confrim_btn_ok"
+				><img src="/images/alertbtn.png" /> </a>
+			</span>	
+			<span class="confrim-btn" style="width:30px;">
+			&nbsp;
+			</span>	
+			<span class="confrim-btn">
+				<a href="javascript:void(0);" class="alertbtn" id="confrim_btn_cancel"
+				><img src="/images/confirm_cancel.png" /> </a>
+			</span>
+		</p>
+	</div>
+</div>
+<script type="text/javascript">
+/**
+ * 自定义的confirm
+ * 
+ * @param str
+ */
+function confirm(str,okHref,okFunc,cancelFunc) {
+	$(".confirm").show();
+	$("#confirm_info").html(str);
+	$("#confrim_btn_ok").attr("href",okHref);
+	//$(".confirm").modal();
+	if(!okFunc){
+		$("#confrim_btn_ok").click(function(){
+			
+			$(".confirm").hide();
+			$.modal.close();
+		});
+	}else{
+		$("#confrim_btn_ok").click(function(){
+			
+			$(".confirm").hide();
+			$.modal.close();
+			okFunc();
+		});
+	}
+	if(!cancelFunc){
+		$("#confrim_btn_cancel").click(function(){
+			
+			$(".confirm").hide();
+			$.modal.close();
+		});
+	}else{
+		$("#confrim_btn_ok").click(function(){
+			
+			$(".confirm").hide();
+			$.modal.close();
+			cancelFunc();
+		});
+	}
+	return false;
+}
+</script>

@@ -1,0 +1,42 @@
+<div class="fl">
+<ul class="fwdt_nav">
+<li><a href="http://www.zhengjin99.com/list/fxyj_index.shtml?dad" class="nav01"></a></li>
+<li><a href="http://tg.zhengjin99.com/zhengjin/spjpList.jsp" class="nav02"></a></li>
+<li><a href="http://tg.zhengjin99.com/zhengjin/zjjnList.jsp" class="nav03"></a></li>
+<li><a href="http://tg.zhengjin99.com/zhengjin/spzq.jsp" class="nav04"></a></li>
+<li><a href="http://zhibo.zhengjin99.com/hxzb/" class="nav05"></a></li>
+<li><a href="http://www.zhengjin99.com/fwdt_zxkf.shtml?t=nav06" class="nav06"></a></li>
+<li><a href="http://www.zhengjin99.com/list/xxyd_index.shtml?dad&t=nav07" class="nav07"></a></li>
+<li><a href="http://tg.zhengjin99.com/zhengjin/regUser.jsp" class="nav08"></a></li>
+<li><a href="http://www.zhengjin99.com/fwdt_rjxz.shtml" class="nav09"></a></li>
+</ul>
+</div>
+<script type="text/javascript" src="/js/jquery-1.6.1.min.js"></script>
+<script>
+function GetRequest(){
+var url = location.search; //获取url中"?"符后的字串
+var theRequest = new Object();
+if(url.indexOf("?") != -1)
+{
+  var str = url.substr(1);
+    strs = str.split("&");
+  for(var i = 0; i < strs.length; i ++)
+    {
+     theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
+    }
+}
+return theRequest;
+}
+
+var t = GetRequest()["t"];
+if(t && t != ""){
+	t = t.replace(/#/gim,"");
+	if(t == ""){
+		t = "nav01";
+	}
+	$("." + t).parent().addClass("nav_visit");
+}else{
+	$(".nav01").parent().addClass("nav_visit");
+}
+
+</script>

@@ -1,0 +1,6 @@
+/*×ÊÔ´¿Ú*/
+.zyk{width:500px;height:26px; float:left; display:block;}
+.zyk-word{background:url(../images/zyk-01.jpg) no-repeat;width:168px;height:26px;float:left;}
+.zyk-input{background:url(../images/zyk-02.jpg) no-repeat;width:148px;height:26px;float:left; border:none; text-align:center; line-height:26px; color:#424546;font-size:12px;z-index:99; outline:none; font-family:"Î¢ÈíÑÅºÚ";margin:0 0 0 5px;}
+.zyk-button{width:56px;height:26px;background:url(../images/zyk-03.jpg) no-repeat;border:0;cursor:pointer;vertical-align:middle; outline:none; float:left;margin:0 0 0 5px;}
+

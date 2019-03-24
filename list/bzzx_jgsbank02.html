@@ -1,0 +1,516 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="证金贵金属,白银,白银分析,白银投资,白银价格,白银交易,炒白银,白银走势,白银软件,模拟炒银,美联储,白银在线分析" />
+<meta name="description" content="证金贵金属，首家赴美纳斯达克上市公司中国最大最专业的白银投资服务平台，致力于白银投资、白银交易、现货白银、白银价格、炒白银、现货白银走势、白银行情、模拟炒银、现货白银开户、投资资讯、分析评论、贵金属投资等贵金属综合性投资服务" />
+
+<title>服务中心_证金贵金属</title>
+<link href="../css/style_2014.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="http://js.jrj.com.cn/v/swfobject.js"></script>
+ <script type="text/javascript">
+$(document).ready(function()
+{
+	$("#firstpane p.menu_head").bind('click',function(){
+		$(this).css({background:"#fff url(../images2014/khsp02.jpg) center left no-repeat",'border-bottom':'1px dashed #d0d0d0'})
+		$(this).next("div.menu_body").slideDown(300);
+       	$(this).siblings().css({backgroundImage:"url(../images2014/khsp01.jpg)",'background-color':'#f2f2f2','border-bottom':'1px solid #d0d0d0'});
+		$(this).siblings().next("div.menu_body").slideUp(300);
+	});
+	$('.menu_body dl dt').bind('mouseenter',function(){
+		$(this).find('ul.sfhover').show();
+	});
+	$('.menu_body dl dt').bind('mouseleave',function(){
+		$(this).find('ul.sfhover').hide();
+	});
+});
+
+</script> 
+ <script>
+	var t=1;
+	$(document).ready(function(){		
+		$('area').bind('click',function(){
+			var areaid=$(this).parent().prev().attr('id');	
+			var length=$(this).parents('.wyqy_bank').find('img').length;	
+			var areaidlength=areaid.length;
+			var reid=areaid.substring(0,areaidlength-1);	
+			turnpage(1,length,reid);			
+		})
+		$('.returnbank').bind('click',function(){
+			$('.wyqy_bank img').hide();
+			var l=$('.wyqy_bank').length;
+			for(var i=0;i<l;i++){
+				$('.wyqy_bank').eq(i).find('img').eq(0).show();
+			}
+			t=1;
+			$('.return_page').parent().hide();
+			//$('.back_page').parent().hide();
+			$(this).parents('.showbank').hide();
+			$('.wyqy_list').show();
+		})
+	})
+	function turnpage(num,total,showid){
+		num==0?t=1:t=t+num;
+		var hideid=showid.split('_')[0];
+		if(t>1&&t<=total){
+			$('#return_page_'+showid).parent().show();
+		}
+		else if(t>total-1){
+			$('#return_page_'+showid).parent().hide();
+			//$('#back_page_'+showid).parent().show();
+		}
+	
+		else{
+			$('#return_page_'+showid).parent().hide();
+			//$('#back_page_'+showid).parent().hide();
+		}
+		$('#'+hideid+' img').hide();
+		$('#'+showid+t).show();
+	}
+</script>
+
+ 
+</head>
+
+<body>
+	<!--head-->
+	<!--#include virtual="/inc/head_2014.shtml"-->
+<!--#include virtual="/inc/nav_fuwu.shtml"-->
+    <!--head-end-->
+    <!--middle-->
+ <div class="w990 mauto clear over mt20" style="background:url(../images2014/bzzx_khsp05.jpg) repeat-y top left;" >
+  <!--left-->
+	<!--#include virtual="/inc/left-bzzx.shtml"-->
+<!--left-end-->
+<!--right-->
+<div class="bzzx_khsp">
+	<h4>津贵所网银签约演示动画</h4>
+      <div class="bzzx-right pr">
+   <div class="tjs_bank  wyqy ">
+                    <div class="wyqy_list">
+               	    	<ul>
+                        	<li onclick="$('.wyqy_list').hide();$('#zs1').show();"><img src="images/zs_bank.jpg" width="123" height="83"  alt=""/>
+                       	    <p class="bank">大众版</p></li>
+                            <li onclick="$('.wyqy_list').hide();$('#zs2').show();"><img src="images/zs_bank.jpg" width="123" height="83"  alt=""/><p class="bank">专业版</p></li>
+                            <li onclick="$('.wyqy_list').hide();$('#zs3').show();"><img src="images/zs_bank.jpg" width="123" height="83" /><p class="bank">手机版</p></li>
+                            <li onclick="$('.wyqy_list').hide();$('#js').show();"><img src="images/js_bank.jpg" width="123" height="83" /></li>                            
+                            <li onclick="$('.wyqy_list').hide();$('#gs').show();"><img src="images/gs_bank.jpg" width="123" height="83"  alt=""/></li>
+                            <li onclick="$('.wyqy_list').hide();$('#zx').show();"><img src="images/zx_bank.jpg" width="123" height="83" /></li>                       	
+                            <li onclick="$('.wyqy_list').hide();$('#gd1').show();"><img src="images/gd_bank.jpg" width="123" height="83" /><p class="bank">U盾</p></li>
+                            <li onclick="$('.wyqy_list').hide();$('#gd2').show();"><img src="images/gd_bank.jpg" width="123" height="83" /><p class="bank">阳光令牌</p></li>
+                            <li onclick="$('.wyqy_list').hide();$('#gd3').show();"><img src="images/gd_bank.jpg" width="123" height="83" /><p class="bank">手机动态码</p></li>
+                             <li onclick="$('.wyqy_list').hide();$('#jt').show();"><img src="images/jiaohang/jt_bank.png" width="123" height="116"  alt=""/></li>
+                        </ul>
+                 </div>
+     </div>
+     <!--pic-->
+    <div class="pa lh200 showbank hide" style="left:0;top:10px;" id="gd1">
+       	      		<p class="titile mt20">光大银行U盾网银签约流程</p>
+                    <div class="tjs pr wyqy_bank">
+           	    	  <img src="images/gd1/1.gif" width="650" height="454" border="0" usemap="#Map1" id="gd1_page1" style="display:block;" />
+                        <map name="Map1" id="Map1">
+                          <area shape="rect" coords="5,132,72,153" />
+                        </map>
+                      <img src="images/gd1/2.gif" name="gd1_page2" width="650" height="382" border="0" usemap="#Map2" style="display:none;" id="gd1_page2" />
+                        <map name="Map2" id="Map2">
+                          <area shape="rect" coords="430,194,506,221" />
+                      	</map>
+                      <img src="images/gd1/3.gif" name="gd1_page3" width="650" height="403" border="0" usemap="#Map3" style="display:none;" id="gd1_page3" />
+                        <map name="Map3" id="Map3">
+                          <area shape="rect" coords="0,96,42,121" />
+                      	</map>
+                      <img src="images/gd1/5.gif" name="gd1_page4" width="650" height="316" border="0" usemap="#Map4" style="display:none;" id="gd1_page4" />
+                        <map name="Map4" id="Map4">
+                          <area shape="rect" coords="268,219,350,246" />
+                      	</map>
+                      <img src="images/gd1/6.gif" name="gd1_page5" width="650" height="441" border="0" usemap="#Map5" style="display:none;" id="gd1_page5" />
+                        <map name="Map5" id="Map5">
+                          <area shape="rect" coords="291,318,421,356" />
+                        </map>
+                      <img src="images/gd1/7.gif" name="gd1_page6" width="650" height="359" border="0" usemap="#Map6" style="display:none;" id="gd1_page6" />
+                        <map name="Map6" id="Map6">
+                          <area shape="rect" coords="244,191,343,225" />
+                      	</map>
+                      <img src="images/gd1/8.gif" name="gd1_page7" width="650" height="323" border="0" usemap="#Map7" style="display:none;" id="gd1_page7" />
+                      
+						<div class=" hide" style="margin:50px 0 0 50px; float:right;">
+                             <a id="return_page_gd1_page" class="" href="javascript:void(0);" onclick="turnpage(-1,7,'gd1_page')" >返回上一页</a> </div>
+                       
+                        <a class=" fb returnbank"  style="margin:50px 50px 0 0px; float:left;" href="javascript:void(0);">返回银行列表</a>         
+                                                      
+                  </div>                                        
+      </div>
+                
+                <div class="pa lh200 showbank hide" style="left:0;top:10px;" id="gd2">
+       	      		<p class="titile mt20">光大银行阳光令牌网银签约流程</p>
+                    <div class="tjs pr wyqy_bank">
+           	    	  <img src="images/gd2/1.gif" width="650" height="454" border="0" usemap="#Map21" id="gd2_page1" style="display:block;" />
+                      <map name="Map21" id="Map21">
+                          <area shape="rect" coords="4,132,73,151" />
+                      </map>
+                      <img src="images/gd2/2.gif" name="gd2_page2" width="650" height="382" border="0" usemap="#Map22" style="display:none;" id="gd2_page2" />
+                        <map name="Map22" id="Map22">
+                          <area shape="rect" coords="432,194,509,222" />
+                   	  </map>
+                      <img src="images/gd2/3.gif" name="gd2_page3" width="650" height="403" border="0" usemap="#Map23" style="display:none;" id="gd2_page3" />
+                        <map name="Map23" id="Map23">
+                          <area shape="rect" coords="468,150,541,180" />
+                   	  </map>
+                      <img src="images/gd2/4.gif" name="gd2_page4" width="650" height="369" border="0" usemap="#Map24" style="display:none;" id="gd2_page4" />
+                        <map name="Map24" id="Map24">
+                          <area shape="rect" coords="175,181,257,208" />
+                   	  </map>
+                      <img src="images/gd2/5.gif" name="gd2_page5" width="650" height="335" border="0" usemap="#Map25" style="display:none;" id="gd2_page5" />
+                        <map name="Map25" id="Map25">
+                          <area shape="rect" coords="353,155,446,178" />
+                   	  </map>
+                      <img src="images/gd2/6.gif" name="gd2_page6" width="650" height="457" border="0" usemap="#Map26" style="display:none;" id="gd2_page6" />
+                        <map name="Map26" id="Map26">
+                          <area shape="rect" coords="292,318,421,360" />
+                   	  </map>
+                      <img src="images/gd2/7.gif" name="gd2_page7" width="650" height="313" border="0" usemap="#Map27" style="display:none;" id="gd2_page7" />
+                        <map name="Map27" id="Map27">
+                          <area shape="rect" coords="241,193,341,225" />
+                   	  </map>
+                      <img src="images/gd2/8.gif" name="gd2_page8" width="650" height="323" border="0" usemap="#Map28" style="display:none;" id="gd2_page8" />
+						<div class=" hide" style="margin:50px 0 0 50px; float:right;">
+                             <a id="return_page_gd2_page" class="" href="javascript:void(0);" onclick="turnpage(-1,8,'gd2_page')" >返回上一页</a> </div>
+                             <a class=" fb returnbank"  style="margin:50px 50px 0 0px; float:left;" href="javascript:void(0);">返回银行列表</a>          
+                  </div>                                        
+                </div>
+                
+                <div class="pa lh200 showbank hide" style="left:0;top:10px;" id="gd3">
+       	      		<p class="titile mt20">光大银行手机网银签约流程</p>
+                    <div class="tjs pr wyqy_bank">
+           	    	  <img src="images/gd3/1.gif" width="650" height="454" border="0" usemap="#Map31" id="gd3_page1" style="display:block;" />
+                        <map name="Map31" id="Map31">
+                          <area shape="rect" coords="4,129,78,151" />
+                        </map>
+                      <img src="images/gd3/2.gif" name="gd3_page2" width="650" height="382" border="0" usemap="#Map32" style="display:none;" id="gd3_page2" />
+                        <map name="Map32" id="Map32">
+                          <area shape="rect" coords="428,195,510,222" />
+                      	</map>
+                      <img src="images/gd3/3.gif" name="gd3_page3" width="650" height="403" border="0" usemap="#Map33" style="display:none;" id="gd3_page3" />
+                        <map name="Map33" id="Map33">
+                          <area shape="rect" coords="259,151,341,178" />
+                      	</map>
+                      <img src="images/gd3/4.gif" name="gd3_page4" width="650" height="379" border="0" usemap="#Map34" style="display:none;" id="gd3_page4" />
+                        <map name="Map34" id="Map34">
+                          <area shape="rect" coords="103,207,185,234" />
+                      	</map>
+                      <img src="images/gd3/5.gif" name="gd3_page5" width="650" height="335" border="0" usemap="#Map35" style="display:none;" id="gd3_page5" />
+                        <map name="Map35" id="Map35">
+                          <area shape="rect" coords="355,154,448,177" />
+                   	  </map>
+                      <img src="images/gd3/6.gif" name="gd3_page6" width="650" height="457" border="0" usemap="#Map36" style="display:none;" id="gd3_page6" />
+                        <map name="Map36" id="Map36">
+                          <area shape="rect" coords="290,315,429,357" />
+                      	</map>
+                      <img src="images/gd3/7.gif" name="gd3_page7" width="650" height="313" border="0" usemap="#Map37" style="display:none;" id="gd3_page7" />
+                        <map name="Map37" id="Map37">
+                          <area shape="rect" coords="246,192,346,224" />
+                      	</map>
+                      <img src="images/gd3/8.gif" name="gd3_page8" width="650" height="323" border="0" usemap="#Map38" style="display:none;" id="gd3_page8" />
+					 <div class=" hide" style="margin:50px 0 0 50px; float:right;">
+                             <a id="return_page_gd3_page" class="" href="javascript:void(0);" onclick="turnpage(-1,8,'gd3_page')" >返回上一页</a></div>
+                             <a class=" fb returnbank"  style="margin:50px 50px 0 0px; float:left;" href="javascript:void(0);">返回银行列表</a>         
+                    </div>                                        
+                </div>
+                
+				<div class="pa lh200 showbank hide " style="left:0;top:10px;" id="zs1">
+       	      		<p class="titile mt20">招商银行大众版网银签约流程</p>
+                    <div class="tjs pr wyqy_bank">
+           	    	  <img src="images/zs1/1.gif" width="650" height="442" border="0" usemap="#Map41" id="zs1_page1" style="display:block;" />
+                        <map name="Map41" id="Map41">
+                          <area shape="rect" coords="511,132,645,155" />
+                        </map>
+                      <img src="images/zs1/2.gif" name="zs1_page2" width="650" height="471" border="0" usemap="#Map42" style="display:none;" id="zs1_page2" />
+                        <map name="Map42" id="Map42">
+                          <area shape="rect" coords="140,255,214,281" />
+                      	</map>
+                      <img src="images/zs1/3.gif" name="zs1_page3" width="650" height="399" border="0" usemap="#Map43" style="display:none;" id="zs1_page3" />
+                        <map name="Map43" id="Map43">
+                          <area shape="rect" coords="116,191,167,214" />
+                      	</map>
+                      <img src="images/zs1/4.gif" name="zs1_page4" width="650" height="262" border="0" usemap="#Map44" style="display:none;" id="zs1_page4" />
+                        <map name="Map44" id="Map44">
+                          <area shape="rect" coords="147,177,503,191" />
+                      	</map>
+                      <img src="images/zs1/5.gif" name="zs1_page5" width="650" height="471" border="0" usemap="#Map45" style="display:none;" id="zs1_page5" />
+                        <map name="Map45" id="Map45">
+                          <area shape="rect" coords="359,378,412,398" />
+                   	  </map>
+                      <img src="images/zs1/6.gif" name="zs1_page6" width="650" height="386" border="0" usemap="#Map46" style="display:none;" id="zs1_page6" />
+                        <map name="Map46" id="Map46">
+                          <area shape="rect" coords="257,279,293,297" />
+                      	</map>
+                      <img src="images/zs1/7.gif" name="zs1_page7" width="650" height="311" border="0" usemap="#Map47" style="display:none;" id="zs1_page7" />
+                        
+		  				 <div class=" hide" style="margin:50px 0 0 50px; float:right;">
+                             <a id="return_page_zs1_page" class="" href="javascript:void(0);" onclick="turnpage(-1,8,'zs1_page')" >返回上一页</a></div>
+                             <a class=" fb returnbank"  style="margin:50px 50px 0 0px; float:left;" href="javascript:void(0);">返回银行列表</a>                         
+                    </div>                                        
+                </div>
+                
+				<div class="pa lh200 showbank hide" style="left:0;top:10px;" id="zs2">
+       	      		<p class="titile mt20">招商银行专业版网银签约流程</p>
+                    <div class="tjs pr wyqy_bank">
+           	    	 <img src="images/zs2/01.gif" name="zs2_page1" width="551" height="526" border="0" usemap="#Map51" style="display:block;" id="zs2_page1" />
+                     <map name="Map51" id="Map51">
+                       <area shape="rect" coords="60,454,225,499" />
+                     </map>
+
+                      <img src="images/zs2/02.gif" name="zs2_page2" width="631" height="452" border="0" usemap="#Map52" style="display:none;" id="zs2_page2" />
+                        <map name="Map52" id="Map52">
+                          <area shape="rect" coords="56,33,121,69" />
+                      	</map>
+                      <img src="images/zs2/03.gif" name="zs2_page3" width="633" height="452" border="0" usemap="#Map53" style="display:none;" id="zs2_page3" />
+                        <map name="Map53" id="Map53">
+                          <area shape="rect" coords="288,367,403,393" />
+                      	</map>
+                      <img src="images/zs2/04.gif" name="zs2_page4" width="636" height="447" border="0" usemap="#Map54" style="display:none;" id="zs2_page4" />
+                        <map name="Map54" id="Map54">
+                          <area shape="rect" coords="92,247,579,266" />
+                      	</map>
+                      <img src="images/zs2/05.gif" name="zs2_page5" width="636" height="456" border="0" usemap="#Map55" style="display:none;" id="zs2_page5" />
+                        <map name="Map55" id="Map55">                          
+                   	      <area shape="rect" coords="328,407,371,425" />
+                        </map>
+                      <img src="images/zs2/06.gif" name="zs2_page6" width="645" height="465" border="0" usemap="#Map56" style="display:none;" id="zs2_page6" />
+                        <map name="Map56" id="Map56">
+                          <area shape="rect" coords="302,368,346,392" />
+                      	</map>
+                      <img src="images/zs2/07.gif" name="zs2_page7" width="647" height="452" border="0" usemap="#Map57" style="display:none;" id="zs2_page7" />
+                                             
+  				   <div class=" hide" style="margin:50px 0 0 50px; float:right;">
+                             <a id="return_page_zs2_page" class="" href="javascript:void(0);" onclick="turnpage(-1,8,'zs2_page')" >返回上一页</a></div>
+                             <a class=" fb returnbank"  style="margin:50px 50px 0 0px; float:left;" href="javascript:void(0);">返回银行列表</a>                                      
+                    </div>                                        
+                </div>
+                
+        <div class="pa lh200 showbank hide " style="left: 184px; top: 11px;" id="zs3">
+       	      		<p class="titile mt20">招商银行手机版网银签约流程</p>
+                    <div class="tjs pr wyqy_bank">
+           	    	  <img src="images/zs3/01.gif" name="zs3_page" width="323" height="520" border="0" usemap="#Map61" id="zs3_page1" style="display:block;" />
+                        <map name="Map61" id="Map61">
+                          <area shape="rect" coords="8,265,314,323" />
+                        </map>
+                      <img src="images/zs3/02.gif" name="zs3_page2" width="325" height="519" border="0" usemap="#Map62" style="display:none;" id="zs3_page2" />
+                        <map name="Map62" id="Map62">
+                          <area shape="rect" coords="6,229,316,287" />
+                      	</map>
+                      <img src="images/zs3/03.gif" name="zs3_page3" width="323" height="522" border="0" usemap="#Map63" style="display:none;" id="zs3_page3" />
+						<map name="Map63" id="Map63">
+                          <area shape="rect" coords="119,160,205,246" />
+                      	</map>
+                      <img src="images/zs3/04.gif" name="zs3_page4" width="323" height="521" border="0" usemap="#Map64" style="display:none;" id="zs3_page4" />
+						<map name="Map64" id="Map64">
+                          <area shape="rect" coords="13,260,312,299" />
+                      	</map>
+                      <img src="images/zs3/05.gif" name="zs3_page5" width="323" height="521" border="0" usemap="#Map65" style="display:none;" id="zs3_page5" />
+						<map name="Map65" id="Map65">                          
+                   	      <area shape="rect" coords="2,134,320,184" />
+                        </map>
+                      <img src="images/zs3/06.gif" name="zs3_page6" width="326" height="520" border="0" usemap="#Map66" style="display:none;" id="zs3_page6" />
+						<map name="Map66" id="Map66">
+                          <area shape="rect" coords="4,134,318,183" />
+                      	</map>
+                      <img src="images/zs3/07.gif" name="zs3_page7" width="323" height="521" border="0" usemap="#Map67" style="display:none;" id="zs3_page7" />
+						<map name="Map67" id="Map67">
+                          <area shape="rect" coords="15,383,314,443" />
+                      	</map>
+                      <img src="images/zs3/08.gif" name="zs3_page8" width="323" height="600" border="0" usemap="#Map68" style="display:none;" id="zs3_page8" />
+                      <map name="Map68" id="Map68">
+                        <area shape="rect" coords="22,521,303,557"  />
+                      </map>
+                      <img src="images/zs3/09.gif" name="zs3_page9" width="323" height="521" border="0" usemap="#Map69" style="display:none;" id="zs3_page9" />
+                    
+                         
+  				   <div class=" hide" style="margin:50px 0 0 50px; float:right;">
+                             <a id="return_page_zs3_page" class="" href="javascript:void(0);" onclick="turnpage(-1,8,'zs3_page')" >返回上一页</a></div>
+                             <a class=" fb returnbank"  style="margin:50px 50px 0 0px; float:left;" href="javascript:void(0);">返回银行列表</a>                      
+                  </div>                                        
+                </div>
+                
+                <div class="pa lh200 showbank hide" style="left:0;top:10px;" id="zx">
+   	      		  <p class="titile mt20">中信银行网银签约流程</p>
+                    <div class="tjs pr wyqy_bank">
+           	    	  <img src="images/zx/1.gif" width="650" height="433" border="0" usemap="#Map71" id="zx_page1" style="display:block;" />
+                        <map name="Map71" id="Map71">
+                          <area shape="rect" coords="95,204,266,264" />
+                        </map>
+                      <img src="images/zx/2.gif" name="zx_page2" width="650" height="440" border="0" usemap="#Map72" style="display:none;" id="zx_page2" />
+                        <map name="Map72" id="Map72">
+                          <area shape="rect" coords="157,290,236,317" />
+                      	</map>
+                      <img src="images/zx/3.gif" name="zx_page3" width="650" height="398" border="0" usemap="#Map73" style="display:none;" id="zx_page3" />
+						<map name="Map73" id="Map73">
+                          <area shape="rect" coords="290,91,358,109" />
+                      	</map>
+                      <img src="images/zx/4.gif" name="zx_page4" width="650" height="432" border="0" usemap="#Map74" style="display:none;" id="zx_page4" />
+						<map name="Map74" id="Map74">
+                          <area shape="rect" coords="196,195,630,213" />
+                      	</map>
+                      <img src="images/zx/5.gif" name="zx_page5" width="650" height="533" border="0" usemap="#Map75" style="display:none;" id="zx_page5" />
+						<map name="Map75" id="Map75">                          
+                   	      <area shape="rect" coords="353,435,407,467" />
+                        </map>
+                      <img src="images/zx/6.gif" name="zx_page6" width="650" height="436" border="0" usemap="#Map76" style="display:none;" id="zx_page6" />
+						<map name="Map76" id="Map76">
+                          <area shape="rect" coords="341,262,396,294" />
+                      	</map>
+                      <img src="images/zx/7.gif" name="zx_page7" width="650" height="428" border="0" usemap="#Map77" style="display:none;" id="zx_page7" />
+						<map name="Map77" id="Map77">
+                          <area shape="rect" coords="345,302,393,332" />
+                      	</map>
+                      <img src="images/zx/8.gif" name="zx_page8" width="650" height="433" border="0" usemap="#Map78" style="display:none;" id="zx_page8" />
+                        
+  				         
+  				   <div class=" hide" style="margin:50px 0 0 50px; float:right;">
+                             <a id="return_page_zx_page" class="" href="javascript:void(0);" onclick="turnpage(-1,8,'zx_page')" >返回上一页</a></div>
+                             <a class=" fb returnbank"  style="margin:50px 50px 0 0px; float:left;" href="javascript:void(0);">返回银行列表</a>                     
+                  </div>                                        
+                </div>
+                
+				<div class="pa lh200 showbank hide" style="left:0;top:10px;" id="gs">
+       	      		<p class="titile mt20">工商银行网银签约流程</p>
+                    <div class="tjs pr wyqy_bank">
+           	    	  <img src="images/gs/1.gif" width="650" height="413" border="0" usemap="#Map81" id="gs_page1" style="display:block;" />
+                        <map name="Map81" id="Map81">
+                          <area shape="rect" coords="11,146,150,175" />
+                        </map>
+                      <img src="images/gs/2.gif" name="gs_page2" width="650" height="538" border="0" usemap="#Map82" style="display:none;" id="gs_page2" />
+                        <map name="Map82" id="Map82">
+                          <area shape="rect" coords="376,395,438,421" />
+                      	</map>
+                      <img src="images/gs/3.gif" name="gs_page3" width="650" height="382" border="0" usemap="#Map83" style="display:none;" id="gs_page3" />
+						<map name="Map83" id="Map83">
+                          <area shape="rect" coords="191,185,582,202" />
+                      	</map>
+                      <img src="images/gs/4.gif" name="gs_page4" width="650" height="430" border="0" usemap="#Map84" style="display:none;" id="gs_page4" />
+						<map name="Map84" id="Map84">
+                          <area shape="rect" coords="313,343,363,361" />
+                      	</map>
+                      <img src="images/gs/5.gif" name="gs_page5" width="650" height="355" border="0" usemap="#Map85" style="display:none;" id="gs_page5" />
+						<map name="Map85" id="Map85">
+                          <area shape="rect" coords="315,257,363,280" />
+						</map>
+                      <img src="images/gs/6.gif" name="gs_page6" width="650" height="383" border="0" usemap="#Map86" style="display:none;" id="gs_page6" />
+						<map name="Map86" id="Map86">
+                          <area shape="rect" coords="307,198,375,232" />
+                      	</map>
+                      <img src="images/gs/7.gif" name="gs_page7" width="650" height="377" border="0" usemap="#Map87" style="display:none;" id="gs_page7" />
+						<map name="Map87" id="Map87">
+                          <area shape="rect" coords="312,203,359,223" />
+                      	</map>
+                      <img src="images/gs/8.gif" name="gs_page8" width="650" height="381" border="0" usemap="#Map88" style="display:none;" id="gs_page8" />
+						<map name="Map88" id="Map88">
+                          <area shape="rect" coords="307,192,363,217" />
+                      	</map>
+                      <img src="images/gs/9.gif" name="gs_page9" width="710" height="412" border="0" usemap="#Map89" style="display:none;" id="gs_page9" />
+						<map name="Map89" id="Map89">
+                          <area shape="rect" coords="298,234,365,263" />
+                      	</map>
+                      <img src="images/gs/10.gif" name="gs_page10" width="650" height="379" border="0" usemap="#Map810" style="display:none;" id="gs_page10" />
+                      
+						 <div class=" hide" style="margin:50px 0 0 50px; float:right;">
+                             <a id="return_page_gs_page" class="" href="javascript:void(0);" onclick="turnpage(-1,8,'gs_page')" >返回上一页</a></div>
+                             <a class=" fb returnbank"  style="margin:50px 50px 0 0px; float:left;" href="javascript:void(0);">返回银行列表</a>                        
+                  </div>                                        
+                </div>
+                
+				<div class="pa lh200 showbank hide " style="left:0;top:10px;" id="js">
+       	      		<p class="titile mt20">建设银行网银签约流程</p>
+                    <div class="tjs pr wyqy_bank">
+           	    	  <img src="images/js/1.gif" width="650" height="410" border="0" usemap="#Map91" id="js_page1" style="display:block;" />
+                        <map name="Map91" id="Map91">
+                          <area shape="rect" coords="119,257,240,293" />
+                        </map>
+                      <img src="images/js/2.gif" name="js_page2" width="650" height="395" border="0" usemap="#Map92" style="display:none;" id="js_page2" />
+                        <map name="Map92" id="Map92">
+                      	  <area shape="rect" coords="115,241,174,264"/>
+                        </map>
+                      <img src="images/js/3.gif" name="js_page3" width="645" height="383" border="0" usemap="#Map93" style="display:none;" id="js_page3" />
+						<map name="Map93" id="Map93">
+                          <area shape="rect" coords="111,320,164,358" />
+                      	</map>
+                      <img src="images/js/4.gif" name="js_page4" width="650" height="362" border="0" usemap="#Map94" style="display:none;" id="js_page4" />
+						<map name="Map94" id="Map94">
+                          <area shape="rect" coords="256,169,314,193" />
+                      	</map>
+                      <img src="images/js/5.gif" name="js_page5" width="650" height="455" border="0" usemap="#Map95" style="display:none;" id="js_page5" />
+						<map name="Map95" id="Map95">
+                          <area shape="rect" coords="169,357,221,379" />
+						</map>
+                      <img src="images/js/6.gif" name="js_page6" width="650" height="350" border="0" usemap="#Map96" style="display:none;" id="js_page6" />
+						
+                      
+						 <div class=" hide" style="margin:50px 0 0 50px; float:right;">
+                             <a id="return_page_js_page" class="" href="javascript:void(0);" onclick="turnpage(-1,8,'js_page')" >返回上一页</a></div>
+                             <a class=" fb returnbank"  style="margin:50px 50px 0 0px; float:left;" href="javascript:void(0);">返回银行列表</a>                      
+                  </div>                                        
+                </div>
+                
+    </div>
+                <div class="fwzx_shadow pa" style="left:0;bottom:-18px;"></div>
+   </div>
+</div>
+      
+       <!--pic-->
+    <div class="pa lh200 showbank hide" style="left:445px; top: 0px; z-index:9;" id="jt">
+       	      		<p class="titile mt20">交通银行网银签约流程</p>
+                    <div class="tjs pr wyqy_bank">
+           	    	  <img src="images/jiaohang/1.gif" name="jt_page1" width="596" height="363" border="0" usemap="#Map101" id="jt_page1" style="display:block;" />
+                        <map name="Map101" id="Map101">
+                          <area shape="rect" coords="419,113,489,141" />
+                        </map>
+                      <img src="images/jiaohang/2.gif" name="jt_page2" width="633" height="357" border="0" usemap="#Map102" style="display:none;" id="jt_page2" />
+                        <map name="Map102" id="Map102">
+                          <area shape="rect" coords="405,232,572,257" />
+                      	</map>
+                      <img src="images/jiaohang/3.gif" name="jt_page3" width="628" height="344" border="0" usemap="#Map103" style="display:none;" id="jt_page3" />
+                        <map name="Map103" id="Map103">
+                          <area shape="rect" coords="464,56,517,81" />
+                      	</map>
+                      <img src="images/jiaohang/4.gif" name="jt_page4" width="639" height="361" border="0" usemap="#Map104" style="display:none;" id="jt_page4" />
+                        <map name="Map104" id="Map104">
+                          <area shape="rect" coords="9,156,91,183" />
+                      	</map>
+                      <img src="images/jiaohang/5.gif" name="jt_page5" width="633" height="344" border="0" usemap="#Map105" style="display:none;" id="jt_page5" />
+                        <map name="Map105" id="Map105">
+                          <area shape="rect" coords="335,174,426,204" />
+                        </map>
+                      <img src="images/jiaohang/6.gif" name="jt_page6" width="642" height="390" border="0" usemap="#Map106" style="display:none;" id="jt_page6" />
+                        <map name="Map106" id="Map106">
+                          <area shape="rect" coords="315,257,382,279" />
+                      	</map>
+                      <img src="images/jiaohang/7.gif" name="jt_page7" width="649" height="398" border="0" usemap="#Map107" style="display:none;" id="jt_page7" />
+                      <map name="Map107" id="Map107">
+                          <area shape="rect" coords="314,264,381,287" />
+                      	</map>
+                       <img src="images/jiaohang/8.gif" name="jt_page8" width="643" height="349" border="0" usemap="#Map108" style="display:none;" id="jt_page8" />
+                      
+						<div class=" hide" style="margin:50px 0 0 50px; float:right;">
+                             <a id="return_page_jt_page" class="" href="javascript:void(0);" onclick="turnpage(-1,7,'jt_page')" >返回上一页</a> </div>
+                       
+                        <a class=" fb returnbank"  style="margin:50px 50px 0 0px; float:left;" href="javascript:void(0);">返回银行列表</a>         
+                                                      
+                  </div>                                        
+      </div>
+  
+     <!--pic-end-->
+    </div>   
+</div>
+<!--right-end-->
+ </div>
+ <!--whole_fwtx-end-->
+<div class="clear" style="height:0px; line-height:0px;"></div>
+    <!--特色服务-->
+    <!--#include virtual="/inc/bottom_2014.shtml"-->
+    <!--特色服务-end-->
+    <!--foot-->
+     <!--#include virtual="/inc/foot_2014.shtml"-->
+    <!--foot-end-->
+</body>
+</html>

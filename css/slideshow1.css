@@ -1,0 +1,21 @@
+﻿* { word-wrap: break-word; }
+body { font: 12px/1.5 Tahoma,'Microsoft Yahei','Simsun'; color: #444; }
+a { color: #000; text-decoration: none; }
+.frame { margin-bottom: 10px; border: 1px solid #e1e1e1; background: #FFF; }
+.block { margin: 10px 10px 0; }
+.slideshow li { position: relative; overflow: hidden; }
+.slidebar li { background: rgba(0,0,0,0.3); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = #30000000,endColorstr = #30000000); color: #FFF; overflow: hidden; }
+.slidebar li { float: left; margin-right: 1px; width: 20px; height: 20px; line-height: 20px; text-align: center; font-size: 10px; cursor: pointer; }
+.frame { background: none; border: 0px solid #fff; margin-bottom: 0px; }
+.slidebar { position: absolute;bottom:12px;right:12px;}
+.slidebar li { background: rgba(0,0,0,0.3); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = #90000000,endColorstr = #90000000); color: #FFF; overflow: hidden; border:1px solid #666 }
+.slidebar li.on { background: rgba(255,255,255,0.5); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = #90000000,endColorstr = #90000000); color: #ff0; font-weight: 700; border:1px solid #b4b4b4}
+.block { margin: 0;position: relative; }
+#frameHlicAe { margin: 0px !important; border: 0px !important; }
+.comiis_wrapad {overflow: hidden; }
+ .comiis_wrapad img { float: left; margin-top: 0px; }
+#slidesImgs li {  display: none;}
+.slideshow{padding:0; border:1px solid #D9D9D9; margin:0; clear: both;}
+.mzylw{ background:url(../images/sd_03.jpg) no-repeat; font-family:"微软雅黑"; color:#FFF; width:275px; height:31px; line-height:31px; padding-left:10px; font-size:18px; margin:1px;_width:270px}
+.tj_btn{ background:url(../images/sd_11.jpg)  no-repeat; width:65px; height:23px; margin-left:5px}
+.input_ylw{ height:14px;padding:3px 0 3px 3px; line-height:18px; width:155px}

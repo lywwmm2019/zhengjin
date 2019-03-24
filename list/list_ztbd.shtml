@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>证金贵金属_服务大厅_专题报道列表</title>
+<meta content="" name="keywords" />
+<meta content="" name="description" />
+<!--#include virtual="/inc/head.shtml"-->
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/jquery-1.6.1.min.js"></script>
+</head>
+<body>
+<div class="box">
+<!--#include virtual="/inc/head_new.shtml"-->
+<!--#include virtual="/inc/head_navigate.shtml"-->
+<div style="background:url(gsxw_images/gsxw_bg.jpg) repeat-x;">
+<div style="width:997px; margin:0 auto 10px auto; padding-top:5px;" class="clear">
+<!--#include virtual="/inc/topimg.shtml"-->
+<!--#include virtual="/inc/nav1.shtml"-->
+
+<div class="fxyj_text">
+<p class="fxyj_text_title font_12"><strong><a href="/index.shtml">证金贵金属</a></strong> >><strong><a href="/fwdt.shtml">服务大厅</a></strong> >>专题报道</p>
+<div style="margin-top:10px;">
+<p class="fxyj_list_title"><strong class="font_white font_14">专题报道</strong></p>
+<div class="fxyj_list clear">
+<JRJTAG	tagtype="01" clsid="604001006" pagesize="5" pagecount="10" id="mrpl" />
+<#if mrpl?exists>
+	<#list mrpl as d>
+<div class="pl_list">
+<p class="clear"><a href="${d.infourl}"><strong class="red2 fl">${d.title}</strong></a><span class="color666 fr fxyj_date">${d.makedate?string("yyyy-MM-dd")}</span></p>
+<p class="font_14">${jrjfund.subgbk(d.description,234)}...<a href="${d.infourl}" class="color666">全文</a></p>
+<p class="hr mr_t10"></p>
+</div>	
+	</#list>
+</#if>
+<p class="fxyj_page">
+
+<#assign locafilename="list_ztbd">
+<#if (curpage>1)>
+  <a href="${locafilename}.shtml" class="turn_page">首 页</a>
+  <#if curpage=2>
+<a href="${locafilename}.shtml"  class="turn_page" target="_self">上一页</a>
+  <#else>
+<a href="${locafilename}-${curpage-1}.shtml"  class="turn_page" target="_self">上一页</a>
+  </#if>
+</#if>
+<#list 1..pagecount as n>
+	  <#if n=1>
+	    <#if curpage=n>
+		  <a class="cur">${n}</a>
+		<#else>
+		  <a href="${locafilename}.shtml" target="_self">${n}</a>
+		</#if>
+	  <#else>
+	    <#if curpage=n>
+		  <a class="cur">${n}</a>
+		<#else>
+		  <a href="${locafilename}-${n}.shtml" target="_self">${n}</a>
+		</#if> 
+	 </#if>
+</#list>
+<#if (curpage!=pagecount)>
+<a href="${locafilename}-${curpage+1}.shtml" class="turn_page" target="_self">下一页</a>
+</#if>
+
+</p>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+<!--#include virtual="/inc/foot_new.shtml"-->
+</body>
+</html>

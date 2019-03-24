@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta name="keywords" content="证金贵金属,白银,白银分析,白银投资,白银价格,白银交易,炒白银,白银走势,白银软件,模拟炒银,美联储,白银在线分析" />
+<meta name="description" content="证金贵金属，首家赴美纳斯达克上市公司中国最大最专业的白银投资服务平台，致力于白银投资、白银交易、现货白银、白银价格、炒白银、现货白银走势、白银行情、模拟炒银、现货白银开户、投资资讯、分析评论、贵金属投资等贵金属综合性投资服务" />
+<title>${title}_${clsname}_证金贵金属</title>
+<!--#include virtual="/inc/head_link_2014.shtml"-->
+</head>
+
+<body>
+	<!--#include virtual="/inc/head_2014.shtml"-->
+	<#if (clsid?substring(0,8)=="60400102") >
+    <!--#include virtual="/inc/nav_guanyu.shtml"-->
+	<#else>
+    <!--#include virtual="/inc/nav_yanjiu.shtml"-->
+	</#if>
+	
+    <div id="gjs_detail" class="pr clear over">
+        <div class="fl w650">
+        	<p class="mbx_nav">研究中心> <span class="now">${clsname}</span></p>
+            <div class="lh200">
+                <p class="article_title">${title}</p>
+                <p class="discribe">来源：${mediaSource}  ${pubDate?string("yyyy年MM月dd日")}</p>
+                <p>
+            <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare Share">
+                <span style="padding-top:0" class="bds_more">分享到：</span>
+                <a style="padding-top:0" class="bds_tsina">新浪微博</a>
+                <a style="padding-top:0" class="bds_qzone">QQ空间</a>
+                <a style="padding-top:0" class="bds_tqq">腾讯微博</a>
+                <a style="padding-top:0" class="bds_renren">人人网</a>
+                <a style="padding-top:0" class="bds_tieba">百度贴吧</a>
+                <a style="padding-top:0" class="bds_tsohu">搜狐微博</a>
+                <a style="padding-top:0" class="bds_t163">网易微博</a>
+            </div>
+			　| <span class="cur" onclick="addFavorite('${clsname}', '${title}', '${infourl}');">收藏</span>
+ 				</p>
+                <div class="mt30">${content}</div>
+            </div>
+        </div>
+        
+        <div class="fr w310">
+            
+	        <p class="yjzx_tj pr index_title">最新推荐</p>
+	        <ul class="tj_recommend">
+    		<!--#include virtual="/list/list_new.shtml"-->
+	        </ul>
+	        
+	        <!--#include virtual="/inc/gjs_detail_right.shtml"-->
+            
+        </div>
+        
+        <div class="clear"></div>
+        
+    </div>
+    
+    <!--#include virtual="/inc/bottom_2014.shtml"-->
+    
+    <!--#include virtual="/inc/foot_2014.shtml"-->
+</body>
+</html>

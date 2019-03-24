@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>服务中心-软件下载</title>
+<!--#include virtual="/inc/head_link.shtml"-->
+</head>
+
+<body>
+	<!--#include virtual="/inc/head.shtml"-->
+    <!--#include virtual="/inc/nav.shtml"-->
+	<div id="about_main" class="clear mb20">
+    	<div class="fl about_left pr">
+        	<div class="pa" style="left:0;top:0;" id="about_left">
+                <!--#include virtual="/inc/left_btn.shtml"-->
+                <ul class="about_link" style="padding-left:10px;">
+                    <li class="about_link_title">服务指南</li>
+                    <li>&gt;&gt;<span><a href="index.shtml">服务体系</a></span></li>
+                    <li>&gt;&gt;<span><a href="khlc.shtml">开户流程</a></span></li>
+                    <li>&gt;&gt;<span><a href="khsp.shtml">开户宣传片</a></span></li>
+                    <li>&gt;&gt;<span><a href="tjs.shtml">天交所网上开户</a></span>
+                    	<ul class="about_link_sec" style="display:block;">
+                        	<li><span><a href="tjs.shtml">开户操作指南</a></span></li>
+                            <li><span><a href="http://www.cms-tjpme.com/regAction!regFromUnit.action?fromValue=212" target="_blank"><span style="color:red;font-weight:bold;padding:0;">注册</span>入口</a></span></li>
+                            <li><span><a href="http://www.cms-tjpme.com/loginAction.action" target="_blank"><span style="color:green;font-weight:bold;padding:0;">登录</span>入口</a></span></li>
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="qyzn.shtml">网银签约指南</a></span></li>
+                    <li>&gt;&gt;<span><a href="bgxz.shtml">客户协议及相关表格下载</a></span></li>
+                    <li>&gt;&gt;<span><a href="byjy.shtml">白银交易规则</a></span></li>
+                    <li>&gt;&gt;<span><a href="crjgz.shtml">出入金流程及规则</a></span></li>
+                    <li>&gt;&gt;<span><a href="jglc.shtml">现货交割流程</a></span></li>
+                    <li>&gt;&gt;<span><a href="khts.shtml">客户投诉处理流程</a></span></li>
+                    <li>&gt;&gt;<span class="about_link_hover"><a href="javascript:void(0)">软件下载</a></span>
+                   	  <ul class="about_link_sec" style="display:block;">
+                        	<li><span><a href="sjrj.shtml">手机版软件下载平台</a></span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    	<div class="fr about_right">
+        	<div class="fwtx pr">
+            	<div class="fwtx01"></div>
+                <div class="fwtx02"></div>
+                <div class="fwtx03"></div>
+                <div class="fwtx04"></div>
+                <div class="fwtx05"></div>
+                <div class="fwtx06"></div>
+                <a href="javascript:void(0)" class="pa block" style="width:114px;height:48px;left:80px;top:70px;z-index:999;" onclick="setTab('rjxz',1,2)"></a>
+                <a href="javascript:void(0)" class="pa block" style="width:133px;height:48px;left:210px;top:70px;z-index:999;" onclick="setTab('rjxz',2,2)"></a>
+                
+                <div class="pa lh150 rjxz" style="left:35px;top:20px;">
+                	<p class="fht f18 col754c24">桌面版交易平台</p>                	
+                    <div id="rjxz_content_1">
+                    <div class="rjxz_bq1 pr" style="left:-35px;"></div>
+                    <div class="clear rjxz_bg pr">
+                    	<div class="fl" style="*width:147px;">
+                        	<div class="rjxz_bq">"证金贵金属"行情分析软件</div>
+                            <input name="" type="button" class="rjxz_btn block mauto" value="下载" onclick="location.href='http://soft.zhengjin99.com/zjgjs.rar'"/>
+                        </div>
+                        <div class="fl mt30 ml30">
+                        	<p>软件名称： "证金贵金属"行情分析软件</p>
+                            <p>适用客户： 所有用户</p>
+                            <p>适用系统： WIN7  WINXP(默认帐户：zj029  密码：zj029)</p>
+                        </div>
+                        <div class="clear"></div>
+                        <div style="right: 20px; top: 6px;color:#f00;" class="pa f16">海交所</div>
+                    </div>
+                    <div class="clear mt30 rjxz_bg pr">
+                    	<div class="fl" style="*width:147px;">
+                        	<div class="rjxz_bq">"证金贵金属"模拟交易软件</div>
+                            <input name="" type="button" class="rjxz_btn block mauto" value="下载" onclick="location.href='http://soft.zhengjin99.com/ZJDEMOTrader4.2.17Setup.rar'"/>
+                        </div>
+                        <div class="fl mt10 ml30" style="margin-top:15px;">
+                        	<p>软件名称： "证金贵金属"模拟交易软件</p>
+                            <p>适用客户： 所有模拟交易客户</p>
+                            <p>适用系统： WIN7  WINXP</p>
+                            <p>注：该软件需要<a href="http://tg.zhengjin99.com/zhengjin/regUser.jsp" class="red" target="_blank">申请模拟账号</a>才可使用</p>
+                        </div>
+                        <div class="clear"></div>
+                        <div style="right: 20px; top: 6px;color:#f00;" class="pa f16">海交所</div>
+                    </div>
+                    <div class="clear mt30 rjxz_bg pr">
+                    	<div class="fl" style="*width:147px;">
+                        	<div class="rjxz_bq">"证金贵金属"实盘交易软件</div>
+                            <input name="" type="button" class="rjxz_btn block mauto" value="下载" onclick="location.href='http://soft.zhengjin99.com/ZJRealTrader4.2.17Setup.rar'"/>
+                        </div>
+                        <div class="fl mt10 ml30" style="margin-top:1px;">
+                        	<p>软件名称： "证金贵金属"实盘交易软件</p>
+                            <p>适用客户： 所有正式交易用户</p>
+                            <p>适用系统： WIN7  WINXP</p>
+                            <p>注：该软件需要入金才可使用</p>
+                            <p>详情请拨打客服进行咨询：010-58309199</p>
+                            <p>运行软件必要组件下载：<a href="http://soft.zhengjin99.com/VC-X86.rar" class="red">点击下载</a></p>
+                        </div>
+                        <div class="clear"></div>
+                        <div style="right: 20px; top: 6px;color:#f00;" class="pa f16">海交所</div>
+                    </div>
+                    </div>
+                    
+                    <div id="rjxz_content_2" class="hide">
+                    <div class="rjxz_bq2 pr" style="left:-35px;"></div>
+                    <div class="clear rjxz_bg pr">
+                    	<div class="fl" style="*width:147px;">
+                        	<div class="rjxz_bq">"证金贵金属"行情分析软件</div>
+                            <input name="" type="button" class="rjxz_btn block mauto" value="下载" onclick="location.href='http://soft.zhengjin99.com/mytrader_tjgjs417.exe'"/>
+                        </div>
+                        <div class="fl mt30 ml30">
+                        	<p>软件名称： "证金贵金属"行情分析软件</p>
+                            <p>适用客户： 所有用户</p>
+                            <p>默认帐户：zj212  密码：zj212</p>
+                        </div>
+                        <div class="clear"></div>
+                        <div style="right: 20px; top: 6px;color:#f00;" class="pa f16">天交所</div>
+                    </div>
+                    <div class="clear mt30 rjxz_bg pr">
+                    	<div class="fl" style="*width:147px;">
+                        	<div class="rjxz_bq">"证金贵金属"交易软件</div>
+                            <input name="" type="button" class="rjxz_btn block mauto" value="下载" onclick="location.href='http://soft.zhengjin99.com/setup_c_212_227.exe'"/>
+                        </div>
+                        <div class="fl mt30 ml30" style="margin-top:40px;">
+                        	<p>软件名称： "证金贵金属"交易软件（实盘、模拟通用）</p>
+                            <p>适用客户： 所有交易客户</p>
+                        </div>
+                        <div class="clear"></div>
+                        <div style="right: 20px; top: 6px;color:#f00;" class="pa f16">天交所</div>
+                    </div>
+                    </div>
+                    
+                </div>
+                <div class="fwzx_shadow pa" style="left:0;bottom:-18px;"></div>
+            </div>
+      	</div>
+      
+      	<div class="clear"></div>
+    </div>
+    <!--#include virtual="/inc/foot.shtml"-->
+</body>
+</html>

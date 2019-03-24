@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta name="keywords" content="证金贵金属,白银,白银分析,白银投资,白银价格,白银交易,炒白银,白银走势,白银软件,模拟炒银,美联储,白银在线分析" />
+<meta name="description" content="证金贵金属，首家赴美纳斯达克上市公司中国最大最专业的白银投资服务平台，致力于白银投资、白银交易、现货白银、白银价格、炒白银、现货白银走势、白银行情、模拟炒银、现货白银开户、投资资讯、分析评论、贵金属投资等贵金属综合性投资服务" />
+<title>金牌早晚评_研究中心_证金贵金属</title>
+<!--#include virtual="/inc/head_link_2014.shtml"-->
+<script type="text/javascript" src="/js/function_yanjiu.js"></script>
+<script type="text/javascript" src="/js/ace-template.js"></script>
+<script type="text/javascript" src="/js/EMO.js"></script>
+<script type="text/javascript" src="/js/jquery.watermark.min.js"></script>
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/js/pop.js"></script>
+
+
+</head>
+
+<body>
+<!--# if expr="$REQUEST_URI != /from=/" -->
+	<!--#include virtual="/inc/head_2014.shtml"-->
+    <!--#include virtual="/inc/nav_EMO.shtml"-->
+<!--# endif -->
+    <div id="zwyp" class="pr">
+    	
+        	<div class="fl w650 yjzx_list">
+            	<p class="mbx_nav">研究中心> <span class="now">EMO量化指数</span></p>
+            	<ul class="list" id="list2">
+                	
+                </ul>
+                <div id="page" class="clear pager pt10">
+                    <div id="pager" class="page fr"></div>
+                    <div class="clear"></div>
+                </div>
+        	
+            </div>        
+         <SCRIPT id="tp2" type="text/template">
+			  for (var i = 0; i < this.length; i++) {
+				  var item = this[i];
+		  
+				  <li onclick="showDetailEMO(#{item.col}, #{item.id})">
+					  <p class="tr">#{item.ctime}</p>
+					  <img src="#{'http://wx.zhengjin99.com'}#{item.filepath}small_#{item.picurl}" width="194" height="128">
+					  <p class="title">
+						  <a>#{item.title}</a>
+					  </p>
+					  <p>#{item.topic.substr(0,80)}...
+						  <a>详情》</a>
+					  </p>
+				  </li>
+			  }
+		  </SCRIPT>
+          
+			<script type="text/javascript" src="../js/calendar.js"></script>
+            <script type="text/javascript">
+			  //var pageSize = 6;
+			  
+			  $(document).ready(function () {
+				  zjgjs.sso.init();
+				  getData(1);
+				 /* $('.list').on('click','li',function(){	
+					  var rank=cookie('WEBSSO_RANK');
+					  var phone=cookie('WEBSSO_UID');
+					  if (phone == ""||phone == null|| phone == "undefined") {
+						  tab2.show();    
+						  }
+					  else {
+						  if(rank>=0&&rank<=4){
+							  tab1.show(); 
+							  };
+						  if(rank>4&&rank<=7){
+							  showDetailEMOOK(col, idx);
+							  };
+						   };
+						 });*/
+			  });
+			  var tab1 = 	new WindowPop({
+				  text:{
+					  word:'您目前还不是五星及以上客户，进行升级后才有权限进行观看！',
+					  style:{
+						  height:'90px'
+					  }	
+				  },
+				  
+				  btn:[{
+					  word:'确定',
+					  style:{
+					  
+					  },
+					  callback:function(){
+						  tab1.hide();	
+					  }
+					  
+				  }
+				 ]
+			  }
+			  )
+			  var tab2 = 	new WindowPop({
+			  
+			  
+				  text:{
+					  word:'您目前还未登录，请登录后进行查看！',
+					  style:{
+						
+						  textAlign:'center',
+						  height:'90px'
+					  }	
+				  },
+			   
+				  btn:[{
+					  word:'确定',
+					  style:{
+						  background:'#f39c26'
+						
+					  },
+					  callback:function(){
+						  tab2.hide();	
+					  }
+					  
+				  }
+				  
+				 ]
+			  }
+			  )  
+			  function getData(pageNo) {
+				$.getJSON( "http://wx.zhengjin99.com/quote/news.jsp?callback=?",{
+					action:"list",
+					  col: 134,
+					  page: pageNo,
+					  size: 6
+				  }, function(data) {
+					  $("#list2").html(AceTemplate.format('tp2', data.items));	
+					  showPage(pageNo, 6, data.total);
+				  })
+			  }
+			 
+			  function showDetailEMO(col, idx){
+				var rank=cookie('WEBSSO_RANK');
+				var phone=cookie('WEBSSO_UID');
+				if (phone == ""||phone == null|| phone == "undefined") {
+					tab2.show();    
+					}
+				else {
+				  if(rank>=0&&rank<=4){
+					tab1.show(); 
+					}
+				  else if(rank>4&&rank<=7){
+					if(col!='134'){
+					window.open('/detail.html?col='+col+'&id='+idx);	
+					}
+					if (col=='134'){
+					window.open('/detail_flash.html?col='+col+'&id='+idx);	
+					}
+				  } 
+				}
+			 }
+			  </script> 
+            <div class="fr w310" id="cal_data">
+                
+                <!--<p class="yjzx_tj pr index_title mt20">最新推荐</p>
+                <ul class="yjzx_research">
+                	<JRJTAG	tagtype="01" clsid="604001005,604001010" pagesize="5" pagecount="1" id="zxtj" />
+                    <#if zxtj?exists>
+                        <#list zxtj as d>
+                	<li class="${(d_index==0)?string("first","")}">
+                    	<p class="title"><a target="_blank" href="${d.infourl}">${d.title}</a></p><span class="pa time ${(d_index==0)?string("hide","")}"> ${d.makedate?string("MM.dd")}</span>
+                        <div class="yjzx_tj_list ${(d_index>0)?string("hide","")}">
+                            <a target="_blank" href="${d.infourl}"><img width="127" height="84" class="fl" src="http://img.zhengjin99.com/web/small/${d.id?c}.jpg"></a>
+                            <div class="fr">
+                                <p class="pr">${jrjfund.subgbk(d.description,70)}...<a target="_blank" href="${d.infourl}">详情》</a></p>
+                            </div>
+                            <div class="clear" style="height:0;line-height:0;"></div>
+                        </div>
+                    </li>
+                  		</#list>
+					</#if>
+                </ul>-->
+
+               <!--#include virtual="/inc/rightyjzx.shtml"--> 
+            	<!--<p>本周美国方面发布了较多的经济数据，数据好坏不一…<a target="_blank" href="http://vd.jrj.com/">详情》</a></p>
+                <div class="vedio_msg clear over"><div class="fr"><span class="vedio_click"></span><span>400000</span><span class="vedio_talk"></span><span>785</span></div></div>-->
+                
+            </div>
+            <div class="clear" style="height:0;line-height:0;"></div>
+        </div>
+        
+    </div>
+    
+<!--# if expr="$REQUEST_URI != /from=/" -->
+    <!--#include virtual="/inc/foot_2014.shtml"-->
+<!--# endif -->
+
+</body>
+</html>

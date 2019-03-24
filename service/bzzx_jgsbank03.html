@@ -1,0 +1,407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="证金贵金属,白银,白银分析,白银投资,白银价格,白银交易,炒白银,白银走势,白银软件,模拟炒银,美联储,白银在线分析" />
+<meta name="description" content="证金贵金属，首家赴美纳斯达克上市公司中国最大最专业的白银投资服务平台，致力于白银投资、白银交易、现货白银、白银价格、炒白银、现货白银走势、白银行情、模拟炒银、现货白银开户、投资资讯、分析评论、贵金属投资等贵金属综合性投资服务" />
+
+<title>服务中心_证金贵金属</title>
+<!--#include virtual="/inc/head_link_2014.shtml"-->
+<script type="text/javascript" src="http://js.jrj.com.cn/v/swfobject.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+	$("#firstpane p.menu_head").bind('click',function(){
+		$(this).css({background:"#fff url(../images2014/khsp02.jpg) center left no-repeat",'border-bottom':'1px dashed #d0d0d0'})
+		$(this).next("div.menu_body").slideDown(300);
+       	$(this).siblings().css({backgroundImage:"url(../images2014/khsp01.jpg)",'background-color':'#f2f2f2','border-bottom':'1px solid #d0d0d0'});
+		$(this).siblings().next("div.menu_body").slideUp(300);
+	});
+	$('.menu_body dl dt').bind('mouseenter',function(){
+		$(this).find('ul.sfhover').show();
+	});
+	$('.menu_body dl dt').bind('mouseleave',function(){
+		$(this).find('ul.sfhover').hide();
+	});
+});
+
+</script>  
+
+ 
+</head>
+
+<body>
+	<!--head-->
+	<!--#include virtual="/inc/head_2014.shtml"-->
+<!--#include virtual="/inc/nav_fuwu.shtml"-->
+    <!--head-end-->
+    <!--middle-->
+ <div class="w990 mauto clear over mt20" style="background:url(../images2014/bzzx_khsp05.jpg) repeat-y top left;" >
+ <!--left-->
+	<!--#include virtual="/inc/left-bzzx.shtml"-->
+<!--left-end-->
+<!--right-->
+<div class="bzzx_khsp">
+	<h4>津贵所签约出现的问题：</h4>
+    <div class="bzzx-right">
+    <p>招商银行签约出现的问题：</p>
+   <table width="646" border="1" align="center"  cellpadding="0" cellspacing="0"><!--cellspacing代表单元格外面的一个距离,用于隔开单元格与单元格空间-->
+<!--单元格间距(表格间距)(cellspacing)代表表格边框与单元格补白的距离,也是单元格补白之间的距离-->
+  <tr>
+    <td width="154" class="td-h">错误代码</td>
+    <td width="115" class="td-h">代码注释</td>
+    <td width="180" class="td-h">产生原因</td>
+    <td width="138" class="td-h">处理办法</td>
+    <td width="53" class="td-h">备注</td>
+  </tr>
+  <tr>
+    <td>BME1309-CSAC027</td>
+    <td>证件信息不符</td>
+    <td>客户使用的是一代身份证办理的银行卡或者以前使用过一代身份证办过银行卡</td>
+    <td>客户需到银行柜台办理升级业务（即为客户在银行预留的身份证信息升级业务）</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>BME2079</td>
+    <td>关闭协议失败</td>
+    <td>招行网上开户客户签约后未显示签约成功，只出现“关闭协议”提示，在关闭过程中，提交后提示“关闭协议失败”</td>
+    <td>客户没有签约成功，因此不能解约，需要重新到交易所列表里找到天交所，重新签约即可。</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>BME2021</td>
+    <td>交易所交易账号开户失败</td>
+    <td>客户输入的交易账号（也是实盘账号）错误</td>
+    <td>让客户重新签约，核对一下交易账号正确之后再输入。</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>BME2065</td>
+    <td>激活协议失败，非交易时间</td>
+    <td>超过招行签约时间</td>
+    <td>招行签约时间为9：00—16：30</td>
+    <td>&nbsp;</td>
+  </tr>
+</table> 
+
+ <p>招行错误返回码：</p>
+  <table  border="1" cellspacing="1" cellpadding="0">
+  <tr>
+    <td width="325" class="td-h">银行方返回的错误代码</td>
+    <td width="325" class="td-h">交易所系统返回的错误代码</td>
+  </tr>
+  <tr>
+    <td class="td-h">返回码信息描述</td>
+    <td class="td-h">返回码信息描述</td>
+  </tr>
+  <tr>
+    <td>0000    交易成功</td>
+    <td>0000    交易成功</td>
+  </tr>
+  <tr>
+    <td>1001    未开通银商转账服务</td>
+    <td>2001    交易所交易账号不能为空 </td>
+  </tr>
+  <tr>
+    <td>1002    银商转账服务协议未经银行激活</td>
+    <td>2003    交易所交易账号可取资金不足 </td>
+  </tr>
+  <tr>
+    <td>1003    未关闭银商转账服务</td>
+    <td>2005    交易所交易账号可用资金不足 </td>
+  </tr>
+  <tr>
+    <td>1004    已开通银商转账服务</td>
+    <td>2007    交易所交易账号长度不正确 </td>
+  </tr>
+  <tr>
+    <td>1005    银商转账服务银行已激活</td>
+    <td>2009    交易所交易账号不存在 </td>
+  </tr>
+  <tr>
+    <td>1006    已关闭银商转账服务</td>
+    <td>2011    交易所交易账号已存在 </td>
+  </tr>
+  <tr>
+    <td>1007    已冻结银商转账服务协议</td>
+    <td>2013    交易所交易账户已销户 </td>
+  </tr>
+  <tr>
+    <td>1020    新银行账号已与其他交易所账号建立协议</td>
+    <td>2015    交易所交易账户未销户 </td>
+  </tr>
+  <tr>
+    <td>1021   银行账号已与其他交易所交易账号建立协议</td>
+    <td>2017    交易所交易账号状态异常 </td>
+  </tr>
+  <tr>
+    <td>1022   交易所交易账号已与其他银行账号建立协议</td>
+    <td>2028    客户转账权限状态不正常</td>
+  </tr>
+  <tr>
+    <td>1023    银行账号已升位，请使用新银行账号</td>
+    <td>2035    交易所交易账号已关联银行账号 </td>
+  </tr>
+  <tr>
+    <td>1035    证件不符 </td>
+    <td>2036    交易所交易账号已关联它行账号 </td>
+  </tr>
+  <tr>
+    <td>1036    户名不符</td>
+    <td>2037    银商转账服务协议已存在 </td>
+  </tr>
+  <tr>
+    <td>1037    不允许跨分行变更账号</td>
+    <td>2038    银商转账服务协议已关闭 </td>
+  </tr>
+  <tr>
+    <td>1038    账户类型不符</td>
+    <td>2043    银行账号已销户 </td>
+  </tr>
+  <tr>
+    <td>1043    当日有转账交易，不能换卡或关闭协议 </td>
+    <td>2045    银行账号已存在</td>
+  </tr>
+  <tr>
+    <td>1044    当日账户余额不为零，不能换卡或关闭协议</td>
+    <td>2046    银行账号状态不正常</td>
+  </tr>
+  <tr>
+    <td>1053    此卡凭证已挂失 </td>
+    <td>2047    银行账号或银行代码为空 </td>
+  </tr>
+  <tr>
+    <td>1054    此卡密码已挂失 </td>
+    <td>2049    转账金额超过单笔转出上限 </td>
+  </tr>
+  <tr>
+    <td>1200    机构户禁止交易所发起转账 </td>
+    <td>2053    转账金额超过单笔转入上限</td>
+  </tr>
+  <tr>
+    <td>1201    汇总户可用额度不足 </td>
+    <td>2057    累计转出金额超过上限</td>
+  </tr>
+  <tr>
+    <td>1202    超过单笔银行转出限额 </td>
+    <td>2059    累计转入金额超过上限 </td>
+  </tr>
+  <tr>
+    <td> 1203    超过单日银行转出累计限额 </td>
+    <td> 2060    累计转账金额超过上限</td>
+  </tr>
+   <tr>
+    <td>1205    交易账户余额不足  </td>
+    <td>2061    转出次数超过转出次数上限 </td>
+  </tr>
+   <tr>
+    <td>1307    客户密码错  </td>
+    <td>2063    不在转账时间范围内 </td>
+  </tr>
+   <tr>
+    <td>1309    客户证件不符  </td>
+    <td>2065    非交易时间 </td>
+  </tr>
+   <tr>
+    <td>1371    用户密码错  </td>
+    <td>2067    系统暂停资金操作 </td>
+  </tr>
+   <tr>
+    <td>1722    银行单笔转出限额大于单日银出累计限额  </td>
+    <td>2071    当日有转账,不能变更银行账号 </td>
+  </tr>
+   <tr>
+    <td>1730    交易所流水不能为空  </td>
+    <td>2073    当日有转账,不能取消银商转账协议 </td>
+  </tr>
+   <tr>
+    <td>1735    证件不能为空  </td>
+    <td>2077    请到柜台办理相关手续 </td>
+  </tr>
+   <tr>
+    <td>1736    户名不能为空  </td>
+    <td>2083    输入日期错误 </td>
+  </tr>
+   <tr>
+    <td> 1737    国别不能为空 </td>
+    <td>2085    交易所交易账户密码错误 </td>
+  </tr>
+   <tr>
+    <td>1738    联系地址与邮编不能为空 </td>
+    <td>2086    交易所交易账户状态异常</td>
+  </tr>
+   <tr>
+    <td>1739    联系电话不能为空 </td>
+    <td>2087    该客户尚未开户 </td>
+  </tr>
+   <tr>
+    <td>1801    未开通此功能  </td>
+    <td>2093    证件不符 </td>
+  </tr>
+   <tr>
+    <td>1803    不在交易时间  </td>
+    <td>2095    户名不符 </td>
+  </tr>
+</table>
+<p>建设签约出现的问题：</p> 
+<table  border="1" cellspacing="1" cellpadding="0">
+  <tr>
+    <td width="85" class="td-h">错误代码</td>
+    <td width="85" class="td-h">代码注释</td>
+    <td width="196" class="td-h">产生原因</td>
+    <td width="190" class="td-h">处理办法</td>
+    <td width="91" class="td-h">备注</td>
+  </tr>
+  <tr>
+    <td>0130Z110S009</td>
+    <td>咨询在线客服或致电95533</td>
+    <td>建行安全工具报错</td>
+    <td>需更新或重新下载U盾插件，建行官网——个人网银下载中心——选择网银盾型号—下载安装</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>0250B2114034</td>
+    <td>缺少[会员指定账号行别]字段</td>
+    <td>建行签约过别的会员单位</td>
+    <td>在以前的会员单位解约该建行卡或者换张银行卡签约</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>MCHOZXXX999</td>
+    <td>该席位号不存在或会员席位类型有误</td>
+    <td>建行商户编码写错</td>
+    <td>核对签约银行的正确商户编码</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>MCHOZXXXXX-1</td>
+    <td>系统暂时无法处理交易，请稍后再试</td>
+    <td>席位属性未选择或席位号写错</td>
+    <td>选择“日终结算”或检查席位号是否写的是15位交易账号</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>MCHOZX-40004</td>
+    <td>系统暂时无法处理交易，请稍后再试</td>
+    <td>未选择“在线签约”</td>
+    <td>建行——缴费支付——E商贸通——在线签约</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>0010ZXXE2003</td>
+    <td>系统暂时无法处理交易，请稍后再试</td>
+    <td>客户银行卡问题，结算通卡和信用卡不能签约</td>
+    <td>建议客户办理19位卡号的储蓄卡或者16位理财卡</td>
+    <td>非M字母开头的错误代码均属银行直接反馈错误，需咨询银行进行处理</td>
+  </tr>
+  <tr>
+    <td>MCHOZCH-1204</td>
+    <td>用户签约银行账号不能为空</td>
+    <td>客户开户信息内无银行卡信息所致</td>
+    <td>开户时最好在输入银行卡号页面点击保存</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>MCHOZCH-2026</td>
+    <td>必须是“日终清算”模式类型</td>
+    <td>客户在网银E商贸通下输入席位信息界面中选择的清算模式有误</td>
+    <td>通知客户在网上签约时输入席位信息要选择席位属性“日终清算”方式</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>MCHOZCH-5023</td>
+    <td>当日有转账不能进行解约</td>
+    <td>客户当日有进行出入金操作，导致解约不成功</td>
+    <td>通知客户在T+1日后再进行解约，期间不能进行出入金操作</td>
+    <td>&nbsp;</td>
+  </tr>
+    <tr>
+    <td>MCHOZCH-5024</br>或
+        0010ZXXE2008</td>
+    <td>证件号码错误</td>
+    <td>客户在银行预留的证件号码与在会员单位开户时预留的证件号码不一致</td>
+    <td>通知客户核对在会员单位预留的身份证与银行开户时预留的身份证是否一致</td>
+    <td>&nbsp;</td>
+  </tr>
+    <tr>
+    <td>MCHOZXMCH-15</td>
+    <td>用户名不存在</td>
+    <td>席位号输入错误</td>
+    <td>席位号就是客户的实盘登录账号，重新输入正确的账号再进行签约</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p>工商银行签约出现的问题</p>
+<table width="648" border="1" align="center" cellpadding="0" cellspacing="1">
+  <tr>
+    <td width="54" class="td-h">错误代码</td>
+    <td width="140" class="td-h">代码注释</td>
+    <td width="203" class="td-h">产生原因</td>
+    <td width="209" class="td-h">处理办法</td>
+    <td width="39" class="td-h">备注</td>
+  </tr>
+  <tr>
+    <td>H1099</td>
+    <td>交易市场返回失败，证件号码不符</td>
+    <td>银行卡是通过一代身份证办理的</td>
+    <td>持本人身份证去银行柜台升级一代身份证办理时预留的客户信息为二代身份证客户信息</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>H2207</td>
+    <td>交易市场未签到</td>
+    <td>未在银行规定时间内办理或银行系统故障</td>
+    <td>网银办理时间为：8：30——23.：00</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>解约时出现&mdash;H1009</td>
+    <td>合作方端返回失败&mdash;2041</td>
+    <td>当天有出入金操作</td>
+    <td>建议客户第二个交易办理解约</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>96111630</td>
+    <td>交易异常，如有疑问请点击&ldquo;在线客服&rdquo;咨询</td>
+    <td>重复签约</td>
+    <td>与银行确认是否有签约其他会员单位或解约未成功</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>无</td>
+    <td>你的数据签名有错误，请重新提交</td>
+    <td>由于客户删除了U看的电子证书</td>
+    <td>需要客户重新下载安装控件</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>H2020</td>
+    <td>银行账号在此交易市场已开户</td>
+    <td>客户已与其他会员单位签约过</td>
+    <td>客户要么更换开户的银行卡或者解约该卡与其他会员单位的签约关系</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>96111957</td>
+    <td>您的提交已接受，请不要重复提交</td>
+    <td>客户已提交过一次申请</td>
+    <td>可能由于电脑系统、工行系统升级等网络问题导致，可等一段时间后再进行查询或签约</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+    </div>   
+</div>
+<!--right-end-->
+ </div>
+ <!--whole_fwtx-end-->
+ <div class="clear" style="height:0px; line-height:0px;"></div>
+    <!--特色服务-->
+    <!--#include virtual="/inc/bottom_2014.shtml"-->
+    <!--特色服务-end-->
+    <!--foot-->
+     <!--#include virtual="/inc/foot_2014.shtml"-->
+    <!--foot-end-->
+</body>
+</html>

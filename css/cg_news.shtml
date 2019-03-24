@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>证金贵金属</title>
+<!--#include virtual="/inc/head.shtml"-->
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="/js/jquery.carouFredSel-6.0.4-packed.js"></script>
+<script type="text/javascript" src="http://js.jrj.com.cn/v/swfobject.js"></script>
+<script>
+function playVideo(eleId, videoSrc, title, id, flag, author, summary) {
+	var src = videoSrc;
+	var params = {
+		menu : "false",
+		scale : "noScale",
+		salign : "lt",
+		allowScriptAccess : "always",
+		allowFullScreen : true,
+		bgcolor : "#000000",
+		wmode : "transparent",
+	};
+
+	// no_autoplay 不自动播放
+	var flashvars0 = {
+		mp4_url : src,
+		pic : "http://tg.zhengjin99.com/zhengjin/images/cby.gif",
+		autoplay : 0
+	};
+
+	// autoplay 自动播放
+	var flashvars1 = {
+		mp4_url : src,
+		pic : "http://tg.zhengjin99.com/zhengjin/images/cby.gif",
+		autoplay : 1
+	};
+
+	var attributes = {
+		id : "xmp"
+	};
+
+	var title1 = "<div id='id_video'></div>";
+	$("#id_title").html(title1);
+	if (flag == 0) {
+		swfobject
+				.embedSWF(
+						"http://hk.jrj.com.cn/test/zhengjin99/v/ZhengJinGuiJinShu_FlashMP4Player.swf",
+						"id_video", "492", "393", "10.0.0", "", flashvars0,
+						params, attributes);
+	} else {
+		swfobject
+				.embedSWF(
+						"http://hk.jrj.com.cn/test/zhengjin99/v/ZhengJinGuiJinShu_FlashMP4Player.swf",
+						"id_video", "492", "393", "10.0.0", "", flashvars1,
+						params, attributes);
+		$("#textul_dataList li").each(function() {
+			$(this).removeClass("cur");
+		});
+		$("#" + id).addClass("cur");
+	}
+}
+</script>
+<link href="/css/gd.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+			$(function() {
+				
+				//$('#carousel span').append('<img src="../img/gui/carousel_glare.png" class="glare" />');
+				//$('#thumbs a').append('<img src="../img/gui/carousel_glare_small.png" class="glare" />');
+
+				$('#carousel').carouFredSel({
+					responsive: false,
+					circular: false,
+					auto: false,
+					items: {
+						visible: 1,
+						width: 560,
+						height: '56%'
+					},
+					scroll: {
+						fx: 'directscroll'
+					}
+				});
+
+				$('#thumbs').carouFredSel({
+					responsive: true,
+					circular: false,
+					infinite: false,
+					auto: false,
+					prev: '#prev',
+					next: '#next',
+					items: {
+						visible: {
+							min: 2,
+							max: 6
+						},
+						width: 120,
+						height: '66%'
+					}
+				});
+
+				$('#thumbs a').click(function() {
+					$('#carousel').trigger('slideTo', '#' + this.href.split('#').pop() );
+					$('#thumbs a').removeClass('selected');
+					$(this).addClass('selected');
+					return false;
+				});
+
+			});
+		</script>
+</head>
+<body>
+<div class="box">
+<!--#include virtual="/inc/nav.shtml"-->
+<div style="background:url(/gsxw_images/gsxw_bg.jpg) repeat-x;">
+<div style="width:1001px; margin:0 auto 10px auto; padding-top:5px;" class="clear">
+<div class="fl">
+<div class="left_list mr_b">
+<p class="left_title font_16">公司新闻</p>
+<ul>
+<li><span class="red"><a href="/list_gsxw.shtml" style="color:red;">公司新闻</a></span></li>
+<li><a href="/list_khxs.shtml">客户心声</a></li>
+</ul>
+</div>
+<p class="mr_b"><a href="http://www.zhengjin99.com/fwdt_zxkf.shtml?t=nav06"><img src="/gsxw_images/online.jpg" width="189" height="101"  class="red_bor"/></a></p>
+<p class="red_bor"><img src="/gsxw_images/gsxw_24.jpg" width="187" height="63" /></p>
+</div>
+<div class="fl" style="margin-left:8px; width:802px;">
+<p class="red_bor mr_b"><img src="/gsxw_images/gsxw_banner.jpg" width="800" height="119" /></p>
+<div class="gsxw_r">
+<p class="gsxw_r_title font_12"><strong><a href="/">首页</a></strong> >><a href="${listlink}">公司新闻</a></strong> >>正文</p>
+<div class="con_text">
+<h2>李守君《成功-从优秀员工做起》讲座</h2>
+<p class="hr"></p>
+<p class="news_via mr_b20">2013年10月17日　　来源：证金贵金属</p>
+<p class="font_14">
+<p>2013年10月13日,公司邀请了国内著名的中华企业人才培训学院高级讲师,团队系统建设专家李守君讲师在五环大酒店为全体员工进行了" 成功-从优秀员工做起"的讲座.</p>
+
+<p>李守君讲师曾服务的企业有：北京国色天香餐饮管理有限公司、嘉仁健康集团、香港皇家宝贝专业儿童摄影连锁机构、雷力集团、中原地产、北京圣安卫嘉（集团）、雨鸟国际、北京奥格妮服装有限公司、红黄蓝教育集团、等30多家著名企业，课程得到企业家与学员的普遍好评。</p>
+　　
+<p>视频</p>
+
+<div id="id_title">
+            	
+</div>
+<script>
+playVideo('spjp_video_list','http://newflv.jrj.com.cn/dby/xiaopian.mp4','李守君《成功-从优秀员工做起》讲座','video_1',0,'证金贵金属','尊敬的投资者，您好！欢迎您来到海西商品交易所029号会员单位，天津贵金属交易所第212号会员单位--证金贵金属。证金贵金属作为国内领先的贵金属投资机构，旨在为广大投资者搭建一个贵金属交易的综合服务平台，为广大投资者提供贵金属投资服务业务。');
+</script>
+
+<p>图片</p>
+<div id="wrapper" style="margin-left:100px;">
+	<div id="carousel-wrapper">
+		<img id="shadow" src="../img/gui/carousel_shadow.png" />
+		<div id="carousel">
+			<span id="pixar"><img src="/images/1.JPG" /></span>
+			<span id="bugs"><img src="/images/2.JPG" /></span>
+			<span id="cars"><img src="/images/3.JPG" /></span>
+			<span id="incred"><img src="/images/4.JPG" /></span>
+			<span id="monsters"><img src="/images/5.JPG" /></span>
+			<span id="nemo"><img src="/images/6.JPG" /></span>
+			<span id="rat"><img src="/images/7.JPG" /></span>
+			<span id="toystory"><img src="/images/8.JPG" /></span>
+			<span id="up"><img src="/images/9.JPG" /></span> 
+            <span id="walle"><img src="/images/10.JPG" /></span> </div>
+	</div>
+	<div id="thumbs-wrapper">
+		<div id="thumbs">
+			<a href="#pixar" class="selected"><img width="120" height="80" src="/images/small01.JPG"></a>
+			<a href="#bugs"><img width="120" height="80" src="/images/small02.JPG"></a> <a href="#cars">
+			<img width="120" height="80" src="/images/small03.JPG"></a> <a href="#incred">
+			<img width="120" height="80" src="/images/small04.JPG"></a> <a href="#monsters">
+			<img width="120" height="80" src="/images/small05.JPG"></a> <a href="#nemo">
+			<img width="120" height="80" src="/images/small06.JPG"></a> <a href="#rat">
+			<img width="120" height="80" src="/images/small07.JPG"></a> <a href="#toystory">
+			<img width="120" height="80" src="/images/small08.JPG"></a> <a href="#up">
+			<img width="120" height="80" src="/images/small09.JPG"></a> <a href="#walle">
+			<img width="120" height="80" src="/images/small10.JPG"></a> </div>
+		<a id="prev" href="#"></a><a id="next" href="#"></a></div>
+</div>
+<div id="donate-spacer">
+</div>
+<div id="donate">
+	
+</div>
+<p>李守君讲师简介:员工心态调整专家,聚成股份主持人训练导师,聚成股份高级培训师,团队执行力训练专家,企业会议管理策划专家,团队系统建设专家,中华企业人才培训学院高级讲师.</p>
+
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<!--#include virtual="/inc/bank_new.shtml"-->
+<DIV style=" cursor: pointer; bottom:0; right:0;position:fixed; display:block;_position:absolute;" id=goTopBtn><IMG border=0 src="/gsxw_images/lanren_top.jpg"></DIV>
+<SCRIPT type=text/javascript>goTopEx();</SCRIPT>
+</div>
+<div class="copyright mr_t10">
+<div style="margin:0 auto; width:1001px; padding:20px 0">
+<p><a href="/ljwm_gsgk.shtml">关于我们</a>|　<a href="ljwm_lxwm.shtml">联系我们</a>|　<a href="/mzsm.shtml">免责声明</a>|　<a href="/ljwm_cpyc.shtml">诚聘英才</a>|　<a href="/fxts.shtml">风险提示</a>|　<a href="/ysbmtk.shtml">隐私保密条款</a></p><p>京ICP备4008100007号&nbsp;Copyright <span style="font-family:'微软雅黑'"></span>2012版权所有<script type="text/javascript">var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F0787f8e5eb4663cb2535ae2a09f33bf6' type='text/javascript'%3E%3C/script%3E"));</script></p>
+<!--新增代码--><div class="clear" style="*margin-top:10px; margin:0 auto 10px auto; width:895px"><ul class="qixia"><li>中国金融在线旗下成员：</li><li><a href="http://www.zhengjin99.com/" class="zj99"></a></li><li><a href="http://www.jrj.com.cn/" class="jrj" style=" margin:0 auto; width:100px"></a></li><li><a href="http://www.stockstar.com/" class="zx"></a></li><li><a href="http://www.genius.com.cn/" class="jlcj"></a></li><li><a href="http://www.istartrade.com/" class="zxjr"></a></li></ul></div><!--结束--><p>提示：贵金属交易有风险 入市须谨慎</p>
+</div>
+</div>
+</div>
+
+</body>
+</html>

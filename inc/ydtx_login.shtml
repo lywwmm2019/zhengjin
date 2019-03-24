@@ -1,0 +1,113 @@
+<style>
+.ydtx,.ydtx p{ margin:0; padding:0;font-size:14px}
+.ydtx p,.ydtx div{ color:#FFF;font-size:14px}
+.ydtx a{ font-size:12px;color:#FFF}
+.ydtx a:hover{ color:#FC0}
+.ydtx .input_text{ width:88px; height:16px;line-height:16px;}
+.ydtx .btn{ background:url(images/btn_06.jpg) no-repeat; width:76px; height:27px; cursor:pointer; border:none;}
+.ydtx td{height:27px}
+</style>
+
+<div style="clear: both; overflow: hidden; zoom: 1; width: 200px; position: absolute; left: 213px; top: 149px;" id="ydtx_box" class="ydtx">
+<div style="background:url(images/rk_01.jpg) no-repeat; width:166px; height:143px; padding:73px 0 0 5px;float:left">
+<table width="160" border="0">
+  <tr>
+    <td align="right" width="70">用户名：</td>
+    <td><input id="passport_ydtx2" name="" type="text" class="input_text" style="margin: 0;"/></td>
+  </tr>
+  <tr>
+     <td align="right">密码：</td>
+    <td width="90"><input id="password_ydtx2" name="" type="password" class="input_text" style="margin: 0;" onkeypress="BindEnter_ydtx(event)"/></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td height="30"><input name="" type="button" class="btn"  value="" onclick="zjgjs.sso.login_ydtx(2)"/></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" valign="bottom"><a href="http://tg.zhengjin99.com/zhengjin/ydtx/index.jsp" target="_blank">没有账号，了解更多</a></td>
+    </tr>
+</table>
+
+</div>
+<div style="cursor: pointer; float:left; background:url(images/rk_03.png) no-repeat 0 -92px; width:29px; height:92px;MARGIN-TOP:110px" id="ydtx_btn">
+
+</div></div>
+<form action="http://zhibo.zhengjin99.com/hxzb/vip/viplogin.do" id="zhibo_jump" method="post">
+<input name="mobile" value="" id="ydtx_mobile" type="hidden"/>
+<input name="password" value="" id="ydtx_password" type="hidden"/>
+<input name="userName" value="" id="ydtx_userName" type="hidden"/>
+<input name="userType" value="" id="ydtx_userType" type="hidden"/>
+</form>
+
+<script>
+var oBox = document.getElementById('ydtx_box');
+var oBtn = document.getElementById('ydtx_btn');
+oBox.onmouseover = function(){
+	oBox.style.left = 0;
+	oBtn.style.backgroundPosition = '0 0';
+}
+//点击隐藏
+oBtn.onclick = function(){
+	oBox.style.left = '-171px';
+	oBtn.style.backgroundPosition = '0 -92px';
+}
+//移出隐藏 
+/*oBox.onmouseout = function(){
+	oBox.style.left = '-171px';
+	oBtn.style.backgroundPosition = '0 -92px';
+}*/
+
+//绑定enter提交   首页的弹窗提交
+function BindEnter_ydtx(obj){
+    //使用document.getElementById获取到按钮对象
+    //var button = document.getElementById('test');
+    if(obj.keyCode == 13) {
+		zjgjs.sso.login_ydtx(2);
+		obj.returnValue = false;
+        }
+
+}
+
+function heartBeat_ydtx(){
+		var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+		var baseTop = 150;	
+		var baseTop2 = 100;	
+		var ele1 = document.getElementById("ydtx_box");
+		var ele2 = document.getElementById("popLoginWin");
+		var ele3 = document.getElementById("change_win");
+
+		var windowWidth, windowHeight,windowScrollTop; 
+		if (self.innerHeight) { // all except Explorer 
+		windowWidth = self.innerWidth; 
+		windowHeight = self.innerHeight; 
+		windowScrollTop = self.scrollTop; 
+		} else if (document.documentElement && document.documentElement.clientHeight) { // Explorer 6 Strict Mode 
+		windowWidth = document.documentElement.clientWidth; 
+		windowHeight = document.documentElement.clientHeight; 
+		windowScrollTop = document.documentElement.scrollTop; 
+		} else if (document.body) { // other Explorers 
+		windowWidth = document.body.clientWidth; 
+		windowHeight = document.body.clientHeight; 
+		windowScrollTop = document.body.scrollTop; 
+		}
+
+		var totalHeight = windowHeight;
+		var menuHeight = 450;
+		if(menuHeight > totalHeight){
+			baseTop = 0;
+		}else{
+			baseTop = (totalHeight - menuHeight) / 2;
+		}
+		if(ele1 && ele1.style.display != "none"){
+			ele1.style.top = (scrollTop + baseTop2) + "px";
+		}
+		if(ele2 && ele2.style.display != "none"){
+			ele2.style.top = (scrollTop + baseTop2) + "px";
+		}
+		if(ele3 && ele3.style.display != "none"){
+			ele2.style.top = (scrollTop + 428) + "px";
+		}
+	}
+
+	window.setInterval("heartBeat_ydtx()",300);
+</script>

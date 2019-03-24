@@ -1,0 +1,724 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta name="keywords" content="证金贵金属,白银,白银分析,白银投资,白银价格,白银交易,炒白银,白银走势,白银软件,模拟炒银,美联储,白银在线分析" />
+<meta name="description" content="证金贵金属，首家赴美纳斯达克上市公司中国最大最专业的白银投资服务平台，致力于白银投资、白银交易、现货白银、白银价格、炒白银、现货白银走势、白银行情、模拟炒银、现货白银开户、投资资讯、分析评论、贵金属投资等贵金属综合性投资服务" />
+<title>海西商品交易所_投资品种_证金贵金属</title>
+<!--#include virtual="/inc/head_link_2014.shtml"-->
+<script src="/js/highstock.js" type="text/javascript"></script>
+<script src="../js/showChart-new.js" type="text/javascript"></script>
+<script>
+	$(document).ready(function(){
+		var dataQuotation='1999001';
+		var idName='baiyin';
+		var price=new Price();
+		
+		$('#hx_kh').bind('click',function(){
+			var r=confirm('海商所暂无网上开户业务，此按钮跳转至津贵所网上开户，请问您是否继续？');
+			if(r==true){
+				location.href="http://tg.zhengjin99.com/zhengjin/spAndYyKH/khts.jsp";
+			}
+		})
+		$('.tzpz_cp_tab1 div').bind({'mouseenter':function(){
+			if($('.tzpz_cp_tab1 div p').is(':animated')){
+				//return
+			}
+			$(this).find('p').animate({left:'0'},500);
+		},'mouseleave':function(){
+			if($('.tzpz_cp_tab1 div p').is(':animated')){
+				//return
+			}
+			$(this).find('p').animate({left:'162px'},500);
+		}});
+		
+		$('.tzpz_cp_tab1').bind('mouseleave',function(){
+			$('.tzpz_cp_tab1 div p').animate({left:'162px'},500);
+		})
+		
+		
+		
+		$('.index_quotation_name').bind('click',function(){
+			idName=$(this).attr('id');
+			$(this).siblings().addClass('tzpz_quotation_unselect');
+			$(this).removeClass('tzpz_quotation_unselect');
+			$('.cp_tab').hide();
+			$('#'+idName+'_tab').show();
+			dataQuotation=$(this).attr('data-quotation');
+			$('.touziChart').html('');
+			$('#container2').hide();
+			$('#container').show();
+			price.getTable(dataQuotation,idName);
+			price.MinuteChart(dataQuotation);	
+			$('#Minute').hide();
+			$('#K').show();		
+		})
+		
+		$('#K').bind('click',function(){
+			$('#container').hide();
+			$('#container2').show();
+			$('#K').hide();
+			$('#Minute').show();
+		})
+		$('#Minute').bind('click',function(){
+			$('#container2').hide();
+			$('#container').show();
+			$('#Minute').hide();
+			$('#K').show();
+		})
+		
+		price.MinuteChart(dataQuotation);
+		price.KChart(dataQuotation);
+		price.getTable(dataQuotation,idName);
+		var tChart=setInterval(function(){
+			price.MinuteChart(dataQuotation);
+			//price.KChart(dataQuotation);
+			price.getTable(dataQuotation,idName);
+		},3000);
+	})
+	
+	function setTab(classname,num,obj){
+		var length=$(obj).parent().children().length;
+		$(obj).addClass('sl');
+		$(obj).siblings().removeClass('sl');
+		for(var i=0;i<length;i++){
+			$('.'+classname+i).hide();
+		}
+		$('.'+classname+num).show();
+	}
+</script>
+</head>
+
+<body>
+	<!--  -->
+	<!--#include virtual="/inc/head_2014.shtml"-->
+
+	<!--  -->
+	<!--#include virtual="/inc/nav_touzi_haixi.shtml"-->
+   <!--  -->
+    <!--#include virtual="/inc/touzitc.shtml"-->
+    <div id="tzpz_index" class="pr">
+     <!--走势分析-->
+     <input type="button" class="zsfx" value="" />     
+    	<div class="tzpz_quotation clear over">
+        	<div class="tzpz_quotation_left fl">
+                <div class="index_quotation_name pr" id="baiyin" data-quotation="1999001">
+                    <div class="over"><span class="name">现货白银</span><img src="../images2014/ag.png" width="22" height="22" /></div>
+                    <div class="touziChart">
+                    </div>
+                </div>
+                
+                <!-- div class="index_quotation_name pr tzpz_quotation_unselect" id="bojin" data-quotation="1999006">
+                	<div class="over"><span class="name">现货铂金</span><img src="../images2014/pt.png" width="22" height="22" /></div>
+                    <div class="touziChart">
+                    </div>
+                </div> -->
+                <div class="index_quotation_name pr tzpz_quotation_unselect" id="tong" data-quotation="1999010">
+                	<div class="over"><span class="name">现货铜</span><img src="../images2014/cu.png" width="22" height="22" /></div>
+                    <div class="touziChart">
+                    </div>
+                </div><!---->
+                <div class="index_quotation_name pr tzpz_quotation_unselect" id="nie" data-quotation="1999008">
+                	<div class="over"><span class="name">现货镍</span><img src="../images2014/ni.png" width="22" height="22" /></div>
+                    <div class="touziChart">
+                    </div>
+                </div>
+                <div class="index_quotation_name pr tzpz_quotation_unselect" id="lv" data-quotation="1999012">
+                	<div class="over"><span class="name">现货铝</span><img src="../images2014/al.png" width="22" height="22" /></div>
+                    <div class="touziChart">
+                    </div>
+                </div>
+                <div class="index_quotation_name pr tzpz_quotation_unselect" id="oil" data-quotation="1999014">
+                	<div class="over"><span class="name">海西油</span><img src="../images2014/oil.png" width="22" height="22" /></div>
+                    <div class="touziChart">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tzpz_quotation_right" id="container" style="width:650px;height:330px;overflow:hidden;"> </div>
+            <div class="tzpz_quotation_right hide" id="container2" style="width:650px;height:330px;overflow:hidden;"> </div>
+            
+            <div class="clear"></div>
+            
+            <div class="pa tc hand" style="width:54px;height:22px;right:15px;top:41px;color:#444;background:#f7f7f7;" id="K">
+                日K线
+            </div>
+            <div class="pa tc hand hide" style="width:54px;height:22px;right:15px;top:41px;color:#444;background:#f7f7f7;" id="Minute">
+                分时线
+            </div>
+        </div>
+        
+        <div class="clear over">
+        	<div class="fl tzpz_cp_left">
+            	<div class="tzpz_cp_title mb20">
+                    <span class="sl" onclick="setTab('tzpz_cp_tab',1,this)">产品优势</span>
+                    <span onclick="setTab('tzpz_cp_tab',2,this)">交易规则</span>
+                    <span onclick="setTab('tzpz_cp_tab',3,this)">产品制度</span>
+                    <span onclick="setTab('tzpz_cp_tab',4,this)">资金缓存</span>
+                    <div class="clear" style="height:0;line-height:0;"></div>
+                </div>
+                
+                <!-- 白银 -->
+                <div id="baiyin_tab" class="cp_tab">
+                    <div class="tzpz_cp_tab1 " id="baiyin_tab1">
+                        <div class="tzpz_cp_t1">22小时交易<p>不受时间限制，随时有空随时炒</p></div>
+                        <div class="tzpz_cp_t2">双向交易<p>买涨买跌都能赚钱</p></div>
+                        <div class="tzpz_cp_t3">T+0随买随卖<p>提高资金利用率</p></div>
+                        <div class="tzpz_cp_t8">交易数据第三方监管<p>交易数据由第三方存管 保护投资者合法权益</p></div>
+                        <div class="tzpz_cp_bd"></div>
+                        <div class="tzpz_cp_t5">无涨跌停限制<p>买卖更自由 不设涨跌停限制 不存在受涨跌幅限制无法买卖的情况</p></div>
+                        <div class="tzpz_cp_t6">更公平<p>不存在庄家操控可能 接轨国际 公正公平 价格与国际市场同步</p></div>
+                        <div class="tzpz_cp_t7">保证金专户管理<p>工行、建行等多家银行保证金专户管理，安全放心</p></div>
+                        <!--<div class="tzpz_cp_t4">5%-20%保证金<p>更低的资金占用率 只需支付交易金额的5%-20%， </p></div>--> 
+                       <div class="clear" style="height:0;line-height:0;"></div>
+                    </div>
+                    <div class="tzpz_cp_tab2 hide" id="baiyin_tab2">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td>交易品种</td>
+                          <td>现货白银1千克，现货白银5千克，现货白银15千克，现货白银50千克</td>
+                        </tr>
+                        <tr>
+                          <td>交易单位</td>
+                          <td>1kg/手、5kg/手、15kg/手和50kg/手</td>
+                        </tr>
+                        <tr>
+                          <td>报价单位</td>
+                          <td>元/千克</td>
+                        </tr>
+                        <tr>
+                          <td>最小变动价格</td>
+                          <td>1元/千克</td>
+                        </tr>
+                        <tr>
+                          <td>交易时间</td>
+                          <td>周一早上8:00―周六凌晨4:00（结算时间、国家法定节假日及国际市场休息除外）</td>
+                        </tr>
+                        <tr>
+                          <td>结算时间</td>
+                          <td>交易日内 4：00-6：00（7：00），结算期间内暂停交易</td>
+                        </tr>
+                        <tr>
+                          <td>保证金</td>
+                          <td>100%<br /></td>
+                        </tr>
+                        <tr>
+                          <td>报价点差</td>
+                          <td>1kg/手、5kg/手、15kg/手的是6点，50kg的是8点</td>
+                        </tr>
+                        <tr>
+                          <td>交易手续费</td>
+                          <td>1kg/手、5kg/手、15kg/手的是成交金额的0.06%(建仓和平仓双向收取)，50kg的是成交金额的0.08%(建仓和平仓双向收取)</td>
+                        </tr>
+                        <tr>
+                          <td>单笔最大交易限额</td>
+                          <td>1kg的是100手，5kg的是100手，15kg的是50手，50kg的是20手</td>
+                        </tr>
+                        <tr>
+                          <td>最大持仓限额</td>
+                          <td>10吨（1KG≤200手、5KG≤400手、15KG≤520手、50KG≤100手）</td>
+                        </tr>
+                        <tr>
+                          <td>延期补偿费</td>
+                          <td>建仓时成交金额0.01%/天</td>
+                        </tr>
+                        <tr>
+                          <td>强行平仓</td>
+                          <td>持仓风险率=客户交易账户净值/持仓占用交易保证金x100%  （当风险率低于50%时，未平仓合约将被强行平仓）</td>
+                        </tr>
+                        
+                      </table>
+    
+                    </div>
+                    <div class="tzpz_cp_tab3 hide" id="baiyin_tab3">
+                        <div class="f18 lh200">海西商品交易所交易规则（白银篇）</div>
+                        <p>清算</p>
+                        <p>延期交收交易实行集中、T+1的资金清算原则。 "集中"是指由交易所和托管银行对会员及客户资金统一进行清算。 "T+1"是指交易所对客户和会员每笔交易所产生的盈亏及费用在第二个工作日内进行资金清算。 会员及客户须在交易所指定的银行开立资金清算账户；资金托管银行根据交易系统每日结算数据，在规定时间内进行资金清算。 综合会员及客户可通过交易系统实时查询资金清算明细数据，如有异意，24小时内向交易所提出复核申请。</p>
+                        <p>交收<span class="cpzd_more">更多内容请您点击立即阅读</span></p>
+                        <div class="tr mt20"><input name="" type="button" class="down_cpzd" onclick="window.open('http://tg.zhengjin99.com/apl/tool/flash.jsp?file=/spage/info/735/20151028/1446020499308.pdf.swf')" /></div>
+
+                        
+                    </div>
+                    <div class="tzpz_cp_tab4 mt20 hide" id="baiyin_tab4">
+                        <img src="../images2014/tzpz_index_zjcg.png" width="650" height="245" />
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <!-- 铂金
+                <div id="bojin_tab" class="cp_tab hide">
+                    <div class="tzpz_cp_tab1" id="bojin_tab1">
+                        <div class="tzpz_cp_t1">22小时交易<p>不受时间限制，随时有空随时炒</p></div>
+                        <div class="tzpz_cp_t2">双向交易<p>买涨买跌都能赚钱</p></div>
+                        <div class="tzpz_cp_t3">T+0随买随卖<p>提高资金利用率</p></div>
+                        <div class="tzpz_cp_t4">20%保证金<p>更低的资金占用率 只需支付交易金额的20% </p></div>
+                        <div class="tzpz_cp_bd"></div>
+                        <div class="tzpz_cp_t5">无涨跌停限制<p>买卖更自由 不设涨跌停限制 不存在受涨跌幅限制无法买卖的情况</p></div>
+                        <div class="tzpz_cp_t6">更公平<p>不存在庄家操控可能 接轨国际 公正公平 价格与国际市场同步</p></div>
+                        <div class="tzpz_cp_t7">保证金专户管理<p>工行、建行等多家银行保证金专户管理，安全放心</p></div>
+                        <div class="tzpz_cp_t8">交易数据第三方监管<p>交易数据由第三方存管 保护投资者合法权益</p></div>
+                        <div class="clear" style="height:0;line-height:0;"></div>
+                    </div>
+                    <div class="tzpz_cp_tab2 hide" id="bojin_tab2">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td>交易品种</td>
+                          <td>铂金PT</td>
+                        </tr>
+                        <tr>
+                          <td>交易单位</td>
+                          <td>1kg/手</td>
+                        </tr>
+                        <tr>
+                          <td>报价单位</td>
+                          <td>元/克</td>
+                        </tr>
+                        <tr>
+                          <td>最小变动价格</td>
+                          <td>0.01元/克</td>
+                        </tr>
+                        <tr>
+                          <td>交易时间</td>
+                          <td>周一早上8:00―周六凌晨4:00（结算时间、国家法定节假日及国际市场休息除外）</td>
+                        </tr>
+                        <tr>
+                          <td>结算时间</td>
+                          <td>交易日内 4：00-6：00（7：00），结算期间内暂停交易</td>
+                        </tr>
+                        <tr>
+                          <td>保证金</td>
+                          <td>合约价值的20%</td>
+                        </tr>
+                        <tr>
+                          <td>报价点差</td>
+                          <td>240点</td>
+                        </tr>
+                        <tr>
+                          <td>单笔最大交易限额</td>
+                          <td>5手</td>
+                        </tr>
+                        <tr>
+                          <td>最大持仓限额</td>
+                          <td>50手</td>
+                        </tr>
+                        <tr>
+                          <td>交易手续费</td>
+                          <td>成交金额的0.08%(建仓和平仓双向收取)</td>
+                        </tr>
+                        <tr>
+                          <td>延期补偿费</td>
+                          <td>建仓时成交金额的0.2‰/天</td>
+                        </tr>
+                        <tr>
+                          <td>强行平仓</td>
+                          <td>持仓风险率=客户交易账户净值/持仓占用交易保证金x100%  （当风险率低于50%时，未平仓合约将被强行平仓）</td>
+                        </tr>
+                      </table>
+    
+                    </div>
+                    <div class="tzpz_cp_tab3 hide" id="bojin_tab3">
+                        <div class="f18 lh200">铂金的交易制度</div>
+                        <p>清算</p>
+                        <p>延期交收交易实行集中、T+1的资金清算原则。 "集中"是指由交易所和托管银行对会员及客户资金统一进行清算。 "T+1"是指交易所对客户和会员每笔交易所产生的盈亏及费用在第二个工作日内进行资金清算。会员及客户须在交易所指定的银行开立资金清算账户；资金托管银行根据交易系统每日结算数据，在规定时间内进行资金清算。 综合会员及客户可通过交易系统实时查询资金清算明细数据，如有异意，24小时内向交易所提出复核申请。</p>
+                        <p>交收<span class="cpzd_more">更多内容请您点击立即阅读</span></p>
+                        <div class="tr mt20"><input name="" type="button" class="down_cpzd" onclick="location.href='http://ftp.zhengjin99.com/hx_pt.doc'" /></div>
+                        
+                    </div>
+                    <div class="tzpz_cp_tab4 mt20 hide" id="bojin_tab4">
+                        <img src="../images2014/tzpz_index_zjcg.png" width="650" height="245" />
+                    </div>
+                    
+                </div> -->
+                
+                
+                
+                <!-- 铜 -->
+                <div id="tong_tab" class="cp_tab hide">
+                    <div class="tzpz_cp_tab1" id="tong_tab1">
+                        <div class="tzpz_cp_t1">22小时交易<p>不受时间限制，随时有空随时炒</p></div>
+                        <div class="tzpz_cp_t2">双向交易<p>买涨买跌都能赚钱</p></div>
+                        <div class="tzpz_cp_t3">T+0随买随卖<p>提高资金利用率</p></div>
+                        <div class="tzpz_cp_t8">交易数据第三方监管<p>交易数据由第三方存管 保护投资者合法权益</p></div>
+                        <div class="tzpz_cp_bd"></div>
+                        <div class="tzpz_cp_t5">无涨跌停限制<p>买卖更自由 不设涨跌停限制 不存在受涨跌幅限制无法买卖的情况</p></div>
+                        <div class="tzpz_cp_t6">更公平<p>不存在庄家操控可能 接轨国际 公正公平 价格与国际市场同步</p></div>
+                        <div class="tzpz_cp_t7">保证金专户管理<p>工行、建行等多家银行保证金专户管理，安全放心</p></div>
+                        <!--<div class="tzpz_cp_t4">5%保证金<p>更低的资金占用率 只需支付交易金额的5% </p></div>-->
+                        <div class="clear" style="height:0;line-height:0;"></div>
+                    </div>
+                    <div class="tzpz_cp_tab2 hide" id="tong_tab2">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td>交易品种</td>
+                          <td>现货铜1T</td>
+                        </tr>
+                        <tr>
+                          <td>交易单位</td>
+                          <td>1吨/手</td>
+                        </tr>
+                        <tr>
+                          <td>报价单位</td>
+                          <td>元/吨</td>
+                        </tr>
+                        <tr>
+                          <td>最小变动价格</td>
+                          <td>1元/吨</td>
+                        </tr>
+                        <tr>
+                          <td>交易时间</td>
+                          <td>夏令时：交易日内8:00-次日凌晨2:00，冬令时：交易日内9:00-次日凌晨3:00</td>
+                        </tr>
+                        <tr>
+                          <td>结算时间</td>
+                          <td>夏令时：交易日内4:00-6:00，冬令时：交易日内4:00-7:00</td>
+                        </tr>
+                        <tr>
+                          <td>报价点差</td>
+                          <td>40点</td>
+                        </tr>
+                        <tr>
+                          <td>单笔最大交易额</td>
+                          <td>25手</td>
+                        </tr>
+                        <tr>
+                          <td>最大持仓限额</td>
+                          <td>150手</td>
+                        </tr>
+                        <tr>
+                          <td>保证金</td>
+                          <td>100%</td>
+                        </tr>
+                        <tr>
+                          <td>交易手续费</td>
+                          <td>成交金额的0.08%(建仓和平仓双向收取)</td>
+                        </tr>
+                        <tr>
+                          <td>延期补偿费</td>
+                          <td>建仓时成交金额的0.02/%天</td>
+                        </tr>
+                        <tr>
+                          <td>强行平仓</td>
+                          <td>持仓风险率=客户交易账户净值/持仓占用交易保证金x100%  （当风险率低于50%时，未平仓合约将被强行平仓）</td>
+                        </tr>
+                        
+                      </table>
+    
+                    </div>
+                    <div class="tzpz_cp_tab3 hide" id="tong_tab3">
+                        <div class="f18 lh200">海西商品交易所交易规则（现货铜篇）</div>
+                        <p>清算</p>
+                        <p>延期交收交易实行集中、T+1的资金清算原则。 "集中"是指由交易所和托管银行对会员及客户资金统一进行清算。 "T+1"是指交易所对客户和会员每笔交易所产生的盈亏及费用在第二个工作日内进行资金清算。 会员及客户须在交易所指定的银行开立资金清算账户；资金托管银行根据交易系统每日结算数据，在规定时间内进行资金清算。 会员及客户可通过交易系统实时查询资金清算明细数据，如有异意，一个工作日内向交易所提出复核申请，否则视为会员和客户认可当次资金清算数据。</p>
+                        <p>交收</p>
+                        <p>持有现货铜多头的客户在每个交易日上午10点至<span class="cpzd_more">更多内容请您点击立即阅读</span></p>
+                        <div class="tr mt20"><input name="" type="button" class="down_cpzd" onclick="window.open('http://tg.zhengjin99.com/apl/tool/flash.jsp?file=/spage/info/735/20151028/1446020474306.pdf.swf')" /></div>
+                        
+                    </div>
+                    <div class="tzpz_cp_tab4 mt20 hide" id="tong_tab4">
+                        <img src="../images2014/tzpz_index_zjcg.png" width="650" height="245" />
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <!-- 镍 -->
+                <div id="nie_tab" class="cp_tab hide">
+                    <div class="tzpz_cp_tab1" id="nie_tab1">
+                        <div class="tzpz_cp_t1">18小时交易<p>不受时间限制，随时有空随时炒</p></div>
+                        <div class="tzpz_cp_t2">双向交易<p>买涨买跌都能赚钱</p></div>
+                        <div class="tzpz_cp_t3">T+0随买随卖<p>提高资金利用率</p></div>
+                        <div class="tzpz_cp_t8">交易数据第三方监管<p>交易数据由第三方存管 保护投资者合法权益</p></div>
+                        
+                        <div class="tzpz_cp_bd"></div>
+                        <div class="tzpz_cp_t5">无涨跌停限制<p>买卖更自由 不设涨跌停限制 不存在受涨跌幅限制无法买卖的情况</p></div>
+                        <div class="tzpz_cp_t6">更公平<p>不存在庄家操控可能 接轨国际 公正公平 价格与国际市场同步</p></div>
+                        <div class="tzpz_cp_t7">保证金专户管理<p>工行、建行等多家银行保证金专户管理，安全放心</p></div>
+                        <!--<div class="tzpz_cp_t4">8%保证金<p>更低的资金占用率 只需支付交易金额的8% </p></div>-->
+                        <div class="clear" style="height:0;line-height:0;"></div>
+                    </div>
+                    <div class="tzpz_cp_tab2 hide" id="nie_tab2">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td>交易品种</td>
+                          <td>现货镍100kg</td>
+                        </tr>
+                        <tr>
+                          <td>交易单位</td>
+                          <td>100千克/手</td>
+                        </tr>
+                        <tr>
+                          <td>报价单位</td>
+                          <td>元/千克</td>
+                        </tr>
+                        <tr>
+                          <td>最小变动价格</td>
+                          <td>0.01元/千克</td>
+                        </tr>
+                        <tr>
+                          <td>交易时间</td>
+                          <td>夏令时：交易日内8:00-次日凌晨2:00，冬令时：交易日内9:00-次日凌晨3:00</td>
+                        </tr>
+                        <tr>
+                          <td>结算时间</td>
+                          <td>夏令时：交易日内4:00-6:00，冬令时：交易日内4:00-7:00</td>
+                        </tr>
+                        <tr>
+                          <td>报价点差</td>
+                          <td>15点</td>
+                        </tr>
+                        <tr>
+                          <td>单笔最大交易额</td>
+                          <td>100手</td>
+                        </tr>
+                        <tr>
+                          <td>最大持仓限额</td>
+                          <td>600手</td>
+                        </tr>
+                        <tr>
+                          <td>保证金</td>
+                          <td>100%</td>
+                        </tr>
+                        <tr>
+                          <td>交易手续费</td>
+                          <td>成交金额的0.08%(建仓和平仓双向收取)</td>
+                        </tr>
+                        <tr>
+                          <td>延期补偿费</td>
+                          <td>建仓时成交金额的0.02%/天</td>
+                        </tr>
+                        <tr>
+                          <td>强行平仓</td>
+                          <td>持仓风险率=客户交易账户净值/持仓占用交易保证金x100%  （当风险率低于50%时，未平仓合约将被强行平仓）</td>
+                        </tr>
+                        
+                      </table>
+    
+                    </div>
+                    <div class="tzpz_cp_tab3 hide" id="nie_tab3">
+                        <div class="f18 lh200">海西商品交易所交易规则（现货镍篇）</div>
+                        <p>清算</p>
+                        <p>延期交收交易实行集中、T+1的资金清算原则。 "集中"是指由交易所和托管银行对会员及客户资金统一进行清算。"T+1"是指交易所对客户和会员每笔交易所产生的盈亏及费用在第二个工作日内进行资金清算。 会员及客户须在交易所指定的银行开立资金清算账户；资金托管银行根据交易系统每日结算数据，在规定时间内进行资金清算。会员及客户可通过交易系统实时查询资金清算明细数据，如有异意，一个工作日内向交易所提出复核申请，否则视为会员和客户认可当次资金清算数据。</p>
+                        <p>交收</p>
+                        <p>持有现货镍多头的客户在每个交易日上午10点至<span class="cpzd_more">更多内容请您点击立即阅读</span></p>
+                        <div class="tr mt20"><input name="" type="button" class="down_cpzd" onclick="window.open('http://tg.zhengjin99.com/apl/tool/flash.jsp?file=/spage/info/735/20151028/1446020448258.pdf.swf')" /></div>
+                        
+                    </div>
+                    <div class="tzpz_cp_tab4 mt20 hide" id="nie_tab4">
+                        <img src="../images2014/tzpz_index_zjcg.png" width="650" height="245" />
+                    </div>
+                    
+                </div>
+                
+                
+                <!-- 铝 -->
+                <div id="lv_tab" class="cp_tab hide">
+                    <div class="tzpz_cp_tab1" id="lv_tab1">
+                        <div class="tzpz_cp_t1">18小时交易<p>不受时间限制，随时有空随时炒</p></div>
+                        <div class="tzpz_cp_t2">双向交易<p>买涨买跌都能赚钱</p></div>
+                        <div class="tzpz_cp_t3">T+0随买随卖<p>提高资金利用率</p></div>
+                        <div class="tzpz_cp_t8">交易数据第三方托管<p>交易数据由第三方托管 保护投资者合法权益</p></div>
+                        <div class="tzpz_cp_bd"></div>
+                        <div class="tzpz_cp_t5">无涨跌停限制<p>买卖更自由 不设涨跌停限制 不存在受涨跌幅限制无法买卖的情况</p></div>
+                        <div class="tzpz_cp_t6">更公平<p>不存在庄家操控可能 接轨国际 公正公平 价格与国际市场同步</p></div>
+                        <div class="tzpz_cp_t7">保证金专户管理<p>工行、建行等多家银行保证金专户管理，安全放心</p></div>
+                       <!-- <div class="tzpz_cp_t4">5%保证金<p>更低的资金占用率 只需支付交易金额的5% </p></div>-->
+                        <div class="clear" style="height:0;line-height:0;"></div>
+                    </div>
+                    <div class="tzpz_cp_tab2 hide" id="lv_tab2">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td>交易品种</td>
+                          <td>现货铝1T</td>
+                        </tr>
+                        <tr>
+                          <td>交易单位</td>
+                          <td>1吨/手</td>
+                        </tr>
+                        <tr>
+                          <td>报价单位</td>
+                          <td>元/吨</td>
+                        </tr>
+                        <tr>
+                          <td>最小变动价格</td>
+                          <td>1元/吨</td>
+                        </tr>
+                        <tr>
+                          <td>交易时间</td>
+                          <td>夏令时：交易日内8:00-次日凌晨2:00，冬令时：交易日内9:00-次日凌晨3:00</td>
+                        </tr>
+                        <tr>
+                          <td>结算时间</td>
+                          <td>夏令时：交易日内4:00-6:00，冬令时：交易日内4:00-7:00</td>
+                        </tr>
+                        <tr>
+                          <td>报价点差</td>
+                          <td>12点</td>
+                        </tr>
+                        <tr>
+                          <td>单笔最大交易额</td>
+                          <td>100手</td>
+                        </tr>
+                        <tr>
+                          <td>最大持仓限额</td>
+                          <td>500手</td>
+                        </tr>
+                        <tr>
+                          <td>保证金</td>
+                          <td>100%</td>
+                        </tr>
+                        <tr>
+                          <td>交易手续费</td>
+                          <td>成交金额的0.08%(建仓和平仓双向收取)</td>
+                        </tr>
+                        <tr>
+                          <td>延期补偿费</td>
+                          <td>建仓时成交金额的0.02%/天</td>
+                        </tr>
+                        <tr>
+                          <td>强行平仓</td>
+                          <td>持仓风险率=客户交易账户净值/持仓占用交易保证金x100%  （当风险率低于50%时，未平仓合约将被强行平仓）</td>
+                        </tr>
+                        
+                      </table>
+    
+                    </div>
+                    <div class="tzpz_cp_tab3 hide" id="lv_tab3">
+                        <div class="f18 lh200">海西商品交易所交易规则（现货铝篇）</div>
+                        <p>清算</p>
+                        <p>延期交收交易实行集中、T+1的资金清算原则。 "集中"是指由交易所和托管银行对会员及客户资金统一进行清算。 "T+1"是指交易所对客户和会员每笔交易所产生的盈亏及费用在第二个工作日内进行资金清算。 会员及客户须在交易所指定的银行开立资金清算账户；资金托管银行根据交易系统每日结算数据，在规定时间内进行资金清算。 会员及客户可通过交易系统实时查询资金清算明细数据，如有异意，一个工作日内向交易所提出复核申请，否则视为会员和客户认可当次资金清算数据。</p>
+                        <p>交收</p>
+                        <p>持有现货铝多头的客户在每个交易日上午10点至<span class="cpzd_more">更多内容请您点击立即阅读</span></p>
+                        <div class="tr mt20"><input name="" type="button" class="down_cpzd" onclick="window.open('http://tg.zhengjin99.com/apl/tool/flash.jsp?file=/spage/info/735/20151028/1446020422015.pdf.swf')" /></div>
+                        
+                    </div>
+                    <div class="tzpz_cp_tab4 mt20 hide" id="lv_tab4">
+                        <img src="../images2014/tzpz_index_zjcg.png" width="650" height="245" />
+                    </div>
+                    
+                </div>
+                
+                <!--海西油-->
+                <div id="oil_tab" class="cp_tab hide">
+                    <div class="tzpz_cp_tab1" id="oil_tab1">
+                        <div class="tzpz_cp_t1">22小时交易<p>不受时间限制，随时有空随时炒</p></div>
+                        <div class="tzpz_cp_t2">双向交易<p>买涨买跌都能赚钱</p></div>
+                        <div class="tzpz_cp_t3">T+0交易<p>提高资金利用率</p></div>
+                        <div class="tzpz_cp_t8">交易数据第三方托管<p>交易数据由第三方托管 保护投资者合法权益</p></div>
+                       
+                        <div class="tzpz_cp_bd"></div>
+                        <div class="tzpz_cp_t5">无涨跌停限制<p>买卖更自由 不设涨跌停限制 不存在受涨跌幅限制无法买卖的情况</p></div>
+                        <div class="tzpz_cp_t6">更公平<p>不存在庄家操控可能 接轨国际 公正公平 价格与国际市场同步</p></div>
+                        <div class="tzpz_cp_t7">保证金专户管理<p>工行、建行等多家银行保证金专户管理，安全放心</p></div>
+                        <div class="tzpz_cp_t4">20%保证金<p>更低的资金占用率 只需支付交易金额的20% </p></div>
+                        <div class="clear" style="height:0;line-height:0;"></div>
+                    </div>
+                    <div class="tzpz_cp_tab2 hide" id="oil_tab2">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td>交易品种</td>
+                          <td>海西油</td>
+                        </tr>
+                        <tr>
+                          <td>交易单位</td>
+                          <td>500桶</td>
+                        </tr>
+                        <tr>
+                          <td>报价单位</td>
+                          <td>元/桶</td>
+                        </tr>
+                        <tr>
+                          <td>最小变动价格</td>
+                          <td>0.1元/桶</td>
+                        </tr>
+                        <tr>
+                          <td>交易时间</td>
+                          <td>周一早上8:00―周六凌晨4:00（结算时间、国家法定节假日及国际市场休息除外）</td>
+                        </tr>
+                        <tr>
+                          <td>结算时间</td>
+                          <td>夏令时：交易日内4:00-6:00，冬令时：交易日内4:00-7:00</td>
+                        </tr>
+                        <tr>
+                          <td>买卖差价</td>
+                          <td>0.3元/桶</td>
+                        </tr>
+                        <tr>
+                          <td>单笔最大交易额</td>
+                          <td>50手</td>
+                        </tr>
+                        <tr>
+                          <td>最大持仓限额</td>
+                          <td>500手</td>
+                        </tr>
+                        <tr>
+                          <td>保证金</td>
+                          <td>合约价值的20%</td>
+                        </tr>
+                        <tr>
+                          <td>交易手续费</td>
+                          <td>成交金额的0.08%(建仓和平仓双向收取)</td>
+                        </tr>
+                        <tr>
+                          <td>延期补偿费</td>
+                          <td>建仓时成交金额的0.01%/天</td>
+                        </tr>
+                        <tr>
+                          <td>强行平仓</td>
+                          <td>持仓风险率=客户交易账户净值/持仓占用交易保证金x100%  （当风险率低于50%时，未平仓合约将被强行平仓）</td>
+                        </tr>
+                        
+                      </table>
+    
+                    </div>
+                    <div class="tzpz_cp_tab3 hide" id="oil_tab3">
+                        <div class="f18 lh200">海西商品交易所交易规则（海西油篇）</div>
+                        <p>敬请期待</p>
+
+                    </div>
+                    
+                </div> 
+                <!--海西油-end-->                
+                <div class="tzpz_index_title mt20">
+                	<p class="tzpz_index_exchange2 pr">关于海商所</p>                    
+                </div>
+                <div class="tzpz_index_txt"><p class="ti">海西商品交易所于2011年5月31日经国家工商行政管理总局〔2011〕1261号文核准成立，并于同年11月5号正式落户福州，是目前福建省唯一一家大宗商品类现货电子服务交易所。交易所以电子商务技术为依托，与银行结算系统、仓储物流系统、风险管控系统、信息发布等系统相衔接，通过现货交易商管理、商品管理、交易管理、结算管理、风险监控、交割管理等配套服务功能，集现货交易、电子商务和现代物流于一身，"立足现货，服务现货"，以服务实体经济为根本宗旨。</p><p class="ti">海西商品交易所主要为现货交易市场提供B2B、B2C等多种模式的电子交易服务。借助高速发展的互联网技术、先进的电子商务技术以及银行结算系统和仓储物流系统等，为生产型、加工型、服务型等上下游企业提供商品购销、贸易融资、仓储物流、信息咨询与交流等服务，以促进商流、物流、资金流和信息流有机结合并实现高效协调的运作。</p><p class="ti">海商所是以矿产、农产品、水产品、茶产品、台湾果蔬等海峡两岸地区需求大宗商品交易品种为主，辅以贸易、物流、资金托管、信用评定于一体的综合性新型大宗商品电子商务服务平台，以积极推进传统产业的转型升级为最终发展目标。依托海西经济区的发展背景，海商所秉持"回归现货，服务现货"的服务宗旨，致力于为传统现货贸易商打造一个行业标准规范化、产业链条化、交易双方信誉担保化、质量认证化、交易公平化、交易及资金全程监管安全化、消费者满意化的完善体系，以求带动台海两岸大宗商品交易和流通为最终发展宗旨。</p>
+</div>
+                
+            </div>
+            
+            <div class="fr tzpz_cp_right">
+            	<div class="tzpz_index_link">
+                	<a href="javascript:void(0)" id="hx_kh"><span class="tzpz_r1"></span><span class="f20 title">网上开户</span><span class="txt">招行、建行、兴业用户3分钟搞定开户 .</span></a>
+                    <a href="http://tg.zhengjin99.com/zhengjin/spAndYyKH/yykh.jsp"><span class="tzpz_r2"></span><span class="f20 title">预约开户</span><span class="txt">其它银行用户立即预约 一对一服务开户.</span></a>
+                    <a href="http://tg.zhengjin99.com/zhengjin/mnkh/"><span class="tzpz_r3"></span><span class="f20 title">模拟开户</span><span class="txt">3秒钟立即获取10万元模拟账户.</span></a>
+                    <a href="http://www.zhengjin99.com/service/zxzx_index.html?head=2"><span class="tzpz_r4"></span><span class="f20 title" style=" word-spacing:8px; letter-spacing:5px;">QQ咨询</span><span class="txt">24小时全天候 一对一咨询服务.</span></a>
+                    <a href="http://www.zhengjin99.com/download.shtml"><span class="tzpz_r5"></span><span class="f16 title">下载手机版</span><span class="txt">集行情交易为一体，让投资更便捷.</span></a>
+                    
+                </div>
+                
+                <div class="tzpz_index_title mt30">
+                	<p class="tzpz_index_vedio pr">现货白银视频<a href="http://vd.jrj.com/" class="more pa"></a></p>                    
+                </div>
+                <div class="pr">
+                	<a target="_blank" href="http://vd.jrj.com/front/video/"><img src="../images2014/tzpz_index_vedio.jpg" width="310" height="202" class="block" /></a>
+                    <p class="vediobg pa"></p>
+                   <!-- <p class="vediotxt pa">五分钟学会炒白银</p>-->
+                </div>
+                
+            </div>            
+            
+            <div class="clear" style="height:0;line-height:0;"></div>
+        </div>
+        
+        <!--#include virtual="/inc/bottom4_2014.shtml"-->
+        
+    </div>
+    
+    <!--  -->
+    <!--#include virtual="/inc/bottom_2014.shtml"-->
+    <!--#include virtual="/inc/foot_2014.shtml"-->
+    <!--#include virtual="/inc/rightpiaochuang.shtml"-->
+</body>
+</html>

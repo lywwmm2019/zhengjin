@@ -1,0 +1,157 @@
+<div class="copyright">
+<div style="margin:0 auto; width:1001px; padding:20px 0">
+<p>
+<a  target='_blank' href="http://www.zhengjin99.com/corp/">关于我们</a>|
+<a  target='_blank' href="http://www.zhengjin99.com/corp/lxwm.shtml">联系我们</a>|
+<a  target='_blank' href="http://www.zhengjin99.com/mzsm.shtml">免责声明</a>|
+<a  target='_blank' href="http://www.zhengjin99.com/ljwm_cpyc.shtml">诚聘英才</a>|
+<a  target='_blank' href="http://www.zhengjin99.com/fxts.shtml">风险提示</a>|
+<a  target='_blank' href="http://www.zhengjin99.com/ysbmtk.shtml">隐私保密条款</a>|　
+<a  target='_blank' href="http://www.zhengjin99.com/list/list_cjwt.shtml">常见问题</a></p>
+<p>闽ICP备13007840号&nbsp;Copyright <span style="font-family:'微软雅黑'">&copy;</span>2013版权所有
+<!-- // TODO 百度分享的代码 -->
+<!-- Baidu Button BEGIN -->
+<!--
+<script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=0&amp;mini=1&amp;pos=left&amp;uid=6617104" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+</script>-->
+<!-- Baidu Button END -->
+<!-- cnzz static -->
+<script src="http://s95.cnzz.com/stat.php?id=5354175&web_id=5354175" language="JavaScript"></script>
+    <script type="text/javascript" src="/js/count.js"></script>
+</p>
+<div class="clear" style="*margin-top:10px;margin:0 auto 10px auto; width:895px">
+<ul class="qixia">
+<li>中国金融在线旗下成员：</li>
+<li><a  target='_blank' href="http://www.zhengjin99.com/" class="zj99"></a></li>
+<li><a  target='_blank' href="http://www.jrj.com.cn/" class="jrj" style=" margin:0 auto; width:100px"></a></li>
+<li><a  target='_blank' href="http://www.genius.com.cn/" class="jlcj"></a></li>
+<li><a  target='_blank' href="http://www.stockstar.com/" class="zx"></a></li>
+<li><a  target='_blank' href="http://www.istartrade.com/" class="zxjr"></a></li>
+</ul>
+</div>
+<p>提示：贵金属交易有风险 入市须谨慎</p>
+<p>版权所有：证金（福建）贵金属投资有限公司北京咨询分公司</p>
+</div>
+
+<iframe id="zhiboIframe" src="" frameborder="0" style="dispaly: none; width: 100%; height: 0px;"></iframe>
+<iframe id="ssoIframe" src="" frameborder="0" style="dispaly: none; width: 100%; height: 0px;"></iframe>
+<iframe id="cookieIframe" src="" frameborder="0" style="dispaly: none; width: 100%; height: 0px;"></iframe>
+<!-- 10秒跳转弹窗 -->
+<div id="change_win"
+	style="position: absolute; background: #FF9; border: 4px solid #9f0000; display: none; width: 428px; position: absolute; top: 23%; _top: 23%;left: 49%; margin-left: -232px; margin-top: 0px; padding: 10px;z-index: 100;">
+	<p
+		style="background: url(images/ico.png) no-repeat 0 2px; padding-left: 35px; line-height: 20px">尊敬的用户，恭喜您注册成功！页面将在10秒后自动跳转到最新一期《证金锦囊》</p>
+</div>
+
+<script type="text/javascript" charset="utf-8" src="http://gate.looyu.com/49537/105923.js"></script>
+<script>
+function hideDoyooBorder(){
+	$("#doyoo_panel").css("width","0px");	
+	$("#doyoo_monitor").css("width","0px");	
+}
+setInterval(function(){hideDoyooBorder()} , 1 * 1000);
+</script>
+<!--<input id="chatName" type="hidden"/><input id="chatUserName" type="hidden"/>
+<script type="text/javascript" src="http://59.151.53.123:443/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="http://59.151.53.123:443/javascripts/browser.js?v=6"></script>
+<script type="text/javascript" >
+	//获得coolie 的值
+	function cookie(name){    
+	   var cookieArray=document.cookie.split("; "); //得到分割的cookie名值对    
+	   var cookie=new Object();    
+	   for (var i=0;i<cookieArray.length;i++){    
+	      var arr=cookieArray[i].split("=");       //将名和值分开    
+	      if(arr[0]==name)return unescape(arr[1]); //如果是指定的cookie，则返回它的值    
+	   } 
+	   return ""; 
+	} 
+	WEBSSO_LID = cookie("WEBSSO_LID");
+	if(WEBSSO_LID){
+	    $("#chatName").val(location.href);
+	    $("#chatUserName").val(WEBSSO_LID);
+	    chat.login();
+    }else{
+    	$("#chatName").val(location.href);
+	    $("#chatUserName").val("test" + parseInt(Math.random() * 1000000000000));
+	    chat.login();
+    }
+</script> -->
+<!-- -->
+<style>
+.tanchuang_adv_zj {
+	position: absolute;
+}
+</style>
+
+<script>
+	var tmpAdvHtml2 = '<div style="width:399px;height:28px;  position: absolute; z-index: 99999;" id="left_adv12">'
+			+ '<div id="left_adv12_inner" class="tanchuang_adv_zj" style="position: absolute;top:28px; background-color: white; height:28px;">'
+			+ '<img src="http://tg.zhengjin99.com/zhengjin/images/phone.jpg" width="399" height="28" />'
+			+ '</div>' + '</div>';
+	var leftAdv2 = document.getElementById('left_adv12');
+	var leftAdvHeight2 = 28;
+	function heartBeat_leftAdv_2() {
+		var scrollTop = document.documentElement.scrollTop
+				|| window.pageYOffset || document.body.scrollTop;
+		var baseTop = 0;
+		var ele1 = document.getElementById("left_adv12");
+
+		var windowWidth, windowHeight, windowScrollTop;
+		if (self.innerHeight) { // all except Explorer 
+			windowWidth = self.innerWidth;
+			windowHeight = self.innerHeight;
+			windowScrollTop = self.scrollTop;
+		} else if (document.documentElement
+				&& document.documentElement.clientHeight) { // Explorer 6 Strict Mode 
+			windowWidth = document.documentElement.clientWidth;
+			windowHeight = document.documentElement.clientHeight;
+			windowScrollTop = document.documentElement.scrollTop;
+		} else if (document.body) { // other Explorers 
+			windowWidth = document.body.clientWidth;
+			windowHeight = document.body.clientHeight;
+			windowScrollTop = document.body.scrollTop;
+		}
+
+		var totalHeight = windowHeight;
+		var menuHeight = leftAdvHeight2;
+		if (menuHeight > totalHeight) {
+			baseTop = 0;
+		} else {
+			baseTop = totalHeight - menuHeight;
+		}
+		if (ele1 && ele1.style.display != "none") {
+			ele1.style.top = (scrollTop + baseTop) + "px";
+		}
+	}
+	
+	var startTop2 = leftAdvHeight2;
+	var endTop2 = 0;
+	var step2 = 3;
+	var lastTop2 = leftAdvHeight2;
+	var stepSecLeft2 = 20;
+	function showLeftAdv2() {
+		lastTop2 -= step2;
+		if (lastTop2 < endTop2) {
+			lastTop2 = endTop2;
+		}
+		$("#left_adv12_inner").css("top", lastTop2 + "px");
+		if (lastTop2 > endTop2) {
+			setTimeout(function() {
+				showLeftAdv2()
+			}, stepSecLeft2);
+		}
+	}
+	
+	
+	
+	$(document).ready(function(){
+		$(document.body).append(tmpAdvHtml2);
+		window.setInterval("heartBeat_leftAdv_2()", 300);
+		setTimeout(function() {
+			showLeftAdv2()
+		}, stepSecLeft2);
+	});
+</script>

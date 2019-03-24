@@ -1,0 +1,47 @@
+
+<p class="yjzx_tj pr index_title mt20">最新推荐</p>
+<ul class="yjzx_research">
+	<JRJTAG	tagtype="01" clsid="604001003,604001005" pagesize="5" pagecount="1" id="zxtj" />
+    <#if zxtj?exists>
+        <#list zxtj as d>
+	<li class="${(d_index==0)?string("first","")}">
+    	<p class="title"><a target="_blank" href="${d.infourl}">${d.title}</a></p><span class="pa time ${(d_index==0)?string("hide","")}"> ${d.makedate?string("MM.dd")}</span>
+        <div class="yjzx_tj_list ${(d_index>0)?string("hide","")}">
+            <a target="_blank" href="${d.infourl}"><img width="127" height="84" class="fl" src="http://img.zhengjin99.com/web/small/${d.id?c}.jpg"></a>
+            <div class="fr">
+                <p class="pr">${jrjfund.subgbk(d.description,70)}...<a target="_blank" href="${d.infourl}">详情》</a></p>
+            </div>
+            <div class="clear" style="height:0;line-height:0;"></div>
+        </div>
+    </li>
+  		</#list>
+	</#if>
+</ul>
+
+<p class="jcsd_right_download pr index_title mt20">把火线直播装进口袋</p>
+<ul class="jcsd_download">
+	<li><img src="../images2014/erweima.png" width="88" height="88" class="fl" />
+    	<div class="fr jcsd_download_right">
+        	<p class="title"><a target="_blank" href="../service/bzzx_wxgzh.html">证金贵金属官方服务号</a></p>
+            <p class="title"><a target="_blank" href="../service/bzzx_wxgzh.html">扫一扫</a></p>
+			<p class="pr">早晚评论、财经要闻、证金直播、大咖工作室等…<a target="_blank" href="../service/bzzx_wxgzh.html">详情》</a></p>
+        </div>
+        <div class="clear" style="height:0;line-height:0"></div>
+    </li>
+    <li><img src="../images2014/app_logo.png" width="88" height="88" class="fl" />
+    	<div class="fr jcsd_download_right">
+        	<p class="title"><a target="_blank" href="/download.shtml">证金APP客户端</a></p>
+			<p class="pr">证金app-爱杠杆全新上线，随时随地观看行情、策略解析或行情分析、视频直播，和老师1对1聊天！<a target="_blank" href="../download.shtml">详情》</a></p>
+        </div>
+        <div class="clear" style="height:0;line-height:0"></div>
+    </li>
+</ul>
+
+<p class="yjzx_index_vedio pr index_title"><a target="_blank" href="http://vd.jrj.com/front/chat/?room=1&fromUrl=99" class="more pa"></a></p>
+				<div class="pr mt20">
+                	<a target="_blank" href="http://vd.jrj.com/front/chat/?room=1&fromUrl=99"><img src="/images2014/yjzx-index-vedio.jpg" width="310" height="202" class="block" /></a>
+                    <!--<p class="vediobg pa"></p>
+                    <p class="vediotxt pa">美国经济数据靓丽 地缘乱局稍缓</p>-->
+                </div>
+<!--<p>本周美国方面发布了较多的经济数据，数据好坏不一…<a target="_blank" href="http://vd.jrj.com/">详情》</a></p>
+<div class="vedio_msg clear over"><div class="fr"><span class="vedio_click"></span><span>400000</span><span class="vedio_talk"></span><span>785</span></div></div>-->

@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+div,p,body{ margin:0; padding:0;}
+.box{ margin:0 auto}
+.fl{ float:left;}
+.fr{ float:right}
+.clear{ clear:both; overflow:hidden;zoom:1;}
+a{ text-decoration:none;}
+.nav{ background:url(../images/nav.jpg) no-repeat;margin:0 auto; width:1001px;}
+.nav ul{ width:1000px; margin:0;padding:0; }
+.nav li{ list-style:none; float:left; font-family:"微软雅黑"; font-size:16px;height:42px;line-height:42px;}
+.nav a{color:#FFF; display:block;text-align:center; width:108px; }
+.nav_dq a:hover{  background:url(../images/nav_hover.jpg) no-repeat }
+.hover a:hover{ background:url(../images/nav_hover.jpg) no-repeat; background-position:1px 0}
+
+
+.banner{ background:url(../images/banner_bg.jpg) repeat; padding-top:5px}
+.left{ width:740px; float:left;background:url(../images/hq.jpg) repeat-x;}
+.hq{ border-left:1px solid #CCC;border-right:1px solid #CCC;border-bottom:1px solid #CCC;} 
+.hq ul{ margin:3px 0 0 -58px; float:left;*margin:3px 0 0 -20px; }
+.hq li,.hq .hover{width:80px;font-size:12px;font-family:"微软雅黑";text-align:center;line-height:26px; cursor:pointer;border-left:1px solid #CCC; border-right:1px solid #CCC; border-top:1px solid #CCC; margin-left:-1px}
+.hq li{ float:left; list-style:none;color:#d2d2d2;height:26px;position:relative; top:1px}
+.hq .hover{background:url(../images/hq_dq.jpg) repeat-x;height:28px;_top:1px;color:#666666; position:relative;height:27px}
+.mr_b{ margin-bottom:10px;}
+.title{background:url(../images/title-bg.jpg) no-repeat;height:30px; line-height:30px;font-family:"微软雅黑"; font-size:14px; width:366px;}
+.title a,.r_title a{ color:#484848;padding-right:10px;}
+.news_p img{ border:1px solid #989898; padding:2px; margin-right:20px}
+.news{ padding:5px; margin-top:5px; width:356px; line-height:20px}
+.font_12{color:#484848;font-size:12px}
+.news_text{ width:210px;}
+.red{color:#dd0d3a}
+.red2{color:#8E0201}
+.red3{color:#640d05}
+.font_white{ color:#FFF;}
+.color666{color:#666}
+.border_gray{ border:1px solid #CCC}
+.news_list li{line-height:24px;height:24px; background:url(../images/square.jpg) no-repeat; background-position:0px 11px; list-style:none;text-indent:10px;margin-left:-30px;}
+.news_list a{color:#5d5d5d; font-size:14px;line-height:24px; width:100%}
+.servel{ margin-top:5px; line-height:22px}
+.servel ul{ margin-left:-34px;*margin-left:-30px;}
+.servel li{ list-style:none; float:left; margin:0 9px;*margin:0 10px;}
+.servel li img{ padding:2px; border:1px solid #b3b8bb}
+.servel li p{ width:66px; text-align:center}
+.news_box{ width:366px;}
+.ser_a a{ margin-right:15px;color:#363636}
+.title_text{font-size:14px;font-family:"微软雅黑"; color:#484848}
+.r_title,.r_title2{ background:url(../images/r_title.jpg) no-repeat; height:30px; margin-bottom:5px}
+.r_title strong{ width: 155px;height:30px; float:left; margin-left:4px;_margin-left:2px; }
+.r_title2 strong{width:130px;height:30px; margin-left:5px; }
+.r_title2 strong,.r_title strong,.r_title strong{line-height:30px; background:#fff; display:block;text-align:center;font-size:14px; color:#ab0000} 
+.r_title a,.not_list li a{ font-size:14px; color:#494949; line-height:28px}
+.not_list{ background:url(../images/not_bg.jpg) repeat-x; border:1px solid #CCC;height:180px;overflow: hidden;}
+.not_list ul{margin-left:-15px;*margin-left:23px;*margin-top:10px}
+.not_list li{ list-style-image:url(../images/list.jpg);}
+.not_list li a{ font-size:13px;position:relative;top:-2px;*top:-5px; width:100%}
+.gjs{ background:url(../images/guanyu_bg.jpg) no-repeat; height:227px}
+.gjs p{ line-height:24px}
+.hz{ background:url(../images/hz_wx.jpg) repeat-x;height:38px; border:1px solid #ccc;}
+.hz ul{ margin:0px 0 0 -40px}
+.hz ul li{ float:left; list-style:none; border-right:1px solid #ccc;width:165px; text-align:center;line-height:38px; cursor:pointer;}
+.hz .hover{ background:url(../images/hz.jpg) repeat-x;height:39px;display:block;}
+.foot{ width:1000px; margin:0 auto}
+.hz_con{ border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:1px solid #ccc;}
+.mr_b20{ margin-bottom:20px}
+.font_14{ font-size:14px}
+.copyright{ background:url(../images/foot.jpg) repeat-x;min-width:1000px}
+.copyright a,.copyright p{ font-size:12px; margin-right:20px; color:#000;text-align:center; line-height:30px}
+.mr_t10{ margin-top:10px}
+.mr_t20{ margin-top:20px}
+.foot li{ font-family:"微软雅黑"; font-weight:bold; color:#333}
+.input_btn{ cursor:pointer; border:none;}
+
+.fwzx{padding:0; margin:5px 0 -5px 0;}
+.fwzx li{ float:left; list-style:none; margin:0 8px 0 0; color:#333; cursor:pointer; }
+.fwzx .hover{color:#C03; font-weight:bold;  position: relative;background:#fff;top:1px;}
+.fwzx .hover,.fwzx li{ height: 27px;border-left: 1px solid #C30;
+    border-right: 1px solid #C30;
+    border-top: 1px solid #C30;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    width: 100px;}
+a img{ border:none}
+
+/* banner切换背景图定位 */
+.banner_btn1,.banner_btn2,.banner_btn3,.banner_btn4,.banner_btn5{ background:url(../images/banner_tab.jpg) no-repeat; width:1001px;height:37px;  margin:0 auto; }
+.banner_btn2{ background-position:0 -37px}
+.banner_btn3{ background-position:0 -74px}
+.banner_btn4{ background-position:0 -111px}
+.banner_btn5{ background-position:0 -148px}
+
+/*新增样式*/
+.qixia li a{margin:0; padding:0}
+.qixia li{ float:left; list-style:none; line-height:50px; font-size:12px; width:142px; padding:0; margin:0}
+.qixia .zj99{ background:url(../images/zj99.jpg) no-repeat 0 -49px;}
+.qixia .zx{background:url(../images/zx.jpg) no-repeat 0 -49px;}
+.qixia .jrj{ background:url(../images/jrj.jpg) no-repeat 0 -49px;}
+.qixia .jlcj{ background:url(../images/jlcj.jpg) no-repeat 0 -49px;}
+.qixia .zxjr{ background:url(../images/zxjr.jpg) no-repeat 0 -49px;}
+.zj99,.jrj,.jlcj,.zxjr,.zx{height:50px;display:block;}
+
+
+.fxyj_page a.cur {
+background: rgb(69, 129, 189);
+border: 1px solid rgb(67, 111, 154);
+color: white;
+cursor: auto;
+}
+
+
+/*相关文件下载*/
+.downwj{ background:url(../images/down_btn.jpg) no-repeat; cursor:pointer; width:102px;height:30px; border:none}
+.xzwjwj td{ border:1px solid #ddd; line-height:30px; padding:5px 0 5px 10px}
+.xzwjwj{border-collapse:collapse}

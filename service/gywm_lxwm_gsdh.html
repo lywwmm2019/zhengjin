@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk"/>
+<meta name="keywords" content="证金贵金属,白银,白银分析,白银投资,白银价格,白银交易,炒白银,白银走势,白银软件,模拟炒银,美联储,白银在线分析" />
+<meta name="description" content="证金贵金属，首家赴美纳斯达克上市公司中国最大最专业的白银投资服务平台，致力于白银投资、白银交易、现货白银、白银价格、炒白银、现货白银走势、白银行情、模拟炒银、现货白银开户、投资资讯、分析评论、贵金属投资等贵金属综合性投资服务" />
+<meta name="chinaz-site-verification" content="288879e7-ff11-4ab6-a78e-336cdcd754c4" />
+<title>关于我们_证金贵金属</title>
+<!--#include virtual="/inc/head_link_2014.shtml"-->
+</head>
+
+<body>
+	<!--  -->
+	<!--#include virtual="/inc/head_2014.shtml"-->
+	<!--#include virtual="/inc/nav_guanyu.shtml"-->
+   
+    <!--main-->
+     <div class="w990 mauto clear over index_main mt40 left-nav-gywmbg">
+     	<!--nav-->
+        <div id="left-nav-gywm">
+         <ul>
+        	<!--<li><a href="gywm_lxwm_gsdz.html">公司地址</a></li>-->
+            <li><a href="gywm_lxwm_fwdh.html">服务电话</a></li>
+            <!-- <li class="sl"><a href="gywm_lxwm_gsdh.html">公司电话</a></li> -->
+         </ul>
+        </div> 
+       <!--nav-end-->
+       <!--main-right-->
+       <!-- <div class="gywm-right" >
+       	  <h4 class="gyzj-title gyzj-title3">公司电话</h4>
+			    公司电话     	
+				<div class="gywm-fwdh">
+                	
+                    <ul>
+                        <li class="orengesqure pt20">北京分公司:</li>
+                        <li class="gywm-phone">客服电话：010-53936386</li>
+                        <li class="gywm-address">北京市东城区广渠门内大街41号雍贵中心B座3层 邮编：100062</li>
+                    </ul>
+                   
+                    
+                    <ul class="pt20">
+                        <li class="orengesqure pt20">济南分公司:</li>
+                        <li class="gywm-phone">客服电话：010-58309155</li>
+                        <li class="gywm-address">山东省济南市市中区万达广场写字楼C座九层 邮编：250001</li>
+                    </ul>
+                   
+                  
+                </div>
+                
+                
+             公司电话-end               
+       </div> -->
+       <!--main-right-end-->   
+     </div>
+    <!--main-end-->
+   <!--特色服务-->
+    <!--#include virtual="/inc/bottom_2014.shtml"-->
+    <!--特色服务-end-->
+    <!--foot-->
+     <!--#include virtual="/inc/foot_2014.shtml"-->
+    <!--foot-end-->
+    <script type="text/javascript">
+
+// 百度地图API功能
+var map = new BMap.Map("allmap");            // 创建Map实例
+var poi = new BMap.Point(116.381995, 39.903786);
+map.centerAndZoom(poi,14);  //初始化时，即可设置中心点和地图缩放级别。
+map.enableScrollWheelZoom(true);
+
+    var content = '<div style="margin:0;line-height:20px;padding:2px;">' +'地址：北京市西城区宣武门外大街10号庄胜广场中央办公楼南翼11层 （100052）<br/>电话：010-58309199 <br/>简介：证金贵金属投资有限公司北京分公司。' +
+                  '</div>';
+
+    //创建检索信息窗口对象
+    var searchInfoWindow = null;
+	searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+			title  : "证金贵金属",      //标题
+			width  : 290,             //宽度
+			height : 105,              //高度
+			panel  : "panel",         //检索结果面板
+			enableAutoPan : true,     //自动平移
+			searchTypes   :[
+				BMAPLIB_TAB_SEARCH,   //周边检索
+				BMAPLIB_TAB_TO_HERE,  //到这里去
+				BMAPLIB_TAB_FROM_HERE //从这里出发
+			]
+		});
+    var marker = new BMap.Marker(poi); //创建marker对象
+    marker.enableDragging(); //marker可拖拽
+    marker.addEventListener("click", function(e){
+	    searchInfoWindow.open(marker);
+    })
+    map.addOverlay(marker); //在地图中添加marker
+    searchInfoWindow.open(marker); //在marker上打开检索信息串口
+    /*function showInfo(e){
+ alert(e.point.lng + ", " + e.point.lat);
+}
+map.addEventListener("click", showInfo);*/
+
+</script>
+</body>
+</html>

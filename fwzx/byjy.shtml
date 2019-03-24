@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>服务中心-白银交易规则</title>
+<!--#include virtual="/inc/head_link.shtml"-->
+</head>
+
+<body>
+	<!--#include virtual="/inc/head.shtml"-->
+    <!--#include virtual="/inc/nav.shtml"-->
+	<div id="about_main" class="clear mb20">
+    	<div class="fl about_left pr">
+        	<div class="pa" style="left:0;top:0;" id="about_left">
+                <!--#include virtual="/inc/left_btn.shtml"-->
+                <ul class="about_link" style="padding-left:10px;">
+                    <li class="about_link_title">服务指南</li>
+                    <li>&gt;&gt;<span><a href="index.shtml">服务体系</a></span></li>
+                    <li>&gt;&gt;<span><a href="khlc.shtml">开户流程</a></span></li>
+                    <li>&gt;&gt;<span><a href="khsp.shtml">开户宣传片</a></span></li>
+                    <li>&gt;&gt;<span><a href="tjs.shtml">津贵所网上开户</a></span>
+                    	<ul class="about_link_sec" style="display:block;">
+                        	<li><span><a href="http://tg.zhengjin99.com/zhengjin/tjskh/index.jsp" target="_blank">实盘开户入口</a></span></li>
+                            
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="qyzn.shtml">网银签约指南</a></span>
+                    	<ul class="about_link_sec" style="display:block;">
+                        	<li><span><a href="qyzn.shtml">海商所网银签约指南</a></span></li>
+                        	<li><span><a href="wyqy.shtml">津贵所网银签约指南</a></span></li>
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="bgxz.shtml">客户协议及相关表格下载</a></span></li>
+                    <li>&gt;&gt;<span class="about_link_hover"><a href="javascript:void(0)">白银交易规则</a></span></li>
+                    <li>&gt;&gt;<span><a href="crjgz.shtml">出入金流程及规则</a></span></li>
+                    <li>&gt;&gt;<span><a href="jglc.shtml">现货交割流程</a></span></li>
+                    <li>&gt;&gt;<span><a href="khts.shtml">客户投诉处理流程</a></span></li>
+                    <li>&gt;&gt;<span><a href="rjxz.shtml">软件下载</a></span>
+                   	  <ul class="about_link_sec" style="display:block;">
+                        	<li><span><a href="sjrj.shtml">手机版软件下载平台</a></span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    	<div class="fr about_right">
+        	<div class="fwtx pr">
+       	    	<img src="../images_fwtx/byjy_head_1.gif" width="712" height="37" border="0" usemap="#Map" class="block mauto" id="byjy_title_img" />
+                <map name="Map" id="Map">
+                  <area shape="rect" coords="80,0,195,36" href="javascript:void(0)" onclick="showdiv(1)" />
+                  <area shape="rect" coords="217,0,333,36" href="javascript:void(0)" onclick="showdiv(2)" />
+                  <area shape="rect" coords="357,0,472,36" href="javascript:void(0)" onclick="showdiv(3)" />
+                  <area shape="rect" coords="494,0,611,36" href="javascript:void(0)" onclick="showdiv(4)" />
+                </map>
+                <table width="90%" border="0" cellspacing="0" cellpadding="0" class="byjy_table byjy" id="byjy_1">
+                  <tr>
+                    <td class="bg_e7ddc9" width="35%"><span>22小时交易</span><img src="../images_fwtx/byjy_1_img.jpg" width="23" height="24" /></td>
+                    <td width="65%">不受时间限制 随时有空随时炒</td>
+                  </tr>
+                  <tr><td colspan="2" height="20"></td></tr>
+                  <tr>
+                    <td class="bg_e7ddc9"><span>双向交易</span><img src="../images_fwtx/byjy_1_img.jpg" width="23" height="24" /></td>
+                    <td>买涨买跌都能赚钱</td>
+                  </tr>
+                  <tr><td colspan="2" height="20"></td></tr>
+                  <tr>
+                    <td class="bg_e7ddc9"><span>T+0</span><img src="../images_fwtx/byjy_1_img.jpg" width="23" height="24" /></td>
+                    <td>随买随卖 提高资金利用率</td>
+                  </tr>
+                  <tr><td colspan="2" height="20"></td></tr>
+                  <tr>
+                    <td class="bg_e7ddc9"><span>5%保证金</span><img src="../images_fwtx/byjy_1_img.jpg" width="23" height="24" /></td>
+                    <td>更低的资金占用率 只需支付交易金额的百分之五 </td>
+                  </tr>
+                  <tr><td colspan="2" height="20"></td></tr>
+                  <tr>
+                    <td class="bg_e7ddc9"><span>无涨跌停限制</span><img src="../images_fwtx/byjy_1_img.jpg" width="23" height="24" /></td>
+                    <td>买卖更自由 不设涨跌停限制 不存在受涨跌幅限制无法买卖的情况</td>
+                  </tr>
+                  <tr><td colspan="2" height="20"></td></tr>
+                  <tr>
+                    <td class="bg_e7ddc9"><span>更公平</span><img src="../images_fwtx/byjy_1_img.jpg" width="23" height="24" /></td>
+                    <td>不存在庄家操控可能 接轨国际 公正公平 价格与国际市场同步</td>
+                  </tr>
+                  <tr><td colspan="2" height="20"></td></tr>
+                  <tr>
+                    <td class="bg_e7ddc9"><span>保证金专户管理</span><img src="../images_fwtx/byjy_1_img.jpg" width="23" height="24" /></td>
+                    <td>工行、建行等多家银行保证金专户管理，安全放心</td>
+                  </tr>
+                  <tr><td colspan="2" height="20"></td></tr>
+                  <tr>
+                    <td class="bg_e7ddc9"><span>交易数据第三方监管</span><img src="../images_fwtx/byjy_1_img.jpg" width="23" height="24" /></td>
+                    <td>交易数据由第三方存管 保护投资者合法权益</td>
+                  </tr>
+                </table>
+				
+                <div class="hide byjy" id="byjy_2">
+                	<div class="pr" style="height:47px;">
+                    	<div class=" byjy_jygz_bq pa" style="left:70px;" id="j1" onclick="tabset('jys_2','j1','j2','jys_1')">天津贵金属交易所</div><div class="byjy_jygz_bqsl pa" style="left:256px;" id="j2" onclick="tabset('jys_1','j2','j1','jys_2')">海西商品交易所</div>
+                    </div>
+                    <div class="byjy_jygz_main" id="jys_1">
+                    	<div class="byjy_jygz_tjs01"></div>
+                        <div class="byjy_jygz_tjs02"></div>
+                        <div class="byjy_jygz_tjs03"></div>
+                        <div class="byjy_jygz_tjs04"></div>
+                        <div class="byjy_jygz_tjs05"></div>
+                        <div class="byjy_jygz_tjs06"></div>
+                        <div class="byjy_jygz_tjs07"></div>
+                        <div class="byjy_jygz_tjs08"></div>
+                        <div class="byjy_jygz_tjs09"></div>
+                        <div class="byjy_jygz_tjs10"></div>
+                    </div>
+                    <div class="byjy_jygz_main hide" id="jys_2">
+                    	<div class="byjy_jygz_hx01"></div>
+                        <div class="byjy_jygz_hx02"></div>
+                        <div class="byjy_jygz_hx03"></div>
+                        <div class="byjy_jygz_hx04"></div>
+                        <div class="byjy_jygz_hx05"></div>
+                    </div>
+                </div>
+                
+                <div class="hide byjy" id="byjy_3">
+                	<div class="pr" style="height:47px;">
+                    	<div class="byjy_jygz_bqsl pa" style="left:70px;" id="z1" onclick="tabset('jyzd_1','z1','z2','jyzd_2')">白银交易制度</div><div class="byjy_jygz_bq pa" style="left:256px;" id="z2" onclick="tabset('jyzd_2','z2','z1','jyzd_1')">铂金交易制度</div>
+                    </div>
+                    <div class="byjy_jygz_main" id="jyzd_1">
+                    	<div class="byjy_jygz01"></div>
+                        <div class="byjy_jygz02"></div>
+                        <div class="byjy_jygz03"></div>
+                        <div class="byjy_jygz04"></div>
+                        <div class="byjy_jygz05"></div>
+                        <div class="byjy_jygz06"></div>
+                        <div class="byjy_jygz07"></div>
+                        <div class="byjy_jygz08"></div>
+                        <div class="byjy_jygz09"></div>
+                        <div class="byjy_jygz10"></div>
+                    	<div class="byjy_jygz11"></div>
+                        <div class="byjy_jygz12"></div>
+                        <div class="byjy_jygz13"></div>
+                        <div class="byjy_jygz14"></div>
+                        <div class="byjy_jygz15"></div>
+                    </div>
+                    <div class="byjy_jygz_main hide" id="jyzd_2">
+                    	<div class="byjy_jybj01"></div>
+                        <div class="byjy_jybj02"></div>
+                        <div class="byjy_jybj03"></div>
+                        <div class="byjy_jybj04"></div>
+                        <div class="byjy_jybj05"></div>
+                        <div class="byjy_jybj06"></div>
+                        <div class="byjy_jybj07"></div>
+                        <div class="byjy_jybj08"></div>
+                        <div class="byjy_jybj09"></div>
+                        <div class="byjy_jybj10"></div>
+                    	<div class="byjy_jybj11"></div>
+                        <div class="byjy_jybj12"></div>
+                        <div class="byjy_jybj13"></div>
+                        <div class="byjy_jybj14"></div>
+                        <div class="byjy_jybj15"></div>
+                    </div>
+                </div>
+                
+                <div id="byjy_4" class="byjy hide">
+                    <div style="width:678px;margin:0 auto">
+                    	<div class="byjy_zjcg01"></div>
+                        <div class="byjy_zjcg02"></div>
+                        <div class="byjy_zjcg03"></div>
+                        <div class="byjy_zjcg04"></div>
+                        <div class="byjy_zjcg05"></div>
+                    </div>
+                </div>
+                
+            </div>
+      	</div>
+      
+      	<div class="clear"></div>
+    </div>
+    <script>
+		function showdiv(num){
+			$('#byjy_title_img').attr('src','../images_fwtx/byjy_head_'+num+'.gif');
+			$('.byjy').hide();
+			$('#byjy_'+num).show();
+		}
+		function tabset(id,id2,id3,id4){
+			$('#'+id4).hide();
+			$('#'+id).show();
+			$('#'+id3).removeClass('byjy_jygz_bqsl').addClass('byjy_jygz_bq');
+			$('#'+id2).addClass('byjy_jygz_bqsl');
+		}
+	</script>
+    <!--#include virtual="/inc/foot.shtml"-->
+</body>
+</html>

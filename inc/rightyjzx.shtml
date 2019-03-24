@@ -1,0 +1,26 @@
+                <div class="wxkf pt10">
+                    <ul id="tagswx">
+                        <li class="fl"><a href="javascript:void(0)" class="fl">微信在线客服</a></li>
+                        <li class="grey2 fr"><a href="javascript:void(0)" class="fr">手机客户端在线客服</a></li>	
+                    </ul>
+                    <div id="tagContentwx" class="wxzxkfwhole"> 
+                        <div id="tagContentwx0" class="wxzxkf wx_div">
+                            <div class="wxzxkf-img"><img src="../images2014/fwtx-27.jpg" /></div>
+                             <p><a target="_blank" href="../service/bzzx_wxgzh.html">证金贵金属官方服务号</a></p>
+                             <p class="p2" style="font-size:14px;">早晚评论、财经要闻、证金直播、大咖工作室等</p>
+                        </div>
+                        <div id="tagContentwx1" class="wxzxkf wx_div hide">
+                            <div class="wxzxkf-img"><img src="../images2014/app_logo.png" width="114" height="114" /></div>
+                             <p><a target="_blank" href="/download.shtml" style="color:#898888;">证金APP客户端</a></p>
+                             <p class="p2" style="font-size:14px;">证金app-爱杠杆全新上线，随时随地观看贵金属行情、策略解析或行情分析、视频直播，和老师1对1聊天！</p>
+                           
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="yjzx_index_vedio pr index_title"><a target="_blank" href="http://vd.jrj.com/front/chat/?room=1&fromUrl=99" class="more pa"></a></p>
+				<div class="pr mt20">
+                	<a target="_blank" href="http://vd.jrj.com/front/chat/?room=1&fromUrl=99"><img src="/images2014/yjzx-index-vedio.jpg" width="310" height="202" class="block" /></a>
+                    <!--<p class="vediobg pa"></p>
+                    <p class="vediotxt pa">美国经济数据靓丽 地缘乱局稍缓</p>-->
+                </div>

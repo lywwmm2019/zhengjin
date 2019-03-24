@@ -1,0 +1,338 @@
+     
+        <!--右侧飘窗-->
+    <div class="floatingwindow" id="floatingwindow">
+      <div class="pr">
+    	<div class="floatingwindow-left">
+        	<ul>
+            	<li id="tabright_1"  class="hoverpc"  onmouseover="tabright('1');"><span class="rdxw"></span></li>
+                <li id="tabright_2" onmouseover="tabright('2');"><span class="zxkf"></span></li>
+                <li id="tabright_3" onmouseover="tabright('3');"><span class="kh"></span></li>
+                <li id="tabright_4" onmouseover="tabright('4');"><span class="xzrj"></span></li>
+                <li id="tabright_5" onmouseover="tabright('5');"><span class="zskf"></span></li>
+                <li class="zank"></li>
+                <li class="shous" style="position:absolute;top:428px;left:5px; display:none;"></li>
+            </ul>
+        </div>
+        <!--01-->
+        <div class="floatingwindow-right" id="tabright_a1">
+        	<div class="floatingwindow-right-cotent">
+            	<h4>06.09铜铝镍行情分析报告</h4>
+                <p>核心提示 隔夜LME工业金属中多数呈现探底回升的格局,其......<span>详情</span></p>
+                <dl>
+                	<dd onclick="window.location.href='http://vd.jrj.com/front/chat/?room=1'" >视频直播</dd>
+                    <dd style="margin-left:10px;"onclick="window.location.href='http://www.zhengjin99.com/list/list_yanjiu_zaowan.shtml'">新闻早晚评</dd>
+                </dl>	
+            </div>
+              
+            <div class="floatingwindow-right-cotent">
+        		<ul>
+                	<li class="zxkf" onclick="doyoo.util.openChat('g=66550')">在线咨询</li>
+                    <li class="qq" onclick="window.location.href='http://www.zhengjin99.com/service/zxzx_index.html?head=2'">QQ咨询</li>
+                </ul>
+            </div>
+            
+             <div class="floatingwindow-right-cotent">
+        		<ul>
+                	<li class="shipankh" onclick="window.location.href='http://tg.zhengjin99.com/zhengjin/spAndYyKH/index.jsp'" >实盘开户</li>
+                    <li class="monipankh" onclick="window.location.href='http://tg.zhengjin99.com/zhengjin/mnkh/'">模拟开户</li>
+                </ul>
+            </div>
+            <div class="floatingwindow-right-cotent">
+        		<ul>
+                	<li class="pcdownload" onclick="window.location.href='http://www.zhengjin99.com/download.shtml'">电脑下载</li>
+                    <li class="phoneload" onclick="window.location.href='http://www.zhengjin99.com/download.shtml'">手机下载</li>
+                </ul>
+            </div>
+            <div class="floatingwindow-right-cotent">
+        		<input type="text" class="floatingwindow-right-name01" name="floatingwindow-right-name" placeholder="请输入您的姓名"/>
+                <input type="text" class="floatingwindow-right-phone01" name="floatingwindow-right-phone" placeholder="请输入您的手机号码"/>
+                <input type="button" class="floatingwindow-right-button" value=""  onclick="test111(1);" />
+            </div>     
+       </div>
+    <!--01-end-->   
+       
+    <!--02-->
+       <div class="floatingwindow-right" id="tabright_a2" style="position:absolute;width:230px;height:474px;left:49px;top:0px;z-index:9; display:none;">
+          <div class="floatingwindow-right-cotent">
+            	<h4>06.09铜铝镍行情分析报告</h4>
+                <p>核心提示 隔夜LME工业金属中多数呈现探底回升的格局,其......<span>详情</span></p>
+                <dl>
+                	<dd onclick="window.location.href='http://vd.jrj.com/front/chat/?room=1'" style="color:#75271c" >视频直播</dd>
+                    <dd style="margin-left:10px;color:#75271c"onclick="window.location.href='http://www.zhengjin99.com/list/list_yanjiu_zaowan.shtml'">新闻早晚评</dd>
+                </dl>	
+            </div>
+              
+            <div class="floatingwindow-right-cotent">
+        		<ul>
+                	<li class="zxkf" style="color:#f72b31" onclick="doyoo.util.openChat('g=66550')">在线咨询</li>
+                    <li class="qq" style="color:#f72b31" onclick="window.location.href='http://www.zhengjin99.com/service/zxzx_index.html?head=2'">QQ咨询</li>
+                </ul>
+            </div>
+            
+             <div class="floatingwindow-right-cotent">
+        		<ul>
+                	<li class="shipankh" onclick="window.location.href='http://tg.zhengjin99.com/zhengjin/spAndYyKH/index.jsp'" >实盘开户</li>
+                    <li class="monipankh" onclick="window.location.href='http://tg.zhengjin99.com/zhengjin/mnkh/'">模拟开户</li>
+                </ul>
+            </div>
+            <div class="floatingwindow-right-cotent">
+        		<ul>
+                	<li class="pcdownload" onclick="window.location.href='http://www.zhengjin99.com/download.shtml'">电脑下载</li>
+                    <li class="phoneload" onclick="window.location.href='http://www.zhengjin99.com/download.shtml'">手机下载</li>
+                </ul>
+            </div>
+            <div class="floatingwindow-right-cotent">
+        		<input type="text" class="floatingwindow-right-name02" name="floatingwindow-right-name"  placeholder="请输入您的姓名"/>
+                <input type="text" class="floatingwindow-right-phone02" name="floatingwindow-right-phone"  placeholder="请输入您的手机号码"/>
+                <input type="button" class="floatingwindow-right-button" value=""    onclick="test111(2);"/>
+            </div>        
+        </div>
+   <!--02-end-->  
+   <!--03-->
+       <div class="floatingwindow-right" id="tabright_a3" style="position:absolute;width:230px;height:474px;left:49px;top:0px;z-index:15; display:none;">
+          <div class="floatingwindow-right-cotent">
+            	<h4>06.09铜铝镍行情分析报告</h4>
+                <p>核心提示 隔夜LME工业金属中多数呈现探底回升的格局,其......<span>详情</span></p>
+                <dl>
+                	<dd onclick="window.location.href='http://vd.jrj.com/front/chat/?room=1'" style="color:#75271c" >视频直播</dd>
+                    <dd style="margin-left:10px;color:#75271c"onclick="window.location.href='http://www.zhengjin99.com/list/list_yanjiu_zaowan.shtml'">新闻早晚评</dd>
+                </dl>	
+            </div>
+              
+            <div class="floatingwindow-right-cotent">
+        		<ul>
+                	<li class="zxkf"  onclick="doyoo.util.openChat('g=66550')">在线咨询</li>
+                    <li class="qq" onclick="window.location.href='http://www.zhengjin99.com/service/zxzx_index.html?head=2'">QQ咨询</li>
+                </ul>
+            </div>
+            
+             <div class="floatingwindow-right-cotent">
+        		<ul>
+                	<li class="shipankh" style="color:#f72b31" onclick="window.location.href='http://tg.zhengjin99.com/zhengjin/spAndYyKH/index.jsp'" >实盘开户</li>
+                    <li class="monipankh"  style="color:#f72b31" onclick="window.location.href='http://tg.zhengjin99.com/zhengjin/mnkh/'">模拟开户</li>
+                </ul>
+            </div>
+            <div class="floatingwindow-right-cotent">
+        		<ul>
+                	<li class="pcdownload" onclick="window.location.href='http://www.zhengjin99.com/download.shtml'">电脑下载</li>
+                    <li class="phoneload" onclick="window.location.href='http://www.zhengjin99.com/download.shtml'">手机下载</li>
+                </ul>
+            </div>
+            <div class="floatingwindow-right-cotent">
+        		<input type="text" class="floatingwindow-right-name03" name="floatingwindow-right-name" placeholder="请输入您的姓名"/>
+                <input type="text" class="floatingwindow-right-phone03" name="floatingwindow-right-phone" placeholder="请输入您的手机号码"/>
+                <input type="button" class="floatingwindow-right-button" value=""   onclick="test111(3);" />
+            </div>        
+        </div>
+   <!--03-end-->  
+    <!--04-->
+       <div class="floatingwindow-right" id="tabright_a4" style="position:absolute;width:230px;height:474px;left:49px;top:0px;z-index:20; display:none;">
+          <div class="floatingwindow-right-cotent">
+            	<h4>06.09铜铝镍行情分析报告</h4>
+                <p>核心提示 隔夜LME工业金属中多数呈现探底回升的格局,其......<span>详情</span></p>
+                <dl>
+                	<dd onclick="window.location.href='http://vd.jrj.com/front/chat/?room=1'" style="color:#75271c" >视频直播</dd>
+                    <dd style="margin-left:10px;color:#75271c"onclick="window.location.href='http://www.zhengjin99.com/list/list_yanjiu_zaowan.shtml'">新闻早晚评</dd>
+                </dl>	
+            </div>
+              
+            <div class="floatingwindow-right-cotent">
+        		<ul>
+                	<li class="zxkf"  onclick="doyoo.util.openChat('g=66550')">在线咨询</li>
+                    <li class="qq" onclick="window.location.href='http://www.zhengjin99.com/service/zxzx_index.html?head=2'">QQ咨询</li>
+                </ul>
+            </div>
+            
+             <div class="floatingwindow-right-cotent">
+        		<ul>
+                	<li class="shipankh" onclick="window.location.href='http://tg.zhengjin99.com/zhengjin/spAndYyKH/index.jsp'" >实盘开户</li>
+                    <li class="monipankh"  onclick="window.location.href='http://tg.zhengjin99.com/zhengjin/mnkh/'">模拟开户</li>
+                </ul>
+            </div>
+            <div class="floatingwindow-right-cotent">
+        		<ul>
+                	<li class="pcdownload" style="color:#f72b31"  onclick="window.location.href='http://www.zhengjin99.com/download.shtml'">电脑下载</li>
+                    <li class="phoneload"  style="color:#f72b31" onclick="window.location.href='http://www.zhengjin99.com/download.shtml'">手机下载</li>
+                </ul>
+            </div>
+            <div class="floatingwindow-right-cotent">
+        		<input type="text" class="floatingwindow-right-name04" name="floatingwindow-right-name"   placeholder="请输入您的姓名"/>
+                <input type="text" class="floatingwindow-right-phone04" name="floatingwindow-right-phone" placeholder="请输入您的手机号码"/>
+                <input type="button" class="floatingwindow-right-button" value=""    onclick="test111(4);"/>
+            </div>        
+        </div>
+   <!--04-end-->  
+    <!--05-->
+       <div class="floatingwindow-right" id="tabright_a5" style="position:absolute;width:230px;height:474px;left:49px;top:0px;z-index:20; display:none;">
+          <div class="floatingwindow-right-cotent">
+            	<h4>06.09铜铝镍行情分析报告</h4>
+                <p>核心提示 隔夜LME工业金属中多数呈现探底回升的格局,其......<span>详情</span></p>
+                <dl>
+                	<dd onclick="window.location.href='http://vd.jrj.com/front/chat/?room=1'" style="color:#75271c" >视频直播</dd>
+                    <dd style="margin-left:10px;color:#75271c"onclick="window.location.href='http://www.zhengjin99.com/list/list_yanjiu_zaowan.shtml'">新闻早晚评</dd>
+                </dl>	
+            </div>
+              
+            <div class="floatingwindow-right-cotent">
+        		<ul>
+                	<li class="zxkf"  onclick="doyoo.util.openChat('g=66550')">在线咨询</li>
+                    <li class="qq" onclick="window.location.href='http://www.zhengjin99.com/service/zxzx_index.html?head=2'">QQ咨询</li>
+                </ul>
+            </div>
+            
+             <div class="floatingwindow-right-cotent">
+        		<ul>
+                	<li class="shipankh" onclick="window.location.href='http://tg.zhengjin99.com/zhengjin/spAndYyKH/index.jsp'" >实盘开户</li>
+                    <li class="monipankh"  onclick="window.location.href='http://tg.zhengjin99.com/zhengjin/mnkh/'">模拟开户</li>
+                </ul>
+            </div>
+            <div class="floatingwindow-right-cotent">
+        		<ul>
+                	<li class="pcdownload" onclick="window.location.href='http://www.zhengjin99.com/download.shtml'">电脑下载</li>
+                    <li class="phoneload"  onclick="window.location.href='http://www.zhengjin99.com/download.shtml'">手机下载</li>
+                </ul>
+            </div>
+            <div class="floatingwindow-right-cotent">
+        		<input type="text" class="floatingwindow-right-name05" style="border:#F00 1px solid;" name="floatingwindow-right-name"  placeholder="请输入您的姓名"/>
+                <input type="text" class="floatingwindow-right-phone05" style="border:#F00 1px solid;" name="floatingwindow-right-phone"  placeholder="请输入您的手机号码"/>
+                <input type="button" class="floatingwindow-right-button" value=""   onclick="test111(5);"  />
+            </div>        
+        </div>
+   <!--05-end-->      
+       </div>
+      </div>
+      <script type="text/javascript">
+		
+var mobile = '';
+function isMobile(val) {
+    var reg = /^1[34578]\d{9}$/;
+    return reg.test(val);
+}
+
+function getParam(item) {
+    var svalue = location.search.match(new RegExp('[\?\&]' + item + '=([^\&]*)(\&?)','i'));
+    return svalue?decodeURIComponent(svalue[1]):'';
+}
+
+$(".floatingwindow-right-phone01").watermark( "请输入您的手机号码");
+$(".floatingwindow-right-phone02").watermark( "请输入您的手机号码");
+$(".floatingwindow-right-phone03").watermark( "请输入您的手机号码");
+$(".floatingwindow-right-phone04").watermark( "请输入您的手机号码");
+$(".floatingwindow-right-phone05").watermark( "请输入您的手机号码");
+$(".floatingwindow-right-name01").watermark( "请输入您的姓名");
+$(".floatingwindow-right-name02").watermark( "请输入您的姓名");
+$(".floatingwindow-right-name03").watermark( "请输入您的姓名");
+$(".floatingwindow-right-name04").watermark( "请输入您的姓名");
+$(".floatingwindow-right-name05").watermark( "请输入您的姓名");
+function test111(id) {
+    
+    $("input[name='floatingwindow-right-name']").each(function(index,item){
+		 if(id == index+1){
+			   name = ($(this).val());
+			if (name=="") {
+				showDialog('提示', '请输入正确姓名！');
+				return false;
+			}else{
+			  $("input[name='floatingwindow-right-phone']").each(function(index,item){
+		       if(id == index+1){
+			   mobile = ($(this).val());
+			       if (!isMobile(mobile)) {
+				    showDialog('提示', '请输入正确的手机号码！');
+				    return false;
+			                    }else{
+				          var url = "http://tg.zhengjin99.com/zhengjin/ws/put_resource_desc.jsp?callbackparam=?";
+				         $.getJSON(url, {mobile: mobile, activityId: 'zj99_zskh_20150616', desc: '', isSms: 0}, function(data) { });
+			 			showDialog('提示', "预约成功！<br>稍后会有工作人员与您联系，请保持手机畅通。");
+				}
+	
+		 return false;}
+							 //alert($(this).val());
+		})	 
+				
+			}
+			
+		 return false;}
+							 //alert($(this).val());
+		});	
+	
+    }
+</script>
+<script src="/js/jquery.watermark.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/css/ui-dialog.css" />
+<script type="text/javascript" src="/js/dialog-min.js"></script>
+
+ <script type="text/javascript">
+     function tabright(n)
+     {
+           var len = 5;
+           for (var i = 1; i <= len; i++)
+     {
+           document.getElementById('tabright_a' + i).style.display = (i == n) ? 'block' : 'none';
+           document.getElementById('tabright_' + i).className = (i == n) ? 'hoverpc' :''; 
+         
+}
+}
+</script>
+<script type="text/javascript">
+var minheight=0;
+var maxheight=-230;
+var divObj=document.getElementById('floatingwindow');
+//var aa=parseInt(divObj.offsetRight);
+
+$('.zank').click(function(){
+
+			$('#floatingwindow').stop();			
+				$('#floatingwindow').animate({right:"0px"},500);
+				$('.zank').hide();
+				$('.shous').show();
+			
+})
+
+$('.shous').click(function(){
+			
+			$('#floatingwindow').stop();						
+				$('#floatingwindow').animate({right:-230},500);
+				$('.zank').show();
+				$('.shous').hide();
+			
+})
+$('#tabright_1').mouseover(function(){
+
+			$('#floatingwindow').stop();						
+				$('#floatingwindow').animate({right:"0px"},500);
+			    $('.zank').hide();
+				$('.shous').show();
+})
+$('#tabright_2').mouseover(function(){
+            $('#floatingwindow').stop();						
+				$('#floatingwindow').animate({right:"0px"},500);
+			    $('.zank').hide();
+				$('.shous').show();
+})
+$('#tabright_3').mouseover(function(){
+			$('#floatingwindow').stop();						
+				$('#floatingwindow').animate({right:"0px"},1000);
+			    $('.zank').hide();
+				$('.shous').show();
+})
+$('#tabright_4').mouseover(function(){
+           $('#floatingwindow').stop();						
+				$('#floatingwindow').animate({right:"0px"},500);
+			    $('.zank').hide();
+				$('.shous').show();
+})
+$('#tabright_5').mouseover(function(){
+           $('#floatingwindow').stop();						
+				$('#floatingwindow').animate({right:"0px"},500);
+			    $('.zank').hide();
+				$('.shous').show(); 
+})
+
+$('#floatingwindow');
+function moveleft(){ 
+$("floatingwindow").animate({right:"+=0px"},1000);
+  };
+function moveright(){ 
+$("floatingwindow").animate({right:"+=0px"},1000);
+ };
+</script>

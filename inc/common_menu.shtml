@@ -1,0 +1,220 @@
+<style>
+.helperDiv {
+	position: absolute;
+	z-index: 10;
+	right: 0px;
+	top: 150px;
+	width: 185px;
+	overflow: hidden;
+}
+</style>
+<!--悬浮帮助 right;-155px-->
+<DIV id=xixi class="helperDiv">
+	<!--  -->
+	<div id="xixitable"
+		style="width: 155px; float: right; overflow: hidden;">
+		<div id="xixitable2" style="width: 155px;">
+			<TABLE border=0 cellSpacing=0 cellPadding=0 class="fr"
+				style="border: 1px solid #C03; background: #fff">
+				<TBODY>
+					<TD class=info vAlign=top>
+						<TABLE border=0 cellSpacing=0 cellPadding=0 align=center>
+							<TBODY>
+								<TR>
+									<TD class="help_title"><strong class="font_white">新手入门</strong>
+									</TD>
+								</TR>
+								<tr>
+									<td style="background: url(images/help_bg.jpg) repeat-x">
+										<TABLE>
+											<TR class=qqtable>
+												<TD height=30 align=middle><a  target='_blank'
+													href="http://tg.zhengjin99.com/zhengjin/xsrm3/index1.jsp?activityID=xsrm3_gjs_20131025">3分钟了解现货白银</a>
+												</TD>
+											</TR>
+											<TR class=qqtable>
+												<TD height=30 align=middle><a  target='_blank'
+													href="http://tg.zhengjin99.com/zhengjin/sphy/zjyp.jsp">证金银屏【视频】</a>
+												</TD>
+											</TR>
+											<TR class=qqtable>
+												<TD height=30 align=middle><a  target='_blank'
+													href="http://tg.zhengjin99.com/zhengjin/regUser.jsp">注册模拟</a>
+												</TD>
+											</TR>
+										</TABLE></td>
+								</tr>
+								</TR>
+								<TR>
+									<TD class="help_title"><strong class="font_white">我要咨询</strong>
+									</TD>
+								</TR>
+								<TR>
+									<TD align=middle class="zx_xz"><a href="#" onclick='javascript:doyoo.util.openChat("g=66550")'>客户服务</a>
+									</TD>
+								</TR>
+								<TR>
+									<TD align=middle class="zx_xz"><a href="#" onclick='javascript:doyoo.util.openChat("g=66523")'>模拟开户</a>
+									</TD>
+								</TR>
+								<TR>
+									<TD align=middle class="zx_xz"><a href="#" onclick='javascript:doyoo.util.openChat("g=66551")'>实盘开户</a>
+									</TD>
+								</TR>								
+								<TR>
+									<TD align=middle class="zx_xz"><a href="#" onclick='javascript:doyoo.util.openChat("g=66492")'>投诉与建议</a>
+									</TD>
+								</TR>
+								<TR>
+									<TD class="help_title"><strong class="font_white">软件下载</strong>
+									</TD>
+								</TR>
+								<TR>
+									<TD align=middle class="zx_xz"><a
+										href="http://soft.zhengjin99.com/ZJHQ1.0.rar">行情软件</a>
+									</TD>
+								</TR>
+								<TR>
+									<TD align=middle class="zx_xz"><a
+										href="http://soft.zhengjin99.com/ZJDEMOTrader4.2.12_Setup.rar">模拟交易软件</a>
+									</TD>
+								</TR>
+
+								<TR>
+									<TD align=middle class="zx_xz"><a
+										href="http://soft.zhengjin99.com/ZJRealTrader4.2_Setup.exe">实盘交易软件 </a>
+										
+									</TD>
+								</TR>
+<TR>
+									<TD align=middle class="zx_xz">
+										<a href="http://soft.zhengjin99.com/VC-X86.rar">实盘交易软件组件下载</a>
+									</TD>
+								</TR>
+								<TR>
+									<TD align=middle class="zx_xz"><a target='_blank' 
+										href="http://wap.hxce.cn/">手机软件</a>
+										<a style="background: none;"  href="http://www.zhengjin99.com/ppt/instruction.ppt">使用说明</a>
+									</TD>
+								</TR>
+								<TR>
+									<TD align=middle class="zx_xz"><a target='_blank' 
+										href="http://tg.zhengjin99.com/zhengjin/hxzb/">手机直播软件</a>
+										
+									</TD>
+								</TR>
+							</TBODY>
+						</TABLE>
+					</TD>
+					</TR>
+				</TBODY>
+			</TABLE>
+		</div>
+	</div>
+	<DIV class="Obtn"
+		style="cursor: pointer; float: right; background-position: 0 0px"
+		onclick="changeClick()" id="obbtn"></DIV>
+
+</DIV>
+<div id="testformDiv" style="display:none;">
+<form style="display:none;" id="testform" name="testform" action="http://zhibo.zhengjin99.com/hxzb/hxzb_lishi.jsp" method="get" target="_blank">
+<input type="hidden" id="testroomid" name="roomid">
+</form>
+</div>
+<SCRIPT language=javascript>
+	var width = 155;
+	var curWidth = 155;
+	var changeInterval;
+	var perWidth = 15;
+	var perSec = 50;
+	var isToBig = true;
+	
+	function changeClick(){
+		clearInterval(changeInterval);
+		var btnEle = $("#obbtn");
+		if(isToBig){
+			isToBig = false;
+			//btnEle.style.backgroundPostion = "0 0px";
+			btnEle.css("background-position","0 -88px");
+			toSmall();
+		}else{
+			isToBig = true;
+			//btnEle.style.backgroundPostion = "0 -89px";
+			btnEle.css("background-position","0 0px");
+			toBig();
+		}
+	}
+
+	function toSmall(){
+		changeInterval = setInterval(function(){changePos(curWidth , 0 , false)} , perSec);
+	}
+
+	function toBig(){
+		changeInterval = setInterval(function(){changePos(curWidth , width , true)} , perSec); 
+	}
+		
+			
+	function changePos(start,end,isAdd){
+		if(isAdd){
+			curWidth += perWidth;
+		}else{
+			curWidth -= perWidth;
+		}
+		if(curWidth < 0){
+			curWidth = 0;
+		}
+		if(curWidth > width){
+			curWidth = width;
+		}
+		document.getElementById("xixitable").style.width = curWidth + "px";
+		if((start <= 0 && start >= end) || (curWidth >= end && start <= end) || (start == end)){
+		//if((start == 0 && end == 0) || (start == width && end == width)){
+			clearInterval(changeInterval);
+		}
+	}
+
+	function heartBeat(){
+		var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+		var baseTop = 150;	
+		var baseTop2 = 100;	
+		var ele1 = document.getElementById("xixi");
+		var ele2 = document.getElementById("popLoginWin");
+		var ele3 = document.getElementById("change_win");
+
+		var windowWidth, windowHeight,windowScrollTop; 
+		if (self.innerHeight) { // all except Explorer 
+		windowWidth = self.innerWidth; 
+		windowHeight = self.innerHeight; 
+		windowScrollTop = self.scrollTop; 
+		} else if (document.documentElement && document.documentElement.clientHeight) { // Explorer 6 Strict Mode 
+		windowWidth = document.documentElement.clientWidth; 
+		windowHeight = document.documentElement.clientHeight; 
+		windowScrollTop = document.documentElement.scrollTop; 
+		} else if (document.body) { // other Explorers 
+		windowWidth = document.body.clientWidth; 
+		windowHeight = document.body.clientHeight; 
+		windowScrollTop = document.body.scrollTop; 
+		}
+
+		var totalHeight = windowHeight;
+		var menuHeight = 450;
+		if(menuHeight > totalHeight){
+			baseTop = 0;
+		}else{
+			baseTop = (totalHeight - menuHeight) / 2;
+		}
+		if(ele1 && ele1.style.display != "none"){
+			ele1.style.top = (scrollTop + baseTop + 50) + "px";
+		}
+		if(ele2 && ele2.style.display != "none"){
+			ele2.style.top = (scrollTop + baseTop2) + "px";
+		}
+		if(ele3 && ele3.style.display != "none"){
+			ele2.style.top = (scrollTop + 428) + "px";
+		}
+	}
+
+	window.setInterval("heartBeat()",300);
+</SCRIPT>
+
+<!--#include virtual="/inc/common_confirm.shtml"-->

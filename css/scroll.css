@@ -1,0 +1,52 @@
+@charset "gbk";
+/* CSS Document */
+
+
+.dumascroll {}		/*只需对需要渲染滚动条的div设置该class即可*/
+.dumascroll_area {
+	height:100%;
+	overflow:hidden;
+	
+}
+.dumascroll_bar{
+	background:#cbcbcc;
+	opacity:0.8;
+	}
+.dumascroll_handle,.dumascroll_handle_a {
+	background:url(../zjjn_images/handle_center.gif) center no-repeat;
+	background-color:#a2a3a3;
+	border-radius:4px;
+}
+.dumascroll_bar {
+	position:absolute;
+	top:0;
+	right:0;
+	z-index:9;
+	width:21px;
+	height:100%;
+	cursor:default;
+	-moz-user-select:none;
+	-khtml-user-select:none;
+	user-select:none;
+	background-repeat:repeat-y;
+	background-position:-42px 0;
+	float:left;
+}
+.dumascroll_arrow_up,.dumascroll_arrow_up_a,.dumascroll_handle,.dumascroll_handle_a,.dumascroll_arrow_down,.dumascroll_arrow_down_a {
+	position:absolute;
+	left:0;
+}
+.dumascroll_arrow_up,.dumascroll_arrow_up_a,.dumascroll_arrow_down,.dumascroll_arrow_down_a {
+	width:100%;
+	height:0px;
+	text-align:center;
+}
+.dumascroll_arrow_up,.dumascroll_arrow_up_a { top:0; }
+.dumascroll_arrow_down,.dumascroll_arrow_down_a { bottom:0; }
+.dumascroll_handle,.dumascroll_handle_a { width:100%; }
+.dumascroll_arrow_up {  }
+.dumascroll_arrow_up_a {  }
+.dumascroll_handle {  }
+.dumascroll_handle_a {  }
+.dumascroll_arrow_down {  }
+.dumascroll_arrow_down_a {  }

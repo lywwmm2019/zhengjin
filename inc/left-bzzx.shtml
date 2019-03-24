@@ -1,0 +1,162 @@
+  <!--left-->
+	<div class="bzzx_menu">
+ 		 <div id="firstpane" class="menu_list">
+         
+    <!--Code for menu starts here-->
+    <p class="menu_head">开户宣传片</p>
+   	 <div  class="menu_body">
+     	<dl>
+             <dd> <a href="bzzx_index.html">津贵所开户宣传片 </a> </dd>
+             <!--<dd> <a href="dy_vedio.html">大圆银泰开户宣传片 </a> </dd> --> 
+             <!--<dt><a href="#"> 津贵所网上实时开户 </a>
+             	<ul class="sfhover">
+                    <li><a  href="bzzx_jgskhysdh.html" >实时开户演示动画</a></li>
+                    <li><a  href="bzzx_khlc.html" >实时开户流程</a></li>
+                    <li><a href="http://tg.zhengjin99.com/zhengjin/spAndYyKH/khts.jsp" >网上开户入口</a></li>
+                    <li><a  href="bzzx_wskhzysx.html" >网上开户注意事项</a></li>
+                </ul>
+             </dt>
+             <dd> <a href="../service/bzzx_jgsdownload.html">开户确认书下载地址和生活照模板 </a> </dd>
+             <dd> <a href="bzzx_jgs_error.html">津贵所验证不通过的主要原因</a> </dd>-->
+        </dl>  
+    </div>   
+      <p class="menu_head">津贵所开户相关问题</p>
+   	 <div  class="menu_body">
+     	<dl>
+             <dd> <a href="bzzx_wskhzysx.html"> 网上开户入口和注意事项</a> </dd>
+             <dd> <a href="bzzx_jgsopen-flow.html">开户流程演示动画</a></dd> 
+             <dd> <a href="bzzx_jgsdownload.html">常用表格下载 </a> </dd> 
+             <dd> <a href="bzzx_jgsbank02.html">津贵所网银签约演示动画</a></dd> 
+             <dd> <a href="bzzx_jgscrjfz.html">津贵所出入金规则和途径</a></dd> 
+             <dd> <a href="bzzx_bankqycrjjy.html">津贵所银行签约解约、出入金时间表</a></dd>    
+        </dl>  
+    </div>  
+     <!--<p class="menu_head">大圆银泰开户相关问题</p>
+   	 <div  class="menu_body">
+     	<dl>
+             <dd> <a href="bzzx_dayuansskh01.html">网上开户入口和注意事项</a> </dd>
+             <dd> <a href="bzzx_dyopen-flow.html">开户流程演示动画</a></dd>
+             <dd> <a href="bzzx_dayuansskh02.html">常用表格下载</a> </dd> 
+             <dd> <a href="bzzx_dayuancartoon.html">大圆银泰网银签约演示动画</a> </dd>  
+             <dd> <a href="bzzx_dayuancrjgz.html">大圆银泰出入金规则和途径</a></dd>
+             <dd> <a href="bzzx_bankqycrjjy_dayuan.html">大圆银泰银行签约、出入金时间表</a></dd>    
+        </dl>  
+    </div>  -->
+     
+   <!-- <p class="menu_head">银行签约相关问题</p>
+   		 <div  class="menu_body"> 
+    		<dl>
+            	<dt><a href="#">银行签约入口</a>
+                	<ul class="sfhover">
+                    	<li><a href="bzzx_jgsbank01.html">津贵所银行签约入口</a></li>
+                        <li><a href="../service/bzzx_dayuanweb01.html">大圆银泰银行签约入口</a></li>
+                    	<li><a href="bzzx_hxsbank01.html" >海商所银行签约入口</a></li>
+                	</ul>
+                </dt>
+                
+                <dt><a href="#">网银签约指南</a>
+                	<ul class="sfhover">
+                    	<li><a href="bzzx_jgsbank02.html" >津贵所网银签约演示动画</a></li>
+                        <li><a href="../service/bzzx_dayuancartoon.html" >大圆银泰网银签约演示动画</a></li>
+                    	<li><a href="bzzx_hxsbank02.html" >海商所网银签约演示动画</a></li>
+                	</ul>
+                </dt>
+                
+               <dd><a href="bzzx_jgsbank03.html">津贵所银行签约中遇到的问题</a></dd>
+            </dl>
+    	 </div>-->
+         
+         
+          <!--<p class="menu_head">津贵所面签开户相关问题</p>
+   		 <div id="menu_body" class="menu_body"> 
+    		<dl>
+            	<dt><a href="#">津贵所预约面签开户</a>
+                	<ul class="sfhover">
+                    	<li><a href="bzzx_jgsmqkh01.html">开户流程及注意事项</a></li>
+                    	<li><a href="bzzx_jgsmqkh02.html" >协议书签署范本</a></li>
+                	</ul>
+                </dt>
+            </dl>
+    	 </div>
+         
+          <p class="menu_head">大圆银泰面签开户相关问题</p>
+   		 <div id="menu_body" class="menu_body"> 
+    		<dl>
+            	<dt><a href="#">大圆银泰面签开户</a>
+                	<ul class="sfhover">
+                    	<li><a href="../service/bzzx_dayuanmqkh01.html">开户流程及注意事项</a></li>
+                        <li><a href="../service/bzzx_dayuanmqkh02.html">开户视频录制流</a></li>
+                	</ul>
+                </dt>
+            </dl>
+    	 </div>-->
+         
+          <!--<p class="menu_head">	出入金交易相关问题</p>
+   		  <div id="menu_body" class="menu_body"> 
+    		<dl>
+                 <dt><a href="#">出入金规则</a>
+                	<ul class="sfhover">
+                    	<li><a href="bzzx_jgscrjfz.html">津贵所出入金规则</a></li>
+                        <li><a href="../service/bzzx_dayuancrjgz.html">大圆银泰出入金规则</a></li>
+                    	<li><a href="bzzx_jgscrjfz02.html">海商所出入金规则</a></li>
+                	</ul>
+                </dt>
+                <dt><a href="#">出入金途径</a>
+                	<ul class="sfhover">
+                    	<li><a href="bzzx_jgscrjtj.html">津贵所出入金途径</a></li>
+                        <li><a href="../service/bzzx_bankqycrjtj_dayuan.html">大圆银泰出入金途径</a></li>
+                    	<li><a href="bzzx_hsscrjtj.html">海商所出入金途径</a></li>
+                	</ul>
+                </dt>
+                <dt><a href="#">银行签约、出入金时间表</a>
+                	<ul class="sfhover">
+                    	<li><a href="bzzx_bankqycrjjy.html">津贵所银行签约、出入金时间表</a></li>
+                        <li><a href="../service/bzzx_bankqycrjjy_dayuan.html">大圆银泰银行签约、出入金时间表</a></li>
+                    	<li><a href="bzzx_bankqycrjjy02.html">海商所银行签约、出入金时间表</a></li>
+                	</ul>
+                </dt>
+            </dl>
+    	 </div>-->
+        
+        <!--<p class="menu_head"> 海商所预约面签开户相关问题 </p>
+   		 <div id="menu_body" class="menu_body"> 
+    		<dl>
+            	<dd><a href="bzzx_hssyymq01.html">开户准备工作和注意事项</a></dd>
+                <dd><a href="bzzx_hssmq02.html">协议书下载地址和签署范本</a></dd>
+                <dd><a href="bzzx_hssyymq03.html">需要递交哪些资料</a></dd>       
+            </dl>
+    	 </div>-->
+        
+         
+          <!--<p class="menu_head"> 模拟开户相关问题</p>
+   		 <div id="menu_body" class="menu_body"> 
+    		<dl>
+            	<dd><a href="bzzx_mnkh.html">模拟帐号申请注意事项</a></dd>
+             </dl>
+         </div>-->
+        <!-- <p class="menu_head"><a href="bzzx_fwtx.html">服务体系</a> </p>-->
+         
+          <p class="menu_head">服务渠道</p>
+   		 <div id="menu_body" class="menu_body"> 
+    		<dl>
+            	<dd><a href="gywm_lxwm_fwdh.html">客户服务电话一览</a></dd>
+                <dd><a href="bzzx_wxgzh.html">微信公众号</a></dd>   
+            </dl>
+    	 </div>
+  
+  </div>
+</div>
+
+<!--left-end-->
+<script type="text/javascript">
+$(document).ready(function(){
+ var url = window.location.href;
+	var dd = url.split('?')[0].split('/');
+	if(dd.length >0){
+		var lasturl=dd[dd.length-1]
+        if(lasturl=='bzzx_index.html'){
+			$('.menu_body').eq(0).css({'display':'block'})
+			}
+		}
+	})
+</script>

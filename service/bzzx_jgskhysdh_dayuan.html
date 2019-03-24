@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="证金贵金属,白银,白银分析,白银投资,白银价格,白银交易,炒白银,白银走势,白银软件,模拟炒银,美联储,白银在线分析" />
+<meta name="description" content="证金贵金属，首家赴美纳斯达克上市公司中国最大最专业的白银投资服务平台，致力于白银投资、白银交易、现货白银、白银价格、炒白银、现货白银走势、白银行情、模拟炒银、现货白银开户、投资资讯、分析评论、贵金属投资等贵金属综合性投资服务" />
+
+<title>帮助中心_证金贵金属</title>
+<!--#include virtual="/inc/head_link_2014.shtml"-->
+<link href="../css/style_2014.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="http://js.jrj.com.cn/v/swfobject.js"></script>
+ 
+<script type="text/javascript">
+$(document).ready(function()
+{
+	$("#firstpane p.menu_head").bind('click',function(){
+		$(this).css({background:"#fff url(../images2014/khsp02.jpg) center left no-repeat",'border-bottom':'1px dashed #d0d0d0'})
+		$(this).next("div.menu_body").slideDown(300);
+       	$(this).siblings().css({backgroundImage:"url(../images2014/khsp01.jpg)",'background-color':'#f2f2f2','border-bottom':'1px solid #d0d0d0'});
+		$(this).siblings().next("div.menu_body").slideUp(300);
+	});
+	$('.menu_body dl dt').bind('mouseenter',function(){
+		$(this).find('ul.sfhover').show();
+	});
+	$('.menu_body dl dt').bind('mouseleave',function(){
+		$(this).find('ul.sfhover').hide();
+	});
+});
+
+</script>
+ 
+ <script>
+	var t=1;
+	$(document).ready(function(){		
+		$('area').bind('click',function(){
+			var areaid=$(this).parent().prev().attr('id');	
+			var length=$(this).parents('.wyqy_bank').find('img').length;	
+			var areaidlength=areaid.length;
+			var reid=areaid.substring(0,areaidlength-1);	
+			turnpage(1,length,reid);			
+		})
+		$('.returnbank').bind('click',function(){
+			$('.wyqy_bank img').hide();
+			var l=$('.wyqy_bank').length;
+			for(var i=0;i<l;i++){
+				$('.wyqy_bank').eq(i).find('img').eq(0).show();
+			}
+			t=1;
+		
+			$('.return_page').parent().hide();
+			$('.back_page').parent().hide();
+			$(this).parents('.showbank').hide();
+		
+		})
+	})
+	function turnpage(num,total,showid){
+		num==0?t=1:t=t+num;
+		var hideid=showid.split('_')[0];
+		if(t>1&&t<total){
+			$('#return_page_'+showid).parent().show();
+		}
+		else if(t>total-1){
+			$('#return_page_'+showid).parent().hide();
+			$('#back_page_'+showid).parent().show();
+		}
+		else{
+			$('#return_page_'+showid).parent().hide();
+			$('#back_page_'+showid).parent().hide();
+		}
+		if(t==5){
+			
+				$('.returnbank').show();
+			
+		}
+		else{
+			$('.returnbank').hide();
+		}
+		$('#'+hideid+ ' img').hide();
+		$('#'+showid+t).show();
+	}
+</script>
+
+</head>
+
+<body>
+	<!--head-->
+	<!--#include virtual="/inc/head_2014.shtml"-->
+<!--#include virtual="/inc/nav_fuwu.shtml"-->
+    <!--head-end-->
+    <!--middle-->
+ <div class="w990 mauto clear over mt20" style="background:url(../images2014/bzzx_khsp05.jpg) repeat-y top left;" >
+  <!--left-->
+	<!--#include virtual="/inc/left-bzzx.shtml"-->
+<!--left-end-->
+<!--right-->
+<div class="bzzx_khsp">
+	<h4>大圆银泰网上实时开户演示动画</h4>
+    <div class="wyqy_bank">
+    <div id="dh-0">
+    <img src="dayuankaihu_images/1.gif"  alt="" width="650" height="438" usemap="#Map" border="0" name="dh-0_page1" id="dh-0_page1" style="display:block;"/>
+    <map name="Map" id="Map" style="width:86px;height:35px;">
+      <area shape="rect" coords="561,291,643,327" href="javascript:void(0);"/>
+    </map>  
+                                                                  
+    <img src="dayuankaihu_images/2.gif"  alt="" width="650" height="549" usemap="#Map2" border="0" name="dh-0_page2" id="dh-0_page2"/ style="display:none;">
+    <map name="Map2" id="Map2">
+      <area shape="rect" coords="571,501,647,526" href="javascript:void(0);"/>
+    </map>
+    
+    <img src="dayuankaihu_images/3.gif"  alt="" width="650" height="540" usemap="#Map3" border="0" name="dh-0_page3" id="dh-0_page3"/ style="display:none;">
+    <map name="Map3" id="Map3">
+      <area shape="rect" coords="577,501,649,528" href="javascript:void(0);"/>
+    </map>
+    
+    <img src="dayuankaihu_images/4.gif"  alt="" width="650" height="510" usemap="#Map4" border="0" name="dh-0_page4" id="dh-0_page4"/ style="display:none;">
+    <map name="Map4" id="Map4">
+      <area shape="rect" coords="569,451,644,476" href="javascript:void(0);" />
+    </map>
+    
+    <img src="dayuankaihu_images/5.gif" width="650" height="468"  alt="" name="dh-0_page5" id="dh-0_page5"/ style="display:none;"> 
+    
+       
+    <script>
+$(document).ready(function(){
+    $("#Map57").click(function(){
+      $("#next01").show();
+  });
+  
+    $("#next01").click(function(){
+      $("#xy_page9").show();
+  });
+    $("#next01").click(function(){
+	  $("#xy_page8").hide();
+	  $("#next01").hide();
+		});
+
+});
+</script>
+   
+    <div class="hide" style="margin:0px 0 0 50px; float:right;">
+    <a id="return_page_dh-0_page" class="return_page" href="javascript:void(0);" onclick="turnpage(-1,4,'dh-0_page')">返回上一页</a>
+    </div>
+        
+    <div class="showbank"><a class=" fb returnbank back_page"  style="margin:50px 50px 0 0px; float:right; display:none;" >返回首页</a> </div>  
+    
+    </div>					
+</div>
+</div>
+<!--right-end-->
+ </div>
+ <!--whole_fwtx-end-->
+ <div class="clear" style="height:0px; line-height:0px;"></div>
+    <!--特色服务-->
+    <!--#include virtual="/inc/bottom_2014.shtml"-->
+    <!--特色服务-end-->
+    <!--foot-->
+     <!--#include virtual="/inc/foot_2014.shtml"-->
+    <!--foot-end-->
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta name="keywords" content="证金贵金属,白银,白银分析,白银投资,白银价格,白银交易,炒白银,白银走势,白银软件,模拟炒银,美联储,白银在线分析" />
+<meta name="description" content="证金贵金属，首家赴美纳斯达克上市公司中国最大最专业的白银投资服务平台，致力于白银投资、白银交易、现货白银、白银价格、炒白银、现货白银走势、白银行情、模拟炒银、现货白银开户、投资资讯、分析评论、贵金属投资等贵金属综合性投资服务" />
+<title>研究中心_证金贵金属</title>
+<!--#include virtual="/inc/head_link_2014.shtml"-->
+<script type="text/javascript" src="/js/function_yanjiu.js"></script>
+<script type="text/javascript" src="../js/slides.min.jquery.js"></script>
+<script>
+	$(function() {
+		var host = 'http://tg.zhengjin99.com';
+		
+		$.getJSON(host + "/zhengjin/news_ajax.jsp?callback=?", {
+			modelId: 721,
+			pageSize: 2,
+			rnd : Math.random()
+		}, function(data) {
+			var content = '';
+			$.each(data.rows || [], function(i, item) {
+				content += '<li><img src="'+ host + item.VIDEO_SRC +'" width="194" height="128" />';
+				content += '<p class="title"><a target="_blank" href="'+ host + '/tool/flash2.jsp?f=' + item.FILE_PATH + item.FILE_NAME.replace(".pdf.swf", "") +'">'+item.TITLE+'</a></p>';
+				content += '<p>'+item.SUMMARY+'...<a target="_blank" href="'+ host + '/tool/flash2.jsp?f=' + item.FILE_PATH + item.FILE_NAME.replace(".pdf.swf", "") +'">详情》</a></p>';
+				content += '<p>明富金融研究所   '+item.REC_TIME+'</p></li>';
+			});
+			$("#report").html(content);
+		});
+		
+		$.getJSON(host + "/zhengjin/news_ajax.jsp?callback=?", {
+			modelId: 735,
+			pageSize: 1,
+			rnd : Math.random()
+		}, function(data) {
+			var content = '';
+			var item = data.rows[0];
+			content += '<div class="clear over yjzx_index_zjjn">';
+			content += '<img src="'+ host + item.VIDEO_SRC +'" width="134" height="178" class="fl" />';
+			content += '<p class="title">刊号：</p>';
+			content += '<p class="mb10">'+item.CATALOG+'</p>';
+			content += '<p class="title">本期焦点：</p>';
+			content += '<p class="mb10">'+item.SUMMARY.replace(/\|/g, "<br>")+'</p>';
+			content += '<p class="mb10 time">'+item.ORGAN+'</p>';
+			content += '<p><input onclick="window.open(\'http://tg.zhengjin99.com/tool/flash2.jsp?f='+item.FILE_PATH+item.FILE_NAME.replace(".pdf.swf", "")+'\');" type="button" value="立即阅读" class="btn2" /></p></div>';
+			content += '<div class="cfzk_tj_title fl pr"><div class="cfzk_tj fl">本期精彩看点</div><div class="cfzk_border pa"></div></div>';
+			content += '<ul class="cfzk_list fl">';
+			content += '<li>·'+item.CONTENT.replace(/\|/g, "</li><li>·")+'</li>';
+			content += '</ul>';
+			$("#journal").append(content);
+		});
+	});
+</script>
+<script>
+		$(function(){
+			$('#slides_yjzx').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 2000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log(current);
+					};
+				}
+			});
+		});
+</script>
+</head>
+
+<body>
+	<!--#include virtual="/inc/head_2014.shtml"-->
+    <!--#include virtual="/inc/nav_yanjiu.shtml"-->
+    <div id="yjzx_index" class="pr">
+    	<div class="clear">
+        	<div class="fl w310">
+               	<!--<JRJTAG	tagtype="01" clsid="604001003,604001005,604001009,604001010,604001011" pagesize="1" pagecount="1" id="focus" />
+                   <#if focus?exists>
+                       <#list focus as d>
+	            	<img src="http://img.zhengjin99.com/web/small/${d.id?c}.jpg" width="310" height="205" class="block mb10" />
+	                <p class="title"><a href="${d.infourl}" target="_blank">${d.title}</a></p>
+	                <p class="mb20 mt10">${d.mediasource}  ${d.makedate?string("yyyy年MM月dd日 HH:mm")}</p>
+	                <p>${jrjfund.subgbk(d.description,150)}...<a target="_blank" href="${d.infourl}">详情》</a></p>
+                 		</#list>
+				</#if>-->
+
+               	
+               <div id="container_yjzx">
+        
+		           <div id="example_yjzx">	
+        		
+			         <div id="slides_yjzx">
+                       <div id="pag_yjzx"></div>
+				         <div class="slides_container_yjzx">
+                           <JRJTAG 
+                            tagtype="02" 
+                            clsid="604002020" 
+                            pagesize="1" 
+                            pagecount="1" 
+                            viewedit="0"
+                            speccheck="1"
+                            id="yjzx" />
+                            <#if yjzx?exists>
+                              <#list yjzx as d>
+                                ${d.intor}
+                              </#list>
+                            </#if>
+                       </div>
+			          </div>
+		           </div>
+                </div>
+               
+                
+
+               	
+                <!--<div id="container_yjzx">
+        
+		           <div id="example_yjzx">	
+        		
+			         <div id="slides_yjzx">
+                       <div id="pag_yjzx"></div>
+				         <div class="slides_container_yjzx">
+                           <JRJTAG 
+                            tagtype="02" 
+                            clsid="604002020" 
+                            pagesize="1" 
+                            pagecount="1" 
+                            viewedit="0"
+                            speccheck="1"
+                            id="yjzx" />
+                            <#if yjzx?exists>
+                              <#list yjzx as d>
+                                ${d.intor}
+                              </#list>
+                            </#if>
+                       </div>
+			          </div>
+		           </div>
+                </div>-->
+               <!---->
+                
+
+            </div>
+            <div class="fl w310 ml30 yjzx_news_main" id="news_data">
+            </div>
+			<script type="text/javascript" src="../js/newsflash.js"></script>
+            
+            <div class="fr w310" id="cal_data">
+            </div>
+			<script type="text/javascript" src="../js/calendar.js"></script>
+			
+            <div class="clear"></div>
+        </div>
+        
+        
+        <div class="clear over yjzx_index_mt">
+        	<div class="fl yjzx_index_left">
+            	<p class="yjzx_index_report pr index_title">研究报告<a href="http://tg.zhengjin99.com/zhengjin/yjbg" class="more pa"></a></p>
+                <ul class="list" id="report">
+                </ul>
+            </div>
+            <div class="fr w310" id="journal">
+            	<p class="yjzx_index_tips pr index_title">财富周刊<a href="http://tg.zhengjin99.com/zhengjin/cfzk" class="more pa"></a></p>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+        
+        <div class="clear over">
+        	<div class="fl yjzx_index_left">
+            	<p class="yjzx_index_review pr index_title">金牌早晚评<a href="list_yanjiu_zaowan.shtml" class="more pa"></a></p>
+                <ul class="list">
+                	<JRJTAG	tagtype="01" clsid="604001003" pagesize="2" pagecount="1" id="mrpl" />
+                    <#if mrpl?exists>
+                        <#list mrpl as d>
+                	<li><img src="http://img.zhengjin99.com/web/small/${d.id?c}.jpg" width="194" height="128" /><p class="title"><a target="_blank" href="${d.infourl}">${d.title}</a></p>
+                    	<p>${jrjfund.subgbk(d.description,150)}...<a target="_blank" href="${d.infourl}">详情》</a></p>
+                        <p>${d.mediasource}  ${d.makedate?string("yyyy年MM月dd日 HH:mm")}</p>
+                    </li>
+                  		</#list>
+					</#if>
+                </ul>
+            </div>
+            <div class="fr w310">
+            	<p class="yjzx_index_institute pr index_title">证金学院<a href="list_yanjiu_xueyuan.shtml" class="more pa"></a></p>
+				<div class="yjzx_index_zjxy mt10">
+                	<a href="list_yanjiu_xueyuan_jiben.shtml" class="mr20"><img src="../images2014/yjzx_index_zjxy1.png" width="142" height="142" /></a><a href="list_yanjiu_xueyuan_hongguan.shtml"><img src="../images2014/yjzx_index_zjxy2.png" width="142" height="142" /></a><a href="list_yanjiu_xueyuan_jishu.shtml" class="mr20"><img src="../images2014/yjzx_index_zjxy3.png" width="142" height="142" /></a><a href="list_yanjiu_xueyuan_touzi.shtml"><img src="../images2014/yjzx_index_zjxy4.png" width="142" height="142" /></a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+        
+        <div class="clear over">
+        	<div class="fl yjzx_index_left">
+            	<p class="yjzx_index_guide pr index_title">资讯导读<a href="list_yanjiu_daodu.shtml" class="more pa"></a></p>
+                <ul class="list">
+                	<JRJTAG	tagtype="01" clsid="604001005" pagesize="2" pagecount="1" id="zxdd" />
+                    <#if zxdd?exists>
+                        <#list zxdd as d>
+                	<li><img src="http://img.zhengjin99.com/web/small/${d.id?c}.jpg" width="194" height="128" /><p class="title"><a target="_blank" href="${d.infourl}">${d.title}</a></p>
+                    	<p>${jrjfund.subgbk(d.description,150)}...<a target="_blank" href="${d.infourl}">详情》</a></p>
+                        <p>${d.mediasource}  ${d.makedate?string("yyyy年MM月dd日 HH:mm")}</p>
+                    </li>
+                  		</#list>
+					</#if>
+                </ul>
+            </div>
+            <div class="fr w310">
+            	<p class="yjzx_index_vedio pr index_title"><a target="_blank" href="http://vd.jrj.com/front/chat/?room=1&fromUrl=99" class="more pa"></a></p>
+				<div class="pr mt20">
+                	<a target="_blank" href="http://vd.jrj.com/front/chat/?room=1&fromUrl=99"><img src="../images2014/yjzx_index_picsmall.jpg" width="310" height="109"  alt=""/></a>
+                </div>
+                <div class="yjzx_fxts">
+                <img src="../images2014/yjzx_blub.jpg" width="26" height="34"  alt="" class="fl" style="margin-right:5px;"/> 
+                <p class="bold">风险提示:</p>
+                <p>尊敬的客户，您好！作为一家诚信经营、规范发展的行业领军企业，证金公司严格禁止员工向客户承诺收益或与客户分享收益，禁止员工代客操盘或为客户提供任何有偿服务，以上禁止行为均不被证金公司认可和保护，请您拒绝接受并欢迎监督反馈。同时，本公司所提供之研究报告、策略解析或行情分析及互动直播（视频或文字）仅代表分析师及参与客户之本人观点，仅供参考，请您自主做出投资决策并自主下单交易。投资有风险，入市需谨慎。</p>
+                </div>
+            	<!--<p>本周美国方面发布了较多的经济数据，数据好坏不一…<a href="http://vd.jrj.com/">详情》</a></p>
+                <div class="vedio_msg clear over"><div class="fr"><span class="vedio_click"></span><span>400000</span><span class="vedio_talk"></span><span>785</span></div></div>-->
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+    </div>
+    
+    <!--#include virtual="/inc/foot_2014.shtml"-->
+    <!--#include virtual="/inc/rightpiaochuang.shtml"-->
+</body>
+</html>

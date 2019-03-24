@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta name="keywords" content="证金贵金属,白银,白银分析,白银投资,白银价格,白银交易,炒白银,白银走势,白银软件,模拟炒银,美联储,白银在线分析" />
+<meta name="description" content="证金贵金属，首家赴美纳斯达克上市公司中国最大最专业的白银投资服务平台，致力于白银投资、白银交易、现货白银、白银价格、炒白银、现货白银走势、白银行情、模拟炒银、现货白银开户、投资资讯、分析评论、贵金属投资等贵金属综合性投资服务" />
+
+<title>媒体报道_关于我们_证金贵金属</title>
+<!--#include virtual="/inc/head_link_2014.shtml"-->
+
+
+</head>
+
+<body>
+	<!--  -->
+	<!--#include virtual="/inc/head_2014.shtml"-->
+
+	<!--  -->
+	<!--#include virtual="/inc/nav_guanyu.shtml"-->
+    
+   
+    <!--main-->
+     <div class="w990 mauto clear over index_main mt40 left-nav-gywmbg">
+     	<!--nav-->
+        <div id="left-nav-gywm">
+         <ul>
+        	<li><a href="#">公司获奖</a></li>
+            <li class="sl"><a href="#">媒体报道</a></li>
+            <li><a href="/list/list_guanyu_xinwen.shtml">公司新闻</a></li>
+            <li><a href="/list/list_guanyu_dongtai.shtml">公司公告</a></li>
+         </ul>
+        </div> 
+       <!--nav-end-->
+       <!--main-right-->
+       <div class="gywm-right" >
+       	  <h4 class="gyzj-title gyzj-title3">媒体报道</h4>
+             <JRJTAG	tagtype="01" clsid="604001029" pagesize="6" pagecount="10" id="mtbd" />
+                    <#if mtbd?exists>
+                        <#list mtbd as d>
+                        	<div class="shzr clear over">
+                                <img src="http://img.zhengjin99.com/web/small/${d.id?c}.jpg" width="194" height="128" class="mr20 fl" />
+                                <p class="title"><a href="${d.infourl}" target="_blank">${d.title}</a></p>
+                                <p class="">${d.mediasource}  ${d.makedate?string("yyyy年MM月dd日 HH:mm")}</p>
+                                <p class="mt20">${jrjfund.subgbk(d.description,200)}...<a target="_blank" href="${d.infourl}">详情》</a></p>
+                            </div>
+                        </#list>
+                    </#if>
+              <!--page-->
+              <div id="page" class="clear pager pt10">
+                	<div id="pager" class="page fr">
+                    	<#assign locafilename="list_guanyu_meiti">
+                        <#if (curpage>1)>
+                          <span><a href="${locafilename}.shtml">首 页</a></span>
+                          <#if curpage=2>
+                        <span><a href="${locafilename}.shtml" target="_self">上一页</a></span>
+                          <#else>
+                        <span><a href="${locafilename}-${curpage-1}.shtml" target="_self">上一页</a></span>
+                          </#if>
+                        </#if>
+                        <#list 1..pagecount as n>
+                              <#if n=1>
+                                <#if curpage=n>
+                                  <span><a class="cur">${n}</a></span>
+                                <#else>
+                                  <span><a href="${locafilename}.shtml" target="_self">${n}</a></span>
+                                </#if>
+                              <#else>
+                                <#if curpage=n>
+                                  <span><a class="cur">${n}</a></span>
+                                <#else>
+                                  <span><a href="${locafilename}-${n}.shtml" target="_self">${n}</a></span>
+                                </#if> 
+                             </#if>
+                        </#list>
+                        <#if (curpage!=pagecount)>
+                        <span><a href="${locafilename}-${curpage+1}.shtml" target="_self">下一页</a></span>
+                        </#if>
+       			  	</div>
+                	<div class="clear"></div>
+              	</div>
+              <!--page-end-->
+              
+       </div>
+       <!--main-right-end-->   
+     </div>
+    <!--main-end-->
+   <!--特色专题-->
+  <!--#include virtual="/inc/bottom_2014.shtml"-->
+    <!--#include virtual="/inc/foot_2014.shtml"-->
+</body>
+</html>

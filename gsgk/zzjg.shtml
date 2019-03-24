@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>组织构架_公司概况_证金贵金属</title>
+<link href="/css/style.css" rel="stylesheet" type="text/css" />
+<link href="/css/gsxw.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/scrolltop.js"></script>
+<script type="text/javascript" src="/js/jquery-1.6.1.min.js"></script>
+<script>
+function setTab(name,cursel,n){
+ for(i=1;i<=n;i++){
+  var menu=document.getElementById(name+i);
+  var con=document.getElementById("con_"+name+"_"+i);
+  menu.className=i==cursel?"hover":"";
+  con.style.display=i==cursel?"block":"none";
+ }
+}
+
+window.onload=function()
+{
+for(var ii=0; ii<document.links.length; ii++)
+document.links[ii].onfocus=function(){this.blur()}
+}
+</script>
+
+</head>
+
+<body>
+<!--#include virtual="/inc/head_new.shtml"-->
+<!--#include virtual="/inc/head_navigate.shtml"-->
+
+
+<div style="background:url(/gsxw_images/gsxw_bg.jpg) repeat-x #fff;;">
+<div style="width:1001px; margin:0 auto 10px auto; padding-top:5px;" class="clear">
+<div class="fl">
+<div class="left_list mr_b">
+<p class="left_title font_16">公司概况</p>
+<ul>
+<li><a href="/corp/">关于证金</a></li>
+<li><span class="red">组织架构</span></li>
+<li><a href="/corp/hybj.shtml">行业背景</a></li>
+<li><a href="/corp/ppbz.shtml">品牌标志</a></li>
+<li><a href="/corp/qywh.shtml">企业文化</a></li>
+<li><a href="/corp/bghj.shtml">办公环境</a></li>
+<li><a href="/corp/zlhz.shtml">战略合作</a></li>
+<li><a href="/corp/cpyc.shtml">诚聘英才</a></li>
+<li><a href="/corp/ygzj.shtml">员工之家</a></li>
+<li class="bg_none"><a href="/corp/lxwm.shtml">联系我们</a></li>
+</ul>
+</div>
+<p class="mr_b"><a href="http://www.zhengjin99.com/fwdt_zxkf.shtml?t=nav06"><img src="/gsxw_images/online.jpg" width="189" height="101"  class="red_bor"/></a></p>
+<p class="red_bor"><img src="/gsxw_images/gsxw_24.jpg" width="187" height="63" /></p>
+</div>
+<div class="fl" style="margin-left:8px; width:802px;">
+<p class="red_bor mr_b"><img src="/gsxw_images/gsxw_banner.jpg" width="800" height="119" /></p>
+<div class="gsxw_r">
+<p class="gsxw_r_title font_12">当前位置-<strong><a href="/">首页</a></strong>-<a href="/corp/">公司概况</a>-#组织架构#</p>
+<div class="con_text">
+<p style="text-align:center">
+  <img src="/gsxw_images/zzjg.jpg" width="800" height="400" /> </p>
+</div>
+</div>
+</div>
+</div>
+<div class="foot">
+<!--#include virtual="/inc/bank_new.shtml"-->
+
+
+</div>
+</div> 
+<!--#include virtual="/inc/foot_new.shtml"-->
+</div>
+
+</body>
+</html>

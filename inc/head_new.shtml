@@ -1,0 +1,21 @@
+<link href="/css/style_new.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/menu.js"></script>
+<style>
+.logout_btn {
+    background: url("/images/ico.jpg") no-repeat scroll 1px -200px transparent;
+}
+.red_btn,.grey_btn,.tuichu_btn{height:19px;width:45px; border:none; cursor:pointer;text-align:center; margin:0 5px; vertical-align:middle;}
+.tuichu_btn{background: url(/images/ico.jpg) no-repeat  1px -200px}
+</style>
+<div style="width:990px; margin:0 auto; background:url(/images/logo.jpg) no-repeat; height:117px;" class="clear">
+ <p class="gongsi fl"><a  target='_blank' href="http://www.zhengjin99.com/corp/"> 公司概况</a> | <a   target='_blank' href="http://www.zhengjin99.com/list_gsxw.shtml">新闻中心</a><!-- | <a  target='_blank' href="http://www.zhengjin99.com/chanpin/">产品中心</a>--> | 
+<a  target='_blank' href="http://www.zhengjin99.com/fwzx.shtml?t=fwzx1">服务中心</a> | <a target='_blank' href="http://tg.zhengjin99.com/zhengjin/find_password.jsp"> 找回密码</a></p>
+<p class="fr font_12" style="padding-top:83px;" id="loginInfos">
+<!--<span class="input_text">手机号</span><input id="passport" name="" type="text" style="width:70px; height:17px; vertical-align:middle; border:1px solid #CCC" />
+<span class="input_text">密码</span><input id="password" name="input" type="password" onkeypress="BindEnter(event)" style="width:70px;height:17px; vertical-align:middle; border:1px solid #CCC" />
+<input name="" type="button"  class="grey_btn font_grey" value="" onclick="zjgjs.sso.login('')"/><a href="#" style="margin-left:-10px"><input name="" type="button"  class="red_btn font_white"  value="" onclick="window.open('http://tg.zhengjin99.com/zhengjin/sign_up.jsp')"/></a>
+-->
+</p>
+</div>
+<script type="text/javascript" src="http://sso.zhengjin99.com/websso/ssologin?mode=ajax"></script>
+<script type="text/javascript" src="/js/index_common.js?v=2013062604"></script>

@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta name="keywords" content="证金贵金属,白银,白银分析,白银投资,白银价格,白银交易,炒白银,白银走势,白银软件,模拟炒银,美联储,白银在线分析" />
+<meta name="description" content="证金贵金属，首家赴美纳斯达克上市公司中国最大最专业的白银投资服务平台，致力于白银投资、白银交易、现货白银、白银价格、炒白银、现货白银走势、白银行情、模拟炒银、现货白银开户、投资资讯、分析评论、贵金属投资等贵金属综合性投资服务" />
+
+<title>社会责任_关于我们_证金贵金属</title>
+<!--#include virtual="/inc/head_link_2014.shtml"-->
+
+
+</head>
+
+<body>
+	<!--  -->
+	<!--#include virtual="/inc/head_2014.shtml"-->
+
+	<!--  -->
+	<!--#include virtual="/inc/nav_guanyu.shtml"-->
+
+   
+    <!--main-->
+      <div class="w990 mauto clear over index_main mt40 left-nav-gywmbg">
+     	<!--nav-->
+        <div id="left-nav-gywm">
+         <ul>
+        	<li class="sl"><a href="#">社会责任</a></li>
+            <li><a href="#">办公环境</a></li>
+            <li><a href="#">团队风采</a></li>
+         </ul>
+        </div> 
+       <!--nav-end-->
+       <!--main-right-->
+       <div class="gywm-right" >
+       	  <h4 class="gyzj-title gyzj-title3">社会责任</h4>
+             
+              <JRJTAG	tagtype="01" clsid="604001030" pagesize="6" pagecount="10" id="shzr" />
+                    <#if shzr?exists>
+                        <#list shzr as d>
+                        	<div class="shzr clear over">
+                                <img src="http://img.zhengjin99.com/web/small/${d.id?c}.jpg" width="194" height="128" class="mr20 fl" />
+                                <p class="title"><a href="${d.infourl}" target="_blank">${d.title}</a></p>
+                                <p class="">${d.mediasource}  ${d.makedate?string("yyyy年MM月dd日 HH:mm")}</p>
+                                <p class="mt20">${jrjfund.subgbk(d.description,200)}...<a target="_blank" href="${d.infourl}">详情》</a></p>
+                            </div>
+                        </#list>
+                    </#if>
+                	<div class="shzr clear over">
+                        <img src="http://img.zhengjin99.com/web/small/00000001.jpg" width="194" height="128" class="mr20 fl" />
+                        <p class="title"><a href="javascript:void(0)">证金情系老区，唱响红色赞歌</a></p>
+                        <p class="">证金贵金属  2013年9月11日 18:40</p>
+                        <p class="mt20">证金人对老区人民饱含着一份特殊的感情，对老一辈革命先辈更加崇敬与怀念。每个红色节日，证金人的身影都会出现在井冈山、西柏坡等革命圣地。唱响红色赞歌，为老区人民尽绵薄之力。……<a href="javascript:void(0)">详情》</a></p>
+                    </div>
+                    <div class="shzr clear over">
+                        <img src="http://img.zhengjin99.com/web/small/00000000.jpg" width="194" height="128" class="mr20 fl" />
+                        <p class="title"><a href="javascript:void(0)">关注留守儿童，证金校园行</a></p>
+                        <p class="">证金贵金属  2013年8月23日 9:12</p>
+                        <p class="mt20">留守儿童问题愈来愈多的呈现在公众面前。证金贵金属关注这一群体，用我们自己的力量去关爱孩子们。同时，我们也向贵金属行业企业发起号召，倡议大家走出写字楼，走进校园。"大手拉小手"一路同行。……<a href="javascript:void(0)">详情》</a></p>
+                    </div>
+                
+              <!--page-->
+              <div id="page" class="clear pager pt10">
+                	<div id="pager" class="page fr">
+                        <#assign locafilename="list_guanyu_shehui">
+                        <#if (curpage>1)>
+                          <span><a href="${locafilename}.shtml">首 页</a></span>
+                          <#if curpage=2>
+                        <span><a href="${locafilename}.shtml" target="_self">上一页</a></span>
+                          <#else>
+                        <span><a href="${locafilename}-${curpage-1}.shtml" target="_self">上一页</a></span>
+                          </#if>
+                        </#if>
+                        <#list 1..pagecount as n>
+                              <#if n=1>
+                                <#if curpage=n>
+                                  <span><a class="cur">${n}</a></span>
+                                <#else>
+                                  <span><a href="${locafilename}.shtml" target="_self">${n}</a></span>
+                                </#if>
+                              <#else>
+                                <#if curpage=n>
+                                  <span><a class="cur">${n}</a></span>
+                                <#else>
+                                  <span><a href="${locafilename}-${n}.shtml" target="_self">${n}</a></span>
+                                </#if> 
+                             </#if>
+                        </#list>
+                        <#if (curpage!=pagecount)>
+                        <span><a href="${locafilename}-${curpage+1}.shtml" target="_self">下一页</a></span>
+                        </#if>
+       			  	</div>
+                	<div class="clear"></div>
+              	</div>
+              <!--page-end-->
+              
+       </div>
+       <!--main-right-end-->   
+     </div>
+    <!--main-end-->
+   <!--特色专题-->
+	<!--#include virtual="/inc/bottom_2014.shtml"-->
+   <!--特色专题-end-->
+    <!--#include virtual="/inc/foot_2014.shtml"-->
+</body>
+</html>

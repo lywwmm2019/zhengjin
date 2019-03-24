@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>技术讲解</title>
+<!--#include virtual="/inc/head_link.shtml"-->
+</head>
+
+<body>
+	<!--#include virtual="/inc/head.shtml"-->
+    <!--#include virtual="/inc/nav.shtml"-->
+	<div id="about_main" class="clear mb20">
+    	<div class="fl about_left pr">
+        	<div class="pa" style="left:0;top:0;" id="about_left">
+                <!--#include virtual="/inc/left_btn.shtml"-->
+                <ul class="about_link">
+                    <li class="about_link_title">证金学院</li>
+                    <li>&gt;&gt;<span><a href="/list/list_cjwt.shtml">常见问题</a></span></li>
+                    <li>&gt;&gt;<span><a href="/list/list_zysy.shtml">专业名词</a></span></li>
+                    <li>&gt;&gt;<span><a href="/list/list_jbfx.shtml">基本分析</a></span></li>
+                    <li>&gt;&gt;<span class="about_link_hover"><a href="javascript:void(0)">技术讲解</a></span></li>
+                    <li>&gt;&gt;<span><a href="/list/list_xdfx.shtml">心得分享</a></span></li>
+                    <li>&gt;&gt;<span><a href="/list/list_fxxwc.shtml">投资下午茶</a></span></li>
+                      
+                </ul>
+                
+            </div>
+  		</div>
+    	<div class="fr about_right" id="zjxy">
+        	<!--#include virtual="/inc/adv.shtml"-->
+            <div class="about_gsxw zjxy-border">
+            	<h4><img src="/images/zjxy-05.jpg" /></h4>
+               
+                <ul class="lh200 zjxy" id="gsxw">
+           	    	<JRJTAG	tagtype="01" clsid="604001011" pagesize="15" pagecount="10" id="jsjj" />
+                        <#if jsjj?exists>
+                            <#list jsjj as d>
+           	    				<li><span class="fl"> <a href="${d.infourl}" target="_blank">${d.title}</a></span><span class="fr">${d.makedate?string("yyyy-MM-dd")}</span><span class="clear"></span></li>
+                            </#list>
+						</#if>
+                </ul>
+                <div id="page" class="clear pager">
+   	  				<div id="pager" class="page fr">
+                    	<#assign locafilename="list_jsjj">
+                        <#if (curpage>1)>
+                          <span><a href="${locafilename}.shtml" class="turn_page">首 页</a></span>
+                          <#if curpage=2>
+                        <span><a href="${locafilename}.shtml"  class="turn_page" target="_self">上一页</a></span>
+                          <#else>
+                        <span><a href="${locafilename}-${curpage-1}.shtml"  class="turn_page" target="_self">上一页</a></span>
+                          </#if>
+                        </#if>
+                        <#list 1..pagecount as n>
+                              <#if n=1>
+                                <#if curpage=n>
+                                  <span><a class="cur">${n}</a></span>
+                                <#else>
+                                  <span><a href="${locafilename}.shtml" target="_self">${n}</a></span>
+                                </#if>
+                              <#else>
+                                <#if curpage=n>
+                                  <span><a class="cur">${n}</a></span>
+                                <#else>
+                                  <span><a href="${locafilename}-${n}.shtml" target="_self">${n}</a></span>
+                                </#if> 
+                             </#if>
+                        </#list>
+                        <#if (curpage!=pagecount)>
+                        <span><a href="${locafilename}-${curpage+1}.shtml" class="turn_page" target="_self">下一页</a></span>
+                        </#if>
+          			</div>
+                	<div class="clear"></div>
+                </div>
+            </div>
+        </div>
+      
+        <div class="clear"></div>
+    </div>
+    <!--#include virtual="/inc/foot.shtml"-->
+</body>
+</html>

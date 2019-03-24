@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta name="keywords" content="证金贵金属,白银,白银分析,白银投资,白银价格,白银交易,炒白银,白银走势,白银软件,模拟炒银,美联储,白银在线分析" />
+<meta name="description" content="证金贵金属，首家赴美纳斯达克上市公司中国最大最专业的白银投资服务平台，致力于白银投资、白银交易、现货白银、白银价格、炒白银、现货白银走势、白银行情、模拟炒银、现货白银开户、投资资讯、分析评论、贵金属投资等贵金属综合性投资服务" />
+<title>证金学院_研究中心_证金贵金属</title>
+<!--#include virtual="/inc/head_link_2014.shtml"-->
+<script type="text/javascript" src="/js/function_yanjiu.js"></script>
+</head>
+
+<body>
+	<!--#include virtual="/inc/head_2014.shtml"-->
+    <!--#include virtual="/inc/nav_yanjiu.shtml"-->
+    <div id="zwyp" class="pr">
+    	<div class="clear">
+        	<div class="fl w650 yjzx_list">
+            	<p class="mbx_nav">研究中心> <span class="now">证金学院</span></p>
+                <ul class="list">
+                	<JRJTAG	tagtype="01" clsid="604001013" pagesize="7" pagecount="10" id="mrpl" />
+                    <#if mrpl?exists>
+                        <#list mrpl as d>
+                	<li>
+                    	<p class="tr">${d.mediasource}  ${d.makedate?string("yyyy年MM月dd日 HH:mm")}</p>
+                    	<img src="http://img.zhengjin99.com/web/small/${d.id?c}.jpg" width="194" height="128" /><p class="title"><a target="_blank" href="${d.infourl}">${d.title}</a></p>
+                    	<p>${jrjfund.subgbk(d.description,100)}...<a target="_blank" href="${d.infourl}">详情》</a></p>
+                    	<div class="fr">
+                            <span class="fl pt3">分享：</span>
+							<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare" data="{'url':'${d.infourl}'}">
+							    <a class="bds_qzone"></a>
+							    <a class="bds_tsina"></a>
+							    <a class="bds_tqq"></a>
+                                <span class="bds_more">更多</span>
+                            </div>
+                            <span class="fl ml10 pt3">| <span class="hand" onclick="javascript:addFavorList('${d.clsname}', '${d.title}', '${d.infourl}');">收藏</span></span>
+                        </div>
+                    </li>
+                  		</#list>
+					</#if>
+                </ul>
+                
+                <div class="tc yjzx_page">
+               	<#assign locafilename="list_yanjiu_xueyuan_touzi">
+                   <#if (curpage>1)>
+                     <!-- span class="page_ud"><a href="${locafilename}.shtml">首 页</a></span> -->
+                     <#if curpage=2>
+                   	<span class="page_ud"><a href="${locafilename}.shtml">上一页</a></span>
+                     <#else>
+                   	<span class="page_ud"><a href="${locafilename}-${curpage-1}.shtml">上一页</a></span>
+                     </#if>
+                   </#if>
+                   <#list 1..pagecount as n>
+                         <#if n=1>
+                           <#if curpage=n>
+                             <span class="page_select"><a>${n}</a></span>
+                           <#else>
+                             <span><a href="${locafilename}.shtml" target="_self">${n}</a></span>
+                           </#if>
+                         <#else>
+                           <#if curpage=n>
+                             <span class="page_select"><a>${n}</a></span>
+                           <#else>
+                             <span><a href="${locafilename}-${n}.shtml" target="_self">${n}</a></span>
+                           </#if> 
+                        </#if>
+                   </#list>
+                   <#if (curpage!=pagecount)>
+                   <span class="page_ud"><a href="${locafilename}-${curpage+1}.shtml">下一页</a></span>
+                   </#if>
+                </div>
+        	</div>
+            
+            
+            <div class="fr w310 zjxy">
+            	<p class="yjzx_zjxy_fl pr index_title">课程分类</p>
+            	<div class="yjzx_zjxy_fltitle yjzx_zjxy_fljbgn" onclick="location='list_yanjiu_xueyuan_jiben.shtml';">
+                	<p class="t">基本概念</p>
+                    <p>对贵金属投资所需要了解的专业名词和基础知识进行通俗的解释。</p>
+                </div>
+                <div class="yjzx_zjxy_fltitle yjzx_zjxy_flhgjj" onclick="location='list_yanjiu_xueyuan_hongguan.shtml';">
+                	<p class="t">宏观经济</p>
+                    <p>主要是针对影响贵金属走势的经济数据和宏观事件的详细剖析。</p>
+                </div>
+                <div class="yjzx_zjxy_fltitle yjzx_zjxy_fljsfx" onclick="location='list_yanjiu_xueyuan_jishu.shtml';">
+                	<p class="t">技术分析</p>
+                    <p>通过K线和技术指标对贵金属价格走向进行总结和预测。</p>
+                </div>
+                <div class="yjzx_zjxy_fltitle yjzx_zjxy_fltzxl fltitlesl" onclick="location='list_yanjiu_xueyuan_touzi.shtml';">
+                	<p class="t">投资心理</p>
+                    <p>辅助投资者了解正确的投资常识，培养良好的投资习惯。</p>
+                </div>
+                
+                <!--#include virtual="/list/list_yanjiu_xueyuan_new.shtml"-->
+                
+            </div>
+            <div class="clear" style="height:0;line-height:0;"></div>
+        </div>
+        
+    </div>
+    
+    <!--#include virtual="/inc/foot_2014.shtml"-->
+</body>
+</html>

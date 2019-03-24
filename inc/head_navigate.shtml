@@ -1,0 +1,24 @@
+<!--改版-导航-->
+<div style="background:url(/images/nav_bg.jpg) repeat-x; height:44px;">
+<div class="nav clear">
+<ul id="sddm"><li class="dq"><a href="http://www.zhengjin99.com/">首页 </a></li>
+<li class="hover"><a href="http://www.zhengjin99.com/list/fxyj_index.shtml?dad" onmouseover="mopen('m1')" onmouseout="mclosetime()">银市策略</a>
+<div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()" class="menu">
+		<a target="_blank" href="http://www.zhengjin99.com/list/list_mrpl.shtml">早晚评论</a>
+		<a target="_blank" href="http://www.zhengjin99.com/list/list_yjbg.shtml">研究报告</a>
+		<a target="_blank" href="http://www.zhengjin99.com/list/list_zxdt.shtml">资讯导读</a>
+		<a target="_blank" href="http://www.zhengjin99.com/list/list_mrjx.shtml">每日精选</a>
+		</div>
+ </li>
+ <li class="hover"><a href="http://tg.zhengjin99.com/zhengjin/sphy/zjyp.jsp" onmouseover="mopen('m2')" onmouseout="mclosetime()">证金银屏</a>
+ <div id="m2" onmouseover="mcancelclosetime()" onmouseout="mclosetime()"  class="menu">
+		<a target="_blank" href="http://tg.zhengjin99.com/zhengjin/sphy/mrdp.jsp">每日点评</a>
+		<a target="_blank" href="http://tg.zhengjin99.com/zhengjin/sphy/zqy.jsp">中国最强银</a>
+		<a target="_blank" href="http://tg.zhengjin99.com/zhengjin/sphy/dhyj.jsp">对话银家</a>
+		<a target="_blank" href="http://vd.jrj.com/front/out/zbxb.jsp">证金直播</a>
+		</div>
+  </li>
+<li class="hover"><a href="http://tg.zhengjin99.com/zhengjin/zjjnList.jsp">证金锦囊</a></li><li class="hover"><a href="http://tg.zhengjin99.com/zhengjin/spzq.jsp">专家解答</a></li><li class="hover"><a href="http://zhibo.zhengjin99.com/hxzb/">火线交易</a></li>
+<li class="hover"><a href="http://zhibo.zhengjin99.com/cjrl/index.html">财经日历</a></li><li class="last_nav"><a href="http://www.zhengjin99.com/list/xxyd_index.shtml?dad&amp;t=nav07">证金学院</a></li></ul></div>
+</div>
+<!--导航结束-->

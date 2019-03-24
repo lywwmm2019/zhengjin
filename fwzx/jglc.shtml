@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>服务中心-现货交割流程</title>
+<!--#include virtual="/inc/head_link.shtml"-->
+</head>
+
+<body>
+	<!--#include virtual="/inc/head.shtml"-->
+    <!--#include virtual="/inc/nav.shtml"-->
+	<div id="about_main" class="clear mb20">
+    	<div class="fl about_left pr">
+        	<div class="pa" style="left:0;top:0;" id="about_left">
+                <!--#include virtual="/inc/left_btn.shtml"-->
+                <ul class="about_link" style="padding-left:10px;">
+                    <li class="about_link_title">服务指南</li>
+                    <li>&gt;&gt;<span><a href="index.shtml">服务体系</a></span></li>
+                    <li>&gt;&gt;<span><a href="khlc.shtml">开户流程</a></span></li>
+                    <li>&gt;&gt;<span><a href="khsp.shtml">开户宣传片</a></span></li>
+                    <li>&gt;&gt;<span><a href="tjs.shtml">津贵所网上开户</a></span>
+                    	<ul class="about_link_sec" style="display:block;">
+                        	<li><span><a href="http://tg.zhengjin99.com/zhengjin/tjskh/index.jsp" target="_blank">实盘开户入口</a></span></li>
+                            
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="qyzn.shtml">网银签约指南</a></span>
+                    	<ul class="about_link_sec" style="display:block;">
+                        	<li><span><a href="qyzn.shtml">海商所网银签约指南</a></span></li>
+                        	<li><span><a href="wyqy.shtml">津贵所网银签约指南</a></span></li>
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="bgxz.shtml">客户协议及相关表格下载</a></span></li>
+                    <li>&gt;&gt;<span><a href="byjy.shtml">白银交易规则</a></span></li>
+                    <li>&gt;&gt;<span><a href="crjgz.shtml">出入金流程及规则</a></span></li>
+                    <li>&gt;&gt;<span class="about_link_hover"><a href="javascript:void(0)">现货交割流程</a></span></li>
+                    <li>&gt;&gt;<span><a href="khts.shtml">客户投诉处理流程</a></span></li>
+                    <li>&gt;&gt;<span><a href="rjxz.shtml">软件下载</a></span>
+                   	  <ul class="about_link_sec" style="display:block;">
+                        	<li><span><a href="sjrj.shtml">手机版软件下载平台</a></span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    	<div class="fr about_right">
+        	<div class="fwtx pr">
+            	<div class="fwtx01"></div>
+                <div class="fwtx02"></div>
+                <div class="fwtx03"></div>
+                <div class="fwtx04"></div>
+                <div class="fwtx05"></div>
+                <div class="fwtx06"></div>
+				<div class="pa lh200" style="left:35px;top:10px;">
+       	      		<p class="fb">一、白银实物规格种类</p>
+                    <p>银锭：成色不低于99.99％，符合中华人民共和国国家标准 《GB/T4135&mdash;2002》中的Ic-Ag99.99 标准。</p>
+                    <br />
+                    <p class="fb">二、申报流程：</p>
+                    <p>客户申请交割提货或者办理回购业务的需在会员网点当场平仓并凭当场打印出的该笔平仓单据办理，申请协议交收的数量不得大于平仓数量，会员网点对非基于即时平仓而提出的交割申请可不予受理。</p>
+                    <br />
+                    <p class="fb">三、交收费用：</p>
+                    <p>交收价格 = 平仓价格 + 单位提货费。</p>
+                    <p>提货费包括加工费、储运费，手续费等，单位提货费为平仓价格的百分之十五。</p>
+                    <p>白银回购价格 = 平仓价格-单位回购费。</p>
+                    <p>回购费用包括检测鉴定费，手续费等，单位回购费为平仓价格的百分之十五。</p>
+                    <br />
+                    <p class="fb">四、交收时间：</p>
+                    <table width="520" border="0" cellpadding="0" cellspacing="0" class="tc jglc_table">
+                      <tr>
+                        <td rowspan="2" width="23%">种类</td>
+                        <td width="44%">交割数量（G）</td>
+                        <td width="33%">交货期限</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>1千克&le;G＜15千克</td>
+                        <td>10个工作日</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="2">白银</td>
+                        <td>15千克&le;G＜150千克</td>
+                        <td>20个工作日</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>150千克&le;G </td>
+                        <td>双方协商</td>
+                      </tr>
+                    </table>
+
+                    <br />
+                    <p class="fb">五、其他：发票及结算方式等双方协商确定。</p>
+                    <p class="fb">六、交收双方发生任何纠纷，交易所仅协调双方协商处理，但对此不承担任何法律责任。</p>
+                    <p class="fb">七、本细则自颁发之日起实施</p>
+                </div>
+                <div class="fwzx_shadow pa" style="left:0;bottom:-18px;"></div>
+            </div>
+      	</div>
+      
+      	<div class="clear"></div>
+    </div>
+    <!--#include virtual="/inc/foot.shtml"-->
+</body>
+</html>

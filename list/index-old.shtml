@@ -1,0 +1,401 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta name="Keywords" content="证金贵金属"/>
+<meta name="Description" content="证金贵金属，致力于打造业内最专业的黄金、白银等贵金属综合性投资服务平台，通过一整套的客户服务体系，为广大投资者提供集“投资分析、交易指导、研究创新”等综合性的专业贵金属投资服务。" />
+<title>白银_白银开户_白银投资_证金贵金属-专业服务 放心投资</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/scrolltop.js"></script>
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	// 初始化图片自动播放功能
+	initLoop(imgArr);
+});
+var curIndex = -1;//当前播到那张图片
+var maxIndex = 1;//总的图片张数
+var loopKey = "0";//图片播放的唯一key
+var loopTime = 5000;//图片播放的间隔时间
+var anTime = 500;//图片播放的动画时间
+var loopTimePer = 100;//每次interval的间隔时间
+var loopStep = anTime / loopTimePer;//总的动画帧数
+//var imgArr = ["./images/banner-loop-1.jpg","./images/banner-loop-2.jpg","./images/banner-loop-3.jpg","./images/banner-loop-4.jpg","./images/banner-loop-5.jpg"];//所有要播放的图片数据
+//var linkArr = ["http://www.zhengjin99.com/2013/01/31151815030745.shtml","http://www.zhengjin99.com/2013/02/04161415040176.shtml","http://www.zhengjin99.com/2013/02/05165815044060.shtml","http://www.zhengjin99.com/2013/02/17175115060448.shtml","http://tg.zhengjin99.com/zhengjin/regUser.jsp"];//图片的链接
+var imgArr = ["./images/banner-loop-12.jpg","./images/banner-loop-7.jpg","./images/banner-loop-11.jpg","./images/banner-loop-13.jpg","./images/banner-loop-8.jpg"];//所有要播放的图片数据
+var linkArr = ["http://tg.zhengjin99.com/zhengjin/silverhome/index.jsp","http://tg.zhengjin99.com/zhengjin/spzq.jsp","http://www.zhengjin99.com/2013/03/29192715188439.shtml","http://tg.zhengjin99.com/zhengjin/khsd_index.jsp","http://tg.zhengjin99.com/zhengjin/newbie/index.jsp"];//图片的链接
+var loopDivId = "banner_loop_div";//包含图片的divid
+var loopSelectDivId = "banner_loop_select_div";//选择器的divid
+var imgWidth = 998;//所有图片统一的长度
+var curX = 0;
+var isLoop = false;//是否正在动画播放
+var loopIndexKey="";
+var nextCallIndex = -1;
+var timeout;
+var bugPercent = 0.9;//需要修正的比例值，主要解决四舍五入后的差值
+
+function genderLoopKey(){
+	return  new Date().getTime();
+}
+
+/**
+* 初始化自动播放图片
+*/
+function initLoop(imgArr){
+	// 初始化div里的内容以及参数、常量
+	maxIndex = imgArr.length;
+	$("#" + loopDivId).parent().css("width" , imgWidth * maxIndex);
+	var str = "";
+	for(var i = 0 ; i < maxIndex ; i++){
+		str += "<div class='banner_img_div'><a";
+		if(linkArr[i] != "#"){
+			str += " target='_blank'";
+		}
+		str += " href='" + linkArr[i] + "'><img src='" + imgArr[i] + "' width='990' height='366'/></a></div>";
+	}
+	$("#" + loopDivId).html(str);
+	if(maxIndex > 1){
+		loopIndexKey = genderLoopKey();
+		clearTimeout(timeout); 
+		timeout = setTimeout(function(){changeLoop2(1,loopIndexKey);},loopTime);
+	}
+}
+/**
+* 鼠标点击
+*/
+function changeLoop3(index){
+	if(isLoop){
+		return;
+	}else{
+		loopIndexKey = genderLoopKey();
+		clearTimeout(timeout); 
+		changeLoop2(index,loopIndexKey);
+	}
+}
+/**
+* 对播放动画进行初始参数的处理
+*/
+function changeLoop2(index,key2){
+	if(key2 != loopIndexKey){
+		return;
+	}
+	// 一张图片无动画意义
+	if(maxIndex == 1){
+		return;
+	}
+	var nextIndex = index + 1;
+	// 如超出最大范围，则应该返回第一张图
+	if(nextIndex > maxIndex){
+		nextIndex = 1;
+	}
+	loopKey = genderLoopKey();
+	var startX = -(index - 1) * imgWidth;
+	if(curX != 0){
+		startX = curX;
+	}
+	var endX = -(nextIndex - 1) * imgWidth;
+	var stepX = (endX - startX) / loopStep;
+	changeLoop(loopKey,key2,startX,endX,stepX);
+}
+/**
+* 播放动画
+*/
+function changeLoop(key,key2,startX,endX,stepX){
+	if(startX > 0){
+		startX = 0;
+	}
+	if(endX > 0){
+		endX = 0;
+	}
+	stepX = parseInt(stepX);
+	// 如果本次key与当前使用key不一致，则停止
+	if(key != loopKey || key2 != loopIndexKey){
+		return;
+	}
+	isLoop = true;
+	var startXint = parseInt(startX);
+	//已到指定位置，停止
+	if(startXint == endX || stepX == 0){
+		return resetLoopAfterEnd(endX);
+	}
+	if(curIndex != maxIndex ){
+		if(startXint > endX){
+			startX = startX + stepX;	
+			if(startX < endX){
+				return resetLoopAfterEnd(endX);
+			}
+		}else{
+			startX = startX + stepX;
+			if(startX > endX){
+				startX = endX;
+				return resetLoopAfterEnd(endX);
+			}
+		}
+	}else{
+		if(startXint > endX){
+			startX = startX - stepX;
+			if(startX < endX){
+				startX = endX;
+				return resetLoopAfterEnd(endX);
+			}
+		}else{
+			startX = startX + stepX;
+			if(startX > endX){
+				startX = endX;
+				return resetLoopAfterEnd(endX);
+			}
+		}
+	}
+	/**if(this.console){
+		//3:5:-2991:-2792:-199:-3190:-2994:true
+		//5:5:-2:-800:798:796:0:false
+		console.log(curIndex + ":" + maxIndex + ":" + startX + ":" + startXint + ":" + stepX + ":" + (startX + stepX) + ":" + endX + ":" + (startX / endX > bugPercent && endX != 0));
+	}*/
+	// TODO 这里对最终一次的坐标进行修正，主要解决四舍五入后坐标的细小出入问题
+	if(startX / endX > bugPercent && endX != 0){
+		startX = endX;
+	}
+	if(startX + stepX > 0 && (startX + stepX) / stepX > bugPercent && endX == 0){
+		startX = 0;
+	}
+	curX = startX;
+	if(startX > 0 || startX < -imgWidth * maxIndex){
+		return resetLoopAfterEnd(endX);
+	}
+	$("#" + loopDivId).parent().css("margin-left",startX);
+	if(startX != endX){
+		// 定时重新调用继续播放图片
+		clearTimeout(timeout); 
+		timeout = setTimeout(function(){changeLoop(key,key2,startX,endX,stepX)},loopTimePer);
+	}else{
+		return resetLoopAfterEnd(endX);
+	}
+}
+
+function resetLoopAfterEnd(endX){
+	var tmpIndex = (-parseInt(endX / imgWidth)) + 1;
+	if(tmpIndex == curIndex){
+		curIndex += 1;
+		if(curIndex > maxIndex){
+			curIndex = 1;
+		}
+	}else{
+		curIndex = tmpIndex;
+	}
+	var ele = $("#" + loopSelectDivId);
+	for(var i = 0 ; i < maxIndex ; i++){
+		ele.removeClass("banner_btn" + (i + 1));
+	}
+	ele.addClass("banner_btn" + curIndex);
+	isLoop = false;
+	loopIndexKey = genderLoopKey();
+	// 定时后重启播放图片
+	if(nextCallIndex > -1){
+		clearTimeout(timeout); 
+		timeout = setTimeout(function(){changeLoop2(nextCallIndex , loopIndexKey)},loopTime);
+	}else{
+		clearTimeout(timeout); 
+		timeout = setTimeout(function(){changeLoop2(curIndex , loopIndexKey)},loopTime);
+		nextCallIndex = -1;
+	}
+	return;
+}
+</script>
+
+<style>
+.news_list li{
+	width: 340px;
+	overflow: hidden;
+}
+
+.banner_img_div{
+	float:left;
+	border:4px solid #fff
+}
+.banner_loop{
+	width:18px;
+	height:37px;
+	border:solid 0px red;
+	float:left;
+	margin-left:6px;
+	cursor:pointer;
+}
+
+.news_list{
+	margin-top: 0px;
+}
+</style>
+</head>
+
+<body>
+<div class="box">
+<!--#include virtual="/inc/nav.shtml"-->
+
+
+
+<div class="banner">
+<div style="width:998px;margin:0 auto;overflow:hidden;">
+<a href="http://www.zhengjin99.com/ljwm_gsgk.shtml">
+<div style="float:left;">
+	<div id="banner_loop_div" ></div>
+</div>
+</a>
+</div>
+<div class="banner_btn1" id="banner_loop_select_div">
+<div class="banner_loop" style="margin-left:430px;_margin-left:215px;" onclick="changeLoop3(0);"></div>
+<div class="banner_loop" onclick="changeLoop3(1);"></div>
+<div class="banner_loop" onclick="changeLoop3(2);"></div>
+<div class="banner_loop" onclick="changeLoop3(3);"></div>
+<div class="banner_loop" onclick="changeLoop3(4);"></div>
+</div>  <!--banner 切换按钮-->
+</div>
+
+
+<div style="background:url(images/con_bg.jpg) repeat-x;" class="mr_b">
+<div style="width:1001px; margin:0 auto; padding-top:5px;*height:498px" class="clear">
+<div class="left">
+<div class="hq mr_b">
+<div style=" width:738px;border-bottom:1px solid #CCC;color:#484848; height:31px; clear:both;">
+<b style="float:left; width:100px; padding:9px 0 0 15px; font-size:14px;font-family:"微软雅黑"">服务大厅</b><!--交易行情-->
+</div>
+<div class="clear" style="width:738px; margin:0 auto">
+<!--<iframe width=705 height=180 frameborder=0 scrolling=no src="http://www.hxce.cn/set/hq.aspx?hx=www.hxce001.com"></iframe>-->
+<img src="/images/index-fwdt.jpg" width="738" height="179" border="0" usemap="#Map5" />
+<map name="Map5" id="Map5">
+    <area shape="rect" coords="10,7,226,61" href="http://www.zhengjin99.com/list/fxyj_index.shtml?dad" />
+    <area shape="rect" coords="252,8,494,57" href="http://tg.zhengjin99.com/zhengjin/spjpList.jsp" />
+    <area shape="rect" coords="509,5,731,56" href="http://tg.zhengjin99.com/zhengjin/zjjnList.jsp" />
+    <area shape="rect" coords="10,70,226,119" href="http://www.zhengjin99.com/fwdt_zxkf.shtml?t=nav06" />
+    <area shape="rect" coords="253,71,490,116" href="http://tg.zhengjin99.com/zhengjin/spzq.jsp" />
+    <area shape="rect" coords="509,69,729,116" href="http://www.zhengjin99.com/building.shtml" />
+    <area shape="rect" coords="11,128,227,175" href="http://www.zhengjin99.com/list/xxyd_index.shtml?dad&t=nav07" />
+    <area shape="rect" coords="254,128,491,177" href="http://tg.zhengjin99.com/zhengjin/regUser.jsp" />
+    <area shape="rect" coords="510,128,730,174" href="http://www.zhengjin99.com/fwdt_rjxz.shtml" />
+  </map>
+</div>
+</div>
+<div class="com_news clear">
+<div class="fl news_box">
+<div class="title">
+<span><strong class="fl" style="padding-left:10px">公司新闻</strong><a target='_blank' href="list_gsxw.shtml" style="float:right">更多>></a></span>
+</div>
+
+<div class="news">
+<ul class="news_list">
+<JRJTAG	tagtype="01" clsid="604001002" pagesize="6" pagecount="1" id="gsxw" />
+<#if gsxw?exists>
+	<#list gsxw as d>
+		<#if d_index==0>
+		<p  class="news_list" style="text-align:left;margin-left:-29px;"><a target='_blank' href="${d.infourl}"><strong class="red2">${d.title}</strong></a>
+			<P style="text-align:left;margin-left:-29px;font-size: 14px;line-height: 24px;"> ${jrjfund.subgbk(d.description,126)}...
+			<a target='_blank' href="${d.infourl}"><span class="red2">[阅读全文]</span></a>
+			</p>
+	  </p>
+		</#if>
+	</#list>		
+	<#list gsxw as d>
+		<#if (d_index>0)>
+		<li><a target='_blank' href="${d.infourl}">${d.title}</a></li>
+		</#if>
+	</#list>
+</#if>
+</ul>
+
+
+
+</div>
+</div>
+<div class="fl" style="margin-left:8px">
+<div class="title">
+<span><strong class="fl" style="padding-left:10px">服务中心</strong><a target='_blank' href="service/" style="float:right">更多>></a></span>
+</div>
+<div class="clear servel">
+<div style="width:350px; margin:0 auto" class="clear"><img src="images/1.jpg" width="350" height="140"  class="mr_t10 mr_b"/>
+<div style="margin-top:-8px;*margin-top:-16px">
+<!--<ul><li><a href="#"><img src="images/name.jpg" width="60" height="59" /></a><p class="name">name</p></li><li><a href="#"><img src="images/name.jpg" width="60" height="59" /></a><p class="name">name</p></li><li><a href="#"><img src="images/name.jpg" width="60" height="59" /></a><p class="name">name</p></li><li><a href="#"><img src="images/name.jpg" width="60" height="59" /></a><p class="name">name</p></li></ul>-->
+<div class="clear font_12 ser_a">
+  <p class="red">【开户指南】<a target='_blank' href="fwzx.shtml?t=fwzx1">开户流程</a><a target='_blank' href="qyzn.shtml">网银签约指南</a><a target='_blank' href="fwzx.shtml?t=fwzx2">相关表格下载</a></p>
+ <p class="red">【交易规则】<a target='_blank' href="chanpin/?t=cpzy2">现货白银交易规则</a><a target='_blank' href="fwzx.shtml?t=fwzx3">出入金流程及规则</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target='_blank' href="xjjg.shtml">现货交割流程</a>　　<a target='_blank' href="/tousu.shtml">客户投诉处理流程</a></p>
+ <p class="red">【软件下载】<a target='_blank' href="http://soft.zhengjin99.com/ZJHQ.rar">行情软件</a><a target='_blank' href="http://soft.zhengjin99.com/ZJDEMOTrader4.2.11_Setup.rar">模拟交易软件</a><a target='_blank' href="http://soft.zhengjin99.com/ZJTrader4.2.10_Setup.rar">实盘交易软件</a></p> 
+  
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl" style="margin-left:5px; width:255px">
+<div class="r_title clear"><strong>最新公告</strong><a target='_blank' href="list_zxgg.shtml" class="fr">更多>></a></div>
+<div class="not_list mr_b">
+<ul>
+<JRJTAG	tagtype="01" clsid="604001001" pagesize="6" pagecount="1" id="zxgg" />
+<#if zxgg?exists>
+	<#list zxgg as d>
+<li><a target='_blank' href="${d.infourl}" title="${d.title}">${d.title}</a></li>
+	</#list>
+</#if>
+</ul>
+</div>
+<div class="r_title2 clear"><strong>关于证金贵金属</strong></div>
+<div class="gjs">
+<p style="font-family:'宋体', 'Arial Unicode MS';padding:10px" class="font_12">
+&nbsp;&nbsp;&nbsp;&nbsp;证金（福建）贵金属投资有限公司，海西商品交易所第029号会员单位，隶属于中国金融在线有限公司（China Finance Online Co., Ltd），主营贵金属及其它相关品种的金融投资业务，通过一整套的客户服务体系，为广大投资者提供集“投资分析、交易指导、研究创新”等综合性的专业贵金属投资服务……【<a target='_blank' href="http://www.zhengjin99.com/corp/">全文</a>】
+</p>
+</div>
+</div>
+
+</div>
+<div class="foot">
+<!--#include virtual="/inc/bank.shtml"-->
+
+
+</div> 
+</div>
+<!--#include virtual="/inc/foot2.shtml"-->
+</div>
+
+<!--对联广告"-->
+<DIV id="lovexin1" style='Z-INDEX: 10; LEFT:6px; POSITION: absolute; TOP: 115px; width: 140; height: 400px;display:none;'>
+<a href='http://tg.zhengjin99.com/zhengjin/activity/zjws_index.jsp' target='_blank'><img src='http://www.zhengjin99.com/images/left1.gif' width='100' height='360' border='0'></a>
+<div style="cursor:pointer;" onclick="document.getElementById('lovexin1').style.display='none'"><img width="100" vspace="3"height="14" border="0" style="" src="images/close.gif" alt="关闭对联广告"></div>
+</DIV>
+
+<DIV id="lovexin2" style='Z-INDEX: 10;right:6px; POSITION: absolute; TOP: 115px; width: 140; height: 400px;display:none;'>
+<a href='http://tg.zhengjin99.com/zhengjin/activity/zjws_index.jsp' target='_blank'><img src='images/right2.gif' width='100' height='360' border='0'></a>
+<div style="cursor:pointer;" onclick="document.getElementById('lovexin2').style.display='none'"><img width="100" vspace="3" height="14" border="0" style="" src="http://www.zhengjin99.com/images/close.gif" alt="关闭对联广告"></div>
+</DIV>
+<!--对联广告 end"-->
+
+</div>
+<!--对联广告-->
+<script>
+function setTab(name,cursel,n){
+ for(i=1;i<=n;i++){
+  var menu=document.getElementById(name+i);
+  var con=document.getElementById("con_"+name+"_"+i);
+  menu.className=i==cursel?"hover":"";
+  con.style.display=i==cursel?"block":"none";
+ }
+}
+
+window.onload=function()
+{
+for(var ii=0; ii<document.links.length; ii++)
+document.links[ii].onfocus=function(){this.blur()}
+}
+/***/
+function heartBeat(){
+	var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+	var baseTop = 115;
+	var ele1 = document.getElementById("lovexin1");
+	var ele2 = document.getElementById("lovexin2");
+	ele1.style.top = (scrollTop + baseTop) + "px";
+	ele2.style.top = (scrollTop + baseTop) + "px";
+}
+
+window.setInterval("heartBeat()",300);
+</script>
+<!--对联广告-->
+</body>
+</html>

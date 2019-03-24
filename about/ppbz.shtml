@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>品牌标志_证金贵金属</title>
+<!--#include virtual="/inc/head_link.shtml"-->
+</head>
+
+<body>
+	<!--#include virtual="/inc/head.shtml"-->
+    <!--#include virtual="/inc/nav.shtml"-->
+	<div id="about_main" class="clear mb20">
+    	<div class="fl about_left pr">
+        	<div class="pa" style="left:0;top:0;" id="about_left">
+                <!--#include virtual="/inc/left_btn.shtml"-->
+                <ul class="about_link">
+                    <li class="about_link_title">关于我们</li>
+                    <li>&gt;&gt;<span><a href="javascript:void(0)" onclick="second_linkshow(this);">关于证金</a></span>
+                    	<ul class="about_link_sec" style="display:block;">
+                        	<li><span><a href="/about/index.shtml">公司概况</a></span></li>
+                            <li><span class="about_link_hover"><a href="javascript:void(0)">品牌标志</a></span></li>
+                            <!--<li><span><a href="/about/gszz.shtml">公司资质</a></span></li>-->
+                            <li><span><a href="/about/qywh.shtml">企业文化</a></span></li>
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="/about/tzzbz.shtml">投资者保障</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/zlhz.shtml">战略合作</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/bghj.shtml">办公环境</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/tdfc.shtml">团队风采</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/gshj.shtml">公司获奖</a></span></li>
+                    <li>&gt;&gt;<span><a href="javascript:void(0)" onclick="second_linkshow(this);">公司动态</a></span>
+                    	<ul class="about_link_sec">
+                        	<li><span><a href="/list/list_mtbd.shtml">媒体报道</a></span></li>
+                        	<li><span><a href="/list/list_gshd.shtml">公司新闻</a></span></li>
+                            <li><span><a href="/list/list_gsgg.shtml">公司公告</a></span></li>                            
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="/list/list_shzr.shtml">社会责任</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/lxwm.shtml">联系我们</a></span></li>
+                </ul>
+            </div>
+        </div>
+    	<div class="fr about_right">
+        	<div class="about_ppbz lh200">
+                <img src="../images/ppbz_logo.jpg" width="743" height="380" class="block about_ppbz_logo" />
+                <img src="../images/ppbz_title.jpg" width="641" height="42" class="block about_ppbz_title" />
+                <p class="fb f14">标名来源：</p>
+				<p class="ti">源自：《庄子·渔父》："真者，精诚之至也，不精不诚，不能动人"。汉·王充《论衡·感虚篇》："精诚所至，金石为开。"</p>
+				<p class="fb f14">文字涵义：</p>
+				<p class="ti">精诚所至，金石为开，意指人的诚心所到，能感动天地，使金石为之开裂。比喻只要专心诚意去做，什么疑难问题都能解决。形容对人真诚产生的感动力。</p>
+				<p class="fb f14">品牌含义：</p>
+				<p class="ti">金属光辉，呈现出贵重感，不失华贵的暗金代表着品牌的成熟与诚信。证金贵金属致力于做诚信品牌，必然对广大投资客户起到强有力地支撑。在日趋完善的社会机制和日益规范的经济体制，证金贵金属秉承"诚信"成为企业的立身之本。证金贵金属始终认为"诚信"是铸就企业外部形象、社会公信力的一杆重要标尺，直接关系到企业的品牌形象。正如证金贵金属的发展理念一样：恪守"诚信为先，品牌为本"；以"信"立企。</p>
+				<p class="ti">一枚形似旋转着的闪亮金币，代表着证金贵金属致力于打造业内最专业、最具投资者信赖的贵金属综合性投资服务平台，通过在线交流、研究报告、视频指导、短信提醒、电话咨询等"五位一体"的服务体系，为广大投资者提供集"投资分析、交易指导、研究创新"等综合性的专业贵金属投资服务，帮客户创造非凡价值。
+</p>
+            </div>
+        </div>
+      
+      	<div class="clear"></div>
+    </div>
+    <!--#include virtual="/inc/foot.shtml"-->
+</body>
+</html>

@@ -1,0 +1,45 @@
+<script type="text/javascript" src="/js/modify_pwd.js?v=2"></script>
+<script>
+
+</script>
+<div id="alert" class="pa" style="z-index: 10000; left: 414px; top: 182.5px; display: none;">
+	<p class="alert_tile">修改登录密码</p>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+	    <input id="sso_userID" type="hidden" value="">
+	    <input id="sso_userName" type="hidden" value="">
+	    <input id="sso_LID" type="hidden" value="">
+      <tbody><tr>
+        <td colspan="2" class="tc f20" height="40">为了您的帐户安全，请您及时修改初始密码!</td>
+      </tr>
+      <tr>
+        <td class="tr" width="40%;" height="40">新密码：</td>
+        <td><input name="pwd1" id="pwd1" onkeyUp="checkPwd2();checkinput();" type="password" class="input_txt"></td>
+      </tr>
+      <tr>
+        <td height="">&nbsp;</td>
+        <td class="hint">提示：新密码不能使用原初始密码（6-12位）</td>
+      </tr>
+      <tr>
+        <td class="tr" height="40">确认密码：</td>
+        <td><input name="pwd2" id="pwd2" type="password"  onkeyUp="checkinput();" class="input_txt"><img style="display:none;" id="input_hint" src="/images/alert_correct.jpg" width="16" height="16"></span></td>
+      </tr>
+      <tr>
+        <td height="">&nbsp;</td>
+        <td class="hint">请确认您的登录密码（6-12位）</td>
+      </tr>
+      <tr>
+        <td class="tr" height="40">安全级别：</td>
+        <td><div id="pwdImg" class="fl alert_img_1"></div><span id="pwdStrength">弱</span></td>
+      </tr>
+      <tr>
+        <td class="tr" height="20">&nbsp;</td>
+        <td><span id="hint" style="color:#d52c2c;">&nbsp;</span></td>
+      </tr>
+      <tr>
+        <td class="tc" colspan="2" height="60"><input name="确定" type="button" id="button1" onclick="modify()" class="alert_btn" value="确定" style="margin-right:15px;"><input name="关闭" type="button" class="alert_btn" onclick="closeInitpwd()" value="关闭"></td>
+      </tr>
+    </tbody></table>
+
+</div>
+
+<div class="gray_bg pa" style="z-index: 9999; left: 0px; top: 0px; width: 1440px; height: 779px; display: none;"></div>

@@ -1,0 +1,15 @@
+
+<div class="w990 mauto over clear logo">
+	<h1>
+		<a href="http://www.zhengjin99.com"><img src="/images2014/logo.png" width="199" height="47" alt="证金贵金属" class="block fl" /> </a> <a
+			href="/service/gywm_tzzbz.html"><img src="/images2014/gywm-01.jpg" width="107" height="31" class="fl" style="margin-top: 10px" /> </a> <img
+			src="/images2014/kefu.png" width="294" height="32" alt="客服电话：010-58309199" class="block fr" />
+	</h1>
+</div>
+<div id="nav" class="pr">
+	<ul class="w990 mauto">
+		<li class='gywm_nav5<!--# if expr="$REQUEST_URI = /tzzbz/" -->_sl<!--# endif -->'><a href="/service/gywm_tzzbz.html">投资者保障</a></li>
+        <li class='gywm_nav6<!--# if expr="$REQUEST_URI = /xgsm/" -->_sl<!--# endif -->'><a href="/service/gywm_xgsm_mzsm.html">相关声明</a></li>
+		<li class='gywm_nav7<!--# if expr="$REQUEST_URI = /lxwm/" -->_sl<!--# endif -->'><a href="/service/gywm_lxwm_fwdh.html">联系我们</a></li>
+	</ul>
+</div>

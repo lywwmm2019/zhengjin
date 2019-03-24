@@ -1,0 +1,24 @@
+   <!-- <div id="vedioHint" class="hide"></div>-->
+    
+    <div id="foot" class="lh200">
+    	<ul class="foot_link" style="margin-top:0;">
+   	    <li><a href="/touzi/touzi_index.shtml">投资品种</a>|</li>
+            <!--<li><a href="/service/fwzx_index.shtml">帮助中心</a>|</li>-->
+            <!--<li><a href="http://vd.jrj.com/front/chat/?room=1&fromUrl=99">证金直播</a>|</li>-->
+            <!--<li><a href="http://newzb.jrj.com/hxzb/hxzb_index.jsp?fromUrl=99">大咖工作室</a>|</li>-->
+            <!--<li><a href="/list/index_yanjiu.shtml">研究中心</a>|</li>-->
+            <li><a href="/download.shtml">软件下载</a>|</li>
+            <li><a href="/list/index_guanyu.shtml">关于我们</a></li>
+        </ul>
+        <p class="tc mt20 f12">提示：贵金属交易有风险 入市须谨慎</p>
+		<p class="tc mb20 f12">津ICP备16000667号-1 Copyright @2014版权所有 天津证金贵金属经营有限公司</p>
+    </div>
+	
+	<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=89860593"></script>
+	<script type="text/javascript" id="bdshell_js"></script>
+	<script type="text/javascript">
+		document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+	</script>
+    <script type="text/javascript" src="/js/count.js"></script>
+    
+    <!--#include virtual="/inc/initpwd.shtml"-->

@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<script type="text/javascript" src="/js/jquery-1.6.1.min.js"></script>
+<script>
+function GetRequest(){
+var url = location.search; //获取url中"?"符后的字串
+var theRequest = new Object();
+if(url.indexOf("?") != -1)
+{
+  var str = url.substr(1);
+    strs = str.split("&");
+  for(var i = 0; i < strs.length; i ++)
+    {
+     theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
+    }
+}
+return theRequest;
+}
+$(document).ready(function(){
+	//var userName = GetRequest()["userName"];
+	//userName = decodeURI(userName);
+	//addCookie("WEBSSO_ZJUSERNAME",userName,0);
+	delCookie("WEBSSO_ZJUSERNAME");
+	delCookie("WEBSSO_UID");
+	delCookie("WEBSSO_USERTYPE");
+	delCookie("WEBSSO_REGTIME");
+});
+
+
+function setCookie (name,value,expires,path,domain,secure) {
+	var cookieVal = name + "=" + escape (value) +
+	 ((expires) ? "; expires=" + expires.toGMTString() : "") +
+	 ((path) ? "; path=" + path : "") +
+	 ((domain) ? "; domain=" + domain : "") +
+	 ((secure) ? "; secure" : "");
+	 document.cookie = cookieVal;
+}
+
+function delCookie(name)//删除cookie
+{
+	setCookie(name,"",null,"/",".zhengjin99.com","");
+}
+function addCookie(objName,objValue,objHours){      //添加cookie
+    var str = objName + "=" + escape(objValue);
+    if(objHours > 0){                               //为时不设定过期时间，浏览器关闭时cookie自动消失
+        var date = new Date();
+        var ms = objHours*3600*1000;
+        date.setTime(date.getTime() + ms);
+        str += "; expires=" + date.toGMTString();
+   }
+   document.cookie = str;
+}
+
+function getCookie(name)//取cookies函数        
+{
+    var arr = document.cookie.match(new RegExp("(^| )"+name+"=([^;]*)(;|$)"));
+     if(arr != null) return unescape(arr[2]); return null;
+}
+
+</script>
+
+</head>
+
+<body>
+
+</body>
+</html>

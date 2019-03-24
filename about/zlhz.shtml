@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>战略合作_证金贵金属</title>
+<!--#include virtual="/inc/head_link.shtml"-->
+</head>
+
+<body>
+	<!--#include virtual="/inc/head.shtml"-->
+    <!--#include virtual="/inc/nav.shtml"-->
+	<div id="about_main" class="clear mb20">
+    	<div class="fl about_left pr">
+        	<div class="pa" style="left:0;top:0;" id="about_left">
+                <!--#include virtual="/inc/left_btn.shtml"-->
+                <ul class="about_link">
+                    <li class="about_link_title">关于我们</li>
+                    <li>&gt;&gt;<span><a href="javascript:void(0)" onclick="second_linkshow(this);">关于证金</a></span>
+                    	<ul class="about_link_sec">
+                        	<li><span><a href="/about/index.shtml">公司概况</a></span></li>
+                            <li><span><a href="/about/ppbz.shtml">品牌标志</a></span></li>
+                            <!--<li><span><a href="/about/gszz.shtml">公司资质</a></span></li>-->
+                            <li><span><a href="/about/qywh.shtml">企业文化</a></span></li>
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="/about/tzzbz.shtml">投资者保障</a></span></li>
+                    <li>&gt;&gt;<span class="about_link_hover"><a href="javascript:void(0)">战略合作</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/bghj.shtml">办公环境</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/tdfc.shtml">团队风采</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/gshj.shtml">公司获奖</a></span></li>
+                    <li>&gt;&gt;<span><a href="javascript:void(0)" onclick="second_linkshow(this);">公司动态</a></span>
+                    	<ul class="about_link_sec">
+                        	<li><span><a href="/list/list_mtbd.shtml">媒体报道</a></span></li>
+                        	<li><span><a href="/list/list_gshd.shtml">公司新闻</a></span></li>
+                            <li><span><a href="/list/list_gsgg.shtml">公司公告</a></span></li>                            
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="/list/list_shzr.shtml">社会责任</a></span></li>
+                    <li>&gt;&gt;<span><a href="/about/lxwm.shtml">联系我们</a></span></li>
+                </ul>
+            </div>
+        </div>
+    	<div class="fr about_right">
+			<div class="about_zlhz">
+            	<p class="ml30 tr about_zlhz_title lh200">以下机构为证金贵金属及关联公司部分合作伙伴</p>
+                <div class="about_zlhz_new">
+                	<div class="about_zlhz_new01"></div>
+                    <div class="about_zlhz_new02"></div>
+                    <div class="about_zlhz_new03"></div>
+                    <div class="about_zlhz_new04"></div>
+                    <div class="about_zlhz_new05"></div>
+                    <div class="about_zlhz_new06"></div>
+                    <div class="about_zlhz_new07"></div>
+                    <p class="tr mb20 mt10"><a href="javascript:void(0)" id="readmore">查看更多&gt;&gt;</a></p>
+                    <div class="hide" id="more">
+                    	<div class="about_zlhz_new08"></div>
+                        <div class="about_zlhz_new09"></div>
+                        <div class="about_zlhz_new10"></div>
+                        <div class="about_zlhz_new11"></div
+                    ></div>
+                </div>
+            </div>
+      	</div>
+      
+      	<div class="clear"></div>
+    </div>
+    <script>
+		$(document).ready(function(){
+			$('#readmore').bind('click',function(){
+				$('#more').show();
+				$('.about_left').css('height','1178px');
+				$(this).hide();
+			})
+		})
+	</script>
+    <!--#include virtual="/inc/foot.shtml"-->
+</body>
+</html>

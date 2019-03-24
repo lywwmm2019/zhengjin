@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta name="keywords" content="${keyword}" />
+<title>${title}_${clsname}_证金贵金属</title>
+<!--#include virtual="/inc/head_link.shtml"-->
+<style>
+a.shoucang{background:url(http://tg.zhengjin99.com/zhengjin/images/shoucang.gif) no-repeat;height:20px;line-height:20px;color:#767676;padding-left:25px;width:58px;left:0;top:0;font-size:12px;text-align:left;}
+a.shoucang:hover{color:#484848;text-decoration:none;}
+</style>
+<script>
+	function addFavorite(){
+		var url = window.location.href;
+		var title = $('#titlename').html();
+		var title2=encodeURIComponent(title);
+		var model =$('#clname').html();
+		var model2=encodeURIComponent(model);
+		/*$.getScript("http://tg.zhengjin99.com/zhengjin/user/favorite_sub_ajax.jsp",	{model:model,title:title, url:url},
+			function(data){
+				alert(data.msg);
+			},"json");*/
+		$.ajax({
+		  type : "post",
+		  async:false,
+		  url : "http://tg.zhengjin99.com/zhengjin/user/favorite_sub_ajax.jsp?model=" + model2 + "&title=" + title2 + "&url=" + url,
+		  dataType : "jsonp",
+		  jsonp: "callbackparam",//服务端用于接收callback调用的function名的参数
+		  jsonpCallback:"success_jsonpCallback",//callback的function名称
+		  success : function(data){
+			  var state=data.state-0;
+			  var msg="";
+			  switch(data.state){
+				  case "0":
+				  	msg="收藏成功，请到收藏中心查看";
+					break;
+				  case "-1":
+				  	msg="收藏失败";
+					break;
+				  case "-2":
+				  	msg="您已收藏，请不要重复收藏";
+					break;
+				  case "-3":
+				  	msg="提交参数错误";
+					break;
+				  case "-4":
+				  	msg="未登录";
+					break;
+				  }
+			  alert(msg);		   
+		  },
+		 }); 
+	}
+	
+</script>
+</head>
+
+<body>
+	<!--#include virtual="/inc/head.shtml"-->
+    <!--#include virtual="/inc/nav.shtml"-->
+	<div id="about_main" class="clear mb20">
+    	<div class="fl about_left pr">
+        	<div class="pa" style="left:0;top:0;" id="about_left">
+                <!--#include virtual="/inc/left_btn.shtml"-->
+                <ul class="about_link">
+                    <!--<li class="about_link_title">关于我们</li>
+                    <li>&gt;&gt;<span><a href="about/index.html">关于证金</a></span></li>
+                    <li>&gt;&gt;<span><a href="#">品牌标志</a></span></li>
+                    <li>&gt;&gt;<span><a href="#">投资者保障</a></span></li>
+                    <li>&gt;&gt;<span><a href="#">战略合作</a></span></li>
+                    <li>&gt;&gt;<span><a href="#">办公环境</a></span></li>
+                    <li>&gt;&gt;<span><a href="#">团队风采</a></span></li>
+                    <li>&gt;&gt;<span><a href="#">公司获奖</a></span></li>
+                    <li>&gt;&gt;<span class="about_link_hover"><a href="javascript:void(0)">公司新闻</a></span>
+                    	<ul class="about_link_sec">
+                        	<li><span><a href="#">公司活动</a></span></li>
+                            <li><span><a href="#">公司公告</a></span></li>
+                            <li><span><a href="#">媒体报道</a></span></li>
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span><a href="#">社会责任</a></span></li>
+                    <li>&gt;&gt;<span><a href="#">联系我们</a></span></li>-->
+                    
+                </ul>
+            </div>
+        </div>
+    	<div class="fr about_right" id="xwy">
+        	<!--#include virtual="/inc/adv.shtml"-->
+            <div class="about_gsxw">
+            	<p class="fb f18 pl5 pt10" id="clname">${clsname}</p>
+                <div class="content">
+                	<h2 id="titlename">${title}</h2>
+                    <p class="tr content_auther pr">${pubDate?string("yyyy年MM月dd日")}　　来源：${mediaSource}　　作者：${author}
+                    	<a class="pa block shoucang" href="javascript:void(0);" onclick="addFavorite();">我要收藏</a>
+                    </p>
+                    <span class="pr gswx_fgx block"><span class="about_gswx_fgx block pa"></span></span>
+                    <div class="conten_main">
+                    	${content}
+					</div>
+                </div>
+            </div>
+        </div>
+      
+        <div class="clear"></div>
+    </div>
+    <!--#include virtual="/inc/foot.shtml"-->
+    <!-- // TODO 百度分享的代码 -->
+    <!-- Baidu Button BEGIN -->
+    <script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=0&amp;pos=right&amp;uid=6617104" ></script>
+    <script type="text/javascript" id="bdshell_js"></script>
+    <script type="text/javascript">
+    document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+    </script>
+    <!-- Baidu Button END -->
+</body>
+</html>

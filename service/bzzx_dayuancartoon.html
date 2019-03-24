@@ -1,0 +1,934 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="证金贵金属,白银,白银分析,白银投资,白银价格,白银交易,炒白银,白银走势,白银软件,模拟炒银,美联储,白银在线分析" />
+<meta name="description" content="证金贵金属，首家赴美纳斯达克上市公司中国最大最专业的白银投资服务平台，致力于白银投资、白银交易、现货白银、白银价格、炒白银、现货白银走势、白银行情、模拟炒银、现货白银开户、投资资讯、分析评论、贵金属投资等贵金属综合性投资服务" />
+
+<title>服务中心_证金贵金属</title>
+<link href="../css/style_2014.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="http://js.jrj.com.cn/v/swfobject.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+	$("#firstpane p.menu_head").bind('click',function(){
+		$(this).css({background:"#fff url(../images2014/khsp02.jpg) center left no-repeat",'border-bottom':'1px dashed #d0d0d0'})
+		$(this).next("div.menu_body").slideDown(300);
+       	$(this).siblingsdy-1().css({backgroundImage:"url(../images2014/khsp01.jpg)",'background-color':'#f2f2f2','border-bottom':'1px solid #d0d0d0'});
+		$(this).siblingsdy-1().next("div.menu_body").slideUp(300);
+	});
+	$('.menu_body dl dt').bind('mouseenter',function(){
+		$(this).find('ul.sfhover').show();
+	});
+	$('.menu_body dl dt').bind('mouseleave',function(){
+		$(this).find('ul.sfhover').hide();
+	});
+});
+</script> 
+<script>
+	var t=1;
+	$(document).ready(function(){		
+		$('area').bind('click',function(){
+			var areaid=$(this).parent().prev().attr('id');	
+			var length=$(this).parents('.wyqy_bank').find('img').length;	
+			var areaidlength=areaid.length;
+			var reid=areaid.substring(0,11);	
+			turnpage(1,length,reid);			
+		})
+		$('.returnbank').bind('click',function(){
+			$('.wyqy_bank img').hide();
+			var l=$('.wyqy_bank').length;
+			for(var i=0;i<l;i++){
+				$('.wyqy_bank').eq(i).find('img').eq(0).show();
+			}
+			t=1;
+			//$('.return_page').parent().hide();
+			//$('.back_page').parent().hide();
+			$(this).parents('.showbank').hide();
+			$('.wyqy_list').show();
+		})
+	})
+	function turnpage(num,total,showid){
+		num==0?t=1:t=t+num;
+		var hideid=showid.split('_')[0];
+		if(t>1&&t<=total){
+			$('#return_page_'+showid).parent().show();
+		}
+		/*else if(t>total-1){
+			$('#return_page_'+showid).parent().hide();
+			//$('#back_page_'+showid).parent().show();
+		}*/
+	
+		else{
+			$('#return_page_'+showid).parent().hide();
+			//$('#back_page_'+showid).parent().hide();
+		}
+		$('#'+hideid+' img').hide();
+		$('#'+showid+t).show();
+	}
+</script>
+</head>
+<body>
+	<!--head-->
+	<!--#include virtual="/inc/head_2014.shtml"-->
+<!--#include virtual="/inc/nav_fuwu.shtml"-->
+    <!--head-end-->
+    <!--middle-->
+<div class="w990 mauto clear over mt20" style="background:url(../images2014/bzhx_khsp05.jpg) repeat-y top left;" >
+  <!--left-->
+	<!--#include virtual="/inc/left-bzzx.shtml"-->
+<!--left-end-->
+<!--right-->
+<div class="bzzx_khsp">
+	<h4>大圆银泰网银签约演示动画</h4>
+      <div class="bzzx-right pr">
+        <div class="tjs-1_bank  wyqy ">
+                    <div class="wyqy_list">
+               	    	<ul>
+                        	<li onclick="$('.wyqy_list').hide();$('#zsdy-1').show();"><img src="images/zs_bank.jpg" width="123" height="83"  alt=""/><p class="bank">大众版</p></li>
+                            <li onclick="$('.wyqy_list').hide();$('#zsdy-2').show();"><img src="images/zs_bank.jpg" width="123" height="83"  alt=""/><p class="bank">专业版</p></li>
+                            <li onclick="$('.wyqy_list').hide();$('#zsdy-3').show();"><img src="images/zs_bank.jpg" width="123" height="83" /><p class="bank">手机版</p></li>
+                            <li onclick="$('.wyqy_list').hide();$('#gddy-1').show();"><img src="images/gd_bank.jpg" width="123" height="83" /><p class="bank">U盾</p></li>
+                            <li onclick="$('.wyqy_list').hide();$('#gddy-2').show();"><img src="images/gd_bank.jpg" width="123" height="83" /><p class="bank">阳光令牌</p></li>
+                            <li onclick="$('.wyqy_list').hide();$('#gddy-3').show();"><img src="images/gd_bank.jpg" width="123" height="83" /><p class="bank">手机动态码</p></li>
+                            <li onclick="$('.wyqy_list').hide();$('#nhdy-1').show();"><img src="images/nh_bank.png" width="145" height="116"  alt="" /></li>                            
+                            <li onclick="$('.wyqy_list').hide();$('#gsdy-1').show();"><img src="images/gs_bank.jpg" width="123" height="83"  alt="" style="margin-top:15px;"/></li>
+                            <li onclick="$('.wyqy_list').hide();$('#hxdy-1').show();"><img src="images/hx_bank.png" width="134" height="113"  alt=""/></li>                     	
+                            <!--增加-->
+                            <li onclick="$('.wyqy_list').hide();$('#payh-1').show();"><img src="images/pa_bank.png" width="123" height="94"  alt=""/><p class="bank">网页版</p></li>   
+                            <li onclick="$('.wyqy_list').hide();$('#pasj-1').show();"><img src="images/pa_bank.png" width="123" height="94"  alt=""/><p class="bank">手机银行</p></li>   
+                            <li onclick="$('.wyqy_list').hide();$('#payb-1').show();"><img src="images/pa_bank.png" width="123" height="94"  alt=""/><p class="bank">平安易宝</p></li>   
+                            <!--增加-->
+                            <li onclick="$('.wyqy_list').hide();$('#jtyh-1').show();"><img src="images/jiaohang/jt_bank.png" width="150" height="141"  alt=""/></li>   
+						    <li onclick="$('.wyqy_list').hide();$('#szyh-1').show();" style="margin-top:30px;"><img src="images/suzhou_bank.png" width="125" height="85"  alt=""/></li>   
+
+                        </ul>
+                   </div>
+        </div>
+      <!--pic-->
+        <div class="pa lh200 showbank hide" style="left:0px; top: 0px; z-index:9;" id="szyh-1">
+       	      		<p class="titile mt20">苏州银行网银签约入口<a href="http://www.suzhoubank.com/" target="_blank">（http://www.suzhoubank.com/）</a></p>
+                    <div class="tjs pr wyqy_bank">
+           	    	  <img src="images/suzhou/1.gif" name="szyh_page1" width="560" height="370" border="0" usemap="#Map101" id="szyh-1_page1" style="display:block;" />
+                        <map name="Map101" id="Map101">
+                          <area shape="rect" coords="366,309,506,331" />
+                          
+                        </map>
+                      <img src="images/suzhou/2.gif" name="jtyh_page2" width="555" height="346" border="0" usemap="#Map102" style="display:none;" id="szyh-1_page2" />
+                        <map name="Map102" id="Map102">
+                          <area shape="rect" coords="237,248,329,296" />
+                      	</map>
+                      <img src="images/suzhou/3.gif" name="jtyh_page3" width="529" height="432" border="0" usemap="#Map103" style="display:none;" id="szyh-1_page3" />
+                        <map name="Map103" id="Map103">
+                          <area shape="rect" coords="263,371,328,402" />
+                      	</map>
+                      <img src="images/suzhou/4.gif" name="jtyh_page4" width="528" height="404" border="0" usemap="#Map104" style="display:none;" id="szyh-1_page4" />
+					   <div class=" hide" style="margin:50px 0 0 50px; float:right;">
+                       <a id="return_page_szyh-1_page" class="" href="javascript:void(0);" onclick="turnpage(-1,7,'szyh-1_page')" >返回上一页</a> </div>
+                       <a class=" fb returnbank"  style="margin:50px 50px 0 0px; float:left;" href="javascript:void(0);">返回银行列表</a>         
+                  </div>                                        
+              </div>                
+          <div class="fwzx_shadow pa" style="left:0;bottom:-18px;"></div>       
+     <!--pic-end-->
+      <!--pic-->
+    <div class="pa lh200 showbank hide" style="left:0px; top: 0px; z-index:9;" id="jtyh-1">
+       	      		<p class="titile mt20">交通银行网银签约入口<a href="http://www.bankcomm.com/BankCommSite/default.shtml" target="_blank">（http://www.hxb.com.cn/home/cn/）</a></p>
+                    <div class="tjs pr wyqy_bank">
+           	    	  <img src="images/jiaotong/1.gif" name="jtyh_page1" width="646" height="274" border="0" usemap="#Map104" id="jtyh-1_page1" style="display:block;" />
+                        <map name="Map104" id="Map104">
+                          <area shape="rect" coords="451,132,609,166" />
+                        </map>
+                      <img src="images/jiaotong/2.gif" name="jtyh_page2" width="623" height="366" border="0" usemap="#Map105" style="display:none;" id="jtyh-1_page2" />
+                        <map name="Map105" id="Map105">
+                          <area shape="rect" coords="389,181,555,210" />
+                      	</map>
+                      <img src="images/jiaotong/3.gif" name="jtyh_page3" width="607" height="356" border="0" usemap="#Map106" style="display:none;" id="jtyh-1_page3" />
+                        <map name="Map106" id="Map106">
+                          <area shape="rect" coords="513,229,581,294" />
+                      	</map>
+                      <img src="images/jiaotong/4.gif" name="jtyh_page4" width="591" height="346" border="0" usemap="#Map107" style="display:none;" id="jtyh-1_page4" />
+                        <map name="Map107" id="Map107">
+                          <area shape="rect" coords="319,325,362,342" />
+                      	</map>
+                      <img src="images/jiaotong/5.gif" name="jt_page5" width="593" height="366" border="0" usemap="#Map105" style="display:none;" id="jtyh-1_page5" />
+                        
+                     
+                      
+						<div class=" hide" style="margin:50px 0 0 50px; float:right;">
+                             <a id="return_page_jtyh-1_page" class="" href="javascript:void(0);" onclick="turnpage(-1,7,'jtyh-1_page')" >返回上一页</a> </div>
+                       
+                        <a class=" fb returnbank"  style="margin:50px 50px 0 0px; float:left;" href="javascript:void(0);">返回银行列表</a>         
+                                                      
+                  </div>                                        
+              </div>                
+          <div class="fwzx_shadow pa" style="left:0;bottom:-18px;"></div>       
+     <!--pic-end-->
+     
+ <div class="pa lh200 showbank hide " style="left:0;top:10px;" id="gddy-1">
+       	       <p class="titile mt20">光大银行U盾网银签约入口<a href="http://www.cebbank.com/" target="_blank">（http://www.cebbank.com/）</a></p>
+               <div class="tjs pr wyqy_bank">
+                    <img src="images/gd-dayuan-Udun/1.gif" width="553" height="409" border="0" usemap="#Map1" id="gddy-1_page1" style="display:block;" />
+                      <map name="Map1" id="Map1">
+                        <area shape="rect" coords="394,293,472,342" />
+                      </map>
+                    <img src="images/gd-dayuan-Udun/2.gif" width="547" height="408" border="0" usemap="#Map2" style="display:none;" id="gddy-1_page2" />
+                      <map name="Map2" id="Map2">
+                        <area shape="rect" coords="390,293,469,341" />
+                      </map>
+                    <img src="images/gd1/3.gif" name="gd1_page3" width="650" height="403" border="0" usemap="#Map3" style="display:none;" id="gddy-1_page3" />
+                      <map name="Map3" id="Map3">
+                        <area shape="rect" coords="34,151,105,179" />
+                      </map>
+                    <img src="images/gd-dayuan-Udun/4.gif" width="548" height="411" border="0" usemap="#Map4" style="display:none;" id="gddy-1_page4" />
+                      <map name="Map4" id="Map4">
+                        <area shape="rect" coords="226,330,272,349" />
+                      </map>
+                    <img src="images/gd-dayuan-Udun/5.gif" width="549" height="330" border="0" usemap="#Map5" style="display:none;" id="gddy-1_page5" />
+                      <map name="Map5" id="Map5">           
+                        <area shape="rect" coords="323,49,370,69" href="#" />
+                      </map>
+                    <img src="images/gd-dayuan-Udun/6.gif" width="435" height="453" border="0" usemap="#Map6" style="display:none;" id="gddy-1_page6" />
+                      <map name="Map6" id="Map6">
+                        <area shape="rect" coords="157,380,211,397" />
+                      </map>
+                    <img src="images/gd-dayuan-Udun/7.gif" width="545" height="413"  border="0" usemap="#Map7" style="display:none;" id="gddy-1_page7" />
+                      <map name="Map7" id="Map7">
+                       <area shape="rect" coords="391,295,470,346" href="#" />
+                      </map>
+                    <img src="images/gd-dayuan-Udun/8.gif" width="650" height="454"  border="0" usemap="#Map8" style="display:none;" id="gddy-1_page8"/>
+                      <map name="Map8" id="Map8">
+                       <area shape="rect" coords="6,130,75,154" href="#" />
+                      </map>
+                    <img src="images/gd-dayuan-Udun/9.gif"  width="650" height="382" usemap="#Map9" border="0" style="display:none;" id="gddy-1_page9"/>
+                      <map name="Map9" id="Map9">
+                        <area shape="rect" coords="428,195,509,225" href="#" />
+                     </map>
+                    <img src="images/gd-dayuan-Udun/10.gif" width="650" height="403" usemap="#Map10" border="0" style="display:none;" id="gddy-1_page10"/>
+                      <map name="Map10" id="Map10">
+                        <area shape="rect" coords="31,150,112,180" href="#" />
+                      </map>
+                    <img src="images/gd-dayuan-Udun/11.gif" width="592" height="327" usemap="#Map11" border="0" style="display:none;" id="gddy-1_page11"/>
+                      <map name="Map11" id="Map11">
+                        <area shape="rect" coords="422,142,498,158" href="#" />
+                      </map>
+                    <img src="images/gd-dayuan-Udun/12.gif" width="584" height="313"  usemap="#Map12" border="0" style="display:none;" id="gddy-1_page12"/>
+                      <map name="Map12" id="Map12">
+                        <area shape="rect" coords="423,227,459,245" href="#" />
+                      </map>
+                    <img src="images/gd-dayuan-Udun/13.gif" width="522" height="435"  usemap="#Map13" border="0" style="display:none;" id="gddy-1_page13"/>
+                      <map name="Map13" id="Map13">
+                        <area shape="rect" coords="176,379,244,411" href="#" />
+                      </map>
+                    <img src="images/gd-dayuan-Udun/14.gif" width="529" height="361"  usemap="#Map14" border="0" style="display:none;" id="gddy-1_page14"/>
+                      <map name="Map14" id="Map14">
+                        <area shape="rect" coords="175,204,251,237" href="#" />
+                      </map>
+                    <img src="images/gd-dayuan-Udun/15.gif" width="650" height="359"  usemap="#Map15" border="0" style="display:none;" id="gddy-1_page15"/>
+                      <map name="Map15" id="Map15">
+                        <area shape="rect" coords="246,193,339,225" href="#" />
+                      </map>
+                    <img src="images/gd-dayuan-Udun/16.gif" width="650" height="323"  usemap="#Map16" border="0" style="display:none;" id="gddy-1_page16"/>
+                      <map name="Map16" id="Map16">
+                        <area shape="rect" coords="318,195,357,220" href="#" />
+                      </map>
+                    <img src="images/gd-dayuan-Udun/17.gif" width="546" height="412"  usemap="#Map17" border="0" style="display:none;" id="gddy-1_page17"/>
+                      <map name="Map17" id="Map17">
+                        <area shape="rect" coords="392,296,473,345" href="#" />
+                      </map>
+                    <img src="images/gd-dayuan-Udun/18.gif" width="650" height="457"  usemap="#Map18" border="0" style="display:none;" id="gddy-1_page18"/>
+                      <map name="Map18" id="Map18">
+                        <area shape="rect" coords="477,61,539,81" href="#" />
+                      </map>
+                    <img src="images/gd-dayuan-Udun/19.gif" width="636" height="544"  usemap="#Map19" border="0" style="display:none;" id="gddy-1_page19"/>
+                    <div class=" hide" style="margin:50px 0 0 50px; float:right;">
+                        <a id="return_page_gddy-1_page" class="" href="javascript:void(0);" onclick="turnpage(-1,19,'gddy-1_page')" >返回上一页</a> 
+                    </div>
+                        <a class=" fb returnbank"  style="margin:50px 50px 0 0px; float:left;" href="javascript:void(0);">返回银行列表</a>                                          
+               </div>                                        
+      </div>
+                
+      <div class="pa lh200 showbank hide" style="left:0;top:10px;" id="gddy-2">
+       	      <p class="titile mt20">光大银行阳光令牌网银签约入口<a href="http://www.cebbank.com/" target="_blank">（http://www.cebbank.com/）</a></p>
+              <div class="tjs pr wyqy_bank">
+                  <img  src="images/gd-dayuan-yangguang/1.gif" width="650" height="454" border="0" usemap="#Map21" id="gddy-2_page1" style="display:block;" />
+                  <map name="Map21" id="Map21">
+                      <area shape="rect" coords="4,132,73,151" />
+                  </map>
+                  <img src="images/gd-dayuan-yangguang/2.gif" width="650" height="382"  border="0" usemap="#Map22" style="display:none;" id="gddy-2_page2" />
+                    <map name="Map22" id="Map22">
+                      <area shape="rect" coords="432,194,509,222" />
+                  </map>
+                  <img src="images/gd-dayuan-yangguang/3.gif" width="650" height="403" border="0" usemap="#Map23" style="display:none;" id="gddy-2_page3" />
+                    <map name="Map23" id="Map23">
+                      <area shape="rect" coords="468,150,541,180" />
+                  </map>
+                  <img  src="images/gd-dayuan-yangguang/4.gif" width="650" height="369" border="0" usemap="#Map24" style="display:none;" id="gddy-2_page4" />
+                  <map name="Map24" id="Map24">
+                      <area shape="rect" coords="175,181,257,208" />
+                  </map>
+                  <img  src="images/gd-dayuan-yangguang/5.gif" width="592" height="327"   border="0" usemap="#Map25" style="display:none;" id="gddy-2_page5" />
+                    <map name="Map25" id="Map25">
+                      <area shape="rect" coords="407,136,500,159" />
+                  </map>
+                  <img src="images/gd-dayuan-yangguang/6.gif" width="584" height="313"  border="0" usemap="#Map26" style="display:none;" id="gddy-2_page6" />
+                    <map name="Map26" id="Map26">
+                      
+                      <area shape="rect" coords="420,224,463,246" />
+                  </map>
+                  <img  src="images/gd-dayuan-yangguang/7.gif" width="522" height="435"  border="0" usemap="#Map27" style="display:none;" id="gddy-2_page7" />
+                    <map name="Map27" id="Map27">
+                      <area shape="rect" coords="176,381,241,408" />
+                  </map>
+                  <img src="images/gd-dayuan-yangguang/8.gif" width="529" height="361" border="0" usemap="#Map28" style="display:none;" id="gddy-2_page8" />
+                  <map name="Map28" id="Map28">
+                      <area shape="rect" coords="174,205,251,236" />
+                  </map>
+                   <img src="images/gd-dayuan-yangguang/9.gif" width="650" height="359" border="0" usemap="#Map29" style="display:none;" id="gddy-2_page9" />
+                   <map name="Map29" id="Map29">
+                     <area shape="rect" coords="247,194,336,227" href="#" />
+                   </map>
+                   <img src="images/gd-dayuan-yangguang/10.gif" width="650" height="323" border="0" usemap="#Map30" style="display:block;" id="gddy-2_page10" />
+                  <div class=" hide" style="margin:50px 0 0 50px; float:right;">
+                         <a id="return_page_gddy-2_page" class="" href="javascript:void(0);" onclick="turnpage(-1,10,'gddy-2_page')" >返回上一页</a> 
+                  </div>
+                         <a class=" fb returnbank"  style="margin:50px 50px 0 0px; float:left;" href="javascript:void(0);">返回银行列表</a>          
+               </div>                                        
+       </div>
+                
+       <div class="pa lh200 showbank hide" style="left:0;top:10px;" id="gddy-3">
+       	       <p class="titile mt20">光大银行手机网银签约流程</p>
+               <div class="tjs-1 pr wyqy_bank"> 
+                    <img src="images/gd-dayuan-shouji/1.gif" width="650" height="454" border="0" usemap="#Map31" id="gddy-3_page1" style="display:block;" />
+                      <map name="Map31" id="Map31">
+                        <area shape="rect" coords="4,129,78,151" />
+                      </map>
+                    <img src="images/gd-dayuan-shouji/2.gif" width="650" height="382"  border="0" usemap="#Map32" style="display:none;" id="gddy-3_page2" />
+                      <map name="Map32" id="Map32">
+                        <area shape="rect" coords="428,195,510,222" />
+                      </map>
+                    <img src="images/gd-dayuan-shouji/3.gif" width="650" height="403" border="0" usemap="#Map33" style="display:none;" id="gddy-3_page3" />
+                      <map name="Map33" id="Map33">
+                        <area shape="rect" coords="259,151,341,178" />
+                      </map>
+                    <img src="images/gd-dayuan-shouji/4.gif" width="650" height="379" border="0" usemap="#Map34" style="display:none;" id="gddy-3_page4" />
+                      <map name="Map34" id="Map34">
+                        <area shape="rect" coords="103,207,185,234" />
+                      </map>
+                    <img  src="images/gd-dayuan-shouji/5.gif" width="592" height="327"  border="0" usemap="#Map35" style="display:none;" id="gddy-3_page5" />
+                      <map name="Map35" id="Map35">
+                        <area shape="rect" coords="410,139,503,162" />
+                    </map>
+                    <img src="images/gd-dayuan-shouji/6.gif" width="584" height="313"  border="0" usemap="#Map36" style="display:none;" id="gddy-3_page6" />
+                      <map name="Map36" id="Map36">
+                        <area shape="rect" coords="421,229,463,245"  />
+                      </map>
+                    <img src="images/gd-dayuan-shouji/7.gif" width="522" height="435"  border="0" usemap="#Map37" style="display:none;" id="gddy-3_page7" />
+                      <map name="Map37" id="Map37">
+                        <area shape="rect" coords="175,376,244,409" />
+                      </map>
+                    <img src="images/gd-dayuan-shouji/8.gif" width="529" height="361" border="0" usemap="#Map38" style="display:none;" id="gddy-3_page8" />
+                      <map name="Map38" id="Map38">
+                        <area shape="rect" coords="175,203,250,239" href="#" />
+                      </map>
+                    <img src="images/gd-dayuan-shouji/9.gif" width="650" height="359" usemap="#gddy-3_page9Map" id="gddy-3_page9" style="display:none;" border="0" />
+                      <map name="gddy-3_page9Map" id="gddy-3_page9Map">
+                        <area shape="rect" coords="246,193,336,224"  />
+                      </map>
+                   <img src="images/gd-dayuan-shouji/10.gif" width="650" height="323" border="0" style="display:none;" id="gddy-3_page10" />
+                   <div class=" hide" style="margin:50px 0 0 50px; float:right;">
+                        <a id="return_page_gddy-3_page" class="" href="javascript:void(0);" onclick="turnpage(-1,10,'gddy-3_page')" >返回上一页</a>
+                   </div>
+                        <a class=" fb returnbank"  style="margin:50px 50px 0 0px; float:left;" href="javascript:void(0);">返回银行列表</a>         
+             </div>                                        
+     </div>
+                
+	 <div class="pa lh200 showbank hide" style="left:0;top:10px;" id="zsdy-1">
+       	     <p class="titile mt20">招商银行签约入口 <a href="http://www.cmbchina.com/" target="_blank"> （http://www.cmbchina.com/）</a></p>
+             <div class="tjs-1 pr wyqy_bank">
+                  <img src="images/zs-dayuan-dazhong/1.gif" width="650" height="442" border="0" usemap="#Map41" id="zsdy-1_page1" style="display:block;"/>
+                    <map name="Map41" id="Map41">
+                      <area shape="rect" coords="511,132,645,155" />
+                    </map>
+                  <img src="images/zs-dayuan-dazhong/2.gif" name="zsdy-1_page2" width="650" height="471" border="0" usemap="#Map42" style="display:none;" id="zsdy-1_page2" />
+                    <map name="Map42" id="Map42">
+                      <area shape="rect" coords="140,255,214,281" />
+                    </map>
+                  <img src="images/zs-dayuan-dazhong/3.gif" name="zsdy-1_page3" width="650" height="399" border="0" usemap="#Map43" style="display:none;" id="zsdy-1_page3" />
+                    <map name="Map43" id="Map43">
+                      <area shape="rect" coords="116,191,167,214" />
+                    </map>
+                  <img src="images/zs-dayuan-dazhong/4.gif" name="zsdy-1_page4" width="638" height="365" border="0" usemap="#Map44" style="display:none;" id="zsdy-1_page4" />
+                    <map name="Map44" id="Map44">
+                      <area shape="rect" coords="153,165,585,179" />
+                    </map>
+                  <img src="images/zs-dayuan-dazhong/5.gif" name="zsdy-1_page5" width="650" height="471" border="0" usemap="#Map45" style="display:none;" id="zsdy-1_page5" />
+                    <map name="Map45" id="Map45">
+                      <area shape="rect" coords="359,378,412,398" />
+                  </map>
+                  <img src="images/zs-dayuan-dazhong/6.gif" name="zsdy-1_page6" width="650" height="386" border="0" usemap="#Map46" style="display:none;" id="zsdy-1_page6" />
+                    <map name="Map46" id="Map46">
+                      <area shape="rect" coords="256,312,299,340" />
+                    </map>
+                  <img src="images/zs-dayuan-dazhong/7.gif" name="zsdy-1_page7" width="650" height="311" border="0" usemap="#Map47" style="display:none;" id="zsdy-1_page7" />
+                  <div class=" hide" style="margin:50px 0 0 50px; float:right;">
+                         <a id="return_page_zsdy-1_page" class="" href="javascript:void(0);" onclick="turnpage(-1,7,'zsdy-1_page')" >返回上一页</a> 
+                  </div>
+                         <a class=" fb returnbank"  style="margin:50px 50px 0 0px; float:left;" href="javascript:void(0);">返回银行列表</a>                         
+             </div>                                        
+     </div>
+                
+	 <div class="pa lh200 showbank hide" style="left:0;top:10px;" id="zsdy-2">
+       	     <p class="titile mt20">招商银行签约入口 <a href="http://www.cmbchina.com/" target="_blank"> （http://www.cmbchina.com/）</a></p>
+             <div class="tjs-1 pr wyqy_bank"> 
+                  <img src="images/zs-dayuan-zhuanye/01.gif" width="551" height="526" border="0" usemap="#Map51" style="display:block;" id="zsdy-2_page1" />
+                   <map name="Map51" id="Map51">
+                     <area shape="rect" coords="60,454,225,499" />
+                   </map>
+                  <img src="images/zs-dayuan-zhuanye/02.gif" width="631" height="452" border="0" usemap="#Map52" style="display:none;" id="zsdy-2_page2" />
+                    <map name="Map52" id="Map52">
+                      <area shape="rect" coords="56,33,121,69" />
+                    </map>
+                  <img src="images/zs-dayuan-zhuanye/03.gif" width="633" height="452" border="0" usemap="#Map53" style="display:none;" id="zsdy-2_page3" />
+                    <map name="Map53" id="Map53">
+                      <area shape="rect" coords="288,367,403,393" />
+                    </map>
+                  <img src="images/zs-dayuan-zhuanye/04.gif" width="636" height="447"  border="0" usemap="#Map54" style="display:none;" id="zsdy-2_page4" />
+                    <map name="Map54" id="Map54">
+                      <area shape="rect" coords="92,247,638,265" />
+                    </map>
+                  <img  src="images/zs-dayuan-zhuanye/05.gif" width="636" height="456" border="0" usemap="#Map55" style="display:none;" id="zsdy-2_page5" />
+                    <map name="Map55" id="Map55">                          
+                      <area shape="rect" coords="328,407,371,425" />
+                    </map>
+                  <img src="images/zs-dayuan-zhuanye/06.gif" width="645" height="465" border="0" usemap="#Map56" style="display:none;" id="zsdy-2_page6" />
+                    <map name="Map56" id="Map56">
+                      <area shape="rect" coords="302,368,346,392" />
+                    </map>
+                  <img src="images/zs-dayuan-zhuanye/07.gif" width="647" height="452" border="0" usemap="#Map57" style="display:none;" id="zsdy-2_page7" />                       
+                  <div class=" hide" style="margin:50px 0 0 50px; float:right;">
+                         <a id="return_page_zsdy-2_page" class="" href="javascript:void(0);" onclick="turnpage(-1,7,'zsdy-2_page')" >返回上一页</a>
+                  </div>
+                         <a class=" fb returnbank"  style="margin:50px 50px 0 0px; float:left;" href="javascript:void(0);">返回银行列表</a>                                      
+            </div>                                        
+    </div>
+                
+    <div class="pa lh200 showbank hide " style="left: 184px; top: 11px;" id="zsdy-3">
+       	    <p class="titile mt20">招商银行手机版网银签约流程</p>
+            <div class="tjs-1 pr wyqy_bank"> 
+                 <img src="images/zs-dayuan-shouji/1.gif" name="zsdy-3_page" width="323" height="520" border="0" usemap="#Map61" id="zsdy-3_page1" style="display:block;" />
+                    <map name="Map61" id="Map61">
+                      <area shape="rect" coords="8,265,314,323" />
+                    </map>
+                  <img src="images/zs-dayuan-shouji/2.gif" name="zsdy-3_page2" width="325" height="519" border="0" usemap="#Map62" style="display:block;" id="zsdy-3_page2" />
+                    <map name="Map62" id="Map62">
+                      <area shape="rect" coords="6,229,316,287" />
+                    </map>
+                  <img src="images/zs-dayuan-shouji/3.gif" name="zsdy-3_page3" width="323" height="522" border="0" usemap="#Map63" style="display:none;" id="zsdy-3_page3" />
+                    <map name="Map63" id="Map63">
+                      <area shape="rect" coords="119,160,205,246" />
+                    </map>
+                  <img src="images/zs-dayuan-shouji/4.gif" name="zsdy-3_page4" width="323" height="521" border="0" usemap="#Map64" style="display:none;" id="zsdy-3_page4" />
+                    <map name="Map64" id="Map64">
+                      <area shape="rect" coords="13,260,312,299" />
+                    </map>
+                  <img src="images/zs-dayuan-shouji/5.gif" name="zsdy-3_page5" width="323" height="521" border="0" usemap="#Map65" style="display:none;" id="zsdy-3_page5" />
+                    <map name="Map65" id="Map65">                          
+                      <area shape="rect" coords="2,134,320,184" />
+                    </map>
+                  <img src="images/zs-dayuan-shouji/6.gif" name="zsdy-3_page6" width="326" height="520" border="0" usemap="#Map66" style="display:none;" id="zsdy-3_page6" />
+                    <map name="Map66" id="Map66">
+                      <area shape="rect" coords="4,134,318,183" />
+                    </map>
+                  <img src="images/zs-dayuan-shouji/7.gif" name="zsdy-3_page7" width="323" height="521" border="0" usemap="#Map67" style="display:none;" id="zsdy-3_page7" />
+                    <map name="Map67" id="Map67">
+                      <area shape="rect" coords="10,230,318,305" />
+                    </map>
+                  <img src="images/zs-dayuan-shouji/8.gif" name="zsdy-3_page8" width="323" height="600" border="0" usemap="#Map68" style="display:none;" id="zsdy-3_page8" />
+                  <map name="Map68" id="Map68">
+                    <area shape="rect" coords="22,521,303,557"  />
+                  </map>
+                  <img src="images/zs-dayuan-shouji/9.gif" name="zsdy-3_page9" width="323" height="521" border="0" usemap="#Map69" style="display:none;" id="zsdy-3_page9" />  
+                  <div class=" hide" style="margin:50px 0 0 50px; float:right;">
+                         <a id="return_page_zsdy-3_page" class="" href="javascript:void(0);" onclick="turnpage(-1,8,'zsdy-3_page')" >返回上一页</a>
+                  </div>
+                         <a class=" fb returnbank"  style="margin:50px 50px 0 0px; float:left;" href="javascript:void(0);">返回银行列表</a>                      
+           </div>                                        
+   </div>
+                
+   <div class="pa lh200 showbank hide" style="left:0;top:10px;" id="hxdy-1">
+   	       <p class="titile mt20">华夏银行签约入口<a href="http://www.hxb.com.cn/home/cn/" target="_blank">（http://www.hxb.com.cn/home/cn/）</a></p>
+           <div class="tjs-1 pr wyqy_bank">
+               <img  src="images/huaxia/1.gif" width="543" height="392"  border="0" usemap="#Map71" id="hxdy-1_page1" style="display:block;" />
+                  <map name="Map71" id="Map71">
+                    <area shape="rect" coords="389,277,472,324" />
+                  </map>
+                <img  src="images/huaxia/2.gif" width="546" height="384" border="0" usemap="#Map72" style="display:none;" id="hxdy-1_page2" />
+                  <map name="Map72" id="Map72">
+                    <area shape="rect" coords="390,267,469,316" />
+                  </map>
+                <img  src="images/huaxia/3.gif" width="531" height="389" border="0" usemap="#Map73" style="display:none;" id="hxdy-1_page3" />
+                  <map name="Map73" id="Map73">
+                    <area shape="rect" coords="33,163,108,192" />
+                 </map>
+                <img src="images/huaxia/4.gif" width="549" height="375" border="0" usemap="#Map74" style="display:none;" id="hxdy-1_page4" />
+                  <map name="Map74" id="Map74">
+                    <area shape="rect" coords="214,230,303,272" />
+                  </map>
+                <img src="images/huaxia/5.gif" width="584" height="425" border="0" usemap="#Map75" style="display:none;" id="hxdy-1_page5" />
+                  <map name="Map75" id="Map75">                            
+                    <area shape="rect" coords="230,191,289,225" />
+                  </map>
+                <img src="images/huaxia/6.gif" width="529" height="388" border="0" usemap="#Map76" style="display:none;" id="hxdy-1_page6" />
+                  <map name="Map76" id="Map76">
+                    <area shape="rect" coords="294,313,349,345" />
+                  </map>
+                <img src="images/huaxia/7.gif" width="640" height="534"  border="0" usemap="#Map77" style="display:none;" id="hxdy-1_page7" />
+                  <map name="Map77" id="Map77">
+                    <area shape="rect" coords="273,407,350,449" />
+                  </map>
+                <img src="images/huaxia/8.gif" width="633" height="511" border="0" usemap="#Map78" style="display:none;" id="hxdy-1_page8" />
+                  <map name="Map78" id="Map78">
+                    <area shape="rect" coords="466,64,535,88"  />
+                  </map>
+                <img src="images/huaxia/9.gif" width="514" height="511" border="0" usemap="#Map79" style="display:none;" id="hxdy-1_page9" />
+                  <map name="Map79" id="Map79">
+                    <area shape="rect" coords="177,289,261,336"  />
+                  </map>
+                <img src="images/huaxia/10.gif" width="510" height="377"  border="0" usemap="#Map80" style="display:none;" id="hxdy-1_page10" />
+                  <map name="Map80" id="Map80">
+                    <area shape="rect" coords="164,179,261,212"  />
+                  </map>
+               <img src="images/huaxia/11.gif" width="546" height="384"  border="0" usemap="#Map811" style="display:none;" id="hxdy-1_page11" />
+                  <map name="Map811" id="Map811">
+                    <area shape="rect" coords="391,265,471,319"  />
+                  </map>
+              <img src="images/huaxia/12.gif" width="535" height="378"  border="0" usemap="#Map821" style="display:none;" id="hxdy-1_page12" />
+                  <map name="Map821" id="Map821">
+                    <area shape="rect" coords="417,41,480,79" />
+                 </map>
+              <img src="images/huaxia/13.gif" width="535" height="378"  border="0" usemap="#Map831" style="display:none;" id="hxdy-1_page13" />
+                  <map name="Map831" id="Map831">
+                    <area shape="rect" coords="172,181,256,216"  />
+                  </map>
+              <img src="images/huaxia/14.gif" width="402" height="553"  border="0"  style="display:none;" id="hxdy-1_page14" />    
+             <div class=" hide" style="margin:50px 0 0 50px; float:right;">
+                   <a id="return_page_hxdy-1_page" class="" href="javascript:void(0);" onclick="turnpage(-1,13,'hxdy-1_page')" >返回上一页</a>
+             </div>
+                   <a class=" fb returnbank"  style="margin:50px 50px 0 0px; float:left;" href="javascript:void(0);">返回银行列表</a>                     
+       </div>                                        
+   </div>
+                
+   <div class="pa lh200 showbank hide" style="left:0;top:10px;" id="gsdy-1">
+       	   <p class="titile mt20">工商银行签约入口 <a href="http://www.icbc.com.cn/icbc/" target="_blank">（http://www.icbc.com.cn/icbc/）</a></p>
+           <div class="tjs-1 pr wyqy_bank">
+                <img src="images/gs-dayuan/1.gif" width="568" height="423" border="0" usemap="#Map81" id="gsdy-1_page1" style="display:block;" />
+                    <map name="Map81" id="Map81">
+                      <area shape="rect" coords="7,124,130,156" />
+                    </map>
+                <img src="images/gs-dayuan/2.gif"  width="568" height="378" border="0" usemap="#Map82" style="display:none;" id="gsdy-1_page2" />
+                    <map name="Map82" id="Map82">
+                      <area shape="rect" coords="335,210,546,240" />
+                    </map>
+                <img src="images/gs-dayuan/3.gif" width="650" height="360" border="0" usemap="#Map83" style="display:none;" id="gsdy-1_page3" />
+                    <map name="Map83" id="Map83">
+                      <area shape="rect" coords="291,197,356,234" />
+                    </map>
+                <img src="images/gs-dayuan/4.gif" width="608" height="382" border="0" usemap="#Map84" style="display:none;" id="gsdy-1_page4" />
+                    <map name="Map84" id="Map84">
+                      
+                      <area shape="rect" coords="181,213,261,242"  />
+                    </map>
+                <img src="images/gs-dayuan/5.gif" width="621" height="332" border="0" usemap="#Map85" style="display:none;" id="gsdy-1_page5" />
+                    <map name="Map85" id="Map85">
+                      <area shape="rect" coords="550,49,630,70" />
+                    </map>
+                <img src="images/gs-dayuan/6.gif" width="643" height="263" border="0" usemap="#Map86" style="display:none;" id="gsdy-1_page6" />
+                    <map name="Map86" id="Map86">
+                      <area shape="rect" coords="584,148,616,168" />
+                    </map>
+                <img src="images/gs-dayuan/7.gif" width="640" height="350"  border="0" usemap="#Map87" style="display:none;" id="gsdy-1_page7" />
+                    <map name="Map87" id="Map87">
+                      <area shape="rect" coords="297,268,355,295" />
+                    </map>
+                <img src="images/gs-dayuan/8.gif" width="648" height="316" border="0" usemap="#Map88" style="display:none;" id="gsdy-1_page8" />
+                    <map name="Map88" id="Map88">
+                      <area shape="rect" coords="248,192,304,217" />
+                    </map>
+                <img src="images/gs-dayuan/9.gif" width="644" height="278" border="0" usemap="#Map89" style="display:none;" id="gsdy-1_page9" />
+                  <map name="Map89" id="Map89">
+                    <area shape="rect" coords="254,162,327,198"  />
+                  </map>
+                <img src="images/gs-dayuan/10.gif" width="591" height="300" border="0" usemap="#Map90" style="display:none;" id="gsdy-1_page10" />
+                  <map name="Map90" id="Map90">
+                    <area shape="rect" coords="315,196,364,224"  />
+                  </map>
+                <img src="images/gs-dayuan/11.gif" width="625" height="298"  border="0"  style="display:none;" id="gsdy-1_page11"/>
+                <div class=" hide" style="margin:50px 50px 0px 10px; float:right;">
+                     <a id="return_page_gsdy-1_page" class="" href="javascript:void(0);" onclick="turnpage(-1,10,'gsdy-1_page')" >返回上一页</a>
+                </div>
+                     <a class=" fb returnbank"  style="margin:50px 50px 0 0px; float:left;" href="javascript:void(0);">返回银行列表</a>                        
+          </div>                                        
+  </div>
+  
+  <div class="pa lh200 showbank hide" style="left:0;top:10px;" id="nhdy-1">
+       	      		<p class="titile mt20">农业银行签约入口<a href="http://www.abchina.com/cn/" target="_blank">（http://www.abchina.com/cn/）</a></p>
+                    <div class="tjs-1 pr wyqy_bank">
+                      <img src="images/nonghang/1.gif" width="544" height="402" border="0" usemap="#Map91" id="nhdy-1_page1" style="display:block" />
+                        <map name="Map91" id="Map91">
+                          <area shape="rect" coords="392,282,471,331" />
+                        </map>
+                      <img src="images/nonghang/2.gif" width="543" height="400" border="0" usemap="#Map92" style="display:none;" id="nhdy-1_page2" />
+                        <map name="Map92" id="Map92">
+                      	  <area shape="rect" coords="417,316,484,357"/>
+                        </map>
+                      <img src="images/nonghang/3.gif" width="529" height="387" border="0" usemap="#Map93" style="display:none;" id="nhdy-1_page3" />
+						<map name="Map93" id="Map93">
+                          <area shape="rect" coords="404,305,471,345" />
+                   	    </map>
+                      <img src="images/nonghang/4.gif" width="529" height="388" border="0" usemap="#Map94" style="display:none;" id="nhdy-1_page4" />
+						<map name="Map94" id="Map94">
+                          <area shape="rect" coords="357,344,427,379" />
+                   	    </map>
+                      <img src="images/nonghang/5.gif" width="589" height="350"  border="0" usemap="#Map95" style="display:none;" id="nhdy-1_page5" />
+                        <map name="Map95" id="Map95">
+                          <area shape="rect" coords="27,137,156,166" href="#" />
+                        </map>
+						
+                      <img src="images/nonghang/6.gif" width="600" height="262" border="0" usemap="#Map96" style="display:none;" id="nhdy-1_page6" />
+                      <map name="Map96" id="Map96">
+                        <area shape="rect" coords="91,98,150,118" href="#" />
+                      </map>
+					  <img src="images/nonghang/7.gif" width="592" height="354"   border="0" usemap="#Map97" style="display:none;" id="nhdy-1_page7" />
+                      <map name="Map97" id="Map97">
+                        <area shape="rect" coords="241,313,335,349" href="#" />
+                      </map>
+                      <img src="images/nonghang/8.gif" width="543" height="400"  border="0" usemap="#Map98" style="display:none;" id="nhdy-1_page8" />
+                      <map name="Map98" id="Map98">
+                        <area shape="rect" coords="390,281,469,332" href="#" />
+                      </map>
+                      <img src="images/nonghang/9.gif" width="529" height="387"   border="0" usemap="#Map99" style="display:none;" id="nhdy-1_page9" />
+                      <map name="Map99" id="Map99">
+                        <area shape="rect" coords="16,109,87,132" href="#" />
+                      </map>
+                      <img src="images/nonghang/10.gif" width="529" height="388"  border="0" usemap="#Map100" style="display:none;" id="nhdy-1_page10" />
+                      <map name="Map100" id="Map100">
+                        <area shape="rect" coords="298,319,350,345" href="#" />
+                      </map>
+                      <img src="images/nonghang/11.gif" width="637" height="502"  border="0" usemap="#Map401" style="display:none;" id="nhdy-1_page11" />
+                      <map name="Map401" id="Map401">
+                        <area shape="rect" coords="270,411,339,453" href="#" />
+                      </map>
+                      
+                   <img src="images/nonghang/12.gif" width="596" height="436"   border="0" usemap="#Map402" style="display:none;" id="nhdy-1_page12" />
+                   <map name="Map402" id="Map402">
+                     <area shape="rect" coords="252,236,346,274" href="#" />
+                   </map>
+                   <img src="images/nonghang/13.gif" width="558" height="448"   border="0" usemap="#Map403" style="display:none;" id="nhdy-1_page13" />
+                   <map name="Map403" id="Map403">
+                     <area shape="rect" coords="192,292,287,339" href="#" />
+                   </map>
+                   <img src="images/nonghang/14.gif" width="600" height="361"   border="0" usemap="#Map404" style="display:none;" id="nhdy-1_page14" />
+                   <map name="Map404" id="Map404">
+                     <area shape="rect" coords="404,149,498,185" href="#" />
+                   </map>
+                   <img src="images/nonghang/15.gif" width="600" height="530"   border="0" usemap="#Map405" style="display:none;" id="nhdy-1_page15" />
+                   <map name="Map405" id="Map405">
+                     <area shape="rect" coords="313,312,416,353" href="#" />
+                   </map>
+                   <img src="images/nonghang/16.gif" width="544" height="407"   border="0" usemap="#Map406" style="display:none;" id="nhdy-1_page16" />
+                   <map name="Map406" id="Map406">
+                     <area shape="rect" coords="227,217,324,261" href="#" />
+                   </map>
+                   <img src="images/nonghang/17.gif" width="543" height="400"   border="0" usemap="#Map407" style="display:none;" id="nhdy-1_page17" />
+                   <map name="Map407" id="Map407">
+                     <area shape="rect" coords="391,283,469,331" href="#" />
+                   </map>
+                   <img src="images/nonghang/18.gif" width="607" height="327"   border="0" usemap="#Map408" style="display:none;" id="nhdy-1_page18" />
+                   <map name="Map408" id="Map408">
+                     <area shape="rect" coords="32,191,164,215" href="#" />
+                   </map>
+                   
+                   <img src="images/nonghang/19.gif" width="600" height="339"   border="0" usemap="#Map409" style="display:none;" id="nhdy-1_page19" />
+                   <map name="Map409" id="Map409">
+                     <area shape="rect" coords="22,212,112,241" href="#" />
+                   </map>
+                   <img src="images/nonghang/20.gif" width="553" height="288"   border="0" usemap="#Map410" style="display:none;" id="nhdy-1_page20" />
+                   <map name="Map410" id="Map410">
+                     <area shape="rect" coords="24,153,164,178" href="#" />
+                   </map>
+                   <img src="images/nonghang/21.gif" width="633" height="288"  border="0" usemap="#Map411" style="display:none;" id="nhdy-1_page21"/>
+                   <map name="Map411" id="Map411">
+                     <area shape="rect" coords="332,95,355,111" href="#" />
+                   </map>
+                   <img src="images/nonghang/22.gif" width="554" height="314"  border="0" usemap="#Map412" style="display:none;" id="nhdy-1_page22"/>
+                   <map name="Map412" id="Map412">
+                     <area shape="rect" coords="349,218,409,266" href="#" />
+                   </map>
+                   <img src="images/nonghang/23.gif" width="630" height="291"  border="0" usemap="#Map413" style="display:none;" id="nhdy-1_page23"/>
+                   <map name="Map413" id="Map413">
+                     <area shape="rect" coords="285,152,320,176" href="#" />
+                   </map>
+                   <img src="images/nonghang/24.gif" width="628" height="286"  border="0" usemap="#Map414" style="display:none;" id="nhdy-1_page24"/>
+                   <map name="Map414" id="Map414">
+                     <area shape="rect" coords="332,110,362,129" href="#" />
+                   </map>
+                   <img src="images/nonghang/25.gif" width="635" height="296"  border="0" usemap="#Map415" style="display:none;" id="nhdy-1_page25"/>
+                   <map name="Map415" id="Map415">
+                     <area shape="rect" coords="335,109,359,129" href="#" />
+                   </map>
+                   <img src="images/nonghang/26.gif" width="631" height="293"  border="0" usemap="#Map416"  style="display:none;" id="nhdy-1_page26"/>
+                  <div class=" hide" style="margin:50px 0 0 50px; float:right;">
+                      <a id="return_page_nhdy-1_page" class="" href="javascript:void(0);" onclick="turnpage(-1,25,'nhdy-1_page')" >返回上一页</a></div>
+                      <a class=" fb returnbank"  style="margin:50px 50px 0 0px; float:left;" href="javascript:void(0);">返回银行列表</a>                      
+                  </div>                                        
+                </div>
+           <!--pic-->
+  <div class="pa lh200 showbank hide" style="left:0px; top: 0px; z-index:9;" id="jt">
+       	   <p class="titile mt20">交通银行签约入口<a href="http://www.bankcomm.com/BankCommSite/default.shtml" target="_blank">（http://www.hxb.com.cn/home/cn/）</a></p>
+           <div class="tjs-1 pr wyqy_bank">
+                <img src="images/jiaotong/1.gif" name="jt_page1" width="596" height="363" border="0" usemap="#Map101" id="jt_page1" style="display:block;" />
+                  <map name="Map101" id="Map101">
+                    <area shape="rect" coords="419,113,489,141" />
+                  </map>
+                <img src="images/jiaotong/2.gif" name="jt_page2" width="633" height="357" border="0" usemap="#Map102" style="display:none;" id="jt_page2" />
+                  <map name="Map102" id="Map102">
+                    <area shape="rect" coords="405,232,572,257" />
+                  </map>
+                <img src="images/jiaotong/3.gif" name="jt_page3" width="628" height="344" border="0" usemap="#Map103" style="display:none;" id="jt_page3" />
+                  <map name="Map103" id="Map103">
+                    <area shape="rect" coords="464,56,517,81" />
+                  </map>
+                <img src="images/jiaotong/4.gif" name="jt_page4" width="639" height="361" border="0" usemap="#Map104" style="display:none;" id="jt_page4" />
+                  <map name="Map104" id="Map104">
+                    <area shape="rect" coords="9,156,91,183" />
+                  </map>
+                <img src="images/jiaotong/5.gif" name="jt_page5" width="633" height="344" border="0" usemap="#Map105" style="display:none;" id="jt_page5" />
+                  <map name="Map105" id="Map105">
+                    <area shape="rect" coords="335,174,426,204" />
+                  </map>
+                <img src="images/jiaotong/6.gif" name="jt_page6" width="642" height="390" border="0" usemap="#Map106" style="display:none;" id="jt_page6" />
+                  <map name="Map106" id="Map106">
+                    <area shape="rect" coords="315,257,382,279" />
+                  </map>
+                <img src="images/jiaotong/7.gif" name="jt_page7" width="649" height="398" border="0" usemap="#Map107" style="display:none;" id="jt_page7" />
+                   <map name="Map107" id="Map107">
+                     <area shape="rect" coords="314,264,381,287" />
+                   </map>
+                <img src="images/jiaotong/8.gif" name="jt_page8" width="643" height="349" border="0" usemap="#Map108" style="display:none;" id="jt_page8" />
+                <div class=" hide" style="margin:50px 0 0 50px; float:right;">
+                       <a id="return_page_jt_page" class="" href="javascript:void(0);" onclick="turnpage(-1,7,'jt_page')" >返回上一页</a> 
+                </div>
+                       <a class=" fb returnbank"  style="margin:50px 50px 0 0px; float:left;" href="javascript:void(0);">返回银行列表</a>                                               
+          </div>                                        
+  </div>
+
+  <!--新增加的预约动画-->
+   <div class="pa lh200 showbank hide" style="left:0;top:10px;" id="payh-1">
+       <p class="titile mt20">平安银行网页签约入口<a href="http://bank.pingan.com/" target="_blank">（http://www.hxb.com.cn/home/cn/）</a></p>
+       <div class="tjs-1 pr wyqy_bank">
+            <img  src="images/pinganwy/1.gif" width="648" height="275" usemap="#Map201"  id="payh-1_page1" style="display:block;"  border="0" />
+              <map name="Map201" id="Map201">
+                <area shape="rect" coords="491,101,620,134"/>
+              </map> 
+            <img  src="images/pinganwy/2.gif" width="606" height="358" usemap="#Map202"  style="display:none;" id="payh-1_page2" border="0" />
+              <map name="Map202" id="Map202">
+                <area shape="rect" coords="323,236,409,262" />
+              </map>
+            <img  src="images/pinganwy/3.gif" width="633" height="284" usemap="#Map203" style="display:none;" id="payh-1_page3"  border="0" />
+              <map name="Map203" id="Map203">
+                <area shape="rect" coords="434,75,513,100"/>
+              </map>
+            <img src="images/pinganwy/4.gif" width="648" height="267" usemap="#Map204"  style="display:none;" id="payh-1_page4" border="0" />
+              <map name="Map204" id="Map204">
+                <area shape="rect" coords="595,122,629,144" />
+              </map> 
+            <img src="images/pinganwy/5.gif" width="608" height="300" usemap="#Map205"  style="display:none;" id="payh-1_page5" border="0" />
+              <map name="Map205" id="Map205">
+                <area shape="rect" coords="368,265,427,296"/>
+              </map>  
+            <img src="images/pinganwy/6.gif" width="638" height="308" usemap="#Map206"  style="display:none;" id="payh-1_page6" border="0" />
+              <map name="Map206" id="Map206">
+                <area shape="rect" coords="284,272,357,305"/>
+              </map>
+            <img src="images/pinganwy/7.gif" width="648" height="268" usemap="#Map207"  style="display:none;" id="payh-1_page7" border="0" />
+              <map name="Map207" id="Map207">
+                <area shape="rect" coords="488,244,528,268"/>
+              </map> 
+            <img src="images/pinganwy/8.gif" width="647" height="266"  border="0"  style="display:none;" id="payh-1_page8" />    
+           <div class=" hide" style="margin:50px 0 0 50px; float:right;">
+                 <a id="return_page_payh-1_page" class="" href="javascript:void(0);" onclick="turnpage(-1,7,'payh-1_page')" >返回上一页</a>
+           </div>
+                <a class=" fb returnbank"  style="margin:50px 50px 0 0px; float:left;" href="javascript:void(0);">返回银行列表</a>                     
+       </div>                                        
+   </div>
+ 
+   <div class="pa lh200 showbank hide " style="left:0;top:10px;" id="pasj-1">
+       	       <p class="titile mt20">平安银行手机签约流程</p>
+               <div class="tjs pr wyqy_bank">
+                <img src="images/pinganapp/1.gif" width="645" height="364" border="0" usemap="#Map210" id="pasj-1_page1" style="display:block;" />
+                    <map name="Map210" id="Map210">
+                      <area shape="rect" coords="77,193,383,232" />
+                    </map>
+                <img src="images/pinganapp/2.gif"  width="251" height="487" border="0" usemap="#Map211" style="display:none;" id="pasj-1_page2" />
+                    <map name="Map211" id="Map211">
+                      <area shape="rect" coords="213,20,251,49" />
+                    </map>
+                <img src="images/pinganapp/3.gif" width="284" height="473" border="0" usemap="#Map212" style="display:none;" id="pasj-1_page3" />
+                    <map name="Map212" id="Map212">
+                      <area shape="rect" coords="18,147,267,176" />
+                    </map>
+                <img src="images/pinganapp/4.gif" width="289" height="463" border="0" usemap="#Map213" style="display:none;" id="pasj-1_page4" />
+                    <map name="Map213" id="Map213">
+                      
+                      <area shape="rect" coords="82,424,150,462"  />
+                    </map>
+                <img src="images/pinganapp/5.gif" width="243" height="461" border="0" usemap="#Map214" style="display:none;" id="pasj-1_page5" />
+                    <map name="Map214" id="Map214">
+                      <area shape="rect" coords="16,112,73,173" />
+                    </map>
+                <img src="images/pinganapp/6.gif" width="251" height="446" border="0" usemap="#Map215" style="display:none;" id="pasj-1_page6" />
+                    <map name="Map215" id="Map215">
+                      <area shape="rect" coords="11,301,138,333" />
+                    </map>
+                <img src="images/pinganapp/7.gif" width="291" height="515"  border="0" usemap="#Map216" style="display:none;" id="pasj-1_page7" />
+                    <map name="Map216" id="Map216">
+                      <area shape="rect" coords="14,63,143,97" />
+                    </map>
+                <img src="images/pinganapp/8.gif" width="239" height="426" border="0" usemap="#Map217" style="display:none;" id="pasj-1_page8" />
+                    <map name="Map217" id="Map217">
+                      <area shape="rect" coords="191,296,232,322" />
+                    </map>
+                <img src="images/pinganapp/9.gif" width="265" height="488" border="0" usemap="#Map218" style="display:none;" id="pasj-1_page9" />
+                    <map name="Map218" id="Map218">
+                      <area shape="rect" coords="10,235,259,267" />
+                    </map>
+                <img src="images/pinganapp/10.gif" width="276" height="493"  border="0"  style="display:none;" id="pasj-1_page10"/>
+                <div class=" hide" style="margin:50px 50px 0px 10px; float:right;">
+                     <a id="return_page_pasj-1_page" class="" href="javascript:void(0);" onclick="turnpage(-1,10,'pasj-1_page')" >返回上一页</a>
+                </div>
+                     <a class=" fb returnbank"  style="margin:50px 50px 0 0px; float:left;" href="javascript:void(0);">返回银行列表</a>                        
+          </div>                                        
+  </div>
+  
+  <div class="hide pa lh200 showbank" style="left:0;top:10px;" id="payb-1">
+       	  <p class="titile mt20">平安易宝注册链接<a href="https://ebank.sdb.com.cn/corporbank/perRegedit.do?MainAcctId=11014754939009" target="_blank">（https://ebank.sdb.com.cn/corporbank/perRegedit.do?MainAcctId=11014754939009）</a></p>
+          <p class="titile ">平安易宝登录链接<a href="https://ebank.sdb.com.cn/corporbank/index_payb.jsp" target="_blank">（https://ebank.sdb.com.cn/corporbank/index_payb.jsp）</a></p>
+
+          <div class="tjs pr wyqy_bank">
+              <img src="images/pinganyibao/1.gif" width="549" height="415" border="0" usemap="#Map221" id="payb-1_page1" style="display:block" />
+                <map name="Map221" id="Map221">
+                  <area shape="rect" coords="405,337,460,362" />
+                </map>
+              <img src="images/pinganyibao/2.gif" width="551" height="413" border="0" usemap="#Map222"  id="payb-1_page2" style="display:none" />
+                <map name="Map222" id="Map222">
+                  <area shape="rect" coords="410,340,466,363"/>
+                </map>
+              <img src="images/pinganyibao/3.gif" width="640" height="550" border="0" usemap="#Map223"  id="payb-1_page3"  style="display:none"/>
+                <map name="Map223" id="Map223">
+                 
+                  <area shape="rect" coords="312,497,397,529"  />
+              </map>
+              <img src="images/pinganyibao/4.gif" width="640" height="550" border="0" usemap="#Map224"  id="payb-1_page4"  style="display:none"/>
+                <map name="Map224" id="Map224">
+                  
+                  <area shape="rect" coords="412,484,496,529"  />
+              </map>
+              <img src="images/pinganyibao/5.gif" width="633" height="361"  border="0" usemap="#Map225"  id="payb-1_page5"  style="display:none"/>
+                <map name="Map225" id="Map225">
+                 <area shape="rect" coords="248,253,535,277"  />
+                </map>
+              <img src="images/pinganyibao/6.gif" width="566" height="328" border="0" usemap="#Map226" id="payb-1_page6"   style="display:none"/>
+                <map name="Map226" id="Map226">
+                  <area shape="rect" coords="65,114,128,132"  />
+                </map>
+              <img src="images/pinganyibao/7.gif" width="650" height="413"   border="0" usemap="#Map227"  id="payb-1_page7" style="display:none"/>
+                <map name="Map227" id="Map227">
+                  <area shape="rect" coords="368,335,465,374"  />
+                </map>
+              <img src="images/pinganyibao/8.gif" width="548" height="337"  border="0" usemap="#Map228"  id="payb-1_page8"  style="display:none"/>
+                <map name="Map228" id="Map228">
+                  <area shape="rect" coords="222,124,321,162"  />
+                </map>
+              <img src="images/pinganyibao/9.gif" width="537" height="372"   border="0" usemap="#Map229"  id="payb-1_page9"  style="display:none"/>
+                <map name="Map229" id="Map229">
+                  <area shape="rect" coords="234,334,289,360"  />
+                </map>
+              <img src="images/pinganyibao/10.gif" width="614" height="255"  border="0" usemap="#Map230"  id="payb-1_page10"  style="display:none"/>
+                <map name="Map230" id="Map230">
+                  <area shape="rect" coords="311,221,389,246"  />
+                </map>
+              <img src="images/pinganyibao/11.gif" width="552" height="412"  border="0" usemap="#Map231"  id="payb-1_page11"  style="display:none"/>
+                <map name="Map231" id="Map231">
+                  <area shape="rect" coords="398,330,451,358"  />
+                </map>
+              <img src="images/pinganyibao/12.gif" width="556" height="329"   border="0" usemap="#Map232"  id="payb-1_page12"  style="display:none"/>
+                 <map name="Map232" id="Map232">
+                  <area shape="rect" coords="231,132,312,163"  />
+                 </map>
+             <img src="images/pinganyibao/13.gif" width="614" height="344"   border="0" usemap="#Map233"  id="payb-1_page13"  style="display:none"/>
+                 <map name="Map233" id="Map233">
+                   <area shape="rect" coords="440,320,492,347"  />
+                 </map>
+             <img src="images/pinganyibao/14.gif" width="594" height="352"   border="0" usemap="#Map234"  id="payb-1_page14"  style="display:none"/>
+                 <map name="Map234" id="Map234">
+                   
+                   <area shape="rect" coords="236,325,289,348"  />
+                 </map>
+             <img src="images/pinganyibao/15.gif" width="572" height="373"   border="0" usemap="#Map235"  id="payb-1_page15"  style="display:none"/>
+                 <map name="Map235" id="Map235">
+                   <area shape="rect" coords="447,311,503,336"  />
+                 </map>
+             <img src="images/pinganyibao/16.gif" width="566" height="406"   border="0" usemap="#Map236"  id="payb-1_page16"  style="display:none"/>
+                 <map name="Map236" id="Map236">
+                   <area shape="rect" coords="436,331,486,355"  />
+                 </map>   
+             <img src="images/pinganyibao/17.gif" width="649" height="423"   border="0" usemap="#Map237" id="payb-1_page17"  style="display:none"/>
+                 <map name="Map237" id="Map237">
+                   <area shape="rect" coords="165,369,209,398"  />
+                 </map>
+             <img src="images/pinganyibao/18.gif" width="551" height="416"   border="0" usemap="#Map238"  id="payb-1_page18"  style="display:none"/>
+                 <map name="Map238" id="Map238">
+                   <area shape="rect" coords="393,330,447,353" />
+                 </map>
+             <img src="images/pinganyibao/19.gif" width="638" height="390"  border="0" usemap="#Map239"  id="payb-1_page19"  style="display:none"/>
+                 <map name="Map239" id="Map239">
+                   <area shape="rect" coords="259,353,323,382"  />
+                 </map>
+             <img src="images/pinganyibao/20.gif" width="613" height="393"  border="0" usemap="#Map240"  id="payb-1_page20"  style="display:none"/>
+                 <map name="Map240" id="Map240">
+                   
+                   <area shape="rect" coords="274,364,339,388"  />
+                 </map>
+             <img src="images/pinganyibao/21.gif" width="610" height="383"  border="0" usemap="#Map241"  id="payb-1_page21" style="display:none"/>
+                 <map name="Map241" id="Map241">
+                   <area shape="rect" coords="274,350,340,376"  />
+                 </map>
+             <img src="images/pinganyibao/22.gif" width="633" height="384"  border="0"  id="payb-1_page22" style="display:none"/>
+            <div class=" hide" style="margin:50px 0 0 50px; float:right;">
+                     <a id="return_page_payb-1_page" class="" href="javascript:void(0);" onclick="turnpage(-1,21,'payb-1_page')" >返回上一页</a>
+            </div>
+                     <a class=" fb returnbank"  style="margin:50px 50px 0 0px; float:left;" href="javascript:void(0);">返回银行列表</a>                      
+       </div>                                        
+   </div>
+      
+ <!--终止-->   
+ <div class="fwhxdy-1_shadow pa" style="left:0;bottom:-18px;"></div>
+
+     <!--pic-end-->
+      </div>
+       </div>
+    </div>   
+</div>
+<!--right-end-->
+ </div>
+ <!--whole_fwtx-end-->
+<div class="clear" style="height:0px; line-height:0px;"></div>
+    <!--特色服务-->
+    <!--#include virtual="/inc/bottom_2014.shtml"-->
+    <!--特色服务-end-->
+    <!--foot-->
+     <!--#include virtual="/inc/foot_2014.shtml"-->
+    <!--foot-end-->
+</body>
+</html>

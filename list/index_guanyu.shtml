@@ -1,0 +1,172 @@
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta name="keywords" content="证金贵金属,白银,白银分析,白银投资,白银价格,白银交易,炒白银,白银走势,白银软件,模拟炒银,美联储,白银在线分析" />
+<meta name="description" content="证金贵金属，首家赴美纳斯达克上市公司中国最大最专业的白银投资服务平台，致力于白银投资、白银交易、现货白银、白银价格、炒白银、现货白银走势、白银行情、模拟炒银、现货白银开户、投资资讯、分析评论、贵金属投资等贵金属综合性投资服务" />
+<meta name="chinaz-site-verification" content="288879e7-ff11-4ab6-a78e-336cdcd754c4" />
+<title>关于我们_证金贵金属</title>
+<!--#include virtual="/inc/head_link_2014.shtml"-->
+<script src="/js/slide.js" type="text/javascript"></script>
+<script src="/js/jquery.watermark.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/css/ui-dialog.css" />
+<script type="text/javascript" src="/js/dialog-min.js"></script>
+</head>
+
+<body>
+	<!--  -->
+	<!--#include virtual="/inc/head_2014.shtml"-->
+	<!--#include virtual="/inc/nav_guanyu.shtml"-->
+    
+    <!-- 滚播图 -->
+   <div id="index" class="pr">
+    	<div class="banner1 pr">
+           <div id="banner_img" class="banner_parent">
+            	 <!--<ul class="banner_img">
+                          <JRJTAG 
+                            tagtype="02" 
+                            clsid="604002005" 
+                            pagesize="1" 
+                            pagecount="1" 
+                            viewedit="0"
+                            speccheck="1"
+                            id="zjtglb" />
+                            <#if zjtglb?exists>
+                              <#list zjtglb as d>
+                                ${d.intor}
+                              </#list>
+                            </#if>
+                 </ul>-->
+                 <ul class="banner_img" style="clear: both; overflow: hidden; position: relative; zoom: 1; width: 1942px; height: 355px;">
+                           
+                <!-- <li style="height: 355px; background: url(http://wx.zhengjin99.com/ueditor/upload/20160603/43541464941235380.jpg) 50% 0% no-repeat;" onclick="window.open(&quot;http://tg.zhengjin99.com/zhengjin/nsfw/index.html?id=nsfwtx_gjs_20140916&quot;);"></li>-->
+                 <li style="height: 355px; background: url(http://wx.zhengjin99.com/ueditor/upload/20160603/82431464941232567.jpg) 50% 0% no-repeat;" onclick="window.open(&quot;http://tg.zhengjin99.com/zhengjin/fxs/yangzheng/&quot;);"></li>
+                 </ul>
+            </div>
+          
+           <div class="w990 mauto pr" style="z-index:1000;" id="login_main2">
+                 <!-- <div class="login_main0609 pa">
+                    <div class="login_input_name"><input name="" type="text" id="phone1" class="inputphone"  maxlength="11" /></div>                  
+                    <input name="" type="button" class="login_btn block"  value="" />
+                    <p>已有账户  请登录</p>
+				   <div class="open"><input name="" onclick="location.href='http://tg.zhengjin99.com/zhengjin/user/login.jsp?redirect=http://www.zhengjin99.com'" type="button" class="mn" value=""/></div>                            
+			         <ul class="txt">
+                    	<li><span id="numPerson"></span>人正在享受证金服务</li>  
+                    </ul>
+                  </div>-->
+                  <!--双引双、单引单时需要加入转义字符\\-->  
+            </div>
+          
+          
+          </div>         
+        </div>
+            
+			<!--<script>
+			var obj={hasfoot:true};
+			ScrollImg('banner_img',obj);
+			</script>-->
+    
+    <!-- 滚播图-end -->
+   
+
+     <div class="w990 mauto clear over index_main mt40">
+   	  <!--left-->
+       <div style="width:650px;" class="fl">
+       	 <!--贵金属简介-->
+        <div class="gywm_zjgjsjj">
+       	 <p class="index_summary pr index_title">证金贵金属简介<a href="/service/gywm_gyzj_gsgk.html" class="more pa"></a></p>
+               <ul>
+               	   <li>
+                   	   <a href="#" target="_blank"><img src="../images2014/yjzx_index_img2.jpg" width="194" height="128"  alt="" class="fl mt15"/></a>
+                   	   <div class="fl mt15 ml20">
+               			   <p class="pr gjs_summary">证金贵金属（www.zhengjin99.com）是中国金融在线集团（NASDAQ：JRJC）旗下品牌，是拥有纳斯达克上市公司背景的贵金属投资交易平台。证金贵金属包括：天津证金贵金属经营有限公司（天津贵金属交易所第212号会员单位）。凭借集团优势及锐意进取的精神，证金贵金属目前已成为国内贵金属行业的领航者，银、钯、铂、镍、铜、铝等贵金属投资交易及相关的全方位投资咨询服务。</br><a href="/service/gywm_gyzj_gsgk.html">查看详情》</a></p>
+                       </div>
+                   </li>
+          </ul>
+   		 </div>
+              <!--贵金属简介-end-->
+              <!--媒体报道-->
+              <div class="mtbd fl mt40">
+              	 <p class="index_report01 pr index_title">媒体报道<a href="/list/list_zjfc_shehui.shtml" class="more pa"></a></p>
+                 
+                 <JRJTAG	
+                  tagtype="01"
+                  clsid="604001030" 
+                  pagesize="4" 
+                  pagecount="1"
+                   id="mtbd" />
+                    <#if mtbd?exists>
+                        <#list mtbd as d>                         
+                            <p class="index_report01_ptitle fl pr">
+                                <a  target='_blank' href="${d.infourl}" title="${d.title}">${d.title}</a>
+                                <span class="mtbdright pa">${d.makedate?string("MM-dd")}</span>
+                            </p>
+                        </#list>
+                    </#if>
+              </div>
+              <!--媒体报道-end-->
+              
+               <!--公司公告-->
+              <div class="mtbd fl mt40 ml10">
+              	 <p class="index_report02 pr index_title">公司公告<a href="/list/list_guanyu_dongtai.shtml" class="more pa"></a></p>
+                 
+                 <JRJTAG	tagtype="01" clsid="604001028" pagesize="4" pagecount="1" id="gsgg" />
+                    <#if gsgg?exists>
+                        <#list gsgg as d>
+                                <p class="index_report01_ptitle fl pr"><a  target='_blank' href="${d.infourl}" title="${d.title}">${d.title}</a><span class="mtbdright pa">${d.makedate?string("MM-dd")}</span></p>
+
+                        </#list>
+                    </#if>
+              </div>
+              <!--公司公告-end-->
+       </div>
+        <!--left-end-->
+        <!--right-->
+       <div class="gsxw fl">
+       	 <p class="index_news pr index_title">公司新闻<a href="/list/list_guanyu_xinwen.shtml" class="more pa"></a></p>
+               <ul class="hxzb_research">   
+                   <JRJTAG	tagtype="01" clsid="604001027" pagesize="10" pagecount="1" id="gsxw" />
+                    <#if gsxw?exists>
+                        <#list gsxw as d>
+                            <li>
+                             <p class="title"><a  target='_blank' href="${d.infourl}" title="${d.title}">${d.title}</a><span class="pa time">${d.makedate?string("MM-dd")}</span></p>
+                               <div class="hxzb_list hide">
+                                   <a target="_blank" href="${d.infourl}"><img width="85" height="84" class="fl" src="http://img.zhengjin99.com/web/small/${d.id?c}.jpg"></a>
+                                   <div class="fr">
+                                        
+                                       <p class="pr w210">${jrjfund.subgbk(d.description,65)}...<a target='_blank' href="${d.infourl}">详情》</a></p>
+                                   </div>
+                                   <div class="clear" style="height:0;line-height:0;"></div>
+                               </div>
+                           </li>
+                        </#list>
+                    </#if>
+               </ul>
+        </div>
+        <!--right-end-->
+    <script>
+	  $(document).ready(function(){		
+		$('ul.hxzb_research li').bind({
+			'mouseenter':function(){
+				$(this).find('.time').hide();
+				$(this).find('.hxzb_list').show();
+				$(this).siblings().removeClass('first');
+				$(this).addClass('first');
+				$(this).siblings().find('.hxzb_list').hide();
+				$(this).siblings().find('.time').show();
+				
+			},'mouseleave':function(){
+				$(this).find('.time').show();
+				$(this).find('.hxzb_list').hide();
+				$(this).removeClass('first');
+			}
+		})
+	})
+	</script>
+</div>
+   <!--特色专题-->
+  <!--#include virtual="/inc/bottom_2014.shtml"-->
+    <!--#include virtual="/inc/foot_2014.shtml"-->
+    <!--#include virtual="/inc/rightpiaochuang.shtml"-->
+</body>
+</html>

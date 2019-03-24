@@ -1,0 +1,844 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta name="keywords" content="证金贵金属,白银,白银分析,白银投资,白银价格,白银交易,炒白银,白银走势,白银软件,模拟炒银,美联储,白银在线分析" />
+<meta name="description" content="证金贵金属，首家赴美纳斯达克上市公司中国最大最专业的白银投资服务平台，致力于白银投资、白银交易、现货白银、白银价格、炒白银、现货白银走势、白银行情、模拟炒银、现货白银开户、投资资讯、分析评论、贵金属投资等贵金属综合性投资服务" />
+<title>海西商品交易所_投资品种_证金贵金属</title>
+<!--#include virtual="/inc/head_link_2014.shtml"-->
+<script src="../js/highstock.js" type="text/javascript"></script>
+<script src="../js/showChart-new.js" type="text/javascript"></script>
+
+<script>
+	$(document).ready(function(){
+		var dataQuotation='1991001';
+		var idName='baiyin';
+		var price=new Price();
+		
+		$('.tzpz_cp_tab1 div').bind({'mouseenter':function(){
+			if($('.tzpz_cp_tab1 div p').is(':animated')){
+				//return
+			}
+			$(this).find('p').animate({left:'0'},500);
+		},'mouseleave':function(){
+			if($('.tzpz_cp_tab1 div p').is(':animated')){
+				//return
+			}
+			$(this).find('p').animate({left:'162px'},500);
+		}});
+		
+		$('.tzpz_cp_tab1').bind('mouseleave',function(){
+			$('.tzpz_cp_tab1 div p').animate({left:'162px'},500);
+		})
+		
+		
+		
+		$('.index_quotation_name').bind('click',function(){
+			idName=$(this).attr('id');
+			$(this).siblings().addClass('tzpz_quotation_unselect');
+			$(this).removeClass('tzpz_quotation_unselect');
+			$('.cp_tab').hide();
+			$('#'+idName+'_tab').show();
+			dataQuotation=$(this).attr('data-quotation');
+			$('.touziChart').html('');
+			$('#container2').hide();
+			$('#container').show();
+			price.getTable(dataQuotation,idName);
+			price.MinuteChart(dataQuotation);	
+			$('#Minute').hide();
+			$('#K').show();		
+		})
+		
+		$('#K').bind('click',function(){
+			$('#container').hide();
+			$('#container2').show();
+			$('#K').hide();
+			$('#Minute').show();
+		})
+		$('#Minute').bind('click',function(){
+			$('#container2').hide();
+			$('#container').show();
+			$('#Minute').hide();
+			$('#K').show();
+		})
+		
+		price.MinuteChart(dataQuotation);
+		price.KChart(dataQuotation);
+		price.getTable(dataQuotation,idName);
+		var tChart=setInterval(function(){
+			price.MinuteChart(dataQuotation);
+			//price.KChart(dataQuotation);
+			price.getTable(dataQuotation,idName);
+		},3000);
+	})
+	
+	function setTab(classname,num,obj){
+		var length=$(obj).parent().children().length;
+		$(obj).addClass('sl');
+		$(obj).siblings().removeClass('sl');
+		for(var i=0;i<length;i++){
+			$('.'+classname+i).hide();
+		}
+		$('.'+classname+num).show();
+	}
+</script>
+</head>
+
+<body>
+	<!--  -->
+	<!--#include virtual="/inc/head_2014.shtml"-->
+
+	<!--  -->
+	<!--#include virtual="/inc/nav_dayuanyintai.shtml"-->
+    
+    <!--  -->
+    <!--#include virtual="/inc/touzitc.shtml"-->
+    <div id="tzpz_index" class="pr">
+     <!--走势分析-->
+     <input type="button" class="zsfx" value="" />      
+     <!--走势分析-end-->
+    	<div class="tzpz_quotation clear over pr">
+        	<div class="tzpz_quotation_left fl">
+                <div class="index_quotation_name pr" id="baiyin" data-quotation="1991001">
+                    <div class="over"><span class="name">大圆银10kg</span><img src="../images2014/ag.png" width="22" height="22" /></div>
+                    <div class="touziChart">
+                    </div>
+                </div>
+                
+                <div class="index_quotation_name pr tzpz_quotation_unselect" id="50kgby" data-quotation="1991003">
+                	<div class="over"><span class="name">大圆银50kg</span><img src="../images2014/ag.png" width="22" height="22" /></div>
+                    <div class="touziChart">
+                    </div>
+                </div>
+                <div class="index_quotation_name pr tzpz_quotation_unselect" id="100kgby" data-quotation="1991002">
+                	<div class="over"><span class="name">大圆银100kg</span><img src="../images2014/ag.png" width="22" height="22" /></div>
+                    <div class="touziChart">
+                    </div>
+                </div>
+                <div class="index_quotation_name pr tzpz_quotation_unselect" id="BU15t" data-quotation="1991007">
+                	<div class="over"><span class="name">大圆沥青15t</span></div>
+                    <div class="touziChart">
+                    </div>
+                </div>
+                <div class="index_quotation_name pr tzpz_quotation_unselect" id="BU50t" data-quotation="1991009">
+                	<div class="over"><span class="name">大圆沥青50t</span></div>
+                    <div class="touziChart">
+                    </div>
+                </div>
+                <div class="index_quotation_name pr tzpz_quotation_unselect" id="BU150t" data-quotation="1991008">
+                	<div class="over"><span class="name">大圆沥青150t</span></div>
+                    <div class="touziChart">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tzpz_quotation_right" id="container" style="width:650px;height:330px;overflow:hidden;">
+            </div>
+            <div class="tzpz_quotation_right hide" id="container2" style="width:650px;height:330px;overflow:hidden;">
+            </div>
+            
+            <div class="clear"></div>
+             
+            <div class="pa tc hand" style="width:54px;height:22px;right:15px;top:41px;color:#444;background:#f7f7f7;" id="K">
+                日K线
+            </div>
+            <div class="pa tc hand hide" style="width:54px;height:22px;right:15px;top:41px;color:#444;background:#f7f7f7;" id="Minute">
+                分时线
+            </div>
+        </div>
+        
+        <div class="clear over">
+        	<div class="fl tzpz_cp_left">
+            	<div class="tzpz_cp_title mb20">
+                    <span class="sl" onclick="setTab('tzpz_cp_tab',1,this)">产品优势</span>
+                    <span onclick="setTab('tzpz_cp_tab',2,this)">交易规则</span>
+                    <span onclick="setTab('tzpz_cp_tab',3,this)">产品制度</span>
+                    <span onclick="setTab('tzpz_cp_tab',4,this)">资金缓存</span>
+                    <div class="clear" style="height:0;line-height:0;"></div>
+                </div>
+                
+                <!-- 白银10kg -->
+                <div id="baiyin_tab" class="cp_tab">
+                    <div class="tzpz_cp_tab1 " id="baiyin_tab1">
+                        <div class="tzpz_cp_t1">22小时交易<p>不受时间限制，随时有空随时炒</p></div>
+                        <div class="tzpz_cp_t2">双向交易<p>买涨买跌都能赚钱</p></div>
+                        <div class="tzpz_cp_t3">T+0交易<p>提高资金利用率</p></div>
+                        <div class="tzpz_cp_t4">3%保证金<p>更低的资金占用率 只需支付交易金额的3%， </p></div>
+                        <div class="tzpz_cp_bd"></div>
+                        <div class="tzpz_cp_t5">无涨跌停限制<p>买卖更自由 不设涨跌停限制 不存在受涨跌幅限制无法买卖的情况</p></div>
+                        <div class="tzpz_cp_t6">更公平<p>不存在庄家操控可能 接轨国际 公正公平 价格与国际市场同步</p></div>
+                        <div class="tzpz_cp_t7">保证金专户管理<p>工行、建行等多家银行保证金专户管理，安全放心</p></div>
+                        <div class="tzpz_cp_t8">交易数据第三方托管<p>交易数据由第三方托管 保护投资者合法权益</p></div>
+                        <div class="clear" style="height:0;line-height:0;"></div>
+                    </div>
+                    <div class="tzpz_cp_tab2  hide" id="baiyin_tab2">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td>交易品种</td>
+                          <td colspan="3">大圆银</td>
+                        </tr>
+                        <tr>
+                          <td>交易单位</td>
+                          <td align="center">10kg  </td>
+                          <td align="center">50kg</td>
+                          <td align="center">100kg</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2">交易时间</td>
+                          <td colspan="3">（夏令时）周一早6：00至周六凌晨4：30</td>
+                        </tr>
+                        <tr>
+                          <td colspan="3">（冬令时）周一早7：00至周六凌晨4：30</td>
+                        </tr>
+                       <tr>
+                          <td rowspan="2">结算时间</td>
+                          <td colspan="3" >（夏令时）4：30——6：00</td>
+                        </tr>
+                        <tr>
+                          <td colspan="3" >（冬令时）4：30——7：00</td>
+                        </tr>
+                        <tr>
+                          <td>报价单位</td>
+                          <td colspan="3">元（人民币）/千克</td>
+                        </tr>
+                        <tr>
+                          <td>最小变动单位</td>
+                          <td colspan="3">1元/千克</td>
+                        </tr>
+                        <tr>
+                          <td>单笔最小交易限额</td>
+                          <td colspan="3">1手</td>
+                        </tr>
+                        <tr>
+                          <td>单笔最大持仓限额</td>
+                          <td colspan="3">50手</td>
+                        </tr>
+                        <tr>
+                          <td>单一账户最大持仓量</td>
+                          <td colspan="3"><p style="color:#333">32000千克
+                            </p>
+                          <p style="color:#333">10kg、50kg、100kg的持仓均不得超过200手 </p></td>
+                        </tr>
+                        <tr>
+                          <td>交易手续费</td>
+                          <td colspan="3">平仓总金额的0.10%(平仓时收取)</td>
+                        </tr>
+                        <tr>
+                          <td>延期费</td>
+                          <td colspan="3">1元/千克/日                              （每日结算时收取，非交易日延期费在非交易日前一交易日结算时提前收取）</td>
+                        </tr>
+                        <tr>
+                          <td>保证金</td>
+                          <td colspan="3">3%</td>
+                        </tr>
+                        <tr>
+                          <td>实物交割方式</td>
+                          <td colspan="3">交收申报制</td>
+                        </tr>
+                        <tr>
+                          <td>实物交割时间</td>
+                          <td colspan="3">交易日内10：00-16：00</td>
+                        </tr>
+                         <tr>
+                          <td>实物交割品级</td>
+                          <td colspan="3">千足银</td>
+                        </tr>
+                         <tr>
+                          <td>实物交割地点</td>
+                          <td colspan="3">交易市场认可的交收点</td>
+                        </tr>
+                      </table>
+    
+                    </div>
+                    <div class="tzpz_cp_tab3 hide " id="baiyin_tab3">
+                        <div class="f18 lh200">江苏大圆银泰商品合约交易市场交易规则（白银篇）</div>
+                        <p>第一章  总则
+第一条  为规范交易各方在江苏大圆银泰商品合约交易市场（以下简称“交易市场”）进行的现货白银买卖交易行为，维护正常交易秩序，保障交易各方的合法权益，根据国家有关的法律、法规、政策制定本规则。
+</p>
+                        <p>交收<span class="cpzd_more">更多内容请您下载阅读</span></p>
+                        <div class="tr mt20"><input name="" type="button" class="down_cpzd" value="" onclick="window.open('http://tg.zhengjin99.com/apl/tool/flash.jsp?file=/spage/info/735/20151028/1446193116891.pdf.swf')" /></div>
+
+                        
+                    </div>
+                    <div class="tzpz_cp_tab4 mt20 hide " id="baiyin_tab4">
+                        <img src="../images2014/tzpz_index_zjcg.png" width="650" height="245" />
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <!-- 50kg -->
+                <div id="50kgby_tab" class="cp_tab hide">
+                    <div class="tzpz_cp_tab1" id="50kgby_tab1">
+                       <div class="tzpz_cp_t1">22小时交易<p>不受时间限制，随时有空随时炒</p></div>
+                        <div class="tzpz_cp_t2">双向交易<p>买涨买跌都能赚钱</p></div>
+                        <div class="tzpz_cp_t3">T+0交易<p>提高资金利用率</p></div>
+                        <div class="tzpz_cp_t4">3%保证金<p>更低的资金占用率 只需支付交易金额的3%， </p></div>
+                        <div class="tzpz_cp_bd"></div>
+                        <div class="tzpz_cp_t5">无涨跌停限制<p>买卖更自由 不设涨跌停限制 不存在受涨跌幅限制无法买卖的情况</p></div>
+                        <div class="tzpz_cp_t6">更公平<p>不存在庄家操控可能 接轨国际 公正公平 价格与国际市场同步</p></div>
+                        <div class="tzpz_cp_t7">保证金专户管理<p>工行、建行等多家银行保证金专户管理，安全放心</p></div>
+                        <div class="tzpz_cp_t8">交易数据第三方托管<p>交易数据由第三方托管 保护投资者合法权益</p></div>
+                        <div class="clear" style="height:0;line-height:0;"></div>
+                    </div>
+                    <div class="tzpz_cp_tab2 hide" id="50kgby_tab2">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td>交易品种</td>
+                          <td colspan="3">大圆银</td>
+                        </tr>
+                        <tr>
+                          <td>交易单位</td>
+                          <td align="center">10kg  </td>
+                          <td align="center">50kg</td>
+                          <td align="center">100kg</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2">交易时间</td>
+                          <td colspan="3">（夏令时）周一早6：00至周六凌晨4：30</td>
+                        </tr>
+                        <tr>
+                          <td colspan="3">（冬令时）周一早7：00至周六凌晨4：30</td>
+                        </tr>
+                       <tr>
+                          <td rowspan="2">结算时间</td>
+                          <td colspan="3" >（夏令时）4：30——6：00</td>
+                        </tr>
+                        <tr>
+                          <td colspan="3" >（冬令时）4：30——7：00</td>
+                        </tr>
+                        <tr>
+                          <td>报价单位</td>
+                          <td colspan="3">元（人民币）/千克</td>
+                        </tr>
+                        <tr>
+                          <td>最小变动单位</td>
+                          <td colspan="3">1元/千克</td>
+                        </tr>
+                        <tr>
+                          <td>单笔最小交易限额</td>
+                          <td colspan="3">1手</td>
+                        </tr>
+                        <tr>
+                          <td>单笔最大持仓限额</td>
+                          <td colspan="3">50手</td>
+                        </tr>
+                        <tr>
+                          <td>单一账户最大持仓量</td>
+                          <td colspan="3"><p style="color:#333">32000千克
+                            </p>
+                          <p style="color:#333">10kg、50kg、100kg的持仓均不得超过200手 </p></td>
+                        </tr>
+                        <tr>
+                          <td>交易手续费</td>
+                          <td colspan="3">平仓总金额的0.10%(平仓时收取)</td>
+                        </tr>
+                        <tr>
+                          <td>延期费</td>
+                          <td colspan="3">1元/千克/日                              （每日结算时收取，非交易日延期费在非交易日前一交易日结算时提前收取）</td>
+                        </tr>
+                        <tr>
+                          <td>保证金</td>
+                          <td colspan="3">3%</td>
+                        </tr>
+                        <tr>
+                          <td>实物交割方式</td>
+                          <td colspan="3">交收申报制</td>
+                        </tr>
+                        <tr>
+                          <td>实物交割时间</td>
+                          <td colspan="3">交易日内10：00-16：00</td>
+                        </tr>
+                         <tr>
+                          <td>实物交割品级</td>
+                          <td colspan="3">千足银</td>
+                        </tr>
+                         <tr>
+                          <td>实物交割地点</td>
+                          <td colspan="3">交易市场认可的交收点</td>
+                        </tr>
+                      </table>
+                      
+                    </div>
+                    <div class="tzpz_cp_tab3 hide" id="50kgby_tab3">
+                        <div class="f18 lh200">江苏大圆银泰商品合约交易市场交易规则（白银篇）</div>
+                        <p>第一章  总则
+第一条  为规范交易各方在江苏大圆银泰商品合约交易市场（以下简称“交易市场”）进行的现货白银买卖交易行为，维护正常交易秩序，保障交易各方的合法权益，根据国家有关的法律、法规、政策制定本规则。
+</p>
+                        <p>交收<span class="cpzd_more">更多内容请您下载阅读</span></p>
+                        <div class="tr mt20"><input name="" type="button" class="down_cpzd" value="" onclick="window.open('http://tg.zhengjin99.com/apl/tool/flash.jsp?file=/spage/info/735/20151028/1446193116891.pdf.swf')" /></div>
+                        
+                    </div>
+                    <div class="tzpz_cp_tab4 mt20 hide" id="50kgby_tab4">
+                       <img src="../images2014/tzpz_index_zjcg.png" width="650" height="245" />
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <!-- 100kg -->
+                <div id="100kgby_tab" class="cp_tab hide">
+                    <div class="tzpz_cp_tab1" id="100kgby_tab1">
+                        <div class="tzpz_cp_t1">22小时交易<p>不受时间限制，随时有空随时炒</p></div>
+                        <div class="tzpz_cp_t2">双向交易<p>买涨买跌都能赚钱</p></div>
+                        <div class="tzpz_cp_t3">T+0交易<p>提高资金利用率</p></div>
+                        <div class="tzpz_cp_t4">3%保证金<p>更低的资金占用率 只需支付交易金额的3%， </p></div>
+                        <div class="tzpz_cp_bd"></div>
+                        <div class="tzpz_cp_t5">无涨跌停限制<p>买卖更自由 不设涨跌停限制 不存在受涨跌幅限制无法买卖的情况</p></div>
+                        <div class="tzpz_cp_t6">更公平<p>不存在庄家操控可能 接轨国际 公正公平 价格与国际市场同步</p></div>
+                        <div class="tzpz_cp_t7">保证金专户管理<p>工行、建行等多家银行保证金专户管理，安全放心</p></div>
+                        <div class="tzpz_cp_t8">交易数据第三方托管<p>交易数据由第三方托管 保护投资者合法权益</p></div>
+                        <div class="clear" style="height:0;line-height:0;"></div>
+                        <div class="clear" style="height:0;line-height:0;"></div>
+                    </div>
+                    <div class="tzpz_cp_tab2 hide" id="100kgby_tab2">
+                     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td>交易品种</td>
+                          <td colspan="3">大圆银</td>
+                        </tr>
+                        <tr>
+                          <td>交易单位</td>
+                          <td align="center">10kg  </td>
+                          <td align="center">50kg</td>
+                          <td align="center">100kg</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2">交易时间</td>
+                          <td colspan="3">（夏令时）周一早6：00至周六凌晨4：30</td>
+                        </tr>
+                        <tr>
+                          <td colspan="3">（冬令时）周一早7：00至周六凌晨4：30</td>
+                        </tr>
+                       <tr>
+                          <td rowspan="2">结算时间</td>
+                          <td colspan="3" >（夏令时）4：30——6：00</td>
+                        </tr>
+                        <tr>
+                          <td colspan="3" >（冬令时）4：30——7：00</td>
+                        </tr>
+                        <tr>
+                          <td>报价单位</td>
+                          <td colspan="3">元（人民币）/千克</td>
+                        </tr>
+                        <tr>
+                          <td>最小变动单位</td>
+                          <td colspan="3">1元/千克</td>
+                        </tr>
+                        <tr>
+                          <td>单笔最小交易限额</td>
+                          <td colspan="3">1手</td>
+                        </tr>
+                        <tr>
+                          <td>单笔最大持仓限额</td>
+                          <td colspan="3">50手</td>
+                        </tr>
+                        <tr>
+                          <td>单一账户最大持仓量</td>
+                          <td colspan="3"><p style="color:#333">32000千克
+                            </p>
+                          <p style="color:#333">10kg、50kg、100kg的持仓均不得超过200手 </p></td>
+                        </tr>
+                        <tr>
+                          <td>交易手续费</td>
+                          <td colspan="3">平仓总金额的0.10%(平仓时收取)</td>
+                        </tr>
+                        <tr>
+                          <td>延期费</td>
+                          <td colspan="3">1元/千克/日                              （每日结算时收取，非交易日延期费在非交易日前一交易日结算时提前收取）</td>
+                        </tr>
+                        <tr>
+                          <td>保证金</td>
+                          <td colspan="3">3%</td>
+                        </tr>
+                        <tr>
+                          <td>实物交割方式</td>
+                          <td colspan="3">交收申报制</td>
+                        </tr>
+                        <tr>
+                          <td>实物交割时间</td>
+                          <td colspan="3">交易日内10：00-16：00</td>
+                        </tr>
+                         <tr>
+                          <td>实物交割品级</td>
+                          <td colspan="3">千足银</td>
+                        </tr>
+                         <tr>
+                          <td>实物交割地点</td>
+                          <td colspan="3">交易市场认可的交收点</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="tzpz_cp_tab3 hide" id="100kgby_tab3">
+                         <div class="f18 lh200">江苏大圆银泰商品合约交易市场交易规则（白银篇）</div>
+                        <p>第一章  总则
+第一条  为规范交易各方在江苏大圆银泰商品合约交易市场（以下简称“交易市场”）进行的现货白银买卖交易行为，维护正常交易秩序，保障交易各方的合法权益，根据国家有关的法律、法规、政策制定本规则。
+</p>
+                        <p>交收<span class="cpzd_more">更多内容请您下载阅读</span></p>
+                        <div class="tr mt20"><input name="" type="button" class="down_cpzd" value="" onclick="window.open('http://tg.zhengjin99.com/apl/tool/flash.jsp?file=/spage/info/735/20151028/1446193116891.pdf.swf')" /></div>
+                    </div>
+                    <div class="tzpz_cp_tab4 mt20 hide" id="100kgby_tab4">
+                        <img src="../images2014/tzpz_index_zjcg.png" width="650" height="245" />
+                    </div>
+                    
+                </div>
+                
+                <!-- 沥青15吨 -->
+             <div id="BU15t_tab" class="cp_tab hide">
+                    <div class="tzpz_cp_tab1 " id="BU50t_tab1">
+                        <div class="tzpz_cp_t1">22小时交易<p>不受时间限制，随时有空随时炒</p></div>
+                        <div class="tzpz_cp_t2">双向交易<p>买涨买跌都能赚钱</p></div>
+                        <div class="tzpz_cp_t3">T+0交易<p>提高资金利用率</p></div>
+                        <div class="tzpz_cp_t4">3%-5%保证金<p>更低的资金占用率 只需支付交易金额的3%-5% </p></div>
+                        <div class="tzpz_cp_bd"></div>
+                        <div class="tzpz_cp_t5">无涨跌停限制<p>买卖更自由 不设涨跌停限制 不存在受涨跌幅限制无法买卖的情况</p></div>
+                        <div class="tzpz_cp_t6">更公平<p>不存在庄家操控可能 接轨国际 公正公平 价格与国际市场同步</p></div>
+                        <div class="tzpz_cp_t7">保证金专户管理<p>工行、建行等多家银行保证金专户管理，安全放心</p></div>
+                        <div class="tzpz_cp_t8">交易数据第三方托管<p>交易数据由第三方托管 保护投资者合法权益</p></div>
+                        <div class="clear" style="height:0;line-height:0;"></div>
+                        <div class="clear" style="height:0;line-height:0;"></div>
+                    </div>
+                    <div class="tzpz_cp_tab2 hide" id="BU50t_tab2">
+                     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="22%">交易品种</td>
+                          <td colspan="3">大圆沥青15T、大圆沥青50T、大圆沥青150T</td>
+                        </tr>
+                        <tr>
+                          <td>交易单位</td>
+                          <td width="19%" align="center">15吨/手</td>
+                          <td width="28%" align="center">50吨/手</td>
+                          <td width="31%" align="center">150吨/手</td>
+                        </tr>
+                        <tr>
+                          <td>报价单位</td>
+                          <td colspan="3" align="center">元/吨</td>
+                        </tr>
+                        <tr>
+                          <td>最小变动价格</td>
+                          <td colspan="3" align="center">1元/吨</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="3">交易时间</td>
+                          <td colspan="3">夏令时：周一至周五，每个交易日早 6：00至次日早 4：30</td>
+                        </tr>
+                        <tr>
+                          <td colspan="3">冬令时：周一至周五，每个交易日早 7：00至次日早 4：30</td>
+                        </tr>
+                        <tr>
+                          <td colspan="3">（以上时间因夏冬两制转换以及节假日休盘进行调整，具体开市、休市时间以交易市场通知、公告为准。）</td>
+                        </tr>
+                       <tr>
+                          <td>结算时间</td>
+                          <td colspan="3" >夏令时：交易日内4:30-6:00，冬令时：交易日内4:30-7:00</td>
+                        </tr>
+                        <tr>
+                          <td>保证金</td>
+                          <td colspan="3">账户期初权益&le;5万，当日交易大圆沥青保证金比例为成交总额的5%；<br />
+                            5万&lt;账户期初权益&le;10万，当日交易大圆沥青保证金比例为成交总额的4%；<br />
+                            10万&lt;账户期初权益，当日交易大圆沥青保证金比例为成交总额的3%。</td>
+                        </tr>
+                        <tr>
+                          <td>报价点差</td>
+                          <td colspan="3">6元/吨</td>
+                        </tr>
+                        <tr>
+                          <td>交易手续费</td>
+                          <td colspan="3">平仓总金额的万分之十(平仓时收取)</td>
+                        </tr>
+                        <tr>
+                          <td>延期补偿费</td>
+                          <td colspan="3">建仓总金额的万分之一/日</td>
+                        </tr>
+                        <tr>
+                          <td>单笔最大交易限额</td>
+                          <td colspan="3">15吨的是50手、50吨的是50手、150吨的是25手</td>
+                        </tr>
+                        <tr>
+                          <td>最大持仓额度</td>
+                          <td colspan="3">15吨的是300手、50吨的是300手、150吨的是100手</td>
+                        </tr>
+                         <tr>
+                          <td>强行平仓</td>
+                          <td colspan="3">风险率=账户净值/持仓占用交易保证金，当风险率小于或等于70%时，剩余持仓全部强行平仓。</td>
+                        </tr>
+                      </table>
+                  </div>
+                    <div class="tzpz_cp_tab3 hide" id="BU50t_tab3">
+                         <div class="f18 lh200">江苏大圆银泰商品合约交易市场交易规则（沥青篇）</div>
+                        <p>第一章  总则
+第一条  为规范交易各方在江苏大圆银泰商品合约交易市场（以下简称“交易市场”）进行的现货沥青买卖交易行为，维护正常交易秩序，保障交易各方的合法权益，根据国家有关的法律、法规、政策制定本规则。
+</p>
+                        <p>交收<span class="cpzd_more">更多内容请您下载阅读</span></p>
+                        <div class="tr mt20"><input name="" type="button" class="down_cpzd" value="" onclick="window.open('http://tg.zhengjin99.com/apl/tool/flash.jsp?file=/spage/info/735/20151028/1446193168911.pdf.swf')" /></div>
+                    </div>
+                    <div class="tzpz_cp_tab4 mt20 hide" id="BU50t_tab4">
+                        <img src="../images2014/tzpz_index_zjcg.png" width="650" height="245" />
+                    </div>
+                </div>
+    
+                 
+                 <!-- 沥青50吨 -->
+              <div id="BU50t_tab" class="cp_tab hide">
+                    <div class="tzpz_cp_tab1 " id="BU50t_tab1">
+                        <div class="tzpz_cp_t1">22小时交易<p>不受时间限制，随时有空随时炒</p></div>
+                        <div class="tzpz_cp_t2">双向交易<p>买涨买跌都能赚钱</p></div>
+                        <div class="tzpz_cp_t3">T+0交易<p>提高资金利用率</p></div>
+                        <div class="tzpz_cp_t4">3%-5%保证金<p>更低的资金占用率 只需支付交易金额的3%-5% </p></div>
+                        <div class="tzpz_cp_bd"></div>
+                        <div class="tzpz_cp_t5">无涨跌停限制<p>买卖更自由 不设涨跌停限制 不存在受涨跌幅限制无法买卖的情况</p></div>
+                        <div class="tzpz_cp_t6">更公平<p>不存在庄家操控可能 接轨国际 公正公平 价格与国际市场同步</p></div>
+                        <div class="tzpz_cp_t7">保证金专户管理<p>工行、建行等多家银行保证金专户管理，安全放心</p></div>
+                        <div class="tzpz_cp_t8">交易数据第三方托管<p>交易数据由第三方托管 保护投资者合法权益</p></div>
+                        <div class="clear" style="height:0;line-height:0;"></div>
+                        <div class="clear" style="height:0;line-height:0;"></div>
+                    </div>
+                    <div class="tzpz_cp_tab2 hide" id="BU50t_tab2">
+                     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="22%">交易品种</td>
+                          <td colspan="3">大圆沥青15T、大圆沥青50T、大圆沥青150T</td>
+                        </tr>
+                        <tr>
+                          <td>交易单位</td>
+                          <td width="19%" align="center">15吨/手</td>
+                          <td width="28%" align="center">50吨/手</td>
+                          <td width="31%" align="center">150吨/手</td>
+                        </tr>
+                        <tr>
+                          <td>报价单位</td>
+                          <td colspan="3" align="center">元/吨</td>
+                        </tr>
+                        <tr>
+                          <td>最小变动价格</td>
+                          <td colspan="3" align="center">1元/吨</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="3">交易时间</td>
+                          <td colspan="3">夏令时：周一至周五，每个交易日早 6：00至次日早 4：30</td>
+                        </tr>
+                        <tr>
+                          <td colspan="3">冬令时：周一至周五，每个交易日早 7：00至次日早 4：30</td>
+                        </tr>
+                        <tr>
+                          <td colspan="3">（以上时间因夏冬两制转换以及节假日休盘进行调整，具体开市、休市时间以交易市场通知、公告为准。）</td>
+                        </tr>
+                       <tr>
+                          <td>结算时间</td>
+                          <td colspan="3" >夏令时：交易日内4:30-6:00，冬令时：交易日内4:30-7:00</td>
+                        </tr>
+                        <tr>
+                          <td>保证金</td>
+                          <td colspan="3">账户期初权益&le;5万，当日交易大圆沥青保证金比例为成交总额的5%；<br />
+                            5万&lt;账户期初权益&le;10万，当日交易大圆沥青保证金比例为成交总额的4%；<br />
+                            10万&lt;账户期初权益，当日交易大圆沥青保证金比例为成交总额的3%。</td>
+                        </tr>
+                        <tr>
+                          <td>报价点差</td>
+                          <td colspan="3">6元/吨</td>
+                        </tr>
+                        <tr>
+                          <td>交易手续费</td>
+                          <td colspan="3">平仓总金额的万分之十(平仓时收取)</td>
+                        </tr>
+                        <tr>
+                          <td>延期补偿费</td>
+                          <td colspan="3">建仓总金额的万分之一/日</td>
+                        </tr>
+                        <tr>
+                          <td>单笔最大交易限额</td>
+                          <td colspan="3">15吨的是50手、50吨的是50手、150吨的是25手</td>
+                        </tr>
+                        <tr>
+                          <td>最大持仓额度</td>
+                          <td colspan="3">15吨的是300手、50吨的是300手、150吨的是100手</td>
+                        </tr>
+                         <tr>
+                          <td>强行平仓</td>
+                          <td colspan="3">风险率=账户净值/持仓占用交易保证金，当风险率小于或等于70%时，剩余持仓全部强行平仓。</td>
+                        </tr>
+                      </table>
+                  </div>
+                    <div class="tzpz_cp_tab3 hide" id="BU50t_tab3">
+                         <div class="f18 lh200">江苏大圆银泰商品合约交易市场交易规则（沥青篇）</div>
+                        <p>第一章  总则
+第一条  为规范交易各方在江苏大圆银泰商品合约交易市场（以下简称“交易市场”）进行的现货沥青买卖交易行为，维护正常交易秩序，保障交易各方的合法权益，根据国家有关的法律、法规、政策制定本规则。
+</p>
+                        <p>交收<span class="cpzd_more">更多内容请您下载阅读</span></p>
+                        <div class="tr mt20"><input name="" type="button" class="down_cpzd" value="" onclick="window.open('http://tg.zhengjin99.com/apl/tool/flash.jsp?file=/spage/info/735/20151028/1446193168911.pdf.swf')" /></div>
+                    </div>
+                    <div class="tzpz_cp_tab4 mt20 hide" id="BU50t_tab4">
+                        <img src="../images2014/tzpz_index_zjcg.png" width="650" height="245" />
+                    </div>
+                </div>
+                 
+<!-- 沥青150吨 -->
+              <div id="BU150t_tab" class="cp_tab hide">
+                    <div class="tzpz_cp_tab1 " id="BU50t_tab1">
+                        <div class="tzpz_cp_t1">22小时交易<p>不受时间限制，随时有空随时炒</p></div>
+                        <div class="tzpz_cp_t2">双向交易<p>买涨买跌都能赚钱</p></div>
+                        <div class="tzpz_cp_t3">T+0交易<p>提高资金利用率</p></div>
+                        <div class="tzpz_cp_t4">3%-5%保证金<p>更低的资金占用率 只需支付交易金额的3%-5% </p></div>
+                        <div class="tzpz_cp_bd"></div>
+                        <div class="tzpz_cp_t5">无涨跌停限制<p>买卖更自由 不设涨跌停限制 不存在受涨跌幅限制无法买卖的情况</p></div>
+                        <div class="tzpz_cp_t6">更公平<p>不存在庄家操控可能 接轨国际 公正公平 价格与国际市场同步</p></div>
+                        <div class="tzpz_cp_t7">保证金专户管理<p>工行、建行等多家银行保证金专户管理，安全放心</p></div>
+                        <div class="tzpz_cp_t8">交易数据第三方托管<p>交易数据由第三方托管 保护投资者合法权益</p></div>
+                        <div class="clear" style="height:0;line-height:0;"></div>
+                        <div class="clear" style="height:0;line-height:0;"></div>
+                    </div>
+                    <div class="tzpz_cp_tab2 hide" id="BU50t_tab2">
+                     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="22%">交易品种</td>
+                          <td colspan="3">大圆沥青15T、大圆沥青50T、大圆沥青150T</td>
+                        </tr>
+                        <tr>
+                          <td>交易单位</td>
+                          <td width="19%" align="center">15吨/手</td>
+                          <td width="28%" align="center">50吨/手</td>
+                          <td width="31%" align="center">150吨/手</td>
+                        </tr>
+                        <tr>
+                          <td>报价单位</td>
+                          <td colspan="3" align="center">元/吨</td>
+                        </tr>
+                        <tr>
+                          <td>最小变动价格</td>
+                          <td colspan="3" align="center">1元/吨</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="3">交易时间</td>
+                          <td colspan="3">夏令时：周一至周五，每个交易日早 6：00至次日早 4：30</td>
+                        </tr>
+                        <tr>
+                          <td colspan="3">冬令时：周一至周五，每个交易日早 7：00至次日早 4：30</td>
+                        </tr>
+                        <tr>
+                          <td colspan="3">（以上时间因夏冬两制转换以及节假日休盘进行调整，具体开市、休市时间以交易市场通知、公告为准。）</td>
+                        </tr>
+                       <tr>
+                          <td>结算时间</td>
+                          <td colspan="3" >夏令时：交易日内4:30-6:00，冬令时：交易日内4:30-7:00</td>
+                        </tr>
+                        <tr>
+                          <td>保证金</td>
+                          <td colspan="3">账户期初权益&le;5万，当日交易大圆沥青保证金比例为成交总额的5%；<br />
+                            5万&lt;账户期初权益&le;10万，当日交易大圆沥青保证金比例为成交总额的4%；<br />
+                            10万&lt;账户期初权益，当日交易大圆沥青保证金比例为成交总额的3%。</td>
+                        </tr>
+                        <tr>
+                          <td>报价点差</td>
+                          <td colspan="3">6元/吨</td>
+                        </tr>
+                        <tr>
+                          <td>交易手续费</td>
+                          <td colspan="3">平仓总金额的万分之十(平仓时收取)</td>
+                        </tr>
+                        <tr>
+                          <td>延期补偿费</td>
+                          <td colspan="3">建仓总金额的万分之一/日</td>
+                        </tr>
+                        <tr>
+                          <td>单笔最大交易限额</td>
+                          <td colspan="3">15吨的是50手、50吨的是50手、150吨的是25手</td>
+                        </tr>
+                        <tr>
+                          <td>最大持仓额度</td>
+                          <td colspan="3">15吨的是300手、50吨的是300手、150吨的是100手</td>
+                        </tr>
+                         <tr>
+                          <td>强行平仓</td>
+                          <td colspan="3">风险率=账户净值/持仓占用交易保证金，当风险率小于或等于70%时，剩余持仓全部强行平仓。</td>
+                        </tr>
+                      </table>
+                  </div>
+                    <div class="tzpz_cp_tab3 hide" id="BU50t_tab3">
+                         <div class="f18 lh200">江苏大圆银泰商品合约交易市场交易规则（沥青篇）</div>
+                        <p>第一章  总则
+第一条  为规范交易各方在江苏大圆银泰商品合约交易市场（以下简称“交易市场”）进行的现货沥青买卖交易行为，维护正常交易秩序，保障交易各方的合法权益，根据国家有关的法律、法规、政策制定本规则。
+</p>
+                        <p>交收<span class="cpzd_more">更多内容请您下载阅读</span></p>
+                        <div class="tr mt20"><input name="" type="button" class="down_cpzd" value="" onclick="window.open('http://tg.zhengjin99.com/apl/tool/flash.jsp?file=/spage/info/735/20151028/1446193168911.pdf.swf')" /></div>
+                    </div>
+                    <div class="tzpz_cp_tab4 mt20 hide" id="BU50t_tab4">
+                        <img src="../images2014/tzpz_index_zjcg.png" width="650" height="245" />
+                    </div>
+                </div>
+                      
+                   
+                   
+                   
+                   
+                   
+                   
+                               
+                <div class="tzpz_index_title mt20" style="border-bottom:none;">
+                	<p class="tzpz_index_exchange3 pr">关于海商所</p>                    
+                </div>
+                <div class="tzpz_index_txt"><p class="ti">江苏大圆银泰商品合约交易市场有限公司（前身为“江苏大圆银泰贵金属现货电子交易市场有限公司”，以下简称“大圆银泰”）自2010年年底开始筹备组建，于2011年12月份注册成立，2012年3月份试运营。自组建以来，大圆银泰一直遵守“规范运作、稳健发展”的宗旨，有序运营，于2013年2月份获得国务院清理整顿各类交易场所部际联席会议备案，同年5月份通过了江苏省人民政府关于各类交易场所清理整顿工作的验收，并获得批复，成为南京市唯一，长三角极少予以保留的商品类交易场所之一。</p>
+                <p class="ti">大圆银泰作为多层次资本市场体系中的重要组成部分，自成立以来一直受到省、市、区各级金融主管部门的重视，并在各级主管部门的监管与指导下，运用电子商务技术为客户贵金属交易提供在线数据处理与在线交易等服务。2014年，在江苏省人民政府金融工作办公室的指导下，大圆银泰提出新交易模式（NCTM），解决行业高速发展中存在的问题，提供继续成长的源动力，更好地服务实体经济。同年，大圆银泰正式更名为江苏大圆银泰商品合约交易市场，挺进中国大宗商品行业。<span id="djxq" style="color:#F90; text-decoration:underline; cursor:pointer;">点击查看详情>></span></p>
+                <p class="ti" id="p1" style="display:none;">大圆银泰的新交易模式采用“分离制”的方式，实现交易体系的登记、交易、结算三分离，并作为江苏省交易场所统一登记结算的试点单位，将登记与结算均接入江苏交易场所登记结算有限公司（以下简称“江苏结算”）的登记结算平台，参与交易的投资者资金由江苏结算监管，投资者资金安全得到有效保障。</p>
+                <p class="ti" id="p2" style="display:none;">                为了真正促进国内大宗商品交易市场与国际各大商品交易市场的全面接轨，大圆银泰加强与芝加哥商品交易所、新加坡交易所、伦敦金属交易所、香港交易所等在国际上有影响力的交易所的沟通，吸取经验，拓宽视野，并积极与国际知名交易所在业务、技术等领域展开全面合作，逐步迈入国际市场，为国内大宗商品交易市场的国际化发展贡献力量。</p>
+<p class="ti" id="p3" style="display:none;">为了更好地满足广大投资者的投资需求，大圆银泰将整合产业链，拓展业务渠道，以大宗商品为切入点，把大宗商品交易扩展到全财富管理领域，建设基于大宗商品交易平台的互联网金融体系，满足不同投资者对资本市场金融服务的多样化需求，真正实现中国投资者的财富增值，助推中国金融要素市场的发展！<span id="djsq" style="color:#F90; text-decoration:underline; cursor:pointer;">点击收起>></span></p>
+</div>
+<script>
+/*$('#K').bind('click',function(){
+			$('#container').hide();
+			$('#container2').show();
+			$('#K').hide();
+			$('#Minute').show();
+		})*/
+		$('#djxq').click(function(){
+			$(this).hide();
+			$('#p1').show();
+			$("#p2").show();
+			$('#p3').show();
+			})
+		$('#djsq').click(function(){
+			$(this).hide();
+			$('#p1').hide();
+			$("#p2").hide();
+			$('#p3').hide();
+			$('#djxq').show();
+			})
+</script>
+                
+            </div>
+            
+            <div class="fr tzpz_cp_right">
+            	<div class="tzpz_index_link">
+                	<a href="http://tg.zhengjin99.com/zhengjin/dyyt/" id="hx_kh"><span class="tzpz_r1"></span><span class="f20 title">网上开户</span><span class="txt">支持招行、工行、光大、农行多家银行.</span></a>
+                    <a href="http://tg.zhengjin99.com/zhengjin/spAndYyKH/yykh.jsp"><span class="tzpz_r2"></span><span class="f20 title">预约开户</span><span class="txt">其他银行用户一一预约，一对一服务开户.</span></a>
+                    <a href="http://tg.zhengjin99.com/zhengjin/mnkh/"><span class="tzpz_r3"></span><span class="f20 title">模拟开户</span><span class="txt">3秒钟立即获取50万模拟账户.</span></a>
+                    <a href="http://www.zhengjin99.com/service/zxzx_index.html?head=2"><span class="tzpz_r4"></span><span class="f20 title" style=" word-spacing:8px; letter-spacing:5px;">QQ咨询</span><span class="txt">24小时全天候 一对一咨询服务.</span></a>
+                    <a href="http://www.zhengjin99.com/download.shtml"><span class="tzpz_r5"></span><span class="f16 title">下载手机版</span><span class="txt">集行情交易为一体，让投资更便捷.</span></a>
+                    
+                </div>
+                
+                <div class="tzpz_index_title mt30">
+                	<p class="tzpz_index_vedio pr">现货白银视频<a href="http://vd.jrj.com/" class="more pa"></a></p>                    
+                </div>
+                <div class="pr">
+                	<a target="_blank" href="http://vd.jrj.com/front/video/"><img src="../images2014/tzpz_index_vedio.jpg" width="310" height="202" class="block" /></a>
+                    <p class="vediobg pa"></p>
+                   <!-- <p class="vediotxt pa">五分钟学会炒白银</p>-->
+                </div>
+                
+            </div>            
+            
+            <div class="clear" style="height:0;line-height:0;"></div>
+        </div>
+        
+        <!--#include virtual="/inc/bottom4_2014.shtml"-->
+        
+    </div>
+    
+    <!--  -->
+    <!--#include virtual="/inc/bottom_2014.shtml"-->
+    <!--#include virtual="/inc/foot_2014.shtml"-->
+    <!--#include virtual="/inc/rightpiaochuang.shtml"-->
+</body>
+</html>

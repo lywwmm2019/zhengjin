@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>财经日历</title>
+<!--#include virtual="/inc/head_link.shtml"-->
+<script>
+	window.onload=function(){
+		var length=$('.xixi_calendar_title .t1').length;
+		for(var i=0;i<length;i++){
+			if($('.xixi_calendar_title .t1').eq(i).text()=='财经月历'){
+				$('.xixi_calendar_title .t1').eq(i).text('财经日历');
+			}
+		}
+	}
+</script>
+</head>
+
+<body>
+	<!--#include virtual="/inc/head.shtml"-->
+    <!--#include virtual="/inc/nav.shtml"-->
+	<div id="about_main" class="clear mb20">
+    	<div class="fl about_left pr">
+        	<div class="pa about_link_cjrl" style="left:0;top:0;" id="about_left">
+                <!--#include virtual="/inc/left_btn.shtml"-->
+                <ul class="about_link">
+                    <li class="about_link_title">证金推荐</li>
+                    <li>&gt;&gt;<span>早晚一评</span>
+                    	<ul class="about_link_sec" style="display:block">
+                        	<JRJTAG	tagtype="01" clsid="604001003" pagesize="1" pagecount="1" id="mrpl" />
+                                <#if mrpl?exists>
+                                    <#list mrpl as d>
+                        	<li><span><a href="${d.infourl}" target="_blank">${d.title}</a></span></li>
+                            		</#list>
+								</#if>
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span>资讯解读</span>
+                    	<ul class="about_link_sec" style="display:block">
+                        	<JRJTAG	tagtype="01" clsid="604001005" pagesize="1" pagecount="1" id="mrjx" />
+                                <#if mrjx?exists>
+                                    <#list mrjx as d>
+                        	<li><span><a href="${d.infourl}" target="_blank">${d.title}</a></span></li>
+                            		</#list>
+								</#if>
+                        </ul>
+                    </li>
+                    <li>&gt;&gt;<span>公司新闻</span>
+                    	<ul class="about_link_sec" style="display:block">
+                        	<JRJTAG	tagtype="01" clsid="604001029" pagesize="1" pagecount="1" id="gsxw" />
+                                <#if gsxw?exists>
+                                    <#list gsxw as d>
+                        	<li><span><a href="${d.infourl}" target="_blank">${d.title}</a></span></li>
+                            		</#list>
+								</#if>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    	<div class="fr about_right" id="cjrl">
+        	<!--#include virtual="/inc/adv.shtml"-->
+            <div class="cjrl_main">
+            	<!--下面是证金贵金属所需要的财经日历JS，只需嵌套在div中使用技术即可-->
+        		<script language="javascript1.1" src="http://service.fx168.com/FinancialCalendar/FinancialCalendarJsHandler.ashx?Code=ZJGJS"></script>
+            </div>
+        </div>
+      
+        <div class="clear"></div>
+    </div>
+    <!--#include virtual="/inc/foot.shtml"-->
+</body>
+</html>

@@ -1,0 +1,87 @@
+     
+     <!--弹窗-->
+    <div class="tc-zsfxwhole" id="tc_zsfx">
+        <div class="tc-zsfxzyk">
+            <div class="tc_zsfx">
+                <input class="tc-zsfx-name" type="text" value="" id="name" maxlength="5">
+                <input class="tc-zsfx-phone" type="text"  value="" id="mobile2" maxlength="11" />
+                <input class="tc-zsfx-button" type="button" value="" />
+                <div class="tc-zsfx-close"></div>
+            </div>
+        </div>
+    </div>
+    <div class="tc-zsfxmb" id="bgzsfxmb"></div>
+
+ <script src="/js/jquery.watermark.min.js" type="text/javascript"></script>   
+    <script>
+	$(document).ready(function() { 
+        $('.zsfx').bind('click',function(){		
+			$('#tc_zsfx').show();
+			$('#bgzsfxmb').show();
+		});
+		$('.tc-zsfx-close').bind('click',function(){		
+			$('#tc_zsfx').hide();
+			$('#bgzsfxmb').hide();
+		})
+		
+	 });
+    </script>
+	<script>
+var mobile = '';
+function isMobile(val) {
+    var reg = /^1[34578]\d{9}$/;
+    return reg.test(val);
+}
+
+function getParam(item) {
+    var svalue = location.search.match(new RegExp('[\?\&]' + item + '=([^\&]*)(\&?)','i'));
+    return svalue?decodeURIComponent(svalue[1]):'';
+}
+
+$(function () {
+    $("#mobile2").watermark( "请输入您的手机号码!");
+	$("#name").watermark( "请输入您的姓名");
+    $(".tc-zsfx-button").click(function () {//一个对象需要执行两个动作，如果retrun false这种返回语句，需要把两个动作写在一个函数里
+        var mobile = $.trim($("#mobile2").val());
+		 var name = $.trim($("#name").val());
+		 
+		if (name== ''||name.length>5) {
+            alert('请输入正确的姓名！');
+            return false;
+        }
+        if (!isMobile(mobile)) {
+            alert('请输入正确的手机号码！');
+            return false;
+        }
+       
+        url = "http://tg.zhengjin99.com/zhengjin/ws/put_resource_desc.jsp?callbackparam=?";
+        $.getJSON(url, {mobile: mobile, activityId: "zj99_tzpzlm_20150609", desc: name, isSms: 0}, function(data) {
+            //console.log(data);
+        });
+        alert("您的信息已提交，稍后客服代表联系您！\n认准专线010-53936386纳斯达克上市金融界旗下www.zhengjin99.com【证金贵金属】");
+		$('#tc_zsfx').hide();
+		$('#bgzsfxmb').hide();
+        $("#mobile2").data("watermarkElement").val('');
+		$("#name").data("watermarkElement").val('');
+    });
+	
+   /* $(".tc-zsfx-button").click(function () { //以前是这样写的
+        var name = $.trim($("#name").val());
+		
+         var namevalue= $("#name").value = ""; 
+
+
+        if (name=namevalue) {
+            alert('请输入正确的姓名！');
+            return false;
+        }
+        url ="http://tg.zhengjin99.com/zhengjin/ws/put_resource_desc.jsp?callbackparam=?";
+        $.getJSON(url, {mobile: mobile, activityId: " zj99_tzpzlm_20150609" , desc: 'name', isSms: 0}, function(data) {
+            //console.log(data);
+        });
+        
+        
+    });*/
+   
+});
+</script>

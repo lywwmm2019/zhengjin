@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>反馈_证金贵金属</title>
+<!--#include virtual="/inc/head_link_2014.shtml"-->
+</head>
+
+<body>
+	<!--#include virtual="/inc/head_2014.shtml"-->
+	<!--#include virtual="/inc/nav_feedback.shtml"-->
+    
+	<div id="feedback">
+    	<div class="feedback_main">
+        	<p class="feedback_title">请描述您的问题或建议，并留下联系方式，以便我们及时回复：</p>
+    		<textarea name="" cols="" rows="" id="content"></textarea>
+            <p class="tr hint">500字以内</p>
+            <p class="tc mt10"><input name="" type="button" class="btn" value="提交反馈" id="send" onclick="sendmsg()" /></p>
+        </div>
+    </div>
+	
+    <!--#include virtual="/inc/foot_2014.shtml"-->
+    
+<script type="text/javascript" src="js/jquery.browser.js"></script>
+<script>
+	function sendmsg(){
+		var system = navigator.platform;
+		var product = $.NV('name')+" "+$.NV('version');
+		var content = $.trim($('#content').val());
+		
+		if(content=='' || content.length < 5){
+			alert('内容过少，请详细说明！');
+			return;
+		} else if(content.length > 1000){
+			alert('内容过多，请精简文字！');
+			return;
+		}
+		
+		$("#send").attr('disabled',true);
+		$.getJSON("http://wx.zhengjin99.com/weixin/user/feedback.jsp?action=add&callback=?", {
+			system: system,
+			product: product,
+			content : content,
+			rnd : Math.random()
+		}, function(data) {
+			if (data.code == 0) {
+				alert('提交成功，感谢您的反馈！\n我们会尽快处理...');
+				$('#content').val('');
+			} else {
+				alert('系统繁忙，请稍后再试！');
+			}
+			$("#send").attr('disabled',false);
+		});
+
+	}
+</script>
+</body>
+</html>
